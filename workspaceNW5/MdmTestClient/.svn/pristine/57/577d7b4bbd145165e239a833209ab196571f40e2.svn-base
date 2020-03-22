@@ -1,0 +1,38 @@
+{
+  "TCRMService": {
+    "@schemaLocation": "http://www.ibm.com/mdm/schema MDMDomains.xsd",
+    "RequestControl": {
+      "requestID": 604157,
+      "DWLControl": {
+        "requesterName": "john",
+        "requesterLocale": "en"
+      }
+    },
+    "TCRMTx": {
+      "TCRMTxType": "MaintainPrivacyPreference",
+      "TCRMTxObject": "MDMCompositePartyBObj",
+      "TCRMObject": {
+        "MDMCompositePartyBObj": {
+          "TCRMPersonBObj": {
+            "TCRMPartyIdentificationBObj": {
+              "IdentificationValue": "EID",
+              "IdentificationNumber": "524652149689960235"
+            },
+            "TCRMPartyPrivPrefBObj": [
+              {
+                "SourceIdentValue": "CXH",
+                "PrivPrefActOptId": "110001",
+                "PrivPrefValue": "Receive Marketing Information"
+              },
+              {
+                "SourceIdentValue": "CXH",
+                "PrivPrefActOptId": "120001",
+                "PrivPrefValue": ""
+              }
+            ]
+          }
+        }
+      }
+    }
+  }
+}

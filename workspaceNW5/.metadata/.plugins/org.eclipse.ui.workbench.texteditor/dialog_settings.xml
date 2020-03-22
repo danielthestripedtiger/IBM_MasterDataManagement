@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
+		<item value="false" key="isRegEx"/>
+		<item value="recordTxn" key="selection"/>
+		<item value="false" key="casesensitive"/>
+		<item value="false" key="incremental"/>
+		<item value="true" key="wrap"/>
+		<item value="false" key="wholeword"/>
+		<list key="findhistory">
+			<item value="recordTxn"/>
+			<item value="Txn"/>
+			<item value="MDMDUSER."/>
+			<item value="XPhone,XPhone_Ext,XSecondary_Phone,XSec_Phone_Ext,XFax,XDeactivation_Flag"/>
+			<item value="XPhone,XPhone_Ext,XSecondary_Phone,XSec_Phone_Ext,XFax"/>
+			<item value="PA-"/>
+			<item value="ADDRESSGROUP.X_PRIMARY_BILLING_LOC_FLAG &quot;P.PA.2000736&quot;, "/>
+			<item value="250"/>
+		</list>
+		<list key="replacehistory">
+			<item value="MDMDUSER4."/>
+			<item value="XPhone,XPhone_Ext,XSecondary_Phone,XSec_Phone_Ext,XFax,XDeactivation_Flag,PA-XPhone,PA-XPhone_Ext,PA-XSecondary_Phone,PA-XSec_Phone_Ext,PA-XFax,PA-XDeactivation_Flag"/>
+			<item value="ADDRESSGROUP.X_PRIMARY_BILLING_LOC_FLAG &quot;P.PA.2000736&quot;, ADDRESSGROUP.X_CREDENTIAL_STATUS &quot;P.PA.2001493&quot;, ADDRESSGROUP.X_PROVIDER_STATUS &quot;P.PA.2001501&quot;, ADDRESSGROUP.X_SCHD_PRIM_FLG &quot;P.PA.2001525&quot;, ADDRESSGROUP.X_PHONE &quot;P.PA.2001742&quot;, ADDRESSGROUP.X_PHONE_EXT &quot;P.PA.2001750&quot;, ADDRESSGROUP.X_SECONDARY_PHONE &quot;P.PA.2001758&quot;, ADDRESSGROUP.X_SEC_PHONE_EXT &quot;P.PA.2001766&quot;, ADDRESSGROUP.X_FAX &quot;P.PA.2001774&quot;, "/>
+			<item value="MDMDUSER4"/>
+			<item value="M"/>
+			<item value="IDENTIFIER.ID_TP_CD &lt;&gt; 1 AND (IDENTIFIER.CONT_ID = !"/>
+			<item value="MDMDUSER"/>
+			<item value="Attribute0Value,Attribute0String,"/>
+		</list>
+	</section>
+	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
+		<item value="257" key="DIALOG_WIDTH"/>
+		<item value="1|Segoe UI|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI" key="DIALOG_FONT_NAME"/>
+		<item value="381" key="DIALOG_HEIGHT"/>
+		<item value="840" key="DIALOG_X_ORIGIN"/>
+		<item value="274" key="DIALOG_Y_ORIGIN"/>
+	</section>
+</section>

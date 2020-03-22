@@ -1,0 +1,26 @@
+{
+  "TCRMService": {
+    "@schemaLocation": "http://www.ibm.com/mdm/schema MDMDomains.xsd",
+    "RequestControl": {
+      "requestID": 604157,
+      "DWLControl": {
+        "requesterName": "test",
+        "requesterLocale": "en",
+      }
+    },
+    "TCRMTx": {
+      "TCRMTxType": "MaintainAccount",
+      "TCRMTxObject": "MDMCompositePartyBObj",
+      "TCRMObject": {
+        "MDMCompositePartyBObj": {
+          "TCRMContractBObj": {
+          	"TCRMAdminNativeKeyBObj": {
+          		"AdminContractId": "1409100",
+              	"AdminFieldNameValue": "PPLSFT"
+            }
+          }
+        }
+      }
+    }
+  }
+}

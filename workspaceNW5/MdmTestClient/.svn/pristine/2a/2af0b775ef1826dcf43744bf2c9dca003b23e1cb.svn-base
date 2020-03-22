@@ -1,0 +1,42 @@
+{
+  "TCRMService": {
+    "@schemaLocation": "http://www.ibm.com/mdm/schema MDMDomains.xsd",
+    "RequestControl": {
+      "requestID": 604157,
+      "DWLControl": {
+        "requesterName": "don",
+        "requesterLocale": "en"
+      }
+    },
+    "TCRMTx": {
+      "TCRMTxType": "MaintainParty",
+      "TCRMTxObject": "MDMCompositePartyBObj",
+      "TCRMObject": {
+        "MDMCompositePartyBObj": {
+          "TCRMPersonBObj": {
+            "SourceIdentifierValue": "CXH",
+            "TCRMPartyIdentificationBObj": {
+              "IdentificationValue": "EID",
+              "IdentificationNumber": PERSON_EID_PLACEHOLDER
+            },
+            "TCRMPersonNameBObj": {
+              "NameUsageValue": "Preferred",
+              "GivenNameOne": "DON",
+              "LastName": "GARDNER"
+            },
+            "TCRMPartyPrivPrefBObj": [
+              {
+                "ValueString": "110001",
+                "PrivPrefValue": "Receive Marketing Information"
+              },
+              {
+                "ValueString": "120001",
+                "PrivPrefValue": "Receive Paperless Statement"
+              }
+            ]
+          }
+        }
+      }
+    }
+  }
+}

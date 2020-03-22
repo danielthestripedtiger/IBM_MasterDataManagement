@@ -1,0 +1,2409 @@
+<?xml version="1.0" encoding="UTF-8"?><!-- ***************************************************** {COPYRIGHT-TOP} ***
+* Licensed Materials - Property of IBM
+* Restricted Materials of IBM
+*
+* 5725-E59
+*
+* (C) Copyright IBM Corp. 2011  All Rights Reserved.
+*
+* US Government Users Restricted Rights - Use, duplication, or
+* disclosure restricted by GSA ADP Schedule Contract with IBM Corp.
+********************************************************** {COPYRIGHT-END} --><wsdl:definitions xmlns:mdmport="http://www.ibm.com/mdm/port/Product" xmlns:mdm="http://www.ibm.com/mdm/schema" xmlns:mdmwsdl="http://www.ibm.com/mdm/wsdl/schema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:jaxws="http://java.sun.com/xml/ns/jaxws" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" name="Product" targetNamespace="http://www.ibm.com/mdm/port/Product">
+
+<jaxws:bindings>
+<jaxws:enableWrapperStyle>false</jaxws:enableWrapperStyle>
+</jaxws:bindings>
+<wsdl:types>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.ibm.com/mdm/port/Product">
+<xsd:import namespace="http://www.ibm.com/mdm/schema" schemaLocation="PhysicalMDM.xsd"></xsd:import>
+<xsd:import namespace="http://www.ibm.com/mdm/wsdl/schema" schemaLocation="MDMWSDLCommon.xsd"></xsd:import>
+<xsd:complexType name="addGoodsProductInputType">
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:RequestControl"></xsd:element>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:GoodsProductBObj"></xsd:element>
+</xsd:sequence>
+</xsd:complexType>
+<xsd:complexType name="addGoodsProductOutputType">
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:ResponseControl"></xsd:element>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:TxResult"></xsd:element>
+<xsd:element maxOccurs="unbounded" minOccurs="1" ref="mdm:GoodsProductBObj"></xsd:element>
+</xsd:sequence>
+</xsd:complexType>
+
+<xsd:complexType name="updateGoodsProductInputType">
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:RequestControl"></xsd:element>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:GoodsProductBObj"></xsd:element>
+</xsd:sequence>
+</xsd:complexType>
+<xsd:complexType name="updateGoodsProductOutputType">
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:ResponseControl"></xsd:element>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:TxResult"></xsd:element>
+<xsd:element maxOccurs="unbounded" minOccurs="1" ref="mdm:GoodsProductBObj"></xsd:element>
+</xsd:sequence>
+</xsd:complexType>
+
+<xsd:complexType name="getGoodsProductOutputType">
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:ResponseControl"></xsd:element>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:TxResult"></xsd:element>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:GoodsProductBObj"></xsd:element>
+</xsd:sequence>
+</xsd:complexType>
+
+<xsd:complexType name="getProductInstanceRelationshipOutputType">
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:ResponseControl"></xsd:element>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:TxResult"></xsd:element>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:ProductRelationshipBObj"></xsd:element>
+</xsd:sequence>
+</xsd:complexType>
+
+<xsd:complexType name="getAllProductInstanceRelationshipsOutputType">
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:ResponseControl"></xsd:element>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:TxResult"></xsd:element>
+<xsd:element maxOccurs="unbounded" minOccurs="1" ref="mdm:ProductRelationshipBObj"></xsd:element>
+</xsd:sequence>
+</xsd:complexType>
+
+<xsd:complexType name="addProductAdminSysKeyInputType">
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:RequestControl"></xsd:element>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:ProductAdminSysKeyBObj"></xsd:element>
+</xsd:sequence>
+</xsd:complexType>
+<xsd:complexType name="addProductAdminSysKeyOutputType">
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:ResponseControl"></xsd:element>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:TxResult"></xsd:element>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:ProductAdminSysKeyBObj"></xsd:element>
+</xsd:sequence>
+</xsd:complexType>
+
+<xsd:complexType name="updateProductAdminSysKeyInputType">
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:RequestControl"></xsd:element>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:ProductAdminSysKeyBObj"></xsd:element>
+</xsd:sequence>
+</xsd:complexType>
+<xsd:complexType name="updateProductAdminSysKeyOutputType">
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:ResponseControl"></xsd:element>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:TxResult"></xsd:element>
+<xsd:element maxOccurs="unbounded" minOccurs="1" ref="mdm:ProductAdminSysKeyBObj"></xsd:element>
+</xsd:sequence>
+</xsd:complexType>
+
+<xsd:complexType name="getProductAdminSysKeyOutputType">
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:ResponseControl"></xsd:element>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:TxResult"></xsd:element>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:ProductAdminSysKeyBObj"></xsd:element>
+</xsd:sequence>
+</xsd:complexType>
+
+<xsd:complexType name="getAllProductAdminSysKeysOutputType">
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:ResponseControl"></xsd:element>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:TxResult"></xsd:element>
+<xsd:element maxOccurs="unbounded" minOccurs="1" ref="mdm:ProductAdminSysKeyBObj"></xsd:element>
+</xsd:sequence>
+</xsd:complexType>
+
+<xsd:complexType name="addProductInstanceInputType">
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:RequestControl"></xsd:element>
+<xsd:choice>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:GoodsProductBObj"></xsd:element>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:FinancialProductBObj"></xsd:element>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:InsuranceProductBObj"></xsd:element>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:ServiceProductBObj"></xsd:element>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:ProductBObj"></xsd:element>
+</xsd:choice>
+</xsd:sequence>
+</xsd:complexType>
+<xsd:complexType name="addProductInstanceOutputType">
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:ResponseControl"></xsd:element>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:TxResult"></xsd:element>
+<xsd:choice>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:GoodsProductBObj"></xsd:element>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:FinancialProductBObj"></xsd:element>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:InsuranceProductBObj"></xsd:element>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:ServiceProductBObj"></xsd:element>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:ProductBObj"></xsd:element>
+</xsd:choice>
+</xsd:sequence>
+</xsd:complexType>
+
+<xsd:complexType name="updateProductInstanceInputType">
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:RequestControl"></xsd:element>
+<xsd:choice>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:GoodsProductBObj"></xsd:element>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:FinancialProductBObj"></xsd:element>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:InsuranceProductBObj"></xsd:element>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:ServiceProductBObj"></xsd:element>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:ProductBObj"></xsd:element>
+</xsd:choice>
+</xsd:sequence>
+</xsd:complexType>
+<xsd:complexType name="updateProductInstanceOutputType">
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:ResponseControl"></xsd:element>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:TxResult"></xsd:element>
+<xsd:choice>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:GoodsProductBObj"></xsd:element>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:FinancialProductBObj"></xsd:element>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:InsuranceProductBObj"></xsd:element>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:ServiceProductBObj"></xsd:element>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:ProductBObj"></xsd:element>
+</xsd:choice>
+</xsd:sequence>
+</xsd:complexType>
+
+<xsd:complexType name="getProductInstanceInputType">
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:RequestControl"></xsd:element>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:ProductRequestBObj"></xsd:element>
+</xsd:sequence>
+</xsd:complexType>
+<xsd:complexType name="getProductInstanceOutputType">
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:ResponseControl"></xsd:element>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:TxResult"></xsd:element>
+<xsd:choice>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:GoodsProductBObj"></xsd:element>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:FinancialProductBObj"></xsd:element>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:InsuranceProductBObj"></xsd:element>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:ServiceProductBObj"></xsd:element>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:ProductBObj"></xsd:element>
+</xsd:choice>
+</xsd:sequence>
+</xsd:complexType>
+
+<xsd:complexType name="addProductInstanceRelationshipInputType">
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:RequestControl"></xsd:element>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:ProductRelationshipBObj"></xsd:element>
+</xsd:sequence>
+</xsd:complexType>
+<xsd:complexType name="addProductInstanceRelationshipOutputType">
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:ResponseControl"></xsd:element>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:TxResult"></xsd:element>
+<xsd:element maxOccurs="unbounded" minOccurs="1" ref="mdm:ProductRelationshipBObj"></xsd:element>
+</xsd:sequence>
+</xsd:complexType>
+
+<xsd:complexType name="updateProductInstanceRelationshipInputType">
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:RequestControl"></xsd:element>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:ProductRelationshipBObj"></xsd:element>
+</xsd:sequence>
+</xsd:complexType>
+<xsd:complexType name="updateProductInstanceRelationshipOutputType">
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:ResponseControl"></xsd:element>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:TxResult"></xsd:element>
+<xsd:element maxOccurs="unbounded" minOccurs="1" ref="mdm:ProductRelationshipBObj"></xsd:element>
+</xsd:sequence>
+</xsd:complexType>
+
+<xsd:complexType name="addProductIdentifierInputType">
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:RequestControl"></xsd:element>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:ProductIdentifierBObj"></xsd:element>
+</xsd:sequence>
+</xsd:complexType>
+<xsd:complexType name="addProductIdentifierOutputType">
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:ResponseControl"></xsd:element>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:TxResult"></xsd:element>
+<xsd:element maxOccurs="unbounded" minOccurs="1" ref="mdm:ProductIdentifierBObj"></xsd:element>
+</xsd:sequence>
+</xsd:complexType>
+
+<xsd:complexType name="updateProductIdentifierInputType">
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:RequestControl"></xsd:element>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:ProductIdentifierBObj"></xsd:element>
+</xsd:sequence>
+</xsd:complexType>
+<xsd:complexType name="updateProductIdentifierOutputType">
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:ResponseControl"></xsd:element>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:TxResult"></xsd:element>
+<xsd:element maxOccurs="unbounded" minOccurs="1" ref="mdm:ProductIdentifierBObj"></xsd:element>
+</xsd:sequence>
+</xsd:complexType>
+
+<xsd:complexType name="getProductIdentifierOutputType">
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:ResponseControl"></xsd:element>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:TxResult"></xsd:element>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:ProductIdentifierBObj"></xsd:element>
+</xsd:sequence>
+</xsd:complexType>
+
+<xsd:complexType name="getAllProductIdentifiersOutputType">
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:ResponseControl"></xsd:element>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:TxResult"></xsd:element>
+<xsd:element maxOccurs="unbounded" minOccurs="1" ref="mdm:ProductIdentifierBObj"></xsd:element>
+</xsd:sequence>
+</xsd:complexType>
+
+<xsd:complexType name="categorizeProductInputType">
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:RequestControl"></xsd:element>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:MultipleProductCategoriesBObj"></xsd:element>
+</xsd:sequence>
+</xsd:complexType>
+<xsd:complexType name="categorizeProductOutputType">
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:ResponseControl"></xsd:element>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:TxResult"></xsd:element>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:MultipleProductCategoriesBObj"></xsd:element>
+</xsd:sequence>
+</xsd:complexType>
+
+<xsd:complexType name="updateProductCategoryAssociationInputType">
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:RequestControl"></xsd:element>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:ProductCategoryAssociationBObj"></xsd:element>
+</xsd:sequence>
+</xsd:complexType>
+<xsd:complexType name="updateProductCategoryAssociationOutputType">
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:ResponseControl"></xsd:element>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:TxResult"></xsd:element>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:ProductCategoryAssociationBObj"></xsd:element>
+</xsd:sequence>
+</xsd:complexType>
+
+<xsd:complexType name="getProductCategoryAssociationOutputType">
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:ResponseControl"></xsd:element>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:TxResult"></xsd:element>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:ProductCategoryAssociationBObj"></xsd:element>
+</xsd:sequence>
+</xsd:complexType>
+
+<xsd:complexType name="getAllProductCategoryAssociationsOutputType">
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:ResponseControl"></xsd:element>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:TxResult"></xsd:element>
+<xsd:element maxOccurs="unbounded" minOccurs="1" ref="mdm:ProductCategoryAssociationBObj"></xsd:element>
+</xsd:sequence>
+</xsd:complexType>
+
+<xsd:complexType name="getAllProductsInCategoryOutputType">
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:ResponseControl"></xsd:element>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:TxResult"></xsd:element>
+<xsd:choice maxOccurs="unbounded" minOccurs="1">
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:GoodsProductBObj"></xsd:element>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:FinancialProductBObj"></xsd:element>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:InsuranceProductBObj"></xsd:element>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:ServiceProductBObj"></xsd:element>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:ProductBObj"></xsd:element>
+</xsd:choice>
+</xsd:sequence>
+</xsd:complexType>
+
+<xsd:complexType name="getProductAdminSysKeyByProductIdOutputType">
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:ResponseControl"></xsd:element>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:TxResult"></xsd:element>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:ProductAdminSysKeyBObj"></xsd:element>
+</xsd:sequence>
+</xsd:complexType>
+
+<xsd:complexType name="getProductAdminSysKeyByIdPKOutputType">
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:ResponseControl"></xsd:element>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:TxResult"></xsd:element>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:ProductAdminSysKeyBObj"></xsd:element>
+</xsd:sequence>
+</xsd:complexType>
+
+<xsd:complexType name="getProductByAdminSysKeyInputType">
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:RequestControl"></xsd:element>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:ProductAdminSysKeyRequestBObj"></xsd:element>
+</xsd:sequence>
+</xsd:complexType>
+<xsd:complexType name="getProductByAdminSysKeyOutputType">
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:ResponseControl"></xsd:element>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:TxResult"></xsd:element>
+<xsd:choice>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:GoodsProductBObj"></xsd:element>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:FinancialProductBObj"></xsd:element>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:InsuranceProductBObj"></xsd:element>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:ServiceProductBObj"></xsd:element>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:ProductBObj"></xsd:element>
+</xsd:choice>
+</xsd:sequence>
+</xsd:complexType>
+
+<xsd:complexType name="getProductAdminSysKeyByPartsOutputType">
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:ResponseControl"></xsd:element>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:TxResult"></xsd:element>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:ProductAdminSysKeyBObj"></xsd:element>
+</xsd:sequence>
+</xsd:complexType>
+
+<xsd:complexType name="addFinancialProductInputType">
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:RequestControl"></xsd:element>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:FinancialProductBObj"></xsd:element>
+</xsd:sequence>
+</xsd:complexType>
+<xsd:complexType name="addFinancialProductOutputType">
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:ResponseControl"></xsd:element>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:TxResult"></xsd:element>
+<xsd:element maxOccurs="unbounded" minOccurs="1" ref="mdm:FinancialProductBObj"></xsd:element>
+</xsd:sequence>
+</xsd:complexType>
+
+<xsd:complexType name="updateFinancialProductInputType">
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:RequestControl"></xsd:element>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:FinancialProductBObj"></xsd:element>
+</xsd:sequence>
+</xsd:complexType>
+<xsd:complexType name="updateFinancialProductOutputType">
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:ResponseControl"></xsd:element>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:TxResult"></xsd:element>
+<xsd:element maxOccurs="unbounded" minOccurs="1" ref="mdm:FinancialProductBObj"></xsd:element>
+</xsd:sequence>
+</xsd:complexType>
+
+<xsd:complexType name="getFinancialProductOutputType">
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:ResponseControl"></xsd:element>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:TxResult"></xsd:element>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:FinancialProductBObj"></xsd:element>
+</xsd:sequence>
+</xsd:complexType>
+
+<xsd:complexType name="addServiceProductInputType">
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:RequestControl"></xsd:element>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:ServiceProductBObj"></xsd:element>
+</xsd:sequence>
+</xsd:complexType>
+<xsd:complexType name="addServiceProductOutputType">
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:ResponseControl"></xsd:element>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:TxResult"></xsd:element>
+<xsd:element maxOccurs="unbounded" minOccurs="1" ref="mdm:ServiceProductBObj"></xsd:element>
+</xsd:sequence>
+</xsd:complexType>
+
+<xsd:complexType name="updateServiceProductInputType">
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:RequestControl"></xsd:element>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:ServiceProductBObj"></xsd:element>
+</xsd:sequence>
+</xsd:complexType>
+<xsd:complexType name="updateServiceProductOutputType">
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:ResponseControl"></xsd:element>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:TxResult"></xsd:element>
+<xsd:element maxOccurs="unbounded" minOccurs="1" ref="mdm:ServiceProductBObj"></xsd:element>
+</xsd:sequence>
+</xsd:complexType>
+
+<xsd:complexType name="getServiceProductOutputType">
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:ResponseControl"></xsd:element>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:TxResult"></xsd:element>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:ServiceProductBObj"></xsd:element>
+</xsd:sequence>
+</xsd:complexType>
+
+<xsd:complexType name="addInsuranceProductInputType">
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:RequestControl"></xsd:element>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:InsuranceProductBObj"></xsd:element>
+</xsd:sequence>
+</xsd:complexType>
+<xsd:complexType name="addInsuranceProductOutputType">
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:ResponseControl"></xsd:element>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:TxResult"></xsd:element>
+<xsd:element maxOccurs="unbounded" minOccurs="1" ref="mdm:InsuranceProductBObj"></xsd:element>
+</xsd:sequence>
+</xsd:complexType>
+
+<xsd:complexType name="updateInsuranceProductInputType">
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:RequestControl"></xsd:element>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:InsuranceProductBObj"></xsd:element>
+</xsd:sequence>
+</xsd:complexType>
+<xsd:complexType name="updateInsuranceProductOutputType">
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:ResponseControl"></xsd:element>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:TxResult"></xsd:element>
+<xsd:element maxOccurs="unbounded" minOccurs="1" ref="mdm:InsuranceProductBObj"></xsd:element>
+</xsd:sequence>
+</xsd:complexType>
+
+<xsd:complexType name="getInsuranceProductOutputType">
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:ResponseControl"></xsd:element>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:TxResult"></xsd:element>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:InsuranceProductBObj"></xsd:element>
+</xsd:sequence>
+</xsd:complexType>
+
+<xsd:complexType name="searchProductInstanceInputType">
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:RequestControl"></xsd:element>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:ProductSearchBObj"></xsd:element>
+</xsd:sequence>
+</xsd:complexType>
+<xsd:complexType name="searchProductInstanceOutputType">
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:ResponseControl"></xsd:element>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:TxResult"></xsd:element>
+<xsd:element maxOccurs="unbounded" minOccurs="1" ref="mdm:ProductSearchResultBObj"></xsd:element>
+</xsd:sequence>
+</xsd:complexType>
+
+<xsd:complexType name="recategorizeProductInputType">
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:RequestControl"></xsd:element>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:RecategorizeProductBObj"></xsd:element>
+</xsd:sequence>
+</xsd:complexType>
+<xsd:complexType name="recategorizeProductOutputType">
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:ResponseControl"></xsd:element>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:TxResult"></xsd:element>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:ProductCategoryAssociationBObj"></xsd:element>
+</xsd:sequence>
+</xsd:complexType>
+
+<xsd:complexType name="getAllEntitySpecUsesByProductInputType">
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:RequestControl"></xsd:element>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:ProductSpecRequestBObj"></xsd:element>
+</xsd:sequence>
+</xsd:complexType>
+<xsd:complexType name="getAllEntitySpecUsesByProductOutputType">
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:ResponseControl"></xsd:element>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:TxResult"></xsd:element>
+<xsd:element maxOccurs="unbounded" minOccurs="1" ref="mdm:EntitySpecUseBObj"></xsd:element>
+</xsd:sequence>
+</xsd:complexType>
+
+<xsd:complexType name="collapseMultipleProductsInputType">
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:RequestControl"></xsd:element>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:ConsolidatedProductBObj"></xsd:element>
+</xsd:sequence>
+</xsd:complexType>
+<xsd:complexType name="collapseMultipleProductsOutputType">
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:ResponseControl"></xsd:element>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:TxResult"></xsd:element>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:ConsolidatedProductBObj"></xsd:element>
+</xsd:sequence>
+</xsd:complexType>
+
+<xsd:complexType name="comparativePreviewCollapseMultipleProductsInputType">
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:RequestControl"></xsd:element>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:ConsolidatedProductBObj"></xsd:element>
+</xsd:sequence>
+</xsd:complexType>
+<xsd:complexType name="comparativePreviewCollapseMultipleProductsOutputType">
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:ResponseControl"></xsd:element>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:TxResult"></xsd:element>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:ConsolidatedProductBObj"></xsd:element>
+</xsd:sequence>
+</xsd:complexType>
+
+<xsd:complexType name="undoCollapseMultipleProductsInputType">
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:RequestControl"></xsd:element>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:ClonedProductBObj"></xsd:element>
+</xsd:sequence>
+</xsd:complexType>
+
+<xsd:complexType name="undoCollapseMultipleProductsOutputType">
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:ResponseControl"></xsd:element>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:TxResult"></xsd:element>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:ClonedProductBObj"></xsd:element>
+</xsd:sequence>
+</xsd:complexType>
+
+<xsd:complexType name="previewUndoCollapseMultipleProductsInputType">
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:RequestControl"></xsd:element>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:ClonedProductBObj"></xsd:element>
+</xsd:sequence>
+</xsd:complexType>
+
+<xsd:complexType name="previewUndoCollapseMultipleProductsOutputType">
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:ResponseControl"></xsd:element>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:TxResult"></xsd:element>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:ClonedProductBObj"></xsd:element>
+</xsd:sequence>
+</xsd:complexType>
+
+<xsd:complexType name="addProductSuspectsInputType">
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:RequestControl"></xsd:element>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:ProductSuspectListBObj"></xsd:element>
+</xsd:sequence>
+</xsd:complexType>
+<xsd:complexType name="addProductSuspectsOutputType">
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:ResponseControl"></xsd:element>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:TxResult"></xsd:element>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:ProductSuspectListBObj"></xsd:element>
+</xsd:sequence>
+</xsd:complexType>
+
+<xsd:complexType name="updateProductSuspectsInputType">
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:RequestControl"></xsd:element>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:ProductSuspectListBObj"></xsd:element>
+</xsd:sequence>
+</xsd:complexType>
+<xsd:complexType name="updateProductSuspectsOutputType">
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:ResponseControl"></xsd:element>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:TxResult"></xsd:element>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:ProductSuspectListBObj"></xsd:element>
+</xsd:sequence>
+</xsd:complexType>
+
+<xsd:complexType name="deleteAllProductSuspectsInputType">
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:RequestControl"></xsd:element>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:ProductSuspectListBObj"></xsd:element>
+</xsd:sequence>
+</xsd:complexType>
+<xsd:complexType name="deleteAllProductSuspectsOutputType">
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:ResponseControl"></xsd:element>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:TxResult"></xsd:element>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:ProductSuspectListBObj"></xsd:element>
+</xsd:sequence>
+</xsd:complexType>
+
+<xsd:complexType name="refreshProductSuspectsInputType">
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:RequestControl"></xsd:element>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:ProductSuspectListBObj"></xsd:element>
+</xsd:sequence>
+</xsd:complexType>
+<xsd:complexType name="refreshProductSuspectsOutputType">
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:ResponseControl"></xsd:element>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:TxResult"></xsd:element>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:ProductSuspectListBObj"></xsd:element>
+</xsd:sequence>
+</xsd:complexType>
+
+<xsd:complexType name="getLinkedProductsInputType">
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:RequestControl"></xsd:element>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:LinkedProductsRequestBObj"></xsd:element>
+</xsd:sequence>
+</xsd:complexType>
+<xsd:complexType name="getLinkedProductsOutputType">
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:ResponseControl"></xsd:element>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:TxResult"></xsd:element>
+<xsd:element maxOccurs="unbounded" minOccurs="1" ref="mdm:MultipleProductLinksBObj"></xsd:element>
+</xsd:sequence>
+</xsd:complexType>
+
+<xsd:complexType name="getAllProductSuspectsInputType">
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:RequestControl"></xsd:element>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:ProductSuspectRequestBObj"></xsd:element>
+</xsd:sequence>
+</xsd:complexType>
+<xsd:complexType name="getAllProductSuspectsOutputType">
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:ResponseControl"></xsd:element>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:TxResult"></xsd:element>
+<xsd:element maxOccurs="unbounded" minOccurs="1" ref="mdm:ProductSuspectBObj"></xsd:element>
+</xsd:sequence>
+</xsd:complexType>
+
+<xsd:complexType name="getProductSuspectInputType">
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:RequestControl"></xsd:element>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:ProductSuspectRequestBObj"></xsd:element>
+</xsd:sequence>
+</xsd:complexType>
+<xsd:complexType name="getProductSuspectOutputType">
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:ResponseControl"></xsd:element>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:TxResult"></xsd:element>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:ProductSuspectBObj"></xsd:element>
+</xsd:sequence>
+</xsd:complexType>
+
+<xsd:complexType name="deleteProductSuspectInputType">
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:RequestControl"></xsd:element>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:ProductSuspectBObj"></xsd:element>
+</xsd:sequence>
+</xsd:complexType>
+<xsd:complexType name="deleteProductSuspectOutputType">
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:ResponseControl"></xsd:element>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:TxResult"></xsd:element>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:ProductSuspectBObj"></xsd:element>
+</xsd:sequence>
+</xsd:complexType>
+
+<xsd:complexType name="searchProductSuspectInputType">
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:RequestControl"></xsd:element>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:ProductSuspectSearchBObj"></xsd:element>
+</xsd:sequence>
+</xsd:complexType>
+<xsd:complexType name="searchProductSuspectOutputType">
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:ResponseControl"></xsd:element>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:TxResult"></xsd:element>
+<xsd:choice maxOccurs="unbounded" minOccurs="1">
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:GoodsProductBObj"></xsd:element>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:FinancialProductBObj"></xsd:element>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:InsuranceProductBObj"></xsd:element>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:ServiceProductBObj"></xsd:element>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:ProductBObj"></xsd:element>
+</xsd:choice>
+</xsd:sequence>
+</xsd:complexType>
+
+<xsd:complexType name="splitProductInputType">
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:RequestControl"></xsd:element>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:SplitProductRequestBObj"></xsd:element>
+</xsd:sequence>
+</xsd:complexType>
+<xsd:complexType name="splitProductOutputType">
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:ResponseControl"></xsd:element>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:TxResult"></xsd:element>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:ProductListBObj"></xsd:element>
+</xsd:sequence>
+</xsd:complexType>
+
+<xsd:complexType name="getFinancialProductInputType">
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:RequestControl"></xsd:element>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:ProductRequestBObj"></xsd:element>
+</xsd:sequence>
+</xsd:complexType>
+
+<xsd:complexType name="getServiceProductInputType">
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:RequestControl"></xsd:element>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:ProductRequestBObj"></xsd:element>
+</xsd:sequence>
+</xsd:complexType>
+
+<xsd:complexType name="getInsuranceProductInputType">
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:RequestControl"></xsd:element>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:ProductRequestBObj"></xsd:element>
+</xsd:sequence>
+</xsd:complexType>
+
+<xsd:element name="addGoodsProduct" type="mdmport:addGoodsProductInputType"></xsd:element>
+<xsd:element name="addGoodsProductResponse" type="mdmport:addGoodsProductOutputType"></xsd:element>
+<xsd:element name="updateGoodsProduct" type="mdmport:updateGoodsProductInputType"></xsd:element>
+<xsd:element name="updateGoodsProductResponse" type="mdmport:updateGoodsProductOutputType"></xsd:element>
+<xsd:element name="getGoodsProduct" type="mdmwsdl:TCRMInquiryInputType"></xsd:element>
+<xsd:element name="getGoodsProductResponse" type="mdmport:getGoodsProductOutputType"></xsd:element>
+<xsd:element name="getProductInstanceRelationship" type="mdmwsdl:TCRMInquiryInputType"></xsd:element>
+<xsd:element name="getProductInstanceRelationshipResponse" type="mdmport:getProductInstanceRelationshipOutputType"></xsd:element>
+<xsd:element name="getAllProductInstanceRelationships" type="mdmwsdl:TCRMInquiryInputType"></xsd:element>
+<xsd:element name="getAllProductInstanceRelationshipsResponse" type="mdmport:getAllProductInstanceRelationshipsOutputType"></xsd:element>
+<xsd:element name="addProductAdminSysKey" type="mdmport:addProductAdminSysKeyInputType"></xsd:element>
+<xsd:element name="addProductAdminSysKeyResponse" type="mdmport:addProductAdminSysKeyOutputType"></xsd:element>
+<xsd:element name="updateProductAdminSysKey" type="mdmport:updateProductAdminSysKeyInputType"></xsd:element>
+<xsd:element name="updateProductAdminSysKeyResponse" type="mdmport:updateProductAdminSysKeyOutputType"></xsd:element>
+<xsd:element name="getProductAdminSysKey" type="mdmwsdl:TCRMInquiryInputType"></xsd:element>
+<xsd:element name="getProductAdminSysKeyResponse" type="mdmport:getProductAdminSysKeyOutputType"></xsd:element>
+<xsd:element name="getAllProductAdminSysKeys" type="mdmwsdl:TCRMInquiryInputType"></xsd:element>
+<xsd:element name="getAllProductAdminSysKeysResponse" type="mdmport:getAllProductAdminSysKeysOutputType"></xsd:element>
+<xsd:element name="addProductInstance" type="mdmport:addProductInstanceInputType"></xsd:element>
+<xsd:element name="addProductInstanceResponse" type="mdmport:addProductInstanceOutputType"></xsd:element>
+<xsd:element name="updateProductInstance" type="mdmport:updateProductInstanceInputType"></xsd:element>
+<xsd:element name="updateProductInstanceResponse" type="mdmport:updateProductInstanceOutputType"></xsd:element>
+<xsd:element name="getProductInstance" type="mdmport:getProductInstanceInputType"></xsd:element>
+<xsd:element name="getProductInstanceResponse" type="mdmport:getProductInstanceOutputType"></xsd:element>
+<xsd:element name="addProductInstanceRelationship" type="mdmport:addProductInstanceRelationshipInputType"></xsd:element>
+<xsd:element name="addProductInstanceRelationshipResponse" type="mdmport:addProductInstanceRelationshipOutputType"></xsd:element>
+<xsd:element name="updateProductInstanceRelationship" type="mdmport:updateProductInstanceRelationshipInputType"></xsd:element>
+<xsd:element name="updateProductInstanceRelationshipResponse" type="mdmport:updateProductInstanceRelationshipOutputType"></xsd:element>
+<xsd:element name="addProductIdentifier" type="mdmport:addProductIdentifierInputType"></xsd:element>
+<xsd:element name="addProductIdentifierResponse" type="mdmport:addProductIdentifierOutputType"></xsd:element>
+<xsd:element name="updateProductIdentifier" type="mdmport:updateProductIdentifierInputType"></xsd:element>
+<xsd:element name="updateProductIdentifierResponse" type="mdmport:updateProductIdentifierOutputType"></xsd:element>
+<xsd:element name="getProductIdentifier" type="mdmwsdl:TCRMInquiryInputType"></xsd:element>
+<xsd:element name="getProductIdentifierResponse" type="mdmport:getProductIdentifierOutputType"></xsd:element>
+<xsd:element name="getAllProductIdentifiers" type="mdmwsdl:TCRMInquiryInputType"></xsd:element>
+<xsd:element name="getAllProductIdentifiersResponse" type="mdmport:getAllProductIdentifiersOutputType"></xsd:element>
+<xsd:element name="categorizeProduct" type="mdmport:categorizeProductInputType"></xsd:element>
+<xsd:element name="categorizeProductResponse" type="mdmport:categorizeProductOutputType"></xsd:element>
+<xsd:element name="updateProductCategoryAssociation" type="mdmport:updateProductCategoryAssociationInputType"></xsd:element>
+<xsd:element name="updateProductCategoryAssociationResponse" type="mdmport:updateProductCategoryAssociationOutputType"></xsd:element>
+<xsd:element name="getProductCategoryAssociation" type="mdmwsdl:TCRMInquiryInputType"></xsd:element>
+<xsd:element name="getProductCategoryAssociationResponse" type="mdmport:getProductCategoryAssociationOutputType"></xsd:element>
+<xsd:element name="getAllProductCategoryAssociations" type="mdmwsdl:TCRMInquiryInputType"></xsd:element>
+<xsd:element name="getAllProductCategoryAssociationsResponse" type="mdmport:getAllProductCategoryAssociationsOutputType"></xsd:element>
+<xsd:element name="getAllProductsInCategory" type="mdmwsdl:TCRMInquiryInputType"></xsd:element>
+<xsd:element name="getAllProductsInCategoryResponse" type="mdmport:getAllProductsInCategoryOutputType"></xsd:element>
+<xsd:element name="getProductAdminSysKeyByProductId" type="mdmwsdl:TCRMInquiryInputType"></xsd:element>
+<xsd:element name="getProductAdminSysKeyByProductIdResponse" type="mdmport:getProductAdminSysKeyByProductIdOutputType"></xsd:element>
+<xsd:element name="getProductAdminSysKeyByIdPK" type="mdmwsdl:TCRMInquiryInputType"></xsd:element>
+<xsd:element name="getProductAdminSysKeyByIdPKResponse" type="mdmport:getProductAdminSysKeyByIdPKOutputType"></xsd:element>
+<xsd:element name="getProductByAdminSysKey" type="mdmport:getProductByAdminSysKeyInputType"></xsd:element>
+<xsd:element name="getProductByAdminSysKeyResponse" type="mdmport:getProductByAdminSysKeyOutputType"></xsd:element>
+<xsd:element name="getProductAdminSysKeyByParts" type="mdmwsdl:TCRMInquiryInputType"></xsd:element>
+<xsd:element name="getProductAdminSysKeyByPartsResponse" type="mdmport:getProductAdminSysKeyByPartsOutputType"></xsd:element>
+<xsd:element name="addFinancialProduct" type="mdmport:addFinancialProductInputType"></xsd:element>
+<xsd:element name="addFinancialProductResponse" type="mdmport:addFinancialProductOutputType"></xsd:element>
+<xsd:element name="updateFinancialProduct" type="mdmport:updateFinancialProductInputType"></xsd:element>
+<xsd:element name="updateFinancialProductResponse" type="mdmport:updateFinancialProductOutputType"></xsd:element>
+<xsd:element name="getFinancialProduct" type="mdmport:getFinancialProductInputType"></xsd:element>
+<xsd:element name="getFinancialProductResponse" type="mdmport:getFinancialProductOutputType"></xsd:element>
+<xsd:element name="addServiceProduct" type="mdmport:addServiceProductInputType"></xsd:element>
+<xsd:element name="addServiceProductResponse" type="mdmport:addServiceProductOutputType"></xsd:element>
+<xsd:element name="updateServiceProduct" type="mdmport:updateServiceProductInputType"></xsd:element>
+<xsd:element name="updateServiceProductResponse" type="mdmport:updateServiceProductOutputType"></xsd:element>
+<xsd:element name="getServiceProduct" type="mdmport:getServiceProductInputType"></xsd:element>
+<xsd:element name="getServiceProductResponse" type="mdmport:getServiceProductOutputType"></xsd:element>
+<xsd:element name="addInsuranceProduct" type="mdmport:addInsuranceProductInputType"></xsd:element>
+<xsd:element name="addInsuranceProductResponse" type="mdmport:addInsuranceProductOutputType"></xsd:element>
+<xsd:element name="updateInsuranceProduct" type="mdmport:updateInsuranceProductInputType"></xsd:element>
+<xsd:element name="updateInsuranceProductResponse" type="mdmport:updateInsuranceProductOutputType"></xsd:element>
+<xsd:element name="getInsuranceProduct" type="mdmport:getInsuranceProductInputType"></xsd:element>
+<xsd:element name="getInsuranceProductResponse" type="mdmport:getInsuranceProductOutputType"></xsd:element>
+<xsd:element name="searchProductInstance" type="mdmport:searchProductInstanceInputType"></xsd:element>
+<xsd:element name="searchProductInstanceResponse" type="mdmport:searchProductInstanceOutputType"></xsd:element>
+<xsd:element name="recategorizeProduct" type="mdmport:recategorizeProductInputType"></xsd:element>
+<xsd:element name="recategorizeProductResponse" type="mdmport:recategorizeProductOutputType"></xsd:element>
+<xsd:element name="getAllEntitySpecUsesByProduct" type="mdmport:getAllEntitySpecUsesByProductInputType"></xsd:element>
+<xsd:element name="getAllEntitySpecUsesByProductResponse" type="mdmport:getAllEntitySpecUsesByProductOutputType"></xsd:element>
+<xsd:element name="collapseMultipleProducts" type="mdmport:collapseMultipleProductsInputType"></xsd:element>
+<xsd:element name="collapseMultipleProductsResponse" type="mdmport:collapseMultipleProductsOutputType"></xsd:element>
+<xsd:element name="comparativePreviewCollapseMultipleProducts" type="mdmport:comparativePreviewCollapseMultipleProductsInputType"></xsd:element>
+<xsd:element name="comparativePreviewCollapseMultipleProductsResponse" type="mdmport:comparativePreviewCollapseMultipleProductsOutputType"></xsd:element>
+<xsd:element name="addProductSuspects" type="mdmport:addProductSuspectsInputType"></xsd:element>
+<xsd:element name="addProductSuspectsResponse" type="mdmport:addProductSuspectsOutputType"></xsd:element>
+<xsd:element name="updateProductSuspects" type="mdmport:updateProductSuspectsInputType"></xsd:element>
+<xsd:element name="updateProductSuspectsResponse" type="mdmport:updateProductSuspectsOutputType"></xsd:element>
+<xsd:element name="deleteAllProductSuspects" type="mdmport:deleteAllProductSuspectsInputType"></xsd:element>
+<xsd:element name="deleteAllProductSuspectsResponse" type="mdmport:deleteAllProductSuspectsOutputType"></xsd:element>
+<xsd:element name="refreshProductSuspects" type="mdmport:refreshProductSuspectsInputType"></xsd:element>
+<xsd:element name="refreshProductSuspectsResponse" type="mdmport:refreshProductSuspectsOutputType"></xsd:element>
+<xsd:element name="getLinkedProducts" type="mdmport:getLinkedProductsInputType"></xsd:element>
+<xsd:element name="getLinkedProductsResponse" type="mdmport:getLinkedProductsOutputType"></xsd:element>
+<xsd:element name="getAllProductSuspects" type="mdmport:getAllProductSuspectsInputType"></xsd:element>
+<xsd:element name="getAllProductSuspectsResponse" type="mdmport:getAllProductSuspectsOutputType"></xsd:element>
+<xsd:element name="getProductSuspect" type="mdmport:getProductSuspectInputType"></xsd:element>
+<xsd:element name="getProductSuspectResponse" type="mdmport:getProductSuspectOutputType"></xsd:element>
+<xsd:element name="deleteProductSuspect" type="mdmport:deleteProductSuspectInputType"></xsd:element>
+<xsd:element name="deleteProductSuspectResponse" type="mdmport:deleteProductSuspectOutputType"></xsd:element>
+<xsd:element name="searchProductSuspect" type="mdmport:searchProductSuspectInputType"></xsd:element>
+<xsd:element name="searchProductSuspectResponse" type="mdmport:searchProductSuspectOutputType"></xsd:element>
+<xsd:element name="splitProduct" type="mdmport:splitProductInputType"></xsd:element>
+<xsd:element name="splitProductResponse" type="mdmport:splitProductOutputType"></xsd:element>
+<xsd:element name="undoCollapseMultipleProducts" type="mdmport:undoCollapseMultipleProductsInputType"></xsd:element>
+<xsd:element name="undoCollapseMultipleProductsResponse" type="mdmport:undoCollapseMultipleProductsOutputType"></xsd:element>
+<xsd:element name="previewUndoCollapseMultipleProducts" type="mdmport:previewUndoCollapseMultipleProductsInputType"></xsd:element>
+<xsd:element name="previewUndoCollapseMultipleProductsResponse" type="mdmport:previewUndoCollapseMultipleProductsOutputType"></xsd:element>
+<xsd:element name="processingFault" type="mdmwsdl:ProcessingFaultType"></xsd:element>
+</xsd:schema>
+</wsdl:types>
+<wsdl:message name="ProcessingFault">
+<wsdl:part element="mdmport:processingFault" name="parameters"></wsdl:part>
+</wsdl:message>
+<wsdl:message name="AddGoodsProductRequest">
+<wsdl:part element="mdmport:addGoodsProduct" name="parameters"></wsdl:part>
+</wsdl:message>
+<wsdl:message name="AddGoodsProductResponse">
+<wsdl:part element="mdmport:addGoodsProductResponse" name="parameters"></wsdl:part>
+</wsdl:message>
+
+<wsdl:message name="UpdateGoodsProductRequest">
+<wsdl:part element="mdmport:updateGoodsProduct" name="parameters"></wsdl:part>
+</wsdl:message>
+<wsdl:message name="UpdateGoodsProductResponse">
+<wsdl:part element="mdmport:updateGoodsProductResponse" name="parameters"></wsdl:part>
+</wsdl:message>
+
+<wsdl:message name="GetGoodsProductRequest">
+<wsdl:part element="mdmport:getGoodsProduct" name="parameters"></wsdl:part>
+</wsdl:message>
+<wsdl:message name="GetGoodsProductResponse">
+<wsdl:part element="mdmport:getGoodsProductResponse" name="parameters"></wsdl:part>
+</wsdl:message>
+
+<wsdl:message name="GetProductInstanceRelationshipRequest">
+<wsdl:part element="mdmport:getProductInstanceRelationship" name="parameters"></wsdl:part>
+</wsdl:message>
+<wsdl:message name="GetProductInstanceRelationshipResponse">
+<wsdl:part element="mdmport:getProductInstanceRelationshipResponse" name="parameters"></wsdl:part>
+</wsdl:message>
+
+<wsdl:message name="GetAllProductInstanceRelationshipsRequest">
+<wsdl:part element="mdmport:getAllProductInstanceRelationships" name="parameters"></wsdl:part>
+</wsdl:message>
+<wsdl:message name="GetAllProductInstanceRelationshipsResponse">
+<wsdl:part element="mdmport:getAllProductInstanceRelationshipsResponse" name="parameters"></wsdl:part>
+</wsdl:message>
+
+<wsdl:message name="AddProductAdminSysKeyRequest">
+<wsdl:part element="mdmport:addProductAdminSysKey" name="parameters"></wsdl:part>
+</wsdl:message>
+<wsdl:message name="AddProductAdminSysKeyResponse">
+<wsdl:part element="mdmport:addProductAdminSysKeyResponse" name="parameters"></wsdl:part>
+</wsdl:message>
+
+<wsdl:message name="UpdateProductAdminSysKeyRequest">
+<wsdl:part element="mdmport:updateProductAdminSysKey" name="parameters"></wsdl:part>
+</wsdl:message>
+<wsdl:message name="UpdateProductAdminSysKeyResponse">
+<wsdl:part element="mdmport:updateProductAdminSysKeyResponse" name="parameters"></wsdl:part>
+</wsdl:message>
+
+<wsdl:message name="GetProductAdminSysKeyRequest">
+<wsdl:part element="mdmport:getProductAdminSysKey" name="parameters"></wsdl:part>
+</wsdl:message>
+<wsdl:message name="GetProductAdminSysKeyResponse">
+<wsdl:part element="mdmport:getProductAdminSysKeyResponse" name="parameters"></wsdl:part>
+</wsdl:message>
+
+<wsdl:message name="GetAllProductAdminSysKeysRequest">
+<wsdl:part element="mdmport:getAllProductAdminSysKeys" name="parameters"></wsdl:part>
+</wsdl:message>
+<wsdl:message name="GetAllProductAdminSysKeysResponse">
+<wsdl:part element="mdmport:getAllProductAdminSysKeysResponse" name="parameters"></wsdl:part>
+</wsdl:message>
+
+<wsdl:message name="AddProductInstanceRequest">
+<wsdl:part element="mdmport:addProductInstance" name="parameters"></wsdl:part>
+</wsdl:message>
+<wsdl:message name="AddProductInstanceResponse">
+<wsdl:part element="mdmport:addProductInstanceResponse" name="parameters"></wsdl:part>
+</wsdl:message>
+
+<wsdl:message name="UpdateProductInstanceRequest">
+<wsdl:part element="mdmport:updateProductInstance" name="parameters"></wsdl:part>
+</wsdl:message>
+<wsdl:message name="UpdateProductInstanceResponse">
+<wsdl:part element="mdmport:updateProductInstanceResponse" name="parameters"></wsdl:part>
+</wsdl:message>
+
+<wsdl:message name="GetProductInstanceRequest">
+<wsdl:part element="mdmport:getProductInstance" name="parameters"></wsdl:part>
+</wsdl:message>
+<wsdl:message name="GetProductInstanceResponse">
+<wsdl:part element="mdmport:getProductInstanceResponse" name="parameters"></wsdl:part>
+</wsdl:message>
+
+<wsdl:message name="AddProductInstanceRelationshipRequest">
+<wsdl:part element="mdmport:addProductInstanceRelationship" name="parameters"></wsdl:part>
+</wsdl:message>
+<wsdl:message name="AddProductInstanceRelationshipResponse">
+<wsdl:part element="mdmport:addProductInstanceRelationshipResponse" name="parameters"></wsdl:part>
+</wsdl:message>
+
+<wsdl:message name="UpdateProductInstanceRelationshipRequest">
+<wsdl:part element="mdmport:updateProductInstanceRelationship" name="parameters"></wsdl:part>
+</wsdl:message>
+<wsdl:message name="UpdateProductInstanceRelationshipResponse">
+<wsdl:part element="mdmport:updateProductInstanceRelationshipResponse" name="parameters"></wsdl:part>
+</wsdl:message>
+
+<wsdl:message name="AddProductIdentifierRequest">
+<wsdl:part element="mdmport:addProductIdentifier" name="parameters"></wsdl:part>
+</wsdl:message>
+<wsdl:message name="AddProductIdentifierResponse">
+<wsdl:part element="mdmport:addProductIdentifierResponse" name="parameters"></wsdl:part>
+</wsdl:message>
+
+<wsdl:message name="UpdateProductIdentifierRequest">
+<wsdl:part element="mdmport:updateProductIdentifier" name="parameters"></wsdl:part>
+</wsdl:message>
+<wsdl:message name="UpdateProductIdentifierResponse">
+<wsdl:part element="mdmport:updateProductIdentifierResponse" name="parameters"></wsdl:part>
+</wsdl:message>
+
+<wsdl:message name="GetProductIdentifierRequest">
+<wsdl:part element="mdmport:getProductIdentifier" name="parameters"></wsdl:part>
+</wsdl:message>
+<wsdl:message name="GetProductIdentifierResponse">
+<wsdl:part element="mdmport:getProductIdentifierResponse" name="parameters"></wsdl:part>
+</wsdl:message>
+
+<wsdl:message name="GetAllProductIdentifiersRequest">
+<wsdl:part element="mdmport:getAllProductIdentifiers" name="parameters"></wsdl:part>
+</wsdl:message>
+<wsdl:message name="GetAllProductIdentifiersResponse">
+<wsdl:part element="mdmport:getAllProductIdentifiersResponse" name="parameters"></wsdl:part>
+</wsdl:message>
+
+<wsdl:message name="CategorizeProductRequest">
+<wsdl:part element="mdmport:categorizeProduct" name="parameters"></wsdl:part>
+</wsdl:message>
+<wsdl:message name="CategorizeProductResponse">
+<wsdl:part element="mdmport:categorizeProductResponse" name="parameters"></wsdl:part>
+</wsdl:message>
+
+<wsdl:message name="UpdateProductCategoryAssociationRequest">
+<wsdl:part element="mdmport:updateProductCategoryAssociation" name="parameters"></wsdl:part>
+</wsdl:message>
+<wsdl:message name="UpdateProductCategoryAssociationResponse">
+<wsdl:part element="mdmport:updateProductCategoryAssociationResponse" name="parameters"></wsdl:part>
+</wsdl:message>
+
+<wsdl:message name="GetProductCategoryAssociationRequest">
+<wsdl:part element="mdmport:getProductCategoryAssociation" name="parameters"></wsdl:part>
+</wsdl:message>
+<wsdl:message name="GetProductCategoryAssociationResponse">
+<wsdl:part element="mdmport:getProductCategoryAssociationResponse" name="parameters"></wsdl:part>
+</wsdl:message>
+
+<wsdl:message name="GetAllProductCategoryAssociationsRequest">
+<wsdl:part element="mdmport:getAllProductCategoryAssociations" name="parameters"></wsdl:part>
+</wsdl:message>
+<wsdl:message name="GetAllProductCategoryAssociationsResponse">
+<wsdl:part element="mdmport:getAllProductCategoryAssociationsResponse" name="parameters"></wsdl:part>
+</wsdl:message>
+
+<wsdl:message name="GetAllProductsInCategoryRequest">
+<wsdl:part element="mdmport:getAllProductsInCategory" name="parameters"></wsdl:part>
+</wsdl:message>
+<wsdl:message name="GetAllProductsInCategoryResponse">
+<wsdl:part element="mdmport:getAllProductsInCategoryResponse" name="parameters"></wsdl:part>
+</wsdl:message>
+
+<wsdl:message name="GetProductAdminSysKeyByProductIdRequest">
+<wsdl:part element="mdmport:getProductAdminSysKeyByProductId" name="parameters"></wsdl:part>
+</wsdl:message>
+<wsdl:message name="GetProductAdminSysKeyByProductIdResponse">
+<wsdl:part element="mdmport:getProductAdminSysKeyByProductIdResponse" name="parameters"></wsdl:part>
+</wsdl:message>
+
+<wsdl:message name="GetProductAdminSysKeyByIdPKRequest">
+<wsdl:part element="mdmport:getProductAdminSysKeyByIdPK" name="parameters"></wsdl:part>
+</wsdl:message>
+<wsdl:message name="GetProductAdminSysKeyByIdPKResponse">
+<wsdl:part element="mdmport:getProductAdminSysKeyByIdPKResponse" name="parameters"></wsdl:part>
+</wsdl:message>
+
+<wsdl:message name="GetProductByAdminSysKeyRequest">
+<wsdl:part element="mdmport:getProductByAdminSysKey" name="parameters"></wsdl:part>
+</wsdl:message>
+<wsdl:message name="GetProductByAdminSysKeyResponse">
+<wsdl:part element="mdmport:getProductByAdminSysKeyResponse" name="parameters"></wsdl:part>
+</wsdl:message>
+
+<wsdl:message name="GetProductAdminSysKeyByPartsRequest">
+<wsdl:part element="mdmport:getProductAdminSysKeyByParts" name="parameters"></wsdl:part>
+</wsdl:message>
+<wsdl:message name="GetProductAdminSysKeyByPartsResponse">
+<wsdl:part element="mdmport:getProductAdminSysKeyByPartsResponse" name="parameters"></wsdl:part>
+</wsdl:message>
+
+<wsdl:message name="AddFinancialProductRequest">
+<wsdl:part element="mdmport:addFinancialProduct" name="parameters"></wsdl:part>
+</wsdl:message>
+<wsdl:message name="AddFinancialProductResponse">
+<wsdl:part element="mdmport:addFinancialProductResponse" name="parameters"></wsdl:part>
+</wsdl:message>
+
+<wsdl:message name="UpdateFinancialProductRequest">
+<wsdl:part element="mdmport:updateFinancialProduct" name="parameters"></wsdl:part>
+</wsdl:message>
+<wsdl:message name="UpdateFinancialProductResponse">
+<wsdl:part element="mdmport:updateFinancialProductResponse" name="parameters"></wsdl:part>
+</wsdl:message>
+
+<wsdl:message name="GetFinancialProductRequest">
+<wsdl:part element="mdmport:getFinancialProduct" name="parameters"></wsdl:part>
+</wsdl:message>
+<wsdl:message name="GetFinancialProductResponse">
+<wsdl:part element="mdmport:getFinancialProductResponse" name="parameters"></wsdl:part>
+</wsdl:message>
+
+<wsdl:message name="AddServiceProductRequest">
+<wsdl:part element="mdmport:addServiceProduct" name="parameters"></wsdl:part>
+</wsdl:message>
+<wsdl:message name="AddServiceProductResponse">
+<wsdl:part element="mdmport:addServiceProductResponse" name="parameters"></wsdl:part>
+</wsdl:message>
+
+<wsdl:message name="UpdateServiceProductRequest">
+<wsdl:part element="mdmport:updateServiceProduct" name="parameters"></wsdl:part>
+</wsdl:message>
+<wsdl:message name="UpdateServiceProductResponse">
+<wsdl:part element="mdmport:updateServiceProductResponse" name="parameters"></wsdl:part>
+</wsdl:message>
+
+<wsdl:message name="GetServiceProductRequest">
+<wsdl:part element="mdmport:getServiceProduct" name="parameters"></wsdl:part>
+</wsdl:message>
+<wsdl:message name="GetServiceProductResponse">
+<wsdl:part element="mdmport:getServiceProductResponse" name="parameters"></wsdl:part>
+</wsdl:message>
+
+<wsdl:message name="AddInsuranceProductRequest">
+<wsdl:part element="mdmport:addInsuranceProduct" name="parameters"></wsdl:part>
+</wsdl:message>
+<wsdl:message name="AddInsuranceProductResponse">
+<wsdl:part element="mdmport:addInsuranceProductResponse" name="parameters"></wsdl:part>
+</wsdl:message>
+
+<wsdl:message name="UpdateInsuranceProductRequest">
+<wsdl:part element="mdmport:updateInsuranceProduct" name="parameters"></wsdl:part>
+</wsdl:message>
+<wsdl:message name="UpdateInsuranceProductResponse">
+<wsdl:part element="mdmport:updateInsuranceProductResponse" name="parameters"></wsdl:part>
+</wsdl:message>
+
+<wsdl:message name="GetInsuranceProductRequest">
+<wsdl:part element="mdmport:getInsuranceProduct" name="parameters"></wsdl:part>
+</wsdl:message>
+<wsdl:message name="GetInsuranceProductResponse">
+<wsdl:part element="mdmport:getInsuranceProductResponse" name="parameters"></wsdl:part>
+</wsdl:message>
+
+<wsdl:message name="SearchProductInstanceRequest">
+<wsdl:part element="mdmport:searchProductInstance" name="parameters"></wsdl:part>
+</wsdl:message>
+<wsdl:message name="SearchProductInstanceResponse">
+<wsdl:part element="mdmport:searchProductInstanceResponse" name="parameters"></wsdl:part>
+</wsdl:message>
+
+<wsdl:message name="RecategorizeProductRequest">
+<wsdl:part element="mdmport:recategorizeProduct" name="parameters"></wsdl:part>
+</wsdl:message>
+<wsdl:message name="RecategorizeProductResponse">
+<wsdl:part element="mdmport:recategorizeProductResponse" name="parameters"></wsdl:part>
+</wsdl:message>
+
+<wsdl:message name="GetAllEntitySpecUsesByProductRequest">
+<wsdl:part element="mdmport:getAllEntitySpecUsesByProduct" name="parameters"></wsdl:part>
+</wsdl:message>
+<wsdl:message name="GetAllEntitySpecUsesByProductResponse">
+<wsdl:part element="mdmport:getAllEntitySpecUsesByProductResponse" name="parameters"></wsdl:part>
+</wsdl:message>
+
+<wsdl:message name="CollapseMultipleProductsRequest">
+<wsdl:part element="mdmport:collapseMultipleProducts" name="parameters"></wsdl:part>
+</wsdl:message>
+<wsdl:message name="CollapseMultipleProductsResponse">
+<wsdl:part element="mdmport:collapseMultipleProductsResponse" name="parameters"></wsdl:part>
+</wsdl:message>
+
+<wsdl:message name="ComparativePreviewCollapseMultipleProductsRequest">
+<wsdl:part element="mdmport:comparativePreviewCollapseMultipleProducts" name="parameters"></wsdl:part>
+</wsdl:message>
+<wsdl:message name="ComparativePreviewCollapseMultipleProductsResponse">
+<wsdl:part element="mdmport:comparativePreviewCollapseMultipleProductsResponse" name="parameters"></wsdl:part>
+</wsdl:message>
+
+<wsdl:message name="undoCollapseMultipleProductsRequest">
+<wsdl:part element="mdmport:undoCollapseMultipleProducts" name="parameters"></wsdl:part>
+</wsdl:message>
+
+<wsdl:message name="undoCollapseMultipleProductsResponse">
+<wsdl:part element="mdmport:undoCollapseMultipleProductsResponse" name="parameters"></wsdl:part>
+</wsdl:message>
+
+<wsdl:message name="previewUndoCollapseMultipleProductsRequest">
+<wsdl:part element="mdmport:previewUndoCollapseMultipleProducts" name="parameters"></wsdl:part>
+</wsdl:message>
+
+<wsdl:message name="previewUndoCollapseMultipleProductsResponse">
+<wsdl:part element="mdmport:previewUndoCollapseMultipleProductsResponse" name="parameters"></wsdl:part>
+</wsdl:message>
+
+
+<wsdl:message name="AddProductSuspectsRequest">
+<wsdl:part element="mdmport:addProductSuspects" name="parameters"></wsdl:part>
+</wsdl:message>
+<wsdl:message name="AddProductSuspectsResponse">
+<wsdl:part element="mdmport:addProductSuspectsResponse" name="parameters"></wsdl:part>
+</wsdl:message>
+
+<wsdl:message name="UpdateProductSuspectsRequest">
+<wsdl:part element="mdmport:updateProductSuspects" name="parameters"></wsdl:part>
+</wsdl:message>
+<wsdl:message name="UpdateProductSuspectsResponse">
+<wsdl:part element="mdmport:updateProductSuspectsResponse" name="parameters"></wsdl:part>
+</wsdl:message>
+
+<wsdl:message name="DeleteAllProductSuspectsRequest">
+<wsdl:part element="mdmport:deleteAllProductSuspects" name="parameters"></wsdl:part>
+</wsdl:message>
+<wsdl:message name="DeleteAllProductSuspectsResponse">
+<wsdl:part element="mdmport:deleteAllProductSuspectsResponse" name="parameters"></wsdl:part>
+</wsdl:message>
+
+<wsdl:message name="RefreshProductSuspectsRequest">
+<wsdl:part element="mdmport:refreshProductSuspects" name="parameters"></wsdl:part>
+</wsdl:message>
+<wsdl:message name="RefreshProductSuspectsResponse">
+<wsdl:part element="mdmport:refreshProductSuspectsResponse" name="parameters"></wsdl:part>
+</wsdl:message>
+
+<wsdl:message name="GetLinkedProductsRequest">
+<wsdl:part element="mdmport:getLinkedProducts" name="parameters"></wsdl:part>
+</wsdl:message>
+<wsdl:message name="GetLinkedProductsResponse">
+<wsdl:part element="mdmport:getLinkedProductsResponse" name="parameters"></wsdl:part>
+</wsdl:message>
+
+<wsdl:message name="GetAllProductSuspectsRequest">
+<wsdl:part element="mdmport:getAllProductSuspects" name="parameters"></wsdl:part>
+</wsdl:message>
+<wsdl:message name="GetAllProductSuspectsResponse">
+<wsdl:part element="mdmport:getAllProductSuspectsResponse" name="parameters"></wsdl:part>
+</wsdl:message>
+
+<wsdl:message name="GetProductSuspectRequest">
+<wsdl:part element="mdmport:getProductSuspect" name="parameters"></wsdl:part>
+</wsdl:message>
+<wsdl:message name="GetProductSuspectResponse">
+<wsdl:part element="mdmport:getProductSuspectResponse" name="parameters"></wsdl:part>
+</wsdl:message>
+
+<wsdl:message name="DeleteProductSuspectRequest">
+<wsdl:part element="mdmport:deleteProductSuspect" name="parameters"></wsdl:part>
+</wsdl:message>
+<wsdl:message name="DeleteProductSuspectResponse">
+<wsdl:part element="mdmport:deleteProductSuspectResponse" name="parameters"></wsdl:part>
+</wsdl:message>
+
+<wsdl:message name="SearchProductSuspectRequest">
+<wsdl:part element="mdmport:searchProductSuspect" name="parameters"></wsdl:part>
+</wsdl:message>
+<wsdl:message name="SearchProductSuspectResponse">
+<wsdl:part element="mdmport:searchProductSuspectResponse" name="parameters"></wsdl:part>
+</wsdl:message>
+
+<wsdl:message name="SplitProductRequest">
+<wsdl:part element="mdmport:splitProduct" name="parameters"></wsdl:part>
+</wsdl:message>
+<wsdl:message name="SplitProductResponse">
+<wsdl:part element="mdmport:splitProductResponse" name="parameters"></wsdl:part>
+</wsdl:message>
+
+<wsdl:portType name="ProductPortType">
+<wsdl:operation name="addGoodsProduct">
+<wsdl:documentation>This transaction adds a goods product.
+</wsdl:documentation>
+<wsdl:input message="mdmport:AddGoodsProductRequest"></wsdl:input>
+<wsdl:output message="mdmport:AddGoodsProductResponse"></wsdl:output>
+<wsdl:fault message="mdmport:ProcessingFault" name="ProcessingFault"></wsdl:fault>
+</wsdl:operation>
+
+<wsdl:operation name="updateGoodsProduct">
+<wsdl:documentation>This transaction updates the details of an existing goods product.
+</wsdl:documentation>
+<wsdl:input message="mdmport:UpdateGoodsProductRequest"></wsdl:input>
+<wsdl:output message="mdmport:UpdateGoodsProductResponse"></wsdl:output>
+<wsdl:fault message="mdmport:ProcessingFault" name="ProcessingFault"></wsdl:fault>
+</wsdl:operation>
+
+<wsdl:operation name="getGoodsProduct">
+<wsdl:documentation>This inquiry transaction returns the details of an existing goods
+product.
+Input parameters :
+<tcrmParam name="GoodsProductId"></tcrmParam>
+<tcrmParam name="aDWLControl"></tcrmParam>
+</wsdl:documentation>
+<wsdl:input message="mdmport:GetGoodsProductRequest"></wsdl:input>
+<wsdl:output message="mdmport:GetGoodsProductResponse"></wsdl:output>
+<wsdl:fault message="mdmport:ProcessingFault" name="ProcessingFault"></wsdl:fault>
+</wsdl:operation>
+
+<wsdl:operation name="getProductInstanceRelationship">
+<wsdl:documentation>This inquiry transaction returns the product relationship details
+for a specific relationship held between two products.
+Input parameters :
+<tcrmParam name="ProductRelationshipId"></tcrmParam>
+<tcrmParam name="aDWLControl"></tcrmParam>
+</wsdl:documentation>
+<wsdl:input message="mdmport:GetProductInstanceRelationshipRequest"></wsdl:input>
+<wsdl:output message="mdmport:GetProductInstanceRelationshipResponse"></wsdl:output>
+<wsdl:fault message="mdmport:ProcessingFault" name="ProcessingFault"></wsdl:fault>
+</wsdl:operation>
+
+<wsdl:operation name="getAllProductInstanceRelationships">
+<wsdl:documentation>This inquiry transaction retrieves the details for all product
+relationships for a given product and, optionally for each product
+relationship, its term condition details.
+Input parameters :
+<tcrmParam name="productId"></tcrmParam>
+<tcrmParam name="aDWLControl"></tcrmParam>
+<tcrmParam name="inquiryLevel"></tcrmParam>
+<tcrmParam name="filter"></tcrmParam>
+<tcrmParam name="productRelationshipType"></tcrmParam>
+</wsdl:documentation>
+<wsdl:input message="mdmport:GetAllProductInstanceRelationshipsRequest"></wsdl:input>
+<wsdl:output message="mdmport:GetAllProductInstanceRelationshipsResponse"></wsdl:output>
+<wsdl:fault message="mdmport:ProcessingFault" name="ProcessingFault"></wsdl:fault>
+</wsdl:operation>
+
+<wsdl:operation name="addProductAdminSysKey">
+<wsdl:documentation>This transaction adds an external administrative system key for
+a given product.When a new product is added to the system,  assigns
+a unique number, known as a native key. This transaction provides
+the facility to associate the external administration system key with
+the native key assigned by .
+</wsdl:documentation>
+<wsdl:input message="mdmport:AddProductAdminSysKeyRequest"></wsdl:input>
+<wsdl:output message="mdmport:AddProductAdminSysKeyResponse"></wsdl:output>
+<wsdl:fault message="mdmport:ProcessingFault" name="ProcessingFault"></wsdl:fault>
+</wsdl:operation>
+
+<wsdl:operation name="updateProductAdminSysKey">
+<wsdl:documentation>This transaction updates the details of an existing external administrative
+system key for a given product.
+</wsdl:documentation>
+<wsdl:input message="mdmport:UpdateProductAdminSysKeyRequest"></wsdl:input>
+<wsdl:output message="mdmport:UpdateProductAdminSysKeyResponse"></wsdl:output>
+<wsdl:fault message="mdmport:ProcessingFault" name="ProcessingFault"></wsdl:fault>
+</wsdl:operation>
+
+<wsdl:operation name="getProductAdminSysKey">
+<wsdl:documentation>This inquiry transaction retrieves the external administrative
+system key details for a given administrative system type and concatenated
+administrative system key.
+Input parameters :
+<tcrmParam name="productAdminSystemType"></tcrmParam>
+<tcrmParam name="aDWLControl"></tcrmParam>
+<tcrmParam name="productAdminSysKeyConcatenated"></tcrmParam>
+<tcrmParam name="productEquivKeyOne"></tcrmParam>
+<tcrmParam name="productEquivKeyTwo"></tcrmParam>
+<tcrmParam name="productEquivKeyThree"></tcrmParam>
+</wsdl:documentation>
+<wsdl:input message="mdmport:GetProductAdminSysKeyRequest"></wsdl:input>
+<wsdl:output message="mdmport:GetProductAdminSysKeyResponse"></wsdl:output>
+<wsdl:fault message="mdmport:ProcessingFault" name="ProcessingFault"></wsdl:fault>
+</wsdl:operation>
+
+<wsdl:operation name="getAllProductAdminSysKeys">
+<wsdl:documentation>This inquiry transaction retrieves the details for all external
+administrative system keys for a given ProductId.
+Input parameters :
+<tcrmParam name="productId"></tcrmParam>
+<tcrmParam name="aDWLControl"></tcrmParam>
+</wsdl:documentation>
+<wsdl:input message="mdmport:GetAllProductAdminSysKeysRequest"></wsdl:input>
+<wsdl:output message="mdmport:GetAllProductAdminSysKeysResponse"></wsdl:output>
+<wsdl:fault message="mdmport:ProcessingFault" name="ProcessingFault"></wsdl:fault>
+</wsdl:operation>
+
+<wsdl:operation name="addProductInstance">
+<wsdl:documentation>This transaction adds a product instance of a given product type.
+</wsdl:documentation>
+<wsdl:input message="mdmport:AddProductInstanceRequest"></wsdl:input>
+<wsdl:output message="mdmport:AddProductInstanceResponse"></wsdl:output>
+<wsdl:fault message="mdmport:ProcessingFault" name="ProcessingFault"></wsdl:fault>
+</wsdl:operation>
+
+<wsdl:operation name="updateProductInstance">
+<wsdl:documentation>This transaction updates the details of an existing product instance.
+</wsdl:documentation>
+<wsdl:input message="mdmport:UpdateProductInstanceRequest"></wsdl:input>
+<wsdl:output message="mdmport:UpdateProductInstanceResponse"></wsdl:output>
+<wsdl:fault message="mdmport:ProcessingFault" name="ProcessingFault"></wsdl:fault>
+</wsdl:operation>
+
+<wsdl:operation name="getProductInstance">
+<wsdl:documentation>This inquiry transaction returns the details of an existing product
+instance.
+</wsdl:documentation>
+<wsdl:input message="mdmport:GetProductInstanceRequest"></wsdl:input>
+<wsdl:output message="mdmport:GetProductInstanceResponse"></wsdl:output>
+<wsdl:fault message="mdmport:ProcessingFault" name="ProcessingFault"></wsdl:fault>
+</wsdl:operation>
+
+<wsdl:operation name="addProductInstanceRelationship">
+<wsdl:documentation>This transaction adds a new product relationship between two products.
+</wsdl:documentation>
+<wsdl:input message="mdmport:AddProductInstanceRelationshipRequest"></wsdl:input>
+<wsdl:output message="mdmport:AddProductInstanceRelationshipResponse"></wsdl:output>
+<wsdl:fault message="mdmport:ProcessingFault" name="ProcessingFault"></wsdl:fault>
+</wsdl:operation>
+
+<wsdl:operation name="updateProductInstanceRelationship">
+<wsdl:documentation>This transaction updates the details of an existing product relationship.
+</wsdl:documentation>
+<wsdl:input message="mdmport:UpdateProductInstanceRelationshipRequest"></wsdl:input>
+<wsdl:output message="mdmport:UpdateProductInstanceRelationshipResponse"></wsdl:output>
+<wsdl:fault message="mdmport:ProcessingFault" name="ProcessingFault"></wsdl:fault>
+</wsdl:operation>
+
+<wsdl:operation name="addProductIdentifier">
+<wsdl:documentation>This transaction adds a new identifier for a given product.
+</wsdl:documentation>
+<wsdl:input message="mdmport:AddProductIdentifierRequest"></wsdl:input>
+<wsdl:output message="mdmport:AddProductIdentifierResponse"></wsdl:output>
+<wsdl:fault message="mdmport:ProcessingFault" name="ProcessingFault"></wsdl:fault>
+</wsdl:operation>
+
+<wsdl:operation name="updateProductIdentifier">
+<wsdl:documentation>This transaction updates the details of an existing identifier
+for a given product.
+</wsdl:documentation>
+<wsdl:input message="mdmport:UpdateProductIdentifierRequest"></wsdl:input>
+<wsdl:output message="mdmport:UpdateProductIdentifierResponse"></wsdl:output>
+<wsdl:fault message="mdmport:ProcessingFault" name="ProcessingFault"></wsdl:fault>
+</wsdl:operation>
+
+<wsdl:operation name="getProductIdentifier">
+<wsdl:documentation>This inquiry transaction returns the identifier details for a
+given product identifier.
+Input parameters :
+<tcrmParam name="productId"></tcrmParam>
+<tcrmParam name="ProductIdentifierTyCd"></tcrmParam>
+<tcrmParam name="aDWLControl"></tcrmParam>
+</wsdl:documentation>
+<wsdl:input message="mdmport:GetProductIdentifierRequest"></wsdl:input>
+<wsdl:output message="mdmport:GetProductIdentifierResponse"></wsdl:output>
+<wsdl:fault message="mdmport:ProcessingFault" name="ProcessingFault"></wsdl:fault>
+</wsdl:operation>
+
+<wsdl:operation name="getAllProductIdentifiers">
+<wsdl:documentation>This inquiry transaction retrieves the details for all identifiers
+for a given product.
+Input parameters :
+<tcrmParam name="productId"></tcrmParam>
+<tcrmParam name="aDWLControl"></tcrmParam>
+</wsdl:documentation>
+<wsdl:input message="mdmport:GetAllProductIdentifiersRequest"></wsdl:input>
+<wsdl:output message="mdmport:GetAllProductIdentifiersResponse"></wsdl:output>
+<wsdl:fault message="mdmport:ProcessingFault" name="ProcessingFault"></wsdl:fault>
+</wsdl:operation>
+
+<wsdl:operation name="categorizeProduct">
+<wsdl:documentation>This transaction creates associations between one or more products
+and one or more categories.
+</wsdl:documentation>
+<wsdl:input message="mdmport:CategorizeProductRequest"></wsdl:input>
+<wsdl:output message="mdmport:CategorizeProductResponse"></wsdl:output>
+<wsdl:fault message="mdmport:ProcessingFault" name="ProcessingFault"></wsdl:fault>
+</wsdl:operation>
+
+<wsdl:operation name="updateProductCategoryAssociation">
+<wsdl:documentation>This transaction updates the details of an existing association
+between a given product and category.
+</wsdl:documentation>
+<wsdl:input message="mdmport:UpdateProductCategoryAssociationRequest"></wsdl:input>
+<wsdl:output message="mdmport:UpdateProductCategoryAssociationResponse"></wsdl:output>
+<wsdl:fault message="mdmport:ProcessingFault" name="ProcessingFault"></wsdl:fault>
+</wsdl:operation>
+
+<wsdl:operation name="getProductCategoryAssociation">
+<wsdl:documentation>This inquiry transaction retrieves the details of a given product
+category association.
+Input parameters :
+<tcrmParam name="ProductCategoryAssociationId"></tcrmParam>
+<tcrmParam name="control"></tcrmParam>
+</wsdl:documentation>
+<wsdl:input message="mdmport:GetProductCategoryAssociationRequest"></wsdl:input>
+<wsdl:output message="mdmport:GetProductCategoryAssociationResponse"></wsdl:output>
+<wsdl:fault message="mdmport:ProcessingFault" name="ProcessingFault"></wsdl:fault>
+</wsdl:operation>
+
+<wsdl:operation name="getAllProductCategoryAssociations">
+<wsdl:documentation>This inquiry transaction retrieves the details for all product
+category associations based on a given product.
+Input parameters :
+<tcrmParam name="productId"></tcrmParam>
+<tcrmParam name="hierarchyId"></tcrmParam>
+<tcrmParam name="filter"></tcrmParam>
+<tcrmParam name="control"></tcrmParam>
+</wsdl:documentation>
+<wsdl:input message="mdmport:GetAllProductCategoryAssociationsRequest"></wsdl:input>
+<wsdl:output message="mdmport:GetAllProductCategoryAssociationsResponse"></wsdl:output>
+<wsdl:fault message="mdmport:ProcessingFault" name="ProcessingFault"></wsdl:fault>
+</wsdl:operation>
+
+<wsdl:operation name="getAllProductsInCategory">
+<wsdl:documentation>This inquiry transaction retrieves a list of all products in a
+given category.
+Input parameters :
+<tcrmParam name="categoryId"></tcrmParam>
+<tcrmParam name="control"></tcrmParam>
+</wsdl:documentation>
+<wsdl:input message="mdmport:GetAllProductsInCategoryRequest"></wsdl:input>
+<wsdl:output message="mdmport:GetAllProductsInCategoryResponse"></wsdl:output>
+<wsdl:fault message="mdmport:ProcessingFault" name="ProcessingFault"></wsdl:fault>
+</wsdl:operation>
+
+<wsdl:operation name="getProductAdminSysKeyByProductId">
+<wsdl:documentation>This inquiry transaction retrieves the external administrative
+system key details for a given product and administrative system type.
+Input parameters :
+<tcrmParam name="productAdminSystemType"></tcrmParam>
+<tcrmParam name="productId"></tcrmParam>
+<tcrmParam name="aDWLControl"></tcrmParam>
+</wsdl:documentation>
+<wsdl:input message="mdmport:GetProductAdminSysKeyByProductIdRequest"></wsdl:input>
+<wsdl:output message="mdmport:GetProductAdminSysKeyByProductIdResponse"></wsdl:output>
+<wsdl:fault message="mdmport:ProcessingFault" name="ProcessingFault"></wsdl:fault>
+</wsdl:operation>
+
+<wsdl:operation name="getProductAdminSysKeyByIdPK">
+<wsdl:documentation>This inquiry transaction retrieves the external administrative
+system key details for a given product administrative key identifier
+Input parameters :
+<tcrmParam name="productAdminSysKeyIdPK"></tcrmParam>
+<tcrmParam name="aDWLControl"></tcrmParam>
+</wsdl:documentation>
+<wsdl:input message="mdmport:GetProductAdminSysKeyByIdPKRequest"></wsdl:input>
+<wsdl:output message="mdmport:GetProductAdminSysKeyByIdPKResponse"></wsdl:output>
+<wsdl:fault message="mdmport:ProcessingFault" name="ProcessingFault"></wsdl:fault>
+</wsdl:operation>
+
+<wsdl:operation name="getProductByAdminSysKey">
+<wsdl:documentation>This inquiry transaction returns the details of an existing product
+instance based on a given product administration system key.
+</wsdl:documentation>
+<wsdl:input message="mdmport:GetProductByAdminSysKeyRequest"></wsdl:input>
+<wsdl:output message="mdmport:GetProductByAdminSysKeyResponse"></wsdl:output>
+<wsdl:fault message="mdmport:ProcessingFault" name="ProcessingFault"></wsdl:fault>
+</wsdl:operation>
+
+<wsdl:operation name="getProductAdminSysKeyByParts">
+<wsdl:documentation>This inquiry transaction retrieves the external administrative
+system key details for a given administrative system type and one
+or more partial keys.
+Input parameters :
+<tcrmParam name="productAdminSystemType"></tcrmParam>
+<tcrmParam name="productAdminSysKeyPartOne"></tcrmParam>
+<tcrmParam name="productAdminSysKeyPartTwo"></tcrmParam>
+<tcrmParam name="productAdminSysKeyPartThree"></tcrmParam>
+<tcrmParam name="productAdminSysKeyPartFour"></tcrmParam>
+<tcrmParam name="productAdminSysKeyPartFive"></tcrmParam>
+<tcrmParam name="theControl"></tcrmParam>
+</wsdl:documentation>
+<wsdl:input message="mdmport:GetProductAdminSysKeyByPartsRequest"></wsdl:input>
+<wsdl:output message="mdmport:GetProductAdminSysKeyByPartsResponse"></wsdl:output>
+<wsdl:fault message="mdmport:ProcessingFault" name="ProcessingFault"></wsdl:fault>
+</wsdl:operation>
+
+<wsdl:operation name="addFinancialProduct">
+<wsdl:documentation>This transaction adds a financial product.
+</wsdl:documentation>
+<wsdl:input message="mdmport:AddFinancialProductRequest"></wsdl:input>
+<wsdl:output message="mdmport:AddFinancialProductResponse"></wsdl:output>
+<wsdl:fault message="mdmport:ProcessingFault" name="ProcessingFault"></wsdl:fault>
+</wsdl:operation>
+
+<wsdl:operation name="updateFinancialProduct">
+<wsdl:documentation>This transaction updates the details of an existing financial
+product.
+</wsdl:documentation>
+<wsdl:input message="mdmport:UpdateFinancialProductRequest"></wsdl:input>
+<wsdl:output message="mdmport:UpdateFinancialProductResponse"></wsdl:output>
+<wsdl:fault message="mdmport:ProcessingFault" name="ProcessingFault"></wsdl:fault>
+</wsdl:operation>
+
+<wsdl:operation name="getFinancialProduct">
+<wsdl:documentation>This inquiry transaction returns the details of an existing financial
+product.
+Input parameters :
+<tcrmParam name="ProductId"></tcrmParam>
+<tcrmParam name="aDWLControl"></tcrmParam>
+</wsdl:documentation>
+<wsdl:input message="mdmport:GetFinancialProductRequest"></wsdl:input>
+<wsdl:output message="mdmport:GetFinancialProductResponse"></wsdl:output>
+<wsdl:fault message="mdmport:ProcessingFault" name="ProcessingFault"></wsdl:fault>
+</wsdl:operation>
+
+<wsdl:operation name="addServiceProduct">
+<wsdl:documentation>This transaction adds a service product.
+</wsdl:documentation>
+<wsdl:input message="mdmport:AddServiceProductRequest"></wsdl:input>
+<wsdl:output message="mdmport:AddServiceProductResponse"></wsdl:output>
+<wsdl:fault message="mdmport:ProcessingFault" name="ProcessingFault"></wsdl:fault>
+</wsdl:operation>
+
+<wsdl:operation name="updateServiceProduct">
+<wsdl:documentation>This transaction updates the details of an existing service product.
+</wsdl:documentation>
+<wsdl:input message="mdmport:UpdateServiceProductRequest"></wsdl:input>
+<wsdl:output message="mdmport:UpdateServiceProductResponse"></wsdl:output>
+<wsdl:fault message="mdmport:ProcessingFault" name="ProcessingFault"></wsdl:fault>
+</wsdl:operation>
+
+<wsdl:operation name="getServiceProduct">
+<wsdl:documentation>This inquiry transaction returns the details of an existing service
+product.
+Input parameters :
+<tcrmParam name="ProductId"></tcrmParam>
+<tcrmParam name="aDWLControl"></tcrmParam>
+</wsdl:documentation>
+<wsdl:input message="mdmport:GetServiceProductRequest"></wsdl:input>
+<wsdl:output message="mdmport:GetServiceProductResponse"></wsdl:output>
+<wsdl:fault message="mdmport:ProcessingFault" name="ProcessingFault"></wsdl:fault>
+</wsdl:operation>
+
+<wsdl:operation name="addInsuranceProduct">
+<wsdl:documentation>This transaction adds an insurance product.
+</wsdl:documentation>
+<wsdl:input message="mdmport:AddInsuranceProductRequest"></wsdl:input>
+<wsdl:output message="mdmport:AddInsuranceProductResponse"></wsdl:output>
+<wsdl:fault message="mdmport:ProcessingFault" name="ProcessingFault"></wsdl:fault>
+</wsdl:operation>
+
+<wsdl:operation name="updateInsuranceProduct">
+<wsdl:documentation>This transaction updates the details of an existing insurance
+product.
+</wsdl:documentation>
+<wsdl:input message="mdmport:UpdateInsuranceProductRequest"></wsdl:input>
+<wsdl:output message="mdmport:UpdateInsuranceProductResponse"></wsdl:output>
+<wsdl:fault message="mdmport:ProcessingFault" name="ProcessingFault"></wsdl:fault>
+</wsdl:operation>
+
+<wsdl:operation name="getInsuranceProduct">
+<wsdl:documentation>This inquiry transaction returns the details of an existing insurance
+product.
+Input parameters :
+<tcrmParam name="ProductId"></tcrmParam>
+<tcrmParam name="aDWLControl"></tcrmParam>
+</wsdl:documentation>
+<wsdl:input message="mdmport:GetInsuranceProductRequest"></wsdl:input>
+<wsdl:output message="mdmport:GetInsuranceProductResponse"></wsdl:output>
+<wsdl:fault message="mdmport:ProcessingFault" name="ProcessingFault"></wsdl:fault>
+</wsdl:operation>
+
+<wsdl:operation name="searchProductInstance">
+<wsdl:documentation>This transaction searches for one or more products that match
+a given set of criteria.
+</wsdl:documentation>
+<wsdl:input message="mdmport:SearchProductInstanceRequest"></wsdl:input>
+<wsdl:output message="mdmport:SearchProductInstanceResponse"></wsdl:output>
+<wsdl:fault message="mdmport:ProcessingFault" name="ProcessingFault"></wsdl:fault>
+</wsdl:operation>
+
+<wsdl:operation name="recategorizeProduct">
+<wsdl:documentation>This transaction recategorizes a product from one category to
+another within the same category hierarchy.
+</wsdl:documentation>
+<wsdl:input message="mdmport:RecategorizeProductRequest"></wsdl:input>
+<wsdl:output message="mdmport:RecategorizeProductResponse"></wsdl:output>
+<wsdl:fault message="mdmport:ProcessingFault" name="ProcessingFault"></wsdl:fault>
+</wsdl:operation>
+
+<wsdl:operation name="getAllEntitySpecUsesByProduct">
+<wsdl:documentation>This inquiry transaction retrieves the details for all entity spec uses that a given product can access
+through its product type, its associated categories, or both. An entity spec use defines an association between
+an entity instance (such as category and product type) and a specification
+(spec).
+</wsdl:documentation>
+<wsdl:input message="mdmport:GetAllEntitySpecUsesByProductRequest"></wsdl:input>
+<wsdl:output message="mdmport:GetAllEntitySpecUsesByProductResponse"></wsdl:output>
+<wsdl:fault message="mdmport:ProcessingFault" name="ProcessingFault"></wsdl:fault>
+</wsdl:operation>
+
+<wsdl:operation name="collapseMultipleProducts">
+<wsdl:documentation>This transaction collapses multiple products, making them inactive,
+and then creates a new product based on externalized rules of survivorship.
+</wsdl:documentation>
+<wsdl:input message="mdmport:CollapseMultipleProductsRequest"></wsdl:input>
+<wsdl:output message="mdmport:CollapseMultipleProductsResponse"></wsdl:output>
+<wsdl:fault message="mdmport:ProcessingFault" name="ProcessingFault"></wsdl:fault>
+</wsdl:operation>
+
+<wsdl:operation name="comparativePreviewCollapseMultipleProducts">
+<wsdl:documentation>This transaction can be used to preview the source product and
+multiple suspect products along with the new, surviving "collapsed"
+product.
+</wsdl:documentation>
+<wsdl:input message="mdmport:ComparativePreviewCollapseMultipleProductsRequest"></wsdl:input>
+<wsdl:output message="mdmport:ComparativePreviewCollapseMultipleProductsResponse"></wsdl:output>
+<wsdl:fault message="mdmport:ProcessingFault" name="ProcessingFault"></wsdl:fault>
+</wsdl:operation>
+
+<wsdl:operation name="undoCollapseMultipleProducts">
+<wsdl:documentation>This service will undo the previous collapse of multiple products. The original source products 
+remain inactivated and clones of the original source products (and their child business objects) are created. 
+New product definitions may be provided for the cloned source products. The consolidated (target) product is inactivated.
+</wsdl:documentation>
+<wsdl:input message="mdmport:undoCollapseMultipleProductsRequest"></wsdl:input>
+<wsdl:output message="mdmport:undoCollapseMultipleProductsResponse"></wsdl:output>
+<wsdl:fault message="mdmport:ProcessingFault" name="ProcessingFault"></wsdl:fault>
+</wsdl:operation>
+
+<wsdl:operation name="previewUndoCollapseMultipleProducts">
+<wsdl:documentation>This service is a non-persistent transaction that allows previewing of the original source and 
+target (consolidated) products.
+</wsdl:documentation>
+<wsdl:input message="mdmport:previewUndoCollapseMultipleProductsRequest"></wsdl:input>
+<wsdl:output message="mdmport:previewUndoCollapseMultipleProductsResponse"></wsdl:output>
+<wsdl:fault message="mdmport:ProcessingFault" name="ProcessingFault"></wsdl:fault>
+</wsdl:operation>
+
+<wsdl:operation name="addProductSuspects">
+<wsdl:documentation>This transaction adds one or more suspect records for a product.
+</wsdl:documentation>
+<wsdl:input message="mdmport:AddProductSuspectsRequest"></wsdl:input>
+<wsdl:output message="mdmport:AddProductSuspectsResponse"></wsdl:output>
+<wsdl:fault message="mdmport:ProcessingFault" name="ProcessingFault"></wsdl:fault>
+</wsdl:operation>
+
+<wsdl:operation name="updateProductSuspects">
+<wsdl:documentation>This transaction updates the details of one or more existing product
+suspect records.
+</wsdl:documentation>
+<wsdl:input message="mdmport:UpdateProductSuspectsRequest"></wsdl:input>
+<wsdl:output message="mdmport:UpdateProductSuspectsResponse"></wsdl:output>
+<wsdl:fault message="mdmport:ProcessingFault" name="ProcessingFault"></wsdl:fault>
+</wsdl:operation>
+
+<wsdl:operation name="deleteAllProductSuspects">
+<wsdl:documentation>This transaction enables you to delete all product suspect records,
+and all of its product match results, for a given product.
+</wsdl:documentation>
+<wsdl:input message="mdmport:DeleteAllProductSuspectsRequest"></wsdl:input>
+<wsdl:output message="mdmport:DeleteAllProductSuspectsResponse"></wsdl:output>
+<wsdl:fault message="mdmport:ProcessingFault" name="ProcessingFault"></wsdl:fault>
+</wsdl:operation>
+
+<wsdl:operation name="refreshProductSuspects">
+<wsdl:documentation>This transaction selectively replaces the suspect list for a given
+product.
+</wsdl:documentation>
+<wsdl:input message="mdmport:RefreshProductSuspectsRequest"></wsdl:input>
+<wsdl:output message="mdmport:RefreshProductSuspectsResponse"></wsdl:output>
+<wsdl:fault message="mdmport:ProcessingFault" name="ProcessingFault"></wsdl:fault>
+</wsdl:operation>
+
+<wsdl:operation name="getLinkedProducts">
+<wsdl:documentation>This inquiry transaction returns all the recorded linked products
+associated with a given product.
+</wsdl:documentation>
+<wsdl:input message="mdmport:GetLinkedProductsRequest"></wsdl:input>
+<wsdl:output message="mdmport:GetLinkedProductsResponse"></wsdl:output>
+<wsdl:fault message="mdmport:ProcessingFault" name="ProcessingFault"></wsdl:fault>
+</wsdl:operation>
+
+<wsdl:operation name="getAllProductSuspects">
+<wsdl:documentation>This transaction retrieves the details of all suspect records
+for a given product.
+</wsdl:documentation>
+<wsdl:input message="mdmport:GetAllProductSuspectsRequest"></wsdl:input>
+<wsdl:output message="mdmport:GetAllProductSuspectsResponse"></wsdl:output>
+<wsdl:fault message="mdmport:ProcessingFault" name="ProcessingFault"></wsdl:fault>
+</wsdl:operation>
+
+<wsdl:operation name="getProductSuspect">
+<wsdl:documentation>This transaction retrieves the details for a product suspect record.
+</wsdl:documentation>
+<wsdl:input message="mdmport:GetProductSuspectRequest"></wsdl:input>
+<wsdl:output message="mdmport:GetProductSuspectResponse"></wsdl:output>
+<wsdl:fault message="mdmport:ProcessingFault" name="ProcessingFault"></wsdl:fault>
+</wsdl:operation>
+
+<wsdl:operation name="deleteProductSuspect">
+<wsdl:documentation>This transaction enables you to delete a product suspect record
+and all of its product match results.
+</wsdl:documentation>
+<wsdl:input message="mdmport:DeleteProductSuspectRequest"></wsdl:input>
+<wsdl:output message="mdmport:DeleteProductSuspectResponse"></wsdl:output>
+<wsdl:fault message="mdmport:ProcessingFault" name="ProcessingFault"></wsdl:fault>
+</wsdl:operation>
+
+<wsdl:operation name="searchProductSuspect">
+<wsdl:documentation>This transaction searches for one or more products and product
+suspects that match a given set of criteria.
+</wsdl:documentation>
+<wsdl:input message="mdmport:SearchProductSuspectRequest"></wsdl:input>
+<wsdl:output message="mdmport:SearchProductSuspectResponse"></wsdl:output>
+<wsdl:fault message="mdmport:ProcessingFault" name="ProcessingFault"></wsdl:fault>
+</wsdl:operation>
+
+<wsdl:operation name="splitProduct">
+<wsdl:documentation>This transaction replaces a single product with two new products.
+</wsdl:documentation>
+<wsdl:input message="mdmport:SplitProductRequest"></wsdl:input>
+<wsdl:output message="mdmport:SplitProductResponse"></wsdl:output>
+<wsdl:fault message="mdmport:ProcessingFault" name="ProcessingFault"></wsdl:fault>
+</wsdl:operation>
+
+</wsdl:portType>
+
+<wsdl:binding name="ProductHttpBinding" type="mdmport:ProductPortType">
+<soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"></soap:binding>
+<wsdl:operation name="addGoodsProduct">
+<soap:operation soapAction=""></soap:operation>
+<wsdl:input>
+<soap:body use="literal"></soap:body>
+</wsdl:input>
+<wsdl:output>
+<soap:body use="literal"></soap:body>
+</wsdl:output>
+<wsdl:fault name="ProcessingFault">
+<soap:fault name="ProcessingFault" use="literal"></soap:fault>
+</wsdl:fault>
+</wsdl:operation>
+<wsdl:operation name="updateGoodsProduct">
+<soap:operation soapAction=""></soap:operation>
+<wsdl:input>
+<soap:body use="literal"></soap:body>
+</wsdl:input>
+<wsdl:output>
+<soap:body use="literal"></soap:body>
+</wsdl:output>
+<wsdl:fault name="ProcessingFault">
+<soap:fault name="ProcessingFault" use="literal"></soap:fault>
+</wsdl:fault>
+</wsdl:operation>
+<wsdl:operation name="getGoodsProduct">
+<soap:operation soapAction=""></soap:operation>
+<wsdl:input>
+<soap:body use="literal"></soap:body>
+</wsdl:input>
+<wsdl:output>
+<soap:body use="literal"></soap:body>
+</wsdl:output>
+<wsdl:fault name="ProcessingFault">
+<soap:fault name="ProcessingFault" use="literal"></soap:fault>
+</wsdl:fault>
+</wsdl:operation>
+<wsdl:operation name="getProductInstanceRelationship">
+<soap:operation soapAction=""></soap:operation>
+<wsdl:input>
+<soap:body use="literal"></soap:body>
+</wsdl:input>
+<wsdl:output>
+<soap:body use="literal"></soap:body>
+</wsdl:output>
+<wsdl:fault name="ProcessingFault">
+<soap:fault name="ProcessingFault" use="literal"></soap:fault>
+</wsdl:fault>
+</wsdl:operation>
+<wsdl:operation name="getAllProductInstanceRelationships">
+<soap:operation soapAction=""></soap:operation>
+<wsdl:input>
+<soap:body use="literal"></soap:body>
+</wsdl:input>
+<wsdl:output>
+<soap:body use="literal"></soap:body>
+</wsdl:output>
+<wsdl:fault name="ProcessingFault">
+<soap:fault name="ProcessingFault" use="literal"></soap:fault>
+</wsdl:fault>
+</wsdl:operation>
+<wsdl:operation name="addProductAdminSysKey">
+<soap:operation soapAction=""></soap:operation>
+<wsdl:input>
+<soap:body use="literal"></soap:body>
+</wsdl:input>
+<wsdl:output>
+<soap:body use="literal"></soap:body>
+</wsdl:output>
+<wsdl:fault name="ProcessingFault">
+<soap:fault name="ProcessingFault" use="literal"></soap:fault>
+</wsdl:fault>
+</wsdl:operation>
+<wsdl:operation name="updateProductAdminSysKey">
+<soap:operation soapAction=""></soap:operation>
+<wsdl:input>
+<soap:body use="literal"></soap:body>
+</wsdl:input>
+<wsdl:output>
+<soap:body use="literal"></soap:body>
+</wsdl:output>
+<wsdl:fault name="ProcessingFault">
+<soap:fault name="ProcessingFault" use="literal"></soap:fault>
+</wsdl:fault>
+</wsdl:operation>
+<wsdl:operation name="getProductAdminSysKey">
+<soap:operation soapAction=""></soap:operation>
+<wsdl:input>
+<soap:body use="literal"></soap:body>
+</wsdl:input>
+<wsdl:output>
+<soap:body use="literal"></soap:body>
+</wsdl:output>
+<wsdl:fault name="ProcessingFault">
+<soap:fault name="ProcessingFault" use="literal"></soap:fault>
+</wsdl:fault>
+</wsdl:operation>
+<wsdl:operation name="getAllProductAdminSysKeys">
+<soap:operation soapAction=""></soap:operation>
+<wsdl:input>
+<soap:body use="literal"></soap:body>
+</wsdl:input>
+<wsdl:output>
+<soap:body use="literal"></soap:body>
+</wsdl:output>
+<wsdl:fault name="ProcessingFault">
+<soap:fault name="ProcessingFault" use="literal"></soap:fault>
+</wsdl:fault>
+</wsdl:operation>
+<wsdl:operation name="addProductInstance">
+<soap:operation soapAction=""></soap:operation>
+<wsdl:input>
+<soap:body use="literal"></soap:body>
+</wsdl:input>
+<wsdl:output>
+<soap:body use="literal"></soap:body>
+</wsdl:output>
+<wsdl:fault name="ProcessingFault">
+<soap:fault name="ProcessingFault" use="literal"></soap:fault>
+</wsdl:fault>
+</wsdl:operation>
+<wsdl:operation name="updateProductInstance">
+<soap:operation soapAction=""></soap:operation>
+<wsdl:input>
+<soap:body use="literal"></soap:body>
+</wsdl:input>
+<wsdl:output>
+<soap:body use="literal"></soap:body>
+</wsdl:output>
+<wsdl:fault name="ProcessingFault">
+<soap:fault name="ProcessingFault" use="literal"></soap:fault>
+</wsdl:fault>
+</wsdl:operation>
+<wsdl:operation name="getProductInstance">
+<soap:operation soapAction=""></soap:operation>
+<wsdl:input>
+<soap:body use="literal"></soap:body>
+</wsdl:input>
+<wsdl:output>
+<soap:body use="literal"></soap:body>
+</wsdl:output>
+<wsdl:fault name="ProcessingFault">
+<soap:fault name="ProcessingFault" use="literal"></soap:fault>
+</wsdl:fault>
+</wsdl:operation>
+<wsdl:operation name="addProductInstanceRelationship">
+<soap:operation soapAction=""></soap:operation>
+<wsdl:input>
+<soap:body use="literal"></soap:body>
+</wsdl:input>
+<wsdl:output>
+<soap:body use="literal"></soap:body>
+</wsdl:output>
+<wsdl:fault name="ProcessingFault">
+<soap:fault name="ProcessingFault" use="literal"></soap:fault>
+</wsdl:fault>
+</wsdl:operation>
+<wsdl:operation name="updateProductInstanceRelationship">
+<soap:operation soapAction=""></soap:operation>
+<wsdl:input>
+<soap:body use="literal"></soap:body>
+</wsdl:input>
+<wsdl:output>
+<soap:body use="literal"></soap:body>
+</wsdl:output>
+<wsdl:fault name="ProcessingFault">
+<soap:fault name="ProcessingFault" use="literal"></soap:fault>
+</wsdl:fault>
+</wsdl:operation>
+<wsdl:operation name="addProductIdentifier">
+<soap:operation soapAction=""></soap:operation>
+<wsdl:input>
+<soap:body use="literal"></soap:body>
+</wsdl:input>
+<wsdl:output>
+<soap:body use="literal"></soap:body>
+</wsdl:output>
+<wsdl:fault name="ProcessingFault">
+<soap:fault name="ProcessingFault" use="literal"></soap:fault>
+</wsdl:fault>
+</wsdl:operation>
+<wsdl:operation name="updateProductIdentifier">
+<soap:operation soapAction=""></soap:operation>
+<wsdl:input>
+<soap:body use="literal"></soap:body>
+</wsdl:input>
+<wsdl:output>
+<soap:body use="literal"></soap:body>
+</wsdl:output>
+<wsdl:fault name="ProcessingFault">
+<soap:fault name="ProcessingFault" use="literal"></soap:fault>
+</wsdl:fault>
+</wsdl:operation>
+<wsdl:operation name="getProductIdentifier">
+<soap:operation soapAction=""></soap:operation>
+<wsdl:input>
+<soap:body use="literal"></soap:body>
+</wsdl:input>
+<wsdl:output>
+<soap:body use="literal"></soap:body>
+</wsdl:output>
+<wsdl:fault name="ProcessingFault">
+<soap:fault name="ProcessingFault" use="literal"></soap:fault>
+</wsdl:fault>
+</wsdl:operation>
+<wsdl:operation name="getAllProductIdentifiers">
+<soap:operation soapAction=""></soap:operation>
+<wsdl:input>
+<soap:body use="literal"></soap:body>
+</wsdl:input>
+<wsdl:output>
+<soap:body use="literal"></soap:body>
+</wsdl:output>
+<wsdl:fault name="ProcessingFault">
+<soap:fault name="ProcessingFault" use="literal"></soap:fault>
+</wsdl:fault>
+</wsdl:operation>
+<wsdl:operation name="categorizeProduct">
+<soap:operation soapAction=""></soap:operation>
+<wsdl:input>
+<soap:body use="literal"></soap:body>
+</wsdl:input>
+<wsdl:output>
+<soap:body use="literal"></soap:body>
+</wsdl:output>
+<wsdl:fault name="ProcessingFault">
+<soap:fault name="ProcessingFault" use="literal"></soap:fault>
+</wsdl:fault>
+</wsdl:operation>
+<wsdl:operation name="updateProductCategoryAssociation">
+<soap:operation soapAction=""></soap:operation>
+<wsdl:input>
+<soap:body use="literal"></soap:body>
+</wsdl:input>
+<wsdl:output>
+<soap:body use="literal"></soap:body>
+</wsdl:output>
+<wsdl:fault name="ProcessingFault">
+<soap:fault name="ProcessingFault" use="literal"></soap:fault>
+</wsdl:fault>
+</wsdl:operation>
+<wsdl:operation name="getProductCategoryAssociation">
+<soap:operation soapAction=""></soap:operation>
+<wsdl:input>
+<soap:body use="literal"></soap:body>
+</wsdl:input>
+<wsdl:output>
+<soap:body use="literal"></soap:body>
+</wsdl:output>
+<wsdl:fault name="ProcessingFault">
+<soap:fault name="ProcessingFault" use="literal"></soap:fault>
+</wsdl:fault>
+</wsdl:operation>
+<wsdl:operation name="getAllProductCategoryAssociations">
+<soap:operation soapAction=""></soap:operation>
+<wsdl:input>
+<soap:body use="literal"></soap:body>
+</wsdl:input>
+<wsdl:output>
+<soap:body use="literal"></soap:body>
+</wsdl:output>
+<wsdl:fault name="ProcessingFault">
+<soap:fault name="ProcessingFault" use="literal"></soap:fault>
+</wsdl:fault>
+</wsdl:operation>
+<wsdl:operation name="getAllProductsInCategory">
+<soap:operation soapAction=""></soap:operation>
+<wsdl:input>
+<soap:body use="literal"></soap:body>
+</wsdl:input>
+<wsdl:output>
+<soap:body use="literal"></soap:body>
+</wsdl:output>
+<wsdl:fault name="ProcessingFault">
+<soap:fault name="ProcessingFault" use="literal"></soap:fault>
+</wsdl:fault>
+</wsdl:operation>
+<wsdl:operation name="getProductAdminSysKeyByProductId">
+<soap:operation soapAction=""></soap:operation>
+<wsdl:input>
+<soap:body use="literal"></soap:body>
+</wsdl:input>
+<wsdl:output>
+<soap:body use="literal"></soap:body>
+</wsdl:output>
+<wsdl:fault name="ProcessingFault">
+<soap:fault name="ProcessingFault" use="literal"></soap:fault>
+</wsdl:fault>
+</wsdl:operation>
+<wsdl:operation name="getProductAdminSysKeyByIdPK">
+<soap:operation soapAction=""></soap:operation>
+<wsdl:input>
+<soap:body use="literal"></soap:body>
+</wsdl:input>
+<wsdl:output>
+<soap:body use="literal"></soap:body>
+</wsdl:output>
+<wsdl:fault name="ProcessingFault">
+<soap:fault name="ProcessingFault" use="literal"></soap:fault>
+</wsdl:fault>
+</wsdl:operation>
+<wsdl:operation name="getProductByAdminSysKey">
+<soap:operation soapAction=""></soap:operation>
+<wsdl:input>
+<soap:body use="literal"></soap:body>
+</wsdl:input>
+<wsdl:output>
+<soap:body use="literal"></soap:body>
+</wsdl:output>
+<wsdl:fault name="ProcessingFault">
+<soap:fault name="ProcessingFault" use="literal"></soap:fault>
+</wsdl:fault>
+</wsdl:operation>
+<wsdl:operation name="getProductAdminSysKeyByParts">
+<soap:operation soapAction=""></soap:operation>
+<wsdl:input>
+<soap:body use="literal"></soap:body>
+</wsdl:input>
+<wsdl:output>
+<soap:body use="literal"></soap:body>
+</wsdl:output>
+<wsdl:fault name="ProcessingFault">
+<soap:fault name="ProcessingFault" use="literal"></soap:fault>
+</wsdl:fault>
+</wsdl:operation>
+<wsdl:operation name="addFinancialProduct">
+<soap:operation soapAction=""></soap:operation>
+<wsdl:input>
+<soap:body use="literal"></soap:body>
+</wsdl:input>
+<wsdl:output>
+<soap:body use="literal"></soap:body>
+</wsdl:output>
+<wsdl:fault name="ProcessingFault">
+<soap:fault name="ProcessingFault" use="literal"></soap:fault>
+</wsdl:fault>
+</wsdl:operation>
+<wsdl:operation name="updateFinancialProduct">
+<soap:operation soapAction=""></soap:operation>
+<wsdl:input>
+<soap:body use="literal"></soap:body>
+</wsdl:input>
+<wsdl:output>
+<soap:body use="literal"></soap:body>
+</wsdl:output>
+<wsdl:fault name="ProcessingFault">
+<soap:fault name="ProcessingFault" use="literal"></soap:fault>
+</wsdl:fault>
+</wsdl:operation>
+<wsdl:operation name="getFinancialProduct">
+<soap:operation soapAction=""></soap:operation>
+<wsdl:input>
+<soap:body use="literal"></soap:body>
+</wsdl:input>
+<wsdl:output>
+<soap:body use="literal"></soap:body>
+</wsdl:output>
+<wsdl:fault name="ProcessingFault">
+<soap:fault name="ProcessingFault" use="literal"></soap:fault>
+</wsdl:fault>
+</wsdl:operation>
+<wsdl:operation name="addServiceProduct">
+<soap:operation soapAction=""></soap:operation>
+<wsdl:input>
+<soap:body use="literal"></soap:body>
+</wsdl:input>
+<wsdl:output>
+<soap:body use="literal"></soap:body>
+</wsdl:output>
+<wsdl:fault name="ProcessingFault">
+<soap:fault name="ProcessingFault" use="literal"></soap:fault>
+</wsdl:fault>
+</wsdl:operation>
+<wsdl:operation name="updateServiceProduct">
+<soap:operation soapAction=""></soap:operation>
+<wsdl:input>
+<soap:body use="literal"></soap:body>
+</wsdl:input>
+<wsdl:output>
+<soap:body use="literal"></soap:body>
+</wsdl:output>
+<wsdl:fault name="ProcessingFault">
+<soap:fault name="ProcessingFault" use="literal"></soap:fault>
+</wsdl:fault>
+</wsdl:operation>
+<wsdl:operation name="getServiceProduct">
+<soap:operation soapAction=""></soap:operation>
+<wsdl:input>
+<soap:body use="literal"></soap:body>
+</wsdl:input>
+<wsdl:output>
+<soap:body use="literal"></soap:body>
+</wsdl:output>
+<wsdl:fault name="ProcessingFault">
+<soap:fault name="ProcessingFault" use="literal"></soap:fault>
+</wsdl:fault>
+</wsdl:operation>
+<wsdl:operation name="addInsuranceProduct">
+<soap:operation soapAction=""></soap:operation>
+<wsdl:input>
+<soap:body use="literal"></soap:body>
+</wsdl:input>
+<wsdl:output>
+<soap:body use="literal"></soap:body>
+</wsdl:output>
+<wsdl:fault name="ProcessingFault">
+<soap:fault name="ProcessingFault" use="literal"></soap:fault>
+</wsdl:fault>
+</wsdl:operation>
+<wsdl:operation name="updateInsuranceProduct">
+<soap:operation soapAction=""></soap:operation>
+<wsdl:input>
+<soap:body use="literal"></soap:body>
+</wsdl:input>
+<wsdl:output>
+<soap:body use="literal"></soap:body>
+</wsdl:output>
+<wsdl:fault name="ProcessingFault">
+<soap:fault name="ProcessingFault" use="literal"></soap:fault>
+</wsdl:fault>
+</wsdl:operation>
+<wsdl:operation name="getInsuranceProduct">
+<soap:operation soapAction=""></soap:operation>
+<wsdl:input>
+<soap:body use="literal"></soap:body>
+</wsdl:input>
+<wsdl:output>
+<soap:body use="literal"></soap:body>
+</wsdl:output>
+<wsdl:fault name="ProcessingFault">
+<soap:fault name="ProcessingFault" use="literal"></soap:fault>
+</wsdl:fault>
+</wsdl:operation>
+<wsdl:operation name="searchProductInstance">
+<soap:operation soapAction=""></soap:operation>
+<wsdl:input>
+<soap:body use="literal"></soap:body>
+</wsdl:input>
+<wsdl:output>
+<soap:body use="literal"></soap:body>
+</wsdl:output>
+<wsdl:fault name="ProcessingFault">
+<soap:fault name="ProcessingFault" use="literal"></soap:fault>
+</wsdl:fault>
+</wsdl:operation>
+<wsdl:operation name="recategorizeProduct">
+<soap:operation soapAction=""></soap:operation>
+<wsdl:input>
+<soap:body use="literal"></soap:body>
+</wsdl:input>
+<wsdl:output>
+<soap:body use="literal"></soap:body>
+</wsdl:output>
+<wsdl:fault name="ProcessingFault">
+<soap:fault name="ProcessingFault" use="literal"></soap:fault>
+</wsdl:fault>
+</wsdl:operation>
+<wsdl:operation name="getAllEntitySpecUsesByProduct">
+<soap:operation soapAction=""></soap:operation>
+<wsdl:input>
+<soap:body use="literal"></soap:body>
+</wsdl:input>
+<wsdl:output>
+<soap:body use="literal"></soap:body>
+</wsdl:output>
+<wsdl:fault name="ProcessingFault">
+<soap:fault name="ProcessingFault" use="literal"></soap:fault>
+</wsdl:fault>
+</wsdl:operation>
+<wsdl:operation name="collapseMultipleProducts">
+<soap:operation soapAction=""></soap:operation>
+<wsdl:input>
+<soap:body use="literal"></soap:body>
+</wsdl:input>
+<wsdl:output>
+<soap:body use="literal"></soap:body>
+</wsdl:output>
+<wsdl:fault name="ProcessingFault">
+<soap:fault name="ProcessingFault" use="literal"></soap:fault>
+</wsdl:fault>
+</wsdl:operation>
+<wsdl:operation name="comparativePreviewCollapseMultipleProducts">
+<soap:operation soapAction=""></soap:operation>
+<wsdl:input>
+<soap:body use="literal"></soap:body>
+</wsdl:input>
+<wsdl:output>
+<soap:body use="literal"></soap:body>
+</wsdl:output>
+<wsdl:fault name="ProcessingFault">
+<soap:fault name="ProcessingFault" use="literal"></soap:fault>
+</wsdl:fault>
+</wsdl:operation>
+<wsdl:operation name="undoCollapseMultipleProducts">
+<soap:operation soapAction=""></soap:operation>
+<wsdl:input>
+<soap:body use="literal"></soap:body>
+</wsdl:input>
+<wsdl:output>
+<soap:body use="literal"></soap:body>
+</wsdl:output>
+<wsdl:fault name="ProcessingFault">
+<soap:fault name="ProcessingFault" use="literal"></soap:fault>
+</wsdl:fault>
+</wsdl:operation>
+<wsdl:operation name="previewUndoCollapseMultipleProducts">
+<soap:operation soapAction=""></soap:operation>
+<wsdl:input>
+<soap:body use="literal"></soap:body>
+</wsdl:input>
+<wsdl:output>
+<soap:body use="literal"></soap:body>
+</wsdl:output>
+<wsdl:fault name="ProcessingFault">
+<soap:fault name="ProcessingFault" use="literal"></soap:fault>
+</wsdl:fault>
+</wsdl:operation>
+<wsdl:operation name="addProductSuspects">
+<soap:operation soapAction=""></soap:operation>
+<wsdl:input>
+<soap:body use="literal"></soap:body>
+</wsdl:input>
+<wsdl:output>
+<soap:body use="literal"></soap:body>
+</wsdl:output>
+<wsdl:fault name="ProcessingFault">
+<soap:fault name="ProcessingFault" use="literal"></soap:fault>
+</wsdl:fault>
+</wsdl:operation>
+<wsdl:operation name="updateProductSuspects">
+<soap:operation soapAction=""></soap:operation>
+<wsdl:input>
+<soap:body use="literal"></soap:body>
+</wsdl:input>
+<wsdl:output>
+<soap:body use="literal"></soap:body>
+</wsdl:output>
+<wsdl:fault name="ProcessingFault">
+<soap:fault name="ProcessingFault" use="literal"></soap:fault>
+</wsdl:fault>
+</wsdl:operation>
+<wsdl:operation name="deleteAllProductSuspects">
+<soap:operation soapAction=""></soap:operation>
+<wsdl:input>
+<soap:body use="literal"></soap:body>
+</wsdl:input>
+<wsdl:output>
+<soap:body use="literal"></soap:body>
+</wsdl:output>
+<wsdl:fault name="ProcessingFault">
+<soap:fault name="ProcessingFault" use="literal"></soap:fault>
+</wsdl:fault>
+</wsdl:operation>
+<wsdl:operation name="refreshProductSuspects">
+<soap:operation soapAction=""></soap:operation>
+<wsdl:input>
+<soap:body use="literal"></soap:body>
+</wsdl:input>
+<wsdl:output>
+<soap:body use="literal"></soap:body>
+</wsdl:output>
+<wsdl:fault name="ProcessingFault">
+<soap:fault name="ProcessingFault" use="literal"></soap:fault>
+</wsdl:fault>
+</wsdl:operation>
+<wsdl:operation name="getLinkedProducts">
+<soap:operation soapAction=""></soap:operation>
+<wsdl:input>
+<soap:body use="literal"></soap:body>
+</wsdl:input>
+<wsdl:output>
+<soap:body use="literal"></soap:body>
+</wsdl:output>
+<wsdl:fault name="ProcessingFault">
+<soap:fault name="ProcessingFault" use="literal"></soap:fault>
+</wsdl:fault>
+</wsdl:operation>
+<wsdl:operation name="getAllProductSuspects">
+<soap:operation soapAction=""></soap:operation>
+<wsdl:input>
+<soap:body use="literal"></soap:body>
+</wsdl:input>
+<wsdl:output>
+<soap:body use="literal"></soap:body>
+</wsdl:output>
+<wsdl:fault name="ProcessingFault">
+<soap:fault name="ProcessingFault" use="literal"></soap:fault>
+</wsdl:fault>
+</wsdl:operation>
+<wsdl:operation name="getProductSuspect">
+<soap:operation soapAction=""></soap:operation>
+<wsdl:input>
+<soap:body use="literal"></soap:body>
+</wsdl:input>
+<wsdl:output>
+<soap:body use="literal"></soap:body>
+</wsdl:output>
+<wsdl:fault name="ProcessingFault">
+<soap:fault name="ProcessingFault" use="literal"></soap:fault>
+</wsdl:fault>
+</wsdl:operation>
+<wsdl:operation name="deleteProductSuspect">
+<soap:operation soapAction=""></soap:operation>
+<wsdl:input>
+<soap:body use="literal"></soap:body>
+</wsdl:input>
+<wsdl:output>
+<soap:body use="literal"></soap:body>
+</wsdl:output>
+<wsdl:fault name="ProcessingFault">
+<soap:fault name="ProcessingFault" use="literal"></soap:fault>
+</wsdl:fault>
+</wsdl:operation>
+<wsdl:operation name="searchProductSuspect">
+<soap:operation soapAction=""></soap:operation>
+<wsdl:input>
+<soap:body use="literal"></soap:body>
+</wsdl:input>
+<wsdl:output>
+<soap:body use="literal"></soap:body>
+</wsdl:output>
+<wsdl:fault name="ProcessingFault">
+<soap:fault name="ProcessingFault" use="literal"></soap:fault>
+</wsdl:fault>
+</wsdl:operation>
+<wsdl:operation name="splitProduct">
+<soap:operation soapAction=""></soap:operation>
+<wsdl:input>
+<soap:body use="literal"></soap:body>
+</wsdl:input>
+<wsdl:output>
+<soap:body use="literal"></soap:body>
+</wsdl:output>
+<wsdl:fault name="ProcessingFault">
+<soap:fault name="ProcessingFault" use="literal"></soap:fault>
+</wsdl:fault>
+</wsdl:operation>
+</wsdl:binding>
+
+<wsdl:service name="Product">
+<wsdl:port binding="mdmport:ProductHttpBinding" name="ProductPort">
+<soap:address location="http://localhost:9082/MDMWSProvider/MDMService"></soap:address>
+</wsdl:port>
+</wsdl:service>
+
+</wsdl:definitions>

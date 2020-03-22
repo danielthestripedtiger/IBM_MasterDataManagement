@@ -1,0 +1,10 @@
+package com.ibm.mdm.physical.tasksets;
+
+public class GetTaskSets {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

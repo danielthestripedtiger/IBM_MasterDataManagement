@@ -1,0 +1,9 @@
+Survivorship/XNWPersonBObjExt/1
+SOURCE_FIELD:SourceIdentifierValue|USAGE_TYPE:N/A|LAST_UPDATE_FIELD:PersonLastUpdateDate|SOURCE_PRIORITY_ORDER:Echo,Soarian Scheduling,PeopleSoft|FIELDS_INCLUDED:BirthDate,DeceasedDate,GenderValue,MaritalStatusValue
+
+Survivorship/TCRMPartyIdentificationBObj/1
+SOURCE_FIELD:SourceIdentifierValue|USAGE_TYPE:N/A|LAST_UPDATE_FIELD:PersonLastUpdateDate|SOURCE_PRIORITY_ORDER:Echo,Soarian Scheduling,PeopleSoft|FIELDS_INCLUDED:BirthDate,DeceasedDate,GenderValue,MaritalStatusValue
+
+
+Survivorship/TCRMPartyAddressBObj/1
+SourceIdentifierValue|Scheduling_Address|LastVerifiedDate|Soarian Scheduling,Echo,PeopleSoft|N/A

@@ -1,0 +1,24 @@
+{
+  "TCRMService": {
+    "@schemaLocation": "http://www.ibm.com/mdm/schema MDMDomains.xsd",
+    "RequestControl": {
+      "requestID": 604157,
+      "DWLControl": {
+        "requesterName": "mdmadmin",
+        "requesterLocale": "en",
+      }
+    },
+    "TCRMTx": {
+      "TCRMTxType": "addContractAlert",
+      "TCRMTxObject": "TCRMAlertBObj",
+      "TCRMObject": {
+        "TCRMAlertBObj": {
+          	"EntityName": "CONTRACT",
+          	"InstancePK": "contractIdPk",
+          	"AlertType": "creditHold",
+          	"AlertSeverityType": "1",
+        }
+      }
+    }
+  }
+}

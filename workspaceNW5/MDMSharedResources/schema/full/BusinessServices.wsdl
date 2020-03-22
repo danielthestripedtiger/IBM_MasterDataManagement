@@ -1,0 +1,971 @@
+<?xml version="1.0" encoding="UTF-8"?><!-- ***************************************************** {COPYRIGHT-TOP} ***
+* Licensed Materials - Property of IBM
+* Restricted Materials of IBM
+*
+* 5725-E59
+*
+* (C) Copyright IBM Corp. 2011  All Rights Reserved.
+*
+* US Government Users Restricted Rights - Use, duplication, or
+* disclosure restricted by GSA ADP Schedule Contract with IBM Corp.
+********************************************************** {COPYRIGHT-END} --><wsdl:definitions xmlns:mdmport="http://www.ibm.com/mdm/port/BusinessServices" xmlns:mdm="http://www.ibm.com/mdm/schema" xmlns:mdmwsdl="http://www.ibm.com/mdm/wsdl/schema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:jaxws="http://java.sun.com/xml/ns/jaxws" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" name="BusinessServices" targetNamespace="http://www.ibm.com/mdm/port/BusinessServices">
+
+<jaxws:bindings>
+<jaxws:enableWrapperStyle>false</jaxws:enableWrapperStyle>
+</jaxws:bindings>
+<wsdl:types>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.ibm.com/mdm/port/BusinessServices">
+<xsd:import namespace="http://www.ibm.com/mdm/schema" schemaLocation="PhysicalMDM.xsd"></xsd:import>
+<xsd:import namespace="http://www.ibm.com/mdm/wsdl/schema" schemaLocation="MDMWSDLCommon.xsd"></xsd:import>
+<xsd:complexType name="addInteractionInputType">
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:RequestControl"></xsd:element>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:TCRMInteractionBObj"></xsd:element>
+</xsd:sequence>
+</xsd:complexType>
+<xsd:complexType name="addInteractionOutputType">
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:ResponseControl"></xsd:element>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:TxResult"></xsd:element>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:TCRMInteractionBObj"></xsd:element>
+</xsd:sequence>
+</xsd:complexType>
+
+<xsd:complexType name="getAlertOutputType">
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:ResponseControl"></xsd:element>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:TxResult"></xsd:element>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:TCRMAlertBObj"></xsd:element>
+</xsd:sequence>
+</xsd:complexType>
+
+<xsd:complexType name="getAllAlertsOutputType">
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:ResponseControl"></xsd:element>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:TxResult"></xsd:element>
+<xsd:element maxOccurs="unbounded" minOccurs="1" ref="mdm:TCRMAlertBObj"></xsd:element>
+</xsd:sequence>
+</xsd:complexType>
+
+<xsd:complexType name="getAllInteractionsOutputType">
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:ResponseControl"></xsd:element>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:TxResult"></xsd:element>
+<xsd:element maxOccurs="unbounded" minOccurs="1" ref="mdm:TCRMInteractionBObj"></xsd:element>
+</xsd:sequence>
+</xsd:complexType>
+
+<xsd:complexType name="getInteractionOutputType">
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:ResponseControl"></xsd:element>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:TxResult"></xsd:element>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:TCRMInteractionBObj"></xsd:element>
+</xsd:sequence>
+</xsd:complexType>
+
+<xsd:complexType name="updateAlertInputType">
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:RequestControl"></xsd:element>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:TCRMAlertBObj"></xsd:element>
+</xsd:sequence>
+</xsd:complexType>
+<xsd:complexType name="updateAlertOutputType">
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:ResponseControl"></xsd:element>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:TxResult"></xsd:element>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:TCRMAlertBObj"></xsd:element>
+</xsd:sequence>
+</xsd:complexType>
+
+<xsd:complexType name="updateInteractionInputType">
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:RequestControl"></xsd:element>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:TCRMInteractionBObj"></xsd:element>
+</xsd:sequence>
+</xsd:complexType>
+<xsd:complexType name="updateInteractionOutputType">
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:ResponseControl"></xsd:element>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:TxResult"></xsd:element>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:TCRMInteractionBObj"></xsd:element>
+</xsd:sequence>
+</xsd:complexType>
+
+<xsd:complexType name="addInteractionRelationshipInputType">
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:RequestControl"></xsd:element>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:TCRMInteractionRelationshipBObj"></xsd:element>
+</xsd:sequence>
+</xsd:complexType>
+<xsd:complexType name="addInteractionRelationshipOutputType">
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:ResponseControl"></xsd:element>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:TxResult"></xsd:element>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:TCRMInteractionRelationshipBObj"></xsd:element>
+</xsd:sequence>
+</xsd:complexType>
+
+<xsd:complexType name="updateInteractionRelationshipInputType">
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:RequestControl"></xsd:element>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:TCRMInteractionRelationshipBObj"></xsd:element>
+</xsd:sequence>
+</xsd:complexType>
+<xsd:complexType name="updateInteractionRelationshipOutputType">
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:ResponseControl"></xsd:element>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:TxResult"></xsd:element>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:TCRMInteractionRelationshipBObj"></xsd:element>
+</xsd:sequence>
+</xsd:complexType>
+
+<xsd:complexType name="getAllInteractionRelationshipsOutputType">
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:ResponseControl"></xsd:element>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:TxResult"></xsd:element>
+<xsd:element maxOccurs="unbounded" minOccurs="1" ref="mdm:TCRMInteractionRelationshipBObj"></xsd:element>
+</xsd:sequence>
+</xsd:complexType>
+
+<xsd:complexType name="getInteractionRelationshipOutputType">
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:ResponseControl"></xsd:element>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:TxResult"></xsd:element>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:TCRMInteractionRelationshipBObj"></xsd:element>
+</xsd:sequence>
+</xsd:complexType>
+
+<xsd:complexType name="addCampaignInputType">
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:RequestControl"></xsd:element>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:TCRMCampaignBObj"></xsd:element>
+</xsd:sequence>
+</xsd:complexType>
+<xsd:complexType name="addCampaignOutputType">
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:ResponseControl"></xsd:element>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:TxResult"></xsd:element>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:TCRMCampaignBObj"></xsd:element>
+</xsd:sequence>
+</xsd:complexType>
+
+<xsd:complexType name="updateCampaignInputType">
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:RequestControl"></xsd:element>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:TCRMCampaignBObj"></xsd:element>
+</xsd:sequence>
+</xsd:complexType>
+<xsd:complexType name="updateCampaignOutputType">
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:ResponseControl"></xsd:element>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:TxResult"></xsd:element>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:TCRMCampaignBObj"></xsd:element>
+</xsd:sequence>
+</xsd:complexType>
+
+<xsd:complexType name="addCampaignAssociationInputType">
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:RequestControl"></xsd:element>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:TCRMCampaignAssociationBObj"></xsd:element>
+</xsd:sequence>
+</xsd:complexType>
+<xsd:complexType name="addCampaignAssociationOutputType">
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:ResponseControl"></xsd:element>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:TxResult"></xsd:element>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:TCRMCampaignAssociationBObj"></xsd:element>
+</xsd:sequence>
+</xsd:complexType>
+
+<xsd:complexType name="updateCampaignAssociationInputType">
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:RequestControl"></xsd:element>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:TCRMCampaignAssociationBObj"></xsd:element>
+</xsd:sequence>
+</xsd:complexType>
+<xsd:complexType name="updateCampaignAssociationOutputType">
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:ResponseControl"></xsd:element>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:TxResult"></xsd:element>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:TCRMCampaignAssociationBObj"></xsd:element>
+</xsd:sequence>
+</xsd:complexType>
+
+<xsd:complexType name="getCampaignOutputType">
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:ResponseControl"></xsd:element>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:TxResult"></xsd:element>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:TCRMCampaignBObj"></xsd:element>
+</xsd:sequence>
+</xsd:complexType>
+
+<xsd:complexType name="getCampaignAssociationOutputType">
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:ResponseControl"></xsd:element>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:TxResult"></xsd:element>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:TCRMCampaignAssociationBObj"></xsd:element>
+</xsd:sequence>
+</xsd:complexType>
+
+<xsd:complexType name="addDefaultPrivacyPreferenceRelationshipInputType">
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:RequestControl"></xsd:element>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:TCRMDefaultPrivPrefRelationshipBObj"></xsd:element>
+</xsd:sequence>
+</xsd:complexType>
+<xsd:complexType name="addDefaultPrivacyPreferenceRelationshipOutputType">
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:ResponseControl"></xsd:element>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:TxResult"></xsd:element>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:TCRMDefaultPrivPrefRelationshipBObj"></xsd:element>
+</xsd:sequence>
+</xsd:complexType>
+
+<xsd:complexType name="updateDefaultPrivacyPreferenceInputType">
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:RequestControl"></xsd:element>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:TCRMDefaultPrivPrefBObj"></xsd:element>
+</xsd:sequence>
+</xsd:complexType>
+<xsd:complexType name="updateDefaultPrivacyPreferenceOutputType">
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:ResponseControl"></xsd:element>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:TxResult"></xsd:element>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:TCRMDefaultPrivPrefBObj"></xsd:element>
+</xsd:sequence>
+</xsd:complexType>
+
+<xsd:complexType name="updateDefaultPrivacyPreferenceRelationshipInputType">
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:RequestControl"></xsd:element>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:TCRMDefaultPrivPrefRelationshipBObj"></xsd:element>
+</xsd:sequence>
+</xsd:complexType>
+<xsd:complexType name="updateDefaultPrivacyPreferenceRelationshipOutputType">
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:ResponseControl"></xsd:element>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:TxResult"></xsd:element>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:TCRMDefaultPrivPrefRelationshipBObj"></xsd:element>
+</xsd:sequence>
+</xsd:complexType>
+
+<xsd:complexType name="addDefaultPrivacyPreferenceInputType">
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:RequestControl"></xsd:element>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:TCRMDefaultPrivPrefBObj"></xsd:element>
+</xsd:sequence>
+</xsd:complexType>
+<xsd:complexType name="addDefaultPrivacyPreferenceOutputType">
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:ResponseControl"></xsd:element>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:TxResult"></xsd:element>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:TCRMDefaultPrivPrefBObj"></xsd:element>
+</xsd:sequence>
+</xsd:complexType>
+
+<xsd:element name="addInteraction" type="mdmport:addInteractionInputType"></xsd:element>
+<xsd:element name="addInteractionResponse" type="mdmport:addInteractionOutputType"></xsd:element>
+<xsd:element name="getAlert" type="mdmwsdl:TCRMInquiryInputType"></xsd:element>
+<xsd:element name="getAlertResponse" type="mdmport:getAlertOutputType"></xsd:element>
+<xsd:element name="getAllAlerts" type="mdmwsdl:TCRMInquiryInputType"></xsd:element>
+<xsd:element name="getAllAlertsResponse" type="mdmport:getAllAlertsOutputType"></xsd:element>
+<xsd:element name="getAllInteractions" type="mdmwsdl:TCRMInquiryInputType"></xsd:element>
+<xsd:element name="getAllInteractionsResponse" type="mdmport:getAllInteractionsOutputType"></xsd:element>
+<xsd:element name="getInteraction" type="mdmwsdl:TCRMInquiryInputType"></xsd:element>
+<xsd:element name="getInteractionResponse" type="mdmport:getInteractionOutputType"></xsd:element>
+<xsd:element name="updateAlert" type="mdmport:updateAlertInputType"></xsd:element>
+<xsd:element name="updateAlertResponse" type="mdmport:updateAlertOutputType"></xsd:element>
+<xsd:element name="updateInteraction" type="mdmport:updateInteractionInputType"></xsd:element>
+<xsd:element name="updateInteractionResponse" type="mdmport:updateInteractionOutputType"></xsd:element>
+<xsd:element name="addInteractionRelationship" type="mdmport:addInteractionRelationshipInputType"></xsd:element>
+<xsd:element name="addInteractionRelationshipResponse" type="mdmport:addInteractionRelationshipOutputType"></xsd:element>
+<xsd:element name="updateInteractionRelationship" type="mdmport:updateInteractionRelationshipInputType"></xsd:element>
+<xsd:element name="updateInteractionRelationshipResponse" type="mdmport:updateInteractionRelationshipOutputType"></xsd:element>
+<xsd:element name="getAllInteractionRelationships" type="mdmwsdl:TCRMInquiryInputType"></xsd:element>
+<xsd:element name="getAllInteractionRelationshipsResponse" type="mdmport:getAllInteractionRelationshipsOutputType"></xsd:element>
+<xsd:element name="getInteractionRelationship" type="mdmwsdl:TCRMInquiryInputType"></xsd:element>
+<xsd:element name="getInteractionRelationshipResponse" type="mdmport:getInteractionRelationshipOutputType"></xsd:element>
+<xsd:element name="addCampaign" type="mdmport:addCampaignInputType"></xsd:element>
+<xsd:element name="addCampaignResponse" type="mdmport:addCampaignOutputType"></xsd:element>
+<xsd:element name="updateCampaign" type="mdmport:updateCampaignInputType"></xsd:element>
+<xsd:element name="updateCampaignResponse" type="mdmport:updateCampaignOutputType"></xsd:element>
+<xsd:element name="addCampaignAssociation" type="mdmport:addCampaignAssociationInputType"></xsd:element>
+<xsd:element name="addCampaignAssociationResponse" type="mdmport:addCampaignAssociationOutputType"></xsd:element>
+<xsd:element name="updateCampaignAssociation" type="mdmport:updateCampaignAssociationInputType"></xsd:element>
+<xsd:element name="updateCampaignAssociationResponse" type="mdmport:updateCampaignAssociationOutputType"></xsd:element>
+<xsd:element name="getCampaign" type="mdmwsdl:TCRMInquiryInputType"></xsd:element>
+<xsd:element name="getCampaignResponse" type="mdmport:getCampaignOutputType"></xsd:element>
+<xsd:element name="getCampaignAssociation" type="mdmwsdl:TCRMInquiryInputType"></xsd:element>
+<xsd:element name="getCampaignAssociationResponse" type="mdmport:getCampaignAssociationOutputType"></xsd:element>
+<xsd:element name="addDefaultPrivacyPreferenceRelationship" type="mdmport:addDefaultPrivacyPreferenceRelationshipInputType"></xsd:element>
+<xsd:element name="addDefaultPrivacyPreferenceRelationshipResponse" type="mdmport:addDefaultPrivacyPreferenceRelationshipOutputType"></xsd:element>
+<xsd:element name="updateDefaultPrivacyPreference" type="mdmport:updateDefaultPrivacyPreferenceInputType"></xsd:element>
+<xsd:element name="updateDefaultPrivacyPreferenceResponse" type="mdmport:updateDefaultPrivacyPreferenceOutputType"></xsd:element>
+<xsd:element name="updateDefaultPrivacyPreferenceRelationship" type="mdmport:updateDefaultPrivacyPreferenceRelationshipInputType"></xsd:element>
+<xsd:element name="updateDefaultPrivacyPreferenceRelationshipResponse" type="mdmport:updateDefaultPrivacyPreferenceRelationshipOutputType"></xsd:element>
+<xsd:element name="addDefaultPrivacyPreference" type="mdmport:addDefaultPrivacyPreferenceInputType"></xsd:element>
+<xsd:element name="addDefaultPrivacyPreferenceResponse" type="mdmport:addDefaultPrivacyPreferenceOutputType"></xsd:element>
+<xsd:element name="processingFault" type="mdmwsdl:ProcessingFaultType"></xsd:element>
+</xsd:schema>
+</wsdl:types>
+<wsdl:message name="ProcessingFault">
+<wsdl:part element="mdmport:processingFault" name="parameters"></wsdl:part>
+</wsdl:message>
+<wsdl:message name="AddInteractionRequest">
+<wsdl:part element="mdmport:addInteraction" name="parameters"></wsdl:part>
+</wsdl:message>
+<wsdl:message name="AddInteractionResponse">
+<wsdl:part element="mdmport:addInteractionResponse" name="parameters"></wsdl:part>
+</wsdl:message>
+
+<wsdl:message name="GetAlertRequest">
+<wsdl:part element="mdmport:getAlert" name="parameters"></wsdl:part>
+</wsdl:message>
+<wsdl:message name="GetAlertResponse">
+<wsdl:part element="mdmport:getAlertResponse" name="parameters"></wsdl:part>
+</wsdl:message>
+
+<wsdl:message name="GetAllAlertsRequest">
+<wsdl:part element="mdmport:getAllAlerts" name="parameters"></wsdl:part>
+</wsdl:message>
+<wsdl:message name="GetAllAlertsResponse">
+<wsdl:part element="mdmport:getAllAlertsResponse" name="parameters"></wsdl:part>
+</wsdl:message>
+
+<wsdl:message name="GetAllInteractionsRequest">
+<wsdl:part element="mdmport:getAllInteractions" name="parameters"></wsdl:part>
+</wsdl:message>
+<wsdl:message name="GetAllInteractionsResponse">
+<wsdl:part element="mdmport:getAllInteractionsResponse" name="parameters"></wsdl:part>
+</wsdl:message>
+
+<wsdl:message name="GetInteractionRequest">
+<wsdl:part element="mdmport:getInteraction" name="parameters"></wsdl:part>
+</wsdl:message>
+<wsdl:message name="GetInteractionResponse">
+<wsdl:part element="mdmport:getInteractionResponse" name="parameters"></wsdl:part>
+</wsdl:message>
+
+<wsdl:message name="UpdateAlertRequest">
+<wsdl:part element="mdmport:updateAlert" name="parameters"></wsdl:part>
+</wsdl:message>
+<wsdl:message name="UpdateAlertResponse">
+<wsdl:part element="mdmport:updateAlertResponse" name="parameters"></wsdl:part>
+</wsdl:message>
+
+<wsdl:message name="UpdateInteractionRequest">
+<wsdl:part element="mdmport:updateInteraction" name="parameters"></wsdl:part>
+</wsdl:message>
+<wsdl:message name="UpdateInteractionResponse">
+<wsdl:part element="mdmport:updateInteractionResponse" name="parameters"></wsdl:part>
+</wsdl:message>
+
+<wsdl:message name="AddInteractionRelationshipRequest">
+<wsdl:part element="mdmport:addInteractionRelationship" name="parameters"></wsdl:part>
+</wsdl:message>
+<wsdl:message name="AddInteractionRelationshipResponse">
+<wsdl:part element="mdmport:addInteractionRelationshipResponse" name="parameters"></wsdl:part>
+</wsdl:message>
+
+<wsdl:message name="UpdateInteractionRelationshipRequest">
+<wsdl:part element="mdmport:updateInteractionRelationship" name="parameters"></wsdl:part>
+</wsdl:message>
+<wsdl:message name="UpdateInteractionRelationshipResponse">
+<wsdl:part element="mdmport:updateInteractionRelationshipResponse" name="parameters"></wsdl:part>
+</wsdl:message>
+
+<wsdl:message name="GetAllInteractionRelationshipsRequest">
+<wsdl:part element="mdmport:getAllInteractionRelationships" name="parameters"></wsdl:part>
+</wsdl:message>
+<wsdl:message name="GetAllInteractionRelationshipsResponse">
+<wsdl:part element="mdmport:getAllInteractionRelationshipsResponse" name="parameters"></wsdl:part>
+</wsdl:message>
+
+<wsdl:message name="GetInteractionRelationshipRequest">
+<wsdl:part element="mdmport:getInteractionRelationship" name="parameters"></wsdl:part>
+</wsdl:message>
+<wsdl:message name="GetInteractionRelationshipResponse">
+<wsdl:part element="mdmport:getInteractionRelationshipResponse" name="parameters"></wsdl:part>
+</wsdl:message>
+
+<wsdl:message name="AddCampaignRequest">
+<wsdl:part element="mdmport:addCampaign" name="parameters"></wsdl:part>
+</wsdl:message>
+<wsdl:message name="AddCampaignResponse">
+<wsdl:part element="mdmport:addCampaignResponse" name="parameters"></wsdl:part>
+</wsdl:message>
+
+<wsdl:message name="UpdateCampaignRequest">
+<wsdl:part element="mdmport:updateCampaign" name="parameters"></wsdl:part>
+</wsdl:message>
+<wsdl:message name="UpdateCampaignResponse">
+<wsdl:part element="mdmport:updateCampaignResponse" name="parameters"></wsdl:part>
+</wsdl:message>
+
+<wsdl:message name="AddCampaignAssociationRequest">
+<wsdl:part element="mdmport:addCampaignAssociation" name="parameters"></wsdl:part>
+</wsdl:message>
+<wsdl:message name="AddCampaignAssociationResponse">
+<wsdl:part element="mdmport:addCampaignAssociationResponse" name="parameters"></wsdl:part>
+</wsdl:message>
+
+<wsdl:message name="UpdateCampaignAssociationRequest">
+<wsdl:part element="mdmport:updateCampaignAssociation" name="parameters"></wsdl:part>
+</wsdl:message>
+<wsdl:message name="UpdateCampaignAssociationResponse">
+<wsdl:part element="mdmport:updateCampaignAssociationResponse" name="parameters"></wsdl:part>
+</wsdl:message>
+
+<wsdl:message name="GetCampaignRequest">
+<wsdl:part element="mdmport:getCampaign" name="parameters"></wsdl:part>
+</wsdl:message>
+<wsdl:message name="GetCampaignResponse">
+<wsdl:part element="mdmport:getCampaignResponse" name="parameters"></wsdl:part>
+</wsdl:message>
+
+<wsdl:message name="GetCampaignAssociationRequest">
+<wsdl:part element="mdmport:getCampaignAssociation" name="parameters"></wsdl:part>
+</wsdl:message>
+<wsdl:message name="GetCampaignAssociationResponse">
+<wsdl:part element="mdmport:getCampaignAssociationResponse" name="parameters"></wsdl:part>
+</wsdl:message>
+
+<wsdl:message name="AddDefaultPrivacyPreferenceRelationshipRequest">
+<wsdl:part element="mdmport:addDefaultPrivacyPreferenceRelationship" name="parameters"></wsdl:part>
+</wsdl:message>
+<wsdl:message name="AddDefaultPrivacyPreferenceRelationshipResponse">
+<wsdl:part element="mdmport:addDefaultPrivacyPreferenceRelationshipResponse" name="parameters"></wsdl:part>
+</wsdl:message>
+
+<wsdl:message name="UpdateDefaultPrivacyPreferenceRequest">
+<wsdl:part element="mdmport:updateDefaultPrivacyPreference" name="parameters"></wsdl:part>
+</wsdl:message>
+<wsdl:message name="UpdateDefaultPrivacyPreferenceResponse">
+<wsdl:part element="mdmport:updateDefaultPrivacyPreferenceResponse" name="parameters"></wsdl:part>
+</wsdl:message>
+
+<wsdl:message name="UpdateDefaultPrivacyPreferenceRelationshipRequest">
+<wsdl:part element="mdmport:updateDefaultPrivacyPreferenceRelationship" name="parameters"></wsdl:part>
+</wsdl:message>
+<wsdl:message name="UpdateDefaultPrivacyPreferenceRelationshipResponse">
+<wsdl:part element="mdmport:updateDefaultPrivacyPreferenceRelationshipResponse" name="parameters"></wsdl:part>
+</wsdl:message>
+
+<wsdl:message name="AddDefaultPrivacyPreferenceRequest">
+<wsdl:part element="mdmport:addDefaultPrivacyPreference" name="parameters"></wsdl:part>
+</wsdl:message>
+<wsdl:message name="AddDefaultPrivacyPreferenceResponse">
+<wsdl:part element="mdmport:addDefaultPrivacyPreferenceResponse" name="parameters"></wsdl:part>
+</wsdl:message>
+
+<wsdl:portType name="BusinessServicesPortType">
+<wsdl:operation name="addInteraction">
+<wsdl:documentation>This transaction adds interaction information including regarding
+detail and interaction type information to the database.  This
+transaction can be used as a coarse-grained transaction to add the
+interaction with an interaction relationship.
+</wsdl:documentation>
+<wsdl:input message="mdmport:AddInteractionRequest"></wsdl:input>
+<wsdl:output message="mdmport:AddInteractionResponse"></wsdl:output>
+<wsdl:fault message="mdmport:ProcessingFault" name="ProcessingFault"></wsdl:fault>
+</wsdl:operation>
+
+<wsdl:operation name="getAlert">
+<wsdl:documentation>This inquiry transaction returns recorded information for a specific
+alert. Alerts may concern legal restrictions such as nondisclosure
+agreements, domestic violence charges, class action suits, or special
+statuses (for example: client is hard of hearing).
+Input parameters :
+<tcrmParam name="alertId"></tcrmParam>
+<tcrmParam name="theDWLControl"></tcrmParam>
+</wsdl:documentation>
+<wsdl:input message="mdmport:GetAlertRequest"></wsdl:input>
+<wsdl:output message="mdmport:GetAlertResponse"></wsdl:output>
+<wsdl:fault message="mdmport:ProcessingFault" name="ProcessingFault"></wsdl:fault>
+</wsdl:operation>
+
+<wsdl:operation name="getAllAlerts">
+<wsdl:documentation>This inquiry transaction returns the recorded Alert information
+associated with a specific entity, based on a filter.
+Input parameters :
+<tcrmParam name="entityName"></tcrmParam>
+<tcrmParam name="instancePK"></tcrmParam>
+<tcrmParam name="filter"></tcrmParam>
+<tcrmParam name="theDWLControl"></tcrmParam>
+</wsdl:documentation>
+<wsdl:input message="mdmport:GetAllAlertsRequest"></wsdl:input>
+<wsdl:output message="mdmport:GetAllAlertsResponse"></wsdl:output>
+<wsdl:fault message="mdmport:ProcessingFault" name="ProcessingFault"></wsdl:fault>
+</wsdl:operation>
+
+<wsdl:operation name="getAllInteractions">
+<wsdl:documentation>This inquiry transaction returns all recorded interactions for
+a given requestParty
+or individual based on a filter.
+Input parameters :
+<tcrmParam name="entityName"></tcrmParam>
+<tcrmParam name="instancePK"></tcrmParam>
+<tcrmParam name="filter"></tcrmParam>
+<tcrmParam name="inquiryLevel"></tcrmParam>
+<tcrmParam name="theDWLControl"></tcrmParam>
+</wsdl:documentation>
+<wsdl:input message="mdmport:GetAllInteractionsRequest"></wsdl:input>
+<wsdl:output message="mdmport:GetAllInteractionsResponse"></wsdl:output>
+<wsdl:fault message="mdmport:ProcessingFault" name="ProcessingFault"></wsdl:fault>
+</wsdl:operation>
+
+<wsdl:operation name="getInteraction">
+<wsdl:documentation>This inquiry transaction returns the information recorded for
+a given interaction.
+Input parameters :
+<tcrmParam name="interactionId"></tcrmParam>
+<tcrmParam name="inquiryLevel"></tcrmParam>
+<tcrmParam name="theDWLControl"></tcrmParam>
+</wsdl:documentation>
+<wsdl:input message="mdmport:GetInteractionRequest"></wsdl:input>
+<wsdl:output message="mdmport:GetInteractionResponse"></wsdl:output>
+<wsdl:fault message="mdmport:ProcessingFault" name="ProcessingFault"></wsdl:fault>
+</wsdl:operation>
+
+<wsdl:operation name="updateAlert">
+<wsdl:documentation>This transaction updates an existing alert for
+a given Party or Contract. This transaction is used to correct
+an alert or to end one that no longer applies.
+</wsdl:documentation>
+<wsdl:input message="mdmport:UpdateAlertRequest"></wsdl:input>
+<wsdl:output message="mdmport:UpdateAlertResponse"></wsdl:output>
+<wsdl:fault message="mdmport:ProcessingFault" name="ProcessingFault"></wsdl:fault>
+</wsdl:operation>
+
+<wsdl:operation name="updateInteraction">
+<wsdl:documentation>This transaction is used to correct or update the details of a
+specific interaction for a party.
+</wsdl:documentation>
+<wsdl:input message="mdmport:UpdateInteractionRequest"></wsdl:input>
+<wsdl:output message="mdmport:UpdateInteractionResponse"></wsdl:output>
+<wsdl:fault message="mdmport:ProcessingFault" name="ProcessingFault"></wsdl:fault>
+</wsdl:operation>
+
+<wsdl:operation name="addInteractionRelationship">
+<wsdl:documentation>This transaction adds an interaction relationship between two
+interactions.
+</wsdl:documentation>
+<wsdl:input message="mdmport:AddInteractionRelationshipRequest"></wsdl:input>
+<wsdl:output message="mdmport:AddInteractionRelationshipResponse"></wsdl:output>
+<wsdl:fault message="mdmport:ProcessingFault" name="ProcessingFault"></wsdl:fault>
+</wsdl:operation>
+
+<wsdl:operation name="updateInteractionRelationship">
+<wsdl:documentation>This transaction is used to correct the interaction relationship
+information between two interactions. An interaction relationship
+could exist, for example, to show that one interaction is a follow-up
+to another.
+</wsdl:documentation>
+<wsdl:input message="mdmport:UpdateInteractionRelationshipRequest"></wsdl:input>
+<wsdl:output message="mdmport:UpdateInteractionRelationshipResponse"></wsdl:output>
+<wsdl:fault message="mdmport:ProcessingFault" name="ProcessingFault"></wsdl:fault>
+</wsdl:operation>
+
+<wsdl:operation name="getAllInteractionRelationships">
+<wsdl:documentation>This inquiry transaction returns the recorded interaction relationships
+associated with an interaction.
+Input parameters :
+<tcrmParam name="interactionId"></tcrmParam>
+<tcrmParam name="filter"></tcrmParam>
+<tcrmParam name="theTCRMControl"></tcrmParam>
+</wsdl:documentation>
+<wsdl:input message="mdmport:GetAllInteractionRelationshipsRequest"></wsdl:input>
+<wsdl:output message="mdmport:GetAllInteractionRelationshipsResponse"></wsdl:output>
+<wsdl:fault message="mdmport:ProcessingFault" name="ProcessingFault"></wsdl:fault>
+</wsdl:operation>
+
+<wsdl:operation name="getInteractionRelationship">
+<wsdl:documentation>This inquiry transaction returns the recorded interaction relationship
+information for two given interaction IDs.
+Input parameters :
+<tcrmParam name="fromInterationId"></tcrmParam>
+<tcrmParam name="toInteractionId"></tcrmParam>
+<tcrmParam name="theTCRMControl"></tcrmParam>
+</wsdl:documentation>
+<wsdl:input message="mdmport:GetInteractionRelationshipRequest"></wsdl:input>
+<wsdl:output message="mdmport:GetInteractionRelationshipResponse"></wsdl:output>
+<wsdl:fault message="mdmport:ProcessingFault" name="ProcessingFault"></wsdl:fault>
+</wsdl:operation>
+
+<wsdl:operation name="addCampaign">
+<wsdl:documentation>This transaction adds marketing campaign details to .
+Campaign details include name, description, type, priority, created
+date, start date and end date.This transaction can be used as a
+coarse-grained transaction to add both the campaign and one or more
+associated entities.
+</wsdl:documentation>
+<wsdl:input message="mdmport:AddCampaignRequest"></wsdl:input>
+<wsdl:output message="mdmport:AddCampaignResponse"></wsdl:output>
+<wsdl:fault message="mdmport:ProcessingFault" name="ProcessingFault"></wsdl:fault>
+</wsdl:operation>
+
+<wsdl:operation name="updateCampaign">
+<wsdl:documentation>This transaction can be used to update specific campaign details
+such as description or end date and campaign association details such
+as end date. One can also add new associations to a campaign.
+</wsdl:documentation>
+<wsdl:input message="mdmport:UpdateCampaignRequest"></wsdl:input>
+<wsdl:output message="mdmport:UpdateCampaignResponse"></wsdl:output>
+<wsdl:fault message="mdmport:ProcessingFault" name="ProcessingFault"></wsdl:fault>
+</wsdl:operation>
+
+<wsdl:operation name="addCampaignAssociation">
+<wsdl:documentation>This transaction adds a campaign association to an existing marketing
+campaign.
+</wsdl:documentation>
+<wsdl:input message="mdmport:AddCampaignAssociationRequest"></wsdl:input>
+<wsdl:output message="mdmport:AddCampaignAssociationResponse"></wsdl:output>
+<wsdl:fault message="mdmport:ProcessingFault" name="ProcessingFault"></wsdl:fault>
+</wsdl:operation>
+
+<wsdl:operation name="updateCampaignAssociation">
+<wsdl:documentation>This transaction can be used to update an existing campaign association
+for a particular campaign.
+</wsdl:documentation>
+<wsdl:input message="mdmport:UpdateCampaignAssociationRequest"></wsdl:input>
+<wsdl:output message="mdmport:UpdateCampaignAssociationResponse"></wsdl:output>
+<wsdl:fault message="mdmport:ProcessingFault" name="ProcessingFault"></wsdl:fault>
+</wsdl:operation>
+
+<wsdl:operation name="getCampaign">
+<wsdl:documentation>This inquiry transaction returns the recorded information
+for a specific campaign.
+Input parameters :
+<tcrmParam name="campaignId"></tcrmParam>
+<tcrmParam name="campAssocFilter"></tcrmParam>
+<tcrmParam name="inquiryLevel"></tcrmParam>
+<tcrmParam name="theDWLControl"></tcrmParam>
+</wsdl:documentation>
+<wsdl:input message="mdmport:GetCampaignRequest"></wsdl:input>
+<wsdl:output message="mdmport:GetCampaignResponse"></wsdl:output>
+<wsdl:fault message="mdmport:ProcessingFault" name="ProcessingFault"></wsdl:fault>
+</wsdl:operation>
+
+<wsdl:operation name="getCampaignAssociation">
+<wsdl:documentation>This inquiry transaction retrieves a particular campaign association
+for a given campaign.
+Input parameters :
+<tcrmParam name="campaignAssociationId"></tcrmParam>
+<tcrmParam name="theDWLControl"></tcrmParam>
+</wsdl:documentation>
+<wsdl:input message="mdmport:GetCampaignAssociationRequest"></wsdl:input>
+<wsdl:output message="mdmport:GetCampaignAssociationResponse"></wsdl:output>
+<wsdl:fault message="mdmport:ProcessingFault" name="ProcessingFault"></wsdl:fault>
+</wsdl:operation>
+
+<wsdl:operation name="addDefaultPrivacyPreferenceRelationship">
+<wsdl:documentation>This transaction adds a default privacy preference relationship.
+The relationship is between existing default privacy preferences.
+</wsdl:documentation>
+<wsdl:input message="mdmport:AddDefaultPrivacyPreferenceRelationshipRequest"></wsdl:input>
+<wsdl:output message="mdmport:AddDefaultPrivacyPreferenceRelationshipResponse"></wsdl:output>
+<wsdl:fault message="mdmport:ProcessingFault" name="ProcessingFault"></wsdl:fault>
+</wsdl:operation>
+
+<wsdl:operation name="updateDefaultPrivacyPreference">
+<wsdl:documentation>This transaction updates certain details for a particular default
+privacy preference. This includes information such as value string,
+default indicator, start date and end date.  This transaction can
+also be used as a coarse-grained transaction to update a default privacy
+preference, update a default privacy preference relationship and add
+a default privacy preference relationship.
+</wsdl:documentation>
+<wsdl:input message="mdmport:UpdateDefaultPrivacyPreferenceRequest"></wsdl:input>
+<wsdl:output message="mdmport:UpdateDefaultPrivacyPreferenceResponse"></wsdl:output>
+<wsdl:fault message="mdmport:ProcessingFault" name="ProcessingFault"></wsdl:fault>
+</wsdl:operation>
+
+<wsdl:operation name="updateDefaultPrivacyPreferenceRelationship">
+<wsdl:documentation>This transaction updates certain details within a default privacy
+preference relationship which includes relationship description, start
+date and end date.
+</wsdl:documentation>
+<wsdl:input message="mdmport:UpdateDefaultPrivacyPreferenceRelationshipRequest"></wsdl:input>
+<wsdl:output message="mdmport:UpdateDefaultPrivacyPreferenceRelationshipResponse"></wsdl:output>
+<wsdl:fault message="mdmport:ProcessingFault" name="ProcessingFault"></wsdl:fault>
+</wsdl:operation>
+
+<wsdl:operation name="addDefaultPrivacyPreference">
+<wsdl:documentation>This transaction adds a default privacy preference to .
+The default privacy preference can be a privacy regulation or a preference
+setting based on the institution's business model. This setting is for the entire enterprise and
+applies to all the parties within ,
+until overridden for a specific entity.This transaction can
+be used as a coarse-grained transaction to add a default privacy preference
+and a default privacy preference relationship.
+</wsdl:documentation>
+<wsdl:input message="mdmport:AddDefaultPrivacyPreferenceRequest"></wsdl:input>
+<wsdl:output message="mdmport:AddDefaultPrivacyPreferenceResponse"></wsdl:output>
+<wsdl:fault message="mdmport:ProcessingFault" name="ProcessingFault"></wsdl:fault>
+</wsdl:operation>
+
+</wsdl:portType>
+
+<wsdl:binding name="BusinessServicesHttpBinding" type="mdmport:BusinessServicesPortType">
+<soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"></soap:binding>
+<wsdl:operation name="addInteraction">
+<soap:operation soapAction=""></soap:operation>
+<wsdl:input>
+<soap:body use="literal"></soap:body>
+</wsdl:input>
+<wsdl:output>
+<soap:body use="literal"></soap:body>
+</wsdl:output>
+<wsdl:fault name="ProcessingFault">
+<soap:fault name="ProcessingFault" use="literal"></soap:fault>
+</wsdl:fault>
+</wsdl:operation>
+<wsdl:operation name="getAlert">
+<soap:operation soapAction=""></soap:operation>
+<wsdl:input>
+<soap:body use="literal"></soap:body>
+</wsdl:input>
+<wsdl:output>
+<soap:body use="literal"></soap:body>
+</wsdl:output>
+<wsdl:fault name="ProcessingFault">
+<soap:fault name="ProcessingFault" use="literal"></soap:fault>
+</wsdl:fault>
+</wsdl:operation>
+<wsdl:operation name="getAllAlerts">
+<soap:operation soapAction=""></soap:operation>
+<wsdl:input>
+<soap:body use="literal"></soap:body>
+</wsdl:input>
+<wsdl:output>
+<soap:body use="literal"></soap:body>
+</wsdl:output>
+<wsdl:fault name="ProcessingFault">
+<soap:fault name="ProcessingFault" use="literal"></soap:fault>
+</wsdl:fault>
+</wsdl:operation>
+<wsdl:operation name="getAllInteractions">
+<soap:operation soapAction=""></soap:operation>
+<wsdl:input>
+<soap:body use="literal"></soap:body>
+</wsdl:input>
+<wsdl:output>
+<soap:body use="literal"></soap:body>
+</wsdl:output>
+<wsdl:fault name="ProcessingFault">
+<soap:fault name="ProcessingFault" use="literal"></soap:fault>
+</wsdl:fault>
+</wsdl:operation>
+<wsdl:operation name="getInteraction">
+<soap:operation soapAction=""></soap:operation>
+<wsdl:input>
+<soap:body use="literal"></soap:body>
+</wsdl:input>
+<wsdl:output>
+<soap:body use="literal"></soap:body>
+</wsdl:output>
+<wsdl:fault name="ProcessingFault">
+<soap:fault name="ProcessingFault" use="literal"></soap:fault>
+</wsdl:fault>
+</wsdl:operation>
+<wsdl:operation name="updateAlert">
+<soap:operation soapAction=""></soap:operation>
+<wsdl:input>
+<soap:body use="literal"></soap:body>
+</wsdl:input>
+<wsdl:output>
+<soap:body use="literal"></soap:body>
+</wsdl:output>
+<wsdl:fault name="ProcessingFault">
+<soap:fault name="ProcessingFault" use="literal"></soap:fault>
+</wsdl:fault>
+</wsdl:operation>
+<wsdl:operation name="updateInteraction">
+<soap:operation soapAction=""></soap:operation>
+<wsdl:input>
+<soap:body use="literal"></soap:body>
+</wsdl:input>
+<wsdl:output>
+<soap:body use="literal"></soap:body>
+</wsdl:output>
+<wsdl:fault name="ProcessingFault">
+<soap:fault name="ProcessingFault" use="literal"></soap:fault>
+</wsdl:fault>
+</wsdl:operation>
+<wsdl:operation name="addInteractionRelationship">
+<soap:operation soapAction=""></soap:operation>
+<wsdl:input>
+<soap:body use="literal"></soap:body>
+</wsdl:input>
+<wsdl:output>
+<soap:body use="literal"></soap:body>
+</wsdl:output>
+<wsdl:fault name="ProcessingFault">
+<soap:fault name="ProcessingFault" use="literal"></soap:fault>
+</wsdl:fault>
+</wsdl:operation>
+<wsdl:operation name="updateInteractionRelationship">
+<soap:operation soapAction=""></soap:operation>
+<wsdl:input>
+<soap:body use="literal"></soap:body>
+</wsdl:input>
+<wsdl:output>
+<soap:body use="literal"></soap:body>
+</wsdl:output>
+<wsdl:fault name="ProcessingFault">
+<soap:fault name="ProcessingFault" use="literal"></soap:fault>
+</wsdl:fault>
+</wsdl:operation>
+<wsdl:operation name="getAllInteractionRelationships">
+<soap:operation soapAction=""></soap:operation>
+<wsdl:input>
+<soap:body use="literal"></soap:body>
+</wsdl:input>
+<wsdl:output>
+<soap:body use="literal"></soap:body>
+</wsdl:output>
+<wsdl:fault name="ProcessingFault">
+<soap:fault name="ProcessingFault" use="literal"></soap:fault>
+</wsdl:fault>
+</wsdl:operation>
+<wsdl:operation name="getInteractionRelationship">
+<soap:operation soapAction=""></soap:operation>
+<wsdl:input>
+<soap:body use="literal"></soap:body>
+</wsdl:input>
+<wsdl:output>
+<soap:body use="literal"></soap:body>
+</wsdl:output>
+<wsdl:fault name="ProcessingFault">
+<soap:fault name="ProcessingFault" use="literal"></soap:fault>
+</wsdl:fault>
+</wsdl:operation>
+<wsdl:operation name="addCampaign">
+<soap:operation soapAction=""></soap:operation>
+<wsdl:input>
+<soap:body use="literal"></soap:body>
+</wsdl:input>
+<wsdl:output>
+<soap:body use="literal"></soap:body>
+</wsdl:output>
+<wsdl:fault name="ProcessingFault">
+<soap:fault name="ProcessingFault" use="literal"></soap:fault>
+</wsdl:fault>
+</wsdl:operation>
+<wsdl:operation name="updateCampaign">
+<soap:operation soapAction=""></soap:operation>
+<wsdl:input>
+<soap:body use="literal"></soap:body>
+</wsdl:input>
+<wsdl:output>
+<soap:body use="literal"></soap:body>
+</wsdl:output>
+<wsdl:fault name="ProcessingFault">
+<soap:fault name="ProcessingFault" use="literal"></soap:fault>
+</wsdl:fault>
+</wsdl:operation>
+<wsdl:operation name="addCampaignAssociation">
+<soap:operation soapAction=""></soap:operation>
+<wsdl:input>
+<soap:body use="literal"></soap:body>
+</wsdl:input>
+<wsdl:output>
+<soap:body use="literal"></soap:body>
+</wsdl:output>
+<wsdl:fault name="ProcessingFault">
+<soap:fault name="ProcessingFault" use="literal"></soap:fault>
+</wsdl:fault>
+</wsdl:operation>
+<wsdl:operation name="updateCampaignAssociation">
+<soap:operation soapAction=""></soap:operation>
+<wsdl:input>
+<soap:body use="literal"></soap:body>
+</wsdl:input>
+<wsdl:output>
+<soap:body use="literal"></soap:body>
+</wsdl:output>
+<wsdl:fault name="ProcessingFault">
+<soap:fault name="ProcessingFault" use="literal"></soap:fault>
+</wsdl:fault>
+</wsdl:operation>
+<wsdl:operation name="getCampaign">
+<soap:operation soapAction=""></soap:operation>
+<wsdl:input>
+<soap:body use="literal"></soap:body>
+</wsdl:input>
+<wsdl:output>
+<soap:body use="literal"></soap:body>
+</wsdl:output>
+<wsdl:fault name="ProcessingFault">
+<soap:fault name="ProcessingFault" use="literal"></soap:fault>
+</wsdl:fault>
+</wsdl:operation>
+<wsdl:operation name="getCampaignAssociation">
+<soap:operation soapAction=""></soap:operation>
+<wsdl:input>
+<soap:body use="literal"></soap:body>
+</wsdl:input>
+<wsdl:output>
+<soap:body use="literal"></soap:body>
+</wsdl:output>
+<wsdl:fault name="ProcessingFault">
+<soap:fault name="ProcessingFault" use="literal"></soap:fault>
+</wsdl:fault>
+</wsdl:operation>
+<wsdl:operation name="addDefaultPrivacyPreferenceRelationship">
+<soap:operation soapAction=""></soap:operation>
+<wsdl:input>
+<soap:body use="literal"></soap:body>
+</wsdl:input>
+<wsdl:output>
+<soap:body use="literal"></soap:body>
+</wsdl:output>
+<wsdl:fault name="ProcessingFault">
+<soap:fault name="ProcessingFault" use="literal"></soap:fault>
+</wsdl:fault>
+</wsdl:operation>
+<wsdl:operation name="updateDefaultPrivacyPreference">
+<soap:operation soapAction=""></soap:operation>
+<wsdl:input>
+<soap:body use="literal"></soap:body>
+</wsdl:input>
+<wsdl:output>
+<soap:body use="literal"></soap:body>
+</wsdl:output>
+<wsdl:fault name="ProcessingFault">
+<soap:fault name="ProcessingFault" use="literal"></soap:fault>
+</wsdl:fault>
+</wsdl:operation>
+<wsdl:operation name="updateDefaultPrivacyPreferenceRelationship">
+<soap:operation soapAction=""></soap:operation>
+<wsdl:input>
+<soap:body use="literal"></soap:body>
+</wsdl:input>
+<wsdl:output>
+<soap:body use="literal"></soap:body>
+</wsdl:output>
+<wsdl:fault name="ProcessingFault">
+<soap:fault name="ProcessingFault" use="literal"></soap:fault>
+</wsdl:fault>
+</wsdl:operation>
+<wsdl:operation name="addDefaultPrivacyPreference">
+<soap:operation soapAction=""></soap:operation>
+<wsdl:input>
+<soap:body use="literal"></soap:body>
+</wsdl:input>
+<wsdl:output>
+<soap:body use="literal"></soap:body>
+</wsdl:output>
+<wsdl:fault name="ProcessingFault">
+<soap:fault name="ProcessingFault" use="literal"></soap:fault>
+</wsdl:fault>
+</wsdl:operation>
+</wsdl:binding>
+
+<wsdl:service name="BusinessServices">
+<wsdl:port binding="mdmport:BusinessServicesHttpBinding" name="BusinessServicesPort">
+<soap:address location="http://localhost:9082/MDMWSProvider/MDMService"></soap:address>
+</wsdl:port>
+</wsdl:service>
+
+</wsdl:definitions>

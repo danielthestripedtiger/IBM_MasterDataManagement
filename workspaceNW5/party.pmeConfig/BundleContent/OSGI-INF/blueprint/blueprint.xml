@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<blueprint xmlns="http://www.osgi.org/xmlns/blueprint/v1.0.0">
+
+	<service interface="com.ibm.mdm.mds.pme.api.osgi.MatchingServiceConfiguration">
+		<bean class="com.ibm.mdm.mds.pme.api.osgi.MatchingServiceConfigurationImpl">
+			<argument ref="blueprintBundle"/>
+		</bean>
+	</service>
+	
+</blueprint>

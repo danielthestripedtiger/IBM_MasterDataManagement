@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<snapshot version="1.0" name="WebSphere Application Server v8.5 at biccmdmtapp01">
+  <group name="bucketAnalysis" memtype="PERSON" />
+  <group name="entityAnalysis" enttype="mdmper">
+    <group name="MemberComparisons" compareType="MEMBERS" compareMembers="770866" probandMember="770866">
+      <group memrecno="770866" scoreValue="17.3">
+        <group cmpspeccode="ID" probandValue="" candidateValue="" scoreValue="+0.00" matchType="M" />
+        <group cmpspeccode="XNM" probandValue="MOSS|HILLARY|" candidateValue="MOSS|HILLARY|" scoreValue="+6.90" matchType="E">
+          <property probandValue="MOSS" candidateValue="MOSS" scoreValue="+4.02" matchType="X" />
+          <property probandValue="HILLARY" candidateValue="HILLARY" scoreValue="+4.40" matchType="X" />
+        </group>
+        <group cmpspeccode="PADDRESS" probandValue="" candidateValue="" scoreValue="+0.00" matchType="M" />
+        <group cmpspeccode="SSN" probandValue="000003521" candidateValue="000003521" scoreValue="+5.63" matchType="E" />
+        <group cmpspeccode="DOB" probandValue="19900906" candidateValue="19900906" scoreValue="+4.46" matchType="E" />
+        <group cmpspeccode="SEX" probandValue="F" candidateValue="F" scoreValue="+0.36" matchType="E" />
+        <group cmpspeccode="EMAIL" probandValue="" candidateValue="" scoreValue="+0.00" matchType="M" />
+      </group>
+    </group>
+  </group>
+</snapshot>
+

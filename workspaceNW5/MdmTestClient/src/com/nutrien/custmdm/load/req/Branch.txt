@@ -1,0 +1,1794 @@
+NULL|0284|North/South Farm Supply [CA]|Closed
+NULL|1274|US Retail|Active
+NULL|1358|Eastern DC Division|Closed
+NULL|1553|Didsbury Admin|Closed
+NULL|1595|Dorchester|Active
+NULL|1611|CAN West Retail Region Admin|Active
+NULL|1612|Canada Retail Topside|Active
+NULL|1686|UAP Canada|Active
+NULL|1687|UAP Topside|Active
+NULL|1814|Brantford ON|Active
+NULL|1821|DS CAD CLOSED|Active
+NULL|1822|Canada National Accounts|Active
+NULL|1850|LPI Canada Ops|Active
+NULL|1933|Rosthern HS AR|Active
+NULL|7525|Henderson|Closed
+NULL|7878|Ag-Vision Seed Ltd|Closed
+0975|0979|DS US Closed|Active
+0975|2159|Venell (Greenfield) OR|Active
+0975|2160|Hamilton City CA (Greenfield)|Active
+0975|2163|Reading MI (Greenfield)|Closed
+0975|2164|Kutztown (Greenfield)|Closed
+0975|2194|Galva (Greenfield)|Active
+0975|2196|Moore Haven (Greenfield)|Closed
+0975|2197|Greenville (Greenfield)|Closed
+0975|2219|Tupelo (Greenfield)|Closed
+0975|2220|Rosedale (Greenfields)|Active
+0975|2221|Yazoo City (Greenfield)|Inactive
+0975|2580|Calhoun City MS (Greenfield)|Active
+0975|2581|North Powder OR (Greenfield)|Active
+0975|2582|Macon MS (Greenfield)|Inactive
+0975|3168|Echelon US|Active
+0975|7998|Chemical Marketing|Active
+0977|0854|KY Closed Locations|Closed
+1000|1001|Mulberry Central Warehouse|Active
+1000|1002|Waverly|Active
+1000|1003|Ft Pierce|Active
+1000|1004|Boynton Beach|Active
+1000|1005|Belle Glade|Active
+1000|1006|Immokalee|Active
+1000|1007|Homestead|Active
+1000|1008|Hastings|Active
+1000|1009|Parrish|Active
+1000|1010|Wauchula|Active
+1000|1012|Lehigh Acres|Closed
+1000|1013|Mulberry UAS|Active
+1000|1104|Mulberry|Active
+1000|1314|Okeechobee FL Liquid Plant|Active
+1000|375|Mulberry Plant|Active
+1340|1334|Moravia|Active
+1340|1335|Mount Union|Active
+1340|1336|Queen City|Active
+1340|1337|South English|Active
+1340|1338|Agency|Active
+1340|1339|Bloomfield|Active
+1340|1341|Eldon|Active
+1340|1342|Eldon IA NH3|Active
+1340|1343|Fairfield|Active
+1340|1346|Hedrick IA NH3|Active
+1340|1347|Hedrick|Active
+1340|1348|Keosauqua|Active
+1340|1349|Mediapolis/Mt Union|Closed
+1340|1350|Memphis|Active
+1340|1465|New Sharon|Active
+1340|428|North English|Active
+1340|430|Gibson|Active
+1340|432|Keswick|Active
+1340|437|Oskaloosa|Active
+1340|6004|Atalissa|Active
+1340|6036|Mediapolis|Active
+1340|6082|Oskaloosa Storage|Active
+1340|6095|New Sharon Seed Warehouse|Active
+1340|6110|Atallisa|Closed
+140|0191|Cascade/Columbia Agronomy|Closed
+140|0351|Clyde|Active
+140|101|Tangent|Active
+140|103|Rickreall|Active
+140|104|Mid-Valley|Active
+140|105|Gresham|Closed
+140|106|Ballston|Closed
+140|108|Carlton|Closed
+140|117|Cornelius|Active
+140|1194|Auburn|Closed
+140|120|120 - Trucking/Cascade/Columbia Division Office|Closed
+140|121|Cascade Wholesale|Active
+140|1355|Hermiston|Active
+140|1356|Pendleton|Active
+140|150|Connell|Active
+140|153|George (Quincy)|Active
+140|156|Mid-Basin|Active
+140|159|LaGrande|Active
+140|162|First Choice Production|Active
+140|165|Othello|Active
+140|175|Toppenish|Active
+140|181|Umatilla|Closed
+140|2158|Okanogan Washington|Active
+140|2231|Sunnyside (Greenfield)|Active
+140|310|Almira|Active
+140|311|Mansfield|Active
+140|313|Upper Columbia|Active
+140|314|Athena|Active
+140|315|Waterville|Active
+140|320|Harrington|Active
+140|340|Reardan|Active
+140|353|Davenport|Active
+140|357|Pomeroy|Active
+140|381|St John|Closed
+140|383|Rosalia|Active
+140|384|Endicott|Closed
+140|386|NW Division Trucking|Active
+140|388|Walla Walla|Active
+140|7005|Northwest Wholesale|Active
+140|7013|North-Basin|Active
+140|7014|Pasco (Liquid Fertilizer)|Active
+140|7020|Umatilla|Closed
+140|7022|PA Tidewater|Closed
+140|7024|Moses Lake Cons|Closed
+140|7025|Plymouth Con|Closed
+140|7028|South-Basin|Active
+140|7058|Hermiston Storage|Active
+140|7059|NW Chemical Distribution|Active
+140|7061|Plymouth (AGU Wholesale)|Active
+140|7062|Moses Lake (AGU)|Active
+140|7065|Cascade Central Warehouse|Active
+140|7066|Farmland Tractor|Active
+140|7067|McMinnville|Closed
+140|7542|Okanogan WA|Active
+140|7583|Baker City|Active
+140|7584|North Powder|Active
+1610|7444|Camrose (VT) (NH3 only)|Closed
+1610|7445|Craddock (NH3 only)|Closed
+1610|7446|Medicine Hat (VT) (NH3 only)|Closed
+1610|7447|Cudworth (NH3)|Closed
+1685|1666|British Columbia (UK4)|Active
+1685|1667|Alberta (UK8)|Active
+1685|1668|Prairies (Sask & Man) (UK5)|Active
+1685|1669|Ontario (UK1)|Active
+1685|1670|Quebec (UK7)|Active
+1685|1671|Maritimes (UK9)|Active
+1685|1810|Kingsville ON|Closed
+1685|3652|Dorchester (UK0)|Active
+1701|1549|Stettler|Active
+1701|1550|Carseland|Active
+1701|1551|Crossfield|Active
+1701|1552|Delburne|Active
+1701|1554|Didsbury|Active
+1701|1557|Penhold|Active
+1701|1559|Torrington|Active
+1701|1617|Castor|Active
+1701|1618|Czar|Active
+1701|1619|Ponoka|Closed
+1701|1640|Rimbey|Active
+1701|1643|Trochu|Closed
+1701|1663|Lacombe|Closed
+1701|1664|Bentley|Active
+1701|1690|Keints Mobile|Active
+1701|1904|Strathmore|Active
+1701|7082|Alix|Closed
+1701|7085|Balzac|Active
+1701|7088|Beiseker|Active
+1701|7112|Coronation|Active
+1701|7117|Delia|Active
+1701|7183|Leduc|Active
+1701|7212|Oyen|Closed
+1701|7221|Ponoka - VT|Active
+1701|7229|Red Deer|Active
+1701|7235|Rosebud|Active
+1701|7236|Rosedale|Active
+1701|7291|Trochu - VT|Active
+1701|7292|Carstairs|Active
+1702|1555|High River|Active
+1702|1556|Nanton|Closed
+1702|1632|Claresholm|Active
+1702|1651|Bow Island|Closed
+1702|1652|Coaldale|Active
+1702|1653|Foremost|Closed
+1702|1655|Milk River|Closed
+1702|1656|Picture Butte|Closed
+1702|1657|Taber|Closed
+1702|1658|Welling|Active
+1702|1659|Coaldale SAS|Closed
+1702|1660|Magrath|Active
+1702|1661|Taber SAS|Active
+1702|1662|Warner|Active
+1702|1708|Okotoks|Closed
+1702|1710|Coaldale Qnst|Active
+1702|1729|Vauxhall|Active
+1702|1731|Medicine Hat|Active
+1702|1732|Medicine Hat Blending Plant|Active
+1702|7098|Brooks|Active
+1702|7099|Broxburn|Closed
+1702|7113|Craddock|Closed
+1702|7130|Enchant|Active
+1702|7162|Herronton|Active
+1702|7171|Iron Springs|Active
+1702|7197|Medicine Hat - VT|Closed
+1702|7201|Milo|Active
+1702|7258|Taber East|Active
+1702|7265|Vauxhall - VT|Closed
+1702|7294|Grassy Lake|Active
+1702|7295|Fort Macleod|Active
+1702|7297|Bow Island - VT|Active
+1703|1607|Biggar|Active
+1703|1613|Langham|Active
+1703|1623|Osler|Active
+1703|1624|Prince Albert|Closed
+1703|1628|Saskatoon|Closed
+1703|1629|Shellbrook|Active
+1703|1648|Wakaw|Active
+1703|1673|Glaslyn|Closed
+1703|1706|Watrous|Active
+1703|1707|Lanigan|Closed
+1703|1844|Leask Country|Closed
+1703|1888|Blaine Lake|Active
+1703|1891|Domremy|Active
+1703|1892|Saskatoon (Marquis)|Active
+1703|1893|Waldheim|Active
+1703|1895|Rosthern (Hold Separate)|Closed
+1703|1896|Waldheim Maintenance|Active
+1703|7080|Aberdeen|Active
+1703|7081|Albertville|Active
+1703|7090|Biggar - VT|Active
+1703|7110|Colonsay|Active
+1703|7115|Cudworth|Active
+1703|7118|Delisle|Active
+1703|7157|Hague|Closed
+1703|7165|Hoey|Active
+1703|7182|Leask|Closed
+1703|7195|Maymont|Active
+1703|7215|Parkside/Shellbrook NH3|Active
+1703|7217|Perdue|Active
+1703|7225|Radisson|Active
+1703|7239|Rosthern|Active
+1703|7267|Viscount|Active
+1703|7272|CPS Watrous|Active
+1704|1650|Cupar|Closed
+1704|1723|Davidson|Closed
+1704|7127|Edenwold|Closed
+1705|1560|Carbon Offset (CROP)|Closed
+1705|1688|Calgary Access Warehouse|Active
+1705|1689|Regina Access Warehouse|Active
+1705|1743|Portage Access Warehouse|Active
+1705|1854|IPCO Loveland Products|Active
+1705|1944|CPSC Distribution Admin|Active
+1705|7375|NH3 Operations Admin|Active
+1705|7378|Head Office Operations Admin|Active
+1705|7380|Vermillion Access Distrib|Active
+1705|7384|Carbon Offset - VT|Closed
+1705|7421|NH3 Ops & Reg Affairs|Active
+1705|7422|NH3 Ops Mgr Sask|Active
+1705|7423|NH3 Ops Sask Sup & Techs|Active
+1705|7424|NH3 Ops Alb Sup & Techs|Active
+1705|7425|NH3 Ops Alb Sup & Techs|Active
+1705|7426|NH3 Op Techs Man|Active
+1705|7427|NH3 Op Techs Alb|Active
+1705|7428|NH3 Ops Mgr Man|Active
+1705|7429|NH3 Op Ops Man Sup & Techs|Active
+1705|7430|NH3 Op Techs Sask|Active
+1705|7431|Mgr-Cntry Operations Reporting|Active
+1705|7432|Manager Maintenance Planning|Active
+1705|7433|Manager Scale Services|Active
+1705|7434|Construction Crew #2|Active
+1705|7435|Manager Electrical Services|Active
+1705|7436|Electrical Project Mgr|Active
+1705|7437|Scale Maintenance|Active
+1705|7438|Engineering & Supply Chain Ser|Active
+1705|7439|Supply Chain Services|Active
+1705|7440|Mgr Automation & Supply Chain|Active
+1705|7441|Manager Infrastructure Support|Active
+1705|7442|Manager Automation Support|Active
+1705|7443|AgriProducts Country Operation|Active
+1815|1548|Evergro - Didsbury|Active
+1815|1804|Delta BC|Active
+1815|1805|Kelowna BC|Active
+1815|1806|Victoria BC|Active
+1815|1807|Abbotsford BC|Active
+1815|1808|Vancouver BC|Closed
+1815|1809|Evergro Calgary AB|Active
+1815|1817|Delta BC Distribution|Active
+1815|1818|Delta BC Production|Active
+1866|1867|Proven Canola|Active
+1866|1868|Proven Cereal|Active
+1866|1869|Proven Forage|Active
+1870|1782|HyTech Canada Warehouse|Active
+1870|1783|HyTech Canada Production|Active
+1870|1802|Haney Farms 1985 LTD|Active
+1870|1803|Veikle Seed LTD|Active
+1870|1871|Canola Distribution|Active
+1870|1872|Cereal Distribution|Active
+1870|1873|Forage Distribution|Active
+1870|1874|Hybrid Production|Active
+1870|1875|Seed Quarantine|Active
+1870|7180|Pioneer Hybrid|Active
+1870|7210|Nipawin Seed Plant|Active
+1870|7299|Ag Vision|Active
+240|201|Hansen|Active
+240|202|Parma|Active
+240|203|Burley|Active
+240|206|Wendell|Active
+240|207|Glenns Ferry|Active
+240|208|Bancroft|Active
+240|213|Pleasant Valley|Closed
+240|214|Liberty|Active
+240|217|Buhl|Active
+240|223|Bruneau|Closed
+240|226|Roberts|Active
+240|232|Maddens Production|Active
+240|6518|Belgrade|Active
+240|6521|Great Falls|Active
+240|6543|Billings MT|Active
+240|6615|Chinook|Closed
+240|6616|Gildford|Closed
+240|7000|Pleasant Valley Inv/SRD|Closed
+240|7006|Maddens|Active
+240|7007|Caldwell|Active
+240|7008|Kimberly Wholesale|Active
+240|7009|Idaho Falls|Active
+240|7023|Utah|Active
+240|7060|Kimberly Chemical Warehouse|Closed
+240|7069|Hardin|Active
+240|806|Paul ID|Active
+270|0228|Mid NC/VA Closed Locations|Active
+270|0243|Red Oak/Nashville|Active
+270|0258|Plymouth|Closed
+270|0262|Charlotte Court House|Closed
+270|0597|Jim Warehouse|Closed
+270|0598|Grissom Fertilizer|Closed
+270|130|Vaughan|Active
+270|2001|Enfield|Active
+270|2002|Clinton|Closed
+270|2003|Snow Hill|Active
+270|2014|Pantego|Active
+270|2015|Pantego Seed|Active
+270|2020|Shawboro Storage|Active
+270|2035|Roseboro|Closed
+270|218|Nashville|Active
+270|229|Abingdon|Closed
+270|238|Four Oaks|Active
+270|239|Faro|Closed
+270|242|Princeton|Active
+270|244|Bailey|Closed
+270|245|Wilson|Active
+270|246|Hookerton|Closed
+270|247|Rocky Mount|Active
+270|249|Bunn|Active
+270|251|Greenville|Active
+270|252|Creswell|Active
+270|253|Fairfield|Active
+270|254|Belhaven|Active
+270|257|Washington|Closed
+270|269|Red House|Closed
+270|271|Vanceboro|Active
+270|272|Wylliesburg|Closed
+270|285|Albertson|Active
+270|286|Trenton|Active
+270|289|Belgrade|Active
+270|292|Clinton|Active
+270|295|Erwin|Active
+270|300|Sanford|Active
+270|301|Salemburg|Active
+270|323|Shawboro|Active
+270|327|Elizabeth City|Active
+270|328|Conway|Active
+270|329|Ivor|Active
+270|4071|White Hat Seed|Closed
+321|1299|Centreville/Phil Thompson|Active
+321|1365|Rosedale|Active
+321|1366|North Brunswick|Active
+321|1368|Butler PA|Active
+321|1463|Shippensburg|Active
+321|2189|Smyrna|Active
+321|2504|Seaford|Active
+321|2505|Eastville|Active
+321|2508|Holtwood|Active
+321|2509|Elmer|Closed
+321|2512|Malaga|Closed
+321|2513|Winchester|Active
+321|2514|Biglerville|Active
+321|2515|Girdletree|Closed
+321|2517|Tyrone|Active
+321|2528|Pocomoke|Active
+321|2532|Winchester Customer App|Closed
+321|2533|Chambersburg|Closed
+321|2534|Belle Haven|Active
+321|2539|Milford|Active
+321|2540|Heathsville|Active
+321|2541|Mt Holly|Active
+321|2550|T&T Enterprises|Closed
+321|2554|Boonsboro|Active
+321|261|Chase City|Closed
+321|2612|Bridgeton|Active
+321|263|Crystal Hill|Active
+321|264|South Hill|Active
+321|322|Aylett|Active
+321|324|Hopewell|Closed
+321|325|Sealston|Active
+321|326|Haynesville|Active
+321|331|East New Market|Active
+321|332|Denton|Closed
+321|333|Massey|Active
+321|335|Keller|Active
+321|336|Milford|Active
+321|751|Washingtonville (Bloomsburg)|Active
+321|754|Worton|Active
+321|755|Centreville|Active
+321|758|Jutland|Active
+3281|3051|Sunfield Hub Sales|Active
+3281|3235|Owensboro Wholesale Chemical|Active
+3281|3627|Ohio Wholesale Chemical|Active
+369|1501|Swainsboro|Active
+369|1504|Donalsonville|Active
+369|1505|Fort Valley|Closed
+369|1506|Arlington|Active
+369|1507|Moultrie GA|Active
+369|1509|Colquitt|Active
+369|1527|Davis Feed & Seed|Closed
+369|1572|Vienna|Closed
+369|1573|Byromville|Closed
+369|1575|Baxley|Active
+369|1576|Rochelle|Active
+369|2177|Ambrose|Active
+369|2200|Dawson|Active
+369|2237|Cairo GA|Active
+369|2238|Pinehurst GA|Active
+369|2239|Anthony FL|Active
+369|2240|Marianna FL|Active
+369|2241|Cochran GA|Active
+369|2242|Trenton FL|Active
+369|2243|Bellville GA|Active
+369|2244|Blakely GA|Active
+369|2245|Camilla GA|Active
+369|2246|Colquitt GA (South)|Active
+369|2247|Cuthbert GA|Active
+369|2248|Cordele GA|Active
+369|2249|Metter GA|Closed
+369|2250|Moultrie GA (West)|Active
+369|2251|Nashville GA|Active
+369|2252|Sylvester GA (North)|Active
+369|2253|Statesboro GA|Active
+369|2254|Vidalia GA|Closed
+369|2255|Waycross GA|Active
+369|2256|Statesboro GA Gin|Active
+369|2261|Moultrie GA Warehouse|Active
+369|339|Doerun|Active
+369|341|Millen|Closed
+369|345|Meigs GA|Active
+369|346|Moultrie|Closed
+369|348|Americus|Active
+369|349|Jesup|Closed
+369|355|Swainsboro/Swainsboro|Active
+369|356|Sylvester|Active
+3815|1024|Hastings (Pinebelt)|Active
+3815|1111|Clinton - Timberland|Active
+3815|1112|Clinton (Pinebelt)|Active
+3815|1115|Greensboro|Active
+3815|1116|Greensboro (Pinebelt)|Active
+3815|1123|Monticello|Active
+3815|1124|Selma Timberland|Active
+3815|1125|Selma (Pinebelt)|Active
+3815|1126|Monticello (Pinebelt)|Active
+3815|1133|Houston|Active
+3815|1137|Houston (Pinebelt)|Active
+3815|1153|Colonial Heights|Active
+3815|1155|Colonial Heights (Pinebelt)|Active
+3815|1183|Spearfish|Active
+3815|1184|Spearfish (Pinebelt)|Active
+3815|2257|Leland Timberland|Active
+3815|2531|Mapleton (Pinebelt)|Active
+3815|2535|Cloverdale (Aqumix)|Active
+3815|4068|Pinebelt|Closed
+3815|4069|ZZ Warehouse|Closed
+3815|6554|Ecopak, LLC|Closed
+3815|7010|Salem|Active
+3815|7029|Salem (Pinebelt)|Active
+3815|9611|Timberland Group|Active
+3926|1482|Edmonson, TX/Plainview|Active
+3926|1483|Halfway, TX/Plainview|Active
+3926|1484|Plainview East|Active
+3926|2128|Ralls|Active
+3926|2129|Larrys (Brownfield)|Active
+3926|2175|Muleshoe|Active
+3926|2188|Hartley|Active
+3926|2195|Cactus TX|Active
+3926|2223|Winters|Active
+3926|2302|Fairview OK|Active
+3926|2303|Shattuck OK|Active
+3926|2304|Waka TX|Active
+3926|2560|Balmorhea/Artesia|Active
+3926|5007|Hereford|Active
+3926|5008|Brownfield|Active
+3926|5009|Roscoe|Active
+3926|5010|Plainview|Active
+3926|5011|Dumas|Active
+3926|5013|DeLeon|Active
+3926|5014|Vado|Active
+3926|5015|Altus|Active
+3926|5016|Artesia|Active
+3926|5022|Veribest-San Angelo|Active
+3926|5026|Denver City|Closed
+3926|5027|Knox City|Active
+3926|5028|Slaton - old|Closed
+3926|5029|Fieldton|Active
+3926|5030|Cotton Center|Active
+3926|5033|Tam Anne|Closed
+3926|5052|Idalou|Active
+3926|5057|Seminole|Active
+3926|5058|Brownfield - old|Active
+3926|5059|Tahoka|Closed
+3926|5060|Knott|Closed
+3926|5061|Plains - old|Active
+3926|5062|Seagraves (WTA)|Closed
+3926|5064|Chattanooga|Active
+3926|5066|Lamesa|Active
+3926|5067|Levelland|Active
+3926|5068|Meadow|Closed
+3926|5070|Slaton|Active
+3926|5107|Dimmitt|Active
+3926|5109|Dimmitt (Compress Location)|Active
+3926|5110|Dimmitt (Storage Building)|Active
+3926|5111|Olton|Active
+3926|5112|Clarendon TX|Active
+3926|5114|Morton|Active
+3926|5116|Slaton SD TR|Closed
+3926|5122|King Ag Sudn|Active
+3926|5123|King Ag Litt|Closed
+3926|5126|Rhineland CP|Closed
+3926|5129|Longsworth|Closed
+3926|5136|Hatch|Active
+3926|5163|Vado (AGRO)|Closed
+3926|5164|Artesia (AAGA)|Active
+3926|5165|Knox City (AGRO)|Closed
+3926|5166|Plains|Active
+3926|5167|Seminole - old|Closed
+3926|5168|Seagraves|Active
+3926|5169|Lamesa - old|Active
+3926|5170|Punkin Center|Closed
+3926|5171|Denver City (AGRO)|Closed
+3926|5186|Floydada|Active
+3926|5187|Big Spring|Active
+3926|5517|Clinton|Active
+3926|5553|Wellington|Closed
+3926|5557|Yukon|Closed
+3926|5572|Portales|Active
+3927|1363|Rosenberg|Active
+3927|1396|Winnie|Active
+3927|1425|Needville|Active
+3927|1460|Hild Brothers|Active
+3927|5001|Taft|Active
+3927|5002|Caldwell|Active
+3927|5003|El Campo|Active
+3927|5004|Uvalde|Closed
+3927|5005|West|Closed
+3927|5006|Taylor|Active
+3927|5019|Webber Falls|Active
+3927|5020|Santa Rosa|Active
+3927|5023|Pittsburg|Active
+3927|5034|Pittsburg (Pinebelt)|Closed
+3927|5041|Heidenheimer|Closed
+3927|5072|Harlingen|Active
+3927|5082|Paris TX|Active
+3927|5085|Rosebud|Active
+3927|5088|Blessing|Active
+3927|5097|Gatesville|Closed
+3927|5137|Texarkana|Closed
+3927|5138|Hewitt|Closed
+3927|5139|Camanche|Closed
+3927|5140|Dawson|Closed
+3927|5141|Chilton|Closed
+3927|5142|McGregor|Closed
+3927|5150|Palmer|Active
+3927|5151|Hillsboro|Active
+3927|5152|Moody|Active
+3927|5153|Taylor TX Fert|Active
+3927|5154|Pearsall|Closed
+3927|5155|Taft (AGRO)|Closed
+3927|5157|Premont|Closed
+3927|5158|Blessing (AGRO)|Closed
+3927|5159|Wharton|Active
+3927|5160|Edna|Active
+3927|5161|Edinburg|Active
+3927|5162|Harlingen (AGRO)|Closed
+3927|5173|White Dove|Closed
+3927|5174|Agro Tech Service|Closed
+3927|5175|Lockhart Gin|Closed
+3927|5176|M&P Grain|Closed
+3927|5184|Taylor Storage|Closed
+3927|5189|Kingsville|Closed
+3927|5190|Cen-Tex (Hillsboro)|Closed
+3927|5191|Lockhart|Closed
+3927|5192|Falls City|Active
+3927|5193|Beeville|Closed
+3927|5194|Victoria|Active
+3927|5195|Port Lavaca|Closed
+3927|5200|Sanger|Closed
+3927|5201|Hillsboro Storage|Closed
+3927|5204|Fort Smith|Closed
+3928|1404|Manila|Active
+3928|2090|Lost Cane|Active
+3928|2091|Frenchman Bayou|Active
+3928|2092|Lost Cane - Fuel|Closed
+3928|2093|Osceola - Fuel|Closed
+3928|2094|Wilson - Fuel|Closed
+3928|2095|Caraway - Fuel|Closed
+3928|2096|Dell - Fuel|Closed
+3928|2097|Frenchmans Bayou Fuel|Closed
+3928|2102|Blytheville|Active
+3928|2103|Tyronza|Active
+3928|2109|Stonewall AR|Active
+3928|2110|Marked Tree - Fuel|Closed
+3928|2114|Earls Flying Service|Active
+3928|2167|Three Rivers Aviation|Active
+3928|2226|Forrest City AR|Active
+3928|2230|Blackfish AR|Active
+3928|3905|Grady|Active
+3928|3906|Gillett|Closed
+3928|3914|Dewitt|Closed
+3928|4002|Wynne|Active
+3928|4004|Clarendon AR|Active
+3928|4006|Des Arc|Active
+3928|4007|Lepanto|Active
+3928|4008|Cooter|Active
+3928|4009|Altheimer|Active
+3928|4010|Crawfordsville AR|Active
+3928|4011|Marianna|Active
+3928|4012|Senath|Active
+3928|4013|Sikeston|Active
+3928|4014|Portageville|Active
+3928|4017|Sandy Ridge Cotton|Closed
+3928|4020|Hazen|Active
+3928|4021|Farmers Union - Senath|Active
+3928|4026|Stuttgart|Closed
+3928|4027|Almyra|Closed
+3928|4032|Portagev Seed|Active
+3928|4033|Taylor/Stuck|Closed
+3928|4034|Charleston|Active
+3928|4040|Tamms|Active
+3928|4041|Bay|Active
+3928|4045|Corning AR|Active
+3928|4048|Hornersville|Active
+3928|4050|Yarbro Bly|Closed
+3928|4051|Blytheville|Active
+3928|4052|Hoxie AR|Active
+3928|4054|Olive Branch|Closed
+3928|4055|J.P. Ross Co|Active
+3928|4065|Bernie|Active
+3928|4067|Rives|Active
+3928|4072|Cooter Seed|Active
+3928|4076|Broseley|Closed
+3928|4077|Quinn Aviation|Closed
+3928|4079|Joiner|Active
+3928|4086|Sturdivant|Active
+3928|4087|Stuttgart Storage|Closed
+3928|4093|Marston Application|Active
+3928|4102|Marvell|Active
+3928|4138|Cash AR|Active
+3928|4141|Caraway|Active
+3928|4142|Diaz|Closed
+3928|4143|Lake City|Active
+3928|4144|Marked Tree|Active
+3928|4145|McCrory|Active
+3928|4146|Osceola|Closed
+3928|4147|Wheatley|Active
+3928|4148|Jonesboro Accounting Office|Active
+3928|4149|Marked Tree Fert|Closed
+3928|4636|Blytheville AR Central Storage|Active
+3929|1453|Pioneer LA/Spray Rig|Active
+3929|2571|CPS Lake Village|Active
+3929|4501|New Roads|Active
+3929|4502|Rayville|Active
+3929|4503|Tallulah|Active
+3929|4504|Thibodaux|Active
+3929|4506|Jonesville|Active
+3929|4507|Whiteville|Active
+3929|4509|Elton|Active
+3929|4510|Boyce|Active
+3929|4522|Portland|Active
+3929|4523|Delhi|Active
+3929|4524|Lake Providence|Active
+3929|4525|Wisner|Active
+3929|4527|Mer Rouge|Active
+3929|4532|Dunn|Active
+3929|4533|Crowville|Active
+3929|4534|Monticello|Active
+3929|4535|Lake Providence Port|Active
+3929|4544|Bonita|Closed
+3929|4545|Pioneer|Active
+3929|4546|Waterproof|Active
+3929|4547|Kifer|Closed
+3929|4563|Vick|Active
+3929|4564|Armistead|Active
+3929|4566|Opelousas|Active
+3929|4568|Ville Platte|Active
+3929|4570|Bunkie|Active
+3929|4572|Gilliam|Active
+3929|4574|Winchester|Active
+3929|4575|McGehee|Closed
+3929|4634|Donalsvl Air|Closed
+3929|4635|Schriever AA|Active
+3930|2138|Holdrege NE (WAC)|Active
+3930|2140|Elwood|Active
+3930|2141|Oxford|Active
+3930|2142|Alma|Active
+3930|2143|Arapahoe|Active
+3930|2144|Heartwell East|Active
+3930|2145|Heartwell West|Active
+3930|2146|Ravenna|Active
+3930|3901|Smith Center|Active
+3930|5205|Deshler|Active
+3930|5206|Davenport|Active
+3930|5207|Edgar|Active
+3930|5208|Fairbury|Active
+3930|5209|Morrowville|Active
+3930|5210|Superior|Active
+3930|5211|Hastings|Active
+3930|5212|Fairmont|Active
+3930|5507|Kearney|Active
+3930|5531|Concordia|Active
+3930|5533|Beloit (Wholesale)|Active
+3930|5534|Chester|Active
+3930|5535|Clay Center|Active
+3930|5536|Courtland|Active
+3930|5537|Downs|Closed
+3930|5538|Hunter|Active
+3930|5539|Mahaska|Active
+3930|5540|Minneapolis|Active
+3930|5541|Morganville|Active
+3930|5542|Republic|Active
+3930|5550|Gaylord|Active
+3930|5560|Waterville|Closed
+3930|5571|Beloit (Retail)|Active
+3930|5608|Clearwater|Active
+3930|5609|Cozad NE|Active
+3930|5611|York|Active
+3932|1420|Grand Forks Office|Active
+3932|2275|Bismarck Seed ND|Active
+3932|2310|Minot North|Active
+3932|6501|Drayton|Closed
+3932|6503|Hatton|Active
+3932|6506|Jamestown Storage|Active
+3932|6509|Grand Forks|Active
+3932|6512|Williston (Wholesale)|Active
+3932|6513|Dickinson (Wholesale)|Active
+3932|6523|Grace City|Active
+3932|6525|Mapleton (Wholesale)|Active
+3932|6529|Hallock|Active
+3932|6532|Devils Lake (Retail and Wholesale)|Active
+3932|6610|Ada|Closed
+3932|6611|Crookston|Closed
+3932|6612|Hallock Ag|Active
+3932|6614|Red Lake Falls|Closed
+3932|6617|Fairview|Closed
+3932|6618|Glasgow|Closed
+3932|6621|Bismarck|Active
+3932|6622|Bowman|Closed
+3932|6623|Cavalier|Active
+3932|6626|Grafton|Active
+3932|6628|Hillsboro|Closed
+3932|6629|Jamestown|Active
+3932|6630|Langdon|Closed
+3932|6632|Minot|Active
+3932|6634|Valley City|Closed
+3932|6635|Wahpeton|Active
+3932|6637|Grand Forks ND Sales|Active
+3932|6639|Dan's Flying Service|Closed
+3932|6640|Thief River Falls|Closed
+3932|6641|Middle River|Closed
+3932|6642|Richardton|Closed
+3932|6655|Stephen|Closed
+3933|3907|Wholesale East|Active
+3933|6001|Kasota|Active
+3933|6002|Kasota Sales|Active
+3933|6008|Wall Lake (Wholesale)|Active
+3933|6009|Fremont (Wholesale Prof)|Active
+3933|6034|Brookings (Wholesale)|Active
+3933|6045|Kasota (Pinebelt)|Active
+3934|1308|S&S Applicator/Chilhowee|Active
+3934|1332|Hughesville|Active
+3934|3502|Atlanta|Active
+3934|3504|Bowling Green - Direct|Active
+3934|3509|Hardin|Closed
+3934|3512|Palmyra|Active
+3934|3514|Perry|Active
+3934|3515|Pleasant Hill|Active
+3934|3524|White Hall|Active
+3934|3529|Winchest|Closed
+3934|3530|St Louis|Closed
+3934|3531|Louisiana|Closed
+3934|3565|Hillview|Closed
+3934|3567|New Canton|Active
+3934|3569|Pittsfield|Active
+3934|3570|Jacksonville|Active
+3934|3608|Columbus Division Inventory|Active
+3934|411|Mt Sterling|Active
+3934|412|Camp Point|Closed
+3934|429|Paris MO|Active
+3934|443|LaPlata|Closed
+3934|5529|Harrisonville|Active
+3934|5546|S&S Applicator|Active
+3934|712|Clarence|Active
+3934|713|Bowling Green - Full|Active
+3934|719|Greenfield|Active
+3935|1298|West Union|Active
+3935|1418|Independence|Active
+3935|1473|Winthrop Wholesale Inventory|Active
+3935|480|Dyersville|Active
+3935|483|Garnavillo|Active
+3935|485|Wyoming|Active
+3935|486|Monticello|Closed
+3935|492|Worthington|Active
+3935|495|Preston|Active
+3935|6027|Hopkinton|Active
+3935|6028|Edgewood|Active
+3935|6032|Winthrop IA|Active
+3935|6038|Manchester|Closed
+3935|6044|Winthrop Warehouse|Active
+3935|6052|Lowden|Closed
+3935|6056|Earlville|Active
+3935|6058|Garnavillo NH3|Active
+3935|6092|Dyersville IA|Active
+3937|1510|Madison|Active
+3937|1511|Selma|Active
+3937|1512|Atmore|Active
+3937|1513|Kinston|Active
+3937|1515|Headland|Active
+3937|1516|Summerdale|Active
+3937|1518|Ashford|Active
+3937|1564|Andalusia Peanut|Closed
+3937|1571|Selma Fertilizer|Active
+3937|338|Robertsdale|Closed
+3937|342|Jay|Active
+3937|343|Dothan|Active
+3937|665|Ethridge|Active
+3937|682|Manchester|Active
+3939|1449|Simpson|Active
+3939|147|Orangeburg - Terminal|Active
+3939|2004|Newland|Active
+3939|2007|Hendersonville|Active
+3939|2008|Jefferson|Active
+3939|2009|Bishopville|Active
+3939|2010|Orangeburg|Active
+3939|2013|Lumberton|Closed
+3939|2025|Hollywood|Closed
+3939|2030|Luray|Active
+3939|2039|Fairmont/Lumberton|Active
+3939|2041|Vance|Closed
+3939|2044|Laurinburg|Active
+3939|221|Yadkinville|Active
+3939|222|Statesville|Active
+3939|230|Brown Summit|Active
+3939|237|Sophia|Active
+3939|274|Millingport|Active
+3939|275|Monroe|Active
+3939|277|Shelby|Active
+3939|279|Norwood|Active
+3939|280|Lumberton|Active
+3939|281|Red Springs|Closed
+3939|282|Fairmont|Active
+3939|305|Aynor|Active
+3939|306|Lake City|Closed
+3939|307|Darlington|Active
+3939|308|Hemingway|Active
+3939|309|Kingstree|Active
+3939|352|Cope|Closed
+3939|359|Starr|Closed
+3940|0509|Huron|Active
+3940|2101|Corcoran - Retail|Active
+3940|2234|Lindsay CA|Active
+3940|503|Dos Palos|Active
+3940|504|Madera|Active
+3940|505|Firebaugh|Active
+3940|507|Fresno|Active
+3940|510|Five Points|Active
+3940|554|Cutler|Active
+3940|555|Visalia|Active
+3940|556|Hanford|Active
+3940|7513|Firebaugh|Closed
+3940|7514|Fresno|Closed
+3940|7528|Lemoore|Active
+3942|1398|Carroll|Active
+3942|1433|Centerville|Active
+3942|1436|Moville Hwy 20|Active
+3942|1437|Laurel Seed|Active
+3942|2147|Beardsley|Active
+3942|2148|Parker|Active
+3942|2149|Emery|Active
+3942|3950|Laurel|Active
+3942|3951|Coleridge|Active
+3942|415|Beemer|Active
+3942|442|Whiting|Active
+3942|444|Thurston|Active
+3942|6010|Danbury|Active
+3942|6011|Breda|Active
+3942|6015|Dunlap|Active
+3942|6016|Ida Grove|Active
+3942|6018|Odebolt|Active
+3942|6019|South Sioux City|Active
+3942|6023|Battle Creek|Active
+3942|6026|Wall Lake|Active
+3942|6035|Sac City|Active
+3942|6037|Laurel|Closed
+3942|6039|Johnson|Active
+3942|6040|Ashland|Active
+3942|6041|Beatrice|Active
+3942|6047|Meckling|Active
+3942|6048|Vermillion|Active
+3942|6049|Elk Point|Active
+3942|6051|Allen|Closed
+3942|6061|Moville|Active
+3942|6062|Anthon|Active
+3945|139|CropConnect PNW|Active
+3945|516|Precision Agri Lab|Active
+425|0402|Joy|Active
+425|0403|Alexis|Active
+425|0404|Douglas|Active
+425|0723|Mason City|Active
+425|1464|Viola/Galesburg|Active
+425|2170|Fairview|Active
+425|2171|Lewistown|Active
+425|2299|Macomb IL|Active
+425|2315|Princeville IL|Active
+425|2316|Dunlap IL|Active
+425|2317|Camp Grove IL|Active
+425|3503|Blandinsville|Active
+425|3517|Cambridge|Active
+425|3562|Sciota|Active
+425|3600|Monmouth Airport|Active
+425|3603|Galesburg|Closed
+425|3604|Rio|Closed
+425|3605|Knoxville|Closed
+425|3606|Buffalo Prairie|Active
+425|3607|Keithsburg|Active
+425|401|Viola|Active
+425|408|Oneida|Active
+425|410|Ferris|Active
+425|413|New Boston|Active
+425|414|Biggsville|Active
+425|6043|Gladstone|Active
+425|6114|Galesburg|Active
+425|6116|Coal Valley|Closed
+425|6117|Seneca|Closed
+425|6118|Little York|Closed
+425|721|Greenview|Closed
+450|1410|Conrad|Active
+450|426|LuVerne|Active
+450|434|Ogden|Active
+450|436|Bangor|Active
+450|445|Mingo|Active
+450|446|Boone|Active
+450|447|Hancock|Active
+450|448|Westboro|Active
+450|474|Corning|Active
+450|6003|Reinbeck|Active
+450|6013|Coin|Active
+450|6014|Creston|Active
+450|6017|Irvington|Active
+450|6024|Radcliff Storage|Active
+450|6042|Corning Seed Storage|Active
+450|6046|Percival|Active
+450|6079|Albion|Active
+450|6080|Union|Closed
+450|6081|St Anthony|Active
+450|6083|Colo|Active
+450|6084|Brayton|Active
+450|6085|Essex|Active
+450|6088|Nevada Storage|Active
+450|6090|Percival NH3|Active
+450|6091|Loudon Seed Storage|Active
+4500|1211|Platte Green|Closed
+4500|1375|Rolling Fork Retail|Closed
+4500|1451|Sidon|Active
+4500|1457|Charleston|Active
+4500|2265|Guntown MS|Active
+4500|4511|Holly Bluff|Active
+4500|4512|Leland|Active
+4500|4513|Greenwood|Closed
+4500|4514|Cleveland|Active
+4500|4516|Clarksdale|Active
+4500|4517|Tunica|Active
+4500|4518|Batesville|Closed
+4500|4519|Houston|Active
+4500|4520|Macon|Active
+4500|4521|Holly Springs|Active
+4500|4529|Greenwood (Pinebelt)|Active
+4500|4531|Grenada Air Industrial Park|Active
+4500|4553|Benton|Active
+4500|4554|Bolton|Active
+4500|4555|Indianola|Active
+4500|4556|Anguilla|Active
+4500|4557|Faye Stokes|Closed
+4500|4559|Hollandale|Active
+4500|4577|Grenada|Closed
+4500|4579|Vaiden (Vaiden Farm Sply)|Active
+4500|4605|Cascio Whse|Active
+4500|4606|Myrtle (Morris Feed Mill)|Active
+4500|4607|Aberdeen|Closed
+499|1397|Gladstone|Active
+499|1402|Shabbona|Active
+499|1467|Andersons WI Rapids|Active
+499|2088|Erie|Active
+499|2135|Shullsburg|Active
+499|2277|West Brooklyn IL|Active
+499|3001|Galesville|Active
+499|3003|Central Sands|Active
+499|3004|Plainfield|Active
+499|3025|DeForest|Active
+499|3026|Janesville|Active
+499|3032|Randolph|Closed
+499|3038|Sterling|Active
+499|3050|Wonewoc|Closed
+499|3526|Dixon|Active
+499|3538|Manlius|Active
+499|3539|Walnut|Active
+499|3540|Conklin|Closed
+499|3541|Franklin Grove|Active
+499|3546|Woodley|Active
+499|3560|AP Plnfld DL|Active
+499|3561|AP Planf JJ|Active
+499|3564|Hart Plainf|Active
+499|3568|Paramount PL|Closed
+499|3582|Appl-Madison|Active
+499|481|Richmond|Active
+499|482|Amboy|Active
+499|488|Steward|Active
+499|493|Shabbona|Closed
+499|714|Baileyville|Active
+499|716|Lanark|Active
+508|1300|Reading|Active
+508|1369|Columbus|Closed
+508|1382|Coldwater|Active
+508|1383|Dowagiac|Active
+508|2111|Schoolcraft|Active
+508|2137|Decatur|Active
+508|2162|Bowling Green (Greenfield)|Closed
+508|2201|Direct Ship - Bowling Green|Active
+508|2203|Milford (TruHorizons)|Active
+508|3006|Blissfield|Closed
+508|3015|Benton Harbor|Active
+508|3018|Jeromesville|Active
+508|3022|Nottawa|Active
+508|3031|Attica|Active
+508|3057|Upper Sandusky|Active
+508|3058|Carey|Active
+508|3059|Wharton|Closed
+508|3060|Nevada|Closed
+508|3626|Ottoville|Closed
+508|458|Brimfield - Terminal|Closed
+508|550|Polk|Active
+508|624|Dunkirk|Active
+508|626|Findlay|Active
+508|627|Hamler|Active
+508|628|Ottawa|Active
+508|629|Delphos|Active
+508|630|Leipsic|Active
+508|633|Ann Arbor|Closed
+508|634|Morenci|Active
+508|635|Mendon|Active
+508|781|Bellevue|Closed
+508|881|Saline|Active
+508|882|Blissfield|Active
+520|1142|Sacramento|Active
+520|1145|Reno|Active
+520|1333|Tonopah|Closed
+520|1416|Walnut Grove Retail|Active
+520|2083|Yerington|Active
+520|2157|Healdsburg|Active
+520|501|Vernalis|Active
+520|502|Merced|Active
+520|511|Modesto East|Active
+520|514|Stockton|Active
+520|519|Source 1 - Central Valley|Closed
+520|522|Newman|Active
+520|7003|Kunia|Active
+520|7004|Lihue|Active
+520|7011|Kahului|Active
+520|7012|Hilo|Active
+520|7503|Modesto West|Active
+520|7504|Yuba City|Active
+520|7508|Sebastopol|Active
+520|7510|Ukiah|Active
+5625|0293|CA Adams Farm Supply|Closed
+5625|0778|Brewster|Active
+5625|1327|Goodland/Middleton|Active
+5625|1352|Precision Ag-North High Plains|Active
+5625|1362|Colby|Active
+5625|1444|Stockton/WaKeeney|Active
+5625|1454|Burlington|Active
+5625|2272|Lamar NE|Active
+5625|2287|Grant NE|Active
+5625|5504|Goodland WHSL|Active
+5625|5508|Greeley|Active
+5625|5511|McCook|Active
+5625|5512|Imperial|Active
+5625|5513|Bridgeport|Active
+5625|5523|Hoxie KS|Active
+5625|5526|Grainfield|Active
+5625|5543|Hill City|Active
+5625|5544|Oberlin|Active
+5625|5545|Wakeeney|Active
+5625|5554|Fort Morgan|Active
+5625|5568|Colby|Active
+5625|5569|Collyer|Active
+5625|5570|Yuma|Active
+5625|5583|Renner Field|Active
+5625|5589|Lyle Oakley Shed|Active
+5625|5606|Goodland East|Active
+5625|5612|Parks|Active
+5625|5615|Greeley Retail|Active
+5625|5617|Bird City|Active
+5625|5620|Hays|Active
+5625|683|Goodland West|Active
+5625|763|Oakley|Active
+590|0546|Reiffsburg|Active
+590|0563|North Salem|Active
+590|1014|Buck Creek Seed Warehouse|Active
+590|2105|Kitchell Seed|Active
+590|2136|Hebron|Active
+590|2205|Tipton (Arcadia)|Active
+590|2281|Jamestown IN|Active
+590|3047|Bluffton|Active
+590|3105|Franklin NH3|Active
+590|3106|Hartsville NH3|Active
+590|3107|Greensburg Seed|Active
+590|3110|Eaton|Closed
+590|3111|Boston|Closed
+590|3113|Rushville|Active
+590|3114|Rushville/New Salem|Active
+590|3507|Peru|Active
+590|3508|Mooresville|Active
+590|3523|West Lebanon|Active
+590|3525|Chalmers|Active
+590|3527|Charlottesville|Active
+590|3533|Monan|Closed
+590|3545|Point Isabel|Active
+590|3553|Attica Seed Hub|Active
+590|3578|Williamspost|Closed
+590|420|Clarks Hill|Active
+590|455|Attica|Active
+590|456|Homer|Active
+590|457|Franklin|Active
+590|459|Greensburg|Active
+590|470|Brookville|Active
+590|496|Buck Creek|Active
+590|536|North Grove|Active
+590|545|Fulton|Active
+590|564|New Brunswick|Active
+590|565|Roachdale|Closed
+590|576|Campbellstown (Eaton)|Active
+590|579|Straughn|Active
+590|580|Williamsburg|Active
+590|582|College Corner|Closed
+590|583|New Salem|Active
+590|585|Fairmount|Active
+590|586|Delphi|Active
+590|587|Arcadia|Active
+590|595|Warren|Active
+592|0859|Slaughters|Active
+592|1441|Clay City|Active
+592|1459|Owensboro (Direct)|Active
+592|2080|Indiana Direct|Active
+592|2193|CPS Daylight Branch|Active
+592|3108|Hibernia|Closed
+592|3109|Scottsburg Seed Warehouse|Active
+592|3119|Orleans|Active
+592|3201|Patoka|Active
+592|3203|Hatfield|Active
+592|3212|Daviess County (Owensboro)|Active
+592|3215|Beaver Dam|Active
+592|3220|Opti Crop (Owensboro)|Closed
+592|3224|Owensboro Retail|Active
+592|3226|Sacramento|Active
+592|3233|Owensboro Storage|Closed
+592|3270|Chandler|Closed
+592|3272|Poseyville NH3|Active
+592|3519|Switz City|Active
+592|3640|Odon|Active
+592|3641|Calhoun|Closed
+592|467|Scottsburg IN|Active
+592|471|Deputy|Closed
+592|566|Oaktown|Active
+592|567|Jasper|Active
+592|568|Otwell|Active
+592|569|Shelburn|Active
+592|570|Wheatland|Active
+592|571|Poseyville|Active
+592|572|Washington|Closed
+592|573|Decker|Active
+592|574|Blackhawk|Active
+592|783|Henderson|Active
+592|784|Clay|Active
+592|785|Waverly|Active
+592|791|Poole|Closed
+592|792|Morganfield|Active
+592|851|Anton (Madisonville)|Active
+620|1134|Chandler|Active
+620|1135|Tucson|Active
+620|1450|Summit Warehouse|Active
+620|1462|Shafter|Active
+620|2236|Porterville CA|Active
+620|2267|Chino CA|Active
+620|552|Pixley|Active
+620|557|Delano|Active
+620|560|Mettler|Active
+620|562|Buttonwillow|Active
+620|602|Riverside|Closed
+620|604|Coachella|Active
+620|609|Imperial|Active
+620|616|Yuma|Active
+620|617|Poston|Active
+620|619|Wellton|Active
+620|7502|Coolidge|Active
+620|7507|Bakersfield|Closed
+620|7511|Mettler Norris Road|Active
+620|7521|Gila Bend|Active
+620|7538|Las Vegas|Active
+620|7546|Willcox|Active
+6644|6645|Perham|Active
+6644|6646|Wadena|Active
+6644|6647|Battle Lake|Closed
+6644|6648|Perham LAC|Closed
+690|0658|Fillmore|Closed
+690|0661|Oxnard Mission|Active
+690|2501|Hollister CA Satellite|Active
+690|2583|Perris CA|Active
+690|603|San Jacinto|Active
+690|605|San Marcos|Active
+690|607|Anaheim|Active
+690|640|Salinas Production|Active
+690|646|Watsonville|Active
+690|648|Hollister|Active
+690|649|Salinas|Active
+690|650|Greenfield|Active
+690|651|Paso Robles|Active
+690|654|Brown Rd|Active
+690|655|Santa Maria|Active
+690|657|Goleta|Active
+690|659|Oxnard-Dufau Rd|Active
+690|660|Oxnard|Active
+690|691|Source 1|Closed
+690|7505|Watsonville/Ford|Active
+690|7524|Santa Maria (Closed)|Closed
+690|7543|Fallbrook|Active
+690|7544|Temecula|Active
+690|7581|Santa Maria Chemical Whse|Active
+698|1389|Union City Direct|Active
+698|2270|Bardwell KY|Active
+698|2271|Farmer's Gin Clinton KY|Active
+698|3208|Portland|Active
+698|3209|Allensville|Active
+698|3214|Elkton (Guthrie)|Closed
+698|3216|Franklin|Active
+698|3228|Schochoh (Russellville)|Active
+698|4015|Covington|Active
+698|4016|Bells|Active
+698|4024|Kevil|Active
+698|4036|Nutbush Gin|Closed
+698|4039|Dyersburg|Active
+698|4049|Milan|Active
+698|4074|Brock Seed|Closed
+698|4105|Burlison Warehouse|Active
+698|4106|Jackson Warehouse|Active
+698|4108|Salem|Closed
+698|4111|Whiteville|Active
+698|4112|Covington|Closed
+698|4140|Clinton|Active
+698|4150|Henderson|Closed
+698|4585|Helm FT Memp|Closed
+698|644|Fancy Farm|Active
+698|652|Sedalia|Active
+698|662|Hardin|Active
+698|678|Clarksville|Closed
+698|681|Springfield|Closed
+698|686|Palmersville|Active
+698|687|Huntingdon|Active
+698|688|Brownsville|Active
+698|693|Wynnburg|Active
+698|695|Union City|Active
+698|799|Puryear|Closed
+698|860|Pembroke|Active
+698|862|Cadiz|Closed
+698|864|Russellville|Closed
+709|0706|Mt Erie Closed|Closed
+709|1400|West Union|Active
+709|3206|Raleigh|Active
+709|3257|Carmi|Active
+709|3269|Toledo|Active
+709|3282|Orchardville|Active
+709|3283|Johnsonville|Active
+709|3284|Keenes|Active
+709|3285|Delafield|Active
+709|3286|Radford|Active
+709|3287|Shelbyville|Active
+709|3505|Browns|Active
+709|3506|Flora|Active
+709|460|Wine Hill|Closed
+709|461|Marissa|Active
+709|462|Walsh|Active
+709|473|Ruma|Active
+709|700|Edgewood|Active
+709|703|Louisville|Closed
+709|704|Crossroads|Active
+709|711|Iuka|Active
+709|717|New Memphis|Active
+709|718|Stolletown|Active
+709|720|Morrisonville|Active
+709|722|Harvel|Closed
+709|724|Nokomis|Active
+709|725|Neoga|Active
+710|0733|New Holland|Closed
+710|0747|Waynesfield|Closed
+710|1474|Wilmington|Active
+710|198|Washington CH|Active
+710|2081|Laurelville|Active
+710|2161|Urbana OH|Active
+710|3021|Greenville|Active
+710|3029|Urbana|Active
+710|3034|Sabina|Active
+710|3049|Five Points|Active
+710|3101|Champaign|Active
+710|477|Bainbridge|Active
+710|737|Midland|Active
+710|738|Mowrystown|Active
+710|742|Unionville|Active
+710|743|Bradford|Active
+710|744|Kirkwood|Active
+710|745|Ansonia|Active
+710|746|Botkins|Closed
+710|748|Circleville Closed|Closed
+710|749|Frankfort|Active
+710|750|Circleville|Active
+710|776|Thurston|Active
+710|795|West Jefferson|Closed
+710|796|Mt. Gilead|Active
+7301|1712|Manning|Closed
+7301|1713|Grimshaw|Active
+7301|1714|Valleyview|Active
+7301|1715|Worsley|Active
+7301|1716|Falher|Active
+7301|1717|Eaglesham|Closed
+7301|1744|Hythe|Active
+7301|1745|Beaverlodge|Active
+7301|1747|Spirit River|Closed
+7301|1884|DeBolt Fertilizer|Active
+7301|1915|Clyde|Active
+7301|1917|Dunvegan (Rycroft)|Active
+7301|1918|Gaudin|Active
+7301|1919|St. Paul|Active
+7301|1920|Waskatenau|Active
+7301|1932|Hawk Hills|Active
+7301|7095|Bonnyville|Active
+7301|7096|Boyle|Active
+7301|7135|Fairview|Active
+7301|7142|Fort Saskatchewan|Active
+7301|7163|Hines Creek|Active
+7301|7242|Sexsmith|Active
+7301|7244|Smoky Lake|Active
+7301|7248|St Paul - Closed|Closed
+7301|7253|Stony Plain|Active
+7301|7271|Wanham|Active
+7301|7275|Westlock|Active
+7301|7285|Barrhead|Active
+7301|7286|High Prairie|Active
+7301|7287|Nampa|Closed
+7301|7288|Silver Valley|Active
+7301|7293|Falher - VT|Closed
+7301|7296|Fort St John|Active
+7301|7386|Two Hills|Closed
+7301|7401|AGRICO CANADA LTD SHED|Closed
+7302|1616|Camrose|Active
+7302|1620|Viking|Closed
+7302|1621|Wetaskiwin|Closed
+7302|1622|Daysland|Closed
+7302|1719|Sedgewick|Active
+7302|1905|Amisk|Active
+7302|1906|Camrose (AGSI)|Active
+7302|1907|Daysland (AGSI)|Active
+7302|1908|Mundare (AGSI)|Active
+7302|1909|Paradise Valley (AGSI)|Active
+7302|1911|Ryley (AGSI)|Active
+7302|1913|Viking (AGSI)|Active
+7302|1916|Dewberry|Active
+7302|7083|Alliance|Closed
+7302|7103|Camrose - VT|Active
+7302|7128|Edgerton|Active
+7302|7140|Forestburg|Active
+7302|7158|Hairy Hill|Active
+7302|7169|Innisfree|Active
+7302|7170|Irma|Active
+7302|7176|Flagstaff|Active
+7302|7188|Lougheed|Active
+7302|7194|Marwayne|Closed
+7302|7206|Mundare|Active
+7302|7207|Myrnam|Active
+7302|7214|Paradise Valley|Active
+7302|7234|Rosalind|Active
+7302|7240|Ryley|Active
+7302|7255|Strome|Active
+7302|7266|Vegreville|Active
+7302|7269|Wainwright|Closed
+7302|7289|Vermilion|Active
+7304|1721|Beechy|Closed
+7304|1722|Central Butte|Active
+7304|1724|Dinsmore|Closed
+7304|1725|Lucky Lake|Active
+7304|1726|Outlook|Active
+7304|1727|Strongfield|Active
+7304|1735|Leader|Closed
+7304|1737|Shaunavon|Closed
+7304|1965|Kincaid (Greenfield)|Active
+7304|7111|Consul|Closed
+7304|7121|Dinsmore|Active
+7304|7125|Eatonia|Active
+7304|7129|Elrose|Active
+7304|7131|Eston|Active
+7304|7133|Eyebrow|Closed
+7304|7150|Gravelbourg|Active
+7304|7155|Gull Lake|Closed
+7304|7193|Mankota|Active
+7304|7205|Morse|Active
+7304|7222|Ponteix|Active
+7304|7237|Rosetown|Active
+7304|7243|Shaunavon|Active
+7304|7257|Swift Current|Active
+7304|7281|Woodrow|Active
+7304|7387|Wiseton|Closed
+7305|1615|Lloydminister|Active
+7305|1630|Spiritwood|Active
+7305|1644|North Battleford|Active
+7305|1889|Cut Knife|Active
+7305|1890|Delmas|Active
+7305|1903|Provost|Active
+7305|1921|Marsden|Active
+7305|7126|Edam|Active
+7305|7160|Hamlin|Active
+7305|7175|Kerrobert|Active
+7305|7178|Kindersley|Active
+7305|7181|Landis|Active
+7305|7189|Luseland|Active
+7305|7190|Macklin|Active
+7305|7191|Maidstone|Active
+7305|7192|Major|Active
+7305|7196|Meadow Lake|Active
+7305|7208|Neilburg|Active
+7305|7213|Paradise Hill|Active
+7305|7233|Rockhaven|Active
+7305|7278|Wilkie|Active
+7306|1675|Kinistino|Closed
+7306|1860|Peesane|Active
+7306|1861|Arborfield|Active
+7306|1862|Prairie River|Active
+7306|1863|Hudson Bay|Active
+7306|1864|St.Brieux - HWY 41|Active
+7306|7092|Birch Hills|Active
+7306|7101|Bruno|Closed
+7306|7108|Choiceland|Active
+7306|7109|Codette|Closed
+7306|7132|Ethelton|Active
+7306|7156|Hagen|Active
+7306|7167|Humboldt|Active
+7306|7174|Kelvington|Active
+7306|7179|Kinistino VT|Closed
+7306|7187|Lintlaw|Active
+7306|7198|Melfort|Active
+7306|7200|Middle Lake|Active
+7306|7223|Porcupine Plain|Active
+7306|7224|Quill Lake|Closed
+7306|7247|St Brieux|Closed
+7306|7262|Tisdale|Active
+7306|7264|Valparaiso|Active
+7306|7268|Wadena|Active
+7306|7273|Watson|Active
+7307|1601|Regina - CLOSED|Closed
+7307|1603|Lumsden|Active
+7307|1606|Rocanville|Closed
+7307|1608|Bredenbury|Closed
+7307|1609|Canora|Closed
+7307|1625|Rhein|Closed
+7307|1626|Roblin|Active
+7307|1627|Russell|Closed
+7307|1647|Swan River|Closed
+7307|1649|Yorkton|Active
+7307|1665|Melville|Active
+7307|1672|Balcarres|Active
+7307|1674|Kamsack|Active
+7307|1684|Vision West|Closed
+7307|1963|Norquay (Greenfield)|Active
+7307|7089|Benito|Active
+7307|7091|Binscarth|Closed
+7307|7093|Birch River|Active
+7307|7102|Buchanan|Active
+7307|7104|Canora - VT|Active
+7307|7114|Craik|Active
+7307|7122|Drake|Active
+7307|7139|Foam Lake|Active
+7307|7143|Foxwarren|Active
+7307|7146|Gerald|Active
+7307|7151|Grenfell|Active
+7307|7168|Indian Head|Active
+7307|7172|Ituna Grain|Active
+7307|7184|Lemberg|Active
+7307|7185|Lestock|Closed
+7307|7186|Liberty|Active
+7307|7202|Minitonas|Active
+7307|7216|Pelly|Active
+7307|7228|Raymore|Active
+7307|7231|Regina - VT|Active
+7307|7246|Southey|Active
+7307|7256|Sturgis|Active
+7307|7260|The Pas|Closed
+7307|7261|Theodore|Active
+7307|7270|Waldron|Active
+7307|7280|Wolseley|Active
+7307|7282|Wynyard|Closed
+7307|7284|Yorkton - VT|Active
+7308|1602|Moosejaw|Active
+7308|1604|Kipling|Active
+7308|1605|Moosomin|Active
+7308|1801|Equipment Offsite (Assiniboia)|Active
+7308|1880|Ogema|Active
+7308|1881|Assiniboia|Active
+7308|1882|Avonlea|Active
+7308|1883|Briercrest|Closed
+7308|7106|Carnduff|Active
+7308|7134|Fairlight|Closed
+7308|7137|Fillmore|Active
+7308|7144|Francis|Closed
+7308|7203|Montmartre|Active
+7308|7204|Moose Jaw - VT|Active
+7308|7211|Oxbow|Active
+7308|7226|Radville|Active
+7308|7230|Redvers|Active
+7308|7254|Stoughton|Closed
+7308|7263|Torquay|Active
+7308|7274|Wauchope|Active
+7308|7276|Weyburn|Active
+7308|7277|Whitewood|Active
+7308|7283|Yellow Grass|Closed
+7309|1728|Carman|Active
+7309|1897|Manitoba CPP|Active
+7309|7084|Arborg|Active
+7309|7086|Basswood|Active
+7309|7087|Beausejour|Active
+7309|7094|Boissevain|Closed
+7309|7097|Brandon|Closed
+7309|7100|Brunkild|Closed
+7309|7105|Carberry|Active
+7309|7107|Cartwright|Active
+7309|7116|Darlingford|Active
+7309|7119|Deloraine|Active
+7309|7120|Dencross|Active
+7309|7123|Dufrost|Closed
+7309|7124|Dunrea|Active
+7309|7136|Fannystelle|Closed
+7309|7138|Fisher Branch|Active
+7309|7141|Fork River|Active
+7309|7145|Franklin|Active
+7309|7147|Gilbert Plains|Active
+7309|7148|Gladstone|Active
+7309|7149|Glenboro|Active
+7309|7152|Gretna|Active
+7309|7153|Griswold|Closed
+7309|7154|Grosse Isle|Active
+7309|7159|Hamiota|Active
+7309|7161|Hargrave|Closed
+7309|7166|Holland|Active
+7309|7173|Kane|Active
+7309|7199|Miami|Closed
+7309|7209|Ninga|Active
+7309|7218|Petersfield|Active
+7309|7219|Pilot Mound|Active
+7309|7220|Plum Coulee|Closed
+7309|7227|Rathwell|Closed
+7309|7232|Reston|Active
+7309|7241|Selkirk|Closed
+7309|7245|Souris|Active
+7309|7249|St. Jean Baptiste|Active
+7309|7250|Starbuck|Closed
+7309|7251|Ste Agathe|Active
+7309|7252|Ste Anne|Active
+7309|7259|Teulon|Active
+7309|7279|Winkler|Active
+7309|7298|Fairfax|Closed
+7309|7300|Tucker|Closed
+7309|7385|Elm Creek|Closed
+7389|7335|Edmonton Fuel|Active
+7389|7340|Lloydminster Fuel|Active
+7389|7352|Stony Plain Fuel|Closed
+7389|7356|Viking Fuel|Active
+7389|7364|Cold Lake Cardlock|Active
+7390|7331|Bow Island Fuel|Active
+7390|7333|Calgary Fuel|Active
+7390|7349|Red Deer Fuel|Active
+7390|7366|Red Deer Cardlock|Active
+7390|7388|Alberta Central Fuel Division|Active
+7390|7395|Saskatchewan SW Fuel Division|Active
+7391|7328|Arborg Fuel|Active
+7391|7334|Gretna Fuel|Active
+7391|7346|Portage Fuel|Active
+7391|7357|Winnipeg Fuel|Active
+7392|7332|Brandon Fuel|Active
+7392|7353|Stoughton Fuel|Active
+7392|7355|Virden Fuel|Active
+7393|7337|Grande Prairie Fuel|Active
+7393|7342|Manning Fuel|Closed
+7396|7329|Assiniboia Fuel|Closed
+7396|7341|Lucky Lake Fuel|Closed
+7396|7344|Meadow Lake Fuel|Active
+7396|7345|North Battleford Fuel|Active
+7396|7347|Prince Albert Fuel|Active
+7396|7348|Raymore Fuel|Active
+7396|7350|Regina Fuel|Active
+7396|7351|Saskatoon Fuel|Active
+7396|7354|Tisdale Fuel|Closed
+7396|7365|Meadow Lake Cardlock|Active
+7396|7394|Saskatchewan SE Fuel Division|Active
+7415|1654|Lethbridge|Active
+7418|1784|Calgary R&D Site|Active
+7418|1785|Edmonton R&D Site|Active
+7418|1786|Saskatoon RDI|Closed
+7418|1787|Saskatoon R&D Site|Active
+7418|1788|Rosebank R&D Site|Active
+7418|1789|Watrous R&D Site|Active
+7420|7419|Sales Manager - Wholesale|Closed
+7448|7359|IOL Cardlocks AB|Active
+7448|7360|IOL Cardlocks BC|Active
+7448|7361|IOL Cardlocks ON|Active
+7448|7362|IOL Cardlocks MB|Active
+7448|7363|IOL Cardlocks SK|Active
+7451|7450|West Canada Terminals Admin|Active
+780|0760|Allentown|Closed
+780|1364|Franklin|Closed
+780|1367|Bohemia|Active
+780|1370|Presque Isle|Active
+780|1385|Rochester|Closed
+780|1386|Brookhaven NY|Closed
+780|1439|Marion|Active
+780|2518|Sodus|Active
+780|2519|Fancher|Active
+780|2520|Milton|Active
+780|2521|Cohocton|Active
+780|2523|Sterling|Active
+780|2524|Avon|Active
+780|2525|Lewiston|Active
+780|2526|Addison|Active
+780|2527|Mapleton|Active
+780|2558|Hall|Active
+780|2561|Lockport|Active
+780|2564|Mt Morris|Active
+780|2568|Carver|Active
+780|2627|Fancher Distribution|Active
+780|752|S Deerfield|Active
+780|753|Amenia|Active
+780|756|Florida|Active
+780|764|Broad Brook|Active
+794|0775|Sublette|Active
+794|1408|Charleston|Active
+794|2181|Haven|Active
+794|2182|Burrton|Active
+794|2211|Macksville|Active
+794|2274|Bucklin KS|Active
+794|2301|Billings OK|Active
+794|2305|Eddy OK|Active
+794|5501|Garden City [Repak]|Active
+794|5502|Garden City KS Wholesale|Active
+794|5506|Goddard|Active
+794|5547|Galva|Active
+794|5549|Halstead|Active
+794|5551|Nickerson|Closed
+794|5552|Goddard Turf|Closed
+794|5555|Little River|Closed
+794|5556|Lyons|Active
+794|5564|Imperial|Closed
+794|5566|Tyrone|Active
+794|5567|McPherson|Active
+794|5577|Plains Division Inventory|Closed
+794|668|Country Store|Active
+794|670|Copeland|Active
+794|672|Cullison|Closed
+794|673|Greensburg|Closed
+794|674|Trousdale|Active
+794|675|Garden City Retail|Active
+794|684|Hooker|Closed
+794|692|Hough|Active
+794|697|Jetmore|Active
+794|701|Kinsley|Active
+794|702|Leoti|Active
+794|707|Cimarron|Active
+794|708|Montezuma|Closed
+794|768|Plains|Active
+794|774|Friend/Garden City|Active
+794|777|Guymon|Active
+7997|0978|Rice Breeding Stn El Campo|Active
+7997|1200|Loveland Products Inc-Dyna Gro|Active
+7997|1466|Ralls TX Sorghum Plant|Active
+7997|2050|Albany OR Oregro Plant|Active
+7997|7975|Levelland (Dyna-Gro)|Active
+847|0419|Strawn|Active
+847|0729|Kansas|Closed
+847|1301|Flanagan|Closed
+847|1353|Chatsworth|Active
+847|1395|Kansas|Active
+847|1406|Sheldon IL|Active
+847|3518|Sidney|Active
+847|3550|Sheldon Inventory|Closed
+847|417|Catlin|Active
+847|421|Paxton|Active
+847|451|Wenona|Active
+847|452|Onarga|Active
+847|453|Melvin|Active
+847|454|Oakland|Active
+847|464|Pontiac|Active
+847|465|Fairbury|Active
+847|466|Dwight|Active
+847|468|Hoopeston|Active
+847|469|Saunemin|Active
+847|726|Dana|Active
+847|727|Metcalf|Active
+847|728|Mays Station|Active
+847|769|Fountain Creek|Closed
+847|771|Sheldon Inventory|Active
+849|1577|Harrold|Active
+849|1578|Bismarck TD Transload|Active
+849|2151|Gluek|Active
+849|2152|Pipestone South|Active
+849|2153|Benson|Active
+849|2154|Marna|Active
+849|2155|Alberta|Active
+849|3911|Mansfield|Active
+849|431|Kerkhoven|Closed
+849|433|Wadena|Closed
+849|435|Perham|Closed
+849|438|Dassel|Active
+849|440|East Chain (Fairmont)|Active
+849|441|Winthrop MN|Active
+849|6005|Harmony|Active
+849|6006|Sargeant|Active
+849|6007|Plainview|Active
+849|6020|Lakefield MN|Active
+849|6021|Pipestone|Active
+849|6022|Slayton|Active
+849|6053|DC Jorgensen|Closed
+849|6054|Koster Seeds|Active
+849|6515|Mora|Active
+849|6516|Big Lake|Active
+849|6517|Sauk Centre (Wholesale)|Active
+849|6553|Northville|Active
+849|6636|Watertown|Closed
+870|1438|Cecilia|Active
+870|2180|Eastern KY Direct Sales|Active
+870|3210|Campbellsville|Active
+870|3211|Cynthiana|Closed
+870|3213|Ekron|Active
+870|3217|Glendale|Active
+870|3218|Lebanon|Active
+870|3227|Owensboro Agri Trucking|Closed
+870|3229|Shelbyville|Active
+870|3231|Upton|Active
+870|4018|Lexington|Active
+870|852|Clarkson|Active
+870|856|Horse Cave|Active
+870|858|Hodgenville|Active
+895|0613|Deckerville|Active
+895|0622|St John's NH3|Active
+895|0872|Michigan Division Chem Whs|Closed
+895|0878|Owosso|Closed
+895|2100|Suttons Bay|Active
+895|2283|Bangor MI|Active
+895|2284|Hamilton MI|Active
+895|2285|Moline MI|Active
+895|2286|West Olive MI|Active
+895|2292|Green Valley Wholesale|Active
+895|2294|Michigan Division Direct Sales|Active
+895|2295|Hart MI|Active
+895|3008|Henderson MI|Active
+895|3011|Owendale|Active
+895|3013|Sparta|Active
+895|3023|Bear Lake|Active
+895|3028|Sparta Inventory Sunfield|Active
+895|3041|Pinconning|Closed
+895|3118|Sunfield Division Inventory|Closed
+895|606|Melvin|Active
+895|614|Greenville|Active
+895|871|Munger|Active
+895|874|Breckenridge|Active
+895|877|Linwood|Active
+895|879|St Johns|Closed
+895|884|Sandusky|Active
+895|886|Woodbury (Lake Odessa)|Active
+895|888|Brown City|Active
+895|892|Ubly|Active
+9708|2057|Billings LPI|Active
+9708|2058|Loveland Products Inc|Active
+9708|2067|LPI Research Farm|Active
+9708|2326|LPI Fairbury MFG|Active
+9708|2327|Platte Fremont NE-LPI|Active
+9708|2353|Greeley LPI|Active

@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+	The following source code ("Code") may only be used in accordance with the terms
+	and conditions of the license agreement you have with IBM Corporation. The Code 
+	is provided to you on an "AS IS" basis, without warranty of any kind.  
+	SUBJECT TO ANY STATUTORY WARRANTIES WHICH CAN NOT BE EXCLUDED, IBM MAKES NO 
+	WARRANTIES OR CONDITIONS EITHER EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED 
+	TO, THE IMPLIED WARRANTIES OR CONDITIONS OF MERCHANTABILITY, FITNESS FOR A 
+	PARTICULAR PURPOSE, AND NON-INFRINGEMENT, REGARDING THE CODE. IN NO EVENT WILL 
+	IBM BE LIABLE TO YOU OR ANY PARTY FOR ANY DIRECT, INDIRECT, SPECIAL OR OTHER 
+	CONSEQUENTIAL DAMAGES FOR ANY USE OF THE CODE, INCLUDING, WITHOUT LIMITATION, 
+	LOSS OF, OR DAMAGE TO, DATA, OR LOST PROFITS, BUSINESS, REVENUE, GOODWILL, OR 
+	ANTICIPATED SAVINGS, EVEN IF IBM HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH 
+	DAMAGES. SOME JURISDICTIONS DO NOT ALLOW THE EXCLUSION OR LIMITATION OF 
+	INCIDENTAL OR CONSEQUENTIAL DAMAGES, SO THE ABOVE LIMITATION OR EXCLUSION MAY 
+	NOT APPLY TO YOU.
+-->
+
+<!--
+	IBM-MDMWB-1.0-[0b4cef7417771822df8d6b61273eac3e]
+-->
+
+<xsd:schema targetNamespace="http://www.ibm.com/mdm/schema"
+			xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+			xmlns="http://www.ibm.com/mdm/schema"
+			elementFormDefault="qualified">
+	
+	<xsd:element name="CompositeNWPersonBObj" substitutionGroup="CommonBObj" type="CompositeNWPersonBObjType"/>
+	
+	<xsd:complexType name="CompositeNWPersonBObjType">
+		<xsd:annotation>
+			<xsd:documentation>
+				
+			</xsd:documentation>
+		</xsd:annotation>
+		<xsd:complexContent>
+			<xsd:extension base="CommonBObjType">
+			<xsd:sequence minOccurs="1" maxOccurs="1">
+				<xsd:element ref="ComponentID" minOccurs="0" maxOccurs="1" />
+				<xsd:element ref="ObjectReferenceId" minOccurs="0" maxOccurs="1" />
+				<xsd:element ref="DWLStatus" minOccurs="0" maxOccurs="1" />
+				<xsd:element ref="TCRMPersonBObj" minOccurs="0" maxOccurs="1" />
+				<xsd:element ref="TCRMExtension" minOccurs="0" maxOccurs="1" />
+			</xsd:sequence>
+			</xsd:extension>
+		</xsd:complexContent>
+	</xsd:complexType>
+	
+	<xsd:element name="XNWPersonNameBObjExt" substitutionGroup="CommonExtensionBObj" type="XNWPersonNameBObjExtType"/>
+	
+	<xsd:complexType name="XNWPersonNameBObjExtType">
+		<xsd:annotation>
+			<xsd:documentation>
+				
+			</xsd:documentation>
+		</xsd:annotation>
+		<xsd:complexContent>
+			<xsd:extension base="CommonExtensionBObjType">
+			<xsd:sequence minOccurs="1" maxOccurs="1">
+				<xsd:element ref="ComponentID" minOccurs="0" maxOccurs="1" />
+				<xsd:element name="XFull_Name" type="xsd:string" minOccurs="0" maxOccurs="1" />
+				<xsd:element name="XDegree" type="xsd:string" minOccurs="0" maxOccurs="1" />
+				<xsd:element name="XDegree_Source" type="xsd:string" minOccurs="0" maxOccurs="1" />
+				<xsd:element name="XDegree_LastVerifiedDate" type="xsd:string" minOccurs="0" maxOccurs="1" />
+				<xsd:element ref="TCRMExtension" minOccurs="0" maxOccurs="1" />
+				<xsd:element ref="DWLStatus" minOccurs="0" maxOccurs="1" />
+			</xsd:sequence>
+			</xsd:extension>
+		</xsd:complexContent>
+	</xsd:complexType>
+	
+	<xsd:element name="XNWPersonBObjExt" substitutionGroup="CommonExtensionBObj" type="XNWPersonBObjExtType"/>
+	
+	<xsd:complexType name="XNWPersonBObjExtType">
+		<xsd:annotation>
+			<xsd:documentation>
+				
+			</xsd:documentation>
+		</xsd:annotation>
+		<xsd:complexContent>
+			<xsd:extension base="CommonExtensionBObjType">
+			<xsd:sequence minOccurs="1" maxOccurs="1">
+				<xsd:element ref="ComponentID" minOccurs="0" maxOccurs="1" />
+				<xsd:element name="XJob_Title" type="xsd:string" minOccurs="0" maxOccurs="1" />
+				<xsd:element name="XJob_Family" type="xsd:string" minOccurs="0" maxOccurs="1" />
+				<xsd:element name="XFullTime_PartTIme" type="xsd:string" minOccurs="0" maxOccurs="1" />
+				<xsd:element name="XStandard_Hours" type="xsd:string" minOccurs="0" maxOccurs="1" />
+				<xsd:element name="XBusiness_Unit" type="xsd:string" minOccurs="0" maxOccurs="1" />
+				<xsd:element name="XHire_Date" type="xsd:string" minOccurs="0" maxOccurs="1" />
+				<xsd:element name="XEmployee_Role_Status" type="xsd:string" minOccurs="0" maxOccurs="1" />
+				<xsd:element name="XRehire_Date" type="xsd:string" minOccurs="0" maxOccurs="1" />
+				<xsd:element name="XTermination_Date" type="xsd:string" minOccurs="0" maxOccurs="1" />
+				<xsd:element name="XDepartment_ID" type="xsd:string" minOccurs="0" maxOccurs="1" />
+				<xsd:element name="XDepartment_Name" type="xsd:string" minOccurs="0" maxOccurs="1" />
+				<xsd:element name="XService_Line_Financial_Budgetary" type="xsd:string" minOccurs="0" maxOccurs="1" />
+				<xsd:element name="XGender_Source" type="xsd:string" minOccurs="0" maxOccurs="1" />
+				<xsd:element name="XGender_LastVerifiedDate" type="xsd:string" minOccurs="0" maxOccurs="1" />
+				<xsd:element name="XMaritalStatus_Source" type="xsd:string" minOccurs="0" maxOccurs="1" />
+				<xsd:element name="XMaritalStatus_LastVerifiedDate" type="xsd:string" minOccurs="0" maxOccurs="1" />
+				<xsd:element name="XEmploymentData_Source" type="xsd:string" minOccurs="0" maxOccurs="1" />
+				<xsd:element name="XEmploymentData_LastVerifiedDate" type="xsd:string" minOccurs="0" maxOccurs="1" />
+				<xsd:element ref="TCRMExtension" minOccurs="0" maxOccurs="1" />
+				<xsd:element ref="DWLStatus" minOccurs="0" maxOccurs="1" />
+			</xsd:sequence>
+			</xsd:extension>
+		</xsd:complexContent>
+	</xsd:complexType>
+	
+	<xsd:element name="XNWPartyAddressBObjExt" substitutionGroup="CommonExtensionBObj" type="XNWPartyAddressBObjExtType"/>
+	
+	<xsd:complexType name="XNWPartyAddressBObjExtType">
+		<xsd:annotation>
+			<xsd:documentation>
+				
+			</xsd:documentation>
+		</xsd:annotation>
+		<xsd:complexContent>
+			<xsd:extension base="CommonExtensionBObjType">
+			<xsd:sequence minOccurs="1" maxOccurs="1">
+				<xsd:element ref="ComponentID" minOccurs="0" maxOccurs="1" />
+				<xsd:element name="XProvider_Facility_Staff_Code" type="xsd:string" minOccurs="0" maxOccurs="1" />
+				<xsd:element name="XProvider_Facility_Active_Status" type="xsd:string" minOccurs="0" maxOccurs="1" />
+				<xsd:element name="XPrimary_Office_Flag" type="xsd:string" minOccurs="0" maxOccurs="1" />
+				<xsd:element name="XDeactivation_Flag" type="xsd:string" minOccurs="0" maxOccurs="1" />
+				<xsd:element name="XPrimary_Billing_Location_Flag" type="xsd:string" minOccurs="0" maxOccurs="1" />
+				<xsd:element name="XCredential_Status" type="xsd:string" minOccurs="0" maxOccurs="1" />
+				<xsd:element name="XProvider_Status" type="xsd:string" minOccurs="0" maxOccurs="1" />
+				<xsd:element name="XScheduling_Primary_Flag" type="xsd:string" minOccurs="0" maxOccurs="1" />
+				<xsd:element ref="TCRMExtension" minOccurs="0" maxOccurs="1" />
+				<xsd:element ref="DWLStatus" minOccurs="0" maxOccurs="1" />
+			</xsd:sequence>
+			</xsd:extension>
+		</xsd:complexContent>
+	</xsd:complexType>
+	
+	<xsd:element name="XNWAddressBObjExt" substitutionGroup="CommonExtensionBObj" type="XNWAddressBObjExtType"/>
+	
+	<xsd:complexType name="XNWAddressBObjExtType">
+		<xsd:annotation>
+			<xsd:documentation>
+				This address extension is for the unique addresses that MDM will hold, regardless of the usage type. For Address data instances by usage type, see TCRMPartyAddressBObj / xNWPartyAddressBObj objects types.
+			</xsd:documentation>
+		</xsd:annotation>
+		<xsd:complexContent>
+			<xsd:extension base="CommonExtensionBObjType">
+			<xsd:sequence minOccurs="1" maxOccurs="1">
+				<xsd:element ref="ComponentID" minOccurs="0" maxOccurs="1" />
+				<xsd:element name="XCounty" type="xsd:string" minOccurs="0" maxOccurs="1" />
+				<xsd:element name="XHospital" type="xsd:string" minOccurs="0" maxOccurs="1" />
+				<xsd:element name="XFacility_Name" type="xsd:string" minOccurs="0" maxOccurs="1" />
+				<xsd:element name="XFacility_Code" type="xsd:string" minOccurs="0" maxOccurs="1" />
+				<xsd:element name="XDepartment_Code" type="xsd:string" minOccurs="0" maxOccurs="1" />
+				<xsd:element name="XDepartment_Description" type="xsd:string" minOccurs="0" maxOccurs="1" />
+				<xsd:element name="XLocation_Code" type="xsd:string" minOccurs="0" maxOccurs="1" />
+				<xsd:element name="XLocation_Description" type="xsd:string" minOccurs="0" maxOccurs="1" />
+				<xsd:element name="XLocation_Mnemonic" type="xsd:string" minOccurs="0" maxOccurs="1" />
+				<xsd:element name="XLocation_ID" type="xsd:string" minOccurs="0" maxOccurs="1" />
+				<xsd:element name="XLocation_Name" type="xsd:string" minOccurs="0" maxOccurs="1" />
+				<xsd:element name="XPhone" type="xsd:string" minOccurs="0" maxOccurs="1" />
+				<xsd:element name="XPhone_Ext" type="xsd:string" minOccurs="0" maxOccurs="1" />
+				<xsd:element name="XSecondary_Phone" type="xsd:string" minOccurs="0" maxOccurs="1" />
+				<xsd:element name="XSec_Phone_Ext" type="xsd:string" minOccurs="0" maxOccurs="1" />
+				<xsd:element name="XFax" type="xsd:string" minOccurs="0" maxOccurs="1" />
+				<xsd:element name="XTax_ID_Number" type="xsd:string" minOccurs="0" maxOccurs="1" />
+				<xsd:element name="XNewport_Key" type="xsd:string" minOccurs="0" maxOccurs="1" />
+				<xsd:element name="XDeactivation_Flag" type="xsd:string" minOccurs="0" maxOccurs="1" />
+				<xsd:element name="XActivation_Date" type="xsd:string" minOccurs="0" maxOccurs="1" />
+				<xsd:element name="XDeactivation_Date" type="xsd:string" minOccurs="0" maxOccurs="1" />
+				<xsd:element name="XTax_ID_Number_Source" type="xsd:string" minOccurs="0" maxOccurs="1" />
+				<xsd:element name="XTax_ID_Number_LastVerifiedDate" type="xsd:string" minOccurs="0" maxOccurs="1" />
+				<xsd:element name="XNewport_Key_Source" type="xsd:string" minOccurs="0" maxOccurs="1" />
+				<xsd:element name="XNewport_Key_LastVerifiedDate" type="xsd:string" minOccurs="0" maxOccurs="1" />
+				<xsd:element ref="TCRMExtension" minOccurs="0" maxOccurs="1" />
+				<xsd:element ref="DWLStatus" minOccurs="0" maxOccurs="1" />
+			</xsd:sequence>
+			</xsd:extension>
+		</xsd:complexContent>
+	</xsd:complexType>
+	
+	<xsd:element name="XNWContactMethodBObjExt" substitutionGroup="CommonExtensionBObj" type="XNWContactMethodBObjExtType"/>
+	
+	<xsd:complexType name="XNWContactMethodBObjExtType">
+		<xsd:annotation>
+			<xsd:documentation>
+				
+			</xsd:documentation>
+		</xsd:annotation>
+		<xsd:complexContent>
+			<xsd:extension base="CommonExtensionBObjType">
+			<xsd:sequence minOccurs="1" maxOccurs="1">
+				<xsd:element ref="ComponentID" minOccurs="0" maxOccurs="1" />
+				<xsd:element name="XExtension" type="xsd:string" minOccurs="0" maxOccurs="1" />
+				<xsd:element ref="TCRMExtension" minOccurs="0" maxOccurs="1" />
+				<xsd:element ref="DWLStatus" minOccurs="0" maxOccurs="1" />
+			</xsd:sequence>
+			</xsd:extension>
+		</xsd:complexContent>
+	</xsd:complexType>
+	
+</xsd:schema>

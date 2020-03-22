@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<item value="false" key="com.ibm.etools.aries.internal.ui.datatransfer.CompositeBundleExportWizardPage1_exportSource"/>
+	<item value="false" key="com.ibm.etools.aries.internal.ui.datatransfer.CompositeBundleExportWizardPage1_replaceQualifier"/>
+	<list key="com.ibm.etools.aries.internal.ui.datatransfer.CompositeBundleExportWizardPage1">
+		<item value="C:\Users\JVelez8\Desktop\mdmnw.cba_1.0.0.201902201304.cba"/>
+		<item value="C:\Work\workspaceNW5\party\mdmnw.cba_1.0.0.201902201304.cba"/>
+		<item value="C:\Users\JVelez8\Desktop\mdmnw.cba_1.0.0.201902131416.cba"/>
+		<item value="C:\Users\JVelez8\Desktop\mdmnw.cba_1.0.0.201902081445.cba"/>
+		<item value="C:\Users\JVelez8\Desktop\mdmnw.cba_1.0.0.201902061317.cba"/>
+		<item value="C:\Users\JVelez8\Desktop\mdmnw.cba_1.0.0.201902010947.cba"/>
+	</list>
+</section>

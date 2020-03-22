@@ -1,0 +1,9 @@
+/****** Script for SelectTopNRows command from SSMS  ******/
+SELECT 'MDMSP'
+      ,'ECHO'+[PersonID]
+      ,[Other_First_Name]
+      ,[Other_Last_Name]
+      ,[Other_Middle_Name]
+	  ,[Other_Suffix]
+	  ,[Date_Last_Modified]
+  FROM [DataGov].[MDM].[Echo_Provider_Name_Alias_VW]

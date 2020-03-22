@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<blueprint xmlns="http://www.osgi.org/xmlns/blueprint/v1.0.0" default-activation="eager">
+
+    <reference id="configManager" interface="com.ibm.mdm.server.config.api.ConfigManager" activation="eager" timeout="60000"/>
+
+    <service id="XSDFinderService" interface="com.dwl.base.xml.XSDFinder" activation="lazy">
+        <service-properties>
+            <entry key="CoreSchema" value="false"/>
+        </service-properties>
+        <bean class="com.dwl.base.xml.XSDFinderImpl">
+            <property name="bpContainer" ref="blueprintContainer"/>
+            <property name="bundle" ref="blueprintBundle"/>
+        </bean>
+    </service>
+
+    <service id="BusinessProxy.MaintainNWPerson" interface="com.ibm.mdm.common.servicefactory.api.BusinessProxyFactory" ranking="10">
+        <service-properties>
+            <entry key="transaction.name" value="MaintainNWPerson"/>
+        </service-properties>
+        <bean class="com.ibm.mdm.common.servicefactory.BusinessProxyFactoryImpl">
+            <argument type="java.lang.Class" value="mdmnw.compositeTxn.MaintainNWPersonCompositeTxnBP"/>
+            <argument ref="blueprintBundle"/>
+        </bean>
+    </service>
+    
+
+  
+
+  
+
+    <service id="BObjQueryFactoryService" interface="com.ibm.mdm.common.servicefactory.api.BObjQueryFactory" ranking="30"> 
+      <bean class="com.ibm.mdm.common.servicefactory.BObjQueryFactoryImpl" >
+        <argument>
+          <map>
+            <entry key="com.dwl.tcrm.coreParty.bobj.query.PartyModuleBObjQueryFactory">
+              <bean class="mdmnw.bobj.query.XPartyModuleBObjQueryFactoryImpl"/>
+            </entry>
+          </map>
+        </argument>
+        <argument ref="blueprintBundle"/>
+      </bean>
+    </service>
+    
+    <service id="BObjPersistenceFactoryService" interface="com.ibm.mdm.common.servicefactory.api.BObjPersistenceFactory" ranking="30"> 
+      <bean class="com.ibm.mdm.common.servicefactory.BObjPersistenceFactoryImpl" >
+        <argument>
+          <map>
+            <entry key="com.dwl.tcrm.coreParty.bobj.query.PartyModuleBObjPersistenceFactory">
+              <bean class="mdmnw.bobj.query.XPartyModuleBObjQueryFactoryImpl"/>
+            </entry>
+          </map>
+        </argument>
+        <argument ref="blueprintBundle"/>
+      </bean>
+    </service>
+
+    <service interface="com.ibm.mdm.common.bobj.api.BObjFactoryService" ranking="0">
+        <service-properties>
+            <entry key="business.object">
+                <list>
+                    <value>CompositeNWPersonBObj</value>
+                </list>
+            </entry>
+        </service-properties>
+        <bean class="com.ibm.mdm.common.bobj.BObjFactoryServiceImpl">
+            <argument>
+                <map key-type="java.lang.String" value-type="java.lang.Class">
+                    <entry key="CompositeNWPersonBObj" value="mdmnw.component.CompositeNWPersonBObj"/>
+                </map>
+            </argument>
+            <argument ref="blueprintBundle"/>
+        </bean>
+    </service>
+
+    <service interface="com.ibm.mdm.common.bobj.api.BObjFactoryService" ranking="20">
+        <service-properties>
+            <entry key="business.object">
+                <list>
+                    <value>XNWPersonNameBObjExt</value>
+                    <value>TCRMPersonNameBObj</value>
+                </list>
+            </entry>
+        </service-properties>
+        <bean class="com.ibm.mdm.common.bobj.BObjFactoryServiceImpl">
+            <argument>
+                <map key-type="java.lang.String" value-type="java.lang.Class">
+                    <entry key="XNWPersonNameBObjExt" value="mdmnw.component.XNWPersonNameBObjExt"/>
+                    <entry key="TCRMPersonNameBObj" value="mdmnw.component.XNWPersonNameBObjExt"/>
+                </map>
+            </argument>
+            <argument ref="blueprintBundle"/>
+        </bean>
+    </service>
+    <service interface="com.ibm.mdm.common.bobj.api.BObjFactoryService" ranking="20">
+        <service-properties>
+            <entry key="business.object">
+                <list>
+                    <value>XNWPersonBObjExt</value>
+                    <value>TCRMPersonBObj</value>
+                </list>
+            </entry>
+        </service-properties>
+        <bean class="com.ibm.mdm.common.bobj.BObjFactoryServiceImpl">
+            <argument>
+                <map key-type="java.lang.String" value-type="java.lang.Class">
+                    <entry key="XNWPersonBObjExt" value="mdmnw.component.XNWPersonBObjExt"/>
+                    <entry key="TCRMPersonBObj" value="mdmnw.component.XNWPersonBObjExt"/>
+                </map>
+            </argument>
+            <argument ref="blueprintBundle"/>
+        </bean>
+    </service>
+    <service interface="com.ibm.mdm.common.bobj.api.BObjFactoryService" ranking="20">
+        <service-properties>
+            <entry key="business.object">
+                <list>
+                    <value>XNWPartyAddressBObjExt</value>
+                    <value>TCRMPartyAddressBObj</value>
+                </list>
+            </entry>
+        </service-properties>
+        <bean class="com.ibm.mdm.common.bobj.BObjFactoryServiceImpl">
+            <argument>
+                <map key-type="java.lang.String" value-type="java.lang.Class">
+                    <entry key="XNWPartyAddressBObjExt" value="mdmnw.component.XNWPartyAddressBObjExt"/>
+                    <entry key="TCRMPartyAddressBObj" value="mdmnw.component.XNWPartyAddressBObjExt"/>
+                </map>
+            </argument>
+            <argument ref="blueprintBundle"/>
+        </bean>
+    </service>
+    <service interface="com.ibm.mdm.common.bobj.api.BObjFactoryService" ranking="20">
+        <service-properties>
+            <entry key="business.object">
+                <list>
+                    <value>XNWAddressBObjExt</value>
+                    <value>TCRMAddressBObj</value>
+                </list>
+            </entry>
+        </service-properties>
+        <bean class="com.ibm.mdm.common.bobj.BObjFactoryServiceImpl">
+            <argument>
+                <map key-type="java.lang.String" value-type="java.lang.Class">
+                    <entry key="XNWAddressBObjExt" value="mdmnw.component.XNWAddressBObjExt"/>
+                    <entry key="TCRMAddressBObj" value="mdmnw.component.XNWAddressBObjExt"/>
+                </map>
+            </argument>
+            <argument ref="blueprintBundle"/>
+        </bean>
+    </service>
+    <service interface="com.ibm.mdm.common.bobj.api.BObjFactoryService" ranking="20">
+        <service-properties>
+            <entry key="business.object">
+                <list>
+                    <value>XNWContactMethodBObjExt</value>
+                    <value>TCRMContactMethodBObj</value>
+                </list>
+            </entry>
+        </service-properties>
+        <bean class="com.ibm.mdm.common.bobj.BObjFactoryServiceImpl">
+            <argument>
+                <map key-type="java.lang.String" value-type="java.lang.Class">
+                    <entry key="XNWContactMethodBObjExt" value="mdmnw.component.XNWContactMethodBObjExt"/>
+                    <entry key="TCRMContactMethodBObj" value="mdmnw.component.XNWContactMethodBObjExt"/>
+                </map>
+            </argument>
+            <argument ref="blueprintBundle"/>
+        </bean>
+    </service>
+
+
+
+
+</blueprint>

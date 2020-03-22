@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdm:MDMApplication xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:mdm="http://www.ibm.com/xmlns/prod/mdm/tools/model/core_v6.ecore" name="mdmnw" databaseSchemaName="MDMDUSER" domainName="mdmnw" referenceDomain="TCRM">
+  <MDMErrorTypeCode name="DELERR" documentation="Delete Error"/>
+  <MDMErrorTypeCode name="DIERR" documentation="Data Invalid Exception"/>
+  <MDMErrorTypeCode name="DKERR" documentation="Duplicate Key Exception"/>
+  <MDMErrorTypeCode name="DRECERR" documentation="Duplicate Record Exception"/>
+  <MDMErrorTypeCode name="FVERR" documentation="Field Validation Error"/>
+  <MDMErrorTypeCode name="INSERR" documentation="Insert Exception"/>
+  <MDMErrorTypeCode name="READERR" documentation="Read Exception"/>
+  <MDMErrorTypeCode name="UPDERR" documentation="Update Exception"/>
+  <Database_DB2_ZOS/>
+  <Database_DB2_LUW/>
+  <Database_Oracle/>
+  <MDMLanguageType/>
+</mdm:MDMApplication>

@@ -1,0 +1,45 @@
+########################################################## {COPYRIGHT-TOP} #####
+# Licensed Materials - Property of IBM
+#
+# 5725-E59
+#
+# (C) Copyright IBM Corp. 2006, 2011 All Rights Reserved.
+#
+# US Government Users Restricted Rights - Use, duplication, or
+# disclosure restricted by GSA ADP Schedule Contract with IBM Corp.
+########################################################## {COPYRIGHT-END} #####
+
+!-- Code Generation Options
+
+!-- The HeaderPath property allows the file header text that is inserted 
+!-- into generated files to be customized.  Set this property to be the
+!-- workspace relative path to a file which contains the custom 
+!-- file header text.
+!-- The value must be a workspace relative path
+#HeaderPath=MyProject/customheader.txt
+
+!-- Database code generation options. Valid values are "Online" and "Offline".
+!-- Online generation uses a connection to the database, so DBConnName needs
+!-- to be set if online generation is chosen.
+!-- Use the Data Perspective to create a new database connection to your test
+!-- database.  Set DBConnName to the name of the connection.
+#DBGeneration=Offline
+
+!-- Database connection name
+#DBConnName=
+
+!-- Post MDM 8.5 generation flag. Omitting this flag or setting it to "false"
+!-- will cause the generated code to adopt the older (MDM 8.5) transaction format for 
+!-- entity type additions. Unless the older transaction format is required, this flag should
+!-- be set to "true". See the user documentation for more information. This property is
+!-- deprecated as of IBM InfoSphere Master Data Management V11.5 and will be removed
+!-- in a future release.
+postMDM85Generation=true
+
+!-- Enable(true) or disable(false) the LastUpdateDate, LastUpdateTxId, LastUpdateUser elements
+!-- in the schema for entity type extensions.
+ExtensionSchemaLastUpdateElements=false
+
+!-- Enable or disable the generation of legacy xsd files
+legacySchemas=false
+

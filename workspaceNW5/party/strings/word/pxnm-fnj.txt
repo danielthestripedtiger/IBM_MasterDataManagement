@@ -1,0 +1,4 @@
+# Value|Standard Value|Word Type
+JO|JO|ANT
+LA|LA|ANT
+LE|LE|ANT

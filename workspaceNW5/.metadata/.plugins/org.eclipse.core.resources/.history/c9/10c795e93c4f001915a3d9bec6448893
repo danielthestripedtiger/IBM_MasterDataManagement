@@ -1,0 +1,36 @@
+package com.nutrien.custmdm.unittest.r1;
+
+import java.util.Scanner;
+import java.io.*;
+
+import com.nutrien.custmdm.unit.test.AbstractMDMTest;
+import com.nutrien.custmdm.unit.test.CommonUtil;
+ 
+public class ReprocessRejects extends AbstractMDMTest 
+{
+	
+	static String xmlBaseDir = "req/maintainParty/";
+	
+    public static void main(String[] args) throws IOException
+    {
+    	loadClientOpts();
+    	
+        Scanner s = new Scanner(System.in);
+         
+        File f = new File(args[0]);
+        Scanner numScan = new Scanner(f);
+         
+        String line;
+         
+        while (numScan.hasNext())
+        {
+        	
+            line = numScan.nextLine();
+            String response = sendRequestViaRest(line);
+            
+            System.out.println(response);
+        }
+         
+         
+    }
+}

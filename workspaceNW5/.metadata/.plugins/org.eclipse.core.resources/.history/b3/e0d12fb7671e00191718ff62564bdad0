@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="UTF-8"?><!-- ***************************************************** {COPYRIGHT-TOP} ***
+* Licensed Materials - Property of IBM
+* Restricted Materials of IBM
+*
+* 5725-E59
+*
+* (C) Copyright IBM Corp. 2011  All Rights Reserved.
+*
+* US Government Users Restricted Rights - Use, duplication, or
+* disclosure restricted by GSA ADP Schedule Contract with IBM Corp.
+********************************************************** {COPYRIGHT-END} --><wsdl:definitions xmlns:mdmport="http://www.ibm.com/mdm/port/ProductServices" xmlns:mdm="http://www.ibm.com/mdm/schema" xmlns:mdmwsdl="http://www.ibm.com/mdm/wsdl/schema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:jaxws="http://java.sun.com/xml/ns/jaxws" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" name="ProductServices" targetNamespace="http://www.ibm.com/mdm/port/ProductServices">
+
+<jaxws:bindings>
+<jaxws:enableWrapperStyle>false</jaxws:enableWrapperStyle>
+</jaxws:bindings>
+<wsdl:types>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.ibm.com/mdm/port/ProductServices">
+<xsd:import namespace="http://www.ibm.com/mdm/schema" schemaLocation="PhysicalMDM.xsd"></xsd:import>
+<xsd:import namespace="http://www.ibm.com/mdm/wsdl/schema" schemaLocation="MDMWSDLCommon.xsd"></xsd:import>
+<xsd:complexType name="getImagesByPartyInputType">
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:RequestControl"></xsd:element>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:TCRMImageRequestBObj"></xsd:element>
+</xsd:sequence>
+</xsd:complexType>
+<xsd:complexType name="getImagesByPartyOutputType">
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:ResponseControl"></xsd:element>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:TxResult"></xsd:element>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:TCRMImageListBObj"></xsd:element>
+</xsd:sequence>
+</xsd:complexType>
+
+<xsd:complexType name="getImagesByContractInputType">
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:RequestControl"></xsd:element>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:TCRMImageRequestBObj"></xsd:element>
+</xsd:sequence>
+</xsd:complexType>
+<xsd:complexType name="getImagesByContractOutputType">
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:ResponseControl"></xsd:element>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:TxResult"></xsd:element>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:TCRMImageListBObj"></xsd:element>
+</xsd:sequence>
+</xsd:complexType>
+
+<xsd:complexType name="getImagesByFSPartyInputType">
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:RequestControl"></xsd:element>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:TCRMImageRequestBObj"></xsd:element>
+</xsd:sequence>
+</xsd:complexType>
+<xsd:complexType name="getImagesByFSPartyOutputType">
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:ResponseControl"></xsd:element>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:TxResult"></xsd:element>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:TCRMImageListBObj"></xsd:element>
+</xsd:sequence>
+</xsd:complexType>
+
+<xsd:complexType name="getTransactionLogInputType">
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:RequestControl"></xsd:element>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:DWLTAILRequestBObj"></xsd:element>
+</xsd:sequence>
+</xsd:complexType>
+<xsd:complexType name="getTransactionLogOutputType">
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:ResponseControl"></xsd:element>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:TxResult"></xsd:element>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:DWLTAILResponseBObj"></xsd:element>
+</xsd:sequence>
+</xsd:complexType>
+
+<xsd:complexType name="getRevisionHistoryOutputType">
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:ResponseControl"></xsd:element>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:TxResult"></xsd:element>
+<xsd:element maxOccurs="unbounded" minOccurs="1" ref="mdm:TCRMRevisionHistoryBObj"></xsd:element>
+</xsd:sequence>
+</xsd:complexType>
+
+<xsd:element name="getImagesByParty" type="mdmport:getImagesByPartyInputType"></xsd:element>
+<xsd:element name="getImagesByPartyResponse" type="mdmport:getImagesByPartyOutputType"></xsd:element>
+<xsd:element name="getImagesByContract" type="mdmport:getImagesByContractInputType"></xsd:element>
+<xsd:element name="getImagesByContractResponse" type="mdmport:getImagesByContractOutputType"></xsd:element>
+<xsd:element name="getImagesByFSParty" type="mdmport:getImagesByFSPartyInputType"></xsd:element>
+<xsd:element name="getImagesByFSPartyResponse" type="mdmport:getImagesByFSPartyOutputType"></xsd:element>
+<xsd:element name="getTransactionLog" type="mdmport:getTransactionLogInputType"></xsd:element>
+<xsd:element name="getTransactionLogResponse" type="mdmport:getTransactionLogOutputType"></xsd:element>
+<xsd:element name="getRevisionHistory" type="mdmwsdl:TCRMInquiryInputType"></xsd:element>
+<xsd:element name="getRevisionHistoryResponse" type="mdmport:getRevisionHistoryOutputType"></xsd:element>
+<xsd:element name="processingFault" type="mdmwsdl:ProcessingFaultType"></xsd:element>
+</xsd:schema>
+</wsdl:types>
+<wsdl:message name="ProcessingFault">
+<wsdl:part element="mdmport:processingFault" name="parameters"></wsdl:part>
+</wsdl:message>
+<wsdl:message name="GetImagesByPartyRequest">
+<wsdl:part element="mdmport:getImagesByParty" name="parameters"></wsdl:part>
+</wsdl:message>
+<wsdl:message name="GetImagesByPartyResponse">
+<wsdl:part element="mdmport:getImagesByPartyResponse" name="parameters"></wsdl:part>
+</wsdl:message>
+
+<wsdl:message name="GetImagesByContractRequest">
+<wsdl:part element="mdmport:getImagesByContract" name="parameters"></wsdl:part>
+</wsdl:message>
+<wsdl:message name="GetImagesByContractResponse">
+<wsdl:part element="mdmport:getImagesByContractResponse" name="parameters"></wsdl:part>
+</wsdl:message>
+
+<wsdl:message name="GetImagesByFSPartyRequest">
+<wsdl:part element="mdmport:getImagesByFSParty" name="parameters"></wsdl:part>
+</wsdl:message>
+<wsdl:message name="GetImagesByFSPartyResponse">
+<wsdl:part element="mdmport:getImagesByFSPartyResponse" name="parameters"></wsdl:part>
+</wsdl:message>
+
+<wsdl:message name="GetTransactionLogRequest">
+<wsdl:part element="mdmport:getTransactionLog" name="parameters"></wsdl:part>
+</wsdl:message>
+<wsdl:message name="GetTransactionLogResponse">
+<wsdl:part element="mdmport:getTransactionLogResponse" name="parameters"></wsdl:part>
+</wsdl:message>
+
+<wsdl:message name="GetRevisionHistoryRequest">
+<wsdl:part element="mdmport:getRevisionHistory" name="parameters"></wsdl:part>
+</wsdl:message>
+<wsdl:message name="GetRevisionHistoryResponse">
+<wsdl:part element="mdmport:getRevisionHistoryResponse" name="parameters"></wsdl:part>
+</wsdl:message>
+
+<wsdl:portType name="ProductServicesPortType">
+<wsdl:operation name="getImagesByParty">
+<wsdl:documentation>The purpose of this transaction is to provide the user with a
+view of specific data changes that have been made to a given party
+over a specified period of time.
+</wsdl:documentation>
+<wsdl:input message="mdmport:GetImagesByPartyRequest"></wsdl:input>
+<wsdl:output message="mdmport:GetImagesByPartyResponse"></wsdl:output>
+<wsdl:fault message="mdmport:ProcessingFault" name="ProcessingFault"></wsdl:fault>
+</wsdl:operation>
+
+<wsdl:operation name="getImagesByContract">
+<wsdl:documentation>The purpose of this transaction is to provide the user with a
+view of specific data changes that have been made to a given contract
+over a specified period of time.
+</wsdl:documentation>
+<wsdl:input message="mdmport:GetImagesByContractRequest"></wsdl:input>
+<wsdl:output message="mdmport:GetImagesByContractResponse"></wsdl:output>
+<wsdl:fault message="mdmport:ProcessingFault" name="ProcessingFault"></wsdl:fault>
+</wsdl:operation>
+
+<wsdl:operation name="getImagesByFSParty">
+<wsdl:documentation>This transaction provides the user with a view of specific data
+changes that have been made to the ContractPartyRole for a given party
+over a specified period of time.
+</wsdl:documentation>
+<wsdl:input message="mdmport:GetImagesByFSPartyRequest"></wsdl:input>
+<wsdl:output message="mdmport:GetImagesByFSPartyResponse"></wsdl:output>
+<wsdl:fault message="mdmport:ProcessingFault" name="ProcessingFault"></wsdl:fault>
+</wsdl:operation>
+
+<wsdl:operation name="getTransactionLog">
+<wsdl:documentation>This inquiry transaction returns transaction audit information
+from the  audit
+log tables, along with transaction history details from the history
+tables.
+</wsdl:documentation>
+<wsdl:input message="mdmport:GetTransactionLogRequest"></wsdl:input>
+<wsdl:output message="mdmport:GetTransactionLogResponse"></wsdl:output>
+<wsdl:fault message="mdmport:ProcessingFault" name="ProcessingFault"></wsdl:fault>
+</wsdl:operation>
+
+<wsdl:operation name="getRevisionHistory">
+<wsdl:documentation>This transaction provides the user with a list of dates when history
+data changed for a specified business object over a specified period
+of time.
+Input parameters :
+<tcrmParam name="groupName"></tcrmParam>
+<tcrmParam name="instancePK"></tcrmParam>
+<tcrmParam name="inquiryLevel"></tcrmParam>
+<tcrmParam name="dwlControl"></tcrmParam>
+</wsdl:documentation>
+<wsdl:input message="mdmport:GetRevisionHistoryRequest"></wsdl:input>
+<wsdl:output message="mdmport:GetRevisionHistoryResponse"></wsdl:output>
+<wsdl:fault message="mdmport:ProcessingFault" name="ProcessingFault"></wsdl:fault>
+</wsdl:operation>
+
+</wsdl:portType>
+
+<wsdl:binding name="ProductServicesHttpBinding" type="mdmport:ProductServicesPortType">
+<soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"></soap:binding>
+<wsdl:operation name="getImagesByParty">
+<soap:operation soapAction=""></soap:operation>
+<wsdl:input>
+<soap:body use="literal"></soap:body>
+</wsdl:input>
+<wsdl:output>
+<soap:body use="literal"></soap:body>
+</wsdl:output>
+<wsdl:fault name="ProcessingFault">
+<soap:fault name="ProcessingFault" use="literal"></soap:fault>
+</wsdl:fault>
+</wsdl:operation>
+<wsdl:operation name="getImagesByContract">
+<soap:operation soapAction=""></soap:operation>
+<wsdl:input>
+<soap:body use="literal"></soap:body>
+</wsdl:input>
+<wsdl:output>
+<soap:body use="literal"></soap:body>
+</wsdl:output>
+<wsdl:fault name="ProcessingFault">
+<soap:fault name="ProcessingFault" use="literal"></soap:fault>
+</wsdl:fault>
+</wsdl:operation>
+<wsdl:operation name="getImagesByFSParty">
+<soap:operation soapAction=""></soap:operation>
+<wsdl:input>
+<soap:body use="literal"></soap:body>
+</wsdl:input>
+<wsdl:output>
+<soap:body use="literal"></soap:body>
+</wsdl:output>
+<wsdl:fault name="ProcessingFault">
+<soap:fault name="ProcessingFault" use="literal"></soap:fault>
+</wsdl:fault>
+</wsdl:operation>
+<wsdl:operation name="getTransactionLog">
+<soap:operation soapAction=""></soap:operation>
+<wsdl:input>
+<soap:body use="literal"></soap:body>
+</wsdl:input>
+<wsdl:output>
+<soap:body use="literal"></soap:body>
+</wsdl:output>
+<wsdl:fault name="ProcessingFault">
+<soap:fault name="ProcessingFault" use="literal"></soap:fault>
+</wsdl:fault>
+</wsdl:operation>
+<wsdl:operation name="getRevisionHistory">
+<soap:operation soapAction=""></soap:operation>
+<wsdl:input>
+<soap:body use="literal"></soap:body>
+</wsdl:input>
+<wsdl:output>
+<soap:body use="literal"></soap:body>
+</wsdl:output>
+<wsdl:fault name="ProcessingFault">
+<soap:fault name="ProcessingFault" use="literal"></soap:fault>
+</wsdl:fault>
+</wsdl:operation>
+</wsdl:binding>
+
+<wsdl:service name="ProductServices">
+<wsdl:port binding="mdmport:ProductServicesHttpBinding" name="ProductServicesPort">
+<soap:address location="http://localhost:9082/MDMWSProvider/MDMService"></soap:address>
+</wsdl:port>
+</wsdl:service>
+
+</wsdl:definitions>

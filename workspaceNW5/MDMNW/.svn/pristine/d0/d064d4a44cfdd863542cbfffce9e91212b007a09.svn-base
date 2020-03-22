@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<blueprint xmlns="http://www.osgi.org/xmlns/blueprint/v1.0.0" default-activation="eager">
+    <bean id="RuleLocatorBean" scope="singleton" class="com.dwl.base.externalrule.RuleLocatorImpl">
+        <property name="bpBundle" ref="blueprintBundle"/>
+        <argument>
+            <list>
+                <bean class="mdmnw.externalrule.PartyUpdateExtRule"/>
+                <bean class="mdmnw.externalrule.SuspectAddPartyRule"/>
+                <bean class="mdmnw.externalrule.CollapsePartiesWithRules"/>
+                <bean class="mdmnw.externalrule.CollapseMultiplePartiesRule"/>
+            </list>
+        </argument>
+    </bean>
+    <service id="ExternalRuleLocatorService" ref="RuleLocatorBean" interface="com.dwl.base.externalrule.RuleLocator" ranking="50">
+        <service-properties>
+            <entry key="rule.java.impl">
+                <list>
+                    <value>mdmnw.externalrule.PartyUpdateExtRule</value>
+                    <value>mdmnw.externalrule.SuspectAddPartyRule</value>
+                    <value>mdmnw.externalrule.CollapsePartiesWithRules</value>
+                    <value>mdmnw.externalrule.CollapseMultiplePartiesRule</value>
+                </list>
+            </entry>
+        </service-properties>
+    </service>
+</blueprint>

@@ -1,0 +1,465 @@
+<?xml version="1.0" encoding="UTF-8"?><!-- ***************************************************** {COPYRIGHT-TOP} ***
+* Licensed Materials - Property of IBM
+* Restricted Materials of IBM
+*
+* 5725-E59
+*
+* (C) Copyright IBM Corp. 2011  All Rights Reserved.
+*
+* US Government Users Restricted Rights - Use, duplication, or
+* disclosure restricted by GSA ADP Schedule Contract with IBM Corp.
+********************************************************** {COPYRIGHT-END} --><wsdl:definitions xmlns:mdmport="http://www.ibm.com/mdm/port/DWLCommonServices" xmlns:mdm="http://www.ibm.com/mdm/schema" xmlns:mdmwsdl="http://www.ibm.com/mdm/wsdl/schema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:jaxws="http://java.sun.com/xml/ns/jaxws" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" name="DWLCommonServices-Domains" targetNamespace="http://www.ibm.com/mdm/port/DWLCommonServices">
+
+<jaxws:bindings>
+<jaxws:enableWrapperStyle>false</jaxws:enableWrapperStyle>
+</jaxws:bindings>
+<wsdl:types>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.ibm.com/mdm/port/DWLCommonServices">
+<xsd:import namespace="http://www.ibm.com/mdm/schema" schemaLocation="PhysicalMDM.xsd"></xsd:import>
+<xsd:import namespace="http://www.ibm.com/mdm/wsdl/schema" schemaLocation="MDMWSDLCommon.xsd"></xsd:import>
+<xsd:complexType name="addProductTypeInputType">
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:RequestControl"></xsd:element>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:ProductTypeBObj"></xsd:element>
+</xsd:sequence>
+</xsd:complexType>
+<xsd:complexType name="addProductTypeOutputType">
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:ResponseControl"></xsd:element>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:TxResult"></xsd:element>
+<xsd:element maxOccurs="unbounded" minOccurs="1" ref="mdm:ProductTypeBObj"></xsd:element>
+</xsd:sequence>
+</xsd:complexType>
+
+<xsd:complexType name="updateProductTypeInputType">
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:RequestControl"></xsd:element>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:ProductTypeBObj"></xsd:element>
+</xsd:sequence>
+</xsd:complexType>
+<xsd:complexType name="updateProductTypeOutputType">
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:ResponseControl"></xsd:element>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:TxResult"></xsd:element>
+<xsd:element maxOccurs="unbounded" minOccurs="1" ref="mdm:ProductTypeBObj"></xsd:element>
+</xsd:sequence>
+</xsd:complexType>
+
+<xsd:complexType name="getOperationalCodeTypeOutputType">
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:ResponseControl"></xsd:element>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:TxResult"></xsd:element>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:CodeTypeBObj"></xsd:element>
+</xsd:sequence>
+</xsd:complexType>
+
+<xsd:complexType name="getAllOperationalCodeTypesOutputType">
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:ResponseControl"></xsd:element>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:TxResult"></xsd:element>
+<xsd:element maxOccurs="unbounded" minOccurs="1" ref="mdm:CodeTypeBObj"></xsd:element>
+</xsd:sequence>
+</xsd:complexType>
+
+<xsd:complexType name="getAllOperationalCodeTypesByLangIdOutputType">
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:ResponseControl"></xsd:element>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:TxResult"></xsd:element>
+<xsd:element maxOccurs="unbounded" minOccurs="1" ref="mdm:CodeTypeBObj"></xsd:element>
+</xsd:sequence>
+</xsd:complexType>
+
+<xsd:complexType name="getAllOperationalCodeTypesByLocaleOutputType">
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:ResponseControl"></xsd:element>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:TxResult"></xsd:element>
+<xsd:element maxOccurs="unbounded" minOccurs="1" ref="mdm:CodeTypeBObj"></xsd:element>
+</xsd:sequence>
+</xsd:complexType>
+
+<xsd:complexType name="reloadAllOperationalCodeTypesOutputType">
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:ResponseControl"></xsd:element>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:TxResult"></xsd:element>
+<xsd:element maxOccurs="unbounded" minOccurs="1" ref="mdm:CodeTypeBObj"></xsd:element>
+</xsd:sequence>
+</xsd:complexType>
+
+<xsd:complexType name="getMDMServerProfileOutputType">
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:ResponseControl"></xsd:element>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:TxResult"></xsd:element>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:MDMServerProfileBObj"></xsd:element>
+</xsd:sequence>
+</xsd:complexType>
+
+<xsd:complexType name="initializeStatisticsInputType">
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:RequestControl"></xsd:element>
+<xsd:element maxOccurs="1" minOccurs="0" ref="mdm:InitialStatisticsRequestBObj"></xsd:element>
+</xsd:sequence>
+</xsd:complexType>
+<xsd:complexType name="initializeStatisticsOutputType">
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:ResponseControl"></xsd:element>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:TxResult"></xsd:element>
+<xsd:element maxOccurs="unbounded" minOccurs="1" ref="mdm:InitialStatisticsResponseBObj"></xsd:element>
+</xsd:sequence>
+</xsd:complexType>
+
+<xsd:complexType name="getStatisticsInputType">
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:RequestControl"></xsd:element>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:StatisticsRequestBObj"></xsd:element>
+</xsd:sequence>
+</xsd:complexType>
+
+<xsd:complexType name="getStatisticsOutputType">
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:ResponseControl"></xsd:element>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:TxResult"></xsd:element>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:StatisticsResponseBObj"></xsd:element>
+</xsd:sequence>
+</xsd:complexType>
+
+<xsd:element name="addProductType" type="mdmport:addProductTypeInputType"></xsd:element>
+<xsd:element name="addProductTypeResponse" type="mdmport:addProductTypeOutputType"></xsd:element>
+<xsd:element name="updateProductType" type="mdmport:updateProductTypeInputType"></xsd:element>
+<xsd:element name="updateProductTypeResponse" type="mdmport:updateProductTypeOutputType"></xsd:element>
+<xsd:element name="getOperationalCodeType" type="mdmwsdl:TCRMInquiryInputType"></xsd:element>
+<xsd:element name="getOperationalCodeTypeResponse" type="mdmport:getOperationalCodeTypeOutputType"></xsd:element>
+<xsd:element name="getAllOperationalCodeTypes" type="mdmwsdl:TCRMInquiryInputType"></xsd:element>
+<xsd:element name="getAllOperationalCodeTypesResponse" type="mdmport:getAllOperationalCodeTypesOutputType"></xsd:element>
+<xsd:element name="getAllOperationalCodeTypesByLangId" type="mdmwsdl:TCRMInquiryInputType"></xsd:element>
+<xsd:element name="getAllOperationalCodeTypesByLangIdResponse" type="mdmport:getAllOperationalCodeTypesByLangIdOutputType"></xsd:element>
+<xsd:element name="getAllOperationalCodeTypesByLocale" type="mdmwsdl:TCRMInquiryInputType"></xsd:element>
+<xsd:element name="getAllOperationalCodeTypesByLocaleResponse" type="mdmport:getAllOperationalCodeTypesByLocaleOutputType"></xsd:element>
+<xsd:element name="reloadAllOperationalCodeTypes" type="mdmwsdl:TCRMInquiryInputType"></xsd:element>
+<xsd:element name="reloadAllOperationalCodeTypesResponse" type="mdmport:reloadAllOperationalCodeTypesOutputType"></xsd:element>
+<xsd:element name="getMDMServerProfile" type="mdmwsdl:TCRMInquiryInputType"></xsd:element>
+<xsd:element name="getMDMServerProfileResponse" type="mdmport:getMDMServerProfileOutputType"></xsd:element>
+<xsd:element name="processingFault" type="mdmwsdl:ProcessingFaultType"></xsd:element>
+<xsd:element name="initializeStatistics" type="mdmport:initializeStatisticsInputType"></xsd:element>
+<xsd:element name="initializeStatisticsResponse" type="mdmport:initializeStatisticsOutputType"></xsd:element>
+<xsd:element name="getStatistics" type="mdmport:getStatisticsInputType"></xsd:element>
+<xsd:element name="getStatisticsResponse" type="mdmport:getStatisticsOutputType"></xsd:element>
+
+</xsd:schema>
+</wsdl:types>
+<wsdl:message name="ProcessingFault">
+<wsdl:part element="mdmport:processingFault" name="parameters"></wsdl:part>
+</wsdl:message>
+<wsdl:message name="AddProductTypeRequest">
+<wsdl:part element="mdmport:addProductType" name="parameters"></wsdl:part>
+</wsdl:message>
+<wsdl:message name="AddProductTypeResponse">
+<wsdl:part element="mdmport:addProductTypeResponse" name="parameters"></wsdl:part>
+</wsdl:message>
+
+<wsdl:message name="UpdateProductTypeRequest">
+<wsdl:part element="mdmport:updateProductType" name="parameters"></wsdl:part>
+</wsdl:message>
+<wsdl:message name="UpdateProductTypeResponse">
+<wsdl:part element="mdmport:updateProductTypeResponse" name="parameters"></wsdl:part>
+</wsdl:message>
+
+<wsdl:message name="GetOperationalCodeTypeRequest">
+<wsdl:part element="mdmport:getOperationalCodeType" name="parameters"></wsdl:part>
+</wsdl:message>
+<wsdl:message name="GetOperationalCodeTypeResponse">
+<wsdl:part element="mdmport:getOperationalCodeTypeResponse" name="parameters"></wsdl:part>
+</wsdl:message>
+
+<wsdl:message name="GetAllOperationalCodeTypesRequest">
+<wsdl:part element="mdmport:getAllOperationalCodeTypes" name="parameters"></wsdl:part>
+</wsdl:message>
+<wsdl:message name="GetAllOperationalCodeTypesResponse">
+<wsdl:part element="mdmport:getAllOperationalCodeTypesResponse" name="parameters"></wsdl:part>
+</wsdl:message>
+
+<wsdl:message name="GetAllOperationalCodeTypesByLangIdRequest">
+<wsdl:part element="mdmport:getAllOperationalCodeTypesByLangId" name="parameters"></wsdl:part>
+</wsdl:message>
+<wsdl:message name="GetAllOperationalCodeTypesByLangIdResponse">
+<wsdl:part element="mdmport:getAllOperationalCodeTypesByLangIdResponse" name="parameters"></wsdl:part>
+</wsdl:message>
+
+<wsdl:message name="GetAllOperationalCodeTypesByLocaleRequest">
+<wsdl:part element="mdmport:getAllOperationalCodeTypesByLocale" name="parameters"></wsdl:part>
+</wsdl:message>
+<wsdl:message name="GetAllOperationalCodeTypesByLocaleResponse">
+<wsdl:part element="mdmport:getAllOperationalCodeTypesByLocaleResponse" name="parameters"></wsdl:part>
+</wsdl:message>
+
+<wsdl:message name="ReloadAllOperationalCodeTypesRequest">
+<wsdl:part element="mdmport:reloadAllOperationalCodeTypes" name="parameters"></wsdl:part>
+</wsdl:message>
+<wsdl:message name="ReloadAllOperationalCodeTypesResponse">
+<wsdl:part element="mdmport:reloadAllOperationalCodeTypesResponse" name="parameters"></wsdl:part>
+</wsdl:message>
+
+<wsdl:message name="GetMDMServerProfileRequest">
+<wsdl:part element="mdmport:getMDMServerProfile" name="parameters"></wsdl:part>
+</wsdl:message>
+<wsdl:message name="GetMDMServerProfileResponse">
+<wsdl:part element="mdmport:getMDMServerProfileResponse" name="parameters"></wsdl:part>
+</wsdl:message>
+
+<wsdl:message name="InitializeStatisticsRequest">
+<wsdl:part element="mdmport:initializeStatistics" name="parameters"></wsdl:part>
+</wsdl:message>
+<wsdl:message name="InitializeStatisticsResponse">
+<wsdl:part element="mdmport:initializeStatisticsResponse" name="parameters"></wsdl:part>
+</wsdl:message>
+
+<wsdl:message name="GetStatisticsRequest">
+<wsdl:part element="mdmport:getStatistics" name="parameters"></wsdl:part>
+</wsdl:message>
+<wsdl:message name="GetStatisticsResponse">
+<wsdl:part element="mdmport:getStatisticsResponse" name="parameters"></wsdl:part>
+</wsdl:message>
+
+<wsdl:portType name="DWLCommonServices-DomainsPortType">
+<wsdl:operation name="addProductType">
+<wsdl:documentation>This transaction adds a new product type.
+</wsdl:documentation>
+<wsdl:input message="mdmport:AddProductTypeRequest"></wsdl:input>
+<wsdl:output message="mdmport:AddProductTypeResponse"></wsdl:output>
+<wsdl:fault message="mdmport:ProcessingFault" name="ProcessingFault"></wsdl:fault>
+</wsdl:operation>
+
+<wsdl:operation name="updateProductType">
+<wsdl:documentation>This transaction updates the details of an existing product type.
+</wsdl:documentation>
+<wsdl:input message="mdmport:UpdateProductTypeRequest"></wsdl:input>
+<wsdl:output message="mdmport:UpdateProductTypeResponse"></wsdl:output>
+<wsdl:fault message="mdmport:ProcessingFault" name="ProcessingFault"></wsdl:fault>
+</wsdl:operation>
+
+<wsdl:operation name="getOperationalCodeType">
+<wsdl:documentation>This inquiry transaction returns the information for a specific
+recorded code type and language code from a given code table.
+Input parameters :
+<tcrmParam name="codeTypeName"></tcrmParam>
+<tcrmParam name="code"></tcrmParam>
+<tcrmParam name="languageCode"></tcrmParam>
+<tcrmParam name="control"></tcrmParam>
+</wsdl:documentation>
+<wsdl:input message="mdmport:GetOperationalCodeTypeRequest"></wsdl:input>
+<wsdl:output message="mdmport:GetOperationalCodeTypeResponse"></wsdl:output>
+<wsdl:fault message="mdmport:ProcessingFault" name="ProcessingFault"></wsdl:fault>
+</wsdl:operation>
+
+<wsdl:operation name="getAllOperationalCodeTypes">
+<wsdl:documentation>This inquiry transaction returns all the code type information,
+for all languages, associated with a given code table.
+Input parameters :
+<tcrmParam name="codeTypeName"></tcrmParam>
+<tcrmParam name="filter"></tcrmParam>
+<tcrmParam name="control"></tcrmParam>
+</wsdl:documentation>
+<wsdl:input message="mdmport:GetAllOperationalCodeTypesRequest"></wsdl:input>
+<wsdl:output message="mdmport:GetAllOperationalCodeTypesResponse"></wsdl:output>
+<wsdl:fault message="mdmport:ProcessingFault" name="ProcessingFault"></wsdl:fault>
+</wsdl:operation>
+
+<wsdl:operation name="getAllOperationalCodeTypesByLangId">
+<wsdl:documentation>This inquiry transaction returns all the code type information
+associated with a given code table and a given language code.
+Input parameters :
+<tcrmParam name="codeTypeName"></tcrmParam>
+<tcrmParam name="languageCode"></tcrmParam>
+<tcrmParam name="filter"></tcrmParam>
+<tcrmParam name="control"></tcrmParam>
+</wsdl:documentation>
+<wsdl:input message="mdmport:GetAllOperationalCodeTypesByLangIdRequest"></wsdl:input>
+<wsdl:output message="mdmport:GetAllOperationalCodeTypesByLangIdResponse"></wsdl:output>
+<wsdl:fault message="mdmport:ProcessingFault" name="ProcessingFault"></wsdl:fault>
+</wsdl:operation>
+
+<wsdl:operation name="getAllOperationalCodeTypesByLocale">
+<wsdl:documentation>This inquiry transaction returns all the code type information
+associated with a given code table and for a given locale.
+Input parameters :
+<tcrmParam name="codeTypeName"></tcrmParam>
+<tcrmParam name="locale"></tcrmParam>
+<tcrmParam name="filter"></tcrmParam>
+<tcrmParam name="control"></tcrmParam>
+</wsdl:documentation>
+<wsdl:input message="mdmport:GetAllOperationalCodeTypesByLocaleRequest"></wsdl:input>
+<wsdl:output message="mdmport:GetAllOperationalCodeTypesByLocaleResponse"></wsdl:output>
+<wsdl:fault message="mdmport:ProcessingFault" name="ProcessingFault"></wsdl:fault>
+</wsdl:operation>
+
+<wsdl:operation name="reloadAllOperationalCodeTypes">
+<wsdl:documentation>This transaction reloads the cache for a given code type.
+Input parameters :
+<tcrmParam name="codeTypeName"></tcrmParam>
+<tcrmParam name="control"></tcrmParam>
+</wsdl:documentation>
+<wsdl:input message="mdmport:ReloadAllOperationalCodeTypesRequest"></wsdl:input>
+<wsdl:output message="mdmport:ReloadAllOperationalCodeTypesResponse"></wsdl:output>
+<wsdl:fault message="mdmport:ProcessingFault" name="ProcessingFault"></wsdl:fault>
+</wsdl:operation>
+
+<wsdl:operation name="getMDMServerProfile">
+<wsdl:documentation>This inquiry transaction returns  runtime
+information.
+Input parameters :
+<tcrmParam name="inquiryLevel"></tcrmParam>
+<tcrmParam name="aDWLControl"></tcrmParam>
+</wsdl:documentation>
+<wsdl:input message="mdmport:GetMDMServerProfileRequest"></wsdl:input>
+<wsdl:output message="mdmport:GetMDMServerProfileResponse"></wsdl:output>
+<wsdl:fault message="mdmport:ProcessingFault" name="ProcessingFault"></wsdl:fault>
+</wsdl:operation>
+
+<wsdl:operation name="initializeStatistics">
+<wsdl:documentation>This transaction initialize Statistics data.
+</wsdl:documentation>
+<wsdl:input message="mdmport:InitializeStatisticsRequest"></wsdl:input>
+<wsdl:output message="mdmport:InitializeStatisticsResponse"></wsdl:output>
+<wsdl:fault message="mdmport:ProcessingFault" name="ProcessingFault"></wsdl:fault>
+</wsdl:operation>
+
+<wsdl:operation name="getStatistics">
+<wsdl:documentation>This transaction retrieve Statistics data.
+</wsdl:documentation>
+<wsdl:input message="mdmport:GetStatisticsRequest"></wsdl:input>
+<wsdl:output message="mdmport:GetStatisticsResponse"></wsdl:output>
+<wsdl:fault message="mdmport:ProcessingFault" name="ProcessingFault"></wsdl:fault>
+</wsdl:operation>
+
+</wsdl:portType>
+
+<wsdl:binding name="DWLCommonServices-DomainsHttpBinding" type="mdmport:DWLCommonServices-DomainsPortType">
+<soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"></soap:binding>
+<wsdl:operation name="addProductType">
+<soap:operation soapAction=""></soap:operation>
+<wsdl:input>
+<soap:body use="literal"></soap:body>
+</wsdl:input>
+<wsdl:output>
+<soap:body use="literal"></soap:body>
+</wsdl:output>
+<wsdl:fault name="ProcessingFault">
+<soap:fault name="ProcessingFault" use="literal"></soap:fault>
+</wsdl:fault>
+</wsdl:operation>
+<wsdl:operation name="updateProductType">
+<soap:operation soapAction=""></soap:operation>
+<wsdl:input>
+<soap:body use="literal"></soap:body>
+</wsdl:input>
+<wsdl:output>
+<soap:body use="literal"></soap:body>
+</wsdl:output>
+<wsdl:fault name="ProcessingFault">
+<soap:fault name="ProcessingFault" use="literal"></soap:fault>
+</wsdl:fault>
+</wsdl:operation>
+<wsdl:operation name="getOperationalCodeType">
+<soap:operation soapAction=""></soap:operation>
+<wsdl:input>
+<soap:body use="literal"></soap:body>
+</wsdl:input>
+<wsdl:output>
+<soap:body use="literal"></soap:body>
+</wsdl:output>
+<wsdl:fault name="ProcessingFault">
+<soap:fault name="ProcessingFault" use="literal"></soap:fault>
+</wsdl:fault>
+</wsdl:operation>
+<wsdl:operation name="getAllOperationalCodeTypes">
+<soap:operation soapAction=""></soap:operation>
+<wsdl:input>
+<soap:body use="literal"></soap:body>
+</wsdl:input>
+<wsdl:output>
+<soap:body use="literal"></soap:body>
+</wsdl:output>
+<wsdl:fault name="ProcessingFault">
+<soap:fault name="ProcessingFault" use="literal"></soap:fault>
+</wsdl:fault>
+</wsdl:operation>
+<wsdl:operation name="getAllOperationalCodeTypesByLangId">
+<soap:operation soapAction=""></soap:operation>
+<wsdl:input>
+<soap:body use="literal"></soap:body>
+</wsdl:input>
+<wsdl:output>
+<soap:body use="literal"></soap:body>
+</wsdl:output>
+<wsdl:fault name="ProcessingFault">
+<soap:fault name="ProcessingFault" use="literal"></soap:fault>
+</wsdl:fault>
+</wsdl:operation>
+<wsdl:operation name="getAllOperationalCodeTypesByLocale">
+<soap:operation soapAction=""></soap:operation>
+<wsdl:input>
+<soap:body use="literal"></soap:body>
+</wsdl:input>
+<wsdl:output>
+<soap:body use="literal"></soap:body>
+</wsdl:output>
+<wsdl:fault name="ProcessingFault">
+<soap:fault name="ProcessingFault" use="literal"></soap:fault>
+</wsdl:fault>
+</wsdl:operation>
+<wsdl:operation name="reloadAllOperationalCodeTypes">
+<soap:operation soapAction=""></soap:operation>
+<wsdl:input>
+<soap:body use="literal"></soap:body>
+</wsdl:input>
+<wsdl:output>
+<soap:body use="literal"></soap:body>
+</wsdl:output>
+<wsdl:fault name="ProcessingFault">
+<soap:fault name="ProcessingFault" use="literal"></soap:fault>
+</wsdl:fault>
+</wsdl:operation>
+<wsdl:operation name="getMDMServerProfile">
+<soap:operation soapAction=""></soap:operation>
+<wsdl:input>
+<soap:body use="literal"></soap:body>
+</wsdl:input>
+<wsdl:output>
+<soap:body use="literal"></soap:body>
+</wsdl:output>
+<wsdl:fault name="ProcessingFault">
+<soap:fault name="ProcessingFault" use="literal"></soap:fault>
+</wsdl:fault>
+</wsdl:operation>
+<wsdl:operation name="initializeStatistics">
+<soap:operation soapAction=""></soap:operation>
+<wsdl:input>
+<soap:body use="literal"></soap:body>
+</wsdl:input>
+<wsdl:output>
+<soap:body use="literal"></soap:body>
+</wsdl:output>
+<wsdl:fault name="ProcessingFault">
+<soap:fault name="ProcessingFault" use="literal"></soap:fault>
+</wsdl:fault>
+</wsdl:operation>
+<wsdl:operation name="getStatistics">
+<soap:operation soapAction=""></soap:operation>
+<wsdl:input>
+<soap:body use="literal"></soap:body>
+</wsdl:input>
+<wsdl:output>
+<soap:body use="literal"></soap:body>
+</wsdl:output>
+<wsdl:fault name="ProcessingFault">
+<soap:fault name="ProcessingFault" use="literal"></soap:fault>
+</wsdl:fault>
+</wsdl:operation>
+</wsdl:binding>
+
+<wsdl:service name="DWLCommonServices-Domains">
+<wsdl:port binding="mdmport:DWLCommonServices-DomainsHttpBinding" name="DWLCommonServices-DomainsPort">
+<soap:address location="http://localhost:9082/MDMWSProvider/MDMService"></soap:address>
+</wsdl:port>
+</wsdl:service>
+
+</wsdl:definitions>

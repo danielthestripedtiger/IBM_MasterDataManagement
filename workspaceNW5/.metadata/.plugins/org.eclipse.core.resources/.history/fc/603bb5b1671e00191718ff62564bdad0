@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdm:MDMModule xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:mdm="http://www.ibm.com/xmlns/prod/mdm/tools/model/core_v6.ecore" name="MDMNW" customNature="module" serviceNamespace="http://mdmnw" implPackageName="mdmnw">
+  <MDMApplication href="mdm://MDMSharedResources#/"/>
+</mdm:MDMModule>

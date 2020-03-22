@@ -1,0 +1,45 @@
+{
+"TCRMService": {
+	"@schemaLocation": "http:\/\/www.ibm.com\/mdm\/schema MDMDomains.xsd",
+     "RequestControl": {
+     	"requestID": 604157,
+          "DWLControl": {
+          	"requesterName": "mdmadmin",
+               "requesterLocale": "en"
+               }
+      },
+      "TCRMTx": {
+      	"TCRMTxType": "MaintainParty",
+          "TCRMTxObject": "MDMCompositePartyBObj",                                      
+          "TCRMObject": {
+          	"MDMCompositePartyBObj": {
+               	"TCRMPersonBObj": {
+                    	"SourceIdentifierValue": "CXH",
+                    	"TCRMPartyContactMethodBObj": {
+                         	"ContactMethodUsageValue": "Preferred Email",
+                         	"TCRMContactMethodBObj": {
+                         		"ReferenceNumber": "emailAddress",
+                         		"ContactMethodValue": "Email Address"
+                         	}
+                         },
+                    	"TCRMPartyContactMethodBObj": {
+                         	"ContactMethodUsageValue": "Preferred Phone",
+                         	"TCRMContactMethodBObj": {
+                         		"ReferenceNumber": "phoneNumber",
+                         		"ContactMethodValue": "Telephone Number"
+                         	}
+                         },
+                         "TCRMPartyRelationshipBObj": {
+                         	"RelationshipValue": "Manages",
+                         },
+                         "TCRMPersonNameBObj": {
+                         	"NameUsageValue": "Preferred",
+                         	"GivenNameOne": "firstName",
+                         	"LastName": "lastName"
+                         }
+                     }
+                }
+          }
+      }
+}
+}

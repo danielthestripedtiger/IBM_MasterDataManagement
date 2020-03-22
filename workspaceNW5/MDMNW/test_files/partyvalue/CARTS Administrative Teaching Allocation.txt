@@ -1,0 +1,80 @@
+CLEAR_DB.sql
+
+<?xml version="1.0" encoding="UTF-8"?>
+<TCRMService xmlns="http://www.ibm.com/mdm/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.ibm.com/mdm/schema MDMDomains.xsd">
+    <RequestControl>
+        <requestID>10015</requestID>
+        <DWLControl>
+            <requesterName>cusadmin</requesterName>
+            <requesterLanguage>100</requesterLanguage>
+        </DWLControl>
+    </RequestControl>
+    <TCRMTx>
+        <TCRMTxType>MaintainNWPerson</TCRMTxType>
+        <TCRMTxObject>CompositeNWPersonBObj</TCRMTxObject>
+        <TCRMObject>
+            <CompositeNWPersonBObj>
+                <TCRMPersonBObj>
+                    <LastVerifiedDate>1990-11-24 08:45:41.434175</LastVerifiedDate>
+                    <SourceIdentifierValue>CARTs</SourceIdentifierValue>
+                    <TCRMAdminContEquivBObj>   
+                        <AdminPartyId>1061184</AdminPartyId>
+                        <AdminSystemValue>CARTs</AdminSystemValue>
+                    </TCRMAdminContEquivBObj>  
+                    <TCRMPersonNameBObj>
+                        <NameUsageValue>Legal</NameUsageValue>
+                        <GivenNameOne>JIMMY</GivenNameOne>
+                        <GivenNameTwo>G</GivenNameTwo>
+                        <LastName>STEVENS</LastName>
+                        <SourceIdentifierValue>CARTs</SourceIdentifierValue>
+                    </TCRMPersonNameBObj>   
+               <TCRMPartyValueBObj>	
+                  <PartyValueValue>CARTS Administrative Teaching Allocation</PartyValueValue>	
+                  <ValueString>Active</ValueString>	
+                  <SourceIdentValue>CARTs</SourceIdentValue>	
+               </TCRMPartyValueBObj>
+
+                </TCRMPersonBObj>
+            </CompositeNWPersonBObj>
+        </TCRMObject>
+    </TCRMTx>
+</TCRMService>
+
+
+
+<?xml version="1.0" encoding="UTF-8"?>
+<TCRMService xmlns="http://www.ibm.com/mdm/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.ibm.com/mdm/schema MDMDomains.xsd">
+    <RequestControl>
+        <requestID>10015</requestID>
+        <DWLControl>
+            <requesterName>cusadmin</requesterName>
+            <requesterLanguage>100</requesterLanguage>
+        </DWLControl>
+    </RequestControl>
+    <TCRMTx>
+        <TCRMTxType>MaintainNWPerson</TCRMTxType>
+        <TCRMTxObject>CompositeNWPersonBObj</TCRMTxObject>
+        <TCRMObject>
+            <CompositeNWPersonBObj>
+                <TCRMPersonBObj>
+                    <LastVerifiedDate>1990-11-24 08:45:41.434175</LastVerifiedDate>
+                    <SourceIdentifierValue>Newport/CARE</SourceIdentifierValue>
+                    <TCRMAdminContEquivBObj>   
+                        <AdminPartyId>1061184</AdminPartyId>
+                        <AdminSystemValue>Newport/CARE</AdminSystemValue>
+                    </TCRMAdminContEquivBObj> 
+                    <TCRMPersonNameBObj>
+                        <NameUsageValue>Legal</NameUsageValue>
+                        <GivenNameOne>JIMMY</GivenNameOne>
+                        <GivenNameTwo>G</GivenNameTwo>
+                        <LastName>STEVENS</LastName>
+                        <SourceIdentifierValue>Newport/CARE</SourceIdentifierValue>
+                    </TCRMPersonNameBObj>  
+
+                </TCRMPersonBObj>
+            </CompositeNWPersonBObj>
+        </TCRMObject>
+    </TCRMTx>
+</TCRMService>
+
+

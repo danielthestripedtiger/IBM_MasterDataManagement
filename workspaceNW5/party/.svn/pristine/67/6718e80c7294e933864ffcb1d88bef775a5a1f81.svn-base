@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<JobSet name="WebSphere Application Server v8.5 at DEV - mwbdbmdmap002l_1544895802938_22" version="1.0">
+  <madunlload MAD_TIMER="false" MAD_DEBUG="false" MAD_TRACE="false" MAD_DBSQL="false" MAD_AUDIT="false" MAD_ALGO="false" objCode="ENT" mode="onepass" unlDir="unl" useint="false" remote="false" maxErrs="1" commitSize="0" noExec="false" verbose="false" encoding="latin1" tabList="mpi_entlink_mdmper mpi_entxeia_mdmper mpi_entxtsk_mdmper" dontStop="false" memberType="PERSON" entityType="mdmper" />
+</JobSet>
+

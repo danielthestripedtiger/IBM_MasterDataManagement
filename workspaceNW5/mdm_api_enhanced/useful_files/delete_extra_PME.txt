@@ -1,0 +1,48 @@
+   
+   
+   
+ Update mpi_peraddr set addrline1='' where addrline1 = 'NULL';
+
+Update mpi_peraddr set addrline2='' where addrline2 = 'NULL';
+
+Update mpi_peraddr set city='' where city = 'NULL';
+
+Update mpi_peraddr set provstate='' where provstate = 'NULL';
+
+Update mpi_peraddr set postalcode='' where postalcode = 'NULL';
+
+
+
+
+Delete from mpi_perdate where val = 'NULL';
+
+Delete from mpi_perident where idnum = 'NULL';
+
+Delete from mpi_pergender where gender = 'N';
+
+Delete from mpi_peremail where email = 'NULL';
+
+Delete from mpi_perattrext where attrval = 'NULL' and (description = 'NULL' OR DESCRIPTION IS NULL);
+
+
+Update mpi_pername set givenname1='' where givenname1 = 'NULL';
+
+Update mpi_pername set givenname2='' where givenname2 = 'NULL';
+
+Update mpi_pername set lastname ='' where lastname = 'NULL';
+
+Update mpi_pername set suffix ='' where suffix = 'NULL';
+
+Update mpi_pername set prefix ='' where prefix = 'NULL';
+
+Update mpi_pername set fullname ='' where fullname = 'NULL';
+
+
+Delete from mpi_perphone where refnum = 'NULL';
+   
+
+
+   DELETE FROM MPI_PERNAME WHERE RECSTAT = 'I';
+   
+  DELETE FROM MPI_PERGENDER WHERE ATTRRECNO <>5;
+   

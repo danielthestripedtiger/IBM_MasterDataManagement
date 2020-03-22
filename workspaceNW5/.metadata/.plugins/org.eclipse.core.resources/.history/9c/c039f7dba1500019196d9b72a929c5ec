@@ -1,0 +1,94 @@
+package com.ibm.mdm.physical.tasksets;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Statement;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.HashSet;
+import java.util.Set;
+
+public class GetTaskSets {
+
+
+		static Connection sqlConn = null;
+		static Statement sqlStmt = null;
+		static ResultSet sqlResultset = null;
+		
+		static ArrayList<HashSet<String>> taskSets = new ArrayList<HashSet<String>>();
+	 
+		public static void main(String[] args) throws SQLException {
+
+			try {
+				// Returns the Class object associated with the class
+				Class.forName("oracle.jdbc.driver.OracleDriver");
+			} catch (ClassNotFoundException exception) {
+				System.out.println("Oracle Driver Class Not found Exception: " + exception.toString());
+				return;
+			}
+	 
+			// Set connection timeout. Make sure you set this correctly as per your need
+			DriverManager.setLoginTimeout(5);
+			System.out.println("Oracle JDBC Driver Successfully Registered! Let's make connection now");
+	 
+			try {
+				// Attempts to establish a connection
+				// here DB name: localhost, sid: crunchify
+				sqlConn = DriverManager.getConnection("jdbc:oracle:thin:@biccmdmtdb01.nshs.edu:1521:mdmuat", "mdmduser", "mdmd^234");
+			} catch (SQLException e) {
+				System.out.println("Connection Failed! Check output console");
+				e.printStackTrace();
+				return;
+			}
+	 
+			// Creates a Statement object for sending SQL statements to the database
+			sqlStmt = sqlConn.createStatement();
+	 
+			// Executes the given SQL statement, which returns a single ResultSet object
+			sqlResultset = sqlStmt.executeQuery("SELECT DISTINCT CONT_ID, SUSPECT_CONT_ID FROM SUSPECT WHERE CUR_SUSPECT_TP_CD  = '3'");
+	 
+			while (sqlResultset.next()) {
+				
+				String suspectPartyID1 = sqlResultset.getString(1);
+				String suspectPartyID2 = sqlResultset.getString(2);
+				
+				if(taskSets.size() == 0){
+					HashSet<String> firstTaskSet = new HashSet<String>();
+					taskSets.add(firstTaskSet);
+				}
+				
+				int taskSetSize = taskSets.size();
+				for (int x = 0; x < taskSetSize ; x++) {
+					
+					HashSet<String> taskSet = taskSets.get(x);
+					
+					if(taskSet.contains(suspectPartyID1)){
+						taskSet.add(suspectPartyID2);
+						System.out.println("Added to existing task set");
+					}
+					else if(taskSet.contains(suspectPartyID2)){
+						taskSet.add(suspectPartyID1);
+						System.out.println("Added to existing task set");
+					}
+					else{
+						HashSet<String> newTaskSet = new HashSet<String>();
+						newTaskSet.add(suspectPartyID1);
+						newTaskSet.add(suspectPartyID2);
+						taskSets.add(newTaskSet);
+						++taskSetSize;
+						System.out.println("Created new task set");
+					}
+					
+					System.out.println("Task sets size: " + taskSets);
+				}
+
+			} 
+	 
+			System.out.println("Oracle JDBC connect and query test completed.");
+		}
+
+
+
+}

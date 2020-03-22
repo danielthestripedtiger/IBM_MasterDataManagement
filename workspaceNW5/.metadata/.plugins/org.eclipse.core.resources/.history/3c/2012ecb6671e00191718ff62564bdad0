@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?><!-- ***************************************************** {COPYRIGHT-TOP} ***
+* Licensed Materials - Property of IBM
+* Restricted Materials of IBM
+*
+* 5725-E59
+*
+* (C) Copyright IBM Corp. 2011  All Rights Reserved.
+*
+* US Government Users Restricted Rights - Use, duplication, or
+* disclosure restricted by GSA ADP Schedule Contract with IBM Corp.
+********************************************************** {COPYRIGHT-END} --><wsdl:definitions xmlns:mdmcompport="http://www.ibm.com/mdm/composite/port" xmlns:mdm="http://www.ibm.com/mdm/schema" xmlns:mdmwsdl="http://www.ibm.com/mdm/wsdl/schema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:jaxws="http://java.sun.com/xml/ns/jaxws" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" name="MDMComposite" targetNamespace="http://www.ibm.com/mdm/composite/port">
+
+	<jaxws:bindings>
+		<jaxws:enableWrapperStyle>false</jaxws:enableWrapperStyle>
+	</jaxws:bindings>
+
+	<wsdl:types>
+		<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.ibm.com/mdm/composite/port">
+			<xsd:import namespace="http://www.ibm.com/mdm/schema" schemaLocation="PhysicalMDM.xsd"></xsd:import>
+			<xsd:import namespace="http://www.ibm.com/mdm/wsdl/schema" schemaLocation="MDMWSDLCommon.xsd"></xsd:import>
+			<xsd:element name="processingFault" type="mdmwsdl:ProcessingFaultType"></xsd:element>						
+			<xsd:element name="DWLCompositeServiceRequest" type="mdmwsdl:DWLCompositeServiceRequestType"></xsd:element>
+			<xsd:element name="DWLCompositeServiceResponse" type="mdmwsdl:DWLCompositeServiceResponseType"></xsd:element>
+		</xsd:schema>
+	</wsdl:types>
+
+	<wsdl:message name="ProcessingFault">
+		<wsdl:part element="mdmcompport:processingFault" name="parameters"></wsdl:part>
+	</wsdl:message>
+	
+	<wsdl:message name="compositeRequest">
+		<wsdl:part element="mdmcompport:DWLCompositeServiceRequest" name="parameters"></wsdl:part>
+	</wsdl:message>
+	<wsdl:message name="compositeResponse">
+		<wsdl:part element="mdmcompport:DWLCompositeServiceResponse" name="parameters"></wsdl:part>
+	</wsdl:message>
+	
+	<wsdl:portType name="MDMCompositePortType">
+		<wsdl:operation name="composite">
+			<wsdl:input message="mdmcompport:compositeRequest"></wsdl:input>
+			<wsdl:output message="mdmcompport:compositeResponse"></wsdl:output>
+			<wsdl:fault message="mdmcompport:ProcessingFault" name="ProcessingFault"></wsdl:fault>
+		</wsdl:operation>
+	</wsdl:portType>
+	
+	<wsdl:binding name="MDMCompositeHttpBinding" type="mdmcompport:MDMCompositePortType">
+		<soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"></soap:binding>
+	    <wsdl:operation name="composite">
+	      <soap:operation soapAction=""></soap:operation>
+	      <wsdl:input>
+	        <soap:body use="literal"></soap:body>
+	      </wsdl:input>
+	      <wsdl:output>
+	        <soap:body use="literal"></soap:body>
+	      </wsdl:output>
+				<wsdl:fault name="ProcessingFault">
+					<soap:fault name="ProcessingFault" use="literal"></soap:fault>
+				</wsdl:fault>
+			</wsdl:operation>
+	</wsdl:binding>
+	
+	<wsdl:service name="MDMComposite">
+		<wsdl:port binding="mdmcompport:MDMCompositeHttpBinding" name="MDMCompositePort">
+			<soap:address location="http://localhost:9082/MDMWSProvider/MDMService"></soap:address>
+		</wsdl:port>
+	</wsdl:service>
+</wsdl:definitions>

@@ -1,0 +1,18 @@
+/****** Script for SelectTopNRows command from SSMS  ******/
+SELECT 'MDMSP'
+      ,'ECHO'+[PersonID]
+      ,[Facility_Code]
+      ,[Facility_Name]
+      ,[Credential_Status]
+      ,[Active_Status]
+      ,[Effective_Date]
+      ,[Termination_Date]
+      ,[Facility_Address_Line_1]
+      ,[Facility_Address_Line_2]
+      ,[Facility_city]
+      ,[Facility_state]
+      ,[Facility_zip]
+      ,[Facility_Phone_Number]
+      ,[Facility_Fax_Number]
+	  ,[Date_Last_Modified]
+  FROM [DataGov].[MDM].[Echo_Provider_Status_VW]

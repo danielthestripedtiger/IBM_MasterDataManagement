@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<projectDescription>
+	<name>.org.eclipse.jdt.core.external.folders</name>
+	<comment></comment>
+	<projects>
+	</projects>
+	<buildSpec>
+	</buildSpec>
+	<natures>
+	</natures>
+	<linkedResources>
+		<link>
+			<name>.link1</name>
+			<type>2</type>
+			<location>C:/IBM/SDP/com.ibm.mdm.tools/server_bundles/mdm/com.ibm.mdm.thirdparty.pdq_11.6.0.6-201806061531</location>
+		</link>
+	</linkedResources>
+</projectDescription>

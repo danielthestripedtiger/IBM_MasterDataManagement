@@ -1,0 +1,46 @@
+{
+"TCRMService": {
+	"@schemaLocation": "http:\/\/www.ibm.com\/mdm\/schema MDMDomains.xsd",
+     "RequestControl": {
+     	"requestID": 604157,
+          "DWLControl": {
+          	"requesterName": "don",
+               "requesterLocale": "en"
+               }
+      },
+      "TCRMTx": {
+      	"TCRMTxType": "MaintainParty",
+          "TCRMTxObject": "MDMCompositePartyBObj",                                      
+          "TCRMObject": {
+          	"MDMCompositePartyBObj": {
+               	"TCRMPersonBObj": {
+                    	"SourceIdentifierValue": "CXH",
+                    	"TCRMPartyContactMethodBObj": {
+                         	"ContactMethodUsageValue": "Preferred Email",
+                         	"TCRMContactMethodBObj": {
+                         		"ReferenceNumber": "don.gardner@farms.com",
+                         		"ContactMethodValue": "Email Address"
+                         	}
+                         },
+                         "TCRMPartyRelationshipBObj": {
+                         	"RelationshipValue": "Manages",
+                         },
+                         "TCRMPersonNameBObj": {
+                         	"NameUsageValue": "Preferred",
+                         	"GivenNameOne": "DON",
+                         	"LastName": "GARDNER"
+                         }
+                     },
+                  "TCRMOrganizationBObj": {
+                    	"SourceIdentifierValue": "CXH",
+                    	"OrganizationValue": "Unknown",
+                    	"TCRMOrganizationNameBObj": {
+                    		"OrganizationName": "GaRdNEr faRmS",
+                         	"NameUsageValue": "Preferred"
+                         }
+                     }
+                }
+          }
+      }
+}
+}

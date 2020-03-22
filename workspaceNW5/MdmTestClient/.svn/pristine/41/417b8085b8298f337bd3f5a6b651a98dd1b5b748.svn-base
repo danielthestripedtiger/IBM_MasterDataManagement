@@ -1,0 +1,35 @@
+{
+  "TCRMService": {
+    "@schemaLocation": "http://www.ibm.com/mdm/schema MDMDomains.xsd",
+    "RequestControl": {
+      "requestID": 604157,
+      "DWLControl": {
+        "requesterName": "john",
+        "requesterLocale": "en"
+      }
+    },
+    "TCRMTx": {
+      "TCRMTxType": "MaintainPrivacyPreference",
+      "TCRMTxObject": "MDMCompositePartyBObj",
+      "TCRMObject": {
+        "MDMCompositePartyBObj": {
+          "TCRMPersonBObj": {
+            "TCRMPartyContactMethodBObj": [
+              {
+                "ContactMethodUsageValue": "Preferred Email",
+                "TCRMContactMethodBObj": {
+                  "ReferenceNumber": "khailam@farms.com",
+                  "ContactMethodValue": "Email Address"
+                }
+              }
+            ],
+            "TCRMPartyIdentificationBObj": {
+              "IdentificationValue": "EID",
+              "IdentificationNumber": "0"
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "TCRMService": {
+    "@schemaLocation": "http://www.ibm.com/mdm/schema MDMDomains.xsd",
+    "RequestControl": {
+      "requestID": 604157,
+      "DWLControl": {
+        "requesterName": "khai",
+        "requesterLocale": "en",
+        "ControlExtensionProperty": [
+          {
+            "@name": "ContractInquiryLevel",
+            "$": "1"
+          },
+          {
+            "@name": "PartyInquiryLevel",
+            "$": "2"
+          },
+          {
+            "@name": "ContractPartyRole",
+            "$": "All"
+          }
+        ]
+      }
+    },
+    "TCRMTx": {
+      "TCRMTxType": "RetrieveAccount",
+      "TCRMTxObject": "MDMCompositePartyBObj",
+      "TCRMObject": {
+        "MDMCompositePartyBObj": {
+          "TCRMContractBObj": {
+          }
+        }
+      }
+    }
+  }
+}

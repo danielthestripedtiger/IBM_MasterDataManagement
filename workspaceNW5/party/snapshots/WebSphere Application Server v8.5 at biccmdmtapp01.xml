@@ -1,0 +1,1460 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<snapshot version="1.0" name="WebSphere Application Server v8.5 at biccmdmtapp01">
+  <group name="bucketAnalysis" memtype="PERSON">
+    <group name="BucketComposition" maxRows="1000" bucketHash="-997569598852443730">
+      <property memrecno="662262" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="662274" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="662284" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="662287" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="662293" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="662305" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="662308" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="662317" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="662320" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="662330" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="662336" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="662351" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="662359" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="662373" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="662377" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="662380" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="662397" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="662421" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="662428" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="662436" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="662453" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="662470" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="662481" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="662492" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="662499" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="662508" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="662512" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="662521" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="662525" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="662536" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="662540" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="662551" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="662556" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="662566" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="662577" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="662583" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="662592" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="662596" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="662600" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="662620" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="662625" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="662629" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="662632" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="662644" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="662648" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="662657" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="662659" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="662665" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="662667" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="662678" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="662689" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="662693" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="662695" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="662703" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="662712" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="662717" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="662721" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="662728" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="662737" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="662743" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="662748" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="662756" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="662768" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="662773" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="662791" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="662813" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="662822" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="662829" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="662835" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="662854" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="662863" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="662874" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="662883" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="662892" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="662897" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="662908" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="662919" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="662928" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="662941" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="662948" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="662952" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="662957" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="662964" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="662975" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="662979" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="662983" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="662985" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="662992" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="662999" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="663005" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="663016" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="663033" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="663051" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="663056" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="663066" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="663069" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="663078" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="663084" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="663090" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="663097" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="663125" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="663135" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="663151" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="663182" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="663184" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="663191" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="663195" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="663201" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="663204" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="663209" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="663212" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="663218" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="663220" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="663226" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="663240" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="663243" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="663255" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="663263" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="663271" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="663281" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="663285" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="663287" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="663299" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="663302" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="663312" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="663317" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="663324" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="663336" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="663352" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="663362" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="663368" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="663371" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="663380" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="663387" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="663395" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="663415" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="663429" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="663435" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="663454" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="663471" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="663476" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="663484" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="663487" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="663495" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="663502" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="663506" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="663514" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="663525" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="663536" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="663537" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="663545" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="663549" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="663551" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="663557" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="663568" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="663574" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="663581" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="663582" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="663585" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="663591" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="663598" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="663616" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="663622" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="663631" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="663640" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="663644" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="663657" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="663665" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="663686" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="663702" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="663707" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="663721" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="663723" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="663739" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="663745" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="663754" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="663758" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="663766" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="663769" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="663779" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="663805" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="663807" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="663812" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="663818" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="663827" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="663831" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="663833" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="663849" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="663874" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="663892" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="663895" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="663899" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="663905" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="663918" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="663922" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="663932" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="663937" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="663939" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="663949" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="663953" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="663970" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="663975" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="664001" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="664026" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="664032" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="664040" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="664048" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="664065" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="664078" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="664087" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="664100" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="664114" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="664129" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="664136" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="664141" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="664149" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="664157" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="664188" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="664192" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="664201" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="664210" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="664212" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="664214" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="664223" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="664231" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="664242" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="664245" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="664256" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="664267" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="664276" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="664278" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="664280" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="664281" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="664284" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="664286" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="664287" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="664290" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="664291" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="664292" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="664294" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="664295" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="664296" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="664297" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="664301" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="664304" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="664310" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="664312" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="664314" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="664315" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="664320" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="664325" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="664328" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="664330" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="664331" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="664332" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="664334" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="664335" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="664336" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="664339" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="664342" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="664343" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="664344" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="664345" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="664346" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="664349" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="664350" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="664354" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="664355" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="664357" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="664358" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="664359" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="664360" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="664362" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="664363" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="664364" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="664365" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="664367" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="664368" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="664369" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="664371" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="664374" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="664375" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="664376" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="664377" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="664378" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="664379" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="664381" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="664382" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="664386" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="664388" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="664390" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="664392" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="664393" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="664396" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="664397" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="664399" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="664400" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="664401" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="664409" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="664410" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="664411" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="664414" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="664415" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="664420" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="664421" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="664423" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="664425" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="664429" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="664431" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="664432" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="664433" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="664435" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="664436" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="664437" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="664439" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="664442" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="664445" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="664448" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="664449" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="664452" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="664456" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="664457" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="664459" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="664460" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="664464" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="664465" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="664466" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="664467" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="664469" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="664472" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="664473" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="664474" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="664478" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="664480" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="664482" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="664483" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="664486" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="664490" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="664495" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="664497" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="664501" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="664503" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="664507" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="664508" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="664510" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="664511" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="664512" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="664513" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="664514" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="664516" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="664517" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="664520" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="664522" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="664523" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="664526" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="664527" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="664532" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="664533" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="664534" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="664536" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="664537" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="664541" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="664542" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="664543" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="664544" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="664545" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="664546" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="664547" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="664550" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="664553" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="664554" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="664557" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="664563" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="664565" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="664566" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="664569" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="664570" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="664575" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="664576" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="664587" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="664588" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="664590" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="664591" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="664592" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="664598" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="664599" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="664609" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="664613" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="664614" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="664618" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="664619" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="664624" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="664627" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="664629" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="664637" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="664638" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="664640" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="664641" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="664642" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="664648" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="664650" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="664654" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="664655" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="664656" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="664658" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="664667" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="664668" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="664671" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="664672" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="664673" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="664674" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="664675" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="664676" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="664677" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="664678" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="664683" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="664684" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="664688" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="664689" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="664690" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="664691" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="664693" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="664694" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="664696" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="664701" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="664704" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="664705" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="664710" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="664715" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="664717" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="664719" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="664721" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="664722" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="664725" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="664727" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="664732" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="664733" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="664735" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="664740" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="664742" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="664744" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="664745" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="664746" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="664749" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="664752" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="664753" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="664756" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="664762" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="664763" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="664764" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="664766" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="664772" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="664775" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="664778" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="664780" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="664781" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="664782" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="664785" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="664793" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="664795" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="664796" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="664799" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="664800" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="664801" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="664802" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="664803" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="664804" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="664805" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="664808" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="664812" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="664819" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="664820" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="664821" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="664822" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="664828" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="664830" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="664832" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="664833" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="664838" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="664840" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="664841" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="664846" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="664848" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="664852" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="664854" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="664858" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="664860" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="664862" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="664873" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="664876" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="664877" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="664879" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="664880" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="664881" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="664883" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="664885" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="664887" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="664890" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="664892" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="664894" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="664895" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="664897" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="664899" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="664901" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="664907" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="664910" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="664912" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="664916" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="664917" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="664919" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="664920" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="664922" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="664924" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="664925" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="664926" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="664929" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="664938" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="664939" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="664945" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="664947" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="664949" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="664953" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="664956" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="664959" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="664963" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="664965" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="664966" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="664967" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="664970" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="664971" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="664972" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="664975" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="664982" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="664983" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="664986" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="664988" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="664990" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="664992" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="664995" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="664996" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="664997" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="664998" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="665000" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="665002" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="665003" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="665007" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="665008" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="665009" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="665010" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="665013" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="665016" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="665019" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="665020" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="665022" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="665024" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="665026" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="665030" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="665031" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="665032" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="665042" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="665044" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="665050" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="665051" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="665053" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="665054" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="665058" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="665059" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="665060" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="665065" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="665067" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="665069" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="665071" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="665074" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="665075" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="665081" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="665087" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="665088" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="665089" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="665093" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="665094" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="665095" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="665100" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="665101" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="665102" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="665104" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="665105" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="665107" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="665108" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="665109" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="665113" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="665114" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="665119" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="665120" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="665121" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="665122" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="665126" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="665128" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="665130" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="665134" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="665136" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="665141" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="665143" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="665144" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="665145" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="665149" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="665150" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="665151" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="665155" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="665156" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="665159" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="665162" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="665163" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="665166" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="665170" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="665174" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="665176" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="665179" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="665187" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="665190" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="665192" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="665194" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="665196" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="665198" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="665199" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="665200" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="665206" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="665209" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="665210" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="665212" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="665214" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="665218" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="665219" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="665222" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="665226" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="665233" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="665235" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="665242" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="665244" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="665245" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="665246" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="665248" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="665251" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="665252" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="665253" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="665255" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="665259" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="665260" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="665262" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="665263" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="665265" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="665266" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="665269" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="665272" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="665277" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="665282" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="665284" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="665287" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="665288" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="665289" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="665292" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="665293" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="665295" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="665298" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="665301" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="665305" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="665306" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="665308" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="665311" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="665316" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="665317" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="665318" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="665321" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="665323" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="665325" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="665326" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="665331" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="665332" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="665335" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="665336" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="665339" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="665341" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="665342" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="665343" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="665347" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="665351" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="665353" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="665357" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="665358" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="665362" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="665368" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="665370" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="665371" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="665372" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="665376" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="665377" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="665378" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="665382" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="665385" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="665388" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="665390" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="665393" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="665399" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="665406" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="665407" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="665412" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="665413" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="665414" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="665415" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="665416" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="665418" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="665421" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="665423" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="665424" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="665426" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="665432" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="665435" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="665439" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="665443" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="665445" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="665446" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="665450" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="665453" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="665456" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="665459" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="665462" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="665465" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="665468" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="665471" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="665475" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="665476" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="665477" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="665481" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="665483" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="665489" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="665492" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="665494" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="665495" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="665497" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="665498" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="665501" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="665503" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="665505" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="665512" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="665514" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="665515" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="665518" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="665519" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="665521" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="665525" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="665527" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="665530" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="665533" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="665536" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="665538" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="665539" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="665541" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="665543" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="665544" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="665545" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="665546" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="665547" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="665552" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="665553" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="665555" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="665556" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="665557" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="665560" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="665564" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="665566" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="665568" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="665573" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="665577" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="665578" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="665579" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="665582" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="665585" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="665588" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="665592" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="665593" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="665602" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="665603" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="665605" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="665609" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="665610" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="665615" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="665616" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="665617" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="665625" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="665628" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="665629" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="665641" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="665649" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="665652" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="665655" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="665658" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="665660" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="665665" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="665666" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="665668" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="665672" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="665673" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="665674" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="665677" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="665678" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="665679" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="665681" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="665683" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="665684" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="665686" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="665688" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="665692" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="665698" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="665699" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="665702" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="665704" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="665706" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="665708" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="665709" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="665710" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="665715" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="665716" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="665718" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="665719" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="665722" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="665723" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="665726" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="665727" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="665728" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="665729" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="665730" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="665733" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="665736" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="665737" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="665739" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="665740" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="665741" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="665742" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="665744" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="665746" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="665749" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="665751" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="665752" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="665759" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="665764" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="665767" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="665768" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="665769" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="665770" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="665772" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="665773" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="665776" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="665779" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="665782" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="665789" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="665793" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="665796" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="665797" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="665800" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="665803" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="665804" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="665808" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="665809" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="665810" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="665811" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="665814" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="665819" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="665827" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="665829" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="665830" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="665832" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="665835" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="665836" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="665844" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="665845" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="665847" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="665848" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="665850" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="665854" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="665856" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="665859" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="665861" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="665862" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="665871" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="665875" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="665883" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="665886" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="665887" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="665891" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="665893" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="665898" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="665899" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="665900" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="665902" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="665907" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="665910" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="665911" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="665913" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="665914" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="665915" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="665916" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="665921" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="665922" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="665932" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="665934" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="665935" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="665936" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="665938" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="665939" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="665940" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="665946" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="665947" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="665949" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="665950" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="665951" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="665952" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="665953" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="665954" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="665955" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="665957" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="665960" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="665961" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="665962" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="665964" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="665967" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="665969" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="665970" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="665972" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="665975" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="665976" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="665977" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="665984" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="665989" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="665991" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="665998" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="666000" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="666002" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="666005" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="666006" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="666007" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="666009" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="666010" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="666011" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="666012" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="666015" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="666018" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="666019" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="666026" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="666030" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="666031" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="666033" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="666036" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="666037" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="666038" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="666040" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="666044" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="666046" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="666048" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="666049" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="666053" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="666055" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="666056" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="666057" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="666058" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="666063" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="666067" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="666068" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="666072" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="666073" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="666074" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="666076" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="666079" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="666082" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="666086" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="666087" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="666089" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="666091" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="666092" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="666093" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="666096" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="666100" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="666101" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="666103" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="666105" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="666107" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="666111" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="666119" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="666121" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="666124" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="666125" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="666127" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="666128" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="666130" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="666133" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="666134" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="666137" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="666138" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="666139" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="666140" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="666141" bucketRole="15" bucketValue="AVE+NY" />
+      <property memrecno="666142" bucketRole="15" bucketValue="AVE+NY" />
+    </group>
+  </group>
+  <group name="entityAnalysis" enttype="mdmper">
+    <group name="MemberComparisons" compareType="MEMBERS" compareMembers="770866" probandMember="770866">
+      <group memrecno="770866" scoreValue="17.3">
+        <group cmpspeccode="ID" probandValue="" candidateValue="" scoreValue="+0.00" matchType="M" />
+        <group cmpspeccode="XNM" probandValue="MOSS|HILLARY|" candidateValue="MOSS|HILLARY|" scoreValue="+6.90" matchType="E">
+          <property probandValue="MOSS" candidateValue="MOSS" scoreValue="+4.02" matchType="X" />
+          <property probandValue="HILLARY" candidateValue="HILLARY" scoreValue="+4.40" matchType="X" />
+        </group>
+        <group cmpspeccode="PADDRESS" probandValue="" candidateValue="" scoreValue="+0.00" matchType="M" />
+        <group cmpspeccode="SSN" probandValue="000003521" candidateValue="000003521" scoreValue="+5.63" matchType="E" />
+        <group cmpspeccode="DOB" probandValue="19900906" candidateValue="19900906" scoreValue="+4.46" matchType="E" />
+        <group cmpspeccode="SEX" probandValue="F" candidateValue="F" scoreValue="+0.36" matchType="E" />
+        <group cmpspeccode="EMAIL" probandValue="" candidateValue="" scoreValue="+0.00" matchType="M" />
+      </group>
+    </group>
+    <group name="MemberComparisons" compareType="MEMBERS" compareMembers="837577" probandMember="770866">
+      <group memrecno="837577" scoreValue="11.7">
+        <group cmpspeccode="ID" probandValue="" candidateValue="" scoreValue="+0.00" matchType="M" />
+        <group cmpspeccode="XNM" probandValue="MOSS|HILLARY|" candidateValue="MOSS|HILLARY|" scoreValue="+6.90" matchType="E">
+          <property probandValue="MOSS" candidateValue="MOSS" scoreValue="+4.02" matchType="X" />
+          <property probandValue="HILLARY" candidateValue="HILLARY" scoreValue="+4.40" matchType="X" />
+        </group>
+        <group cmpspeccode="PADDRESS" probandValue="" candidateValue="" scoreValue="+0.00" matchType="M" />
+        <group cmpspeccode="SSN" probandValue="" candidateValue="" scoreValue="+0.00" matchType="M" />
+        <group cmpspeccode="DOB" probandValue="19900906" candidateValue="19900906" scoreValue="+4.46" matchType="E" />
+        <group cmpspeccode="SEX" probandValue="F" candidateValue="F" scoreValue="+0.36" matchType="E" />
+        <group cmpspeccode="EMAIL" probandValue="" candidateValue="" scoreValue="+0.00" matchType="M" />
+      </group>
+    </group>
+    <group name="MemberComparisons" compareType="MEMBERS" compareMembers="824760" probandMember="744541">
+      <group memrecno="824760" scoreValue="11.7">
+        <group cmpspeccode="ID" probandValue="007322" candidateValue="134292" scoreValue="-1.89" matchType="D" />
+        <group cmpspeccode="XNM" probandValue="WILSON|EVE|" candidateValue="WILSON|EVE|" scoreValue="+6.18" matchType="E">
+          <property probandValue="WILSON" candidateValue="WILSON" scoreValue="+2.75" matchType="X" />
+          <property probandValue="EVE" candidateValue="EVE" scoreValue="+3.43" matchType="X" />
+        </group>
+        <group cmpspeccode="PADDRESS" probandValue="10|ARDRA|CT|SMITHTOWN" candidateValue="-- 10|ARDRA|CT|SMITHTOWN" scoreValue="gt= +4" matchType="c">
+          <property probandValue="10" candidateValue="10" scoreValue="+5.71" matchType="X" />
+          <property probandValue="ARDRA" candidateValue="ARDRA" scoreValue="+9.80" matchType="X" />
+          <property probandValue="CT" candidateValue="CT" scoreValue="+9.80" matchType="X" />
+          <property probandValue="SMITHTOWN" candidateValue="SMITHTOWN" scoreValue="+7.50" matchType="X" />
+          <property probandValue="NY" candidateValue="NY" scoreValue="+7.50" matchType="X" />
+          <property probandValue="11787" candidateValue="11787" scoreValue="+10.04" matchType="X" />
+        </group>
+        <group cmpspeccode="SSN" probandValue="070749299" candidateValue="70749299" scoreValue="+0.23" matchType="D" />
+        <group cmpspeccode="DOB" probandValue="19731224" candidateValue="19731224" scoreValue="+4.39" matchType="E" />
+        <group cmpspeccode="SEX" probandValue="" candidateValue="" scoreValue="+0.00" matchType="M" />
+        <group cmpspeccode="EMAIL" probandValue="EWILSON1NSHS" candidateValue="EWILSON1NORTHWELL" scoreValue="-1.67" matchType="D" />
+      </group>
+    </group>
+    <group name="MemberComparisons" compareType="MEMBERS" compareMembers="709451" probandMember="744541">
+      <group memrecno="709451" scoreValue="-12.5">
+        <group cmpspeccode="EMPID" probandValue="" candidateValue="" scoreValue="+0.00" matchType="M" />
+        <group cmpspeccode="GESOARID" probandValue="" candidateValue="" scoreValue="+0.00" matchType="M" />
+        <group cmpspeccode="UPIN" probandValue="" candidateValue="" scoreValue="+0.00" matchType="M" />
+        <group cmpspeccode="UNIVID" probandValue="" candidateValue="" scoreValue="+0.00" matchType="M" />
+        <group cmpspeccode="NPI" probandValue="1215955349" candidateValue="1134267776" scoreValue="-3.23" matchType="D" />
+        <group cmpspeccode="STLIC" probandValue="007322" candidateValue="139570" scoreValue="-0.54" matchType="D" />
+        <group cmpspeccode="MEDICAID" probandValue="" candidateValue="" scoreValue="+0.00" matchType="M" />
+        <group cmpspeccode="MEDICARE" probandValue="" candidateValue="" scoreValue="+0.00" matchType="M" />
+        <group cmpspeccode="SOARINTID" probandValue="" candidateValue="" scoreValue="+0.00" matchType="M" />
+        <group cmpspeccode="XNM" probandValue="WILSON|EVE|" candidateValue="GOLDBERG|SANFORD|RUVEN|" scoreValue="-8.82" matchType="D">
+          <property probandValue="WILSON" candidateValue="GOLDBERG" scoreValue="-4.41" matchType="D" />
+          <property probandValue="EVE" candidateValue="SANFORD" scoreValue="-4.41" matchType="D" />
+        </group>
+        <group cmpspeccode="PADDRESS" probandValue="" candidateValue="" scoreValue="+0.00" matchType="M" />
+        <group cmpspeccode="SSN" probandValue="" candidateValue="" scoreValue="+0.00" matchType="M" />
+        <group cmpspeccode="DOB" probandValue="" candidateValue="" scoreValue="+0.00" matchType="M" />
+        <group cmpspeccode="SEX" probandValue="" candidateValue="" scoreValue="+0.00" matchType="M" />
+        <group cmpspeccode="EMAIL" probandValue="" candidateValue="" scoreValue="+0.00" matchType="M" />
+      </group>
+    </group>
+    <group name="MemberComparisons" compareType="MEMBERS" compareMembers="709451" probandMember="694185">
+      <group memrecno="709451" scoreValue="-3.6">
+        <group cmpspeccode="EMPID" probandValue="" candidateValue="" scoreValue="+0.00" matchType="M" />
+        <group cmpspeccode="GESOARID" probandValue="1014517" candidateValue="1003167" scoreValue="-3.18" matchType="D" />
+        <group cmpspeccode="UPIN" probandValue="" candidateValue="" scoreValue="+0.00" matchType="M" />
+        <group cmpspeccode="UNIVID" probandValue="" candidateValue="" scoreValue="+0.00" matchType="M" />
+        <group cmpspeccode="NPI" probandValue="1740378124" candidateValue="1134267776" scoreValue="-3.22" matchType="D" />
+        <group cmpspeccode="STLIC" probandValue="139570" candidateValue="139570" scoreValue="+2.81" matchType="E" />
+        <group cmpspeccode="MEDICAID" probandValue="" candidateValue="" scoreValue="+0.00" matchType="M" />
+        <group cmpspeccode="MEDICARE" probandValue="" candidateValue="" scoreValue="+0.00" matchType="M" />
+        <group cmpspeccode="SOARINTID" probandValue="" candidateValue="" scoreValue="+0.00" matchType="M" />
+        <group cmpspeccode="XNM" probandValue="GOLDBERG|SANDY|" candidateValue="GOLDBERG|SANFORD|RUVEN|" scoreValue="-0.01" matchType="D">
+          <property probandValue="GOLDBERG" candidateValue="GOLDBERG" scoreValue="+4.40" matchType="X" />
+          <property probandValue="SANDY" candidateValue="SANFORD" scoreValue="-4.41" matchType="D" />
+        </group>
+        <group cmpspeccode="PADDRESS" probandValue="" candidateValue="" scoreValue="+0.00" matchType="M" />
+        <group cmpspeccode="SSN" probandValue="" candidateValue="" scoreValue="+0.00" matchType="M" />
+        <group cmpspeccode="DOB" probandValue="" candidateValue="" scoreValue="+0.00" matchType="M" />
+        <group cmpspeccode="SEX" probandValue="" candidateValue="" scoreValue="+0.00" matchType="M" />
+        <group cmpspeccode="EMAIL" probandValue="" candidateValue="" scoreValue="+0.00" matchType="M" />
+      </group>
+    </group>
+    <group name="MemberComparisons" compareType="MEMBERS" compareMembers="815302" probandMember="794768">
+      <group memrecno="815302" scoreValue="0.2">
+        <group cmpspeccode="EMPID" probandValue="158381" candidateValue="156457" scoreValue="-3.18" matchType="D" />
+        <group cmpspeccode="GESOARID" probandValue="" candidateValue="" scoreValue="+0.00" matchType="M" />
+        <group cmpspeccode="UPIN" probandValue="" candidateValue="" scoreValue="+0.00" matchType="M" />
+        <group cmpspeccode="UNIVID" probandValue="RCALIGDONG" candidateValue="BCALIGDONG" scoreValue="-2.80" matchType="D" />
+        <group cmpspeccode="NPI" probandValue="" candidateValue="" scoreValue="+0.00" matchType="M" />
+        <group cmpspeccode="STLIC" probandValue="" candidateValue="" scoreValue="+0.00" matchType="M" />
+        <group cmpspeccode="MEDICAID" probandValue="" candidateValue="" scoreValue="+0.00" matchType="M" />
+        <group cmpspeccode="MEDICARE" probandValue="" candidateValue="" scoreValue="+0.00" matchType="M" />
+        <group cmpspeccode="SOARINTID" probandValue="" candidateValue="" scoreValue="+0.00" matchType="M" />
+        <group cmpspeccode="XNM" probandValue="CALIGDONG|RAYALBERTO|B|" candidateValue="CALIGDONG|BETH|" scoreValue="+4.90" matchType="P">
+          <property probandValue="CALIGDONG" candidateValue="CALIGDONG" scoreValue="+4.40" matchType="X" />
+          <property probandValue="B" candidateValue="BETH" scoreValue="+0.50" matchType="I" />
+        </group>
+        <group cmpspeccode="PADDRESS" probandValue="33|HICKORY|AVE|BERGEN" candidateValue="-- 33|HICKORY|AVE|BERGEN" scoreValue="gt= +4" matchType="c">
+          <property probandValue="33" candidateValue="33" scoreValue="+5.71" matchType="X" />
+          <property probandValue="HICKORY" candidateValue="HICKORY" scoreValue="+9.80" matchType="X" />
+          <property probandValue="AVE" candidateValue="AVE" scoreValue="+9.80" matchType="X" />
+          <property probandValue="BERGENFIELD" candidateValue="BERGENFIELD" scoreValue="+7.50" matchType="X" />
+          <property probandValue="NJ" candidateValue="NJ" scoreValue="+7.50" matchType="X" />
+          <property probandValue="07621" candidateValue="07621" scoreValue="+10.04" matchType="X" />
+        </group>
+        <group cmpspeccode="SSN" probandValue="114781201" candidateValue="80763379" scoreValue="-3.15" matchType="D" />
+        <group cmpspeccode="DOB" probandValue="19570630" candidateValue="19570610" scoreValue="+0.97" matchType="P" />
+        <group cmpspeccode="SEX" probandValue="" candidateValue="" scoreValue="+0.00" matchType="M" />
+        <group cmpspeccode="EMAIL" probandValue="RCALIGDONGNORTHWELL" candidateValue="BCALIGDONGNORTHWELL" scoreValue="-1.01" matchType="D" />
+      </group>
+    </group>
+    <group name="MemberComparisons" compareType="MEMBERS" compareMembers="767051" probandMember="767051">
+      <group memrecno="767051" scoreValue="34.3">
+        <group cmpspeccode="EMPID" probandValue="" candidateValue="" scoreValue="+0.00" matchType="M" />
+        <group cmpspeccode="GESOARID" probandValue="" candidateValue="" scoreValue="+0.00" matchType="M" />
+        <group cmpspeccode="UPIN" probandValue="" candidateValue="" scoreValue="+0.00" matchType="M" />
+        <group cmpspeccode="UNIVID" probandValue="" candidateValue="" scoreValue="+0.00" matchType="M" />
+        <group cmpspeccode="NPI" probandValue="1760434013" candidateValue="1760434013" scoreValue="+3.81" matchType="E" />
+        <group cmpspeccode="STLIC" probandValue="156373" candidateValue="156373" scoreValue="+2.81" matchType="E" />
+        <group cmpspeccode="MEDICAID" probandValue="00884437" candidateValue="00884437" scoreValue="+3.81" matchType="E" />
+        <group cmpspeccode="MEDICARE" probandValue="36D951" candidateValue="36D951" scoreValue="+3.81" matchType="E" />
+        <group cmpspeccode="SOARINTID" probandValue="" candidateValue="" scoreValue="+0.00" matchType="M" />
+        <group cmpspeccode="XNM" probandValue="GOODMAN|ROBERT|" candidateValue="GOODMAN|ROBERT|" scoreValue="+5.95" matchType="E">
+          <property probandValue="GOODMAN" candidateValue="GOODMAN" scoreValue="+4.02" matchType="X" />
+          <property probandValue="ROBERT" candidateValue="ROBERT" scoreValue="+1.93" matchType="X" />
+        </group>
+        <group cmpspeccode="PADDRESS" probandValue="6|LARCH|HILL|RD|LAWRE" candidateValue="-- 6|LARCH|HILL|RD|LAWRE" scoreValue="gt= +4" matchType="c">
+          <property probandValue="6" candidateValue="6" scoreValue="+4.38" matchType="X" />
+          <property probandValue="LARCH" candidateValue="LARCH" scoreValue="+8.53" matchType="X" />
+          <property probandValue="HILL" candidateValue="HILL" scoreValue="+8.53" matchType="X" />
+          <property probandValue="RD" candidateValue="RD" scoreValue="+8.53" matchType="X" />
+          <property probandValue="LAWRENCE" candidateValue="LAWRENCE" scoreValue="+7.50" matchType="X" />
+          <property probandValue="NY" candidateValue="NY" scoreValue="+7.50" matchType="X" />
+          <property probandValue="11559" candidateValue="11559" scoreValue="+10.04" matchType="X" />
+          <property probandValue="7573629" candidateValue="7573629" scoreValue="0" matchType="E" />
+        </group>
+        <group cmpspeccode="SSN" probandValue="095502917" candidateValue="095502917" scoreValue="+4.63" matchType="E" />
+        <group cmpspeccode="DOB" probandValue="19570908" candidateValue="19570908" scoreValue="+4.19" matchType="E" />
+        <group cmpspeccode="SEX" probandValue="M" candidateValue="M" scoreValue="+0.36" matchType="E" />
+        <group cmpspeccode="EMAIL" probandValue="" candidateValue="" scoreValue="+0.00" matchType="M" />
+      </group>
+    </group>
+    <group name="MemberComparisons" compareType="MEMBERS" compareMembers="734753" probandMember="767051">
+      <group memrecno="734753" scoreValue="-29.2">
+        <group cmpspeccode="EMPID" probandValue="" candidateValue="" scoreValue="+0.00" matchType="M" />
+        <group cmpspeccode="GESOARID" probandValue="" candidateValue="" scoreValue="+0.00" matchType="M" />
+        <group cmpspeccode="UPIN" probandValue="" candidateValue="" scoreValue="+0.00" matchType="M" />
+        <group cmpspeccode="UNIVID" probandValue="" candidateValue="" scoreValue="+0.00" matchType="M" />
+        <group cmpspeccode="NPI" probandValue="1760434013" candidateValue="1457445660" scoreValue="-3.22" matchType="D" />
+        <group cmpspeccode="STLIC" probandValue="156373" candidateValue="203355" scoreValue="-0.53" matchType="D" />
+        <group cmpspeccode="MEDICAID" probandValue="00884437" candidateValue="01905811" scoreValue="-3.21" matchType="D" />
+        <group cmpspeccode="MEDICARE" probandValue="36D951" candidateValue="50C881" scoreValue="-3.19" matchType="D" />
+        <group cmpspeccode="SOARINTID" probandValue="" candidateValue="" scoreValue="+0.00" matchType="M" />
+        <group cmpspeccode="XNM" probandValue="GOODMAN|ROBERT|" candidateValue="GITMAN|MICHAEL|DAVID|" scoreValue="-8.82" matchType="D">
+          <property probandValue="GOODMAN" candidateValue="GITMAN" scoreValue="-4.41" matchType="D" />
+          <property probandValue="ROBERT" candidateValue="MICHAEL" scoreValue="-4.41" matchType="D" />
+        </group>
+        <group cmpspeccode="PADDRESS" probandValue="6|LARCH|HILL|RD|LAWRE" candidateValue="-- 22|SEA|GULL|LN|PORT|W" scoreValue="gt= -1" matchType="c">
+          <property probandValue="NY" candidateValue="NY" scoreValue="+6.25" matchType="X" />
+          <property probandValue="7573629" candidateValue="2208635" scoreValue="6" matchType="E" />
+        </group>
+        <group cmpspeccode="SSN" probandValue="095502917" candidateValue="054467927" scoreValue="-3.10" matchType="D" />
+        <group cmpspeccode="DOB" probandValue="19570908" candidateValue="19690310" scoreValue="-5.54" matchType="D" />
+        <group cmpspeccode="SEX" probandValue="M" candidateValue="M" scoreValue="+0.36" matchType="E" />
+        <group cmpspeccode="EMAIL" probandValue="" candidateValue="" scoreValue="+0.00" matchType="M" />
+      </group>
+    </group>
+    <group name="MemberComparisons" compareType="MEMBERS" compareMembers="837218" probandMember="700226">
+      <group memrecno="837218" scoreValue="1.9">
+        <group cmpspeccode="EMPID" probandValue="" candidateValue="" scoreValue="+0.00" matchType="M" />
+        <group cmpspeccode="GESOARID" probandValue="" candidateValue="" scoreValue="+0.00" matchType="M" />
+        <group cmpspeccode="UPIN" probandValue="" candidateValue="" scoreValue="+0.00" matchType="M" />
+        <group cmpspeccode="UNIVID" probandValue="" candidateValue="" scoreValue="+0.00" matchType="M" />
+        <group cmpspeccode="NPI" probandValue="1134418239" candidateValue="1134418239" scoreValue="+3.81" matchType="E" />
+        <group cmpspeccode="STLIC" probandValue="" candidateValue="" scoreValue="+0.00" matchType="M" />
+        <group cmpspeccode="MEDICAID" probandValue="" candidateValue="" scoreValue="+0.00" matchType="M" />
+        <group cmpspeccode="MEDICARE" probandValue="" candidateValue="" scoreValue="+0.00" matchType="M" />
+        <group cmpspeccode="SOARINTID" probandValue="" candidateValue="" scoreValue="+0.00" matchType="M" />
+        <group cmpspeccode="XNM" probandValue="MATHEW|NANCY|" candidateValue="VARGHESE|NANCY|" scoreValue="-1.87" matchType="D">
+          <property probandValue="MATHEW" candidateValue="VARGHESE" scoreValue="-4.41" matchType="D" />
+          <property probandValue="NANCY" candidateValue="NANCY" scoreValue="+2.54" matchType="X" />
+        </group>
+        <group cmpspeccode="PADDRESS" probandValue="" candidateValue="" scoreValue="+0.00" matchType="M" />
+        <group cmpspeccode="SSN" probandValue="" candidateValue="" scoreValue="+0.00" matchType="M" />
+        <group cmpspeccode="DOB" probandValue="" candidateValue="" scoreValue="+0.00" matchType="M" />
+        <group cmpspeccode="SEX" probandValue="" candidateValue="" scoreValue="+0.00" matchType="M" />
+        <group cmpspeccode="EMAIL" probandValue="" candidateValue="" scoreValue="+0.00" matchType="M" />
+      </group>
+    </group>
+    <group name="MemberComparisons" compareType="MEMBERS" compareMembers="908859" probandMember="664897">
+      <group memrecno="908859" scoreValue="6.8">
+        <group cmpspeccode="EMPID" probandValue="" candidateValue="" scoreValue="+0.00" matchType="M" />
+        <group cmpspeccode="GESOARID" probandValue="" candidateValue="" scoreValue="+0.00" matchType="M" />
+        <group cmpspeccode="UPIN" probandValue="" candidateValue="" scoreValue="+0.00" matchType="M" />
+        <group cmpspeccode="UNIVID" probandValue="" candidateValue="" scoreValue="+0.00" matchType="M" />
+        <group cmpspeccode="NPI" probandValue="" candidateValue="" scoreValue="+0.00" matchType="M" />
+        <group cmpspeccode="STLIC" probandValue="" candidateValue="" scoreValue="+0.00" matchType="M" />
+        <group cmpspeccode="MEDICAID" probandValue="" candidateValue="" scoreValue="+0.00" matchType="M" />
+        <group cmpspeccode="MEDICARE" probandValue="" candidateValue="" scoreValue="+0.00" matchType="M" />
+        <group cmpspeccode="SOARINTID" probandValue="" candidateValue="" scoreValue="+0.00" matchType="M" />
+        <group cmpspeccode="XNM" probandValue="DONNELLY|GERARD|BRIAN|" candidateValue="DONNELLY|BRIAN|" scoreValue="+6.80" matchType="E">
+          <property probandValue="DONNELLY" candidateValue="DONNELLY" scoreValue="+4.40" matchType="X" />
+          <property probandValue="BRIAN" candidateValue="BRIAN" scoreValue="+2.46" matchType="X" />
+        </group>
+        <group cmpspeccode="PADDRESS" probandValue="" candidateValue="" scoreValue="+0.00" matchType="M" />
+        <group cmpspeccode="SSN" probandValue="" candidateValue="" scoreValue="+0.00" matchType="M" />
+        <group cmpspeccode="DOB" probandValue="" candidateValue="" scoreValue="+0.00" matchType="M" />
+        <group cmpspeccode="SEX" probandValue="" candidateValue="" scoreValue="+0.00" matchType="M" />
+        <group cmpspeccode="EMAIL" probandValue="" candidateValue="" scoreValue="+0.00" matchType="M" />
+      </group>
+    </group>
+    <group name="MemberComparisons" compareType="MEMBERS" compareMembers="850531" probandMember="668320">
+      <group memrecno="850531" scoreValue="6.4">
+        <group cmpspeccode="EMPID" probandValue="" candidateValue="" scoreValue="+0.00" matchType="M" />
+        <group cmpspeccode="GESOARID" probandValue="" candidateValue="" scoreValue="+0.00" matchType="M" />
+        <group cmpspeccode="UPIN" probandValue="" candidateValue="" scoreValue="+0.00" matchType="M" />
+        <group cmpspeccode="UNIVID" probandValue="" candidateValue="" scoreValue="+0.00" matchType="M" />
+        <group cmpspeccode="NPI" probandValue="" candidateValue="" scoreValue="+0.00" matchType="M" />
+        <group cmpspeccode="STLIC" probandValue="" candidateValue="" scoreValue="+0.00" matchType="M" />
+        <group cmpspeccode="MEDICAID" probandValue="" candidateValue="" scoreValue="+0.00" matchType="M" />
+        <group cmpspeccode="MEDICARE" probandValue="" candidateValue="" scoreValue="+0.00" matchType="M" />
+        <group cmpspeccode="SOARINTID" probandValue="" candidateValue="" scoreValue="+0.00" matchType="M" />
+        <group cmpspeccode="XNM" probandValue="CONNELLY|ELIZABETH|MARY|" candidateValue="CONNELLY|MARY|" scoreValue="+6.43" matchType="E">
+          <property probandValue="CONNELLY" candidateValue="CONNELLY" scoreValue="+4.40" matchType="X" />
+          <property probandValue="MARY" candidateValue="MARY" scoreValue="+2.03" matchType="X" />
+        </group>
+        <group cmpspeccode="PADDRESS" probandValue="" candidateValue="" scoreValue="+0.00" matchType="M" />
+        <group cmpspeccode="SSN" probandValue="" candidateValue="" scoreValue="+0.00" matchType="M" />
+        <group cmpspeccode="DOB" probandValue="" candidateValue="" scoreValue="+0.00" matchType="M" />
+        <group cmpspeccode="SEX" probandValue="" candidateValue="" scoreValue="+0.00" matchType="M" />
+        <group cmpspeccode="EMAIL" probandValue="" candidateValue="" scoreValue="+0.00" matchType="M" />
+      </group>
+    </group>
+    <group name="MemberComparisons" compareType="MEMBERS" compareMembers="857728" probandMember="764385">
+      <group memrecno="857728" scoreValue="13.6">
+        <group cmpspeccode="EMPID" probandValue="" candidateValue="" scoreValue="+0.00" matchType="M" />
+        <group cmpspeccode="GESOARID" probandValue="" candidateValue="" scoreValue="+0.00" matchType="M" />
+        <group cmpspeccode="UPIN" probandValue="" candidateValue="" scoreValue="+0.00" matchType="M" />
+        <group cmpspeccode="UNIVID" probandValue="" candidateValue="" scoreValue="+0.00" matchType="M" />
+        <group cmpspeccode="NPI" probandValue="" candidateValue="" scoreValue="+0.00" matchType="M" />
+        <group cmpspeccode="STLIC" probandValue="" candidateValue="" scoreValue="+0.00" matchType="M" />
+        <group cmpspeccode="MEDICAID" probandValue="" candidateValue="" scoreValue="+0.00" matchType="M" />
+        <group cmpspeccode="MEDICARE" probandValue="" candidateValue="" scoreValue="+0.00" matchType="M" />
+        <group cmpspeccode="SOARINTID" probandValue="" candidateValue="" scoreValue="+0.00" matchType="M" />
+        <group cmpspeccode="XNM" probandValue="CAMPBELL|NICOLE|MARIE|" candidateValue="CAMPBELL|NICOLE|M|" scoreValue="+6.30" matchType="P">
+          <property probandValue="CAMPBELL" candidateValue="CAMPBELL" scoreValue="+3.04" matchType="X" />
+          <property probandValue="NICOLE" candidateValue="NICOLE" scoreValue="+2.76" matchType="X" />
+          <property probandValue="MARIE" candidateValue="M" scoreValue="+0.50" matchType="I" />
+        </group>
+        <group cmpspeccode="PADDRESS" probandValue="28|SPRING|ST|APT|B|OY" candidateValue="-- 8|PENNINGTON|DR|HUNTI" scoreValue="gt= +2" matchType="c">
+          <property probandValue="NY" candidateValue="NY" scoreValue="+6.25" matchType="X" />
+          <property probandValue="8279544" candidateValue="8279544" scoreValue="0" matchType="E" />
+        </group>
+        <group cmpspeccode="SSN" probandValue="051786808" candidateValue="51786808" scoreValue="+0.23" matchType="D" />
+        <group cmpspeccode="DOB" probandValue="19900425" candidateValue="19900425" scoreValue="+4.49" matchType="E" />
+        <group cmpspeccode="SEX" probandValue="" candidateValue="" scoreValue="+0.00" matchType="M" />
+        <group cmpspeccode="EMAIL" probandValue="" candidateValue="" scoreValue="+0.00" matchType="M" />
+      </group>
+    </group>
+    <group name="MemberComparisons" compareType="MEMBERS" compareMembers="908243" probandMember="724771">
+      <group memrecno="908243" scoreValue="6.7">
+        <group cmpspeccode="EMPID" probandValue="" candidateValue="" scoreValue="+0.00" matchType="M" />
+        <group cmpspeccode="GESOARID" probandValue="" candidateValue="" scoreValue="+0.00" matchType="M" />
+        <group cmpspeccode="UPIN" probandValue="" candidateValue="" scoreValue="+0.00" matchType="M" />
+        <group cmpspeccode="UNIVID" probandValue="" candidateValue="" scoreValue="+0.00" matchType="M" />
+        <group cmpspeccode="NPI" probandValue="" candidateValue="" scoreValue="+0.00" matchType="M" />
+        <group cmpspeccode="STLIC" probandValue="" candidateValue="" scoreValue="+0.00" matchType="M" />
+        <group cmpspeccode="MEDICAID" probandValue="" candidateValue="" scoreValue="+0.00" matchType="M" />
+        <group cmpspeccode="MEDICARE" probandValue="" candidateValue="" scoreValue="+0.00" matchType="M" />
+        <group cmpspeccode="SOARINTID" probandValue="" candidateValue="" scoreValue="+0.00" matchType="M" />
+        <group cmpspeccode="XNM" probandValue="MCTIGHE|KHAN|SARAH|LOUIS" candidateValue="KHAN|SARAH|" scoreValue="+6.70" matchType="E">
+          <property probandValue="KHAN" candidateValue="KHAN" scoreValue="+4.02" matchType="X" />
+          <property probandValue="SARAH" candidateValue="SARAH" scoreValue="+2.74" matchType="X" />
+        </group>
+        <group cmpspeccode="PADDRESS" probandValue="" candidateValue="" scoreValue="+0.00" matchType="M" />
+        <group cmpspeccode="SSN" probandValue="" candidateValue="" scoreValue="+0.00" matchType="M" />
+        <group cmpspeccode="DOB" probandValue="" candidateValue="" scoreValue="+0.00" matchType="M" />
+        <group cmpspeccode="SEX" probandValue="" candidateValue="" scoreValue="+0.00" matchType="M" />
+        <group cmpspeccode="EMAIL" probandValue="" candidateValue="" scoreValue="+0.00" matchType="M" />
+      </group>
+    </group>
+    <group name="MemberComparisons" compareType="MEMBERS" compareMembers="731239" probandMember="726803">
+      <group memrecno="731239" scoreValue="3.1">
+        <group cmpspeccode="EMPID" probandValue="" candidateValue="" scoreValue="+0.00" matchType="M" />
+        <group cmpspeccode="GESOARID" probandValue="" candidateValue="" scoreValue="+0.00" matchType="M" />
+        <group cmpspeccode="UPIN" probandValue="" candidateValue="" scoreValue="+0.00" matchType="M" />
+        <group cmpspeccode="UNIVID" probandValue="" candidateValue="" scoreValue="+0.00" matchType="M" />
+        <group cmpspeccode="NPI" probandValue="0" candidateValue="1891719175" scoreValue="-3.24" matchType="D" />
+        <group cmpspeccode="STLIC" probandValue="" candidateValue="" scoreValue="+0.00" matchType="M" />
+        <group cmpspeccode="MEDICAID" probandValue="" candidateValue="" scoreValue="+0.00" matchType="M" />
+        <group cmpspeccode="MEDICARE" probandValue="" candidateValue="" scoreValue="+0.00" matchType="M" />
+        <group cmpspeccode="SOARINTID" probandValue="" candidateValue="" scoreValue="+0.00" matchType="M" />
+        <group cmpspeccode="XNM" probandValue="GROSSMAN|DAVID|" candidateValue="GROSSMAN|DAVID|SETH|" scoreValue="+6.40" matchType="E">
+          <property probandValue="GROSSMAN" candidateValue="GROSSMAN" scoreValue="+4.40" matchType="X" />
+          <property probandValue="DAVID" candidateValue="DAVID" scoreValue="+2.00" matchType="X" />
+        </group>
+        <group cmpspeccode="PADDRESS" probandValue="" candidateValue="" scoreValue="+0.00" matchType="M" />
+        <group cmpspeccode="SSN" probandValue="" candidateValue="" scoreValue="+0.00" matchType="M" />
+        <group cmpspeccode="DOB" probandValue="" candidateValue="" scoreValue="+0.00" matchType="M" />
+        <group cmpspeccode="SEX" probandValue="" candidateValue="" scoreValue="+0.00" matchType="M" />
+        <group cmpspeccode="EMAIL" probandValue="" candidateValue="" scoreValue="+0.00" matchType="M" />
+      </group>
+    </group>
+    <group name="MemberComparisons" compareType="MEMBERS" compareMembers="758869" probandMember="668275">
+      <group memrecno="758869" scoreValue="3.2">
+        <group cmpspeccode="EMPID" probandValue="" candidateValue="" scoreValue="+0.00" matchType="M" />
+        <group cmpspeccode="GESOARID" probandValue="" candidateValue="" scoreValue="+0.00" matchType="M" />
+        <group cmpspeccode="UPIN" probandValue="" candidateValue="" scoreValue="+0.00" matchType="M" />
+        <group cmpspeccode="UNIVID" probandValue="" candidateValue="" scoreValue="+0.00" matchType="M" />
+        <group cmpspeccode="NPI" probandValue="" candidateValue="" scoreValue="+0.00" matchType="M" />
+        <group cmpspeccode="STLIC" probandValue="" candidateValue="" scoreValue="+0.00" matchType="M" />
+        <group cmpspeccode="MEDICAID" probandValue="" candidateValue="" scoreValue="+0.00" matchType="M" />
+        <group cmpspeccode="MEDICARE" probandValue="" candidateValue="" scoreValue="+0.00" matchType="M" />
+        <group cmpspeccode="SOARINTID" probandValue="" candidateValue="" scoreValue="+0.00" matchType="M" />
+        <group cmpspeccode="XNM" probandValue="KIM|DAVID|DAEHONG|" candidateValue="KIM|DAVID|D|" scoreValue="+3.20" matchType="P">
+          <property probandValue="KIM" candidateValue="KIM" scoreValue="+0.70" matchType="X" />
+          <property probandValue="DAVID" candidateValue="DAVID" scoreValue="+2.00" matchType="X" />
+          <property probandValue="DAEHONG" candidateValue="D" scoreValue="+0.50" matchType="I" />
+        </group>
+        <group cmpspeccode="PADDRESS" probandValue="" candidateValue="" scoreValue="+0.00" matchType="M" />
+        <group cmpspeccode="SSN" probandValue="" candidateValue="" scoreValue="+0.00" matchType="M" />
+        <group cmpspeccode="DOB" probandValue="" candidateValue="" scoreValue="+0.00" matchType="M" />
+        <group cmpspeccode="SEX" probandValue="" candidateValue="" scoreValue="+0.00" matchType="M" />
+        <group cmpspeccode="EMAIL" probandValue="" candidateValue="" scoreValue="+0.00" matchType="M" />
+      </group>
+    </group>
+    <group name="MemberComparisons" compareType="MEMBERS" compareMembers="766285" probandMember="699560">
+      <group memrecno="766285" scoreValue="8.3">
+        <group cmpspeccode="EMPID" probandValue="" candidateValue="" scoreValue="+0.00" matchType="M" />
+        <group cmpspeccode="GESOARID" probandValue="" candidateValue="" scoreValue="+0.00" matchType="M" />
+        <group cmpspeccode="UPIN" probandValue="" candidateValue="" scoreValue="+0.00" matchType="M" />
+        <group cmpspeccode="UNIVID" probandValue="" candidateValue="" scoreValue="+0.00" matchType="M" />
+        <group cmpspeccode="NPI" probandValue="1245346139" candidateValue="1245346139" scoreValue="+3.81" matchType="E" />
+        <group cmpspeccode="STLIC" probandValue="181209" candidateValue="181209" scoreValue="+2.81" matchType="E" />
+        <group cmpspeccode="MEDICAID" probandValue="" candidateValue="" scoreValue="+0.00" matchType="M" />
+        <group cmpspeccode="MEDICARE" probandValue="" candidateValue="" scoreValue="+0.00" matchType="M" />
+        <group cmpspeccode="SOARINTID" probandValue="" candidateValue="" scoreValue="+0.00" matchType="M" />
+        <group cmpspeccode="XNM" probandValue="KIM|HYUNG|" candidateValue="KIM|SCHLUGER|LEONA|H|" scoreValue="+1.70" matchType="P">
+          <property probandValue="KIM" candidateValue="KIM" scoreValue="+0.70" matchType="X" />
+          <property probandValue="HYUNG" candidateValue="H" scoreValue="+1.00" matchType="I" />
+        </group>
+        <group cmpspeccode="PADDRESS" probandValue="" candidateValue="" scoreValue="+0.00" matchType="M" />
+        <group cmpspeccode="SSN" probandValue="" candidateValue="" scoreValue="+0.00" matchType="M" />
+        <group cmpspeccode="DOB" probandValue="" candidateValue="" scoreValue="+0.00" matchType="M" />
+        <group cmpspeccode="SEX" probandValue="" candidateValue="" scoreValue="+0.00" matchType="M" />
+        <group cmpspeccode="EMAIL" probandValue="" candidateValue="" scoreValue="+0.00" matchType="M" />
+      </group>
+    </group>
+    <group name="MemberComparisons" compareType="MEMBERS" compareMembers="843566" probandMember="689136">
+      <group memrecno="843566" scoreValue="8.9">
+        <group cmpspeccode="EMPID" probandValue="" candidateValue="" scoreValue="+0.00" matchType="M" />
+        <group cmpspeccode="GESOARID" probandValue="" candidateValue="" scoreValue="+0.00" matchType="M" />
+        <group cmpspeccode="UPIN" probandValue="" candidateValue="" scoreValue="+0.00" matchType="M" />
+        <group cmpspeccode="UNIVID" probandValue="" candidateValue="" scoreValue="+0.00" matchType="M" />
+        <group cmpspeccode="NPI" probandValue="1457506420" candidateValue="1457506420" scoreValue="+3.81" matchType="E" />
+        <group cmpspeccode="STLIC" probandValue="" candidateValue="" scoreValue="+0.00" matchType="M" />
+        <group cmpspeccode="MEDICAID" probandValue="" candidateValue="" scoreValue="+0.00" matchType="M" />
+        <group cmpspeccode="MEDICARE" probandValue="" candidateValue="" scoreValue="+0.00" matchType="M" />
+        <group cmpspeccode="SOARINTID" probandValue="" candidateValue="" scoreValue="+0.00" matchType="M" />
+        <group cmpspeccode="XNM" probandValue="BALDUCCI|ESPIRITU|RD|PAT" candidateValue="BALDUCCI|ESPIRITU|PATRIC" scoreValue="+4.59" matchType="D">
+          <property probandValue="BALDUCCI" candidateValue="BALDUCCI" scoreValue="+4.40" matchType="X" />
+          <property probandValue="ESPIRITU" candidateValue="ESPIRITU" scoreValue="+4.40" matchType="X" />
+          <property probandValue="RD" candidateValue="ANNE" scoreValue="-2.41" matchType="D" />
+          <property probandValue="PATRICIA" candidateValue="PATRICIA" scoreValue="+2.28" matchType="X" />
+        </group>
+        <group cmpspeccode="PADDRESS" probandValue="" candidateValue="" scoreValue="+0.00" matchType="M" />
+        <group cmpspeccode="SSN" probandValue="080647369" candidateValue="80647369" scoreValue="+0.23" matchType="D" />
+        <group cmpspeccode="DOB" probandValue="" candidateValue="" scoreValue="+0.00" matchType="M" />
+        <group cmpspeccode="SEX" probandValue="F" candidateValue="F" scoreValue="+0.36" matchType="E" />
+        <group cmpspeccode="EMAIL" probandValue="" candidateValue="" scoreValue="+0.00" matchType="M" />
+      </group>
+    </group>
+    <group name="MemberComparisons" compareType="MEMBERS" compareMembers="740215" probandMember="679305">
+      <group memrecno="740215" scoreValue="2.5">
+        <group cmpspeccode="EMPID" probandValue="" candidateValue="" scoreValue="+0.00" matchType="M" />
+        <group cmpspeccode="GESOARID" probandValue="" candidateValue="" scoreValue="+0.00" matchType="M" />
+        <group cmpspeccode="UPIN" probandValue="" candidateValue="" scoreValue="+0.00" matchType="M" />
+        <group cmpspeccode="UNIVID" probandValue="" candidateValue="" scoreValue="+0.00" matchType="M" />
+        <group cmpspeccode="NPI" probandValue="" candidateValue="" scoreValue="+0.00" matchType="M" />
+        <group cmpspeccode="STLIC" probandValue="" candidateValue="" scoreValue="+0.00" matchType="M" />
+        <group cmpspeccode="MEDICAID" probandValue="" candidateValue="" scoreValue="+0.00" matchType="M" />
+        <group cmpspeccode="MEDICARE" probandValue="" candidateValue="" scoreValue="+0.00" matchType="M" />
+        <group cmpspeccode="SOARINTID" probandValue="" candidateValue="" scoreValue="+0.00" matchType="M" />
+        <group cmpspeccode="XNM" probandValue="GAGNE|JENNIFER|ANN|" candidateValue="STONGE|JENNIFER|ANN|" scoreValue="+2.51" matchType="D">
+          <property probandValue="GAGNE" candidateValue="STONGE" scoreValue="-2.41" matchType="D" />
+          <property probandValue="JENNIFER" candidateValue="JENNIFER" scoreValue="+2.53" matchType="X" />
+          <property probandValue="ANN" candidateValue="ANN" scoreValue="+2.39" matchType="X" />
+        </group>
+        <group cmpspeccode="PADDRESS" probandValue="" candidateValue="" scoreValue="+0.00" matchType="M" />
+        <group cmpspeccode="SSN" probandValue="" candidateValue="" scoreValue="+0.00" matchType="M" />
+        <group cmpspeccode="DOB" probandValue="" candidateValue="" scoreValue="+0.00" matchType="M" />
+        <group cmpspeccode="SEX" probandValue="" candidateValue="" scoreValue="+0.00" matchType="M" />
+        <group cmpspeccode="EMAIL" probandValue="" candidateValue="" scoreValue="+0.00" matchType="M" />
+      </group>
+    </group>
+    <group name="MemberComparisons" compareType="MEMBERS" compareMembers="902779" probandMember="668689">
+      <group memrecno="902779" scoreValue="9.1">
+        <group cmpspeccode="EMPID" probandValue="" candidateValue="" scoreValue="+0.00" matchType="M" />
+        <group cmpspeccode="GESOARID" probandValue="" candidateValue="" scoreValue="+0.00" matchType="M" />
+        <group cmpspeccode="UPIN" probandValue="" candidateValue="" scoreValue="+0.00" matchType="M" />
+        <group cmpspeccode="UNIVID" probandValue="" candidateValue="" scoreValue="+0.00" matchType="M" />
+        <group cmpspeccode="NPI" probandValue="" candidateValue="" scoreValue="+0.00" matchType="M" />
+        <group cmpspeccode="STLIC" probandValue="" candidateValue="" scoreValue="+0.00" matchType="M" />
+        <group cmpspeccode="MEDICAID" probandValue="" candidateValue="" scoreValue="+0.00" matchType="M" />
+        <group cmpspeccode="MEDICARE" probandValue="" candidateValue="" scoreValue="+0.00" matchType="M" />
+        <group cmpspeccode="SOARINTID" probandValue="" candidateValue="" scoreValue="+0.00" matchType="M" />
+        <group cmpspeccode="XNM" probandValue="MOHAMED|C|SARAH|" candidateValue="MOHAMED|ALY|SARAH|" scoreValue="+4.49" matchType="D">
+          <property probandValue="MOHAMED" candidateValue="MOHAMED" scoreValue="+4.35" matchType="X" />
+          <property probandValue="C" candidateValue="ALY" scoreValue="-2.41" matchType="D" />
+          <property probandValue="SARAH" candidateValue="SARAH" scoreValue="+2.84" matchType="X" />
+        </group>
+        <group cmpspeccode="PADDRESS" probandValue="" candidateValue="" scoreValue="+0.00" matchType="M" />
+        <group cmpspeccode="SSN" probandValue="073728592" candidateValue="073728592" scoreValue="+4.63" matchType="E" />
+        <group cmpspeccode="DOB" probandValue="" candidateValue="" scoreValue="+0.00" matchType="M" />
+        <group cmpspeccode="SEX" probandValue="" candidateValue="" scoreValue="+0.00" matchType="M" />
+        <group cmpspeccode="EMAIL" probandValue="" candidateValue="" scoreValue="+0.00" matchType="M" />
+      </group>
+    </group>
+    <group name="MemberComparisons" compareType="MEMBERS" compareMembers="843196" probandMember="753376">
+      <group memrecno="843196" scoreValue="7.5">
+        <group cmpspeccode="EMPID" probandValue="" candidateValue="" scoreValue="+0.00" matchType="M" />
+        <group cmpspeccode="GESOARID" probandValue="" candidateValue="" scoreValue="+0.00" matchType="M" />
+        <group cmpspeccode="UPIN" probandValue="" candidateValue="" scoreValue="+0.00" matchType="M" />
+        <group cmpspeccode="UNIVID" probandValue="" candidateValue="" scoreValue="+0.00" matchType="M" />
+        <group cmpspeccode="NPI" probandValue="" candidateValue="" scoreValue="+0.00" matchType="M" />
+        <group cmpspeccode="STLIC" probandValue="" candidateValue="" scoreValue="+0.00" matchType="M" />
+        <group cmpspeccode="MEDICAID" probandValue="" candidateValue="" scoreValue="+0.00" matchType="M" />
+        <group cmpspeccode="MEDICARE" probandValue="" candidateValue="" scoreValue="+0.00" matchType="M" />
+        <group cmpspeccode="SOARINTID" probandValue="" candidateValue="" scoreValue="+0.00" matchType="M" />
+        <group cmpspeccode="XNM" probandValue="BENDER|BETH|" candidateValue="BETH|" scoreValue="+3.08" matchType="E">
+          <property probandValue="BETH" candidateValue="BETH" scoreValue="+3.08" matchType="X" />
+        </group>
+        <group cmpspeccode="PADDRESS" probandValue="" candidateValue="" scoreValue="+0.00" matchType="M" />
+        <group cmpspeccode="SSN" probandValue="" candidateValue="" scoreValue="+0.00" matchType="M" />
+        <group cmpspeccode="DOB" probandValue="19790419" candidateValue="19790419" scoreValue="+4.44" matchType="E" />
+        <group cmpspeccode="SEX" probandValue="" candidateValue="" scoreValue="+0.00" matchType="M" />
+        <group cmpspeccode="EMAIL" probandValue="" candidateValue="" scoreValue="+0.00" matchType="M" />
+      </group>
+    </group>
+  </group>
+</snapshot>
+

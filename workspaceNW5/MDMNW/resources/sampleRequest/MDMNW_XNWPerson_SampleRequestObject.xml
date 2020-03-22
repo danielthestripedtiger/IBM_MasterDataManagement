@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE TCRMExtension>
+	
+<!--
+	The following source code ("Code") may only be used in accordance with the terms
+	and conditions of the license agreement you have with IBM Corporation. The Code 
+	is provided to you on an "AS IS" basis, without warranty of any kind.  
+	SUBJECT TO ANY STATUTORY WARRANTIES WHICH CAN NOT BE EXCLUDED, IBM MAKES NO 
+	WARRANTIES OR CONDITIONS EITHER EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED 
+	TO, THE IMPLIED WARRANTIES OR CONDITIONS OF MERCHANTABILITY, FITNESS FOR A 
+	PARTICULAR PURPOSE, AND NON-INFRINGEMENT, REGARDING THE CODE. IN NO EVENT WILL 
+	IBM BE LIABLE TO YOU OR ANY PARTY FOR ANY DIRECT, INDIRECT, SPECIAL OR OTHER 
+	CONSEQUENTIAL DAMAGES FOR ANY USE OF THE CODE, INCLUDING, WITHOUT LIMITATION, 
+	LOSS OF, OR DAMAGE TO, DATA, OR LOST PROFITS, BUSINESS, REVENUE, GOODWILL, OR 
+	ANTICIPATED SAVINGS, EVEN IF IBM HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH 
+	DAMAGES. SOME JURISDICTIONS DO NOT ALLOW THE EXCLUSION OR LIMITATION OF 
+	INCIDENTAL OR CONSEQUENTIAL DAMAGES, SO THE ABOVE LIMITATION OR EXCLUSION MAY 
+	NOT APPLY TO YOU.
+-->
+
+<!--
+	IBM-MDMWB-1.0-[c03fcbb37f46cbccbce1b91da42e1a6e]
+-->
+
+<TCRMExtension>
+    <ExtendedObject>XNWPersonBObjExt</ExtendedObject>
+    <XNWPersonBObjExt>
+       <XJob_Title></XJob_Title>
+       <XJob_Family></XJob_Family>
+       <XFullTime_PartTIme></XFullTime_PartTIme>
+       <XStandard_Hours></XStandard_Hours>
+       <XBusiness_Unit></XBusiness_Unit>
+       <XHire_Date></XHire_Date>
+       <XEmployee_Role_Status></XEmployee_Role_Status>
+       <XRehire_Date></XRehire_Date>
+       <XTermination_Date></XTermination_Date>
+       <XDepartment_ID></XDepartment_ID>
+       <XDepartment_Name></XDepartment_Name>
+       <XService_Line_Financial_Budgetary></XService_Line_Financial_Budgetary>
+       <XGender_Source></XGender_Source>
+       <XGender_LastVerifiedDate></XGender_LastVerifiedDate>
+       <XMaritalStatus_Source></XMaritalStatus_Source>
+       <XMaritalStatus_LastVerifiedDate></XMaritalStatus_LastVerifiedDate>
+       <XEmploymentData_Source></XEmploymentData_Source>
+       <XEmploymentData_LastVerifiedDate></XEmploymentData_LastVerifiedDate>
+    </XNWPersonBObjExt>
+</TCRMExtension>
+

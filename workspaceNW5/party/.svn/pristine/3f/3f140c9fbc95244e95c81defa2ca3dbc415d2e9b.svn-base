@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<JobSet name="was.base.v85_1540407034072_7" version="1.0">
+  <Threshold_Analysis_Pair_Generation MAD_TIMER="false" MAD_DEBUG="false" MAD_TRACE="false" MAD_DBSQL="false" MAD_AUDIT="false" MAD_ALGO="false" distributionType="uniform" numberOfPairs="10" minscore="0.0" maxscore="25" inputDir="bxm" sortOrder="sorted" crossSourceOnly="false" entityType="mdmper" sources="1,293" returnAttrs="PERAKANAME:generation:givenname1:givenname2:givenname3:lastname:prefix,PERALTEMAIL:email,PERBIRTHDATE:val,PERBUSMOBILE:refnum,PERBUSPAGER:refnum,PERCELLULAR:refnum,PERDRVRLICEN:idnum,PEREMPLID:idnum,PERGENDER:gender,PERGESOARID:idnum,PERHOMEPHONE:refnum,PERLEGALNAME:generation:givenname1:givenname2:givenname3:lastname:prefix,PERMAIDENNAM:generation:givenname1:givenname2:givenname3:lastname:prefix,PERMCDNUM:idnum,PERMCRNUM:idnum,PERNPIID:idnum,PERPAGER:refnum,PERPERSEMAIL:email,PERPRIMERRES:addrline1:addrline2:addrline3:city:postalcode:provstate:residencenum,PERSOARINTRS:idnum,PERSSN:idnum,PERSTLICNUM:idnum,PERUNIVID:idnum" />
+</JobSet>
+

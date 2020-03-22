@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;mdm_api_enhanced/useful_files/delete_exta_PME.txt&apos; to &apos;delete_extra_PME.txt&apos;" description="Rename resource &apos;delete_exta_PME.txt&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="useful_files/delete_exta_PME.txt" name="delete_extra_PME.txt" stamp="1551278926556" updateReferences="true"/>
+</session>

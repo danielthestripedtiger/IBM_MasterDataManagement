@@ -1,0 +1,44 @@
+{
+  "TCRMService": {
+    "@schemaLocation": "http://www.ibm.com/mdm/schema MDMDomains.xsd",
+    "RequestControl": {
+      "requestID": 604157,
+      "DWLControl": {
+        "requesterName": "mdmadmin",
+        "requesterLocale": "en"
+      }
+    },
+    "TCRMTx": {
+      "TCRMTxType": "MaintainParty",
+      "TCRMTxObject": "MDMCompositePartyBObj",
+      "TCRMObject": {
+        "MDMCompositePartyBObj": {
+          "TCRMPersonBObj": {
+          	"ClientStatusValue": "status",
+            "SourceIdentifierValue": "LMDM",
+            email
+            "TCRMPartyIdentificationBObj": [
+            {
+              "IdentificationValue": "Employee ID",
+              "IdentificationNumber": "employeeId"
+            },
+            salesRepId
+            ],
+            "TCRMPartyRelationshipBObj": [
+            {
+              "RelationshipValue": "relationshipValue",
+              "RelationshipToValue": "relationshipToValue",
+            },
+            ],
+            "TCRMPersonNameBObj": {
+              "NameUsageValue": "Preferred",
+              "GivenNameOne": "firstName",
+              "GivenNameTwo": "middleName",
+              "LastName": "lastName"
+            }
+          }
+        }
+      }
+    }
+  }
+}

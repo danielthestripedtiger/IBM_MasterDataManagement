@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename method &apos;mdmnw.externalrule.CollapsePartiesWithRules.findLosers(...)&apos; to &apos;applySurvivorship&apos;&#x0D;&#x0A;- Original project: &apos;MDMNW&apos;&#x0D;&#x0A;- Original element: &apos;mdmnw.externalrule.CollapsePartiesWithRules.findLosers(...)&apos;&#x0D;&#x0A;- Renamed element: &apos;mdmnw.externalrule.CollapsePartiesWithRules.applySurvivorship(...)&apos;&#x0D;&#x0A;- Update references to refactored element" delegate="false" deprecate="false" description="Rename method &apos;findLosers&apos;" flags="589826" id="org.eclipse.jdt.ui.rename.method" input="/src&lt;mdmnw.externalrule{CollapsePartiesWithRules.java[CollapsePartiesWithRules~findLosers~QString;~QString;~QString;~QString;~QTCRMCommon;~QTCRMCommon;~QTCRMPartyBObj;" name="applySurvivorship" references="true" stamp="1548184231013" version="1.0"/>
+</session>

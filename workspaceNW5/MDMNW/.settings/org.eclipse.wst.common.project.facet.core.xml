@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<faceted-project>
+  <runtime name="was.base.v85"/>
+  <installed facet="osgi.bundle" version="1.0"/>
+  <installed facet="com.ibm.mdm.tools.dev" version="1.2"/>
+  <installed facet="java" version="1.6"/>
+</faceted-project>

@@ -1,0 +1,64 @@
+{
+  "TCRMService": {
+    "@schemaLocation": "http://www.ibm.com/mdm/schema MDMDomains.xsd",
+    "RequestControl": {
+      "requestID": 604157,
+      "DWLControl": {
+        "requesterName": "john",
+        "requesterLocale": "en"
+      }
+    },
+    "TCRMTx": {
+      "TCRMTxType": "MaintainPrivacyPreference",
+      "TCRMTxObject": "MDMCompositePartyBObj",
+      "TCRMObject": {
+        "MDMCompositePartyBObj": {
+          "TCRMPersonBObj": {
+            "TCRMPartyContactMethodBObj": [
+              {
+                "ContactMethodUsageValue": "Preferred Email",
+                "TCRMContactMethodBObj": {
+                  "ReferenceNumber": "khailam@farms.com",
+                  "ContactMethodValue": "Email Address"
+                },
+                "TCRMPartyContactMethodPrivPrefBObj": {
+                  "SourceIdentValue": "CXH",
+                  "ValueString": "Yes",
+                  "PrivPrefValue": "ACCOUNT-PAYMENT_DUE"
+                }
+              },
+              {
+                "ContactMethodUsageValue": "Preferred Phone",
+                "TCRMContactMethodBObj": {
+                  "ReferenceNumber": "123-456-7890",
+                  "ContactMethodValue": "Telephone Number"
+                },
+                "TCRMPartyContactMethodPrivPrefBObj": {
+                  "SourceIdentValue": "CXH",
+                  "ValueString": "Yes",
+                  "PrivPrefValue": "ACCOUNT-PAYMENT_PAST_DUE"
+                }
+              },
+              {
+                "ContactMethodUsageValue": "Unknown Phone",
+                "TCRMContactMethodBObj": {
+                  "ReferenceNumber": "123-456-7890",
+                  "ContactMethodValue": "Telephone Number"
+                },
+                "TCRMPartyContactMethodPrivPrefBObj": {
+                  "SourceIdentValue": "CXH",
+                  "ValueString": "Yes",
+                  "PrivPrefValue": "ACCOUNT-PAYMENT_SUCCESSFUL"
+                }
+              }
+            ],
+            "TCRMPartyIdentificationBObj": {
+              "IdentificationValue": "EID",
+              "IdentificationNumber": PERSON_EID_PLACEHOLDER
+            }
+          }
+        }
+      }
+    }
+  }
+}

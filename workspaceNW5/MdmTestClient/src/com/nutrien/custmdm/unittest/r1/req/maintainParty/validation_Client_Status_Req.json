@@ -1,0 +1,28 @@
+{
+"TCRMService": {
+	"@schemaLocation": "http:\/\/www.ibm.com\/mdm\/schema MDMDomains.xsd",
+     "RequestControl": {
+     	"requestID": 604157,
+          "DWLControl": {
+          	"requesterName": "miller",
+               "requesterLocale": "en"
+               }
+      },
+      "TCRMTx": {
+      	"TCRMTxType": "MaintainParty",
+          "TCRMTxObject": "MDMCompositePartyBObj",                                  
+          "TCRMObject": {
+          	"MDMCompositePartyBObj": {
+               	"TCRMOrganizationBObj": {
+                    	"SourceIdentifierValue": "CXH",
+                    	"OrganizationValue": "ORG_VALUE",
+                    	"TCRMOrganizationNameBObj": {
+                    		"OrganizationName": "MILLER FAMILY FARMS",
+                         	"NameUsageValue": "Preferred"
+                         }
+                     }
+                }
+          }
+      }
+}
+}

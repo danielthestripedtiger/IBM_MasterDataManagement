@@ -1,0 +1,177 @@
+CLEAR_DB.sql
+
+
+
+<?xml version="1.0" encoding="UTF-8"?>	
+<TCRMService xmlns="http://www.ibm.com/mdm/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.ibm.com/mdm/schema MDMDomains.xsd">	
+   <RequestControl>	
+      <requestID>10015</requestID>	
+      <DWLControl>	
+         <requesterName>cusadmin</requesterName>	
+         <requesterLanguage>100</requesterLanguage>	
+      </DWLControl>	
+   </RequestControl>	
+   <TCRMTx>	
+      <TCRMTxType>MaintainNWPerson</TCRMTxType>	
+      <TCRMTxObject>CompositeNWPersonBObj</TCRMTxObject>	
+      <TCRMObject>	
+         <CompositeNWPersonBObj>	
+            <ObjectReferenceId />	
+            <TCRMPersonBObj>	
+	
+                    <TCRMPartyAddressBObj>
+                        <AddressUsageValue>Facility Address</AddressUsageValue>
+                        <StartDate>2017-11-24 08:45:41.434175</StartDate>
+
+                        <LastVerifiedDate>2018-08-21 00:00:00.000000</LastVerifiedDate>
+                        <SourceIdentifierValue>Echo</SourceIdentifierValue>
+                        <TCRMExtension>
+                            <ExtendedObject>XNWPartyAddressBObjExt</ExtendedObject>
+                            <XNWPartyAddressBObjExt>
+                                <XProvider_Facility_Staff_Code>Voluntary Resignation</XProvider_Facility_Staff_Code>
+                                <XDeactivation_Flag>Active</XDeactivation_Flag>
+                                <XCredential_Status></XCredential_Status>
+                                <XProvider_Status></XProvider_Status>
+				<Tax_ID_Number>111223333</Tax_ID_Number>
+                            </XNWPartyAddressBObjExt>
+                        </TCRMExtension>
+                        <TCRMAddressBObj>
+                            <AddressLineOne>1234 MAIN ST</AddressLineOne>
+                            <AddressLineTwo></AddressLineTwo>
+                            <City>NEW YORK</City>
+                            <ZipPostalCode>10001</ZipPostalCode>
+                            <ProvinceStateValue>NY</ProvinceStateValue>
+                            <LatitudeDegrees>38.8951</LatitudeDegrees>
+                            <LongitudeDegrees>-77.0364</LongitudeDegrees>
+                            <TCRMExtension>
+                                <ExtendedObject>XNWAddressBObjExt</ExtendedObject>
+                                <XNWAddressBObjExt>
+                                    <XFacility_Name>Lenox Hill Hospital</XFacility_Name>
+                                    <XFacility_Code></XFacility_Code>
+                                    <XPhone></XPhone>
+                                    <XFax></XFax>
+                                </XNWAddressBObjExt>
+                            </TCRMExtension>
+                        </TCRMAddressBObj>
+                    </TCRMPartyAddressBObj>
+	
+	
+<TCRMAdminContEquivBObj>	
+            <AdminPartyId>010101010</AdminPartyId>	
+            <AdminSystemValue>Echo</AdminSystemValue>	
+</TCRMAdminContEquivBObj>	
+	                    <TCRMPersonNameBObj>
+                        <NameUsageValue>Legal</NameUsageValue>
+                        <GivenNameOne>Kelly</GivenNameOne>
+                        <GivenNameTwo></GivenNameTwo>
+                        <LastName>Blackstone</LastName>
+                        <SourceIdentifierValue>Echo</SourceIdentifierValue>
+
+                    </TCRMPersonNameBObj>
+           </TCRMPersonBObj>	
+         </CompositeNWPersonBObj>	
+      </TCRMObject>	
+   </TCRMTx>	
+</TCRMService>	
+
+
+
+
+
+
+<?xml version="1.0" encoding="UTF-8"?>
+<TCRMService xmlns="http://www.ibm.com/mdm/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.ibm.com/mdm/schema MDMDomains.xsd">
+   <RequestControl>
+      <requestID>10015</requestID>
+      <DWLControl>
+         <requesterName>cusadmin</requesterName>
+         <requesterLanguage>100</requesterLanguage>
+      </DWLControl>
+   </RequestControl>
+   <TCRMTx>
+      <TCRMTxType>MaintainNWPerson</TCRMTxType>
+      <TCRMTxObject>CompositeNWPersonBObj</TCRMTxObject>
+      <TCRMObject>
+         <CompositeNWPersonBObj>
+            <TCRMPersonBObj>
+<TCRMPartyAddressBObj>
+
+     <AddressUsageValue>Facility Address</AddressUsageValue>
+     <StartDate>2018-08-21 00:00:00.000000</StartDate>
+     <LastVerifiedDate>2018-08-21 00:00:00.000000</LastVerifiedDate>
+     <SourceIdentifierValue>Newport/CARE</SourceIdentifierValue>
+
+     <TCRMExtension>
+           <ExtendedObject>XNWPartyAddressBObjExt</ExtendedObject>
+          <XNWPartyAddressBObjExt>
+                   <XDeactivation_Flag>Active</XDeactivation_Flag>
+		   <Tax_ID_Number>111223334</Tax_ID_Number>
+          </XNWPartyAddressBObjExt>
+     </TCRMExtension>
+
+     <TCRMAddressBObj>
+                            <AddressLineOne>1234 MAIN ST</AddressLineOne>
+                            <AddressLineTwo></AddressLineTwo>
+                            <City>NEW YORK</City>
+                            <ZipPostalCode>10001</ZipPostalCode>
+                            <ProvinceStateValue>NY</ProvinceStateValue>
+                            <LatitudeDegrees>38.8951</LatitudeDegrees>
+                            <LongitudeDegrees>-77.0364</LongitudeDegrees>
+      <TCRMExtension>
+                <ExtendedObject>XNWAddressBObjExt</ExtendedObject>
+                <XNWAddressBObjExt>
+                         <XFacility_Name>Lenox Hill Hospital</XFacility_Name>
+                         <XDepartment_Description>Cardiology</XDepartment_Description>
+                </XNWAddressBObjExt> 
+        </TCRMExtension>
+     </TCRMAddressBObj>
+</TCRMPartyAddressBObj>
+
+               <TCRMAdminContEquivBObj>
+                  <AdminPartyId>1061184</AdminPartyId>
+                  <AdminSystemValue>Newport/CARE</AdminSystemValue>
+               </TCRMAdminContEquivBObj>
+                    <TCRMPersonNameBObj>
+                        <NameUsageValue>Legal</NameUsageValue>
+                        <GivenNameOne>Kelly</GivenNameOne>
+                        <GivenNameTwo></GivenNameTwo>
+                        <LastName>Blackstone</LastName>
+                        <SourceIdentifierValue>Newport/CARE</SourceIdentifierValue>
+
+                    </TCRMPersonNameBObj>
+            </TCRMPersonBObj>
+         </CompositeNWPersonBObj>
+      </TCRMObject>
+   </TCRMTx>
+</TCRMService>
+
+
+
+
+
+
+<?xml version="1.0" encoding="UTF-8"?>
+<TCRMService xmlns="http://www.ibm.com/mdm/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.ibm.com/mdm/schema MDMDomains.xsd">
+    <RequestControl>
+        <requestID>10015</requestID>
+        <DWLControl>
+            <requesterName>cusadmin</requesterName>
+            <requesterLanguage>100</requesterLanguage>
+        </DWLControl>
+    </RequestControl>
+    <TCRMTx>
+        <TCRMTxType>collapsePartiesWithRules</TCRMTxType>
+        <TCRMTxObject>TCRMPartyListBObj</TCRMTxObject>
+        <TCRMObject>
+       <TCRMPartyListBObj>
+                <TCRMPersonBObj>
+                    <PartyId>805654888136643417</PartyId>
+                 </TCRMPersonBObj>
+                <TCRMPersonBObj>
+                    <PartyId>808454888139067918</PartyId>
+                 </TCRMPersonBObj>
+           </TCRMPartyListBObj>         
+        </TCRMObject>
+    </TCRMTx>
+</TCRMService>
+

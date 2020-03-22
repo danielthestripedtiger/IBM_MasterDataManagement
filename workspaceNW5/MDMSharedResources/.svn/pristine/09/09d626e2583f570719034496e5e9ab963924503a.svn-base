@@ -1,0 +1,47 @@
+UPDATE JAVAIMPL SET JAVA_CLASSNAME = 'mdmnw.externalrule.PartyUpdateExtRule', LAST_UPDATE_DT=CURRENT_DATE WHERE EXT_RULE_IMPL_ID = 1005;
+UPDATE JAVAIMPL SET JAVA_CLASSNAME = 'mdmnw.externalrule.SuspectAddPartyRule', LAST_UPDATE_DT=CURRENT_DATE WHERE EXT_RULE_IMPL_ID = 1032;
+UPDATE JAVAIMPL SET JAVA_CLASSNAME = 'mdmnw.externalrule.CollapsePartiesWithRules', LAST_UPDATE_DT=CURRENT_DATE WHERE EXT_RULE_IMPL_ID = 1038;
+UPDATE JAVAIMPL SET JAVA_CLASSNAME = 'mdmnw.externalrule.CollapseMultiplePartiesRule', LAST_UPDATE_DT=CURRENT_DATE WHERE EXT_RULE_IMPL_ID = 10119;
+
+UPDATE CONFIGELEMENT SET VALUE = 'Contact, Person, PersonName, ContractRoleLocationPrivPref, Address, ContactMethod, FinancialProfile, IncomeSource, PartyAddressPrivPref, PartyContactMethodPrivPref, PartyLobRelationship, PartyLocationPrivPref, PartyPrivPref, PartyAddressPrivPref, PartyContactMethodPrivPref, AccessDateValue, AdminContEquiv, EntityInstancePrivPref, ProductSpecValueBObj,XNWPartyAddressBObjExt, XNWAddressBObjExt, PartyAddress, PartyIdentification, XNWPersonNameBObjExt, XNWContactMethodBObjExt' 
+WHERE NAME = '/IBM/DWLCommonServices/Validation/BusinessKeyValidation/ExcludeList/groupNames';
+
+UPDATE CONFIGELEMENT SET VALUE = 'party' WHERE NAME = '/IBM/BusinessServices/PME/configuration';
+
+UPDATE CONFIGELEMENT SET VALUE = 'true' WHERE NAME = '/IBM/DWLCommonServices/Notifications/enabled';
+UPDATE CONFIGELEMENT SET VALUE = 'false' WHERE NAME = '/IBM/Party/SuspectProcessing/AddParty/returnSuspect';
+update configelement set value = 'true' where name =  '/IBM/Party/SuspectProcessing/PersistDuplicateParties/enabled';
+
+DELETE FROM CONFIGELEMENT WHERE ELEMENT_ID = 2000001;
+INSERT INTO CONFIGELEMENT VALUES (2000001,1006,'SurvivorshipRulesEnabled','false','false',NULL,CURRENT_TIMESTAMP,'MIGRATION',1,NULL);
+
+alter trigger U_AERESS disable;
+alter trigger D_AERESS disable;
+alter trigger U_POARCH disable;
+alter trigger D_POARCH disable;
+alter trigger D_PONAME disable;
+alter trigger U_PONAME disable;
+alter trigger D_CATETP disable;
+alter trigger U_VEBUTE disable;
+alter trigger D_VEBUTE disable;
+alter trigger U_CATRTP disable;
+alter trigger D_CAIDTP disable;
+
+alter table INQLVLQUERY disable all triggers;
+
+ALTER TABLE PERSONNAME MODIFY LAST_NAME VARCHAR2(250);
+ALTER TABLE PERSONSEARCH MODIFY LAST_NAME VARCHAR2(250);
+ALTER TABLE H_PERSONNAME MODIFY LAST_NAME VARCHAR2(250);
+ALTER TABLE H_PERSONSEARCH MODIFY LAST_NAME VARCHAR2(250);
+ALTER TABLE ADDRESS MODIFY LONGITUDE_DEGREES VARCHAR2(15);
+ALTER TABLE ADDRESS MODIFY ADDR_LINE_THREE VARCHAR2(4000);
+ALTER TABLE H_ADDRESS MODIFY LONGITUDE_DEGREES VARCHAR2(15);
+ALTER TABLE ADDRESS MODIFY LATITUDE_DEGREES VARCHAR2(15);
+ALTER TABLE H_ADDRESS MODIFY LATITUDE_DEGREES VARCHAR2(15);
+ALTER TABLE MISCVALUE MODIFY ATTR1_VALUE VARCHAR2(1200);
+ALTER TABLE H_MISCVALUE MODIFY ATTR1_VALUE VARCHAR2(1200);
+
+DELETE FROM CONFIGELEMENT WHERE ELEMENT_ID = 2000002;
+INSERT INTO CONFIGELEMENT VALUES (2000002,1006,'Survivorship/XNWPartyAddressBObjExt/0',NULL,'SourceIdentifierValue|Scheduling Address|LastVerifiedDate|Soarian Scheduling,Echo,GECB,PeopleSoft|N/A',NULL,CURRENT_TIMESTAMP,'MIGRATION',1,NULL);
+
+COMMIT;

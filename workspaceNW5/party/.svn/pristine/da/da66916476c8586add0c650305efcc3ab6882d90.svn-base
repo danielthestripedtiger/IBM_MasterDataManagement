@@ -1,0 +1,38 @@
+############################################################
+#  	Object Source API Generation Custom Properties
+#
+# The Object Source API generation can be customized by specifying 
+# several properties in this file.  All properties are optional.
+############################################################
+
+# service.packagename defines the package name of the generated source files.
+# default: service.packagename=com.initiate.client
+
+# service.memstat defines the member status filter used for all get and search interactions.
+# default: service.memstat=A,O
+
+# service.recstat defines the record status filter used for all get and search interactions.
+# default: service.recstat=A
+
+# source.SRCCODE.propertyname overrides the informational source code name
+
+# record.MEMTYPE.classname overrides the member type name
+# record.MEMTYPE.attribute.ATTRCODE.propertyname overrides the attribute field name on the member type
+# record.MEMTYPE.entity.ENTTYPE.classname overrides the entity type name
+# record.MEMTYPE.source.SRCCODE.propertyname overrides the definitional sources for the member type
+
+# relationship.RELTYPE.classname overrides the relationship type name
+# relationship.RELTYPE.attribute.ATTRCODE.propertyname overrides attribute field name on the relationship type
+
+# attributetype.SEGCODE.classname overrides the segment type name
+# attributetype.SEGCODE.field.FLDNAME.propertyname overrides field name on the segment type
+
+# ADVANCED CUSTOMIZATION - service.webserviceintf defines the name of a custom web service interface class.
+# The custom interface will not be generated automatically and must be provided by the user.
+# service.webserviceimpl must also be specified to match the custom interface.
+# default: service.webserviceintf=MasterDataWebService
+
+# ADVANCED CUSTOMIZATION - service.webserviceintf defines the name of a custom web service implementation class.
+# The custom implementation will not be generated automatically and must be provided by the user.
+# service.webserviceintf must also be specified to match the custom implementation.
+# default: service.webserviceimpl=MasterDataWebServiceImpl

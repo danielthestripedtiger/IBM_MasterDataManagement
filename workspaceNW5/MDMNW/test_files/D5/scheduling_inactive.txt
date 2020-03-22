@@ -1,0 +1,266 @@
+
+
+
+<?xml version="1.0" encoding="UTF-8"?>
+<TCRMService xmlns="http://www.ibm.com/mdm/schema" 
+   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.ibm.com/mdm/schema MDMDomains.xsd">
+   <RequestControl>
+      <requestID>10015</requestID>
+      <DWLControl>
+         <requesterName>cusadmin</requesterName>
+         <requesterLanguage>100</requesterLanguage>
+      </DWLControl>
+   </RequestControl>
+   <TCRMTx>
+      <TCRMTxType>MaintainNWPerson</TCRMTxType>
+      <TCRMTxObject>CompositeNWPersonBObj</TCRMTxObject>
+      <TCRMObject>
+         <CompositeNWPersonBObj>
+            <ObjectReferenceId></ObjectReferenceId>
+            <TCRMPersonBObj>
+               <SourceIdentifierValue>Echo</SourceIdentifierValue>
+               <BirthDate>1990-11-24 08:45:41.434175</BirthDate>
+               <GenderType>M</GenderType>
+               <MaritalStatusValue>Single</MaritalStatusValue>
+               <DeceasedDate>2017-11-24 08:45:41.434175</DeceasedDate>
+               <TCRMExtension>
+                  <ExtendedObject>XNWPersonBObjExt</ExtendedObject>
+                  <XNWPersonBObjExt>
+                     <XJob_Title>ANALYST</XJob_Title>
+                     <XJob_Family>JF1</XJob_Family>
+                     <XFullTime_PartTIme>FULL</XFullTime_PartTIme>
+                     <XStandard_Hours>Y</XStandard_Hours>
+                     <XBusiness_Unit>IT</XBusiness_Unit>
+                     <XHire_Date>2017-11-24 08:45:41.434175</XHire_Date>
+                     <XEmployee_Role_Status>A</XEmployee_Role_Status>
+                     <XRehire_Date>2017-11-24 08:45:41.434175</XRehire_Date>
+                     <XTermination_Date>2017-11-24 08:45:41.434175</XTermination_Date>
+                     <XDepartment_ID>2321</XDepartment_ID>
+                     <XDepartment_Name>DEPT A</XDepartment_Name>
+                     <XService_Line_Financial_Budgetary>SL1</XService_Line_Financial_Budgetary>
+                  </XNWPersonBObjExt>
+               </TCRMExtension>
+ 
+               <TCRMPartyAddressBObj>
+                  <AddressUsageValue>Scheduling Address</AddressUsageValue>
+                  <StartDate>2017-11-21 08:45:41.434175</StartDate>
+                  <EndDate>2020-11-24 08:45:41.434175</EndDate>
+                  <SourceIdentifierValue>Echo</SourceIdentifierValue>
+                  <TCRMExtension>
+                     <ExtendedObject>XNWPartyAddressBObjExt</ExtendedObject>
+                     <XNWPartyAddressBObjExt>
+                        <XProvider_Facility_Staff_Code></XProvider_Facility_Staff_Code>
+                        <XPrimary_Office_Flag></XPrimary_Office_Flag>
+                        <XDeactivation_Flag>Active</XDeactivation_Flag>
+                        <XPrimary_Billing_Location_Flag>Y</XPrimary_Billing_Location_Flag>
+                        <XCredential_Status></XCredential_Status>
+                        <XProvider_Status></XProvider_Status>
+                        <XScheduling_Primary_Flag></XScheduling_Primary_Flag>
+                        <XPhone>123-232-3232</XPhone>
+                        <XPhone_Ext>3235</XPhone_Ext>
+                        <XSecondary_Phone>123-333-4444</XSecondary_Phone>
+                        <XSec_Phone_Ext>3422</XSec_Phone_Ext>
+                        <XFax>354-345-5435</XFax>
+                     </XNWPartyAddressBObjExt>
+                  </TCRMExtension>
+                  <TCRMAddressBObj>
+                     <AddressLineOne>1234 MAIN ST</AddressLineOne>
+                     <City>NEW YORK</City>
+                     <ZipPostalCode>10001</ZipPostalCode>
+                     <ProvinceStateValue>NY</ProvinceStateValue>
+                     <CountryValue>United States of America</CountryValue>
+                     <TCRMExtension>
+                        <ExtendedObject>XNWAddressBObjExt</ExtendedObject>
+                        <XNWAddressBObjExt>
+                           <XCounty>QUEENS</XCounty>
+                           <XHospital></XHospital>
+                           <XFacility_Name></XFacility_Name>
+                           <XFacility_Code></XFacility_Code>
+                           <XDepartment_Code>DEPT A</XDepartment_Code>
+                           <XDepartment_Description></XDepartment_Description>
+                           <XLocation_Code></XLocation_Code>
+                           <XLocation_Description></XLocation_Description>
+                           <XLocation_Mnemonic>LOCATIONA</XLocation_Mnemonic>
+                           <XLocation_ID>21313</XLocation_ID>
+                           <XLocation_Name>LOC A</XLocation_Name>
+                           <XPhone>123-232-3232</XPhone>
+                           <XPhone_Ext>3235</XPhone_Ext>
+                           <XSecondary_Phone>123-333-4444</XSecondary_Phone>
+                           <XSec_Phone_Ext>3422</XSec_Phone_Ext>
+                           <XFax>354-345-5435</XFax>
+                           <XTax_ID_Number></XTax_ID_Number>
+                           <XNewport_Key></XNewport_Key>
+                           <XDeactivation_Flag>Active</XDeactivation_Flag>
+                           <XActivation_Date>2017-11-21 08:45:41.434175</XActivation_Date>
+                           <XDeactivation_Date>2020-11-21 08:45:41.434175</XDeactivation_Date>
+                        </XNWAddressBObjExt>
+                     </TCRMExtension>
+                  </TCRMAddressBObj>
+               </TCRMPartyAddressBObj>
+
+
+
+               <TCRMAdminContEquivBObj>
+                  <AdminPartyId>010101010</AdminPartyId>
+                  <AdminSystemValue>Echo</AdminSystemValue>
+               </TCRMAdminContEquivBObj>
+               <TCRMPersonNameBObj>
+                  <NameUsageValue>Legal</NameUsageValue>
+                  <GivenNameOne>Kelly</GivenNameOne>
+                  <GivenNameTwo></GivenNameTwo>
+                  <LastName>Blackstone</LastName>
+                  <Suffix>III</Suffix>
+                  <SourceIdentifierValue>Echo</SourceIdentifierValue>
+                  <TCRMExtension>
+                     <ExtendedObject>XNWPersonNameBObjExt</ExtendedObject>
+                     <XNWPersonNameBObjExt>
+                        <XFull_Name>John TESTONE</XFull_Name>
+                        <XDegree>PHD</XDegree>
+                     </XNWPersonNameBObjExt>
+                  </TCRMExtension>
+               </TCRMPersonNameBObj>
+ 
+
+            </TCRMPersonBObj>
+         </CompositeNWPersonBObj>
+      </TCRMObject>
+   </TCRMTx>
+</TCRMService>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<?xml version="1.0" encoding="UTF-8"?>
+<TCRMService xmlns="http://www.ibm.com/mdm/schema" 
+   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.ibm.com/mdm/schema MDMDomains.xsd">
+   <RequestControl>
+      <requestID>10015</requestID>
+      <DWLControl>
+         <requesterName>cusadmin</requesterName>
+         <requesterLanguage>100</requesterLanguage>
+      </DWLControl>
+   </RequestControl>
+   <TCRMTx>
+      <TCRMTxType>MaintainNWPerson</TCRMTxType>
+      <TCRMTxObject>CompositeNWPersonBObj</TCRMTxObject>
+      <TCRMObject>
+         <CompositeNWPersonBObj>
+            <ObjectReferenceId></ObjectReferenceId>
+            <TCRMPersonBObj>
+               <SourceIdentifierValue>Echo</SourceIdentifierValue>
+               <BirthDate>1990-11-24 08:45:41.434175</BirthDate>
+               <GenderType>M</GenderType>
+               <MaritalStatusValue>Single</MaritalStatusValue>
+               <DeceasedDate>2017-11-24 08:45:41.434175</DeceasedDate>
+               <TCRMExtension>
+                  <ExtendedObject>XNWPersonBObjExt</ExtendedObject>
+                  <XNWPersonBObjExt>
+                     <XJob_Title>ANALYST</XJob_Title>
+                     <XJob_Family>JF1</XJob_Family>
+                     <XFullTime_PartTIme>FULL</XFullTime_PartTIme>
+                     <XStandard_Hours>Y</XStandard_Hours>
+                     <XBusiness_Unit>IT</XBusiness_Unit>
+                     <XHire_Date>2017-11-24 08:45:41.434175</XHire_Date>
+                     <XEmployee_Role_Status>A</XEmployee_Role_Status>
+                     <XRehire_Date>2017-11-24 08:45:41.434175</XRehire_Date>
+                     <XTermination_Date>2017-11-24 08:45:41.434175</XTermination_Date>
+                     <XDepartment_ID>2321</XDepartment_ID>
+                     <XDepartment_Name>DEPT A</XDepartment_Name>
+                     <XService_Line_Financial_Budgetary>SL1</XService_Line_Financial_Budgetary>
+                  </XNWPersonBObjExt>
+               </TCRMExtension>
+ 
+               <TCRMPartyAddressBObj>
+                  <AddressUsageValue>Scheduling Address</AddressUsageValue>
+                  <StartDate>2017-11-21 08:45:41.434175</StartDate>
+                  <EndDate>2020-11-24 08:45:41.434175</EndDate>
+                  <SourceIdentifierValue>Echo</SourceIdentifierValue>
+                  <TCRMExtension>
+                     <ExtendedObject>XNWPartyAddressBObjExt</ExtendedObject>
+                     <XNWPartyAddressBObjExt>
+                        <XProvider_Facility_Staff_Code></XProvider_Facility_Staff_Code>
+                        <XPrimary_Office_Flag></XPrimary_Office_Flag>
+                        <XDeactivation_Flag>Inactive</XDeactivation_Flag>
+                        <XPrimary_Billing_Location_Flag>Y</XPrimary_Billing_Location_Flag>
+                        <XCredential_Status></XCredential_Status>
+                        <XProvider_Status></XProvider_Status>
+                        <XScheduling_Primary_Flag></XScheduling_Primary_Flag>
+                        <XPhone>123-232-3232</XPhone>
+                        <XPhone_Ext>3235</XPhone_Ext>
+                        <XSecondary_Phone>123-333-4444</XSecondary_Phone>
+                        <XSec_Phone_Ext>3422</XSec_Phone_Ext>
+                        <XFax>354-345-5435</XFax>
+                     </XNWPartyAddressBObjExt>
+                  </TCRMExtension>
+                  <TCRMAddressBObj>
+                     <AddressLineOne>1234 MAIN ST</AddressLineOne>
+                     <City>NEW YORK</City>
+                     <ZipPostalCode>10001</ZipPostalCode>
+                     <ProvinceStateValue>NY</ProvinceStateValue>
+                     <CountryValue>United States of America</CountryValue>
+                     <TCRMExtension>
+                        <ExtendedObject>XNWAddressBObjExt</ExtendedObject>
+                        <XNWAddressBObjExt>
+                           <XCounty>QUEENS</XCounty>
+                           <XHospital></XHospital>
+                           <XFacility_Name></XFacility_Name>
+                           <XFacility_Code></XFacility_Code>
+                           <XDepartment_Code>DEPT A</XDepartment_Code>
+                           <XDepartment_Description></XDepartment_Description>
+                           <XLocation_Code></XLocation_Code>
+                           <XLocation_Description></XLocation_Description>
+                           <XLocation_Mnemonic>LOCATIONA</XLocation_Mnemonic>
+                           <XLocation_ID>21313</XLocation_ID>
+                           <XLocation_Name>LOC A</XLocation_Name>
+                           <XPhone>123-232-3232</XPhone>
+                           <XPhone_Ext>3235</XPhone_Ext>
+                           <XSecondary_Phone>123-333-4444</XSecondary_Phone>
+                           <XSec_Phone_Ext>3422</XSec_Phone_Ext>
+                           <XFax>354-345-5435</XFax>
+                           <XTax_ID_Number></XTax_ID_Number>
+                           <XNewport_Key></XNewport_Key>
+                           <XDeactivation_Flag>Active</XDeactivation_Flag>
+                           <XActivation_Date>2017-11-21 08:45:41.434175</XActivation_Date>
+                           <XDeactivation_Date>2020-11-21 08:45:41.434175</XDeactivation_Date>
+                        </XNWAddressBObjExt>
+                     </TCRMExtension>
+                  </TCRMAddressBObj>
+               </TCRMPartyAddressBObj>
+
+
+
+               <TCRMAdminContEquivBObj>
+                  <AdminPartyId>010101010</AdminPartyId>
+                  <AdminSystemValue>Echo</AdminSystemValue>
+               </TCRMAdminContEquivBObj>
+               <TCRMPersonNameBObj>
+                  <NameUsageValue>Legal</NameUsageValue>
+                  <GivenNameOne>Kelly</GivenNameOne>
+                  <GivenNameTwo></GivenNameTwo>
+                  <LastName>Blackstone</LastName>
+                  <Suffix>III</Suffix>
+                  <SourceIdentifierValue>Echo</SourceIdentifierValue>
+                  <TCRMExtension>
+                     <ExtendedObject>XNWPersonNameBObjExt</ExtendedObject>
+                     <XNWPersonNameBObjExt>
+                        <XFull_Name>John TESTONE</XFull_Name>
+                        <XDegree>PHD</XDegree>
+                     </XNWPersonNameBObjExt>
+                  </TCRMExtension>
+               </TCRMPersonNameBObj>
+ 
+
+            </TCRMPersonBObj>
+         </CompositeNWPersonBObj>
+      </TCRMObject>
+   </TCRMTx>
+</TCRMService>

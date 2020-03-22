@@ -1,0 +1,12 @@
+/****** Script for SelectTopNRows command from SSMS  ******/
+SELECT 'MDMSP'  -- MEMHEAD:srccode
+      ,'ECHO'+[PersonID]  -- MEMHEAD:memidnum
+      ,[State_License_Number] -- PERSTLICNUM:idnum
+--      ,[License_Issue_State]
+--      ,[License_type]
+--      ,[License_type_desc]
+--      ,[License_issued_date]
+      ,[License_Expires_date] -- PERSTLICNUM:expirydate
+--      ,[License_Status]
+--      ,[Date_Last_Modified]
+  FROM [DataGov].[MDM].[Echo_Provider_State_License_VW]

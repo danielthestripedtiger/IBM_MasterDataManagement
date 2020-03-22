@@ -1,0 +1,247 @@
+/*
+When using the MDM Workbench, users create a model of a required configuration and then "code generation"
+is performed to build code that can implement that configuration. 
+This is a process that can be repeated many times as the model is developed.
+At any time, users have the option of manually customizing the generated code to inject additional
+behaviour that cannot be defined in the model. Where this is done, an "@generated NOT" annotation
+must be added immediately before the method definition to prevent the method from being overwritten
+when code generation is next run. 
+
+Note: The "NOT" in the "@generated NOT" above can be replaced with any text and have the same effect, but
+we recommend that @generated NOT is used for consistency.
+We also recommend against removing "@generated" tags as an alternative method of
+indicating that a piece of java code is customized and protected from re-generation as doing this has the
+effect of supressing the generation of .uncustomized files.
+
+The level of granularity for marking code as "@generated NOT" is a method.
+
+This approach maintains customizations in the code but leads to problems if the generated portion of
+the method needs to be updated as a result of model changes (for example, if a field in an entity is removed).
+In such cases the customized version of the code no longer reflects the model content and may be inconsistent
+with other generated code leading to potential for failure at runtime or failure to compile.
+
+The .uncustomized file you are reading represents the raw output from the internal code generator, before any
+customizations from the associated .java file have been incorporated to build a replacement .java file.
+If there are no methods marked as "@generated NOT" in the .java file then with the exception of some white 
+space reformatting, the .unprocessed and .java files will be the same. Where a method is marked as
+"@generated NOT", the .java file will contain the version that was marked as such with whatever manual
+customizations have been applied and the the .uncustomized file will contain whatever code would be
+created from the most recent model content.
+
+If the .uncustomized files are maintained in a code control system alongside their associated .java file,
+its possible to compare successive generations of the .uncustomized file to determine what generated code
+is changing.
+
+Should this file differ from what was previously checked-in to the source code control repository,
+then there is a possibility that a section of code in the corresponding java file may need to be manually
+updated. Some of the contents of this file may need to be manually merged into the .java file where
+methods are marked with "@generated NOT."
+
+When merging code from this file into the corresponding java file, use a compare program which ignores whitespace.
+
+This file has a file extension of .uncustomized. Should you wish to hide these files from view in one of the
+eclipse resource tree viewers, for example in the package explorer view, create a filter to hide files with
+this file extension.
+*//*
+ * The following source code ("Code") may only be used in accordance with the terms
+ * and conditions of the license agreement you have with IBM Corporation. The Code 
+ * is provided to you on an "AS IS" basis, without warranty of any kind.  
+ * SUBJECT TO ANY STATUTORY WARRANTIES WHICH CAN NOT BE EXCLUDED, IBM MAKES NO 
+ * WARRANTIES OR CONDITIONS EITHER EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED 
+ * TO, THE IMPLIED WARRANTIES OR CONDITIONS OF MERCHANTABILITY, FITNESS FOR A 
+ * PARTICULAR PURPOSE, AND NON-INFRINGEMENT, REGARDING THE CODE. IN NO EVENT WILL 
+ * IBM BE LIABLE TO YOU OR ANY PARTY FOR ANY DIRECT, INDIRECT, SPECIAL OR OTHER 
+ * CONSEQUENTIAL DAMAGES FOR ANY USE OF THE CODE, INCLUDING, WITHOUT LIMITATION, 
+ * LOSS OF, OR DAMAGE TO, DATA, OR LOST PROFITS, BUSINESS, REVENUE, GOODWILL, OR 
+ * ANTICIPATED SAVINGS, EVEN IF IBM HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH 
+ * DAMAGES. SOME JURISDICTIONS DO NOT ALLOW THE EXCLUSION OR LIMITATION OF 
+ * INCIDENTAL OR CONSEQUENTIAL DAMAGES, SO THE ABOVE LIMITATION OR EXCLUSION MAY 
+ * NOT APPLY TO YOU.
+ */
+
+/*
+ * IBM-MDMWB-1.0-[3c5e9a7771d0478b5ce35b40656f9a73]
+ */
+
+package mdmnw.compositeTxn;
+
+import com.dwl.base.DWLCommon;
+import com.dwl.base.IDWLErrorMessage;
+import com.dwl.base.error.DWLError;
+import com.dwl.base.error.DWLStatus;
+import com.dwl.base.requestHandler.DWLTransactionPersistent;
+import com.dwl.base.requestHandler.DWLTxnBP;
+import com.dwl.tcrm.common.TCRMResponse;
+import com.dwl.tcrm.utilities.TCRMClassFactory;
+import com.dwl.unifi.tx.exception.BusinessProxyException;
+
+
+import com.dwl.base.DWLControl;
+import com.dwl.base.DWLResponse;
+
+import com.dwl.tcrm.coreParty.component.TCRMPersonBObj;
+
+import mdmnw.component.CompositeNWPersonBObj;
+
+import mdmnw.constant.MDMNWComponentID;
+import mdmnw.constant.MDMNWErrorReasonCode;
+
+/**
+ * <!-- begin-user-doc -->
+ * <!-- end-user-doc -->
+ *
+ * 
+ * @generated
+ */
+public class MaintainNWPersonCompositeTxnBP  extends DWLTxnBP {
+
+	/**
+	 * @generated
+	 **/
+	private IDWLErrorMessage errHandler;
+	
+	/**
+	  * <!-- begin-user-doc -->
+	  * <!-- end-user-doc -->
+	  * @generated 
+	  */
+	 private final static com.dwl.base.logging.IDWLLogger logger = com.dwl.base.logging.DWLLoggerManager.getLogger(MaintainNWPersonCompositeTxnBP.class);
+	/**
+	 * @generated
+	 **/
+    public MaintainNWPersonCompositeTxnBP() {
+        super();
+        errHandler = TCRMClassFactory.getErrorHandler();
+    }
+	/**
+	 * @generated
+	 **/
+    public Object execute(Object inputObj) throws BusinessProxyException {
+		logger.finest("ENTER Object execute(Object inputObj)");
+
+        TCRMResponse outputTxnObj = null;
+        DWLTransactionPersistent inputTxnObj = (DWLTransactionPersistent) inputObj;
+        DWLControl control = inputTxnObj.getTxnControl();
+        DWLCommon topLevelObject = (DWLCommon) inputTxnObj.getTxnTopLevelObject();
+        if (!(topLevelObject instanceof CompositeNWPersonBObj)) {
+            // MDM_TODO0: CDKWB0014I optionally use a more appropriate error code than
+            // "MAINTAINNWPERSON_FAILED".
+            DWLError error = errHandler.getErrorMessage(MDMNWComponentID.MAINTAIN_NWPERSON_BUSINESS_PROXY,
+                                                        "INSERR",
+                                                        MDMNWErrorReasonCode.MAINTAINNWPERSON_FAILED,
+                                                        control, new String[0]);
+            throw new BusinessProxyException(error.getErrorMessage());
+        }
+        
+        CompositeNWPersonBObj mainInput = (CompositeNWPersonBObj) topLevelObject;
+        
+        
+        // Handle transaction "addPerson"
+
+        // MDM_TODO: CDKWB0016I Populate the mandatory fields of "addPersonInput".
+        TCRMPersonBObj addPersonInput = new TCRMPersonBObj();
+        addPersonInput.setControl(control);
+
+        // Prepare a new DWLTransactionPersistent instance.
+        DWLTransactionPersistent addPersonRequest = new DWLTransactionPersistent();
+        addPersonRequest.setTxnControl(control);
+        addPersonRequest.setTxnType("addPerson");
+        addPersonRequest.setTxnTopLevelObject(addPersonInput);
+        
+        // Prepare a reference to hold the response for this transaction.
+        DWLResponse addPersonResponse = null;
+        
+        // Invoke the "addPerson" transaction.
+        try {
+            addPersonResponse = (DWLResponse) super.execute(addPersonRequest);
+        }
+        catch (BusinessProxyException e) {
+            DWLError error = errHandler.getErrorMessage(MDMNWComponentID.MAINTAIN_NWPERSON_BUSINESS_PROXY,
+                                                        "INSERR",
+                                                        MDMNWErrorReasonCode.MAINTAINNWPERSON_FAILED,
+                                                        control, new String[0]);
+            throw new BusinessProxyException(error.getErrorMessage(), e);
+        }
+        
+        if (addPersonResponse == null)  {
+            DWLError error = errHandler.getErrorMessage(MDMNWComponentID.MAINTAIN_NWPERSON_BUSINESS_PROXY,
+                                                        "INSERR",
+                                                        MDMNWErrorReasonCode.MAINTAINNWPERSON_FAILED,
+                                                        control, new String[0]);
+            throw new BusinessProxyException(error.getErrorMessage());
+        }
+        else if (addPersonResponse.getStatus().getStatus() == DWLStatus.FATAL) {
+            DWLStatus status = addPersonResponse.getStatus();
+            TCRMResponse errResponse = new TCRMResponse();
+            errResponse.setStatus(status);
+            return errResponse;
+        }
+        
+        // Extract the returned business object from the response.
+        TCRMPersonBObj addPersonOutput = (TCRMPersonBObj) addPersonResponse.getData();
+        
+        
+        // Handle transaction "updatePerson"
+
+        // Use the output of the previous transaction as the input to this
+        // transaction.
+        TCRMPersonBObj updatePersonInput = addPersonOutput;
+        // MDM_TODO: CDKWB0012I Add business logic to set up "updatePersonInput" if you
+        // don't want to do this.
+        updatePersonInput.setControl(control);
+
+        // Prepare a new DWLTransactionPersistent instance.
+        DWLTransactionPersistent updatePersonRequest = new DWLTransactionPersistent();
+        updatePersonRequest.setTxnControl(control);
+        updatePersonRequest.setTxnType("updatePerson");
+        updatePersonRequest.setTxnTopLevelObject(updatePersonInput);
+        
+        // Prepare a reference to hold the response for this transaction.
+        DWLResponse updatePersonResponse = null;
+        
+        // Invoke the "updatePerson" transaction.
+        try {
+            updatePersonResponse = (DWLResponse) super.execute(updatePersonRequest);
+        }
+        catch (BusinessProxyException e) {
+            DWLError error = errHandler.getErrorMessage(MDMNWComponentID.MAINTAIN_NWPERSON_BUSINESS_PROXY,
+                                                        "INSERR",
+                                                        MDMNWErrorReasonCode.MAINTAINNWPERSON_FAILED,
+                                                        control, new String[0]);
+            throw new BusinessProxyException(error.getErrorMessage(), e);
+        }
+        
+        if (updatePersonResponse == null)  {
+            DWLError error = errHandler.getErrorMessage(MDMNWComponentID.MAINTAIN_NWPERSON_BUSINESS_PROXY,
+                                                        "INSERR",
+                                                        MDMNWErrorReasonCode.MAINTAINNWPERSON_FAILED,
+                                                        control, new String[0]);
+            throw new BusinessProxyException(error.getErrorMessage());
+        }
+        else if (updatePersonResponse.getStatus().getStatus() == DWLStatus.FATAL) {
+            DWLStatus status = updatePersonResponse.getStatus();
+            TCRMResponse errResponse = new TCRMResponse();
+            errResponse.setStatus(status);
+            return errResponse;
+        }
+        
+        // Extract the returned business object from the response.
+        TCRMPersonBObj updatePersonOutput = (TCRMPersonBObj) updatePersonResponse.getData();
+        
+        
+        // MDM_TODO: CDKWB0013I build the response Bobj.
+        CompositeNWPersonBObj mainOutput = new CompositeNWPersonBObj();
+        mainOutput.setControl(control);
+
+        // Construct the response object.
+        DWLStatus outputStatus = new DWLStatus();
+        outputStatus.setStatus(DWLStatus.SUCCESS);
+        outputTxnObj = new TCRMResponse();
+        outputTxnObj.setStatus(outputStatus);
+        outputTxnObj.setData(mainOutput);
+		logger.finest("RETURN Object execute(Object inputObj)");
+        return outputTxnObj;
+    }
+}
+
+

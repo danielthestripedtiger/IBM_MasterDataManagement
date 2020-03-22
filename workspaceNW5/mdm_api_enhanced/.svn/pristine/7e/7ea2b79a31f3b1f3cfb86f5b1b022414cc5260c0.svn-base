@@ -1,0 +1,12 @@
+/****** Script for SelectTopNRows command from SSMS  ******/
+SELECT 'MDMSP' -- MEMHEAD:srccode
+      ,'GECB'+[PersonID] -- MEMHEAD:memidnum
+      ,[Division_Name] -- BILLINGHIER:divisionnm
+      ,[Division_Mnemonic] -- BILLINGHIER:divisionmnumonic
+      ,[Division_Deactivation_Flag] -- BILLINGHIER:divisiondelflg
+      ,[Billing_Area_Mnemonic] -- BILLINGHIER:billingareamnumonic
+--      ,[Billing_Area_Number] -- 
+      ,[Billing_Area_Name] -- BILLINGHIER:billingareanm
+      ,[Billing_Area_Federal_Tax_ID] -- BILLINGHIER:billingareafedtaxid
+      ,[Billing_Area_Deactivation_Flag] -- BILLINGHIER:billingareadelflg
+  FROM [DataProfiling].[MDM].[GECB_Provider_Billing_Hierarchy_VW]

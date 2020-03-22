@@ -1,0 +1,39 @@
+{
+   "TCRMService":{
+      "@schemaLocation":"http:\/\/www.ibm.com\/mdm\/schema MDMDomains.xsd",
+      "RequestControl":{
+         "requestID":604157,
+         "DWLControl":{
+            "requesterName":"mdmadmin",
+            "requesterLocale":"en"
+         }
+      },
+      "TCRMTx":{
+         "TCRMTxType":"MaintainPartyAccountRelationship",
+         "TCRMTxObject":"MDMCompositePartyBObj",
+         "TCRMObject":{
+            "MDMCompositePartyBObj":{
+               "TCRMContractBObj":{
+                  "TCRMContractComponentBObj":{
+                     "TCRMContractPartyRoleBObj":{
+                     	"RoleEndReasonValue":"Retired",
+                     	"RoleValue":"Owner",
+	                    "EndDate": "2099/01/01",
+                        "TCRMOrganizationBObj":{
+                           "TCRMPartyIdentificationBObj":{
+                              "IdentificationValue":"EID",
+                              "IdentificationNumber":ORG_EID_PLACEHOLDER1
+                           }
+                        }
+                     }
+                  },
+                  "TCRMAdminNativeKeyBObj":{
+                     "AdminContractId":ORG_ACCOUNT_NUM_PLACEHOLDER1,
+                     "AdminFieldNameValue":"Account Number"
+                  }
+               }
+            }
+         }
+      }
+   }
+}

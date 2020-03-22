@@ -1,0 +1,11 @@
+/****** Script for SelectTopNRows command from SSMS  ******/
+SELECT 'MDMSP' -- MEMHEAD:srccode
+      ,'NEWPORT'+[PersonID] -- MEMHEAD:memidnum
+      ,[Facility_ID] --FACILITYLOC:locid
+      ,[Facility_Name] --FACILITYLOC:locnm
+      ,[Department_Description] --FACILITYLOC:deptcd
+      ,[Effective_Date] --FACILITYLOC:provlocfromdt
+      ,[Termination_Date] --FACILITYLOC:provloctodt
+      ,[Date_Last_Modified] --FACILITYLOC:lastupddt
+      ,[Active_Status] --FACILITYLOC:locdeacflg
+  FROM [DataProfiling].[MDM].[Newport_Provider_Facility_Department_Specialty_VW]

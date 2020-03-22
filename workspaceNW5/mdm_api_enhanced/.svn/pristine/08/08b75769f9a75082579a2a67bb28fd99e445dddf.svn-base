@@ -1,0 +1,1 @@
+MEMHEAD:srccode~MEMHEAD:memidnum~PERBUSADDR:locnm~PERBUSADDR:addrline1~PERBUSADDR:addrline2~PERBUSADDR:city~PERBUSADDR:provstate~PERBUSADDR:postalcode~PERBUSADDR:county~PERBUSADDR:phone~PERBUSADDR:phoneext~PERBUSADDR:secphone~PERBUSADDR:secphoneext~PERBUSADDR:fax~PERBUSADDR:provlocfromdt~PERBUSADDR:provloctodt~PERBUSADDR:locdeacflg~PERBUSADDR:lastupddt

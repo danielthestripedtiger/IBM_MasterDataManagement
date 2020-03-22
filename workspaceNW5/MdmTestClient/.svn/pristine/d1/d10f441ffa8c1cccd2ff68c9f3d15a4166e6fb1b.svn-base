@@ -1,0 +1,30 @@
+{
+  "TCRMService": {
+    "@schemaLocation": "http://www.ibm.com/mdm/schema MDMDomains.xsd",
+    "RequestControl": {
+      "requestID": 604157,
+      "DWLControl": {
+        "requesterName": "mdmadmin",
+        "requesterLocale": "en",
+        "ControlExtensionProperty": []
+      }
+    },
+    "TCRMTx": {
+      "TCRMTxType": "RetrieveParty",
+      "TCRMTxObject": "MDMCompositePartyBObj",
+      "TCRMObject": {
+        "MDMCompositePartyBObj": {
+          "TCRMPartyBObj": {
+            "TCRMPartyContactMethodBObj": {
+              "ContactMethodUsageValue": "Unknown Email",
+              "TCRMContactMethodBObj": {
+                "ReferenceNumber": "",
+                "ContactMethodValue": "Email Address"
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "TCRMService": {
+    "@schemaLocation": "http://www.ibm.com/mdm/schema MDMDomains.xsd",
+    "RequestControl": {
+      "requestID": 604157,
+      "DWLControl": {
+        "requesterName": "don",
+        "requesterLocale": "en"
+      }
+    },
+    "TCRMTx": {
+      "TCRMTxType": "MaintainParty",
+      "TCRMTxObject": "MDMCompositePartyBObj",
+      "TCRMObject": {
+        "MDMCompositePartyBObj": {
+          "TCRMPersonBObj": {
+            "SourceIdentifierValue": "CXH",
+            "TCRMPartyContactMethodBObj": {
+              "ContactMethodUsageValue": "Preferred Email",
+              "TCRMContactMethodBObj": {
+                "ReferenceNumber": "don.gardner@farms.com",
+                "ContactMethodValue": "Email Address"
+              }
+            },
+            "TCRMPersonNameBObj": {
+              "NameUsageValue": "Preferred",
+              "GivenNameOne": "DON",
+              "LastName": "GARDNER"
+            },
+            "TCRMPartyPrivPrefBObj": [
+              {
+                "ValueString": "Yes",
+                "PrivPrefValue": "Receive Marketing Information"
+              },
+               {
+                "ValueString": "No",
+                "PrivPrefValue": "Receive Paperless Statement"
+              }
+            ]
+          }
+        }
+      }
+    }
+  }
+}

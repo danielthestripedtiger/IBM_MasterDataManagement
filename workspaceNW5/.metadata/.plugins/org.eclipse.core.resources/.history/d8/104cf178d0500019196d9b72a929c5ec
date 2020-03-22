@@ -1,0 +1,151 @@
+package com.ibm.mdm.physical.tasksets;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Statement;
+import java.util.ArrayList;
+import java.util.HashSet;
+import java.util.Iterator;
+
+public class GetTaskSets {
+
+
+	static Connection sqlConn = null;
+	static Statement sqlStmt = null;
+	static ResultSet sqlResultset = null;
+	static int findRelatedCount = 0;
+
+	static ArrayList<HashSet<String>> taskSets = new ArrayList<HashSet<String>>();
+
+	@SuppressWarnings("unchecked")
+	public static void main(String[] args) throws SQLException {
+
+		try {
+			// Returns the Class object associated with the class
+			Class.forName("oracle.jdbc.driver.OracleDriver");
+		} catch (ClassNotFoundException exception) {
+			System.out.println("Oracle Driver Class Not found Exception: " + exception.toString());
+			return;
+		}
+
+		// Set connection timeout. Make sure you set this correctly as per your need
+		DriverManager.setLoginTimeout(5);
+		//			System.out.println("Oracle JDBC Driver Successfully Registered! Let's make connection now");
+
+		try {
+			// Attempts to establish a connection
+			// here DB name: localhost, sid: crunchify
+			sqlConn = DriverManager.getConnection("jdbc:oracle:thin:@biccmdmpdb01.nshs.edu:1522:mdmprd", "mdmduser", "mdmp19go");
+		} catch (SQLException e) {
+			System.out.println("Connection Failed! Check output console");
+			e.printStackTrace();
+			return;
+		}
+
+		// Creates a Statement object for sending SQL statements to the database
+		sqlStmt = sqlConn.createStatement();
+
+		// Executes the given SQL statement, which returns a single ResultSet object
+		sqlResultset = sqlStmt.executeQuery("SELECT DISTINCT CONT_ID, SUSPECT_CONT_ID FROM SUSPECT WHERE CUR_SUSPECT_TP_CD  = '3'");
+
+//		HashSet<String> firstTaskSet = new HashSet<String>();
+//		taskSets.add(firstTaskSet);
+
+		while (sqlResultset.next()) {
+			String suspectPartyID1 = sqlResultset.getString(1);
+			String suspectPartyID2 = sqlResultset.getString(2);
+			
+			HashSet<String> taskSet = new HashSet<String>();
+			taskSet.add(suspectPartyID1);
+			taskSet.add(suspectPartyID2);
+			taskSets.add(taskSet);
+//
+//			//				System.out.println("WORKING ON: " + suspectPartyID1);
+//			//				System.out.println("WORKING ON: " + suspectPartyID2);
+//
+//			int taskSetSize = taskSets.size();
+//
+//			boolean foundMatch = false;
+//			for (int x = 0; x < taskSetSize ; x++) {
+//				System.out.println(x);
+//				HashSet<String> taskSet = taskSets.get(x);
+//
+//				if(taskSet.contains(suspectPartyID1)){
+//					taskSet.add(suspectPartyID2);
+//					foundMatch = true;
+//					//						System.out.println("Added to existing task set");
+//				}
+//				else if(taskSet.contains(suspectPartyID2)){
+//					taskSet.add(suspectPartyID1);
+//					foundMatch = true;
+//					//						System.out.println("Added to existing task set");
+//				}				
+//			}
+//
+//			if(!foundMatch){
+//				HashSet<String> newTaskSet = new HashSet<String>();
+//				newTaskSet.add(suspectPartyID1);
+//				newTaskSet.add(suspectPartyID2);
+//				taskSets.add(newTaskSet);
+//				//					System.out.println("Created new task set");
+//			}
+//
+//			//				System.out.println("Task sets size: " + taskSets.size());
+		} 
+
+		//			System.out.println("Oracle JDBC connect and query test completed.");
+
+		findRelatedCount = 0;
+		boolean started = false;
+		
+		while(!started || findRelatedCount != 0){
+			started = true;
+			ArrayList<HashSet<String>> newTaskSets = findRelated(taskSets);
+			taskSets = newTaskSets;
+		}
+
+//		taskSets.removeAll(taskSetsToRemove);
+
+		int taskSetId = 1;
+		for (HashSet<String> taskSet : taskSets) {
+
+			Iterator<String> it = taskSet.iterator();
+			while(it.hasNext()){
+				System.out.println(taskSetId+"|"+it.next());
+				++taskSetId;
+			}
+		}
+	}
+
+	@SuppressWarnings("unchecked")
+	private static ArrayList<HashSet<String>> findRelated(ArrayList<HashSet<String>> taskSets) {
+	
+		ArrayList<HashSet<String>> newTaskSets = new ArrayList<HashSet<String>>();
+		for (int i = 0; i < taskSets.size(); i++) {
+//			System.out.println("Count: " + Integer.toString(i+1));
+			HashSet<String> currentTaskSet = (HashSet<String>) ((HashSet<String>)taskSets.get(i)).clone();
+			newTaskSets.add(currentTaskSet);
+		
+			Iterator<String> it = currentTaskSet.iterator();
+			
+			int setCount = 0;
+			for (int j = 0; j < taskSets.size(); j++) {
+//				System.out.println("Count Inner: " + Integer.toString(j+1));
+				
+			     while(it.hasNext()){
+			    	    String partyId = it.next();
+			    	 	setCount++;
+			    	 	System.out.println("Counts: "+Integer.toString(i+1)+":"+Integer.toString(j+1)+":"+setCount);
+						if(!taskSets.get(j).equals(currentTaskSet) && taskSets.get(j).contains(partyId)){
+							currentTaskSet.addAll(taskSets.get(j));
+							findRelatedCount++;
+						}
+			     }
+			}
+		}
+		
+		return newTaskSets;
+	}
+}

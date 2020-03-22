@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TCRMService xmlns="http://www.ibm.com/mdm/schema" 
+   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.ibm.com/mdm/schema MDMDomains.xsd">
+   <RequestControl>
+      <requestID>10015</requestID>
+      <DWLControl>
+         <requesterName>cusadmin</requesterName>
+         <requesterLanguage>100</requesterLanguage>
+      </DWLControl>
+   </RequestControl>
+   <TCRMTx>
+      <TCRMTxType>MaintainNWPerson</TCRMTxType>
+      <TCRMTxObject>CompositeNWPersonBObj</TCRMTxObject>
+      <TCRMObject>
+         <CompositeNWPersonBObj>
+            <ObjectReferenceId></ObjectReferenceId>
+            <TCRMPersonBObj>
+               <SourceIdentifierValue>Echo</SourceIdentifierValue>
+
+               <TCRMAdminContEquivBObj>
+                  <AdminPartyId>010101010</AdminPartyId>
+                  <AdminSystemValue>Echo</AdminSystemValue>
+               </TCRMAdminContEquivBObj>
+               <TCRMPersonNameBObj>
+                  <NameUsageValue>Legal</NameUsageValue>
+                  <GivenNameOne>Kelly</GivenNameOne>
+                  <GivenNameTwo></GivenNameTwo>
+                  <LastName>Blackstone</LastName>
+                  <Suffix>III</Suffix>
+                  <SourceIdentifierValue>Echo</SourceIdentifierValue>
+                  <TCRMExtension>
+                     <ExtendedObject>XNWPersonNameBObjExt</ExtendedObject>
+                     <XNWPersonNameBObjExt>
+                        <XFull_Name>John TESTONE</XFull_Name>
+                        <XDegree>PHD</XDegree>
+                     </XNWPersonNameBObjExt>
+                  </TCRMExtension>
+               </TCRMPersonNameBObj>
+
+               <TCRMPartyValueBObj>
+                  <PartyValueValue>Billing Area Number</PartyValueValue>
+                  <ValueString>A12345</ValueString>
+                  <SourceIdentValue>Echo</SourceIdentValue>
+                  <StartDate>2018-12-18 13:20:49.540</StartDate>
+                  <EndDate>2021-12-18 13:20:49.540</EndDate>
+                  <Attribute0Value>Billing Area Name</Attribute0Value>
+                  <Attribute0String>B12345</Attribute0String>
+                  <Attribute1Value>Billing Area Mnemonic</Attribute1Value>
+                  <Attribute1String>XYZ</Attribute1String>
+                  <Attribute2Value>Billing Area Federal Tax ID</Attribute2Value>
+                  <Attribute2String>1</Attribute2String>
+                  <Attribute3Value>Billing Area Deactivation Flag</Attribute3Value>
+                  <Attribute3String>Active</Attribute3String>
+                  <Attribute4Value>Division Number</Attribute4Value>
+                  <Attribute4String>C12345</Attribute4String>
+                  <Attribute5Value>Division Name</Attribute5Value>
+                  <Attribute5String>C12345</Attribute5String>
+                  <Attribute6Value>Division Mnemonic</Attribute6Value>
+                  <Attribute6String>C12345</Attribute6String>
+                  <Attribute7Value>Division Deactivation Flag</Attribute7Value>
+                  <Attribute7String>C12345</Attribute7String>
+               </TCRMPartyValueBObj>
+
+            </TCRMPersonBObj>
+         </CompositeNWPersonBObj>
+      </TCRMObject>
+   </TCRMTx>
+</TCRMService>
+
+
+
+<?xml version="1.0" encoding="UTF-8"?>
+<TCRMService xmlns="http://www.ibm.com/mdm/schema" 
+   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.ibm.com/mdm/schema MDMDomains.xsd">
+   <RequestControl>
+      <requestID>10015</requestID>
+      <DWLControl>
+         <requesterName>cusadmin</requesterName>
+         <requesterLanguage>100</requesterLanguage>
+      </DWLControl>
+   </RequestControl>
+   <TCRMTx>
+      <TCRMTxType>MaintainNWPerson</TCRMTxType>
+      <TCRMTxObject>CompositeNWPersonBObj</TCRMTxObject>
+      <TCRMObject>
+         <CompositeNWPersonBObj>
+            <ObjectReferenceId></ObjectReferenceId>
+            <TCRMPersonBObj>
+               <SourceIdentifierValue>Echo</SourceIdentifierValue>
+
+               <TCRMAdminContEquivBObj>
+                  <AdminPartyId>010101010</AdminPartyId>
+                  <AdminSystemValue>Echo</AdminSystemValue>
+               </TCRMAdminContEquivBObj>
+               <TCRMPersonNameBObj>
+                  <NameUsageValue>Legal</NameUsageValue>
+                  <GivenNameOne>Kelly</GivenNameOne>
+                  <GivenNameTwo></GivenNameTwo>
+                  <LastName>Blackstone</LastName>
+                  <Suffix>III</Suffix>
+                  <SourceIdentifierValue>Echo</SourceIdentifierValue>
+                  <TCRMExtension>
+                     <ExtendedObject>XNWPersonNameBObjExt</ExtendedObject>
+                     <XNWPersonNameBObjExt>
+                        <XFull_Name>John TESTONE</XFull_Name>
+                        <XDegree>PHD</XDegree>
+                     </XNWPersonNameBObjExt>
+                  </TCRMExtension>
+               </TCRMPersonNameBObj>
+
+               <TCRMPartyValueBObj>
+                  <PartyValueValue>Billing Area Number</PartyValueValue>
+                  <ValueString>A12345</ValueString>
+                  <SourceIdentValue>Echo</SourceIdentValue>
+                  <StartDate>2018-12-18 13:20:49.540</StartDate>
+                  <EndDate>2021-12-18 13:20:49.540</EndDate>
+                  <Attribute0Value>Billing Area Name</Attribute0Value>
+                  <Attribute0String>B12345</Attribute0String>
+                  <Attribute1Value>Billing Area Mnemonic</Attribute1Value>
+                  <Attribute1String>XYZ</Attribute1String>
+                  <Attribute2Value>Billing Area Federal Tax ID</Attribute2Value>
+                  <Attribute2String>1</Attribute2String>
+                  <Attribute3Value>Billing Area Deactivation Flag</Attribute3Value>
+                  <Attribute3String>Inactive</Attribute3String>
+                  <Attribute4Value>Division Number</Attribute4Value>
+                  <Attribute4String>C12345</Attribute4String>
+                  <Attribute5Value>Division Name</Attribute5Value>
+                  <Attribute5String>C12345</Attribute5String>
+                  <Attribute6Value>Division Mnemonic</Attribute6Value>
+                  <Attribute6String>C12345</Attribute6String>
+                  <Attribute7Value>Division Deactivation Flag</Attribute7Value>
+                  <Attribute7String>C12345</Attribute7String>
+               </TCRMPartyValueBObj>
+
+            </TCRMPersonBObj>
+         </CompositeNWPersonBObj>
+      </TCRMObject>
+   </TCRMTx>
+</TCRMService>

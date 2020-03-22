@@ -1,0 +1,119 @@
+update mpi_memhead set memseqno=0;
+
+   UPDATE (
+   SELECT mh.memseqno  AS old_ms,
+   at.memseqno AS new_ms
+   FROM mpi_memhead mh
+    INNER JOIN (SELECT memrecno, max(memseqno) AS memseqno FROM MPI_PERADDR GROUP BY memrecno) at ON
+        mh.memrecno = at.memrecno AND at.memseqno > mh.memseqno) up
+        set up.old_ms = up.new_ms;
+
+   UPDATE (
+   SELECT mh.memseqno  AS old_ms,
+   at.memseqno AS new_ms
+   FROM mpi_memhead mh
+    INNER JOIN (SELECT memrecno, max(memseqno) AS memseqno FROM MPI_PERIDENT GROUP BY memrecno) at ON
+        mh.memrecno = at.memrecno AND at.memseqno > mh.memseqno) up
+        set up.old_ms = up.new_ms;
+
+
+   UPDATE (
+   SELECT mh.memseqno  AS old_ms,
+   at.memseqno AS new_ms
+   FROM mpi_memhead mh
+    INNER JOIN (SELECT memrecno, max(memseqno) AS memseqno FROM MPI_PERATTREXT GROUP BY memrecno) at ON
+        mh.memrecno = at.memrecno AND at.memseqno > mh.memseqno) up
+        set up.old_ms = up.new_ms;
+
+
+   UPDATE (
+   SELECT mh.memseqno  AS old_ms,
+   at.memseqno AS new_ms
+   FROM mpi_memhead mh
+    INNER JOIN (SELECT memrecno, max(memseqno) AS memseqno FROM MPI_PERNAME GROUP BY memrecno) at ON
+        mh.memrecno = at.memrecno AND at.memseqno > mh.memseqno) up
+        set up.old_ms = up.new_ms;
+
+
+  UPDATE (
+   SELECT mh.memseqno  AS old_ms,
+   at.memseqno AS new_ms
+   FROM mpi_memhead mh
+    INNER JOIN (SELECT memrecno, max(memseqno) AS memseqno FROM MPI_PERDATE GROUP BY memrecno) at ON
+        mh.memrecno = at.memrecno AND at.memseqno > mh.memseqno) up
+        set up.old_ms = up.new_ms;
+
+
+
+  UPDATE (
+   SELECT mh.memseqno  AS old_ms,
+   at.memseqno AS new_ms
+   FROM mpi_memhead mh
+    INNER JOIN (SELECT memrecno, max(memseqno) AS memseqno FROM MPI_PEREMAIL GROUP BY memrecno) at ON
+        mh.memrecno = at.memrecno AND at.memseqno > mh.memseqno) up
+        set up.old_ms = up.new_ms;
+
+
+
+  UPDATE (
+   SELECT mh.memseqno  AS old_ms,
+   at.memseqno AS new_ms
+   FROM mpi_memhead mh
+    INNER JOIN (SELECT memrecno, max(memseqno) AS memseqno FROM MPI_PERMANAGER GROUP BY memrecno) at ON
+        mh.memrecno = at.memrecno AND at.memseqno > mh.memseqno) up
+        set up.old_ms = up.new_ms;
+
+
+  UPDATE (
+   SELECT mh.memseqno  AS old_ms,
+   at.memseqno AS new_ms
+   FROM mpi_memhead mh
+    INNER JOIN (SELECT memrecno, max(memseqno) AS memseqno FROM MPI_PERPHONE GROUP BY memrecno) at ON
+        mh.memrecno = at.memrecno AND at.memseqno > mh.memseqno) up
+        set up.old_ms = up.new_ms;
+
+
+  UPDATE (
+   SELECT mh.memseqno  AS old_ms,
+   at.memseqno AS new_ms
+   FROM mpi_memhead mh
+    INNER JOIN (SELECT memrecno, max(memseqno) AS memseqno FROM MPI_memtaxonomy GROUP BY memrecno) at ON
+        mh.memrecno = at.memrecno AND at.memseqno > mh.memseqno) up
+        set up.old_ms = up.new_ms;
+
+
+
+  UPDATE (
+   SELECT mh.memseqno  AS old_ms,
+   at.memseqno AS new_ms
+   FROM mpi_memhead mh
+    INNER JOIN (SELECT memrecno, max(memseqno) AS memseqno FROM MPI_membillhier GROUP BY memrecno) at ON
+        mh.memrecno = at.memrecno AND at.memseqno > mh.memseqno) up
+        set up.old_ms = up.new_ms;
+
+
+
+  UPDATE (
+   SELECT mh.memseqno  AS old_ms,
+   at.memseqno AS new_ms
+   FROM mpi_memhead mh
+    INNER JOIN (SELECT memrecno, max(memseqno) AS memseqno FROM MPI_perspecialty GROUP BY memrecno) at ON
+        mh.memrecno = at.memrecno AND at.memseqno > mh.memseqno) up
+        set up.old_ms = up.new_ms;
+
+
+  UPDATE (
+   SELECT mh.memseqno  AS old_ms,
+   at.memseqno AS new_ms
+   FROM mpi_memhead mh
+    INNER JOIN (SELECT memrecno, max(memseqno) AS memseqno FROM MPI_pergender GROUP BY memrecno) at ON
+        mh.memrecno = at.memrecno AND at.memseqno > mh.memseqno) up
+        set up.old_ms = up.new_ms;
+
+ UPDATE (
+   SELECT mh.memseqno  AS old_ms,
+   at.memseqno AS new_ms
+   FROM mpi_memhead mh
+    INNER JOIN (SELECT memrecno, max(memseqno) AS memseqno FROM MPI_permarital GROUP BY memrecno) at ON
+        mh.memrecno = at.memrecno AND at.memseqno > mh.memseqno) up
+        set up.old_ms = up.new_ms;

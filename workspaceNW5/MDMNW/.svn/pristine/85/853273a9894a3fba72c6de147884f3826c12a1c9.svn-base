@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE project>
+<project default="javadoc">
+	
+	<path id= "projectclasspath">		
+      		<pathelement location="C:\IBM\SDP\runtimes\base_v85_stub\java\jre\lib\ext\dtfjview.jar"/>
+      		<pathelement location="C:\IBM\SDP\runtimes\base_v85_stub\java\jre\lib\ibmjsseprovider2.jar"/>
+      		<pathelement location="C:\IBM\SDP\com.ibm.mdm.tools\server_bundles\mdm\com.ibm.mdm.thirdparty.pdq_11.6.0.6-201806061531"/>
+      		<pathelement location="C:\Work\workspaceNW5\.metadata\.plugins\org.eclipse.pde.core\.external_libraries\com.ibm.mdm.server.dwlcommonservices_11.6.0.6-201806061531\arm4.jar"/>
+      		<pathelement location="C:\IBM\SDP\runtimes\base_v85_stub\java\jre\lib\logging.jar"/>
+      		<pathelement location="C:\IBM\SDP\runtimes\base_v85_stub\java\jre\lib\ext\healthcenter.jar"/>
+      		<pathelement location="C:\IBM\SDP\runtimes\base_v85_stub\java\jre\lib\jlm.jar"/>
+      		<pathelement location="C:\Work\workspaceNW5\.metadata\.plugins\org.eclipse.pde.core\.external_libraries\com.ibm.mdm.server.party_11.6.0.6-201806071018\Acxiom.jar"/>
+      		<pathelement location="C:\IBM\SDP\runtimes\base_v85_stub\java\jre\lib\ext\ibmjceprovider.jar"/>
+      		<pathelement location="C:\IBM\SDP\runtimes\base_v85_stub\endorsed_apis\javax.j2ee.annotation.jar"/>
+      		<pathelement location="C:\IBM\SDP\runtimes\base_v85_stub\java\jre\lib\ibmpkcs.jar"/>
+      		<pathelement location="C:\IBM\SDP\com.ibm.mdm.tools\server_bundles\mdm\com.ibm.mdm.server.codetypes_11.6.0.6-201806061531.jar"/>
+      		<pathelement location="C:\IBM\SDP\runtimes\base_v85_stub\java\jre\lib\beans.jar"/>
+      		<pathelement location="C:\IBM\SDP\runtimes\base_v85_stub\java\jre\lib\ibmsaslfw.jar"/>
+      		<pathelement location="C:\IBM\SDP\com.ibm.mdm.tools\server_bundles\mdm\com.ibm.mdm.thirdparty.pdq_11.6.0.6-201806061531\pdq.jar"/>
+      		<pathelement location="C:\IBM\SDP\runtimes\base_v85_stub\java\jre\lib\ibmjcefw.jar"/>
+      		<pathelement location="C:\IBM\SDP\runtimes\base_v85_stub\java\jre\lib\ext\ibmpkcs11impl.jar"/>
+      		<pathelement location="C:\IBM\SDP\runtimes\base_v85_stub\java\jre\lib\ext\ibmspnego.jar"/>
+      		<pathelement location="C:\IBM\SDP\runtimes\base_v85_stub\java\jre\lib\ext\jdmpview.jar"/>
+      		<pathelement location="C:\IBM\SDP\runtimes\base_v85_stub\java\jre\lib\ext\ibmcmsprovider.jar"/>
+      		<pathelement location="C:\IBM\SDP\runtimes\base_v85_stub\java\jre\lib\ibmjgssfw.jar"/>
+      		<pathelement location="C:\IBM\SDP\runtimes\base_v85_stub\java\jre\lib\ext\iwsorbutil.jar"/>
+      		<pathelement location="C:\IBM\SDP\runtimes\base_v85_stub\java\jre\lib\ext\JavaDiagnosticsCollector.jar"/>
+      		<pathelement location="C:\IBM\SDP\runtimes\base_v85_stub\java\jre\lib\ext\JawBridge.jar"/>
+      		<pathelement location="C:\IBM\SDP\runtimes\base_v85_stub\java\jre\lib\rt.jar"/>
+      		<pathelement location="C:\IBM\SDP\runtimes\base_v85_stub\java\jre\lib\ext\ibmkeycert.jar"/>
+      		<pathelement location="C:\IBM\SDP\com.ibm.mdm.tools\server_bundles\mdm\com.ibm.mdm.server.bizservices_11.6.0.6-201806061531.jar"/>
+      		<pathelement location="C:\Work\workspaceNW5\.metadata\.plugins\org.eclipse.pde.core\.external_libraries\com.ibm.mdm.server.logging_11.6.0.6-201806061531\log4j.jar"/>
+      		<pathelement location="C:\IBM\SDP\com.ibm.mdm.tools\server_bundles\mdm\com.ibm.mdm.server.mgmtcommon_11.6.0.6-201806061531.jar"/>
+      		<pathelement location="C:\IBM\SDP\runtimes\base_v85_stub\java\jre\bin\default\jclSC160\vm.jar"/>
+      		<pathelement location="C:\IBM\SDP\runtimes\base_v85_stub\java\jre\lib\xml.jar"/>
+      		<pathelement location="C:\IBM\SDP\runtimes\base_v85_stub\java\jre\lib\ext\traceformat.jar"/>
+      		<pathelement location="C:\IBM\SDP\com.ibm.mdm.tools\server_bundles\mdm\com.ibm.mdm.server.logging_11.6.0.6-201806061531.jar"/>
+      		<pathelement location="C:\IBM\SDP\runtimes\base_v85_stub\java\jre\lib\ext\gskikm.jar"/>
+      		<pathelement location="C:\IBM\SDP\runtimes\base_v85_stub\endorsed_apis\jaxws-api.jar"/>
+      		<pathelement location="C:\IBM\SDP\runtimes\base_v85_stub\java\jre\lib\ibmorbapi.jar"/>
+      		<pathelement location="C:\IBM\SDP\com.ibm.mdm.tools\server_bundles\mdm\com.ibm.mdm.server.commonutils_11.6.0.6-201806061531.jar"/>
+      		<pathelement location="C:\IBM\SDP\runtimes\base_v85_stub\java\jre\lib\jndi.jar"/>
+      		<pathelement location="C:\IBM\SDP\runtimes\base_v85_stub\java\jre\lib\ext\localedata.jar"/>
+      		<pathelement location="C:\IBM\SDP\com.ibm.mdm.tools\server_bundles\mdm\com.ibm.mdm.server.config.repo_11.6.0.6-201806061531.jar"/>
+      		<pathelement location="C:\IBM\SDP\runtimes\base_v85_stub\endorsed_apis\jaxb-api.jar"/>
+      		<pathelement location="C:\IBM\SDP\com.ibm.mdm.tools\server_bundles\mdm\com.ibm.mdm.server.config.client_11.6.0.6-201806061531.jar"/>
+      		<pathelement location="C:\IBM\SDP\runtimes\base_v85_stub\java\jre\lib\ext\CmpCrmf.jar"/>
+      		<pathelement location="C:\IBM\SDP\runtimes\base_v85_stub\java\jre\lib\ibmjgssprovider.jar"/>
+      		<pathelement location="C:\IBM\SDP\com.ibm.mdm.tools\server_bundles\mdm\com.ibm.mdm.server.party_11.6.0.6-201806071018.jar"/>
+      		<pathelement location="C:\IBM\SDP\com.ibm.mdm.tools\server_bundles\mdm\com.ibm.mdm.server.coreutilities_11.6.0.6-201806061531.jar"/>
+      		<pathelement location="C:\IBM\SDP\runtimes\base_v85_stub\java\jre\lib\sql.jar"/>
+      		<pathelement location="C:\IBM\SDP\runtimes\base_v85_stub\java\jre\lib\ibmcertpathprovider.jar"/>
+      		<pathelement location="C:\Work\workspaceNW5\MDMNW\build\classes"/>
+      		<pathelement location="C:\Work\workspaceNW5\.metadata\.plugins\org.eclipse.pde.core\.external_libraries\com.ibm.mdm.server.mgmtcommon_11.6.0.6-201806061531\jaxb-xjc.jar"/>
+      		<pathelement location="C:\IBM\SDP\runtimes\base_v85_stub\java\jre\lib\ext\ibmxmlencprovider.jar"/>
+      		<pathelement location="C:\IBM\SDP\runtimes\base_v85_stub\java\jre\lib\ext\IBMSecureRandom.jar"/>
+      		<pathelement location="C:\IBM\SDP\runtimes\base_v85_stub\java\jre\lib\annotation.jar"/>
+      		<pathelement location="C:\IBM\SDP\runtimes\base_v85_stub\java\jre\lib\resources.jar"/>
+      		<pathelement location="C:\Work\workspaceNW5\.metadata\.plugins\org.eclipse.pde.core\.external_libraries\com.ibm.mdm.server.dwlcommonservices_11.6.0.6-201806061531\sqlj.zip"/>
+      		<pathelement location="C:\IBM\SDP\runtimes\base_v85_stub\java\jre\lib\ext\dtfj-interface.jar"/>
+      		<pathelement location="C:\IBM\SDP\runtimes\base_v85_stub\java\jre\lib\ext\xmlencfw.jar"/>
+      		<pathelement location="C:\IBM\SDP\runtimes\base_v85_stub\java\jre\lib\ext\ibmjcefips.jar"/>
+      		<pathelement location="C:\IBM\SDP\runtimes\base_v85_stub\java\jre\lib\ext\jaccess.jar"/>
+      		<pathelement location="C:\IBM\SDP\runtimes\base_v85_stub\java\jre\lib\ibmcertpathfw.jar"/>
+      		<pathelement location="C:\IBM\SDP\runtimes\base_v85_stub\java\jre\lib\ext\dtfj.jar"/>
+      		<pathelement location="C:\IBM\SDP\runtimes\base_v85_stub\java\jre\lib\ext\ibmsaslprovider.jar"/>
+      		<pathelement location="C:\IBM\SDP\runtimes\base_v85_stub\java\jre\lib\javascript.jar"/>
+      		<pathelement location="C:\IBM\SDP\runtimes\base_v85_stub\java\jre\lib\security.jar"/>
+      		<pathelement location="C:\IBM\SDP\runtimes\base_v85_stub\java\jre\lib\ibmcfw.jar"/>
+      		<pathelement location="C:\IBM\SDP\runtimes\base_v85_stub\java\jre\lib\management-agent.jar"/>
+      		<pathelement location="C:\IBM\SDP\runtimes\base_v85_stub\java\jre\lib\ibmjssefw.jar"/>
+      		<pathelement location="C:\IBM\SDP\runtimes\base_v85_stub\java\jre\lib\ibmorb.jar"/>
+      		<pathelement location="C:\IBM\SDP\com.ibm.mdm.tools\server_bundles\mdm\com.ibm.mdm.server.btm_11.6.0.6-201806061531.jar"/>
+      		<pathelement location="C:\IBM\SDP\runtimes\base_v85_stub\java\jre\lib\charsets.jar"/>
+      		<pathelement location="C:\IBM\SDP\runtimes\base_v85_stub\java\jre\lib\java.util.jar"/>
+      		<pathelement location="C:\IBM\SDP\runtimes\base_v85_stub\java\jre\lib\ext\ibmxmlcrypto.jar"/>
+      		<pathelement location="C:\IBM\SDP\com.ibm.mdm.tools\server_bundles\mdm\com.ibm.mdm.server.dwlcommonservices_11.6.0.6-201806061531.jar"/>
+      		<pathelement location="C:\IBM\SDP\runtimes\base_v85_stub\java\jre\lib\ext\dnsns.jar"/>
+    </path>
+
+
+    <target name="javadoc">
+    	<delete dir="doc/javadoc" verbose="true"/>
+	<!--  BEGIN User editable section  -->
+        <javadoc 
+        	access="protected"
+        	author="true"
+        	classpathref="projectclasspath"
+        	destdir="doc/javadoc"
+        	nodeprecated="false"
+        	nodeprecatedlist="false"
+        	noindex="false"
+        	nonavbar="false"
+        	notree="false"
+        	packagenames="mdmnw.*"
+        	source="1.6"
+        	sourcepath="src"
+        	splitindex="true" 
+        	use="true" 
+        	version="true"
+    	>
+        	<tag name="generated"/>
+        	<tag name="Update("/>
+        	<tag name="Select("/>
+        </javadoc>
+	<!-- END User editable section  -->      
+    </target>
+</project>

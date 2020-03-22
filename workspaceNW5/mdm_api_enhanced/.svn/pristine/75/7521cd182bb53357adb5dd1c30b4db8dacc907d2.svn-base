@@ -1,0 +1,13 @@
+/****** Script for SelectTopNRows command from SSMS  ******/
+SELECT 'MDMSP' -- MEMHEAD:srccode
+      ,'NEWPORT'+[PersonID] -- MEMHEAD:memidnum
+      ,[Specialty] -- PERSPECIALTY:specialty
+      ,[Primary_Specialty_Flag] -- PERSPECIALTY:primflag
+      ,[Specialty_Order] -- PERSPECIALTY:specorder
+      ,[Board_Status] -- BOARDSTATUS:attrval
+      ,[Practicing_Specialty_Flag] -- PERSPECIALTY:pracspecflag
+      --,[Certification_Date]
+      -- ,[Expiration_Date]
+      ,[Taxonomy_Code_Mnemonic] -- TAXONOMY:taxonomycodemnumonic
+      ,[Provider_Date_Last_Modified] --LASTUPDDT:val
+  FROM [DataProfiling].[MDM].[Newport_Provider_Specialty_VW]

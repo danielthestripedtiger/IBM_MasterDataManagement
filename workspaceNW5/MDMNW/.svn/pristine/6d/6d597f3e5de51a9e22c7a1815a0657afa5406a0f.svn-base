@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TCRMService xmlns="http://www.ibm.com/mdm/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.ibm.com/mdm/schema MDMDomains.xsd">
+    <RequestControl>
+        <requestID>10015</requestID>
+        <DWLControl>
+            <requesterName>cusadmin</requesterName>
+            <requesterLanguage>100</requesterLanguage>
+        </DWLControl>
+    </RequestControl>
+    <TCRMTx>
+        <TCRMTxType>MaintainNWPerson</TCRMTxType>
+        <TCRMTxObject>CompositeNWPersonBObj</TCRMTxObject>
+        <TCRMObject>
+            <CompositeNWPersonBObj>
+                <TCRMPersonBObj>
+                    <LastVerifiedDate>1990-11-24 08:45:41.434175</LastVerifiedDate>
+                    <SourceIdentifierValue>Echo</SourceIdentifierValue>
+                    <BirthDate>1990-11-24 08:45:41.434175</BirthDate>
+                                        <StartDate>1990-11-24 08:45:41.434175</StartDate>
+                   <GenderType>M</GenderType>
+                    <MaritalStatusValue>Single</MaritalStatusValue>
+                    <TCRMPartyContactMethodBObj>
+                        <ContactMethodUsageValue>Personal Email</ContactMethodUsageValue>
+                        <SourceIdentifierValue>Echo</SourceIdentifierValue>
+                        <TCRMContactMethodBObj>
+                            <ReferenceNumber>a@echo.com</ReferenceNumber>
+                            <ContactMethodValue>Email Address</ContactMethodValue>
+                        </TCRMContactMethodBObj>
+                    </TCRMPartyContactMethodBObj>
+                    <TCRMPartyContactMethodBObj>
+                        <ContactMethodUsageValue>Mobile Telephone</ContactMethodUsageValue>
+                        <SourceIdentifierValue>Echo</SourceIdentifierValue>
+                        <TCRMContactMethodBObj>
+                            <ReferenceNumber>122-233-1232</ReferenceNumber>
+                            <ContactMethodValue>Telephone Number</ContactMethodValue>
+                        </TCRMContactMethodBObj>
+                    </TCRMPartyContactMethodBObj>
+                    <TCRMPartyContactMethodBObj>
+                        <ContactMethodUsageValue>Pager</ContactMethodUsageValue>
+                        <SourceIdentifierValue>Echo</SourceIdentifierValue>
+                        <TCRMContactMethodBObj>
+                            <ReferenceNumber>345-454-1245</ReferenceNumber>
+                            <ContactMethodValue>Telephone Number</ContactMethodValue>
+                        </TCRMContactMethodBObj>
+                    </TCRMPartyContactMethodBObj>
+                    <TCRMPartyIdentificationBObj>
+                        <IdentificationValue>Echo DR ID</IdentificationValue>
+                        <IdentificationNumber>010101010</IdentificationNumber>
+                        <SourceIdentifierValue>Echo</SourceIdentifierValue>
+                    </TCRMPartyIdentificationBObj>
+                    <TCRMPartyIdentificationBObj>
+                        <IdentificationValue>National Provider Identifier</IdentificationValue>
+                        <IdentificationNumber>010101010</IdentificationNumber>
+                        <SourceIdentifierValue>Echo</SourceIdentifierValue>
+                    </TCRMPartyIdentificationBObj>
+                    <TCRMPartyIdentificationBObj>
+                        <IdentificationValue>Social Security Number</IdentificationValue>
+                        <IdentificationNumber>123123155</IdentificationNumber>
+                        <SourceIdentifierValue>Echo</SourceIdentifierValue>
+                    </TCRMPartyIdentificationBObj>
+                    <TCRMPartyIdentificationBObj>
+                        <IdentificationValue>Medicare Number</IdentificationValue>
+                        <IdentificationNumber>010101010</IdentificationNumber>
+                        <SourceIdentifierValue>Echo</SourceIdentifierValue>
+                    </TCRMPartyIdentificationBObj>
+                    <TCRMPartyIdentificationBObj>
+                        <IdentificationValue>Medicaid Number</IdentificationValue>
+                        <IdentificationNumber>010101010</IdentificationNumber>
+                        <SourceIdentifierValue>Echo</SourceIdentifierValue>
+                    </TCRMPartyIdentificationBObj>
+                    <TCRMAdminContEquivBObj>   
+                        <AdminPartyId>999-T</AdminPartyId>
+                        <AdminSystemValue>Echo</AdminSystemValue>
+                    </TCRMAdminContEquivBObj>   
+                    <TCRMPersonNameBObj>
+                        <NameUsageValue>Legal</NameUsageValue>
+                        <PrefixValue>Mrs.</PrefixValue>
+                        <GivenNameOne>Kelly</GivenNameOne>
+                        <GivenNameTwo></GivenNameTwo>
+                        <LastName>Blackstone</LastName>
+                        <Suffix>III</Suffix>
+                        <SourceIdentifierValue>Echo</SourceIdentifierValue>
+                        <TCRMExtension>
+                            <ExtendedObject>XNWPersonNameBObjExt</ExtendedObject>
+                            <XNWPersonNameBObjExt>
+                                <XDegree>PHD</XDegree>
+                            </XNWPersonNameBObjExt>
+                        </TCRMExtension>
+                    </TCRMPersonNameBObj>
+                    <TCRMPartyValueBObj>
+                        <PartyValueValue>Provider Type</PartyValueValue>
+                        <ValueString>PED</ValueString>
+                        <SourceIdentValue>Echo</SourceIdentValue>
+                        <Attribute0Value>Provider Type Description</Attribute0Value>
+                        <Attribute0String>This is desc for Provider Type</Attribute0String>
+                    </TCRMPartyValueBObj>
+                    <TCRMPartyValueBObj>
+                        <PartyValueValue>NHPP Flag</PartyValueValue>
+                        <ValueString>Y</ValueString>
+                        <SourceIdentValue>Echo</SourceIdentValue>
+                        <Attribute0Value>NHPP Flag Description</Attribute0Value>
+                        <Attribute0String>This is desc for NHPP Flag</Attribute0String>
+                    </TCRMPartyValueBObj>
+                    <TCRMPartyValueBObj>
+                        <PartyValueValue>Role Status</PartyValueValue>
+                        <ValueString>Active</ValueString>
+                        <SourceIdentValue>Echo</SourceIdentValue>
+                    </TCRMPartyValueBObj>
+                </TCRMPersonBObj>
+            </CompositeNWPersonBObj>
+        </TCRMObject>
+    </TCRMTx>
+</TCRMService>
+
+
+
+
+<?xml version="1.0" encoding="UTF-8"?>
+<TCRMService xmlns="http://www.ibm.com/mdm/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.ibm.com/mdm/schema MDMDomains.xsd">
+    <RequestControl>
+        <requestID>10015</requestID>
+        <DWLControl>
+            <requesterName>cusadmin</requesterName>
+            <requesterLanguage>100</requesterLanguage>
+        </DWLControl>
+    </RequestControl>
+    <TCRMTx>
+        <TCRMTxType>MaintainNWPerson</TCRMTxType>
+        <TCRMTxObject>CompositeNWPersonBObj</TCRMTxObject>
+        <TCRMObject>
+            <CompositeNWPersonBObj>
+                <TCRMPersonBObj>
+                    <LastVerifiedDate>1990-11-24 08:45:41.434175</LastVerifiedDate>
+                    <SourceIdentifierValue>Echo</SourceIdentifierValue>
+                    <BirthDate>1990-11-24 08:45:41.434175</BirthDate>
+                                        <StartDate>1990-11-24 08:45:41.434175</StartDate>
+                   <GenderType>M</GenderType>
+                    <MaritalStatusValue>Single</MaritalStatusValue>
+                    <TCRMPartyContactMethodBObj>
+                        <ContactMethodUsageValue>Personal Email</ContactMethodUsageValue>
+                        <SourceIdentifierValue>Echo</SourceIdentifierValue>
+                        <TCRMContactMethodBObj>
+                            <ReferenceNumber>a@echo.com</ReferenceNumber>
+                            <ContactMethodValue>Email Address</ContactMethodValue>
+                        </TCRMContactMethodBObj>
+                    </TCRMPartyContactMethodBObj>
+                    <TCRMPartyContactMethodBObj>
+                        <ContactMethodUsageValue>Mobile Telephone</ContactMethodUsageValue>
+                        <SourceIdentifierValue>Echo</SourceIdentifierValue>
+                        <TCRMContactMethodBObj>
+                            <ReferenceNumber>122-233-1232</ReferenceNumber>
+                            <ContactMethodValue>Telephone Number</ContactMethodValue>
+                        </TCRMContactMethodBObj>
+                    </TCRMPartyContactMethodBObj>
+                    <TCRMPartyContactMethodBObj>
+                        <ContactMethodUsageValue>Pager</ContactMethodUsageValue>
+                        <SourceIdentifierValue>Echo</SourceIdentifierValue>
+                        <TCRMContactMethodBObj>
+                            <ReferenceNumber>345-454-1245</ReferenceNumber>
+                            <ContactMethodValue>Telephone Number</ContactMethodValue>
+                        </TCRMContactMethodBObj>
+                    </TCRMPartyContactMethodBObj>
+                    <TCRMPartyIdentificationBObj>
+                        <IdentificationValue>Echo DR ID</IdentificationValue>
+                        <IdentificationNumber>010101010</IdentificationNumber>
+                        <SourceIdentifierValue>Echo</SourceIdentifierValue>
+                    </TCRMPartyIdentificationBObj>
+                    <TCRMPartyIdentificationBObj>
+                        <IdentificationValue>National Provider Identifier</IdentificationValue>
+                        <IdentificationNumber>010101010</IdentificationNumber>
+                        <SourceIdentifierValue>Echo</SourceIdentifierValue>
+                    </TCRMPartyIdentificationBObj>
+                    <TCRMPartyIdentificationBObj>
+                        <IdentificationValue>Social Security Number</IdentificationValue>
+                        <IdentificationNumber>123123155</IdentificationNumber>
+                        <SourceIdentifierValue>Echo</SourceIdentifierValue>
+                    </TCRMPartyIdentificationBObj>
+                    <TCRMPartyIdentificationBObj>
+                        <IdentificationValue>Medicare Number</IdentificationValue>
+                        <IdentificationNumber>010101010</IdentificationNumber>
+                        <SourceIdentifierValue>Echo</SourceIdentifierValue>
+                    </TCRMPartyIdentificationBObj>
+                    <TCRMPartyIdentificationBObj>
+                        <IdentificationValue>Medicaid Number</IdentificationValue>
+                        <IdentificationNumber>010101010</IdentificationNumber>
+                        <SourceIdentifierValue>Echo</SourceIdentifierValue>
+                    </TCRMPartyIdentificationBObj>
+                    <TCRMAdminContEquivBObj>   
+                        <AdminPartyId>999-U</AdminPartyId>
+                        <AdminSystemValue>Echo</AdminSystemValue>
+                    </TCRMAdminContEquivBObj>   
+                    <TCRMPersonNameBObj>
+                        <NameUsageValue>Legal</NameUsageValue>
+                        <PrefixValue>Mrs.</PrefixValue>
+                        <GivenNameOne>Kelly</GivenNameOne>
+                        <GivenNameTwo></GivenNameTwo>
+                        <LastName>Blackstone</LastName>
+                        <Suffix>III</Suffix>
+                        <SourceIdentifierValue>Echo</SourceIdentifierValue>
+                        <TCRMExtension>
+                            <ExtendedObject>XNWPersonNameBObjExt</ExtendedObject>
+                            <XNWPersonNameBObjExt>
+                                <XDegree>PHD</XDegree>
+                            </XNWPersonNameBObjExt>
+                        </TCRMExtension>
+                    </TCRMPersonNameBObj>
+                    <TCRMPartyValueBObj>
+                        <PartyValueValue>Provider Type</PartyValueValue>
+                        <ValueString>PED</ValueString>
+                        <SourceIdentValue>Echo</SourceIdentValue>
+                        <Attribute0Value>Provider Type Description</Attribute0Value>
+                        <Attribute0String>This is desc for Provider Type</Attribute0String>
+                    </TCRMPartyValueBObj>
+                    <TCRMPartyValueBObj>
+                        <PartyValueValue>NHPP Flag</PartyValueValue>
+                        <ValueString>Y</ValueString>
+                        <SourceIdentValue>Echo</SourceIdentValue>
+                        <Attribute0Value>NHPP Flag Description</Attribute0Value>
+                        <Attribute0String>This is desc for NHPP Flag</Attribute0String>
+                    </TCRMPartyValueBObj>
+                    <TCRMPartyValueBObj>
+                        <PartyValueValue>Role Status</PartyValueValue>
+                        <ValueString>Active</ValueString>
+                        <SourceIdentValue>Echo</SourceIdentValue>
+                    </TCRMPartyValueBObj>
+                </TCRMPersonBObj>
+            </CompositeNWPersonBObj>
+        </TCRMObject>
+    </TCRMTx>
+</TCRMService>

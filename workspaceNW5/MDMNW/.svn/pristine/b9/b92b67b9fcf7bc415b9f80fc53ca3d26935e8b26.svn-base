@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DWLAdminService xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="MDMCommon.xsd">
+	<ResponseControl>
+		<ResultCode>FATAL</ResultCode>
+		<ServiceTime>137</ServiceTime>
+		<DWLControl>
+			<requesterLanguage>100</requesterLanguage>
+			<requesterLocale>en</requesterLocale>
+			<requestID>528754048380506748</requestID>
+		</DWLControl>
+	</ResponseControl>
+	<TxResponse>
+		<RequestType>processTx</RequestType>
+		<TxResult>
+			<ResultCode>FATAL</ResultCode>
+			<DWLError>
+				<ComponentType>106</ComponentType>
+				<ErrorMessage>Parser DWLTransaction failed. The format of the message is not correct or an application error occurred.</ErrorMessage>
+				<ErrorType>READERR</ErrorType>
+				<LanguageCode>100</LanguageCode>
+				<ReasonCode>4928</ReasonCode>
+				<Severity>0</Severity>
+				<Throwable>com.dwl.base.requestHandler.exception.RequestParserException: [Exception_DWLAdminXMLErrorHandler_Error:] CDKAS2014E:The following XML failed to parse. XML = org.xml.sax.SAXParseException: TargetNamespace.2: Expecting no namespace, but the schema document has a target namespace of &apos;http://www.ibm.com/mdm/schema&apos;.; line number = 17; column number = 22</Throwable>
+			</DWLError>
+		</TxResult>
+	</TxResponse>
+</DWLAdminService>

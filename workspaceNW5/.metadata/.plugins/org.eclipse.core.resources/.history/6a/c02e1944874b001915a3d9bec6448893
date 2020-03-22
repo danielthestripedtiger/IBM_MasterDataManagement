@@ -1,0 +1,26 @@
+import java.util.Scanner;
+import java.io.*;
+ 
+public class ReprocessRejects
+{
+	
+	static String xmlBaseDir = "req/maintainParty/";
+	
+    public static void main(String[] args) throws IOException
+    {
+        Scanner s = new Scanner(System.in);
+         
+        File f = new File("file.txt");
+        Scanner numScan = new Scanner(f);
+         
+        String line;
+         
+        while (numScan.hasNext())
+        {
+            line = numScan.nextLine();
+            System.out.print(line + " ");
+        }
+         
+         
+    }
+}

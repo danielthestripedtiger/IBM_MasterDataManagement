@@ -1,0 +1,13 @@
+Bundle-Name: pme_nw.cba
+Bundle-SymbolicName: pme_nw.cba
+Bundle-Version: 11.6.0.qualifier
+CompositeBundle-ManifestVersion: 1
+Manifest-Version: 1.0
+CompositeBundle-Content: party.pmeConfig;version="[11.6.0.qualifier,11.6
+ .0.qualifier]"
+Import-Package: org.osgi.framework,
+ org.apache.commons.logging,
+ com.ibm.mdm.mds.pme.api.osgi
+CompositeBundle-ExportService: com.ibm.mdm.mds.pme.api.osgi.MatchingServ
+ iceConfiguration
+

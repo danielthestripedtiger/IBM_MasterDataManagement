@@ -1,0 +1,33 @@
+package com.nutrien.custmdm.unittest.r1;
+
+import java.util.Scanner;
+import java.io.*;
+
+import com.nutrien.custmdm.unit.test.CommonUtil;
+ 
+public class ReprocessRejects
+{
+	
+	static String xmlBaseDir = "req/maintainParty/";
+	
+    public static void main(String[] args) throws IOException
+    {
+        Scanner s = new Scanner(System.in);
+         
+        File f = new File(args[0]);
+        Scanner numScan = new Scanner(f);
+         
+        String line;
+         
+        while (numScan.hasNext())
+        {
+        	
+            line = numScan.nextLine();
+            String response = sendRequestViaRest(CommonUtil.getStringFromFile(xmlBaseDir, "maintainParty_addPerson.json", this.getClass()));
+
+            System.out.println(response);
+        }
+         
+         
+    }
+}

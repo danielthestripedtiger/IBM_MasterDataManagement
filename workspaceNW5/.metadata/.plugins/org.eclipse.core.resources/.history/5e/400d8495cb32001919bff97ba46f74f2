@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<snapshot version="1.0" name="WebSphere Application Server v8.5 at biccmdmtapp01">
+  <group name="bucketAnalysis" memtype="PERSON" />
+  <group name="entityAnalysis" enttype="mdmper">
+    <group name="MemberComparisons" compareType="MEMBERS" compareMembers="770866" probandMember="770866">
+      <group memrecno="770866" scoreValue="17.3">
+        <group cmpspeccode="ID" probandValue="" candidateValue="" scoreValue="+0.00" matchType="M" />
+        <group cmpspeccode="XNM" probandValue="MOSS|HILLARY|" candidateValue="MOSS|HILLARY|" scoreValue="+6.90" matchType="E">
+          <property probandValue="MOSS" candidateValue="MOSS" scoreValue="+4.02" matchType="X" />
+          <property probandValue="HILLARY" candidateValue="HILLARY" scoreValue="+4.40" matchType="X" />
+        </group>
+        <group cmpspeccode="PADDRESS" probandValue="" candidateValue="" scoreValue="+0.00" matchType="M" />
+        <group cmpspeccode="SSN" probandValue="000003521" candidateValue="000003521" scoreValue="+5.63" matchType="E" />
+        <group cmpspeccode="DOB" probandValue="19900906" candidateValue="19900906" scoreValue="+4.46" matchType="E" />
+        <group cmpspeccode="SEX" probandValue="F" candidateValue="F" scoreValue="+0.36" matchType="E" />
+        <group cmpspeccode="EMAIL" probandValue="" candidateValue="" scoreValue="+0.00" matchType="M" />
+      </group>
+    </group>
+    <group name="MemberComparisons" compareType="MEMBERS" compareMembers="837577" probandMember="770866">
+      <group memrecno="837577" scoreValue="11.7">
+        <group cmpspeccode="ID" probandValue="" candidateValue="" scoreValue="+0.00" matchType="M" />
+        <group cmpspeccode="XNM" probandValue="MOSS|HILLARY|" candidateValue="MOSS|HILLARY|" scoreValue="+6.90" matchType="E">
+          <property probandValue="MOSS" candidateValue="MOSS" scoreValue="+4.02" matchType="X" />
+          <property probandValue="HILLARY" candidateValue="HILLARY" scoreValue="+4.40" matchType="X" />
+        </group>
+        <group cmpspeccode="PADDRESS" probandValue="" candidateValue="" scoreValue="+0.00" matchType="M" />
+        <group cmpspeccode="SSN" probandValue="" candidateValue="" scoreValue="+0.00" matchType="M" />
+        <group cmpspeccode="DOB" probandValue="19900906" candidateValue="19900906" scoreValue="+4.46" matchType="E" />
+        <group cmpspeccode="SEX" probandValue="F" candidateValue="F" scoreValue="+0.36" matchType="E" />
+        <group cmpspeccode="EMAIL" probandValue="" candidateValue="" scoreValue="+0.00" matchType="M" />
+      </group>
+    </group>
+    <group name="MemberComparisons" compareType="MEMBERS" compareMembers="824760" probandMember="744541">
+      <group memrecno="824760" scoreValue="11.7">
+        <group cmpspeccode="ID" probandValue="007322" candidateValue="134292" scoreValue="-1.89" matchType="D" />
+        <group cmpspeccode="XNM" probandValue="WILSON|EVE|" candidateValue="WILSON|EVE|" scoreValue="+6.18" matchType="E">
+          <property probandValue="WILSON" candidateValue="WILSON" scoreValue="+2.75" matchType="X" />
+          <property probandValue="EVE" candidateValue="EVE" scoreValue="+3.43" matchType="X" />
+        </group>
+        <group cmpspeccode="PADDRESS" probandValue="10|ARDRA|CT|SMITHTOWN" candidateValue="-- 10|ARDRA|CT|SMITHTOWN" scoreValue="gt= +4" matchType="c">
+          <property probandValue="10" candidateValue="10" scoreValue="+5.71" matchType="X" />
+          <property probandValue="ARDRA" candidateValue="ARDRA" scoreValue="+9.80" matchType="X" />
+          <property probandValue="CT" candidateValue="CT" scoreValue="+9.80" matchType="X" />
+          <property probandValue="SMITHTOWN" candidateValue="SMITHTOWN" scoreValue="+7.50" matchType="X" />
+          <property probandValue="NY" candidateValue="NY" scoreValue="+7.50" matchType="X" />
+          <property probandValue="11787" candidateValue="11787" scoreValue="+10.04" matchType="X" />
+        </group>
+        <group cmpspeccode="SSN" probandValue="070749299" candidateValue="70749299" scoreValue="+0.23" matchType="D" />
+        <group cmpspeccode="DOB" probandValue="19731224" candidateValue="19731224" scoreValue="+4.39" matchType="E" />
+        <group cmpspeccode="SEX" probandValue="" candidateValue="" scoreValue="+0.00" matchType="M" />
+        <group cmpspeccode="EMAIL" probandValue="EWILSON1NSHS" candidateValue="EWILSON1NORTHWELL" scoreValue="-1.67" matchType="D" />
+      </group>
+    </group>
+    <group name="MemberComparisons" compareType="MEMBERS" compareMembers="709451" probandMember="744541">
+      <group memrecno="709451" scoreValue="-12.5">
+        <group cmpspeccode="EMPID" probandValue="" candidateValue="" scoreValue="+0.00" matchType="M" />
+        <group cmpspeccode="GESOARID" probandValue="" candidateValue="" scoreValue="+0.00" matchType="M" />
+        <group cmpspeccode="UPIN" probandValue="" candidateValue="" scoreValue="+0.00" matchType="M" />
+        <group cmpspeccode="UNIVID" probandValue="" candidateValue="" scoreValue="+0.00" matchType="M" />
+        <group cmpspeccode="NPI" probandValue="1215955349" candidateValue="1134267776" scoreValue="-3.23" matchType="D" />
+        <group cmpspeccode="STLIC" probandValue="007322" candidateValue="139570" scoreValue="-0.54" matchType="D" />
+        <group cmpspeccode="MEDICAID" probandValue="" candidateValue="" scoreValue="+0.00" matchType="M" />
+        <group cmpspeccode="MEDICARE" probandValue="" candidateValue="" scoreValue="+0.00" matchType="M" />
+        <group cmpspeccode="SOARINTID" probandValue="" candidateValue="" scoreValue="+0.00" matchType="M" />
+        <group cmpspeccode="XNM" probandValue="WILSON|EVE|" candidateValue="GOLDBERG|SANFORD|RUVEN|" scoreValue="-8.82" matchType="D">
+          <property probandValue="WILSON" candidateValue="GOLDBERG" scoreValue="-4.41" matchType="D" />
+          <property probandValue="EVE" candidateValue="SANFORD" scoreValue="-4.41" matchType="D" />
+        </group>
+        <group cmpspeccode="PADDRESS" probandValue="" candidateValue="" scoreValue="+0.00" matchType="M" />
+        <group cmpspeccode="SSN" probandValue="" candidateValue="" scoreValue="+0.00" matchType="M" />
+        <group cmpspeccode="DOB" probandValue="" candidateValue="" scoreValue="+0.00" matchType="M" />
+        <group cmpspeccode="SEX" probandValue="" candidateValue="" scoreValue="+0.00" matchType="M" />
+        <group cmpspeccode="EMAIL" probandValue="" candidateValue="" scoreValue="+0.00" matchType="M" />
+      </group>
+    </group>
+  </group>
+</snapshot>
+

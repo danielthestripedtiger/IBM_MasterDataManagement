@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="ASCII"?>
+<DWLAdminService xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="MDMCommon.xsd">
+    <RequestControl>
+        <requestID>100012</requestID>
+        <DWLControl>
+            <requesterName>madmadmin</requesterName>
+            <requesterLanguage>100</requesterLanguage>
+        </DWLControl>
+    </RequestControl>
+    <DWLTx>
+    	        <DWLTxType>updateInqLevel</DWLTxType>
+         <DWLTxObject>InqLevelQueryBObj</DWLTxObject>
+         <DWLObject>
+             <DWLInqLevelBObj>
+                 <InquiryLevelId>1004</InquiryLevelId>
+                 <Description>Updated to include Extended Attributes</Description>
+                 <InquiryLevelLastUpdateDate>13-APR-05 03.11.28.175001000 PM</InquiryLevelLastUpdateDate>
+                 <GenerateQuery>Y</GenerateQuery>
+                 <BusinessTxType>44</BusinessTxType>
+             </DWLInqLevelBObj>
+         </DWLObject> 
+        
+    </DWLTx>
+</DWLAdminService>

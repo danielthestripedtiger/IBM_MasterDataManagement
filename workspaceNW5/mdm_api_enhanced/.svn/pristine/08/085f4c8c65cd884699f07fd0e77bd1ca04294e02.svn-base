@@ -1,0 +1,24 @@
+/****** Script for SelectTopNRows command from SSMS  ******/
+SELECT 'MDMSP'
+      ,'GECB'+[PersonID]
+      ,[Full_Name] -- PERLEGALNAME:fullname
+      ,[NPI] -- PERNPIID:idnum
+      ,[GECB_Soarian_ID] -- PERGESOARID:idnum
+      ,[Billing_Location_Mnemonic] -- BILLLOC:locmnemonic
+      ,[Billing_Location_ID] -- BILLLOC:locid
+      ,[Billing_Location_Name] -- BILLLOC:locnm
+      ,[Billing_Location_Address_Line_1] -- BILLLOC:addrline1
+      ,[Billing_Location_Address_Line_2] -- BILLLOC:addrline2
+      ,[Billing_Location_City] -- BILLLOC:city
+      ,[Billing_Location_State] -- BILLLOC:provstate
+      ,[Billing_Location_Zip] -- BILLLOC:postalcode
+      --,[PatientType]
+      --,[Billing_Location_ReportingCategory1]
+      --,[Billing_Location_ReportingCategory2]
+      --,[Billing_Location_ReportingCategory3]
+ --     ,[Billing_Location_Deleted_Flag] --
+ --     ,[Billing_Location_Deactivation_Flag] -- locdeacflg
+      ,[Billing_Location_Deactivation_Date] -- BILLLOC:provloctodt
+      ,[NewportKey] -- BILLLOC:newportkey
+      ,[Active_Status] -- BILLLOC:locdeacflg
+  FROM [DataProfiling].[MDM].[GECB_Provider_Address_Billing_VW]

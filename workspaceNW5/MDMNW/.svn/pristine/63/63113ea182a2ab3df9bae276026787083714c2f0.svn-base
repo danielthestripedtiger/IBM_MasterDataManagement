@@ -1,0 +1,97 @@
+CLEAR_DB.sql
+
+<?xml version="1.0" encoding="UTF-8"?>
+<TCRMService xmlns="http://www.ibm.com/mdm/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.ibm.com/mdm/schema MDMDomains.xsd">
+    <RequestControl>
+        <requestID>10015</requestID>
+        <DWLControl>
+            <requesterName>cusadmin</requesterName>
+            <requesterLanguage>100</requesterLanguage>
+        </DWLControl>
+    </RequestControl>
+    <TCRMTx>
+        <TCRMTxType>MaintainNWPerson</TCRMTxType>
+        <TCRMTxObject>CompositeNWPersonBObj</TCRMTxObject>
+        <TCRMObject>
+            <CompositeNWPersonBObj>
+                <TCRMPersonBObj>
+                    <LastVerifiedDate>1990-11-24 08:45:41.434175</LastVerifiedDate>
+                    <SourceIdentifierValue>GECB</SourceIdentifierValue>
+                    <TCRMAdminContEquivBObj>   
+                        <AdminPartyId>1061184</AdminPartyId>
+                        <AdminSystemValue>GECB</AdminSystemValue>
+                    </TCRMAdminContEquivBObj>  
+                    <TCRMPersonNameBObj>
+                        <NameUsageValue>Legal</NameUsageValue>
+                        <GivenNameOne>JIMMY</GivenNameOne>
+                        <GivenNameTwo>G</GivenNameTwo>
+                        <LastName>STEVENS</LastName>
+                        <SourceIdentifierValue>GECB</SourceIdentifierValue>
+                    </TCRMPersonNameBObj>   
+                    <TCRMPartyValueBObj>
+                       <PartyValueValue>Billing Area Number</PartyValueValue>
+                       <ValueString>A12345</ValueString>
+                       <SourceIdentValue>GECB</SourceIdentValue>
+                       <StartDate>2018-12-18 13:20:49.540</StartDate>
+                       <EndDate>2018-12-18 13:20:49.540</EndDate>
+                       <Attribute0Value>Billing Area Name</Attribute0Value>
+                       <Attribute0String>B12345</Attribute0String>
+                       <Attribute1Value>Billing Area Mnemonic</Attribute1Value>
+                       <Attribute1String>XYZ</Attribute1String>
+                       <Attribute2Value>Billing Area Federal Tax ID</Attribute2Value>
+                       <Attribute2String>1</Attribute2String>
+                       <Attribute3Value>Billing Area Deactivation Flag</Attribute3Value>
+                       <Attribute3String>C12345</Attribute3String>
+                       <Attribute4Value>Division Number</Attribute4Value>
+                       <Attribute4String>C12345</Attribute4String>
+                       <Attribute5Value>Division Name</Attribute5Value>
+                       <Attribute5String>C12345</Attribute5String>
+                       <Attribute6Value>Division Mnemonic</Attribute6Value>
+                       <Attribute6String>C12345</Attribute6String>
+                       <Attribute7Value>Division Deactivation Flag</Attribute7Value>
+                       <Attribute7String>C12345</Attribute7String>
+                    </TCRMPartyValueBObj>
+	
+                </TCRMPersonBObj>
+            </CompositeNWPersonBObj>
+        </TCRMObject>
+    </TCRMTx>
+</TCRMService>
+
+
+<?xml version="1.0" encoding="UTF-8"?>
+<TCRMService xmlns="http://www.ibm.com/mdm/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.ibm.com/mdm/schema MDMDomains.xsd">
+    <RequestControl>
+        <requestID>10015</requestID>
+        <DWLControl>
+            <requesterName>cusadmin</requesterName>
+            <requesterLanguage>100</requesterLanguage>
+        </DWLControl>
+    </RequestControl>
+    <TCRMTx>
+        <TCRMTxType>MaintainNWPerson</TCRMTxType>
+        <TCRMTxObject>CompositeNWPersonBObj</TCRMTxObject>
+        <TCRMObject>
+            <CompositeNWPersonBObj>
+                <TCRMPersonBObj>
+                    <LastVerifiedDate>1990-11-24 08:45:41.434175</LastVerifiedDate>
+                    <SourceIdentifierValue>Active Directory</SourceIdentifierValue>
+                    <TCRMAdminContEquivBObj>   
+                        <AdminPartyId>1061184</AdminPartyId>
+                        <AdminSystemValue>Active Directory</AdminSystemValue>
+                    </TCRMAdminContEquivBObj> 
+                    <TCRMPersonNameBObj>
+                        <NameUsageValue>Legal</NameUsageValue>
+                        <GivenNameOne>JIMMY</GivenNameOne>
+                        <GivenNameTwo>G</GivenNameTwo>
+                        <LastName>STEVENS</LastName>
+                        <SourceIdentifierValue>Active Directory</SourceIdentifierValue>
+                    </TCRMPersonNameBObj>  
+
+                </TCRMPersonBObj>
+            </CompositeNWPersonBObj>
+        </TCRMObject>
+    </TCRMTx>
+</TCRMService>
+
+

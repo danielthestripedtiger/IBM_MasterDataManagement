@@ -1,0 +1,1 @@
+sleep 15 && while true; do  ps -ef | grep Send | mail -v jvelez8@northwell.edu ; sleep 300; done

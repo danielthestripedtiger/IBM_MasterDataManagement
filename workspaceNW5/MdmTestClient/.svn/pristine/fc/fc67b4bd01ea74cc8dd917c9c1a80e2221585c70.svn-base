@@ -1,0 +1,70 @@
+{
+  "TCRMService": {
+    "@schemaLocation": "http://www.ibm.com/mdm/schema MDMDomains.xsd",
+    "RequestControl": {
+      "requestID": 604157,
+      "DWLControl": {
+        "requesterName": "mdmadmin",
+        "requesterLocale": "en"
+      }
+    },
+    "TCRMTx": {
+      "TCRMTxType": "MaintainPartyAccountRelationship",
+      "TCRMTxObject": "MDMCompositePartyBObj",
+      "TCRMObject": {
+        "MDMCompositePartyBObj": {
+          "TCRMContractBObj": [
+            {
+              "TCRMContractComponentBObj": {
+                "TCRMContractPartyRoleBObj": {
+                  "RoleValue": "Owner",
+                  "TCRMOrganizationBObj": {
+                    "TCRMPartyIdentificationBObj": {
+                      "IdentificationValue": "EID",
+                      "IdentificationNumber": ORG_EID_PLACEHOLDER1
+                    }
+                  }
+                }
+              },
+              "TCRMAdminNativeKeyBObj": {
+                "AdminContractId": "1225095"
+              }
+            },
+            {
+              "TCRMContractComponentBObj": {
+                "TCRMContractPartyRoleBObj": {
+                  "RoleValue": "Branch",
+                  "TCRMOrganizationBObj": {
+                    "TCRMPartyIdentificationBObj": {
+                      "IdentificationValue": "Branch Number",
+                      "IdentificationNumber": "5547"
+                    }
+                  }
+                }
+              },
+              "TCRMAdminNativeKeyBObj": {
+                "AdminContractId": "1225095"
+              }
+            },
+            {
+              "TCRMContractComponentBObj": {
+                "TCRMContractPartyRoleBObj": {
+                  "RoleValue": "Sales Representative",
+                  "TCRMOrganizationBObj": {
+                    "TCRMPartyIdentificationBObj": {
+                      "IdentificationValue": "Sales Rep ID",
+                      "IdentificationNumber": "103049"
+                    }
+                  }
+                }
+              },
+              "TCRMAdminNativeKeyBObj": {
+                "AdminContractId": "1225095"
+              }
+            }
+          ]
+        }
+      }
+    }
+  }
+}

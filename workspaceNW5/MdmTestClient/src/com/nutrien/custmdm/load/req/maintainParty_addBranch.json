@@ -1,0 +1,37 @@
+{
+"TCRMService": {
+	"@schemaLocation": "http:\/\/www.ibm.com\/mdm\/schema MDMDomains.xsd",
+     "RequestControl": {
+     	"requestID": 604157,
+          "DWLControl": {
+          	"requesterName": "mdmadmin",
+               "requesterLocale": "en"
+               }
+      },
+      "TCRMTx": {
+      	"TCRMTxType": "MaintainParty",
+          "TCRMTxObject": "MDMCompositePartyBObj",                                  
+          "TCRMObject": {
+          	"MDMCompositePartyBObj": {
+               	"TCRMOrganizationBObj": {
+               			"ClientStatusValue": "status",
+                    	"SourceIdentifierValue": "LMDM",
+                    	"OrganizationValue": "Branch",
+                    	"TCRMOrganizationNameBObj": {
+                    		"OrganizationName": "name",
+                         	"NameUsageValue": "Preferred"
+                         },
+                         "TCRMPartyIdentificationBObj": {
+                    		"IdentificationValue": "Branch Number",
+                         	"IdentificationNumber": "number"
+                         },
+                         "TCRMPartyRelationshipBObj": {
+                         	"RelationshipValue": "Branch of",
+                         	"RelationshipToValue": "divisionNumber",
+                         }
+                     }
+                }
+          }
+      }
+}
+}

@@ -1,0 +1,1 @@
+SELECT COUNT(*), to_char(logtime, 'DD/MM/YYYY HH24:MI:SS') AS minute_interval FROM TXN_LOGS GROUP BY to_char(logtime, 'DD/MM/YYYY HH24:MI:SS') ORDER BY minute_interval ASC;

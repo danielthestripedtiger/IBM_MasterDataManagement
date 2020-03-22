@@ -1,0 +1,9 @@
+Manifest-Version: 1.0
+Bundle-SymbolicName: party.pmeConfig
+Bundle-Name: party.pmeConfig
+Bundle-Version: 11.6.0.qualifier
+Bundle-ManifestVersion: 2
+Import-Package: com.ibm.mdm.mds.pme.api.osgi,org.osgi.framework,org.ap
+ ache.commons.logging
+Bundle-Blueprint: OSGI-INF/blueprint/blueprint.xml
+

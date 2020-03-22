@@ -1,0 +1,13 @@
+/****** Script for SelectTopNRows command from SSMS  ******/
+SELECT 'MDMSP' -- MEMHEAD:srccode
+      ,'NEWPORT'+[PersonID] -- MEMHEAD:memidnum
+      ,[Mailing_Address_Line_1] --PERMAILADDR:addrline1
+      ,[Mailing_Address_Line_2] --PERMAILADDR:addrline2
+      ,[Mailing_City] --PERMAILADDR:city
+      ,[Mailing_State] --PERMAILADDR:provstate
+      ,[Mailing_Zip] --PERMAILADDR:postalcode
+      ,[Effective_Date] --PERMAILADDR:provlocfromdt
+      ,[Termination_Date] --PERMAILADDR:provloctodt
+      ,[Date_Last_Modified] --PERMAILADDR:lastupddt
+      ,[Active_Status] --PERMAILADDR:locdeacflg
+  FROM [DataProfiling].[MDM].[Newport_Provider_Address_Mailing_VW]

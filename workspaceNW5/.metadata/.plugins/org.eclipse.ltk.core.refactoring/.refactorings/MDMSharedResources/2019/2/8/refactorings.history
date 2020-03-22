@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;MDMSharedResources/sql/check_approx_txns_per_sec.sql&apos; to &apos;Check_approx_txns_per_sec.sql&apos;" description="Rename resource &apos;check_approx_txns_per_sec.sql&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="sql/check_approx_txns_per_sec.sql" name="Check_approx_txns_per_sec.sql" stamp="1550687665079" updateReferences="true"/>
+</session>

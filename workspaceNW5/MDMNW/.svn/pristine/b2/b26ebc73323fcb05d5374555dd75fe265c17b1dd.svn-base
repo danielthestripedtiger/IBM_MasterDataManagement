@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE TCRMExtension>
+	
+<!--
+	The following source code ("Code") may only be used in accordance with the terms
+	and conditions of the license agreement you have with IBM Corporation. The Code 
+	is provided to you on an "AS IS" basis, without warranty of any kind.  
+	SUBJECT TO ANY STATUTORY WARRANTIES WHICH CAN NOT BE EXCLUDED, IBM MAKES NO 
+	WARRANTIES OR CONDITIONS EITHER EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED 
+	TO, THE IMPLIED WARRANTIES OR CONDITIONS OF MERCHANTABILITY, FITNESS FOR A 
+	PARTICULAR PURPOSE, AND NON-INFRINGEMENT, REGARDING THE CODE. IN NO EVENT WILL 
+	IBM BE LIABLE TO YOU OR ANY PARTY FOR ANY DIRECT, INDIRECT, SPECIAL OR OTHER 
+	CONSEQUENTIAL DAMAGES FOR ANY USE OF THE CODE, INCLUDING, WITHOUT LIMITATION, 
+	LOSS OF, OR DAMAGE TO, DATA, OR LOST PROFITS, BUSINESS, REVENUE, GOODWILL, OR 
+	ANTICIPATED SAVINGS, EVEN IF IBM HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH 
+	DAMAGES. SOME JURISDICTIONS DO NOT ALLOW THE EXCLUSION OR LIMITATION OF 
+	INCIDENTAL OR CONSEQUENTIAL DAMAGES, SO THE ABOVE LIMITATION OR EXCLUSION MAY 
+	NOT APPLY TO YOU.
+-->
+
+<!--
+	IBM-MDMWB-1.0-[62ac4f01634f2f1f08a52486f15eb3d8]
+-->
+
+<TCRMExtension>
+    <ExtendedObject>XNWPartyAddressBObjExt</ExtendedObject>
+    <XNWPartyAddressBObjExt>
+       <XProvider_Facility_Staff_Code></XProvider_Facility_Staff_Code>
+       <XProvider_Facility_Active_Status></XProvider_Facility_Active_Status>
+       <XPrimary_Office_Flag></XPrimary_Office_Flag>
+       <XDeactivation_Flag></XDeactivation_Flag>
+       <XPrimary_Billing_Location_Flag></XPrimary_Billing_Location_Flag>
+       <XCredential_Status></XCredential_Status>
+       <XProvider_Status></XProvider_Status>
+       <XScheduling_Primary_Flag></XScheduling_Primary_Flag>
+       <XPhone></XPhone>
+       <XPhone_Ext></XPhone_Ext>
+       <XSecondary_Phone></XSecondary_Phone>
+       <XSec_Phone_Ext></XSec_Phone_Ext>
+       <XFax></XFax>
+    </XNWPartyAddressBObjExt>
+</TCRMExtension>
+

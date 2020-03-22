@@ -1,0 +1,127 @@
+########################################################## {COPYRIGHT-TOP} ###
+# Licensed Materials - Property of IBM
+#
+# 5725-E59
+#
+# (C) Copyright IBM Corp. 2013  All Rights Reserved.
+#
+# US Government Users Restricted Rights - Use, duplication, or
+# disclosure restricted by GSA ADP Schedule Contract with IBM Corp.
+########################################################## {COPYRIGHT-END} ###
+########################################################## {COPYRIGHT-TOP} #####
+# Licensed Materials - Property of IBM
+#
+# 5725-E59
+#
+# (C) Copyright IBM Corp. 2006, 2011 All Rights Reserved.
+#
+# US Government Users Restricted Rights - Use, duplication, or
+# disclosure restricted by GSA ADP Schedule Contract with IBM Corp.
+########################################################## {COPYRIGHT-END} #####
+##################################################################################################
+# TCRM Extension Properties
+#
+# Version 8.0.0
+# This version is used in conjuction with Customer 8.0
+#
+# This is the extended properties file where a client can configure the settings according to
+# their specific values. DWL Customer has default values shipped with the product that is contained
+# in the TCRM.properties file. Any properties with the same name, in this extension property file
+# will be value the application will use.
+# This extension property file gets shipped with the installation set. Every property is commented
+# out and the client is required to uncomment and enter their values.
+# Where the actual line is to configured, look for "- configure next" - it tells you what line is
+# configurable.
+####################################################################################################
+
+
+########################################################
+# eME attribute codes corresponding to various codetypes of the business objects in MDM.
+#
+# Left Hand Side of the assignment Operator.
+#   RootObject(i.e.,Person or Organization)
+#     ChildObject(i.e., PersonName,PartyContactMethod,PartyAddress etc)
+#       ElementName of the codeType which is mapped to eME(i.e., NameUsageType,AddressUsageType etc)
+#		   Value of the codeType to which mapping has to be done.
+# Right Hand Side of the assignment operator.
+#	Attribute code for the eME.
+########################################################	 
+Person.PersonName.NameUsageType.4=PERAKANAME
+Person.PersonName.NameUsageType.1=PERLEGALNAME
+Person.PersonName.NameUsageType.5=PERMAIDENNAM
+
+Person.PartyAddress.AddressUsageType.1=PERPRIMERRES
+
+Person.PartyIdentification.IdentificationType.1000024=PEREMPLID
+Person.PartyIdentification.IdentificationType.1000023=PERGESOARID
+Person.PartyIdentification.IdentificationType.10=PERSSN
+Person.PartyIdentification.IdentificationType.1000028=PERSOARINTRS
+Person.PartyIdentification.IdentificationType.1000004=PERSTLICNUM
+Person.PartyIdentification.IdentificationType.1000003=PERUPINID
+Person.PartyIdentification.IdentificationType.1000002=PERUNIVID
+Person.PartyIdentification.IdentificationType.1000007=PERMCDNUM
+Person.PartyIdentification.IdentificationType.1000006=PERMCRNUM
+Person.PartyIdentification.IdentificationType.1000001=PERNPIID
+
+Person.PartyContactMethod.ContactMethodUsageType.1=PERHOMEPHONE
+Person.PartyContactMethod.ContactMethodUsageType.5=PERCELLULAR
+Person.PartyContactMethod.ContactMethodUsageType.6=PERBUSEMAIL
+Person.PartyContactMethod.ContactMethodUsageType.1000003=PERBUSMOBILE
+Person.PartyContactMethod.ContactMethodUsageType.7=PERPERSEMAIL
+
+Person.BirthDate=PERBIRTHDATE
+Person.GenderType=PERGENDER
+
+#Organization.OrganizationName.NameUsageType.1=ORGLEGALNAME
+#Organization.OrganizationName.NameUsageType.2=ORGBUSNAME
+#Organization.OrganizationName.NameUsageType.3=ORGABBRNAME
+
+#Organization.PartyAddress.AddressUsageType.3=ORGBUSADDR
+#Organization.PartyAddress.AddressUsageType.4=ORGMAILADDR
+
+#Organization.PartyIdentification.IdentificationType.2=ORGCORPTAXID
+#Organization.PartyIdentification.IdentificationType.12=ORGDUNSNUM
+
+#Organization.PartyContactMethod.ContactMethodUsageType.2=ORGBUSPHONE
+
+
+######################################################
+#Potential Matching Elements for eME Synchronization
+######################################################
+#Person.PartyIdentification.IdentificationType.3=PERDRVRLICEN
+#Person.PartyIdentification.IdentificationType.4=PERBIRTHCERT
+#Person.PartyIdentification.IdentificationType.6=PERTAXIDNUM
+#Person.PartyIdentification.IdentificationType.7=PERTAXREGNUM
+#Person.PartyIdentification.IdentificationType.8=PERPASSPORT
+#Person.PartyIdentification.IdentificationType.9=PERHEALTHCRD
+#Person.PartyIdentification.IdentificationType.11=PERABILITEC
+
+#Person.PartyContactMethod.ContactMethodUsageType.2=PERBUSPHONE
+#Person.PartyContactMethod.ContactMethodUsageType.3=PERFAX
+#Person.PartyContactMethod.ContactMethodUsageType.4=PERPAGER
+#Person.PartyContactMethod.ContactMethodUsageType.6=PERBUSEMAIL
+#Person.PartyContactMethod.ContactMethodUsageType.7=PERPERSEMAIL
+
+#Person.PartyBankAccount.AccountType.1=PERCHECKACCT
+#Person.PartyBankAccount.AccountType.2=PERSAVNGACCT
+#Person.PartyBankAccount.AccountType.3=PERINVSTCERT
+#Person.PartyBankAccount.AccountType.4=PERLINEOFCRD
+#Person.PartyBankAccount.AccountType.5=PERMONEYMKT
+#Person.PartyBankAccount.AccountType.6=PERCERTDEPST
+#Person.PartyBankAccount.AccountType.7=PERTERMDEPST
+
+#Person.PartyChargeCard.CardType.1=PERVISA
+#Person.PartyChargeCard.CardType.2=PERMASTERCRD
+#Person.PartyChargeCard.CardType.3=PERAMEX
+#Person.PartyChargeCard.CardType.4=PERDINERCLUB
+
+#Organization.PartyIdentification.IdentificationType.11=ORGABILITEC
+
+#Organization.PartyContactMethod.ContactMethodUsageType.3=ORGFAX
+
+#Person.DeceaseDate=PERDECEASDTE
+#Person.BirthDate=PERBIRTHDATE
+#Person.GenderType=PERGENDER
+#Organization.EstablishedDate=ORGESTABDATE
+
+

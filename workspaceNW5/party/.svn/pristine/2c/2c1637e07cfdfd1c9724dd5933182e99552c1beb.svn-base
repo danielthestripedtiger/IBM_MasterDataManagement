@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<JobSet name="WebSphere Application Server v8.5 at mwbdbmdmap002l_1549054495137_18" version="1.0">
+  <madunlload MAD_TIMER="true" MAD_DEBUG="false" MAD_TRACE="false" MAD_DBSQL="false" MAD_AUDIT="false" MAD_ALGO="false" objCode="MEM" mode="onepass" unlDir="unl" useint="false" remote="false" maxErrs="1" commitSize="0" noExec="false" verbose="false" encoding="utf8" tabList="mpi_memhead mpi_membktd mpi_memcmpd mpi_memqryd mpi_membillhier mpi_memtaxonomy mpi_orgaddr mpi_orgdate mpi_orgident mpi_orgname mpi_orgphone mpi_orgtype mpi_peraddr mpi_perattrext mpi_perbank mpi_bankcard mpi_perdate mpi_peremail mpi_perethnicity mpi_pergender mpi_perident mpi_permanager mpi_permarital mpi_pername mpi_perphone mpi_perrace mpi_persourceid mpi_perspecialty" dontStop="false" memberType="PERSON" entityType="mdmper" />
+</JobSet>
+

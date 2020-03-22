@@ -1,0 +1,115 @@
+package com.nutrien.custmdm.unittest.r1;
+
+import java.io.File;
+import java.io.IOException;
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Statement;
+import java.util.Scanner;
+
+import org.apache.commons.lang3.StringUtils;
+
+import com.nutrien.custmdm.unit.test.AbstractMDMTest;
+ 
+public class RegenerateTasks extends AbstractMDMTest 
+{
+	
+	static Connection sqlConn = null;
+	static Statement sqlStmt = null;
+	static ResultSet sqlResultset = null;
+	static Statement sqlStmtDelete = null;
+	
+    public static void main(String[] args) throws IOException, SQLException
+    {
+    	
+    	if(args[0] == null){
+    		System.out.println("Argument is required. Provide PartyID (CONT_ID) that this operatiion should apply to or provide ALL to perform for all suspects");
+    	}
+    	
+		try {
+			// Returns the Class object associated with the class
+			Class.forName("oracle.jdbc.driver.OracleDriver");
+		} catch (ClassNotFoundException exception) {
+			System.out.println("Oracle Driver Class Not found Exception: " + exception.toString());
+			return;
+		}
+
+		// Set connection timeout. Make sure you set this correctly as per your need
+		DriverManager.setLoginTimeout(5);
+		//			System.out.println("Oracle JDBC Driver Successfully Registered! Let's make connection now");
+
+		try {
+			// Attempts to establish a connection
+			// here DB name: localhost, sid: crunchify
+			sqlConn = DriverManager.getConnection("jdbc:oracle:thin:@biccmdmpdb01.nshs.edu:1522:mdmprd", "mdmduser", "mdmp19go");
+		} catch (SQLException e) {
+			System.out.println("Connection Failed! Check output console");
+			e.printStackTrace();
+			return;
+		}
+
+		// Creates a Statement object for sending SQL statements to the database
+		sqlStmt = sqlConn.createStatement();
+
+		String filter = "";
+		if(args[0].equals("ALL")){
+			filter = "S.CONT_ID";
+		} else{
+			filter = "'" + args[0] + "'";
+		}
+		
+		// Executes the given SQL statement, which returns a single ResultSet object
+		sqlResultset = sqlStmt.executeQuery("SELECT S.CONT_ID AS CONT_ID, P.GENDER_TP_CODE AS GENDER_TP_CODE, to_char(P.LAST_UPDATE_DT, 'YYYY-MM-DD HH24:MI:SS') AS LAST_UPDATE_DT FROM SUSPECT S "
+				+ "INNER JOIN PERSON P ON S.CONT_ID = P.CONT_ID "
+				+ "WHERE S.CONT_ID = " + filter );
+
+
+		
+		while (sqlResultset.next()) {
+			String partyId = sqlResultset.getString(1); 
+			String gender = sqlResultset.getString(2); 
+			String lastUpdDate = sqlResultset.getString(3); 
+			
+			sqlStmtDelete = sqlConn.createStatement();
+			sqlStmtDelete.executeUpdate("DELETE FROM SUSPECT WHERE CONT_ID = '" + partyId + "'");
+			
+			String changeMessage1 = "<?xml version=\"1.0\" encoding=\"UTF-8\"?><TCRMService xmlns=\"http://www.ibm.com/mdm/schema\"    xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xsi:schemaLocation=\"http://www.ibm.com/mdm/schema MDMDomains.xsd\">   <RequestControl>      <requestID>10015</requestID>      <DWLControl>         <requesterName>cusadmin</requesterName>         <requesterLanguage>100</requesterLanguage>      </DWLControl>   </RequestControl>   <TCRMTx>      <TCRMTxType>updatePerson</TCRMTxType>      <TCRMTxObject>TCRMPersonBObj</TCRMTxObject>      <TCRMObject>            <TCRMPersonBObj>            			<PartyId>"+partyId+"</PartyId><PartyLastUpdateDate>"+lastUpdDate+"</PartyLastUpdateDate><GenderType>U</GenderType><PersonLastUpdateDate>" + lastUpdDate + "</PersonLastUpdateDate>                          </TCRMPersonBObj>      </TCRMObject>   </TCRMTx></TCRMService>";
+		}
+    	loadClientOpts();
+    	
+        File f = new File(args[0]);
+        Scanner numScan = new Scanner(f);
+         
+        String line;
+         
+        while (numScan.hasNext())
+        {
+        	
+            line = numScan.nextLine();
+            String response = sendRequestViaRest(line);
+            
+            if(response.contains("<ResultCode>SUCCESS</ResultCode>")){
+                System.out.print("SUCCESS");
+                System.out.print("`");
+                System.out.print("N/A");
+            }
+            else if(response.contains("<ResultCode>FATAL</ResultCode>")){
+                System.out.print("FATAL");
+                System.out.print("`");
+                System.out.print(StringUtils.substringBetween(response, "<Throwable>", "</Throwable>"));
+            } else{
+            	System.out.print("UNKNOWN");
+                System.out.print("`");
+                System.out.print("N/A");
+            }
+            System.out.print("`");
+            System.out.print(line);
+            System.out.print("`");
+            System.out.println(response);
+        }
+         
+        numScan.close();
+    }
+}

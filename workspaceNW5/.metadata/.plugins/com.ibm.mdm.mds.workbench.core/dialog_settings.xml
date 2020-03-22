@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="com.initiatesystems.workbench.ui.wizards.rescore.RescoreMembersWizard">
+	</section>
+	<section name="com.initiatesystems.workbench.ui.wizards.jobset.JobSetExecutionWizard">
+	</section>
+	<section name="com.ibm.mdm.mds.workbench.pme.configuration.ui.PMEPackageWizard">
+		<item value="party.pmeConfig" key="party.bundleProject"/>
+	</section>
+	<section name="serverWebContainerPorts">
+		<item value="14119" key="WebSphere Application Server v8.5 at biccmdmtapp01"/>
+	</section>
+	<section name="com.initiatesystems.workbench.ui.wizards.deploy.DeployConfigWizard">
+		<item value="true" key="coreConfig"/>
+		<item value="weights" key="weightsFolder"/>
+		<item value="true" key="algsConfig"/>
+		<item value="true" key="inspectorConfig"/>
+		<item value="true" key="weightData"/>
+		<item value="party" key="projectName"/>
+		<item value="true" key="stringData"/>
+		<item value="false" key="ddlexecConfig"/>
+		<item value="false" key="flexSearchConfig"/>
+	</section>
+	<section name="serverUseSSL">
+		<item value="false" key="WebSphere Application Server v8.5 at biccmdmtapp01"/>
+	</section>
+</section>

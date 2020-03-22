@@ -1,0 +1,21 @@
+/****** Script for SelectTopNRows command from SSMS  ******/
+SELECT 'MDMSP' -- MEMHEAD:srccode
+      ,'NEWPORT'+[PersonID] -- MEMHEAD:memidnum
+      ,[Group_NPI] -- PERGRPNPIID:idnum
+      ,[Facility_Tax_ID_Number] -- SCHEDLOC:taxid
+      ,[Newport_Key] -- SCHEDLOC:newportkey
+      ,[Scheduling_Location_ID] -- SCHEDLOC:locid
+      ,[Scheduling_Location_Name] -- SCHEDLOC:locnm
+      ,[Scheduling_Location_Address_Line_1] -- SCHEDLOC:addrline1
+      ,[Scheduling_Location_Address_Line_2] -- SCHEDLOC:addrline2
+      ,[Scheduling_Location_City] -- SCHEDLOC:city
+      ,[Scheduling_Location_State] -- SCHEDLOC:provstate
+      ,[Scheduling_Location_Zip] -- SCHEDLOC:postalcode
+      ,[Scheduling_Location_County] -- SCHEDLOC:county
+      ,[Scheduling_Location_Primary_Phone_Number] -- SCHEDLOC:phone
+      ,[Scheduling_Location_Primary_Flag] -- SCHEDLOC:schedprimflg
+      ,[Effective_Date] -- SCHEDLOC:provlocfromdt
+      ,[Termination_Date] -- SCHEDLOC:provloctodt
+      ,[Date_Last_Modified] -- SCHEDLOC:lastupddt
+      ,[Active_Status] -- SCHEDLOC:locdeacflg
+  FROM [DataProfiling].[MDM].[Newport_Provider_Address_Scheduling_VW]

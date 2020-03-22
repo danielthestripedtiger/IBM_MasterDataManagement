@@ -1,0 +1,28 @@
+#local,dev,sit
+environment=local
+
+# ============================= LOCAL ENPOINT
+local.mdm_rest_endpoint=http://localhost:9080//com.ibm.mdm.server.ws.restful/resources/MDMWSRESTful
+local.mdm_virtual_endpoint=http://localhost:9080/ibminitiatews/services/IdentityHub
+local.mdm_publish_endpoint=http://localhost:9080/CustMdmTestNotificationServlet/Notification/localhost/2809
+local.mdm_queue=MDS.QUEUE
+local.username=mdmadmin
+local.password=Agrium17
+
+# ============================= DEV ENPOINT
+dev.mdm_rest_endpoint=http://abcgydcdapp125:9081//com.ibm.mdm.server.ws.restful/resources/MDMWSRESTful
+dev.mdm_virtual_endpoint=http://abcgydcdapp125:9081/ibminitiatews/services/IdentityHub
+dev.username=mdmuser
+dev.password=mdmuser
+
+
+# ============================= SIT ENPOINT
+sit.mdm_rest_endpoint=http://abcgydctapp37:9081//com.ibm.mdm.server.ws.restful/resources/MDMWSRESTful
+sit.mdm_virtual_endpoint=http://abcgydctapp37:9081/ibminitiatews/services/IdentityHub
+sit.username=mdmuser
+sit.password=mdmuser
+
+# ============================= Prod ENPOINT
+#prod.mdm_rest_endpoint=http://codendcpapp218:9081//com.ibm.mdm.server.ws.restful/resources/MDMWSRESTful
+#prod.username=
+#prod.password=

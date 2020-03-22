@@ -1,0 +1,322 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TCRMService xmlns="http://www.ibm.com/mdm/schema" 
+   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.ibm.com/mdm/schema MDMDomains.xsd">
+   <RequestControl>
+      <requestID>10015</requestID>
+      <DWLControl>
+         <requesterName>cusadmin</requesterName>
+         <requesterLanguage>100</requesterLanguage>
+      </DWLControl>
+   </RequestControl>
+   <TCRMTx>
+      <TCRMTxType>MaintainNWPerson</TCRMTxType>
+      <TCRMTxObject>CompositeNWPersonBObj</TCRMTxObject>
+      <TCRMObject>
+         <CompositeNWPersonBObj>
+            <ObjectReferenceId></ObjectReferenceId>
+            <TCRMPersonBObj>
+               <SourceIdentifierValue>Echo</SourceIdentifierValue>
+
+               <TCRMPartyAddressBObj>
+                  <AddressUsageValue>Scheduling Address</AddressUsageValue>
+                  <StartDate>2017-11-21 08:45:41.434175</StartDate>
+                  <EndDate>2020-11-24 08:45:41.434175</EndDate>
+                  <SourceIdentifierValue>Echo</SourceIdentifierValue>
+                  <TCRMExtension>
+                     <ExtendedObject>XNWPartyAddressBObjExt</ExtendedObject>
+                     <XNWPartyAddressBObjExt>
+                        <XProvider_Facility_Staff_Code></XProvider_Facility_Staff_Code>
+                        <XPrimary_Office_Flag>1</XPrimary_Office_Flag>
+                        <XDeactivation_Flag>Active</XDeactivation_Flag>
+                        <XPrimary_Billing_Location_Flag></XPrimary_Billing_Location_Flag>
+                        <XCredential_Status></XCredential_Status>
+                        <XProvider_Status></XProvider_Status>
+                        <XScheduling_Primary_Flag></XScheduling_Primary_Flag>
+                        <XPhone>123-232-3232</XPhone>
+                        <XPhone_Ext>3235</XPhone_Ext>
+                        <XSecondary_Phone>123-333-4444</XSecondary_Phone>
+                        <XSec_Phone_Ext>3422</XSec_Phone_Ext>
+                        <XFax>354-345-5435</XFax>
+                     </XNWPartyAddressBObjExt>
+                  </TCRMExtension>
+                  <TCRMAddressBObj>
+                     <AddressLineOne>1234 MAIN ST</AddressLineOne>
+                     <City>NEW YORK</City>
+                     <ZipPostalCode>10001</ZipPostalCode>
+                     <ProvinceStateValue>NY</ProvinceStateValue>
+                     <CountryValue>United States of America</CountryValue>
+                     <TCRMExtension>
+                        <ExtendedObject>XNWAddressBObjExt</ExtendedObject>
+                        <XNWAddressBObjExt>
+                           <XCounty>QUEENS</XCounty>
+                           <XHospital></XHospital>
+                           <XFacility_Name></XFacility_Name>
+                           <XFacility_Code></XFacility_Code>
+                           <XDepartment_Code>DEPT A</XDepartment_Code>
+                           <XDepartment_Description></XDepartment_Description>
+                           <XLocation_Code></XLocation_Code>
+                           <XLocation_Description></XLocation_Description>
+                           <XLocation_Mnemonic>LOCATIONA</XLocation_Mnemonic>
+                           <XLocation_ID>21313</XLocation_ID>
+                           <XLocation_Name>LOC A</XLocation_Name>
+                           <XPhone>123-232-3232</XPhone>
+                           <XPhone_Ext>3235</XPhone_Ext>
+                           <XSecondary_Phone>123-333-4444</XSecondary_Phone>
+                           <XSec_Phone_Ext>3422</XSec_Phone_Ext>
+                           <XFax>354-345-5435</XFax>
+                           <XTax_ID_Number></XTax_ID_Number>
+                           <XNewport_Key></XNewport_Key>
+                           <XDeactivation_Flag>Active</XDeactivation_Flag>
+                           <XActivation_Date>2017-11-21 08:45:41.434175</XActivation_Date>
+                           <XDeactivation_Date>2020-11-21 08:45:41.434175</XDeactivation_Date>
+                        </XNWAddressBObjExt>
+                     </TCRMExtension>
+                  </TCRMAddressBObj>
+               </TCRMPartyAddressBObj>
+               <TCRMPartyAddressBObj>
+                  <AddressUsageValue>Billing Address</AddressUsageValue>
+                  <StartDate>2017-11-21 08:45:41.434175</StartDate>
+                  <EndDate>2020-11-24 08:45:41.434175</EndDate>
+                  <SourceIdentifierValue>Echo</SourceIdentifierValue>
+                  <TCRMExtension>
+                     <ExtendedObject>XNWPartyAddressBObjExt</ExtendedObject>
+                     <XNWPartyAddressBObjExt>
+                        <XProvider_Facility_Staff_Code></XProvider_Facility_Staff_Code>
+                        <XProvider_Facility_Active_Status></XProvider_Facility_Active_Status>
+                        <XPrimary_Office_Flag></XPrimary_Office_Flag>
+                        <XDeactivation_Flag></XDeactivation_Flag>
+                        <XPrimary_Billing_Location_Flag>1</XPrimary_Billing_Location_Flag>
+                        <XCredential_Status></XCredential_Status>
+                        <XProvider_Status></XProvider_Status>
+                        <XScheduling_Primary_Flag></XScheduling_Primary_Flag>
+                        <XPhone>123-232-3232</XPhone>
+                        <XPhone_Ext>3235</XPhone_Ext>
+                        <XSecondary_Phone>123-333-4444</XSecondary_Phone>
+                        <XSec_Phone_Ext>3422</XSec_Phone_Ext>
+                        <XFax>354-345-5435</XFax>
+                     </XNWPartyAddressBObjExt>
+                  </TCRMExtension>
+                  <TCRMAddressBObj>
+                     <AddressLineOne>1234 MAIN ST</AddressLineOne>
+                     <City>NEW YORK</City>
+                     <ZipPostalCode>10001</ZipPostalCode>
+                     <ProvinceStateValue>NY</ProvinceStateValue>
+                     <CountryValue>United States of America</CountryValue>
+                     <TCRMExtension>
+                        <ExtendedObject>XNWAddressBObjExt</ExtendedObject>
+                        <XNWAddressBObjExt>
+                           <XCounty>QUEENS</XCounty>
+                           <XHospital></XHospital>
+                           <XFacility_Name></XFacility_Name>
+                           <XFacility_Code></XFacility_Code>
+                           <XDepartment_Code>DEPT A</XDepartment_Code>
+                           <XDepartment_Description></XDepartment_Description>
+                           <XLocation_Code></XLocation_Code>
+                           <XLocation_Description></XLocation_Description>
+                           <XLocation_Mnemonic>LOCATIONA</XLocation_Mnemonic>
+                           <XLocation_ID>21313</XLocation_ID>
+                           <XLocation_Name>LOC A</XLocation_Name>
+                           <XPhone>123-232-3232</XPhone>
+                           <XPhone_Ext>3235</XPhone_Ext>
+                           <XSecondary_Phone>123-333-4444</XSecondary_Phone>
+                           <XSec_Phone_Ext>3422</XSec_Phone_Ext>
+                           <XFax>354-345-5435</XFax>
+                           <XTax_ID_Number></XTax_ID_Number>
+                           <XNewport_Key></XNewport_Key>
+                           <XDeactivation_Flag>Active</XDeactivation_Flag>
+                           <XActivation_Date>2017-11-21 08:45:41.434175</XActivation_Date>
+                           <XDeactivation_Date>2020-11-21 08:45:41.434175</XDeactivation_Date>
+                        </XNWAddressBObjExt>
+                     </TCRMExtension>
+                  </TCRMAddressBObj>
+               </TCRMPartyAddressBObj>
+
+               <TCRMAdminContEquivBObj>
+                  <AdminPartyId>010101010</AdminPartyId>
+                  <AdminSystemValue>Echo</AdminSystemValue>
+               </TCRMAdminContEquivBObj>
+               <TCRMPersonNameBObj>
+                  <NameUsageValue>Legal</NameUsageValue>
+                  <GivenNameOne>Kelly</GivenNameOne>
+                  <GivenNameTwo></GivenNameTwo>
+                  <LastName>Blackstone</LastName>
+                  <Suffix>III</Suffix>
+                  <SourceIdentifierValue>Echo</SourceIdentifierValue>
+                  <TCRMExtension>
+                     <ExtendedObject>XNWPersonNameBObjExt</ExtendedObject>
+                     <XNWPersonNameBObjExt>
+                        <XFull_Name>John TESTONE</XFull_Name>
+                        <XDegree>PHD</XDegree>
+                     </XNWPersonNameBObjExt>
+                  </TCRMExtension>
+               </TCRMPersonNameBObj>
+
+
+            </TCRMPersonBObj>
+         </CompositeNWPersonBObj>
+      </TCRMObject>
+   </TCRMTx>
+</TCRMService>
+
+
+
+
+<?xml version="1.0" encoding="UTF-8"?>
+<TCRMService xmlns="http://www.ibm.com/mdm/schema" 
+   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.ibm.com/mdm/schema MDMDomains.xsd">
+   <RequestControl>
+      <requestID>10015</requestID>
+      <DWLControl>
+         <requesterName>cusadmin</requesterName>
+         <requesterLanguage>100</requesterLanguage>
+      </DWLControl>
+   </RequestControl>
+   <TCRMTx>
+      <TCRMTxType>MaintainNWPerson</TCRMTxType>
+      <TCRMTxObject>CompositeNWPersonBObj</TCRMTxObject>
+      <TCRMObject>
+         <CompositeNWPersonBObj>
+            <ObjectReferenceId></ObjectReferenceId>
+            <TCRMPersonBObj>
+               <SourceIdentifierValue>Echo</SourceIdentifierValue>
+
+               <TCRMPartyAddressBObj>
+                  <AddressUsageValue>Scheduling Address</AddressUsageValue>
+                  <StartDate>2017-11-21 08:45:41.434175</StartDate>
+                  <EndDate>2020-11-24 08:45:41.434175</EndDate>
+                  <SourceIdentifierValue>Echo</SourceIdentifierValue>
+                  <TCRMExtension>
+                     <ExtendedObject>XNWPartyAddressBObjExt</ExtendedObject>
+                     <XNWPartyAddressBObjExt>
+                        <XProvider_Facility_Staff_Code></XProvider_Facility_Staff_Code>
+                        <XPrimary_Office_Flag>0</XPrimary_Office_Flag>
+                        <XDeactivation_Flag>Active</XDeactivation_Flag>
+                        <XPrimary_Billing_Location_Flag></XPrimary_Billing_Location_Flag>
+                        <XCredential_Status></XCredential_Status>
+                        <XProvider_Status></XProvider_Status>
+                        <XScheduling_Primary_Flag></XScheduling_Primary_Flag>
+                        <XPhone>123-232-9999</XPhone>
+                        <XPhone_Ext>3235</XPhone_Ext>
+                        <XSecondary_Phone>123-333-4444</XSecondary_Phone>
+                        <XSec_Phone_Ext>3422</XSec_Phone_Ext>
+                        <XFax>354-345-5435</XFax>
+                     </XNWPartyAddressBObjExt>
+                  </TCRMExtension>
+                  <TCRMAddressBObj>
+                     <AddressLineOne>1234 MAIN ST</AddressLineOne>
+                     <City>NEW YORK</City>
+                     <ZipPostalCode>10001</ZipPostalCode>
+                     <ProvinceStateValue>NY</ProvinceStateValue>
+                     <CountryValue>United States of America</CountryValue>
+                     <TCRMExtension>
+                        <ExtendedObject>XNWAddressBObjExt</ExtendedObject>
+                        <XNWAddressBObjExt>
+                           <XCounty>QUEENS</XCounty>
+                           <XHospital></XHospital>
+                           <XFacility_Name></XFacility_Name>
+                           <XFacility_Code></XFacility_Code>
+                           <XDepartment_Code>DEPT A</XDepartment_Code>
+                           <XDepartment_Description></XDepartment_Description>
+                           <XLocation_Code></XLocation_Code>
+                           <XLocation_Description></XLocation_Description>
+                           <XLocation_Mnemonic>LOCATIONA</XLocation_Mnemonic>
+                           <XLocation_ID>21313</XLocation_ID>
+                           <XLocation_Name>LOC A</XLocation_Name>
+                           <XPhone>123-232-3232</XPhone>
+                           <XPhone_Ext>3235</XPhone_Ext>
+                           <XSecondary_Phone>123-333-4444</XSecondary_Phone>
+                           <XSec_Phone_Ext>3422</XSec_Phone_Ext>
+                           <XFax>354-345-5435</XFax>
+                           <XTax_ID_Number></XTax_ID_Number>
+                           <XNewport_Key></XNewport_Key>
+                           <XDeactivation_Flag>Active</XDeactivation_Flag>
+                           <XActivation_Date>2017-11-21 08:45:41.434175</XActivation_Date>
+                           <XDeactivation_Date>2020-11-21 08:45:41.434175</XDeactivation_Date>
+                        </XNWAddressBObjExt>
+                     </TCRMExtension>
+                  </TCRMAddressBObj>
+               </TCRMPartyAddressBObj>
+               <TCRMPartyAddressBObj>
+                  <AddressUsageValue>Billing Address</AddressUsageValue>
+                  <StartDate>2017-11-21 08:45:41.434175</StartDate>
+                  <EndDate>2020-11-24 08:45:41.434175</EndDate>
+                  <SourceIdentifierValue>Echo</SourceIdentifierValue>
+                  <TCRMExtension>
+                     <ExtendedObject>XNWPartyAddressBObjExt</ExtendedObject>
+                     <XNWPartyAddressBObjExt>
+                        <XProvider_Facility_Staff_Code></XProvider_Facility_Staff_Code>
+                        <XProvider_Facility_Active_Status></XProvider_Facility_Active_Status>
+                        <XPrimary_Office_Flag></XPrimary_Office_Flag>
+                        <XDeactivation_Flag></XDeactivation_Flag>
+                        <XPrimary_Billing_Location_Flag>0</XPrimary_Billing_Location_Flag>
+                        <XCredential_Status></XCredential_Status>
+                        <XProvider_Status></XProvider_Status>
+                        <XScheduling_Primary_Flag></XScheduling_Primary_Flag>
+                        <XPhone>123-232-9999</XPhone>
+                        <XPhone_Ext>3235</XPhone_Ext>
+                        <XSecondary_Phone>123-333-4444</XSecondary_Phone>
+                        <XSec_Phone_Ext>3422</XSec_Phone_Ext>
+                        <XFax>354-345-5435</XFax>
+                     </XNWPartyAddressBObjExt>
+                  </TCRMExtension>
+                  <TCRMAddressBObj>
+                     <AddressLineOne>1234 MAIN ST</AddressLineOne>
+                     <City>NEW YORK</City>
+                     <ZipPostalCode>10001</ZipPostalCode>
+                     <ProvinceStateValue>NY</ProvinceStateValue>
+                     <CountryValue>United States of America</CountryValue>
+                     <TCRMExtension>
+                        <ExtendedObject>XNWAddressBObjExt</ExtendedObject>
+                        <XNWAddressBObjExt>
+                           <XCounty>QUEENS</XCounty>
+                           <XHospital></XHospital>
+                           <XFacility_Name></XFacility_Name>
+                           <XFacility_Code></XFacility_Code>
+                           <XDepartment_Code>DEPT A</XDepartment_Code>
+                           <XDepartment_Description></XDepartment_Description>
+                           <XLocation_Code></XLocation_Code>
+                           <XLocation_Description></XLocation_Description>
+                           <XLocation_Mnemonic>LOCATIONA</XLocation_Mnemonic>
+                           <XLocation_ID>21313</XLocation_ID>
+                           <XLocation_Name>LOC A</XLocation_Name>
+                           <XPhone>123-232-3232</XPhone>
+                           <XPhone_Ext>3235</XPhone_Ext>
+                           <XSecondary_Phone>123-333-4444</XSecondary_Phone>
+                           <XSec_Phone_Ext>3422</XSec_Phone_Ext>
+                           <XFax>354-345-5435</XFax>
+                           <XTax_ID_Number></XTax_ID_Number>
+                           <XNewport_Key></XNewport_Key>
+                           <XDeactivation_Flag>Active</XDeactivation_Flag>
+                           <XActivation_Date>2017-11-21 08:45:41.434175</XActivation_Date>
+                           <XDeactivation_Date>2020-11-21 08:45:41.434175</XDeactivation_Date>
+                        </XNWAddressBObjExt>
+                     </TCRMExtension>
+                  </TCRMAddressBObj>
+               </TCRMPartyAddressBObj>
+
+               <TCRMAdminContEquivBObj>
+                  <AdminPartyId>010101010</AdminPartyId>
+                  <AdminSystemValue>Echo</AdminSystemValue>
+               </TCRMAdminContEquivBObj>
+               <TCRMPersonNameBObj>
+                  <NameUsageValue>Legal</NameUsageValue>
+                  <GivenNameOne>Kelly</GivenNameOne>
+                  <GivenNameTwo></GivenNameTwo>
+                  <LastName>Blackstone</LastName>
+                  <Suffix>III</Suffix>
+                  <SourceIdentifierValue>Echo</SourceIdentifierValue>
+                  <TCRMExtension>
+                     <ExtendedObject>XNWPersonNameBObjExt</ExtendedObject>
+                     <XNWPersonNameBObjExt>
+                        <XFull_Name>John TESTONE</XFull_Name>
+                        <XDegree>PHD</XDegree>
+                     </XNWPersonNameBObjExt>
+                  </TCRMExtension>
+               </TCRMPersonNameBObj>
+
+
+            </TCRMPersonBObj>
+         </CompositeNWPersonBObj>
+      </TCRMObject>
+   </TCRMTx>
+</TCRMService>

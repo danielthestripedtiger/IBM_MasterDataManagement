@@ -1,0 +1,185 @@
+CLEAR_DB.sql
+
+
+<?xml version="1.0" encoding="UTF-8"?>
+<TCRMService xmlns="http://www.ibm.com/mdm/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.ibm.com/mdm/schema MDMDomains.xsd">
+   <RequestControl>
+      <requestID>10015</requestID>
+      <DWLControl>
+         <requesterName>cusadmin</requesterName>
+         <requesterLanguage>100</requesterLanguage>
+      </DWLControl>
+   </RequestControl>
+   <TCRMTx>
+      <TCRMTxType>MaintainNWPerson</TCRMTxType>
+      <TCRMTxObject>CompositeNWPersonBObj</TCRMTxObject>
+      <TCRMObject>
+         <CompositeNWPersonBObj>
+            <TCRMPersonBObj>
+               <TCRMPartyAddressBObj>
+                  <AddressUsageValue>Ordering Address</AddressUsageValue>
+                  <SourceIdentifierValue>GECB</SourceIdentifierValue>
+                  <TCRMExtension>
+                     <ExtendedObject>XNWPartyAddressBObjExt</ExtendedObject>
+                     <XNWPartyAddressBObjExt>
+                        <XDeactivation_Flag>1</XDeactivation_Flag>
+                     </XNWPartyAddressBObjExt>
+                  </TCRMExtension>
+                  <TCRMAddressBObj>
+                     <AddressLineOne>123 Main Street</AddressLineOne>
+                     <AddressLineTwo>ROOM 3</AddressLineTwo>
+                     <City>Lake Success</City>
+                     <ZipPostalCode>11040</ZipPostalCode>
+                     <ProvinceStateValue>NY</ProvinceStateValue>
+                     <LatitudeDegrees>38.8951</LatitudeDegrees>
+                     <LongitudeDegrees>-77.0364</LongitudeDegrees>
+                     <TCRMExtension>
+                        <ExtendedObject>XNWAddressBObjExt</ExtendedObject>
+                        <XNWAddressBObjExt>
+                           <XLocation_Mnemonic>XXX</XLocation_Mnemonic>
+                           <XLocation_ID>9</XLocation_ID>
+                           <XLocation_Name>XYZ</XLocation_Name>
+                           <XDeactivation_Flag>1</XDeactivation_Flag>
+                           <XDeactivation_Date>2018-12-18 13:20:49.540</XDeactivation_Date>
+                        </XNWAddressBObjExt>
+                     </TCRMExtension>
+                  </TCRMAddressBObj>
+               </TCRMPartyAddressBObj>
+               <TCRMAdminContEquivBObj>
+                  <AdminPartyId>1061184</AdminPartyId>
+                  <AdminSystemValue>GECB</AdminSystemValue>
+               </TCRMAdminContEquivBObj>
+               <TCRMPersonNameBObj>
+                        <NameUsageValue>Legal</NameUsageValue>
+                        <GivenNameOne>Kelly</GivenNameOne>
+                        <GivenNameTwo></GivenNameTwo>
+                        <LastName>Blackstone</LastName>
+                        <SourceIdentifierValue>GECB</SourceIdentifierValue>
+
+                    </TCRMPersonNameBObj>
+            </TCRMPersonBObj>
+         </CompositeNWPersonBObj>
+      </TCRMObject>
+   </TCRMTx>
+</TCRMService>
+
+
+
+SAMPLE XML MESSAGE:
+<?xml version="1.0" encoding="UTF-8"?>
+<TCRMService xmlns="http://www.ibm.com/mdm/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.ibm.com/mdm/schema MDMDomains.xsd">
+    <RequestControl>
+        <requestID>10015</requestID>
+        <DWLControl>
+            <requesterName>cusadmin</requesterName>
+            <requesterLanguage>100</requesterLanguage>
+        </DWLControl>
+    </RequestControl>
+    <TCRMTx>
+        <TCRMTxType>MaintainNWPerson</TCRMTxType>
+        <TCRMTxObject>CompositeNWPersonBObj</TCRMTxObject>
+        <TCRMObject>
+            <CompositeNWPersonBObj>
+                <TCRMPersonBObj>
+                    <SourceIdentifierValue>Soarian Scheduling</SourceIdentifierValue>
+                    <GenderType>M</GenderType>
+                    <TCRMPartyAddressBObj>
+                        <AddressUsageValue>Scheduling Address</AddressUsageValue>
+                        <SourceIdentifierValue>Soarian Scheduling</SourceIdentifierValue>
+                        <TCRMAddressBObj>
+   			       	<AddressLineOne>701 North Broadway</AddressLineOne>
+    			       	<AddressLineTwo>Suite 250</AddressLineTwo>	
+			       	<City>Great Neck</City>
+     			     	<ZipPostalCode>10591</ZipPostalCode>
+          			<ProvinceStateValue>NY</ProvinceStateValue>
+          			<LatitudeDegrees>38.8951</LatitudeDegrees>
+          			<LongitudeDegrees>-77.0364</LongitudeDegrees>
+
+                            <TCRMExtension>
+                            <ExtendedObject>XNWAddressBObjExt</ExtendedObject>
+                                <XNWAddressBObjExt>
+                                    <XHospital>MG00</XHospital>
+                                    <XDepartment_Code>INTMED</XDepartment_Code>
+                                    <XDepartment_Description>INTERNAL MEDICINE</XDepartment_Description>
+                                    <XLocation_Code>North Shore-LIJ Medical PC</XLocation_Code>
+                                    <XLocation_Description>North Shore-LIJ Medical PC</XLocation_Description>
+                                    <XPhone>718-226-6494</XPhone>
+                                    <XSecondary_Phone>718-226-6494</XSecondary_Phone>
+                                    <XFax>213-123-1233</XFax>
+                            </XNWAddressBObjExt>
+                        </TCRMExtension>
+                        </TCRMAddressBObj>
+                    </TCRMPartyAddressBObj>
+                    <TCRMPartyIdentificationBObj>
+                        <IdentificationValue>Soarian Internal Resource ID</IdentificationValue>
+                        <IdentificationNumber>799457</IdentificationNumber>
+                        <SourceIdentifierValue>Soarian Scheduling</SourceIdentifierValue>
+                    </TCRMPartyIdentificationBObj>
+                    <TCRMPartyIdentificationBObj>
+                        <IdentificationValue>GECB/Soarian ID</IdentificationValue>
+                        <IdentificationNumber>1061184</IdentificationNumber>
+                        <SourceIdentifierValue>Soarian Scheduling</SourceIdentifierValue>
+                    </TCRMPartyIdentificationBObj>
+                    <TCRMPartyIdentificationBObj>
+                        <IdentificationValue>Soarian Resource Mnemonic</IdentificationValue>
+                        <IdentificationNumber>ABBASI SAQIB</IdentificationNumber>
+                        <SourceIdentifierValue>Soarian Scheduling</SourceIdentifierValue>
+                    </TCRMPartyIdentificationBObj>   
+
+                    <TCRMAdminContEquivBObj>   
+                        <AdminPartyId>1061184</AdminPartyId>
+                        <AdminSystemValue>Soarian Scheduling</AdminSystemValue>
+                    </TCRMAdminContEquivBObj>   
+                    <TCRMPersonNameBObj>
+                        <NameUsageValue>Legal</NameUsageValue>
+                        <LastName>ABBASI MD,SAQIB</LastName>
+                        <SourceIdentifierValue>Soarian Scheduling</SourceIdentifierValue>
+                        <TCRMExtension>
+                            <ExtendedObject>XNWPersonNameBObjExt</ExtendedObject>
+                            <XNWPersonNameBObjExt>
+                                <XFull_Name>ABBASI MD,SAQIB</XFull_Name>
+                                <XDegree>RESIDENT</XDegree>
+                            </XNWPersonNameBObjExt>
+                        </TCRMExtension>
+                    </TCRMPersonNameBObj>
+                    <TCRMPartyValueBObj>
+                        <PartyValueValue>Role Status</PartyValueValue>
+                        <ValueString>Y</ValueString>
+                        <SourceIdentValue>Soarian Scheduling</SourceIdentValue>
+                    </TCRMPartyValueBObj>
+                </TCRMPersonBObj>
+            </CompositeNWPersonBObj>
+        </TCRMObject>
+    </TCRMTx>
+</TCRMService>
+
+
+
+
+
+
+<?xml version="1.0" encoding="UTF-8"?>
+<TCRMService xmlns="http://www.ibm.com/mdm/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.ibm.com/mdm/schema MDMDomains.xsd">
+    <RequestControl>
+        <requestID>10015</requestID>
+        <DWLControl>
+            <requesterName>cusadmin</requesterName>
+            <requesterLanguage>100</requesterLanguage>
+        </DWLControl>
+    </RequestControl>
+    <TCRMTx>
+        <TCRMTxType>collapsePartiesWithRules</TCRMTxType>
+        <TCRMTxObject>TCRMPartyListBObj</TCRMTxObject>
+        <TCRMObject>
+       <TCRMPartyListBObj>
+                <TCRMPersonBObj>
+                    <PartyId>805654888136643417</PartyId>
+                 </TCRMPersonBObj>
+                <TCRMPersonBObj>
+                    <PartyId>808454888139067918</PartyId>
+                 </TCRMPersonBObj>
+           </TCRMPartyListBObj>         
+        </TCRMObject>
+    </TCRMTx>
+</TCRMService>
+

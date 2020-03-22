@@ -1,0 +1,53 @@
+{
+"TCRMService": {
+	"@schemaLocation": "http:\/\/www.ibm.com\/mdm\/schema MDMDomains.xsd",
+     "RequestControl": {
+     	"requestID": 604157,
+          "DWLControl": {
+          	"requesterName": "miller",
+               "requesterLocale": "en"
+               }
+      },
+      "TCRMTx": {
+      	"TCRMTxType": "MaintainParty",
+          "TCRMTxObject": "MDMCompositePartyBObj",                                  
+          "TCRMObject": {
+          	"MDMCompositePartyBObj": {
+          	"TCRMPersonBObj": {
+                    	"SourceIdentifierValue": "CXH",
+                    	"TCRMPartyContactMethodBObj": {
+                         	"ContactMethodUsageValue": "Preferred Email",
+                         	"TCRMContactMethodBObj": {
+                         		"ReferenceNumber": "abcd@yahoo.com",
+                         		"ContactMethodValue": "Email Address"
+                         	}
+                         },
+                         "TCRMPartyRelationshipBObj": {
+                         	"RelationshipValue": "Manages",
+                         },
+                         "TCRMPersonNameBObj": {
+                         	"NameUsageValue": "Preferred",
+                         	"GivenNameOne": "DONALD",
+                         	"LastName": "JOHNSON"
+                         }
+                     },
+               	"TCRMOrganizationBObj": {
+                    	"SourceIdentifierValue": "CXH",
+                    	"OrganizationValue": "Unknown",
+                    	"TCRMOrganizationNameBObj": {
+                    		"OrganizationName": "",
+                         	"NameUsageValue": "Preferred"
+                         },
+                    	"TCRMPartyContactMethodBObj": {
+                         	"ContactMethodUsageValue": "Unknown Email",
+                         	"TCRMContactMethodBObj": {
+                         		"ReferenceNumber": "miller@millerfarms.com",
+                         		"ContactMethodValue": "Email Address"
+                         	}
+                         }
+                     }
+                }
+          }
+      }
+}
+}

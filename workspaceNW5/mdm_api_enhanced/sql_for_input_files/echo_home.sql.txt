@@ -1,0 +1,17 @@
+/****** Script for SelectTopNRows command from SSMS  ******/
+SELECT 'MDMSP'
+      ,'ECHO'+[PersonID]
+      ,[Home_Address_Line_1]
+      ,[Home_Address_Line_2]
+      ,[Home_City]
+      ,[Home_State]
+      ,[Home_Zip]
+      ,[Home_County]
+      ,[Home_Phone_Number]
+      ,[Home_Phone_Extension]
+      ,[Home_Phone_Number_2]
+      ,[Home_Phone_Extension_2]
+      ,[Home_Fax_Number]
+      ,[Home_Effective_Date]
+      ,[Home_Termination_Date]
+  FROM [DataGov].[MDM].[Echo_Provider_Address_Home_VW]

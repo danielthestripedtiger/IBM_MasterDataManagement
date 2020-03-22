@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;weights&apos; to &apos;final_weights&apos;&#x0D;&#x0A;- Original project: &apos;party&apos;&#x0D;&#x0A;- Destination element: &apos;final_weights&apos;&#x0D;&#x0A;- Original element: &apos;weights&apos;" description="Copy folder" element1="weights" files="0" flags="589830" folders="1" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1551450263867" target="/party/final_weights" units="0" version="1.0"/>
+</session>

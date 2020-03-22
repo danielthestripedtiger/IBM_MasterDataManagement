@@ -1,0 +1,118 @@
+<?xml version="1.0"?>
+<!DOCTYPE project>
+<!-- ***************************************************** {COPYRIGHT-TOP} ***
+* Licensed Materials - Property of IBM
+* "Restricted Materials of IBM"
+*
+* 5725-E59
+*
+* (C) Copyright IBM Corp. 2008, 2011  All Rights Reserved.
+*
+* US Government Users Restricted Rights - Use, duplication, or
+* disclosure restricted by GSA ADP Schedule Contract with IBM Corp.
+********************************************************** {COPYRIGHT-END} -->
+<!-- MDMGEN.XML VERSION 9 -->
+<project name="project" default="all">
+    <description>
+            description
+    </description>
+	
+	<property file="mdmgen.properties"/>
+	<xmlproperty file=".project" keepRoot="false" prefix="project" collapseAttributes="true"/>
+	<eclipse.convertPath resourcepath="/" property="workspace.root"/>
+	
+	<target name="all" depends="init, validate, update, sql, implementation, createReferenceModel, merge, organiseResources, organiseImports, samples" description="description">
+		<eclipse.incrementalBuild/>
+    </target>
+	
+    <target name="init">
+    	<mdm.outputVersion />
+    	<mdm.setproperty key="updateGeneratedArtifacts" />
+    	<mdm.setSourceFolder />
+   	</target>
+
+    <target name="validate" depends="init">
+    	<mdm.validate module="module.mdmxmi" property="not-valid"/>
+    	<fail message="${not-valid}" if="not-valid"/>
+    </target>
+	
+	<target name="update" depends="validate,checkUpdate" if="updateGenArtifacts" unless="not-valid">
+		  <mdm.cleanup /> 
+	 </target>
+	
+	<target name="checkUpdate">
+    	<condition property="updateGenArtifacts">
+    			<istrue value="${updateGeneratedArtifacts}"/>
+    	</condition>
+	</target>
+	
+	<target name="createReferenceModel"  depends="validate" unless="not-valid">
+		<mdm.createReferenceModel module="module.mdmxmi"/>
+	</target>
+
+	<target name="preGenSanityTest" depends="validate">
+		<mdm.checkModuleDependencies module="module.mdmxmi" property="not-ready"/>
+		<fail message="${not-ready}" if="not-ready"/>
+	</target>
+	
+    <target name="implementation" depends="validate, preGenSanityTest" unless="not-valid, not-ready">
+    	<mdm.runTransform maintemplate="preimplmain" transform="com.ibm.mdm.tools.models.jet" module="module.mdmxmi" />
+    	<eclipse.incrementalBuild project="${project.name}"/>
+    	<mdm.runTransform maintemplate="implmain" transform="com.ibm.mdm.tools.models.jet" module="module.mdmxmi" />
+    	<mdm.runTransform maintemplate="implejbmain" transform="com.ibm.mdm.tools.models.jet" module="module.mdmxmi" />
+
+    	<antcall target="DBCodeGen"/>
+    	<mdm.runTransform maintemplate="wsdlmain" transform="com.ibm.mdm.tools.models.jet" module="module.mdmxmi" />
+    </target>
+
+    <target name="sql" depends="validate" unless="not-valid">
+    	<mdm.runTransform maintemplate="propsmain" transform="com.ibm.mdm.tools.models.jet" module="module.mdmxmi" />
+    </target>
+
+	<target name="DBCodeGen" depends="validate" unless="not-valid" >
+		<eclipse.incrementalBuild/>
+		<condition property="skipTODOs">
+			<equals arg1="${DBGeneration}" arg2="Online"/>
+		</condition>
+		<antcall target="checkTODOs"/>
+		<mdm.DBCodeGen>
+			<fileset dir="${basedir}/${project.src}" includes="**/entityObject/*Data.java"/>
+		</mdm.DBCodeGen>
+	</target>
+	
+	<target name="checkTODOs" unless="skipTODOs">
+		<mdm.checkTODOs projectname="${project.name}" property="not-ready"/>
+    	<fail message="${not-ready}" if="not-ready"/>
+	</target>	
+	
+	<target name="merge">
+		<mdm.merge projectname="${project.name}" type="property">
+			<fileset dir="${workspace.root}/${project.name}/" includes="resources/snippets/properties/*.properties.snippet"/>
+		</mdm.merge>
+		<mdm.merge projectname="${project.name}" type="xsd">
+			<fileset dir="${workspace.root}/${project.name}/" includes="resources/snippets/xsd/*.xsd.snippet"/>
+		</mdm.merge>
+	</target>
+	
+	<target name="organiseResources">
+		<mdm.refreshResources/>
+	</target>
+
+	<target name="organiseImports" if="updateGenArtifacts">
+		<mdm.organiseImports/>
+	</target>
+
+    <target name="samples">
+    	<mdm.runTransform maintemplate="samplemain" transform="com.ibm.mdm.tools.models.jet" module="module.mdmxmi" />
+    </target>
+	
+	<target name="check-doc">
+		<available file="javadoc.xml" property="javadocCreated"/>
+	</target>
+		
+	<target name="doc" depends="check-doc" if="javadocCreated">
+		<ant antfile="javadoc.xml"/>	
+		<eclipse.refreshLocal resource = "${project.name}" />
+	</target>
+
+</project>

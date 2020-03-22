@@ -1,0 +1,34 @@
+{
+  "TCRMService": {
+    "@schemaLocation": "http://www.ibm.com/mdm/schema MDMDomains.xsd",
+    "RequestControl": {
+      "requestID": 604157,
+      "DWLControl": {
+        "requesterName": "test",
+        "requesterLocale": "en",
+      }
+    },
+    "TCRMTx": {
+      "TCRMTxType": "MaintainAccount",
+      "TCRMTxObject": "MDMCompositePartyBObj",
+      "TCRMObject": {
+        "MDMCompositePartyBObj": {
+          "TCRMContractBObj": {
+          	"CurrencyValue": "U.S. Dollar",
+          	"AgreementValue": "Grower",
+          	"TCRMContractComponentBObj": {
+          		"ContractStatusValue": "Active",
+          		"TCRMContractPartyRoleBObj": {
+          		
+          		},
+          	},
+          	"TCRMAdminNativeKeyBObj": {
+          		"AdminContractId": "1409100",
+              	"AdminFieldNameValue": "PPLSFT"
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,91 @@
+DELETE FROM mpi_peraddr atr WHERE EXISTS (
+select MH.MEMRECNO from mpi_memhead MH
+WHERE MH.MEMIDNUM LIKE '%PEOPLESOFT%' AND atr.MEMRECNO=MH.memrecno);
+
+
+DELETE FROM mpi_perident atr WHERE EXISTS (
+select MH.MEMRECNO from mpi_memhead MH
+WHERE MH.MEMIDNUM LIKE '%PEOPLESOFT%' AND atr.MEMRECNO=MH.memrecno);
+
+
+DELETE FROM mpi_memcmpd atr WHERE EXISTS (
+select MH.MEMRECNO from mpi_memhead MH
+WHERE MH.MEMIDNUM LIKE '%PEOPLESOFT%' AND atr.MEMRECNO=MH.memrecno);
+
+DELETE FROM mpi_membktd atr WHERE EXISTS (
+select MH.MEMRECNO from mpi_memhead MH
+WHERE MH.MEMIDNUM LIKE '%PEOPLESOFT%' AND atr.MEMRECNO=MH.memrecno);
+
+DELETE FROM mpi_entxeia_mdmper atr WHERE EXISTS (
+select MH.MEMRECNO from mpi_memhead MH
+WHERE MH.MEMIDNUM LIKE '%PEOPLESOFT%' AND atr.MEMRECNO=MH.memrecno);
+
+DELETE FROM mpi_pername atr WHERE EXISTS (
+select MH.MEMRECNO from mpi_memhead MH
+WHERE MH.MEMIDNUM LIKE '%PEOPLESOFT%' AND atr.MEMRECNO=MH.memrecno);
+
+
+
+
+
+
+DELETE FROM mpi_perdate atr WHERE EXISTS (
+select MH.MEMRECNO from mpi_memhead MH
+WHERE MH.MEMIDNUM LIKE '%PEOPLESOFT%' AND atr.MEMRECNO=MH.memrecno);
+
+DELETE FROM mpi_persourceid atr WHERE EXISTS (
+select MH.MEMRECNO from mpi_memhead MH
+WHERE MH.MEMIDNUM LIKE '%PEOPLESOFT%' AND atr.MEMRECNO=MH.memrecno);
+
+DELETE FROM mpi_peremail atr WHERE EXISTS (
+select MH.MEMRECNO from mpi_memhead MH
+WHERE MH.MEMIDNUM LIKE '%PEOPLESOFT%' AND atr.MEMRECNO=MH.memrecno);
+
+DELETE FROM mpi_permanager atr WHERE EXISTS (
+select MH.MEMRECNO from mpi_memhead MH
+WHERE MH.MEMIDNUM LIKE '%PEOPLESOFT%' AND atr.MEMRECNO=MH.memrecno);
+
+
+
+
+
+DELETE FROM mpi_perphone atr WHERE EXISTS (
+select MH.MEMRECNO from mpi_memhead MH
+WHERE MH.MEMIDNUM LIKE '%PEOPLESOFT%' AND atr.MEMRECNO=MH.memrecno);
+
+DELETE FROM mpi_entlink_mdmper atr WHERE EXISTS (
+select MH.MEMRECNO from mpi_memhead MH
+WHERE MH.MEMIDNUM LIKE '%PEOPLESOFT%' AND atr.MEMRECNO=MH.memrecno);
+
+DELETE FROM mpi_entxtsk_mdmper atr WHERE EXISTS (
+select MH.MEMRECNO from mpi_memhead MH
+WHERE MH.MEMIDNUM LIKE '%PEOPLESOFT%' AND atr.MEMRECNO=MH.memrecno);
+
+DELETE FROM mpi_memtaxonomy atr WHERE EXISTS (
+select MH.MEMRECNO from mpi_memhead MH
+WHERE MH.MEMIDNUM LIKE '%PEOPLESOFT%' AND atr.MEMRECNO=MH.memrecno);
+
+
+
+DELETE FROM mpi_membillhier atr WHERE EXISTS (
+select MH.MEMRECNO from mpi_memhead MH
+WHERE MH.MEMIDNUM LIKE '%PEOPLESOFT%' AND atr.MEMRECNO=MH.memrecno);
+
+
+DELETE FROM mpi_pergender atr WHERE EXISTS (
+select MH.MEMRECNO from mpi_memhead MH
+WHERE MH.MEMIDNUM LIKE '%PEOPLESOFT%' AND atr.MEMRECNO=MH.memrecno);
+
+
+DELETE FROM mpi_perspecialty atr WHERE EXISTS (
+select MH.MEMRECNO from mpi_memhead MH
+WHERE MH.MEMIDNUM LIKE '%PEOPLESOFT%' AND atr.MEMRECNO=MH.memrecno);
+
+DELETE FROM mpi_permarital atr WHERE EXISTS (
+select MH.MEMRECNO from mpi_memhead MH
+WHERE MH.MEMIDNUM LIKE '%PEOPLESOFT%' AND atr.MEMRECNO=MH.memrecno);
+
+DELETE FROM mpi_memhead WHERE MEMIDNUM LIKE '%PEOPLESOFT%';
+
+
+COMMIT;

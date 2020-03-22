@@ -1,0 +1,599 @@
+<?xml version="1.0" encoding="UTF-8"?><!-- ***************************************************** {COPYRIGHT-TOP} ***
+* Licensed Materials - Property of IBM
+* Restricted Materials of IBM
+*
+* 5725-E59
+*
+* (C) Copyright IBM Corp. 2011  All Rights Reserved.
+*
+* US Government Users Restricted Rights - Use, duplication, or
+* disclosure restricted by GSA ADP Schedule Contract with IBM Corp.
+********************************************************** {COPYRIGHT-END} --><wsdl:definitions xmlns:mdmport="http://www.ibm.com/mdm/port/CrossDomainServices" xmlns:mdm="http://www.ibm.com/mdm/schema" xmlns:mdmwsdl="http://www.ibm.com/mdm/wsdl/schema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:jaxws="http://java.sun.com/xml/ns/jaxws" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" name="CrossDomainServices" targetNamespace="http://www.ibm.com/mdm/port/CrossDomainServices">
+
+<jaxws:bindings>
+<jaxws:enableWrapperStyle>false</jaxws:enableWrapperStyle>
+</jaxws:bindings>
+<wsdl:types>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.ibm.com/mdm/port/CrossDomainServices">
+<xsd:import namespace="http://www.ibm.com/mdm/schema" schemaLocation="PhysicalMDM.xsd"></xsd:import>
+<xsd:import namespace="http://www.ibm.com/mdm/wsdl/schema" schemaLocation="MDMWSDLCommon.xsd"></xsd:import>
+<xsd:complexType name="evaluateTermConditionsInputType">
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:RequestControl"></xsd:element>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:TermConditionEvaluationInputBObj"></xsd:element>
+</xsd:sequence>
+</xsd:complexType>
+<xsd:complexType name="evaluateTermConditionsOutputType">
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:ResponseControl"></xsd:element>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:TxResult"></xsd:element>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:TermConditionEvaluationResultBObj"></xsd:element>
+</xsd:sequence>
+</xsd:complexType>
+
+<xsd:complexType name="getAllProductPartyRolesInputType">
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:RequestControl"></xsd:element>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:ProductPartyRoleRequestBObj"></xsd:element>
+</xsd:sequence>
+</xsd:complexType>
+<xsd:complexType name="getAllProductPartyRolesOutputType">
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:ResponseControl"></xsd:element>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:TxResult"></xsd:element>
+<xsd:element maxOccurs="unbounded" minOccurs="1" ref="mdm:ProductPartyRoleBObj"></xsd:element>
+</xsd:sequence>
+</xsd:complexType>
+
+<xsd:complexType name="getProductPartyRoleOutputType">
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:ResponseControl"></xsd:element>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:TxResult"></xsd:element>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:ProductPartyRoleBObj"></xsd:element>
+</xsd:sequence>
+</xsd:complexType>
+
+<xsd:complexType name="getProductPartyRoleByContIDOutputType">
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:ResponseControl"></xsd:element>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:TxResult"></xsd:element>
+<xsd:element maxOccurs="unbounded" minOccurs="1" ref="mdm:ProductPartyRoleBObj"></xsd:element>
+</xsd:sequence>
+</xsd:complexType>
+
+<xsd:complexType name="addProductPartyRoleInputType">
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:RequestControl"></xsd:element>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:ProductPartyRoleBObj"></xsd:element>
+</xsd:sequence>
+</xsd:complexType>
+<xsd:complexType name="addProductPartyRoleOutputType">
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:ResponseControl"></xsd:element>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:TxResult"></xsd:element>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:ProductPartyRoleBObj"></xsd:element>
+</xsd:sequence>
+</xsd:complexType>
+
+<xsd:complexType name="updateProductPartyRoleInputType">
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:RequestControl"></xsd:element>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:ProductPartyRoleBObj"></xsd:element>
+</xsd:sequence>
+</xsd:complexType>
+<xsd:complexType name="updateProductPartyRoleOutputType">
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:ResponseControl"></xsd:element>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:TxResult"></xsd:element>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:ProductPartyRoleBObj"></xsd:element>
+</xsd:sequence>
+</xsd:complexType>
+
+<xsd:complexType name="addPartyWithDomainRelationshipsInputType">
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:RequestControl"></xsd:element>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:CrossDomainPartyBObj"></xsd:element>
+</xsd:sequence>
+</xsd:complexType>
+<xsd:complexType name="addPartyWithDomainRelationshipsOutputType">
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:ResponseControl"></xsd:element>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:TxResult"></xsd:element>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:CrossDomainPartyBObj"></xsd:element>
+</xsd:sequence>
+</xsd:complexType>
+
+<xsd:complexType name="addProductWithDomainRelationshipsInputType">
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:RequestControl"></xsd:element>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:CrossDomainProductBObj"></xsd:element>
+</xsd:sequence>
+</xsd:complexType>
+<xsd:complexType name="addProductWithDomainRelationshipsOutputType">
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:ResponseControl"></xsd:element>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:TxResult"></xsd:element>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:CrossDomainProductBObj"></xsd:element>
+</xsd:sequence>
+</xsd:complexType>
+
+<xsd:complexType name="updatePartyWithDomainRelationshipsInputType">
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:RequestControl"></xsd:element>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:CrossDomainPartyBObj"></xsd:element>
+</xsd:sequence>
+</xsd:complexType>
+<xsd:complexType name="updatePartyWithDomainRelationshipsOutputType">
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:ResponseControl"></xsd:element>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:TxResult"></xsd:element>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:CrossDomainPartyBObj"></xsd:element>
+</xsd:sequence>
+</xsd:complexType>
+
+<xsd:complexType name="updateProductWithDomainRelationshipsInputType">
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:RequestControl"></xsd:element>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:CrossDomainProductBObj"></xsd:element>
+</xsd:sequence>
+</xsd:complexType>
+<xsd:complexType name="updateProductWithDomainRelationshipsOutputType">
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:ResponseControl"></xsd:element>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:TxResult"></xsd:element>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:CrossDomainProductBObj"></xsd:element>
+</xsd:sequence>
+</xsd:complexType>
+
+<xsd:complexType name="getPartyWithDomainRelationshipsInputType">
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:RequestControl"></xsd:element>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:CrossDomainPartyRequestBObj"></xsd:element>
+</xsd:sequence>
+</xsd:complexType>
+<xsd:complexType name="getPartyWithDomainRelationshipsOutputType">
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:ResponseControl"></xsd:element>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:TxResult"></xsd:element>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:CrossDomainPartyBObj"></xsd:element>
+</xsd:sequence>
+</xsd:complexType>
+
+<xsd:complexType name="getProductWithDomainRelationshipsInputType">
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:RequestControl"></xsd:element>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:CrossDomainProductRequestBObj"></xsd:element>
+</xsd:sequence>
+</xsd:complexType>
+<xsd:complexType name="getProductWithDomainRelationshipsOutputType">
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:ResponseControl"></xsd:element>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:TxResult"></xsd:element>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:CrossDomainProductBObj"></xsd:element>
+</xsd:sequence>
+</xsd:complexType>
+
+<xsd:complexType name="getComparativeEntitiesInputType">
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:RequestControl"></xsd:element>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:ComparativeEntityListBObj"></xsd:element>
+</xsd:sequence>
+</xsd:complexType>
+<xsd:complexType name="getComparativeEntitiesOutputType">
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:ResponseControl"></xsd:element>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:TxResult"></xsd:element>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:ComparativeEntityListBObj"></xsd:element>
+</xsd:sequence>
+</xsd:complexType>
+
+<xsd:element name="evaluateTermConditions" type="mdmport:evaluateTermConditionsInputType"></xsd:element>
+<xsd:element name="evaluateTermConditionsResponse" type="mdmport:evaluateTermConditionsOutputType"></xsd:element>
+<xsd:element name="getAllProductPartyRoles" type="mdmport:getAllProductPartyRolesInputType"></xsd:element>
+<xsd:element name="getAllProductPartyRolesResponse" type="mdmport:getAllProductPartyRolesOutputType"></xsd:element>
+<xsd:element name="getProductPartyRole" type="mdmwsdl:TCRMInquiryInputType"></xsd:element>
+<xsd:element name="getProductPartyRoleResponse" type="mdmport:getProductPartyRoleOutputType"></xsd:element>
+<xsd:element name="getProductPartyRoleByContID" type="mdmwsdl:TCRMInquiryInputType"></xsd:element>
+<xsd:element name="getProductPartyRoleByContIDResponse" type="mdmport:getProductPartyRoleByContIDOutputType"></xsd:element>
+<xsd:element name="addProductPartyRole" type="mdmport:addProductPartyRoleInputType"></xsd:element>
+<xsd:element name="addProductPartyRoleResponse" type="mdmport:addProductPartyRoleOutputType"></xsd:element>
+<xsd:element name="updateProductPartyRole" type="mdmport:updateProductPartyRoleInputType"></xsd:element>
+<xsd:element name="updateProductPartyRoleResponse" type="mdmport:updateProductPartyRoleOutputType"></xsd:element>
+<xsd:element name="addPartyWithDomainRelationships" type="mdmport:addPartyWithDomainRelationshipsInputType"></xsd:element>
+<xsd:element name="addPartyWithDomainRelationshipsResponse" type="mdmport:addPartyWithDomainRelationshipsOutputType"></xsd:element>
+<xsd:element name="addProductWithDomainRelationships" type="mdmport:addProductWithDomainRelationshipsInputType"></xsd:element>
+<xsd:element name="addProductWithDomainRelationshipsResponse" type="mdmport:addProductWithDomainRelationshipsOutputType"></xsd:element>
+<xsd:element name="updatePartyWithDomainRelationships" type="mdmport:updatePartyWithDomainRelationshipsInputType"></xsd:element>
+<xsd:element name="updatePartyWithDomainRelationshipsResponse" type="mdmport:updatePartyWithDomainRelationshipsOutputType"></xsd:element>
+<xsd:element name="updateProductWithDomainRelationships" type="mdmport:updateProductWithDomainRelationshipsInputType"></xsd:element>
+<xsd:element name="updateProductWithDomainRelationshipsResponse" type="mdmport:updateProductWithDomainRelationshipsOutputType"></xsd:element>
+<xsd:element name="getPartyWithDomainRelationships" type="mdmport:getPartyWithDomainRelationshipsInputType"></xsd:element>
+<xsd:element name="getPartyWithDomainRelationshipsResponse" type="mdmport:getPartyWithDomainRelationshipsOutputType"></xsd:element>
+<xsd:element name="getProductWithDomainRelationships" type="mdmport:getProductWithDomainRelationshipsInputType"></xsd:element>
+<xsd:element name="getProductWithDomainRelationshipsResponse" type="mdmport:getProductWithDomainRelationshipsOutputType"></xsd:element>
+<xsd:element name="getComparativeEntities" type="mdmport:getComparativeEntitiesInputType"></xsd:element>
+<xsd:element name="getComparativeEntitiesResponse" type="mdmport:getComparativeEntitiesOutputType"></xsd:element>
+
+<xsd:element name="processingFault" type="mdmwsdl:ProcessingFaultType"></xsd:element>
+</xsd:schema>
+</wsdl:types>
+<wsdl:message name="ProcessingFault">
+<wsdl:part element="mdmport:processingFault" name="parameters"></wsdl:part>
+</wsdl:message>
+<wsdl:message name="EvaluateTermConditionsRequest">
+<wsdl:part element="mdmport:evaluateTermConditions" name="parameters"></wsdl:part>
+</wsdl:message>
+<wsdl:message name="EvaluateTermConditionsResponse">
+<wsdl:part element="mdmport:evaluateTermConditionsResponse" name="parameters"></wsdl:part>
+</wsdl:message>
+
+<wsdl:message name="GetAllProductPartyRolesRequest">
+<wsdl:part element="mdmport:getAllProductPartyRoles" name="parameters"></wsdl:part>
+</wsdl:message>
+<wsdl:message name="GetAllProductPartyRolesResponse">
+<wsdl:part element="mdmport:getAllProductPartyRolesResponse" name="parameters"></wsdl:part>
+</wsdl:message>
+
+<wsdl:message name="GetProductPartyRoleRequest">
+<wsdl:part element="mdmport:getProductPartyRole" name="parameters"></wsdl:part>
+</wsdl:message>
+<wsdl:message name="GetProductPartyRoleResponse">
+<wsdl:part element="mdmport:getProductPartyRoleResponse" name="parameters"></wsdl:part>
+</wsdl:message>
+
+<wsdl:message name="GetProductPartyRoleByContIDRequest">
+<wsdl:part element="mdmport:getProductPartyRoleByContID" name="parameters"></wsdl:part>
+</wsdl:message>
+<wsdl:message name="GetProductPartyRoleByContIDResponse">
+<wsdl:part element="mdmport:getProductPartyRoleByContIDResponse" name="parameters"></wsdl:part>
+</wsdl:message>
+
+<wsdl:message name="AddProductPartyRoleRequest">
+<wsdl:part element="mdmport:addProductPartyRole" name="parameters"></wsdl:part>
+</wsdl:message>
+<wsdl:message name="AddProductPartyRoleResponse">
+<wsdl:part element="mdmport:addProductPartyRoleResponse" name="parameters"></wsdl:part>
+</wsdl:message>
+
+<wsdl:message name="UpdateProductPartyRoleRequest">
+<wsdl:part element="mdmport:updateProductPartyRole" name="parameters"></wsdl:part>
+</wsdl:message>
+<wsdl:message name="UpdateProductPartyRoleResponse">
+<wsdl:part element="mdmport:updateProductPartyRoleResponse" name="parameters"></wsdl:part>
+</wsdl:message>
+
+<wsdl:message name="AddPartyWithDomainRelationshipsRequest">
+<wsdl:part element="mdmport:addPartyWithDomainRelationships" name="parameters"></wsdl:part>
+</wsdl:message>
+<wsdl:message name="AddPartyWithDomainRelationshipsResponse">
+<wsdl:part element="mdmport:addPartyWithDomainRelationshipsResponse" name="parameters"></wsdl:part>
+</wsdl:message>
+
+<wsdl:message name="AddProductWithDomainRelationshipsRequest">
+<wsdl:part element="mdmport:addProductWithDomainRelationships" name="parameters"></wsdl:part>
+</wsdl:message>
+<wsdl:message name="AddProductWithDomainRelationshipsResponse">
+<wsdl:part element="mdmport:addProductWithDomainRelationshipsResponse" name="parameters"></wsdl:part>
+</wsdl:message>
+
+<wsdl:message name="UpdatePartyWithDomainRelationshipsRequest">
+<wsdl:part element="mdmport:updatePartyWithDomainRelationships" name="parameters"></wsdl:part>
+</wsdl:message>
+<wsdl:message name="UpdatePartyWithDomainRelationshipsResponse">
+<wsdl:part element="mdmport:updatePartyWithDomainRelationshipsResponse" name="parameters"></wsdl:part>
+</wsdl:message>
+
+<wsdl:message name="UpdateProductWithDomainRelationshipsRequest">
+<wsdl:part element="mdmport:updateProductWithDomainRelationships" name="parameters"></wsdl:part>
+</wsdl:message>
+<wsdl:message name="UpdateProductWithDomainRelationshipsResponse">
+<wsdl:part element="mdmport:updateProductWithDomainRelationshipsResponse" name="parameters"></wsdl:part>
+</wsdl:message>
+
+<wsdl:message name="GetPartyWithDomainRelationshipsRequest">
+<wsdl:part element="mdmport:getPartyWithDomainRelationships" name="parameters"></wsdl:part>
+</wsdl:message>
+<wsdl:message name="GetPartyWithDomainRelationshipsResponse">
+<wsdl:part element="mdmport:getPartyWithDomainRelationshipsResponse" name="parameters"></wsdl:part>
+</wsdl:message>
+
+<wsdl:message name="GetProductWithDomainRelationshipsRequest">
+<wsdl:part element="mdmport:getProductWithDomainRelationships" name="parameters"></wsdl:part>
+</wsdl:message>
+<wsdl:message name="GetProductWithDomainRelationshipsResponse">
+<wsdl:part element="mdmport:getProductWithDomainRelationshipsResponse" name="parameters"></wsdl:part>
+</wsdl:message>
+
+<wsdl:message name="GetComparativeEntitiesRequest">
+<wsdl:part element="mdmport:getComparativeEntities" name="parameters"></wsdl:part>
+</wsdl:message>
+<wsdl:message name="GetComparativeEntitiesResponse">
+<wsdl:part element="mdmport:getComparativeEntitiesResponse" name="parameters"></wsdl:part>
+</wsdl:message>
+
+
+<wsdl:portType name="CrossDomainServicesPortType">
+<wsdl:operation name="evaluateTermConditions">
+<wsdl:documentation>This transaction evaluates whether a party is eligible for a product
+or product bundle, and enables you to determine the impact of potential
+changes on a given account. The criteria that are evaluated by this
+transaction are based on product terms and conditions, as well as
+additional information such as person details and contract details.
+</wsdl:documentation>
+<wsdl:input message="mdmport:EvaluateTermConditionsRequest"></wsdl:input>
+<wsdl:output message="mdmport:EvaluateTermConditionsResponse"></wsdl:output>
+<wsdl:fault message="mdmport:ProcessingFault" name="ProcessingFault"></wsdl:fault>
+</wsdl:operation>
+
+<wsdl:operation name="getAllProductPartyRoles">
+<wsdl:documentation>null
+</wsdl:documentation>
+<wsdl:input message="mdmport:GetAllProductPartyRolesRequest"></wsdl:input>
+<wsdl:output message="mdmport:GetAllProductPartyRolesResponse"></wsdl:output>
+<wsdl:fault message="mdmport:ProcessingFault" name="ProcessingFault"></wsdl:fault>
+</wsdl:operation>
+
+<wsdl:operation name="getProductPartyRole">
+<wsdl:documentation>null
+Input parameters :
+<tcrmParam name="productPartyRoleIdPK"></tcrmParam>
+<tcrmParam name="aDWLControl"></tcrmParam>
+</wsdl:documentation>
+<wsdl:input message="mdmport:GetProductPartyRoleRequest"></wsdl:input>
+<wsdl:output message="mdmport:GetProductPartyRoleResponse"></wsdl:output>
+<wsdl:fault message="mdmport:ProcessingFault" name="ProcessingFault"></wsdl:fault>
+</wsdl:operation>
+
+<wsdl:operation name="getProductPartyRoleByContID">
+<wsdl:documentation>null
+Input parameters :
+<tcrmParam name="contId"></tcrmParam>
+<tcrmParam name="filter"></tcrmParam>
+<tcrmParam name="aDWLControl"></tcrmParam>
+</wsdl:documentation>
+<wsdl:input message="mdmport:GetProductPartyRoleByContIDRequest"></wsdl:input>
+<wsdl:output message="mdmport:GetProductPartyRoleByContIDResponse"></wsdl:output>
+<wsdl:fault message="mdmport:ProcessingFault" name="ProcessingFault"></wsdl:fault>
+</wsdl:operation>
+
+<wsdl:operation name="addProductPartyRole">
+<wsdl:documentation>null
+</wsdl:documentation>
+<wsdl:input message="mdmport:AddProductPartyRoleRequest"></wsdl:input>
+<wsdl:output message="mdmport:AddProductPartyRoleResponse"></wsdl:output>
+<wsdl:fault message="mdmport:ProcessingFault" name="ProcessingFault"></wsdl:fault>
+</wsdl:operation>
+
+<wsdl:operation name="updateProductPartyRole">
+<wsdl:documentation>null
+</wsdl:documentation>
+<wsdl:input message="mdmport:UpdateProductPartyRoleRequest"></wsdl:input>
+<wsdl:output message="mdmport:UpdateProductPartyRoleResponse"></wsdl:output>
+<wsdl:fault message="mdmport:ProcessingFault" name="ProcessingFault"></wsdl:fault>
+</wsdl:operation>
+
+<wsdl:operation name="addPartyWithDomainRelationships">
+<wsdl:documentation>null
+</wsdl:documentation>
+<wsdl:input message="mdmport:AddPartyWithDomainRelationshipsRequest"></wsdl:input>
+<wsdl:output message="mdmport:AddPartyWithDomainRelationshipsResponse"></wsdl:output>
+<wsdl:fault message="mdmport:ProcessingFault" name="ProcessingFault"></wsdl:fault>
+</wsdl:operation>
+
+<wsdl:operation name="addProductWithDomainRelationships">
+<wsdl:documentation>null
+</wsdl:documentation>
+<wsdl:input message="mdmport:AddProductWithDomainRelationshipsRequest"></wsdl:input>
+<wsdl:output message="mdmport:AddProductWithDomainRelationshipsResponse"></wsdl:output>
+<wsdl:fault message="mdmport:ProcessingFault" name="ProcessingFault"></wsdl:fault>
+</wsdl:operation>
+
+<wsdl:operation name="updatePartyWithDomainRelationships">
+<wsdl:documentation>null
+</wsdl:documentation>
+<wsdl:input message="mdmport:UpdatePartyWithDomainRelationshipsRequest"></wsdl:input>
+<wsdl:output message="mdmport:UpdatePartyWithDomainRelationshipsResponse"></wsdl:output>
+<wsdl:fault message="mdmport:ProcessingFault" name="ProcessingFault"></wsdl:fault>
+</wsdl:operation>
+
+<wsdl:operation name="updateProductWithDomainRelationships">
+<wsdl:documentation>null
+</wsdl:documentation>
+<wsdl:input message="mdmport:UpdateProductWithDomainRelationshipsRequest"></wsdl:input>
+<wsdl:output message="mdmport:UpdateProductWithDomainRelationshipsResponse"></wsdl:output>
+<wsdl:fault message="mdmport:ProcessingFault" name="ProcessingFault"></wsdl:fault>
+</wsdl:operation>
+
+<wsdl:operation name="getPartyWithDomainRelationships">
+<wsdl:documentation>null
+</wsdl:documentation>
+<wsdl:input message="mdmport:GetPartyWithDomainRelationshipsRequest"></wsdl:input>
+<wsdl:output message="mdmport:GetPartyWithDomainRelationshipsResponse"></wsdl:output>
+<wsdl:fault message="mdmport:ProcessingFault" name="ProcessingFault"></wsdl:fault>
+</wsdl:operation>
+
+<wsdl:operation name="getProductWithDomainRelationships">
+<wsdl:documentation>null
+</wsdl:documentation>
+<wsdl:input message="mdmport:GetProductWithDomainRelationshipsRequest"></wsdl:input>
+<wsdl:output message="mdmport:GetProductWithDomainRelationshipsResponse"></wsdl:output>
+<wsdl:fault message="mdmport:ProcessingFault" name="ProcessingFault"></wsdl:fault>
+</wsdl:operation>
+
+<wsdl:operation name="getComparativeEntities">
+<wsdl:documentation>Compare and align parties and party associations based on business keys.
+</wsdl:documentation>
+<wsdl:input message="mdmport:GetComparativeEntitiesRequest"></wsdl:input>
+<wsdl:output message="mdmport:GetComparativeEntitiesResponse"></wsdl:output>
+<wsdl:fault message="mdmport:ProcessingFault" name="ProcessingFault"></wsdl:fault>
+</wsdl:operation>
+
+</wsdl:portType>
+
+<wsdl:binding name="CrossDomainServicesHttpBinding" type="mdmport:CrossDomainServicesPortType">
+<soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"></soap:binding>
+<wsdl:operation name="evaluateTermConditions">
+<soap:operation soapAction=""></soap:operation>
+<wsdl:input>
+<soap:body use="literal"></soap:body>
+</wsdl:input>
+<wsdl:output>
+<soap:body use="literal"></soap:body>
+</wsdl:output>
+<wsdl:fault name="ProcessingFault">
+<soap:fault name="ProcessingFault" use="literal"></soap:fault>
+</wsdl:fault>
+</wsdl:operation>
+<wsdl:operation name="getAllProductPartyRoles">
+<soap:operation soapAction=""></soap:operation>
+<wsdl:input>
+<soap:body use="literal"></soap:body>
+</wsdl:input>
+<wsdl:output>
+<soap:body use="literal"></soap:body>
+</wsdl:output>
+<wsdl:fault name="ProcessingFault">
+<soap:fault name="ProcessingFault" use="literal"></soap:fault>
+</wsdl:fault>
+</wsdl:operation>
+<wsdl:operation name="getProductPartyRole">
+<soap:operation soapAction=""></soap:operation>
+<wsdl:input>
+<soap:body use="literal"></soap:body>
+</wsdl:input>
+<wsdl:output>
+<soap:body use="literal"></soap:body>
+</wsdl:output>
+<wsdl:fault name="ProcessingFault">
+<soap:fault name="ProcessingFault" use="literal"></soap:fault>
+</wsdl:fault>
+</wsdl:operation>
+<wsdl:operation name="getProductPartyRoleByContID">
+<soap:operation soapAction=""></soap:operation>
+<wsdl:input>
+<soap:body use="literal"></soap:body>
+</wsdl:input>
+<wsdl:output>
+<soap:body use="literal"></soap:body>
+</wsdl:output>
+<wsdl:fault name="ProcessingFault">
+<soap:fault name="ProcessingFault" use="literal"></soap:fault>
+</wsdl:fault>
+</wsdl:operation>
+<wsdl:operation name="addProductPartyRole">
+<soap:operation soapAction=""></soap:operation>
+<wsdl:input>
+<soap:body use="literal"></soap:body>
+</wsdl:input>
+<wsdl:output>
+<soap:body use="literal"></soap:body>
+</wsdl:output>
+<wsdl:fault name="ProcessingFault">
+<soap:fault name="ProcessingFault" use="literal"></soap:fault>
+</wsdl:fault>
+</wsdl:operation>
+<wsdl:operation name="updateProductPartyRole">
+<soap:operation soapAction=""></soap:operation>
+<wsdl:input>
+<soap:body use="literal"></soap:body>
+</wsdl:input>
+<wsdl:output>
+<soap:body use="literal"></soap:body>
+</wsdl:output>
+<wsdl:fault name="ProcessingFault">
+<soap:fault name="ProcessingFault" use="literal"></soap:fault>
+</wsdl:fault>
+</wsdl:operation>
+<wsdl:operation name="addPartyWithDomainRelationships">
+<soap:operation soapAction=""></soap:operation>
+<wsdl:input>
+<soap:body use="literal"></soap:body>
+</wsdl:input>
+<wsdl:output>
+<soap:body use="literal"></soap:body>
+</wsdl:output>
+<wsdl:fault name="ProcessingFault">
+<soap:fault name="ProcessingFault" use="literal"></soap:fault>
+</wsdl:fault>
+</wsdl:operation>
+<wsdl:operation name="addProductWithDomainRelationships">
+<soap:operation soapAction=""></soap:operation>
+<wsdl:input>
+<soap:body use="literal"></soap:body>
+</wsdl:input>
+<wsdl:output>
+<soap:body use="literal"></soap:body>
+</wsdl:output>
+<wsdl:fault name="ProcessingFault">
+<soap:fault name="ProcessingFault" use="literal"></soap:fault>
+</wsdl:fault>
+</wsdl:operation>
+<wsdl:operation name="updatePartyWithDomainRelationships">
+<soap:operation soapAction=""></soap:operation>
+<wsdl:input>
+<soap:body use="literal"></soap:body>
+</wsdl:input>
+<wsdl:output>
+<soap:body use="literal"></soap:body>
+</wsdl:output>
+<wsdl:fault name="ProcessingFault">
+<soap:fault name="ProcessingFault" use="literal"></soap:fault>
+</wsdl:fault>
+</wsdl:operation>
+<wsdl:operation name="updateProductWithDomainRelationships">
+<soap:operation soapAction=""></soap:operation>
+<wsdl:input>
+<soap:body use="literal"></soap:body>
+</wsdl:input>
+<wsdl:output>
+<soap:body use="literal"></soap:body>
+</wsdl:output>
+<wsdl:fault name="ProcessingFault">
+<soap:fault name="ProcessingFault" use="literal"></soap:fault>
+</wsdl:fault>
+</wsdl:operation>
+<wsdl:operation name="getPartyWithDomainRelationships">
+<soap:operation soapAction=""></soap:operation>
+<wsdl:input>
+<soap:body use="literal"></soap:body>
+</wsdl:input>
+<wsdl:output>
+<soap:body use="literal"></soap:body>
+</wsdl:output>
+<wsdl:fault name="ProcessingFault">
+<soap:fault name="ProcessingFault" use="literal"></soap:fault>
+</wsdl:fault>
+</wsdl:operation>
+<wsdl:operation name="getProductWithDomainRelationships">
+<soap:operation soapAction=""></soap:operation>
+<wsdl:input>
+<soap:body use="literal"></soap:body>
+</wsdl:input>
+<wsdl:output>
+<soap:body use="literal"></soap:body>
+</wsdl:output>
+<wsdl:fault name="ProcessingFault">
+<soap:fault name="ProcessingFault" use="literal"></soap:fault>
+</wsdl:fault>
+</wsdl:operation>
+<wsdl:operation name="getComparativeEntities">
+<soap:operation soapAction=""></soap:operation>
+<wsdl:input>
+<soap:body use="literal"></soap:body>
+</wsdl:input>
+<wsdl:output>
+<soap:body use="literal"></soap:body>
+</wsdl:output>
+<wsdl:fault name="ProcessingFault">
+<soap:fault name="ProcessingFault" use="literal"></soap:fault>
+</wsdl:fault>
+</wsdl:operation>
+</wsdl:binding>
+
+<wsdl:service name="CrossDomainServices">
+<wsdl:port binding="mdmport:CrossDomainServicesHttpBinding" name="CrossDomainServicesPort">
+<soap:address location="http://localhost:9082/MDMWSProvider/MDMService"></soap:address>
+</wsdl:port>
+</wsdl:service>
+
+</wsdl:definitions>

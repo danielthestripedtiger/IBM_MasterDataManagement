@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE TCRMExtension>
+	
+<!--
+	The following source code ("Code") may only be used in accordance with the terms
+	and conditions of the license agreement you have with IBM Corporation. The Code 
+	is provided to you on an "AS IS" basis, without warranty of any kind.  
+	SUBJECT TO ANY STATUTORY WARRANTIES WHICH CAN NOT BE EXCLUDED, IBM MAKES NO 
+	WARRANTIES OR CONDITIONS EITHER EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED 
+	TO, THE IMPLIED WARRANTIES OR CONDITIONS OF MERCHANTABILITY, FITNESS FOR A 
+	PARTICULAR PURPOSE, AND NON-INFRINGEMENT, REGARDING THE CODE. IN NO EVENT WILL 
+	IBM BE LIABLE TO YOU OR ANY PARTY FOR ANY DIRECT, INDIRECT, SPECIAL OR OTHER 
+	CONSEQUENTIAL DAMAGES FOR ANY USE OF THE CODE, INCLUDING, WITHOUT LIMITATION, 
+	LOSS OF, OR DAMAGE TO, DATA, OR LOST PROFITS, BUSINESS, REVENUE, GOODWILL, OR 
+	ANTICIPATED SAVINGS, EVEN IF IBM HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH 
+	DAMAGES. SOME JURISDICTIONS DO NOT ALLOW THE EXCLUSION OR LIMITATION OF 
+	INCIDENTAL OR CONSEQUENTIAL DAMAGES, SO THE ABOVE LIMITATION OR EXCLUSION MAY 
+	NOT APPLY TO YOU.
+-->
+
+<!--
+	IBM-MDMWB-1.0-[a70881b3047bc31e195a9267623f5bd3]
+-->
+
+<TCRMExtension>
+    <ExtendedObject>XNWAddressBObjExt</ExtendedObject>
+    <XNWAddressBObjExt>
+       <XCounty></XCounty>
+       <XHospital></XHospital>
+       <XFacility_Name></XFacility_Name>
+       <XFacility_Code></XFacility_Code>
+       <XDepartment_Code></XDepartment_Code>
+       <XDepartment_Description></XDepartment_Description>
+       <XLocation_Code></XLocation_Code>
+       <XLocation_Description></XLocation_Description>
+       <XLocation_Mnemonic></XLocation_Mnemonic>
+       <XLocation_ID></XLocation_ID>
+       <XLocation_Name></XLocation_Name>
+       <XPhone></XPhone>
+       <XPhone_Ext></XPhone_Ext>
+       <XSecondary_Phone></XSecondary_Phone>
+       <XSec_Phone_Ext></XSec_Phone_Ext>
+       <XFax></XFax>
+       <XTax_ID_Number></XTax_ID_Number>
+       <XNewport_Key></XNewport_Key>
+       <XDeactivation_Flag></XDeactivation_Flag>
+       <XActivation_Date></XActivation_Date>
+       <XDeactivation_Date></XDeactivation_Date>
+    </XNWAddressBObjExt>
+</TCRMExtension>
+

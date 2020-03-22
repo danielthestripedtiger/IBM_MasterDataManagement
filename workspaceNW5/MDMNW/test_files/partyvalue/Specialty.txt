@@ -1,0 +1,99 @@
+CLEAR_DB.sql
+
+<?xml version="1.0" encoding="UTF-8"?>
+<TCRMService xmlns="http://www.ibm.com/mdm/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.ibm.com/mdm/schema MDMDomains.xsd">
+    <RequestControl>
+        <requestID>10015</requestID>
+        <DWLControl>
+            <requesterName>cusadmin</requesterName>
+            <requesterLanguage>100</requesterLanguage>
+        </DWLControl>
+    </RequestControl>
+    <TCRMTx>
+        <TCRMTxType>MaintainNWPerson</TCRMTxType>
+        <TCRMTxObject>CompositeNWPersonBObj</TCRMTxObject>
+        <TCRMObject>
+            <CompositeNWPersonBObj>
+                <TCRMPersonBObj>
+                    <LastVerifiedDate>1990-11-24 08:45:41.434175</LastVerifiedDate>
+                    <SourceIdentifierValue>Echo</SourceIdentifierValue>
+                    <TCRMAdminContEquivBObj>   
+                        <AdminPartyId>1061184</AdminPartyId>
+                        <AdminSystemValue>Echo</AdminSystemValue>
+                    </TCRMAdminContEquivBObj>  
+                    <TCRMPersonNameBObj>
+                        <NameUsageValue>Legal</NameUsageValue>
+                        <GivenNameOne>JIMMY</GivenNameOne>
+                        <GivenNameTwo>G</GivenNameTwo>
+                        <LastName>STEVENS</LastName>
+                        <SourceIdentifierValue>Echo</SourceIdentifierValue>
+                    </TCRMPersonNameBObj>   
+                    <TCRMPartyValueBObj>
+                        <PartyValueValue>Specialty</PartyValueValue>
+                        <ValueString>PED</ValueString>
+                        <SourceIdentValue>Echo</SourceIdentValue>
+                        <Attribute0Value>Primary Specialty Flag</Attribute0Value>
+                        <Attribute0String>1</Attribute0String>
+                        <Attribute1Value>Specialty Order</Attribute1Value>
+                        <Attribute1String>1</Attribute1String>
+                        <Attribute2Value>Practicing Specialty Flag</Attribute2Value>
+                        <Attribute2String>1</Attribute2String>
+                        <Attribute6Value>Specialty Active Status</Attribute6Value>
+                        <Attribute6String>Active</Attribute6String>
+                    </TCRMPartyValueBObj>
+                </TCRMPersonBObj>
+            </CompositeNWPersonBObj>
+        </TCRMObject>
+    </TCRMTx>
+</TCRMService>
+
+
+
+<?xml version="1.0" encoding="UTF-8"?>
+<TCRMService xmlns="http://www.ibm.com/mdm/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.ibm.com/mdm/schema MDMDomains.xsd">
+    <RequestControl>
+        <requestID>10015</requestID>
+        <DWLControl>
+            <requesterName>cusadmin</requesterName>
+            <requesterLanguage>100</requesterLanguage>
+        </DWLControl>
+    </RequestControl>
+    <TCRMTx>
+        <TCRMTxType>MaintainNWPerson</TCRMTxType>
+        <TCRMTxObject>CompositeNWPersonBObj</TCRMTxObject>
+        <TCRMObject>
+            <CompositeNWPersonBObj>
+                <TCRMPersonBObj>
+                    <LastVerifiedDate>1990-11-24 08:45:41.434175</LastVerifiedDate>
+                    <SourceIdentifierValue>Newport/CARE</SourceIdentifierValue>
+                    <TCRMAdminContEquivBObj>   
+                        <AdminPartyId>1061184</AdminPartyId>
+                        <AdminSystemValue>Newport/CARE</AdminSystemValue>
+                    </TCRMAdminContEquivBObj> 
+                    <TCRMPersonNameBObj>
+                        <NameUsageValue>Legal</NameUsageValue>
+                        <GivenNameOne>JIMMY</GivenNameOne>
+                        <GivenNameTwo>G</GivenNameTwo>
+                        <LastName>STEVENS</LastName>
+                        <SourceIdentifierValue>Newport/CARE</SourceIdentifierValue>
+                    </TCRMPersonNameBObj>  
+                    <TCRMPartyValueBObj>
+                        <PartyValueValue>Specialty</PartyValueValue>
+                        <ValueString>PED</ValueString>
+                        <SourceIdentValue>Newport/CARE</SourceIdentValue>
+                        <Attribute0Value>Primary Specialty Flag</Attribute0Value>
+                        <Attribute0String>1</Attribute0String>
+                        <Attribute1Value>Specialty Order</Attribute1Value>
+                        <Attribute1String>1</Attribute1String>
+                        <Attribute2Value>Practicing Specialty Flag</Attribute2Value>
+                        <Attribute2String>1</Attribute2String>
+                        <Attribute6Value>Specialty Active Status</Attribute6Value>
+                        <Attribute6String>Active</Attribute6String>
+                    </TCRMPartyValueBObj>
+                </TCRMPersonBObj>
+            </CompositeNWPersonBObj>
+        </TCRMObject>
+    </TCRMTx>
+</TCRMService>
+
+

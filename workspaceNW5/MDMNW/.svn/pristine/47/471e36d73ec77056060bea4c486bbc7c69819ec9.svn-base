@@ -1,0 +1,119 @@
+CLEAR_DB.sql
+
+<?xml version="1.0" encoding="UTF-8"?>
+<TCRMService xmlns="http://www.ibm.com/mdm/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.ibm.com/mdm/schema MDMDomains.xsd">
+    <RequestControl>
+        <requestID>10015</requestID>
+        <DWLControl>
+            <requesterName>cusadmin</requesterName>
+            <requesterLanguage>100</requesterLanguage>
+        </DWLControl>
+    </RequestControl>
+    <TCRMTx>
+        <TCRMTxType>MaintainNWPerson</TCRMTxType>
+        <TCRMTxObject>CompositeNWPersonBObj</TCRMTxObject>
+        <TCRMObject>
+            <CompositeNWPersonBObj>
+                <TCRMPersonBObj>
+			<SourceIdentifierValue>Echo</SourceIdentifierValue>
+                     <BirthDate>1991-11-24 08:45:41.434175</BirthDate>
+			<DeceasedDate>2011-11-24 08:45:41.434175</DeceasedDate>
+			<SourceIdentifierValue>Echo</SourceIdentifierValue>
+			<LastVerifiedDate>2012-11-24 08:45:41.434175</LastVerifiedDate>
+
+                    <TCRMAdminContEquivBObj>   
+                        <AdminPartyId>9999</AdminPartyId>
+                        <AdminSystemValue>Echo</AdminSystemValue>
+                    </TCRMAdminContEquivBObj>   
+                    <TCRMPersonNameBObj>
+                        <NameUsageValue>Legal</NameUsageValue>
+                        <GivenNameOne>JIMMY</GivenNameOne>
+                        <GivenNameTwo>G</GivenNameTwo>
+                        <LastName>STEVENS</LastName>
+                        <SourceIdentifierValue>Echo</SourceIdentifierValue>
+                        <TCRMExtension>
+                            <ExtendedObject>XNWPersonNameBObjExt</ExtendedObject>
+                            <XNWPersonNameBObjExt>
+                                <XFull_Name>JIMMY G STEVENS</XFull_Name>
+                            </XNWPersonNameBObjExt>
+                        </TCRMExtension>
+                    </TCRMPersonNameBObj>
+                 
+                </TCRMPersonBObj>
+            </CompositeNWPersonBObj>
+        </TCRMObject>
+    </TCRMTx>
+</TCRMService>
+
+
+<?xml version="1.0" encoding="UTF-8"?>
+<TCRMService xmlns="http://www.ibm.com/mdm/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.ibm.com/mdm/schema MDMDomains.xsd">
+    <RequestControl>
+        <requestID>10015</requestID>
+        <DWLControl>
+            <requesterName>cusadmin</requesterName>
+            <requesterLanguage>100</requesterLanguage>
+        </DWLControl>
+    </RequestControl>
+    <TCRMTx>
+        <TCRMTxType>MaintainNWPerson</TCRMTxType>
+        <TCRMTxObject>CompositeNWPersonBObj</TCRMTxObject>
+        <TCRMObject>
+            <CompositeNWPersonBObj>
+                <TCRMPersonBObj>
+			<SourceIdentifierValue>Newport/CARE</SourceIdentifierValue>
+                      <BirthDate>1992-11-24 08:45:41.434175</BirthDate>
+			<DeceasedDate>2012-11-24 08:45:41.434175</DeceasedDate>
+			<SourceIdentifierValue>Newport/CARE</SourceIdentifierValue>
+			<LastVerifiedDate>2013-11-24 08:45:41.434175</LastVerifiedDate>
+
+                   <TCRMAdminContEquivBObj>   
+                        <AdminPartyId>9999</AdminPartyId>
+                        <AdminSystemValue>Newport/CARE</AdminSystemValue>
+                    </TCRMAdminContEquivBObj>   
+                    <TCRMPersonNameBObj>
+                        <NameUsageValue>Legal</NameUsageValue>
+                        <GivenNameOne>JAMES</GivenNameOne>
+                        <GivenNameTwo>GERALD</GivenNameTwo>
+                        <LastName>STEVENS</LastName>
+                        <SourceIdentifierValue>Newport/CARE</SourceIdentifierValue>
+                        <TCRMExtension>
+                            <ExtendedObject>XNWPersonNameBObjExt</ExtendedObject>
+                            <XNWPersonNameBObjExt>
+                                <XFull_Name>JAMES GERALD STEVENS</XFull_Name>
+                            </XNWPersonNameBObjExt>
+                        </TCRMExtension>
+                    </TCRMPersonNameBObj>
+                 
+                </TCRMPersonBObj>
+            </CompositeNWPersonBObj>
+        </TCRMObject>
+    </TCRMTx>
+</TCRMService>
+
+
+
+<?xml version="1.0" encoding="UTF-8"?>
+<TCRMService xmlns="http://www.ibm.com/mdm/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.ibm.com/mdm/schema MDMDomains.xsd">
+    <RequestControl>
+        <requestID>10015</requestID>
+        <DWLControl>
+            <requesterName>cusadmin</requesterName>
+            <requesterLanguage>100</requesterLanguage>
+        </DWLControl>
+    </RequestControl>
+    <TCRMTx>
+        <TCRMTxType>collapsePartiesWithRules</TCRMTxType>
+        <TCRMTxObject>TCRMPartyListBObj</TCRMTxObject>
+        <TCRMObject>
+       <TCRMPartyListBObj>
+                <TCRMPersonBObj>
+                    <PartyId>805654888136643417</PartyId>
+                 </TCRMPersonBObj>
+                <TCRMPersonBObj>
+                    <PartyId>808454888139067918</PartyId>
+                 </TCRMPersonBObj>
+           </TCRMPartyListBObj>         
+        </TCRMObject>
+    </TCRMTx>
+</TCRMService>

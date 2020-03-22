@@ -1,0 +1,16 @@
+/****** Script for SelectTopNRows command from SSMS  ******/
+SELECT 'MDMSP' -- MEMHEAD:srccode
+      ,'GECB'+[PersonID] -- MEMHEAD:memidnum
+      ,[Ordering_Location_Mnemonic] -- ORDERINGLOC:locmnemonic
+      ,[Ordering_Location_ID] -- ORDERINGLOC:locid
+      ,[Ordering_Location_Name] -- ORDERINGLOC:locnm
+      ,[Ordering_Location_Address_Line_1] -- ORDERINGLOC:addrline1
+      ,[Ordering_Location_Address_Line_2] -- ORDERINGLOC:addrline2
+      ,[Ordering_Location_City] -- ORDERINGLOC:city
+      ,[Ordering_Location_State] -- ORDERINGLOC:provstate
+      ,[Ordering_Location_Zip] -- ORDERINGLOC:postalcode
+--      ,[Ordering_Location_Deleted_Flag] -- ORDERINGLOC:
+--      ,[Ordering_Location_Deactivation_Flag] -- ORDERINGLOC:
+      ,[Ordering_Location_Deactivation_Date] -- ORDERINGLOC:provloctodt
+      ,[Active_Status] -- ORDERINGLOC:locdeacflg
+  FROM [DataProfiling].[MDM].[GECB_Provider_Address_Ordering_VW]

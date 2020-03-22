@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<JobSet name="WebSphere Application Server v8.5 at localhost_1549040608509_17" version="1.0">
+  <mpxredvd MAD_TIMER="false" MAD_DEBUG="false" MAD_TRACE="false" MAD_DBSQL="false" MAD_AUDIT="false" MAD_ALGO="false" bxmOutputDir="bxm" unlOutputDir="unl" genUNL="true" genBIN="true" genBktUNL="true" genCmpUNL="true" genQryUNL="false" memberPartitions="1" bucketPartitions="10" blkSize="1000" bufferSize="65536" minBucketTag="0" maxBucketTag="0" minMemrecno="0" maxMemrecno="0" encoding="latin1" genBxmQryd="false" minQryRole="10000" queryPartitions="1" dbUpdate="true" memberType="ALL" />
+</JobSet>
+

@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TCRMService xmlns="http://www.ibm.com/mdm/schema" 
+   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.ibm.com/mdm/schema MDMDomains.xsd">
+   <RequestControl>
+      <requestID>10015</requestID>
+      <DWLControl>
+         <requesterName>cusadmin</requesterName>
+         <requesterLanguage>100</requesterLanguage>
+      </DWLControl>
+   </RequestControl>
+   <TCRMTx>
+      <TCRMTxType>MaintainNWPerson</TCRMTxType>
+      <TCRMTxObject>CompositeNWPersonBObj</TCRMTxObject>
+      <TCRMObject>
+         <CompositeNWPersonBObj>
+            <ObjectReferenceId></ObjectReferenceId>
+            <TCRMPersonBObj>
+               <SourceIdentifierValue>Echo</SourceIdentifierValue>
+
+               <TCRMPartyIdentificationBObj>
+                  <IdentificationValue>Social Security Number</IdentificationValue>
+                  <IdentificationNumber>010101010</IdentificationNumber>
+                  <SourceIdentifierValue>Echo</SourceIdentifierValue>
+               </TCRMPartyIdentificationBObj>
+
+               <TCRMAdminContEquivBObj>
+                  <AdminPartyId>010101010</AdminPartyId>
+                  <AdminSystemValue>Echo</AdminSystemValue>
+               </TCRMAdminContEquivBObj>
+               <TCRMPersonNameBObj>
+                  <NameUsageValue>Legal</NameUsageValue>
+                  <GivenNameOne>Kelly</GivenNameOne>
+                  <GivenNameTwo></GivenNameTwo>
+                  <LastName>Blackstone</LastName>
+                  <Suffix>III</Suffix>
+                  <SourceIdentifierValue>Echo</SourceIdentifierValue>
+                  <TCRMExtension>
+                     <ExtendedObject>XNWPersonNameBObjExt</ExtendedObject>
+                     <XNWPersonNameBObjExt>
+                        <XFull_Name>John TESTONE</XFull_Name>
+                        <XDegree>PHD</XDegree>
+                     </XNWPersonNameBObjExt>
+                  </TCRMExtension>
+               </TCRMPersonNameBObj>
+
+            </TCRMPersonBObj>
+         </CompositeNWPersonBObj>
+      </TCRMObject>
+   </TCRMTx>
+</TCRMService>
+
+
+
+
+
+<?xml version="1.0" encoding="UTF-8"?>
+<TCRMService xmlns="http://www.ibm.com/mdm/schema" 
+   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.ibm.com/mdm/schema MDMDomains.xsd">
+   <RequestControl>
+      <requestID>10015</requestID>
+      <DWLControl>
+         <requesterName>cusadmin</requesterName>
+         <requesterLanguage>100</requesterLanguage>
+      </DWLControl>
+   </RequestControl>
+   <TCRMTx>
+      <TCRMTxType>MaintainNWPerson</TCRMTxType>
+      <TCRMTxObject>CompositeNWPersonBObj</TCRMTxObject>
+      <TCRMObject>
+         <CompositeNWPersonBObj>
+            <ObjectReferenceId></ObjectReferenceId>
+            <TCRMPersonBObj>
+               <SourceIdentifierValue>Echo</SourceIdentifierValue>
+
+               <TCRMPartyIdentificationBObj>
+                  <IdentificationValue>Social Security Number</IdentificationValue>
+                  <IdentificationNumber>333445555</IdentificationNumber>
+                  <SourceIdentifierValue>Echo</SourceIdentifierValue>
+               </TCRMPartyIdentificationBObj>
+
+               <TCRMAdminContEquivBObj>
+                  <AdminPartyId>010101010</AdminPartyId>
+                  <AdminSystemValue>Echo</AdminSystemValue>
+               </TCRMAdminContEquivBObj>
+               <TCRMPersonNameBObj>
+                  <NameUsageValue>Legal</NameUsageValue>
+                  <GivenNameOne>Kelly</GivenNameOne>
+                  <GivenNameTwo></GivenNameTwo>
+                  <LastName>Blackstone</LastName>
+                  <Suffix>III</Suffix>
+                  <SourceIdentifierValue>Echo</SourceIdentifierValue>
+                  <TCRMExtension>
+                     <ExtendedObject>XNWPersonNameBObjExt</ExtendedObject>
+                     <XNWPersonNameBObjExt>
+                        <XFull_Name>John TESTONE</XFull_Name>
+                        <XDegree>PHD</XDegree>
+                     </XNWPersonNameBObjExt>
+                  </TCRMExtension>
+               </TCRMPersonNameBObj>
+
+            </TCRMPersonBObj>
+         </CompositeNWPersonBObj>
+      </TCRMObject>
+   </TCRMTx>
+</TCRMService>

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring accessors="true" comment="Delete element from project &apos;party&apos;&#x0D;&#x0A;- Original project: &apos;party&apos;&#x0D;&#x0A;- Original element: &apos;WebSphere_Application_Server_v8.5_at_biccmdmtapp01_1552596240530_0.xml&apos;" description="Delete element" element1="temp/WebSphere_Application_Server_v8.5_at_biccmdmtapp01_1552596240530_0.xml" elements="0" flags="589830" id="org.eclipse.jdt.ui.delete" resources="1" stamp="1554990981765" subPackages="false" version="1.0"/>
+</session>

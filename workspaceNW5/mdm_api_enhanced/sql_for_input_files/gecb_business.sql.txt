@@ -1,0 +1,11 @@
+/****** Script for SelectTopNRows command from SSMS  ******/
+SELECT 'MDMSP' -- MEMHEAD:srccode
+      ,'GECB'+[PersonID] -- MEMHEAD:memidnum
+      ,[Business_Office_Location_Address_Line_1] -- PERBUSADDR:addrline1
+      ,[Business_Office_Location_Address_Line_2] -- PERBUSADDR:addrline2
+      ,[Business_Office_Location_City] -- PERBUSADDR:city
+      ,[Business_Office_Location_State] -- PERBUSADDR:provstate
+      ,[Business_Office_Location_Zip] -- PERBUSADDR:postalcode
+      ,[Business_Office_Phone_Number] -- PERBUSADDR:phone
+      ,[Active_Status] -- PERBUSADDR:locdeacflg
+  FROM [DataProfiling].[MDM].[GECB_Provider_Address_Business_VW]

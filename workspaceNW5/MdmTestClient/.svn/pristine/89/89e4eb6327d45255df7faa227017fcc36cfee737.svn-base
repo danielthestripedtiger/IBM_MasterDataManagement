@@ -1,0 +1,57 @@
+{
+  "TCRMService": {
+    "@schemaLocation": "http://www.ibm.com/mdm/schema MDMDomains.xsd",
+    "RequestControl": {
+      "requestID": 604157,
+      "DWLControl": {
+        "requesterName": "don",
+        "requesterLocale": "en"
+      }
+    },
+    "TCRMTx": {
+      "TCRMTxType": "MaintainParty",
+      "TCRMTxObject": "MDMCompositePartyBObj",
+      "TCRMObject": {
+        "MDMCompositePartyBObj": {
+          "TCRMPersonBObj": {
+            "SourceIdentifierValue": "LMDM",
+            "TCRMPartyContactMethodBObj": {
+              "ContactMethodUsageValue": "Work Email",
+              "TCRMContactMethodBObj": {
+                "ReferenceNumber": "email",
+                "ContactMethodValue": "Email Address"
+              }
+            },
+            "TCRMPartyIdentificationBObj": {
+              "IdentificationValue": "Employee ID",
+              "IdentificationNumber": "employeeId"
+            },
+            "TCRMPartyRelationshipBObj": [
+            {
+              "RelationshipValue": "RELATIONSHIP1_VALUE",
+              "RelationshipToValue": "REL1_TO_VALUE",
+            },
+            {
+              "RelationshipValue": "RELATIONSHIP2_VALUE",
+              "RelationshipToValue": "REL2_TO_VALUE",
+            },
+            {
+              "RelationshipValue": "RELATIONSHIP3_VALUE",
+              "RelationshipToValue": "REL3_TO_VALUE",
+            },
+            {
+              "RelationshipValue": "RELATIONSHIP4_VALUE",
+              "RelationshipToValue": "REL4_TO_VALUE",
+            },
+            ],
+            "TCRMPersonNameBObj": {
+              "NameUsageValue": "Preferred",
+              "GivenNameOne": "firstname",
+              "LastName": "lastname"
+            }
+          }
+        }
+      }
+    }
+  }
+}

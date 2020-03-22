@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TCRMService xmlns="http://www.ibm.com/mdm/schema" 
+   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.ibm.com/mdm/schema MDMDomains.xsd">
+   <RequestControl>
+      <requestID>10015</requestID>
+      <DWLControl>
+         <requesterName>cusadmin</requesterName>
+         <requesterLanguage>100</requesterLanguage>
+      </DWLControl>
+   </RequestControl>
+   <TCRMTx>
+      <TCRMTxType>MaintainNWPerson</TCRMTxType>
+      <TCRMTxObject>CompositeNWPersonBObj</TCRMTxObject>
+      <TCRMObject>
+         <CompositeNWPersonBObj>
+            <ObjectReferenceId></ObjectReferenceId>
+            <TCRMPersonBObj>
+               <SourceIdentifierValue>Echo</SourceIdentifierValue>
+               <TCRMAdminContEquivBObj>
+                  <AdminPartyId>010101010</AdminPartyId>
+                  <AdminSystemValue>Echo</AdminSystemValue>
+               </TCRMAdminContEquivBObj>
+               <TCRMPersonNameBObj>
+                  <NameUsageValue>Legal</NameUsageValue>
+                  <GivenNameOne>Kelly</GivenNameOne>
+                  <GivenNameTwo></GivenNameTwo>
+                  <LastName>Blackstone</LastName>
+                  <Suffix>III</Suffix>
+                  <SourceIdentifierValue>Echo</SourceIdentifierValue>
+                  <TCRMExtension>
+                     <ExtendedObject>XNWPersonNameBObjExt</ExtendedObject>
+                     <XNWPersonNameBObjExt>
+                        <XFull_Name>John TESTONE</XFull_Name>
+                        <XDegree>PHD</XDegree>
+                     </XNWPersonNameBObjExt>
+                  </TCRMExtension>
+               </TCRMPersonNameBObj>
+
+               <TCRMPartyValueBObj>
+                  <PartyValueValue>Specialty</PartyValueValue>
+                  <ValueString>Hospitalist</ValueString>
+                  <SourceIdentValue>Echo</SourceIdentValue>
+                  <StartDate>2017-11-24 08:45:41.434175</StartDate>
+                  <EndDate>2018-11-24 08:45:41.434175</EndDate>
+                  <Attribute0Value>Primary Specialty Flag</Attribute0Value>
+                  <Attribute0String>1</Attribute0String>
+                  <Attribute1Value>Specialty Order</Attribute1Value>
+                  <Attribute1String>1</Attribute1String>
+                  <Attribute2Value>Practicing Specialty Flag</Attribute2Value>
+                  <Attribute2String>1</Attribute2String>
+                  <Attribute3Value>Board Status</Attribute3Value>
+                  <Attribute3String>Certified</Attribute3String>
+                  <Attribute4Value>Board Certification Date</Attribute4Value>
+                  <Attribute4String>1976-10-29 00:00:00.000000</Attribute4String>
+                  <Attribute5Value>Board Expiration Date</Attribute5Value>
+                  <Attribute5String>2019-12-31 00:00:00.000000</Attribute5String>
+                  <Attribute6Value>Specialty Active Status</Attribute6Value>
+                  <Attribute6String>Active</Attribute6String>
+               </TCRMPartyValueBObj>
+
+            </TCRMPersonBObj>
+         </CompositeNWPersonBObj>
+      </TCRMObject>
+   </TCRMTx>
+</TCRMService>
+
+
+
+
+
+
+
+<?xml version="1.0" encoding="UTF-8"?>
+<TCRMService xmlns="http://www.ibm.com/mdm/schema" 
+   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.ibm.com/mdm/schema MDMDomains.xsd">
+   <RequestControl>
+      <requestID>10015</requestID>
+      <DWLControl>
+         <requesterName>cusadmin</requesterName>
+         <requesterLanguage>100</requesterLanguage>
+      </DWLControl>
+   </RequestControl>
+   <TCRMTx>
+      <TCRMTxType>MaintainNWPerson</TCRMTxType>
+      <TCRMTxObject>CompositeNWPersonBObj</TCRMTxObject>
+      <TCRMObject>
+         <CompositeNWPersonBObj>
+            <ObjectReferenceId></ObjectReferenceId>
+            <TCRMPersonBObj>
+               <SourceIdentifierValue>Echo</SourceIdentifierValue>
+               <TCRMAdminContEquivBObj>
+                  <AdminPartyId>010101010</AdminPartyId>
+                  <AdminSystemValue>Echo</AdminSystemValue>
+               </TCRMAdminContEquivBObj>
+               <TCRMPersonNameBObj>
+                  <NameUsageValue>Legal</NameUsageValue>
+                  <GivenNameOne>Kelly</GivenNameOne>
+                  <GivenNameTwo></GivenNameTwo>
+                  <LastName>Blackstone</LastName>
+                  <Suffix>III</Suffix>
+                  <SourceIdentifierValue>Echo</SourceIdentifierValue>
+                  <TCRMExtension>
+                     <ExtendedObject>XNWPersonNameBObjExt</ExtendedObject>
+                     <XNWPersonNameBObjExt>
+                        <XFull_Name>John TESTONE</XFull_Name>
+                        <XDegree>PHD</XDegree>
+                     </XNWPersonNameBObjExt>
+                  </TCRMExtension>
+               </TCRMPersonNameBObj>
+
+               <TCRMPartyValueBObj>
+                  <PartyValueValue>Specialty</PartyValueValue>
+                  <ValueString>Hospitalist</ValueString>
+                  <SourceIdentValue>Echo</SourceIdentValue>
+                  <StartDate>2017-11-24 08:45:41.434175</StartDate>
+                  <EndDate>2018-11-24 08:45:41.434175</EndDate>
+                  <Attribute0Value>Primary Specialty Flag</Attribute0Value>
+                  <Attribute0String>1</Attribute0String>
+                  <Attribute1Value>Specialty Order</Attribute1Value>
+                  <Attribute1String>1</Attribute1String>
+                  <Attribute2Value>Practicing Specialty Flag</Attribute2Value>
+                  <Attribute2String>1</Attribute2String>
+                  <Attribute3Value>Board Status</Attribute3Value>
+                  <Attribute3String>Certified</Attribute3String>
+                  <Attribute4Value>Board Certification Date</Attribute4Value>
+                  <Attribute4String>1976-10-29 00:00:00.000000</Attribute4String>
+                  <Attribute5Value>Board Expiration Date</Attribute5Value>
+                  <Attribute5String>2019-12-31 00:00:00.000000</Attribute5String>
+                  <Attribute6Value>Specialty Active Status</Attribute6Value>
+                  <Attribute6String>Inactive</Attribute6String>
+               </TCRMPartyValueBObj>
+
+            </TCRMPersonBObj>
+         </CompositeNWPersonBObj>
+      </TCRMObject>
+   </TCRMTx>
+</TCRMService>

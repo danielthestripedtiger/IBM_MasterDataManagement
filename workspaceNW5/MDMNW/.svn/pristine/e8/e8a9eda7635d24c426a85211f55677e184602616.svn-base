@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdm:MDMModule xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:mdm="http://www.ibm.com/xmlns/prod/mdm/tools/model/core_v6.ecore" name="MDMNW" id="1" customNature="module" serviceNamespace="http://mdmnw" implPackageName="mdmnw" componentTypeMetadataIdForComponent="2" componentTypeMetadataIdForController="3" startId="2000000" MDMApplication="mdm://MDMSharedResources#/" domain="mdmnw" asiDefinitionRequestAdapterId="4" asiDefinitionResponseAdapterId="5">
+  <MDMPackage name="MDMNW" id="6" componentTypeMetadataIdForComponent="7" componentTypeMetadataIdForController="8">
+    <members xsi:type="mdm:MDMTxn" name="MaintainNWPerson" id="42" externalTxnKeyId="43" internalTxnId="45" businessInternalTxnId="46" businessTxReqRespInputId="47" businessTxReqRespOutputId="48" internalTxnKeyId="44" internalTxReqRespInputId="49" internalTxReqRespOutputId="50" responseType="#//MDMNW/@members.CompositeNWPerson" implementation="BusinessProxy" componentTypeMetadataIdForBusinessProxies="51" requestType="#//MDMNW/@members.CompositeNWPerson">
+      <MDMErrorReason id="52" messageKey="CoreUtils_TransactionErr" modelReadOnly="true" errorType="mdm://MDMSharedResources#//@MDMErrorTypeCode.INSERR" typeCodeId="53" typeCodeForComponentId="55" typeCodeForBusinessProxyId="54"/>
+      <baseTransactions id="56" transaction="mdm:MDMTxn mdm://Party#//CoreParty/@members.addPerson"/>
+      <baseTransactions id="1486" transaction="mdm:MDMTxn mdm://Party#//CoreParty/@members.updatePerson"/>
+    </members>
+    <members xsi:type="mdm:MDMMessage" name="CompositeNWPerson" id="217" componentTypeMetadataId="218" errorReasonTpCdForFVERR="220" bObjId="219" lastUpdateDateBObjFieldId="221" lastUpdateUserBObjFieldId="222" historyActionCodeBObjFieldId="224" historyCreateDateBObjFieldId="225" historyEndDateBObjFieldId="227" historyCreatedByBObjFieldId="226" lastUpdateTxIdBObjFieldId="223" historyIdPkBObjFieldId="228">
+      <MDMContainment name="Person" id="229" containedEntity="mdm://Party#//Party/@members.Person/@members.Person" bObjFieldId="230">
+        <MDMErrorReason id="231" messageKey="CoreUtils_ReferenceInvalid" modelReadOnly="true" errorType="mdm://MDMSharedResources#//@MDMErrorTypeCode.DIERR" typeCodeId="232" typeCodeForComponentId="234" typeCodeForBusinessProxyId="233"/>
+      </MDMContainment>
+    </members>
+    <members xsi:type="mdm:MDMEntityExtension" name="xNWPersonName" id="241" componentTypeMetadataId="242" errorReasonTpCdForFVERR="244" bObjId="243" lastUpdateDateBObjFieldId="245" lastUpdateUserBObjFieldId="246" historyActionCodeBObjFieldId="248" historyCreateDateBObjFieldId="249" historyEndDateBObjFieldId="251" historyCreatedByBObjFieldId="250" lastUpdateTxIdBObjFieldId="247" historyIdPkBObjFieldId="252" tableId="253" historyTableId="254" lastUpdateDateColumnId="255" lastUpdateDateHistoryColumnId="259" lastUpdateUserColumnId="257" lastUpdateUserHistoryColumnId="261" historyActionCodeColumnId="263" historyCreateDateColumnId="258" historyCreatedByColumnId="256" historyEndDateColumnId="262" historyIdPkColumnId="260" historyIdPkBObjColumnId="264" lastUpdateTxIdColumnId="265" extends="mdm://Party#//Party/@members.Person/@members.PersonName" overrideBaseQuery="false">
+      <MDMProperty xsi:type="mdm:MDMAttribute" name="xFull_Name" id="282" optional="true" bObjFieldId="283">
+        <MDMPersistenceDetails databaseFieldName="X_FULL_NAME" entityFieldName="x_Full_Name" columnId="288" historyColumnId="289"/>
+        <MDMAttributeConstraints xsi:type="mdm:MDMStringAttributeConstraints"/>
+      </MDMProperty>
+      <MDMProperty xsi:type="mdm:MDMAttribute" name="xDegree" id="1251" optional="true" bObjFieldId="1252">
+        <MDMPersistenceDetails databaseFieldName="X_DEGREE" columnId="1257" historyColumnId="1258"/>
+        <MDMAttributeConstraints xsi:type="mdm:MDMStringAttributeConstraints"/>
+      </MDMProperty>
+      <MDMErrorReason id="266" messageKey="CoreUtils_InsertExtErr" modelReadOnly="true" errorType="mdm://MDMSharedResources#//@MDMErrorTypeCode.INSERR" typeCodeId="267" typeCodeForComponentId="269" typeCodeForBusinessProxyId="268"/>
+      <MDMErrorReason id="270" messageKey="CoreUtils_DeleteExtErr" modelReadOnly="true" errorType="mdm://MDMSharedResources#//@MDMErrorTypeCode.DELERR" typeCodeId="271" typeCodeForComponentId="273" typeCodeForBusinessProxyId="272"/>
+      <MDMErrorReason id="274" messageKey="CoreUtils_ReadExtErr" modelReadOnly="true" errorType="mdm://MDMSharedResources#//@MDMErrorTypeCode.READERR" typeCodeId="275" typeCodeForComponentId="277" typeCodeForBusinessProxyId="276"/>
+      <MDMErrorReason id="278" messageKey="CoreUtils_UpdateExtErr" modelReadOnly="true" errorType="mdm://MDMSharedResources#//@MDMErrorTypeCode.UPDERR" typeCodeId="279" typeCodeForComponentId="281" typeCodeForBusinessProxyId="280"/>
+    </members>
+    <members xsi:type="mdm:MDMEntityExtension" name="xNWPerson" id="1299" componentTypeMetadataId="1300" errorReasonTpCdForFVERR="1302" bObjId="1301" lastUpdateDateBObjFieldId="1303" lastUpdateUserBObjFieldId="1304" historyActionCodeBObjFieldId="1306" historyCreateDateBObjFieldId="1307" historyEndDateBObjFieldId="1309" historyCreatedByBObjFieldId="1308" lastUpdateTxIdBObjFieldId="1305" historyIdPkBObjFieldId="1310" tableId="1311" historyTableId="1312" lastUpdateDateColumnId="1313" lastUpdateDateHistoryColumnId="1317" lastUpdateUserColumnId="1315" lastUpdateUserHistoryColumnId="1319" historyActionCodeColumnId="1321" historyCreateDateColumnId="1316" historyCreatedByColumnId="1314" historyEndDateColumnId="1320" historyIdPkColumnId="1318" historyIdPkBObjColumnId="1322" lastUpdateTxIdColumnId="1323" extends="mdm://Party#//Party/@members.Person/@members.Person" overrideBaseQuery="false">
+      <MDMProperty xsi:type="mdm:MDMAttribute" name="xJob_Title" id="1340" optional="true" bObjFieldId="1341">
+        <MDMPersistenceDetails databaseFieldName="X_JOB_TITLE" columnId="1346" historyColumnId="1347"/>
+        <MDMAttributeConstraints xsi:type="mdm:MDMStringAttributeConstraints"/>
+      </MDMProperty>
+      <MDMProperty xsi:type="mdm:MDMAttribute" name="xJob_Family" id="290" optional="true" bObjFieldId="291">
+        <MDMPersistenceDetails databaseFieldName="X_JOB_FAMILY" columnId="296" historyColumnId="297"/>
+        <MDMAttributeConstraints xsi:type="mdm:MDMStringAttributeConstraints"/>
+      </MDMProperty>
+      <MDMProperty xsi:type="mdm:MDMAttribute" name="xFullTime_PartTIme" id="1348" optional="true" bObjFieldId="299">
+        <MDMPersistenceDetails databaseFieldName="X_FULL_TIME_PART_TIME" columnId="304" historyColumnId="305"/>
+        <MDMAttributeConstraints xsi:type="mdm:MDMStringAttributeConstraints"/>
+      </MDMProperty>
+      <MDMProperty xsi:type="mdm:MDMAttribute" name="xStandard_Hours" id="1351" optional="true" bObjFieldId="323">
+        <MDMPersistenceDetails databaseFieldName="X_STANDARD_HOURS" columnId="328" historyColumnId="329"/>
+        <MDMAttributeConstraints xsi:type="mdm:MDMStringAttributeConstraints"/>
+      </MDMProperty>
+      <MDMProperty xsi:type="mdm:MDMAttribute" name="xBusiness_Unit" id="1352" optional="true" bObjFieldId="331">
+        <MDMPersistenceDetails databaseFieldName="X_BUSINESS_UNIT" columnId="336" historyColumnId="337"/>
+        <MDMAttributeConstraints xsi:type="mdm:MDMStringAttributeConstraints"/>
+      </MDMProperty>
+      <MDMProperty xsi:type="mdm:MDMAttribute" name="xHire_Date" id="1353" optional="true" bObjFieldId="339" type="Date">
+        <MDMPersistenceDetails databaseFieldName="X_HIRE_DATE" columnId="344" historyColumnId="345"/>
+        <MDMErrorReason id="1354" messageKey="CoreUtils_InvalidErr" modelReadOnly="true" errorType="mdm://MDMSharedResources#//@MDMErrorTypeCode.DIERR" typeCodeId="347" typeCodeForComponentId="349" typeCodeForBusinessProxyId="348"/>
+      </MDMProperty>
+      <MDMProperty xsi:type="mdm:MDMAttribute" name="xEmployee_Role_Status" id="1355" optional="true" bObjFieldId="351">
+        <MDMPersistenceDetails databaseFieldName="X_EMP_ROLE_STATUS" columnId="356" historyColumnId="357"/>
+        <MDMAttributeConstraints xsi:type="mdm:MDMStringAttributeConstraints"/>
+      </MDMProperty>
+      <MDMProperty xsi:type="mdm:MDMAttribute" name="xRehire_Date" id="1356" optional="true" bObjFieldId="359" type="Date">
+        <MDMPersistenceDetails databaseFieldName="X_REHIRE_DATE" columnId="364" historyColumnId="365"/>
+        <MDMErrorReason id="1357" messageKey="CoreUtils_InvalidErr" modelReadOnly="true" errorType="mdm://MDMSharedResources#//@MDMErrorTypeCode.DIERR" typeCodeId="367" typeCodeForComponentId="369" typeCodeForBusinessProxyId="368"/>
+      </MDMProperty>
+      <MDMProperty xsi:type="mdm:MDMAttribute" name="xTermination_Date" id="1358" optional="true" bObjFieldId="371" type="Date">
+        <MDMPersistenceDetails databaseFieldName="X_TERMINATION_DATE" columnId="376" historyColumnId="377"/>
+        <MDMErrorReason id="1359" messageKey="CoreUtils_InvalidErr" modelReadOnly="true" errorType="mdm://MDMSharedResources#//@MDMErrorTypeCode.DIERR" typeCodeId="379" typeCodeForComponentId="381" typeCodeForBusinessProxyId="380"/>
+      </MDMProperty>
+      <MDMProperty xsi:type="mdm:MDMAttribute" name="xDepartment_ID" id="1360" optional="true" bObjFieldId="383">
+        <MDMPersistenceDetails databaseFieldName="X_DEPARTMENT_ID" columnId="388" historyColumnId="389"/>
+        <MDMAttributeConstraints xsi:type="mdm:MDMStringAttributeConstraints"/>
+      </MDMProperty>
+      <MDMProperty xsi:type="mdm:MDMAttribute" name="xDepartment_Name" id="1361" optional="true" bObjFieldId="391">
+        <MDMPersistenceDetails databaseFieldName="X_DEPARTMENT_NAME" columnId="396" historyColumnId="397"/>
+        <MDMAttributeConstraints xsi:type="mdm:MDMStringAttributeConstraints"/>
+      </MDMProperty>
+      <MDMProperty xsi:type="mdm:MDMAttribute" name="xService_Line_Financial_Budgetary" id="1362" optional="true" bObjFieldId="399">
+        <MDMPersistenceDetails databaseFieldName="X_SERVICE_LINE_FIN_BUDGETARY" columnId="404" historyColumnId="405"/>
+        <MDMAttributeConstraints xsi:type="mdm:MDMStringAttributeConstraints"/>
+      </MDMProperty>
+      <MDMErrorReason id="1324" messageKey="CoreUtils_InsertExtErr" modelReadOnly="true" errorType="mdm://MDMSharedResources#//@MDMErrorTypeCode.INSERR" typeCodeId="1325" typeCodeForComponentId="1327" typeCodeForBusinessProxyId="1326"/>
+      <MDMErrorReason id="1328" messageKey="CoreUtils_DeleteExtErr" modelReadOnly="true" errorType="mdm://MDMSharedResources#//@MDMErrorTypeCode.DELERR" typeCodeId="1329" typeCodeForComponentId="1331" typeCodeForBusinessProxyId="1330"/>
+      <MDMErrorReason id="1332" messageKey="CoreUtils_ReadExtErr" modelReadOnly="true" errorType="mdm://MDMSharedResources#//@MDMErrorTypeCode.READERR" typeCodeId="1333" typeCodeForComponentId="1335" typeCodeForBusinessProxyId="1334"/>
+      <MDMErrorReason id="1336" messageKey="CoreUtils_UpdateExtErr" modelReadOnly="true" errorType="mdm://MDMSharedResources#//@MDMErrorTypeCode.UPDERR" typeCodeId="1337" typeCodeForComponentId="1339" typeCodeForBusinessProxyId="1338"/>
+    </members>
+    <members xsi:type="mdm:MDMEntityExtension" name="xNWPartyAddress" id="1363" componentTypeMetadataId="1364" errorReasonTpCdForFVERR="1366" bObjId="1365" lastUpdateDateBObjFieldId="1367" lastUpdateUserBObjFieldId="1368" historyActionCodeBObjFieldId="1370" historyCreateDateBObjFieldId="1371" historyEndDateBObjFieldId="1373" historyCreatedByBObjFieldId="1372" lastUpdateTxIdBObjFieldId="1369" historyIdPkBObjFieldId="1374" tableId="1375" historyTableId="1376" lastUpdateDateColumnId="1377" lastUpdateDateHistoryColumnId="1381" lastUpdateUserColumnId="1379" lastUpdateUserHistoryColumnId="1383" historyActionCodeColumnId="1385" historyCreateDateColumnId="1380" historyCreatedByColumnId="1378" historyEndDateColumnId="1384" historyIdPkColumnId="1382" historyIdPkBObjColumnId="1386" lastUpdateTxIdColumnId="1387" extends="mdm://Party#//Party/@members.PartyAddress" overrideBaseQuery="false">
+      <MDMProperty xsi:type="mdm:MDMAttribute" name="xProvider_Facility_Staff_Code" id="1418" optional="true" bObjFieldId="619">
+        <MDMPersistenceDetails databaseFieldName="X_PROVIDER_FACILITY_STAFF_CODE" columnId="624" historyColumnId="625"/>
+        <MDMAttributeConstraints xsi:type="mdm:MDMStringAttributeConstraints"/>
+      </MDMProperty>
+      <MDMProperty xsi:type="mdm:MDMAttribute" name="xProvider_Facility_Active_Status" id="1419" optional="true" bObjFieldId="627">
+        <MDMPersistenceDetails databaseFieldName="X_PROV_FACILITY_ACTIVE_STATUS" columnId="632" historyColumnId="633"/>
+        <MDMAttributeConstraints xsi:type="mdm:MDMStringAttributeConstraints"/>
+      </MDMProperty>
+      <MDMProperty xsi:type="mdm:MDMAttribute" name="xPrimary_Office_Flag" id="1426" optional="true" bObjFieldId="691">
+        <MDMPersistenceDetails databaseFieldName="X_PRIMARY_OFFICE_FLAG" columnId="696" historyColumnId="697"/>
+        <MDMAttributeConstraints xsi:type="mdm:MDMStringAttributeConstraints"/>
+      </MDMProperty>
+      <MDMProperty xsi:type="mdm:MDMAttribute" name="xDeactivation_Flag" id="1430" optional="true" bObjFieldId="723">
+        <MDMPersistenceDetails databaseFieldName="X_DEACTIVATION_FLAG" columnId="728" historyColumnId="729"/>
+        <MDMAttributeConstraints xsi:type="mdm:MDMStringAttributeConstraints"/>
+      </MDMProperty>
+      <MDMProperty xsi:type="mdm:MDMAttribute" name="xPrimary_Billing_Location_Flag" id="1431" optional="true" bObjFieldId="731">
+        <MDMPersistenceDetails databaseFieldName="X_PRIMARY_BILLING_LOC_FLAG" columnId="736" historyColumnId="737"/>
+        <MDMAttributeConstraints xsi:type="mdm:MDMStringAttributeConstraints"/>
+      </MDMProperty>
+      <MDMProperty xsi:type="mdm:MDMAttribute" name="xCredential_Status" id="1487" optional="true" bObjFieldId="1488">
+        <MDMPersistenceDetails databaseFieldName="X_CREDENTIAL_STATUS" columnId="1493" historyColumnId="1494"/>
+        <MDMAttributeConstraints xsi:type="mdm:MDMStringAttributeConstraints"/>
+      </MDMProperty>
+      <MDMProperty xsi:type="mdm:MDMAttribute" name="xProvider_Status" id="1495" optional="true" bObjFieldId="1496">
+        <MDMPersistenceDetails databaseFieldName="X_PROVIDER_STATUS" columnId="1501" historyColumnId="1502"/>
+        <MDMAttributeConstraints xsi:type="mdm:MDMStringAttributeConstraints"/>
+      </MDMProperty>
+      <MDMProperty xsi:type="mdm:MDMAttribute" name="xScheduling_Primary_Flag" id="1519" optional="true" bObjFieldId="1520">
+        <MDMPersistenceDetails databaseFieldName="X_SCHD_PRIM_FLG" columnId="1525" historyColumnId="1526"/>
+        <MDMAttributeConstraints xsi:type="mdm:MDMStringAttributeConstraints"/>
+      </MDMProperty>
+      <MDMErrorReason id="1388" messageKey="CoreUtils_InsertExtErr" modelReadOnly="true" errorType="mdm://MDMSharedResources#//@MDMErrorTypeCode.INSERR" typeCodeId="1389" typeCodeForComponentId="1391" typeCodeForBusinessProxyId="1390"/>
+      <MDMErrorReason id="1392" messageKey="CoreUtils_DeleteExtErr" modelReadOnly="true" errorType="mdm://MDMSharedResources#//@MDMErrorTypeCode.DELERR" typeCodeId="1393" typeCodeForComponentId="1395" typeCodeForBusinessProxyId="1394"/>
+      <MDMErrorReason id="1396" messageKey="CoreUtils_ReadExtErr" modelReadOnly="true" errorType="mdm://MDMSharedResources#//@MDMErrorTypeCode.READERR" typeCodeId="1397" typeCodeForComponentId="1399" typeCodeForBusinessProxyId="1398"/>
+      <MDMErrorReason id="1400" messageKey="CoreUtils_UpdateExtErr" modelReadOnly="true" errorType="mdm://MDMSharedResources#//@MDMErrorTypeCode.UPDERR" typeCodeId="1401" typeCodeForComponentId="1403" typeCodeForBusinessProxyId="1402"/>
+    </members>
+    <members xsi:type="mdm:MDMEntityExtension" name="xNWAddress" documentation="This address extension is for the unique addresses that MDM will hold, regardless of the usage type. For Address data instances by usage type, see TCRMPartyAddressBObj / xNWPartyAddressBObj objects types." id="1437" componentTypeMetadataId="1438" errorReasonTpCdForFVERR="1440" bObjId="1439" lastUpdateDateBObjFieldId="1441" lastUpdateUserBObjFieldId="1442" historyActionCodeBObjFieldId="1444" historyCreateDateBObjFieldId="1445" historyEndDateBObjFieldId="1447" historyCreatedByBObjFieldId="1446" lastUpdateTxIdBObjFieldId="1443" historyIdPkBObjFieldId="1448" tableId="1449" historyTableId="1450" lastUpdateDateColumnId="1451" lastUpdateDateHistoryColumnId="1455" lastUpdateUserColumnId="1453" lastUpdateUserHistoryColumnId="1457" historyActionCodeColumnId="1459" historyCreateDateColumnId="1454" historyCreatedByColumnId="1452" historyEndDateColumnId="1458" historyIdPkColumnId="1456" historyIdPkBObjColumnId="1460" lastUpdateTxIdColumnId="1461" extends="mdm://Party#//Party/@members.Address/@members.Address" overrideBaseQuery="false">
+      <MDMProperty xsi:type="mdm:MDMAttribute" name="xCounty" id="1478" optional="true" bObjFieldId="1479">
+        <MDMPersistenceDetails databaseFieldName="X_COUNTY" columnId="1484" historyColumnId="1485"/>
+        <MDMAttributeConstraints xsi:type="mdm:MDMStringAttributeConstraints"/>
+      </MDMProperty>
+      <MDMProperty xsi:type="mdm:MDMAttribute" name="xHospital" id="1425" optional="true" bObjFieldId="683">
+        <MDMPersistenceDetails databaseFieldName="X_HOSPITAL" columnId="688" historyColumnId="689"/>
+        <MDMAttributeConstraints xsi:type="mdm:MDMStringAttributeConstraints"/>
+      </MDMProperty>
+      <MDMProperty xsi:type="mdm:MDMAttribute" name="xFacility_Name" id="1412" optional="true" bObjFieldId="579">
+        <MDMPersistenceDetails databaseFieldName="X_FACILITY_NAME" columnId="584" historyColumnId="585"/>
+        <MDMAttributeConstraints xsi:type="mdm:MDMStringAttributeConstraints"/>
+      </MDMProperty>
+      <MDMProperty xsi:type="mdm:MDMAttribute" name="xFacility_Code" id="1413" optional="true" bObjFieldId="587">
+        <MDMPersistenceDetails databaseFieldName="X_FACILITY_CODE" columnId="592" historyColumnId="593"/>
+        <MDMAttributeConstraints xsi:type="mdm:MDMStringAttributeConstraints"/>
+      </MDMProperty>
+      <MDMProperty xsi:type="mdm:MDMAttribute" name="xDepartment_Code" id="1420" optional="true" bObjFieldId="635">
+        <MDMPersistenceDetails databaseFieldName="X_DEPARTMENT_CODE" columnId="640" historyColumnId="641"/>
+        <MDMAttributeConstraints xsi:type="mdm:MDMStringAttributeConstraints"/>
+      </MDMProperty>
+      <MDMProperty xsi:type="mdm:MDMAttribute" name="xDepartment_Description" id="1421" optional="true" bObjFieldId="643">
+        <MDMPersistenceDetails databaseFieldName="X_DEPARTMENT_DESCRIPTION" columnId="648" historyColumnId="649"/>
+        <MDMAttributeConstraints xsi:type="mdm:MDMStringAttributeConstraints"/>
+      </MDMProperty>
+      <MDMProperty xsi:type="mdm:MDMAttribute" name="xLocation_Code" id="1422" optional="true" bObjFieldId="651">
+        <MDMPersistenceDetails databaseFieldName="X_LOCATION_CODE" columnId="656" historyColumnId="657"/>
+        <MDMAttributeConstraints xsi:type="mdm:MDMStringAttributeConstraints"/>
+      </MDMProperty>
+      <MDMProperty xsi:type="mdm:MDMAttribute" name="xLocation_Description" id="1423" optional="true" bObjFieldId="659">
+        <MDMPersistenceDetails databaseFieldName="X_LOCATION_DESCRIPTION" columnId="664" historyColumnId="665"/>
+        <MDMAttributeConstraints xsi:type="mdm:MDMStringAttributeConstraints"/>
+      </MDMProperty>
+      <MDMProperty xsi:type="mdm:MDMAttribute" name="xLocation_Mnemonic" id="1433" optional="true" bObjFieldId="993">
+        <MDMPersistenceDetails databaseFieldName="X_LOCATION_MNEMONIC" columnId="998" historyColumnId="999"/>
+        <MDMAttributeConstraints xsi:type="mdm:MDMStringAttributeConstraints"/>
+      </MDMProperty>
+      <MDMProperty xsi:type="mdm:MDMAttribute" name="xLocation_ID" id="1434" optional="true" bObjFieldId="1001">
+        <MDMPersistenceDetails databaseFieldName="X_LOCATION_ID" entityFieldName="xLocation_ID" columnId="1006" historyColumnId="1007"/>
+        <MDMAttributeConstraints xsi:type="mdm:MDMStringAttributeConstraints"/>
+      </MDMProperty>
+      <MDMProperty xsi:type="mdm:MDMAttribute" name="xLocation_Name" id="1436" optional="true" bObjFieldId="1017">
+        <MDMPersistenceDetails databaseFieldName="X_LOCATION_NAME" entityFieldName="xLocation_Name" columnId="1022" historyColumnId="1023"/>
+        <MDMAttributeConstraints xsi:type="mdm:MDMStringAttributeConstraints"/>
+      </MDMProperty>
+      <MDMProperty xsi:type="mdm:MDMAttribute" name="xPhone" id="1414" optional="true" bObjFieldId="595">
+        <MDMPersistenceDetails databaseFieldName="X_PHONE" columnId="600" historyColumnId="601"/>
+        <MDMAttributeConstraints xsi:type="mdm:MDMStringAttributeConstraints"/>
+      </MDMProperty>
+      <MDMProperty xsi:type="mdm:MDMAttribute" name="xPhone_Ext" id="1503" optional="true" bObjFieldId="1504">
+        <MDMPersistenceDetails databaseFieldName="X_PHONE_EXT" columnId="1509" historyColumnId="1510"/>
+        <MDMAttributeConstraints xsi:type="mdm:MDMStringAttributeConstraints"/>
+      </MDMProperty>
+      <MDMProperty xsi:type="mdm:MDMAttribute" name="xSecondary_Phone" id="1415" optional="true" bObjFieldId="667">
+        <MDMPersistenceDetails databaseFieldName="X_SECONDARY_PHONE" columnId="672" historyColumnId="673"/>
+        <MDMAttributeConstraints xsi:type="mdm:MDMStringAttributeConstraints"/>
+      </MDMProperty>
+      <MDMProperty xsi:type="mdm:MDMAttribute" name="xSec_Phone_Ext" id="1511" optional="true" bObjFieldId="1512">
+        <MDMPersistenceDetails databaseFieldName="X_SEC_PHONE_EXT" columnId="1517" historyColumnId="1518"/>
+        <MDMAttributeConstraints xsi:type="mdm:MDMStringAttributeConstraints"/>
+      </MDMProperty>
+      <MDMProperty xsi:type="mdm:MDMAttribute" name="xFax" id="1416" optional="true" bObjFieldId="603">
+        <MDMPersistenceDetails databaseFieldName="X_FAX" columnId="608" historyColumnId="609"/>
+        <MDMAttributeConstraints xsi:type="mdm:MDMStringAttributeConstraints"/>
+      </MDMProperty>
+      <MDMProperty xsi:type="mdm:MDMAttribute" name="xTax_ID_Number" id="1417" optional="true" bObjFieldId="611">
+        <MDMPersistenceDetails databaseFieldName="X_TAX_ID_NUMBER" columnId="616" historyColumnId="617"/>
+        <MDMAttributeConstraints xsi:type="mdm:MDMStringAttributeConstraints"/>
+      </MDMProperty>
+      <MDMProperty xsi:type="mdm:MDMAttribute" name="xNewport_Key" id="1424" optional="true" bObjFieldId="675">
+        <MDMPersistenceDetails databaseFieldName="X_NEWPORT_KEY" columnId="680" historyColumnId="681"/>
+        <MDMAttributeConstraints xsi:type="mdm:MDMStringAttributeConstraints"/>
+      </MDMProperty>
+      <MDMProperty xsi:type="mdm:MDMAttribute" name="xDeactivation_Flag" id="1576" optional="true" bObjFieldId="1577">
+        <MDMPersistenceDetails databaseFieldName="X_DEACTIVATION_FLAG" columnId="1582" historyColumnId="1583"/>
+        <MDMAttributeConstraints xsi:type="mdm:MDMStringAttributeConstraints"/>
+      </MDMProperty>
+      <MDMProperty xsi:type="mdm:MDMAttribute" name="xActivation_Date" id="1592" optional="true" bObjFieldId="1593">
+        <MDMPersistenceDetails databaseFieldName="X_ACTIVATION_DATE" columnId="1598" historyColumnId="1599"/>
+        <MDMAttributeConstraints xsi:type="mdm:MDMStringAttributeConstraints"/>
+      </MDMProperty>
+      <MDMProperty xsi:type="mdm:MDMAttribute" name="xDeactivation_Date" id="1600" optional="true" bObjFieldId="1601">
+        <MDMPersistenceDetails databaseFieldName="X_DEACTIVATION_DATE" columnId="1606" historyColumnId="1607"/>
+        <MDMAttributeConstraints xsi:type="mdm:MDMStringAttributeConstraints"/>
+      </MDMProperty>
+      <MDMErrorReason id="1462" messageKey="CoreUtils_InsertExtErr" modelReadOnly="true" errorType="mdm://MDMSharedResources#//@MDMErrorTypeCode.INSERR" typeCodeId="1463" typeCodeForComponentId="1465" typeCodeForBusinessProxyId="1464"/>
+      <MDMErrorReason id="1466" messageKey="CoreUtils_DeleteExtErr" modelReadOnly="true" errorType="mdm://MDMSharedResources#//@MDMErrorTypeCode.DELERR" typeCodeId="1467" typeCodeForComponentId="1469" typeCodeForBusinessProxyId="1468"/>
+      <MDMErrorReason id="1470" messageKey="CoreUtils_ReadExtErr" modelReadOnly="true" errorType="mdm://MDMSharedResources#//@MDMErrorTypeCode.READERR" typeCodeId="1471" typeCodeForComponentId="1473" typeCodeForBusinessProxyId="1472"/>
+      <MDMErrorReason id="1474" messageKey="CoreUtils_UpdateExtErr" modelReadOnly="true" errorType="mdm://MDMSharedResources#//@MDMErrorTypeCode.UPDERR" typeCodeId="1475" typeCodeForComponentId="1477" typeCodeForBusinessProxyId="1476"/>
+    </members>
+    <members xsi:type="mdm:MDMEntityExtension" name="xNWContactMethod" id="1527" componentTypeMetadataId="1528" errorReasonTpCdForFVERR="1530" bObjId="1529" lastUpdateDateBObjFieldId="1531" lastUpdateUserBObjFieldId="1532" historyActionCodeBObjFieldId="1534" historyCreateDateBObjFieldId="1535" historyEndDateBObjFieldId="1537" historyCreatedByBObjFieldId="1536" lastUpdateTxIdBObjFieldId="1533" historyIdPkBObjFieldId="1538" tableId="1539" historyTableId="1540" lastUpdateDateColumnId="1541" lastUpdateDateHistoryColumnId="1545" lastUpdateUserColumnId="1543" lastUpdateUserHistoryColumnId="1547" historyActionCodeColumnId="1549" historyCreateDateColumnId="1544" historyCreatedByColumnId="1542" historyEndDateColumnId="1548" historyIdPkColumnId="1546" historyIdPkBObjColumnId="1550" lastUpdateTxIdColumnId="1551" extends="mdm://Party#//Party/@members.ContactMethod/@members.ContactMethod" overrideBaseQuery="false">
+      <MDMProperty xsi:type="mdm:MDMAttribute" name="xExtension" id="1568" optional="true" bObjFieldId="1569">
+        <MDMPersistenceDetails databaseFieldName="X_EXTENSION" columnId="1574" historyColumnId="1575"/>
+        <MDMAttributeConstraints xsi:type="mdm:MDMStringAttributeConstraints" stringLength="100"/>
+      </MDMProperty>
+      <MDMErrorReason id="1552" messageKey="CoreUtils_InsertExtErr" modelReadOnly="true" errorType="mdm://MDMSharedResources#//@MDMErrorTypeCode.INSERR" typeCodeId="1553" typeCodeForComponentId="1555" typeCodeForBusinessProxyId="1554"/>
+      <MDMErrorReason id="1556" messageKey="CoreUtils_DeleteExtErr" modelReadOnly="true" errorType="mdm://MDMSharedResources#//@MDMErrorTypeCode.DELERR" typeCodeId="1557" typeCodeForComponentId="1559" typeCodeForBusinessProxyId="1558"/>
+      <MDMErrorReason id="1560" messageKey="CoreUtils_ReadExtErr" modelReadOnly="true" errorType="mdm://MDMSharedResources#//@MDMErrorTypeCode.READERR" typeCodeId="1561" typeCodeForComponentId="1563" typeCodeForBusinessProxyId="1562"/>
+      <MDMErrorReason id="1564" messageKey="CoreUtils_UpdateExtErr" modelReadOnly="true" errorType="mdm://MDMSharedResources#//@MDMErrorTypeCode.UPDERR" typeCodeId="1565" typeCodeForComponentId="1567" typeCodeForBusinessProxyId="1566"/>
+    </members>
+  </MDMPackage>
+</mdm:MDMModule>

@@ -1,0 +1,896 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TCRMService xmlns="http://www.ibm.com/mdm/schema" 
+   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.ibm.com/mdm/schema MDMDomains.xsd">
+   <RequestControl>
+      <requestID>10015</requestID>
+      <DWLControl>
+         <requesterName>cusadmin</requesterName>
+         <requesterLanguage>100</requesterLanguage>
+      </DWLControl>
+   </RequestControl>
+   <TCRMTx>
+      <TCRMTxType>MaintainNWPerson</TCRMTxType>
+      <TCRMTxObject>CompositeNWPersonBObj</TCRMTxObject>
+      <TCRMObject>
+         <CompositeNWPersonBObj>
+            <ObjectReferenceId></ObjectReferenceId>
+            <TCRMPersonBObj>
+               <SourceIdentifierValue>Echo</SourceIdentifierValue>
+               <BirthDate>1990-11-24 08:45:41.434175</BirthDate>
+               <GenderType>M</GenderType>
+               <MaritalStatusValue>Single</MaritalStatusValue>
+               <DeceasedDate>2017-11-24 08:45:41.434175</DeceasedDate>
+               <TCRMExtension>
+                  <ExtendedObject>XNWPersonBObjExt</ExtendedObject>
+                  <XNWPersonBObjExt>
+                     <XJob_Title>ANALYST</XJob_Title>
+                     <XJob_Family>JF1</XJob_Family>
+                     <XFullTime_PartTIme>FULL</XFullTime_PartTIme>
+                     <XStandard_Hours>Y</XStandard_Hours>
+                     <XBusiness_Unit>IT</XBusiness_Unit>
+                     <XHire_Date>2017-11-24 08:45:41.434175</XHire_Date>
+                     <XEmployee_Role_Status>A</XEmployee_Role_Status>
+                     <XRehire_Date>2017-11-24 08:45:41.434175</XRehire_Date>
+                     <XTermination_Date>2017-11-24 08:45:41.434175</XTermination_Date>
+                     <XDepartment_ID>2321</XDepartment_ID>
+                     <XDepartment_Name>DEPT A</XDepartment_Name>
+                     <XService_Line_Financial_Budgetary>SL1</XService_Line_Financial_Budgetary>
+                  </XNWPersonBObjExt>
+               </TCRMExtension>
+               <TCRMPartyAddressBObj>
+                  <AddressUsageValue>Primary Residence</AddressUsageValue>
+                  <StartDate>2017-11-21 08:45:41.434175</StartDate>
+                  <EndDate>2020-11-24 08:45:41.434175</EndDate>
+                  <SourceIdentifierValue>Echo</SourceIdentifierValue>
+                  <TCRMExtension>
+                     <ExtendedObject>XNWPartyAddressBObjExt</ExtendedObject>
+                     <XNWPartyAddressBObjExt>
+                        <XProvider_Facility_Staff_Code></XProvider_Facility_Staff_Code>
+                        <XProvider_Facility_Active_Status></XProvider_Facility_Active_Status>
+                        <XPrimary_Office_Flag></XPrimary_Office_Flag>
+                        <XDeactivation_Flag>N</XDeactivation_Flag>
+                        <XPrimary_Billing_Location_Flag>Y</XPrimary_Billing_Location_Flag>
+                        <XCredential_Status></XCredential_Status>
+                        <XProvider_Status></XProvider_Status>
+                        <XScheduling_Primary_Flag></XScheduling_Primary_Flag>
+                        <XPhone>123-232-3232</XPhone>
+                        <XPhone_Ext>3235</XPhone_Ext>
+                        <XSecondary_Phone>123-333-4444</XSecondary_Phone>
+                        <XSec_Phone_Ext>3422</XSec_Phone_Ext>
+                        <XFax>354-345-5435</XFax>
+                     </XNWPartyAddressBObjExt>
+                  </TCRMExtension>
+                  <TCRMAddressBObj>
+                     <AddressLineOne>1234 MAIN ST</AddressLineOne>
+                     <City>NEW YORK</City>
+                     <ZipPostalCode>10001</ZipPostalCode>
+                     <ProvinceStateValue>NY</ProvinceStateValue>
+                     <CountryValue>United States of America</CountryValue>
+                     <TCRMExtension>
+                        <ExtendedObject>XNWAddressBObjExt</ExtendedObject>
+                        <XNWAddressBObjExt>
+                           <XCounty>QUEENS</XCounty>
+                           <XHospital></XHospital>
+                           <XFacility_Name></XFacility_Name>
+                           <XFacility_Code></XFacility_Code>
+                           <XDepartment_Code>DEPT A</XDepartment_Code>
+                           <XDepartment_Description></XDepartment_Description>
+                           <XLocation_Code></XLocation_Code>
+                           <XLocation_Description></XLocation_Description>
+                           <XLocation_Mnemonic>LOCATIONA</XLocation_Mnemonic>
+                           <XLocation_ID>21313</XLocation_ID>
+                           <XLocation_Name>LOC A</XLocation_Name>
+                           <XPhone>123-232-3232</XPhone>
+                           <XPhone_Ext>3235</XPhone_Ext>
+                           <XSecondary_Phone>123-333-4444</XSecondary_Phone>
+                           <XSec_Phone_Ext>3422</XSec_Phone_Ext>
+                           <XFax>354-345-5435</XFax>
+                           <XTax_ID_Number></XTax_ID_Number>
+                           <XNewport_Key></XNewport_Key>
+                           <XDeactivation_Flag>Active</XDeactivation_Flag>
+                           <XActivation_Date>2017-11-21 08:45:41.434175</XActivation_Date>
+                           <XDeactivation_Date>2020-11-21 08:45:41.434175</XDeactivation_Date>
+                        </XNWAddressBObjExt>
+                     </TCRMExtension>
+                  </TCRMAddressBObj>
+               </TCRMPartyAddressBObj>
+               <TCRMPartyAddressBObj>
+                  <AddressUsageValue>Facility Address</AddressUsageValue>
+                  <StartDate>2017-11-21 08:45:41.434175</StartDate>
+                  <EndDate>2020-11-24 08:45:41.434175</EndDate>
+                  <SourceIdentifierValue>Echo</SourceIdentifierValue>
+                  <TCRMExtension>
+                     <ExtendedObject>XNWPartyAddressBObjExt</ExtendedObject>
+                     <XNWPartyAddressBObjExt>
+                        <XProvider_Facility_Staff_Code></XProvider_Facility_Staff_Code>
+                        <XProvider_Facility_Active_Status></XProvider_Facility_Active_Status>
+                        <XPrimary_Office_Flag></XPrimary_Office_Flag>
+                        <XDeactivation_Flag>N</XDeactivation_Flag>
+                        <XPrimary_Billing_Location_Flag>Y</XPrimary_Billing_Location_Flag>
+                        <XCredential_Status></XCredential_Status>
+                        <XProvider_Status></XProvider_Status>
+                        <XScheduling_Primary_Flag></XScheduling_Primary_Flag>
+                        <XPhone>123-232-3232</XPhone>
+                        <XPhone_Ext>3235</XPhone_Ext>
+                        <XSecondary_Phone>123-333-4444</XSecondary_Phone>
+                        <XSec_Phone_Ext>3422</XSec_Phone_Ext>
+                        <XFax>354-345-5435</XFax>
+                     </XNWPartyAddressBObjExt>
+                  </TCRMExtension>
+                  <TCRMAddressBObj>
+                     <AddressLineOne>1234 MAIN ST</AddressLineOne>
+                     <City>NEW YORK</City>
+                     <ZipPostalCode>10001</ZipPostalCode>
+                     <ProvinceStateValue>NY</ProvinceStateValue>
+                     <CountryValue>United States of America</CountryValue>
+                     <TCRMExtension>
+                        <ExtendedObject>XNWAddressBObjExt</ExtendedObject>
+                        <XNWAddressBObjExt>
+                           <XCounty>QUEENS</XCounty>
+                           <XHospital></XHospital>
+                           <XFacility_Name></XFacility_Name>
+                           <XFacility_Code></XFacility_Code>
+                           <XDepartment_Code>DEPT A</XDepartment_Code>
+                           <XDepartment_Description></XDepartment_Description>
+                           <XLocation_Code></XLocation_Code>
+                           <XLocation_Description></XLocation_Description>
+                           <XLocation_Mnemonic>LOCATIONA</XLocation_Mnemonic>
+                           <XLocation_ID>21313</XLocation_ID>
+                           <XLocation_Name>LOC A</XLocation_Name>
+                           <XPhone>123-232-3232</XPhone>
+                           <XPhone_Ext>3235</XPhone_Ext>
+                           <XSecondary_Phone>123-333-4444</XSecondary_Phone>
+                           <XSec_Phone_Ext>3422</XSec_Phone_Ext>
+                           <XFax>354-345-5435</XFax>
+                           <XTax_ID_Number></XTax_ID_Number>
+                           <XNewport_Key></XNewport_Key>
+                           <XDeactivation_Flag>Active</XDeactivation_Flag>
+                           <XActivation_Date>2017-11-21 08:45:41.434175</XActivation_Date>
+                           <XDeactivation_Date>2020-11-21 08:45:41.434175</XDeactivation_Date>
+                        </XNWAddressBObjExt>
+                     </TCRMExtension>
+                  </TCRMAddressBObj>
+               </TCRMPartyAddressBObj>
+               <TCRMPartyAddressBObj>
+                  <AddressUsageValue>Scheduling Address</AddressUsageValue>
+                  <StartDate>2017-11-21 08:45:41.434175</StartDate>
+                  <EndDate>2020-11-24 08:45:41.434175</EndDate>
+                  <SourceIdentifierValue>Echo</SourceIdentifierValue>
+                  <TCRMExtension>
+                     <ExtendedObject>XNWPartyAddressBObjExt</ExtendedObject>
+                     <XNWPartyAddressBObjExt>
+                        <XProvider_Facility_Staff_Code></XProvider_Facility_Staff_Code>
+                        <XProvider_Facility_Active_Status></XProvider_Facility_Active_Status>
+                        <XPrimary_Office_Flag></XPrimary_Office_Flag>
+                        <XDeactivation_Flag>N</XDeactivation_Flag>
+                        <XPrimary_Billing_Location_Flag>Y</XPrimary_Billing_Location_Flag>
+                        <XCredential_Status></XCredential_Status>
+                        <XProvider_Status></XProvider_Status>
+                        <XScheduling_Primary_Flag></XScheduling_Primary_Flag>
+                        <XPhone>123-232-3232</XPhone>
+                        <XPhone_Ext>3235</XPhone_Ext>
+                        <XSecondary_Phone>123-333-4444</XSecondary_Phone>
+                        <XSec_Phone_Ext>3422</XSec_Phone_Ext>
+                        <XFax>354-345-5435</XFax>
+                     </XNWPartyAddressBObjExt>
+                  </TCRMExtension>
+                  <TCRMAddressBObj>
+                     <AddressLineOne>1234 MAIN ST</AddressLineOne>
+                     <City>NEW YORK</City>
+                     <ZipPostalCode>10001</ZipPostalCode>
+                     <ProvinceStateValue>NY</ProvinceStateValue>
+                     <CountryValue>United States of America</CountryValue>
+                     <TCRMExtension>
+                        <ExtendedObject>XNWAddressBObjExt</ExtendedObject>
+                        <XNWAddressBObjExt>
+                           <XCounty>QUEENS</XCounty>
+                           <XHospital></XHospital>
+                           <XFacility_Name></XFacility_Name>
+                           <XFacility_Code></XFacility_Code>
+                           <XDepartment_Code>DEPT A</XDepartment_Code>
+                           <XDepartment_Description></XDepartment_Description>
+                           <XLocation_Code></XLocation_Code>
+                           <XLocation_Description></XLocation_Description>
+                           <XLocation_Mnemonic>LOCATIONA</XLocation_Mnemonic>
+                           <XLocation_ID>21313</XLocation_ID>
+                           <XLocation_Name>LOC A</XLocation_Name>
+                           <XPhone>123-232-3232</XPhone>
+                           <XPhone_Ext>3235</XPhone_Ext>
+                           <XSecondary_Phone>123-333-4444</XSecondary_Phone>
+                           <XSec_Phone_Ext>3422</XSec_Phone_Ext>
+                           <XFax>354-345-5435</XFax>
+                           <XTax_ID_Number></XTax_ID_Number>
+                           <XNewport_Key></XNewport_Key>
+                           <XDeactivation_Flag>Active</XDeactivation_Flag>
+                           <XActivation_Date>2017-11-21 08:45:41.434175</XActivation_Date>
+                           <XDeactivation_Date>2020-11-21 08:45:41.434175</XDeactivation_Date>
+                        </XNWAddressBObjExt>
+                     </TCRMExtension>
+                  </TCRMAddressBObj>
+               </TCRMPartyAddressBObj>
+               <TCRMPartyAddressBObj>
+                  <AddressUsageValue>Billing Address</AddressUsageValue>
+                  <StartDate>2017-11-21 08:45:41.434175</StartDate>
+                  <EndDate>2020-11-24 08:45:41.434175</EndDate>
+                  <SourceIdentifierValue>Echo</SourceIdentifierValue>
+                  <TCRMExtension>
+                     <ExtendedObject>XNWPartyAddressBObjExt</ExtendedObject>
+                     <XNWPartyAddressBObjExt>
+                        <XProvider_Facility_Staff_Code></XProvider_Facility_Staff_Code>
+                        <XProvider_Facility_Active_Status></XProvider_Facility_Active_Status>
+                        <XPrimary_Office_Flag></XPrimary_Office_Flag>
+                        <XDeactivation_Flag>N</XDeactivation_Flag>
+                        <XPrimary_Billing_Location_Flag>Y</XPrimary_Billing_Location_Flag>
+                        <XCredential_Status></XCredential_Status>
+                        <XProvider_Status></XProvider_Status>
+                        <XScheduling_Primary_Flag></XScheduling_Primary_Flag>
+                        <XPhone>123-232-3232</XPhone>
+                        <XPhone_Ext>3235</XPhone_Ext>
+                        <XSecondary_Phone>123-333-4444</XSecondary_Phone>
+                        <XSec_Phone_Ext>3422</XSec_Phone_Ext>
+                        <XFax>354-345-5435</XFax>
+                     </XNWPartyAddressBObjExt>
+                  </TCRMExtension>
+                  <TCRMAddressBObj>
+                     <AddressLineOne>1234 MAIN ST</AddressLineOne>
+                     <City>NEW YORK</City>
+                     <ZipPostalCode>10001</ZipPostalCode>
+                     <ProvinceStateValue>NY</ProvinceStateValue>
+                     <CountryValue>United States of America</CountryValue>
+                     <TCRMExtension>
+                        <ExtendedObject>XNWAddressBObjExt</ExtendedObject>
+                        <XNWAddressBObjExt>
+                           <XCounty>QUEENS</XCounty>
+                           <XHospital></XHospital>
+                           <XFacility_Name></XFacility_Name>
+                           <XFacility_Code></XFacility_Code>
+                           <XDepartment_Code>DEPT A</XDepartment_Code>
+                           <XDepartment_Description></XDepartment_Description>
+                           <XLocation_Code></XLocation_Code>
+                           <XLocation_Description></XLocation_Description>
+                           <XLocation_Mnemonic>LOCATIONA</XLocation_Mnemonic>
+                           <XLocation_ID>21313</XLocation_ID>
+                           <XLocation_Name>LOC A</XLocation_Name>
+                           <XPhone>123-232-3232</XPhone>
+                           <XPhone_Ext>3235</XPhone_Ext>
+                           <XSecondary_Phone>123-333-4444</XSecondary_Phone>
+                           <XSec_Phone_Ext>3422</XSec_Phone_Ext>
+                           <XFax>354-345-5435</XFax>
+                           <XTax_ID_Number></XTax_ID_Number>
+                           <XNewport_Key></XNewport_Key>
+                           <XDeactivation_Flag>Active</XDeactivation_Flag>
+                           <XActivation_Date>2017-11-21 08:45:41.434175</XActivation_Date>
+                           <XDeactivation_Date>2020-11-21 08:45:41.434175</XDeactivation_Date>
+                        </XNWAddressBObjExt>
+                     </TCRMExtension>
+                  </TCRMAddressBObj>
+               </TCRMPartyAddressBObj>
+               <TCRMPartyAddressBObj>
+                  <AddressUsageValue>Ordering Address</AddressUsageValue>
+                  <StartDate>2017-11-21 08:45:41.434175</StartDate>
+                  <EndDate>2020-11-24 08:45:41.434175</EndDate>
+                  <SourceIdentifierValue>Echo</SourceIdentifierValue>
+                  <TCRMExtension>
+                     <ExtendedObject>XNWPartyAddressBObjExt</ExtendedObject>
+                     <XNWPartyAddressBObjExt>
+                        <XProvider_Facility_Staff_Code></XProvider_Facility_Staff_Code>
+                        <XProvider_Facility_Active_Status></XProvider_Facility_Active_Status>
+                        <XPrimary_Office_Flag></XPrimary_Office_Flag>
+                        <XDeactivation_Flag>N</XDeactivation_Flag>
+                        <XPrimary_Billing_Location_Flag>Y</XPrimary_Billing_Location_Flag>
+                        <XCredential_Status></XCredential_Status>
+                        <XProvider_Status></XProvider_Status>
+                        <XScheduling_Primary_Flag></XScheduling_Primary_Flag>
+                        <XPhone>123-232-3232</XPhone>
+                        <XPhone_Ext>3235</XPhone_Ext>
+                        <XSecondary_Phone>123-333-4444</XSecondary_Phone>
+                        <XSec_Phone_Ext>3422</XSec_Phone_Ext>
+                        <XFax>354-345-5435</XFax>
+                     </XNWPartyAddressBObjExt>
+                  </TCRMExtension>
+                  <TCRMAddressBObj>
+                     <AddressLineOne>1234 MAIN ST</AddressLineOne>
+                     <City>NEW YORK</City>
+                     <ZipPostalCode>10001</ZipPostalCode>
+                     <ProvinceStateValue>NY</ProvinceStateValue>
+                     <CountryValue>United States of America</CountryValue>
+                     <TCRMExtension>
+                        <ExtendedObject>XNWAddressBObjExt</ExtendedObject>
+                        <XNWAddressBObjExt>
+                           <XCounty>QUEENS</XCounty>
+                           <XHospital></XHospital>
+                           <XFacility_Name></XFacility_Name>
+                           <XFacility_Code></XFacility_Code>
+                           <XDepartment_Code>DEPT A</XDepartment_Code>
+                           <XDepartment_Description></XDepartment_Description>
+                           <XLocation_Code></XLocation_Code>
+                           <XLocation_Description></XLocation_Description>
+                           <XLocation_Mnemonic>LOCATIONA</XLocation_Mnemonic>
+                           <XLocation_ID>21313</XLocation_ID>
+                           <XLocation_Name>LOC A</XLocation_Name>
+                           <XPhone>123-232-3232</XPhone>
+                           <XPhone_Ext>3235</XPhone_Ext>
+                           <XSecondary_Phone>123-333-4444</XSecondary_Phone>
+                           <XSec_Phone_Ext>3422</XSec_Phone_Ext>
+                           <XFax>354-345-5435</XFax>
+                           <XTax_ID_Number></XTax_ID_Number>
+                           <XNewport_Key></XNewport_Key>
+                           <XDeactivation_Flag>Active</XDeactivation_Flag>
+                           <XActivation_Date>2017-11-21 08:45:41.434175</XActivation_Date>
+                           <XDeactivation_Date>2020-11-21 08:45:41.434175</XDeactivation_Date>
+                        </XNWAddressBObjExt>
+                     </TCRMExtension>
+                  </TCRMAddressBObj>
+               </TCRMPartyAddressBObj>
+               <TCRMPartyAddressBObj>
+                  <AddressUsageValue>Mailing Address</AddressUsageValue>
+                  <StartDate>2017-11-21 08:45:41.434175</StartDate>
+                  <EndDate>2020-11-24 08:45:41.434175</EndDate>
+                  <SourceIdentifierValue>Echo</SourceIdentifierValue>
+                  <TCRMExtension>
+                     <ExtendedObject>XNWPartyAddressBObjExt</ExtendedObject>
+                     <XNWPartyAddressBObjExt>
+                        <XProvider_Facility_Staff_Code></XProvider_Facility_Staff_Code>
+                        <XProvider_Facility_Active_Status></XProvider_Facility_Active_Status>
+                        <XPrimary_Office_Flag></XPrimary_Office_Flag>
+                        <XDeactivation_Flag>N</XDeactivation_Flag>
+                        <XPrimary_Billing_Location_Flag>Y</XPrimary_Billing_Location_Flag>
+                        <XCredential_Status></XCredential_Status>
+                        <XProvider_Status></XProvider_Status>
+                        <XScheduling_Primary_Flag></XScheduling_Primary_Flag>
+                        <XPhone>123-232-3232</XPhone>
+                        <XPhone_Ext>3235</XPhone_Ext>
+                        <XSecondary_Phone>123-333-4444</XSecondary_Phone>
+                        <XSec_Phone_Ext>3422</XSec_Phone_Ext>
+                        <XFax>354-345-5435</XFax>
+                     </XNWPartyAddressBObjExt>
+                  </TCRMExtension>
+                  <TCRMAddressBObj>
+                     <AddressLineOne>1234 MAIN ST</AddressLineOne>
+                     <City>NEW YORK</City>
+                     <ZipPostalCode>10001</ZipPostalCode>
+                     <ProvinceStateValue>NY</ProvinceStateValue>
+                     <CountryValue>United States of America</CountryValue>
+                     <TCRMExtension>
+                        <ExtendedObject>XNWAddressBObjExt</ExtendedObject>
+                        <XNWAddressBObjExt>
+                           <XCounty>QUEENS</XCounty>
+                           <XHospital></XHospital>
+                           <XFacility_Name></XFacility_Name>
+                           <XFacility_Code></XFacility_Code>
+                           <XDepartment_Code>DEPT A</XDepartment_Code>
+                           <XDepartment_Description></XDepartment_Description>
+                           <XLocation_Code></XLocation_Code>
+                           <XLocation_Description></XLocation_Description>
+                           <XLocation_Mnemonic>LOCATIONA</XLocation_Mnemonic>
+                           <XLocation_ID>21313</XLocation_ID>
+                           <XLocation_Name>LOC A</XLocation_Name>
+                           <XPhone>123-232-3232</XPhone>
+                           <XPhone_Ext>3235</XPhone_Ext>
+                           <XSecondary_Phone>123-333-4444</XSecondary_Phone>
+                           <XSec_Phone_Ext>3422</XSec_Phone_Ext>
+                           <XFax>354-345-5435</XFax>
+                           <XTax_ID_Number></XTax_ID_Number>
+                           <XNewport_Key></XNewport_Key>
+                           <XDeactivation_Flag>Active</XDeactivation_Flag>
+                           <XActivation_Date>2017-11-21 08:45:41.434175</XActivation_Date>
+                           <XDeactivation_Date>2020-11-21 08:45:41.434175</XDeactivation_Date>
+                        </XNWAddressBObjExt>
+                     </TCRMExtension>
+                  </TCRMAddressBObj>
+               </TCRMPartyAddressBObj>
+               <TCRMPartyAddressBObj>
+                  <AddressUsageValue>Business Address</AddressUsageValue>
+                  <StartDate>2017-11-21 08:45:41.434175</StartDate>
+                  <EndDate>2020-11-24 08:45:41.434175</EndDate>
+                  <SourceIdentifierValue>Echo</SourceIdentifierValue>
+                  <TCRMExtension>
+                     <ExtendedObject>XNWPartyAddressBObjExt</ExtendedObject>
+                     <XNWPartyAddressBObjExt>
+                        <XProvider_Facility_Staff_Code></XProvider_Facility_Staff_Code>
+                        <XProvider_Facility_Active_Status></XProvider_Facility_Active_Status>
+                        <XPrimary_Office_Flag></XPrimary_Office_Flag>
+                        <XDeactivation_Flag>N</XDeactivation_Flag>
+                        <XPrimary_Billing_Location_Flag>Y</XPrimary_Billing_Location_Flag>
+                        <XCredential_Status></XCredential_Status>
+                        <XProvider_Status></XProvider_Status>
+                        <XScheduling_Primary_Flag></XScheduling_Primary_Flag>
+                        <XPhone>123-232-3232</XPhone>
+                        <XPhone_Ext>3235</XPhone_Ext>
+                        <XSecondary_Phone>123-333-4444</XSecondary_Phone>
+                        <XSec_Phone_Ext>3422</XSec_Phone_Ext>
+                        <XFax>354-345-5435</XFax>
+                     </XNWPartyAddressBObjExt>
+                  </TCRMExtension>
+                  <TCRMAddressBObj>
+                     <AddressLineOne>1234 MAIN ST</AddressLineOne>
+                     <City>NEW YORK</City>
+                     <ZipPostalCode>10001</ZipPostalCode>
+                     <ProvinceStateValue>NY</ProvinceStateValue>
+                     <CountryValue>United States of America</CountryValue>
+                     <TCRMExtension>
+                        <ExtendedObject>XNWAddressBObjExt</ExtendedObject>
+                        <XNWAddressBObjExt>
+                           <XCounty>QUEENS</XCounty>
+                           <XHospital></XHospital>
+                           <XFacility_Name></XFacility_Name>
+                           <XFacility_Code></XFacility_Code>
+                           <XDepartment_Code>DEPT A</XDepartment_Code>
+                           <XDepartment_Description></XDepartment_Description>
+                           <XLocation_Code></XLocation_Code>
+                           <XLocation_Description></XLocation_Description>
+                           <XLocation_Mnemonic>LOCATIONA</XLocation_Mnemonic>
+                           <XLocation_ID>21313</XLocation_ID>
+                           <XLocation_Name>LOC A</XLocation_Name>
+                           <XPhone>123-232-3232</XPhone>
+                           <XPhone_Ext>3235</XPhone_Ext>
+                           <XSecondary_Phone>123-333-4444</XSecondary_Phone>
+                           <XSec_Phone_Ext>3422</XSec_Phone_Ext>
+                           <XFax>354-345-5435</XFax>
+                           <XTax_ID_Number></XTax_ID_Number>
+                           <XNewport_Key></XNewport_Key>
+                           <XDeactivation_Flag>Active</XDeactivation_Flag>
+                           <XActivation_Date>2017-11-21 08:45:41.434175</XActivation_Date>
+                           <XDeactivation_Date>2020-11-21 08:45:41.434175</XDeactivation_Date>
+                        </XNWAddressBObjExt>
+                     </TCRMExtension>
+                  </TCRMAddressBObj>
+               </TCRMPartyAddressBObj>
+               <TCRMPartyContactMethodBObj>
+                  <ContactMethodUsageValue>Home Telephone</ContactMethodUsageValue>
+                  <SourceIdentifierValue>Echo</SourceIdentifierValue>
+                  <TCRMContactMethodBObj>
+                     <ReferenceNumber>111-332-2334</ReferenceNumber>
+                     <ContactMethodValue>Telephone Number</ContactMethodValue>
+                     <TCRMExtension>
+                        <ExtendedObject>XNWContactMethodBObjExt</ExtendedObject>
+                        <XNWContactMethodBObjExt>
+                           <XExtension>123</XExtension>
+                        </XNWContactMethodBObjExt>
+                     </TCRMExtension>
+                  </TCRMContactMethodBObj>
+               </TCRMPartyContactMethodBObj>
+               <TCRMPartyContactMethodBObj>
+                  <ContactMethodUsageValue>Business Telephone</ContactMethodUsageValue>
+                  <SourceIdentifierValue>Echo</SourceIdentifierValue>
+                  <TCRMContactMethodBObj>
+                     <ReferenceNumber>111-332-2334</ReferenceNumber>
+                     <ContactMethodValue>Telephone Number</ContactMethodValue>
+                     <TCRMExtension>
+                        <ExtendedObject>XNWContactMethodBObjExt</ExtendedObject>
+                        <XNWContactMethodBObjExt>
+                           <XExtension>123</XExtension>
+                        </XNWContactMethodBObjExt>
+                     </TCRMExtension>
+                  </TCRMContactMethodBObj>
+               </TCRMPartyContactMethodBObj>
+               <TCRMPartyContactMethodBObj>
+                  <ContactMethodUsageValue>Cellular</ContactMethodUsageValue>
+                  <SourceIdentifierValue>Echo</SourceIdentifierValue>
+                  <TCRMContactMethodBObj>
+                     <ReferenceNumber>111-332-2334</ReferenceNumber>
+                     <ContactMethodValue>Telephone Number</ContactMethodValue>
+                     <TCRMExtension>
+                        <ExtendedObject>XNWContactMethodBObjExt</ExtendedObject>
+                        <XNWContactMethodBObjExt>
+                           <XExtension>123</XExtension>
+                        </XNWContactMethodBObjExt>
+                     </TCRMExtension>
+                  </TCRMContactMethodBObj>
+               </TCRMPartyContactMethodBObj>
+               <TCRMPartyContactMethodBObj>
+                  <ContactMethodUsageValue>Business Mobile Telephone</ContactMethodUsageValue>
+                  <SourceIdentifierValue>Echo</SourceIdentifierValue>
+                  <TCRMContactMethodBObj>
+                     <ReferenceNumber>111-332-2334</ReferenceNumber>
+                     <ContactMethodValue>Telephone Number</ContactMethodValue>
+                     <TCRMExtension>
+                        <ExtendedObject>XNWContactMethodBObjExt</ExtendedObject>
+                        <XNWContactMethodBObjExt>
+                           <XExtension>123</XExtension>
+                        </XNWContactMethodBObjExt>
+                     </TCRMExtension>
+                  </TCRMContactMethodBObj>
+               </TCRMPartyContactMethodBObj>
+               <TCRMPartyContactMethodBObj>
+                  <ContactMethodUsageValue>Pager</ContactMethodUsageValue>
+                  <SourceIdentifierValue>Echo</SourceIdentifierValue>
+                  <TCRMContactMethodBObj>
+                     <ReferenceNumber>111-332-2334</ReferenceNumber>
+                     <ContactMethodValue>Telephone Number</ContactMethodValue>
+                     <TCRMExtension>
+                        <ExtendedObject>XNWContactMethodBObjExt</ExtendedObject>
+                        <XNWContactMethodBObjExt>
+                           <XExtension>123</XExtension>
+                        </XNWContactMethodBObjExt>
+                     </TCRMExtension>
+                  </TCRMContactMethodBObj>
+               </TCRMPartyContactMethodBObj>
+               <TCRMPartyContactMethodBObj>
+                  <ContactMethodUsageValue>Business Pager</ContactMethodUsageValue>
+                  <SourceIdentifierValue>Echo</SourceIdentifierValue>
+                  <TCRMContactMethodBObj>
+                     <ReferenceNumber>111-332-2334</ReferenceNumber>
+                     <ContactMethodValue>Telephone Number</ContactMethodValue>
+                     <TCRMExtension>
+                        <ExtendedObject>XNWContactMethodBObjExt</ExtendedObject>
+                        <XNWContactMethodBObjExt>
+                           <XExtension>123</XExtension>
+                        </XNWContactMethodBObjExt>
+                     </TCRMExtension>
+                  </TCRMContactMethodBObj>
+               </TCRMPartyContactMethodBObj>
+               <TCRMPartyContactMethodBObj>
+                  <ContactMethodUsageValue>Personal Email</ContactMethodUsageValue>
+                  <SourceIdentifierValue>Echo</SourceIdentifierValue>
+                  <TCRMContactMethodBObj>
+                     <ReferenceNumber>a@provider.net</ReferenceNumber>
+                     <ContactMethodValue>Email Address</ContactMethodValue>
+                  </TCRMContactMethodBObj>
+               </TCRMPartyContactMethodBObj>
+               <TCRMPartyContactMethodBObj>
+                  <ContactMethodUsageValue>Business Email</ContactMethodUsageValue>
+                  <SourceIdentifierValue>Echo</SourceIdentifierValue>
+                  <TCRMContactMethodBObj>
+                     <ReferenceNumber>a@provider.net</ReferenceNumber>
+                     <ContactMethodValue>Email Address</ContactMethodValue>
+                  </TCRMContactMethodBObj>
+               </TCRMPartyContactMethodBObj>
+               <TCRMPartyContactMethodBObj>
+                  <ContactMethodUsageValue>Alternate Email</ContactMethodUsageValue>
+                  <SourceIdentifierValue>Echo</SourceIdentifierValue>
+                  <TCRMContactMethodBObj>
+                     <ReferenceNumber>a@provider.net</ReferenceNumber>
+                     <ContactMethodValue>Email Address</ContactMethodValue>
+                  </TCRMContactMethodBObj>
+               </TCRMPartyContactMethodBObj>
+               <TCRMPartyContactMethodBObj>
+                  <ContactMethodUsageValue>Facsimile</ContactMethodUsageValue>
+                  <SourceIdentifierValue>Echo</SourceIdentifierValue>
+                  <TCRMContactMethodBObj>
+                     <ReferenceNumber>111-332-2334</ReferenceNumber>
+                     <ContactMethodValue>Telephone Number</ContactMethodValue>
+                     <TCRMExtension>
+                        <ExtendedObject>XNWContactMethodBObjExt</ExtendedObject>
+                        <XNWContactMethodBObjExt>
+                           <XExtension>123</XExtension>
+                        </XNWContactMethodBObjExt>
+                     </TCRMExtension>
+                  </TCRMContactMethodBObj>
+               </TCRMPartyContactMethodBObj>
+               <TCRMPartyIdentificationBObj>
+                  <IdentificationValue>Universal ID</IdentificationValue>
+                  <IdentificationNumber>010101010</IdentificationNumber>
+                  <SourceIdentifierValue>Echo</SourceIdentifierValue>
+               </TCRMPartyIdentificationBObj>
+               <TCRMPartyIdentificationBObj>
+                  <IdentificationValue>Employee ID</IdentificationValue>
+                  <IdentificationNumber>010101010</IdentificationNumber>
+                  <SourceIdentifierValue>Echo</SourceIdentifierValue>
+               </TCRMPartyIdentificationBObj>
+               <TCRMPartyIdentificationBObj>
+                  <IdentificationValue>Social Security Number</IdentificationValue>
+                  <IdentificationNumber>010101010</IdentificationNumber>
+                  <SourceIdentifierValue>Echo</SourceIdentifierValue>
+               </TCRMPartyIdentificationBObj>
+               <TCRMPartyIdentificationBObj>
+                  <IdentificationValue>National Provider Identifier</IdentificationValue>
+                  <IdentificationNumber>010101010</IdentificationNumber>
+                  <SourceIdentifierValue>Echo</SourceIdentifierValue>
+               </TCRMPartyIdentificationBObj>
+               <TCRMPartyIdentificationBObj>
+                  <IdentificationValue>Group National Provider Identifier</IdentificationValue>
+                  <IdentificationNumber>010101010</IdentificationNumber>
+                  <SourceIdentifierValue>Echo</SourceIdentifierValue>
+               </TCRMPartyIdentificationBObj>
+               <TCRMPartyIdentificationBObj>
+                  <IdentificationValue>UPIN</IdentificationValue>
+                  <IdentificationNumber>010101010</IdentificationNumber>
+                  <SourceIdentifierValue>Echo</SourceIdentifierValue>
+               </TCRMPartyIdentificationBObj>
+               <TCRMPartyIdentificationBObj>
+                  <IdentificationValue>Driver's Licence Number</IdentificationValue>
+                  <IdentificationNumber>010101010</IdentificationNumber>
+                  <SourceIdentifierValue>Echo</SourceIdentifierValue>
+               </TCRMPartyIdentificationBObj>
+               <TCRMPartyIdentificationBObj>
+                  <IdentificationValue>State License Number</IdentificationValue>
+                  <IdentificationNumber>096945</IdentificationNumber>
+                  <IdentificationStatusValue>Active</IdentificationStatusValue>
+                  <StartDate>1966-08-29 00:00:00.000</StartDate>
+                  <EndDate>2021-08-29 00:00:00.000</EndDate>
+                  <IdentificationIssueLocation>NY</IdentificationIssueLocation>
+                  <LastVerifiedDate>1966-08-29 00:00:00.000</LastVerifiedDate>
+                  <SourceIdentifierValue>Echo</SourceIdentifierValue>
+               </TCRMPartyIdentificationBObj>
+               <TCRMPartyIdentificationBObj>
+                  <IdentificationValue>Soarian Internal Resource ID</IdentificationValue>
+                  <IdentificationNumber>010101010</IdentificationNumber>
+                  <SourceIdentifierValue>Echo</SourceIdentifierValue>
+               </TCRMPartyIdentificationBObj>
+               <TCRMPartyIdentificationBObj>
+                  <IdentificationValue>GECB/Soarian ID</IdentificationValue>
+                  <IdentificationNumber>010101010</IdentificationNumber>
+                  <SourceIdentifierValue>Echo</SourceIdentifierValue>
+               </TCRMPartyIdentificationBObj>
+               <TCRMPartyIdentificationBObj>
+                  <IdentificationValue>Soarian Resource Mnemonic</IdentificationValue>
+                  <IdentificationNumber>010101010</IdentificationNumber>
+                  <SourceIdentifierValue>Echo</SourceIdentifierValue>
+               </TCRMPartyIdentificationBObj>
+               <TCRMPartyIdentificationBObj>
+                  <IdentificationValue>Echo DR ID</IdentificationValue>
+                  <IdentificationNumber>010101010</IdentificationNumber>
+                  <SourceIdentifierValue>Echo</SourceIdentifierValue>
+               </TCRMPartyIdentificationBObj>
+               <TCRMPartyIdentificationBObj>
+                  <IdentificationValue>Medicare Number</IdentificationValue>
+                  <IdentificationNumber>010101010</IdentificationNumber>
+                  <SourceIdentifierValue>Echo</SourceIdentifierValue>
+               </TCRMPartyIdentificationBObj>
+               <TCRMPartyIdentificationBObj>
+                  <IdentificationValue>Medicaid Number</IdentificationValue>
+                  <IdentificationNumber>010101010</IdentificationNumber>
+                  <SourceIdentifierValue>Echo</SourceIdentifierValue>
+               </TCRMPartyIdentificationBObj>
+               <TCRMPartyIdentificationBObj>
+                  <IdentificationValue>Newport ID</IdentificationValue>
+                  <IdentificationNumber>010101010</IdentificationNumber>
+                  <SourceIdentifierValue>Echo</SourceIdentifierValue>
+               </TCRMPartyIdentificationBObj>
+               <TCRMPartyIdentificationBObj>
+                  <IdentificationValue>FH Hosp ID</IdentificationValue>
+                  <IdentificationNumber>010101010</IdentificationNumber>
+                  <SourceIdentifierValue>Echo</SourceIdentifierValue>
+               </TCRMPartyIdentificationBObj>
+               <TCRMPartyIdentificationBObj>
+                  <IdentificationValue>FR Hosp ID</IdentificationValue>
+                  <IdentificationNumber>010101010</IdentificationNumber>
+                  <SourceIdentifierValue>Echo</SourceIdentifierValue>
+               </TCRMPartyIdentificationBObj>
+               <TCRMPartyIdentificationBObj>
+                  <IdentificationValue>GC Hosp ID</IdentificationValue>
+                  <IdentificationNumber>010101010</IdentificationNumber>
+                  <SourceIdentifierValue>Echo</SourceIdentifierValue>
+               </TCRMPartyIdentificationBObj>
+               <TCRMPartyIdentificationBObj>
+                  <IdentificationValue>GD Hosp ID</IdentificationValue>
+                  <IdentificationNumber>010101010</IdentificationNumber>
+                  <SourceIdentifierValue>Echo</SourceIdentifierValue>
+               </TCRMPartyIdentificationBObj>
+               <TCRMPartyIdentificationBObj>
+                  <IdentificationValue>HH Hosp ID</IdentificationValue>
+                  <IdentificationNumber>010101010</IdentificationNumber>
+                  <SourceIdentifierValue>Echo</SourceIdentifierValue>
+               </TCRMPartyIdentificationBObj>
+               <TCRMPartyIdentificationBObj>
+                  <IdentificationValue>LH Hosp ID</IdentificationValue>
+                  <IdentificationNumber>010101010</IdentificationNumber>
+                  <SourceIdentifierValue>Echo</SourceIdentifierValue>
+               </TCRMPartyIdentificationBObj>
+               <TCRMPartyIdentificationBObj>
+                  <IdentificationValue>LJ Hosp ID</IdentificationValue>
+                  <IdentificationNumber>010101010</IdentificationNumber>
+                  <SourceIdentifierValue>Echo</SourceIdentifierValue>
+               </TCRMPartyIdentificationBObj>
+               <TCRMPartyIdentificationBObj>
+                  <IdentificationValue>MH Hosp ID</IdentificationValue>
+                  <IdentificationNumber>010101010</IdentificationNumber>
+                  <SourceIdentifierValue>Echo</SourceIdentifierValue>
+               </TCRMPartyIdentificationBObj>
+               <TCRMPartyIdentificationBObj>
+                  <IdentificationValue>NW Hosp ID</IdentificationValue>
+                  <IdentificationNumber>010101010</IdentificationNumber>
+                  <SourceIdentifierValue>Echo</SourceIdentifierValue>
+               </TCRMPartyIdentificationBObj>
+               <TCRMPartyIdentificationBObj>
+                  <IdentificationValue>PB Hosp ID</IdentificationValue>
+                  <IdentificationNumber>010101010</IdentificationNumber>
+                  <SourceIdentifierValue>Echo</SourceIdentifierValue>
+               </TCRMPartyIdentificationBObj>
+               <TCRMPartyIdentificationBObj>
+                  <IdentificationValue>PM Hosp ID</IdentificationValue>
+                  <IdentificationNumber>010101010</IdentificationNumber>
+                  <SourceIdentifierValue>Echo</SourceIdentifierValue>
+               </TCRMPartyIdentificationBObj>
+               <TCRMPartyIdentificationBObj>
+                  <IdentificationValue>PV Hosp ID</IdentificationValue>
+                  <IdentificationNumber>010101010</IdentificationNumber>
+                  <SourceIdentifierValue>Echo</SourceIdentifierValue>
+               </TCRMPartyIdentificationBObj>
+               <TCRMPartyIdentificationBObj>
+                  <IdentificationValue>SI Hosp ID</IdentificationValue>
+                  <IdentificationNumber>010101010</IdentificationNumber>
+                  <SourceIdentifierValue>Echo</SourceIdentifierValue>
+               </TCRMPartyIdentificationBObj>
+               <TCRMPartyIdentificationBObj>
+                  <IdentificationValue>SS Hosp ID</IdentificationValue>
+                  <IdentificationNumber>010101010</IdentificationNumber>
+                  <SourceIdentifierValue>Echo</SourceIdentifierValue>
+               </TCRMPartyIdentificationBObj>
+               <TCRMPartyIdentificationBObj>
+                  <IdentificationValue>SY Hosp ID</IdentificationValue>
+                  <IdentificationNumber>010101010</IdentificationNumber>
+                  <SourceIdentifierValue>Echo</SourceIdentifierValue>
+               </TCRMPartyIdentificationBObj>
+               <TCRMAdminContEquivBObj>
+                  <AdminPartyId>010101010</AdminPartyId>
+                  <AdminSystemValue>Echo</AdminSystemValue>
+               </TCRMAdminContEquivBObj>
+               <TCRMPersonNameBObj>
+                  <NameUsageValue>Legal</NameUsageValue>
+                  <GivenNameOne>Kelly</GivenNameOne>
+                  <GivenNameTwo></GivenNameTwo>
+                  <LastName>Blackstone</LastName>
+                  <Suffix>III</Suffix>
+                  <SourceIdentifierValue>Echo</SourceIdentifierValue>
+                  <TCRMExtension>
+                     <ExtendedObject>XNWPersonNameBObjExt</ExtendedObject>
+                     <XNWPersonNameBObjExt>
+                        <XFull_Name>John TESTONE</XFull_Name>
+                        <XDegree>PHD</XDegree>
+                     </XNWPersonNameBObjExt>
+                  </TCRMExtension>
+               </TCRMPersonNameBObj>
+               <TCRMPersonNameBObj>
+                  <NameUsageValue>Maiden</NameUsageValue>
+                  <LastName>SMITH</LastName>
+                  <SourceIdentifierValue>Echo</SourceIdentifierValue>
+               </TCRMPersonNameBObj>
+               <TCRMPersonNameBObj>
+                  <NameUsageValue>Also Known As</NameUsageValue>
+                  <GivenNameOne>Johnny</GivenNameOne>
+                  <GivenNameTwo>Jay</GivenNameTwo>
+                  <LastName>TESTERONE</LastName>
+                  <Suffix>III</Suffix>
+                  <StartDate>2016-01-24 08:45:41.434175</StartDate>
+                  <EndDate>2018-01-24 08:45:41.434175</EndDate>
+                  <SourceIdentifierValue>Echo</SourceIdentifierValue>
+               </TCRMPersonNameBObj>
+               <TCRMPartyValueBObj>
+                  <PartyValueValue>Race</PartyValueValue>
+                  <ValueString>CAUCASIAN</ValueString>
+                  <SourceIdentValue>Echo</SourceIdentValue>
+               </TCRMPartyValueBObj>
+               <TCRMPartyValueBObj>
+                  <PartyValueValue>Ethnicity</PartyValueValue>
+                  <ValueString>CAUCASIAN</ValueString>
+                  <SourceIdentValue>Echo</SourceIdentValue>
+               </TCRMPartyValueBObj>
+               <TCRMPartyValueBObj>
+                  <PartyValueValue>Billing Provider Indicator</PartyValueValue>
+                  <ValueString>Y</ValueString>
+                  <SourceIdentValue>Echo</SourceIdentValue>
+                  <StartDate>2016-01-24 08:45:41.434175</StartDate>
+                  <EndDate>2020-01-24 08:45:41.434175</EndDate>
+               </TCRMPartyValueBObj>
+               <TCRMPartyValueBObj>
+                  <PartyValueValue>Scheduling Provider Indicator</PartyValueValue>
+                  <ValueString>Y</ValueString>
+                  <SourceIdentValue>Echo</SourceIdentValue>
+               </TCRMPartyValueBObj>
+               <TCRMPartyValueBObj>
+                  <PartyValueValue>Referring Provider Indicator</PartyValueValue>
+                  <ValueString>Y</ValueString>
+                  <SourceIdentValue>Echo</SourceIdentValue>
+               </TCRMPartyValueBObj>
+               <TCRMPartyValueBObj>
+                  <PartyValueValue>CARTS Benchmark Specialty</PartyValueValue>
+                  <ValueString>Pediatrics</ValueString>
+                  <SourceIdentValue>Echo</SourceIdentValue>
+               </TCRMPartyValueBObj>
+               <TCRMPartyValueBObj>
+                  <PartyValueValue>CARTS Clinical Allocation</PartyValueValue>
+                  <ValueString>99000</ValueString>
+                  <SourceIdentValue>Echo</SourceIdentValue>
+               </TCRMPartyValueBObj>
+               <TCRMPartyValueBObj>
+                  <PartyValueValue>CARTS Administrative Allocation</PartyValueValue>
+                  <ValueString>88000</ValueString>
+                  <SourceIdentValue>Echo</SourceIdentValue>
+               </TCRMPartyValueBObj>
+               <TCRMPartyValueBObj>
+                  <PartyValueValue>CARTS Research Allocation</PartyValueValue>
+                  <ValueString>77000</ValueString>
+                  <SourceIdentValue>Echo</SourceIdentValue>
+               </TCRMPartyValueBObj>
+               <TCRMPartyValueBObj>
+                  <PartyValueValue>CARTS Teaching Allocation</PartyValueValue>
+                  <ValueString>66000</ValueString>
+                  <SourceIdentValue>Echo</SourceIdentValue>
+               </TCRMPartyValueBObj>
+               <TCRMPartyValueBObj>
+                  <PartyValueValue>CARTS Administrative Teaching Allocation</PartyValueValue>
+                  <ValueString>55000</ValueString>
+                  <SourceIdentValue>Echo</SourceIdentValue>
+               </TCRMPartyValueBObj>
+               <TCRMPartyValueBObj>
+                  <PartyValueValue>Service Line</PartyValueValue>
+                  <ValueString>ITSL2</ValueString>
+                  <SourceIdentValue>Echo</SourceIdentValue>
+               </TCRMPartyValueBObj>
+               <TCRMPartyValueBObj>
+                  <PartyValueValue>Role Status</PartyValueValue>
+                  <ValueString>Active</ValueString>
+                  <SourceIdentValue>Echo</SourceIdentValue>
+               </TCRMPartyValueBObj>
+               <TCRMPartyValueBObj>
+                  <PartyValueValue>Board Status</PartyValueValue>
+                  <ValueString>Active</ValueString>
+                  <SourceIdentValue>Echo</SourceIdentValue>
+               </TCRMPartyValueBObj>
+               <TCRMPartyValueBObj>
+                  <PartyValueValue>Billing Area Number</PartyValueValue>
+                  <ValueString>A12345</ValueString>
+                  <SourceIdentValue>Echo</SourceIdentValue>
+                  <StartDate>2018-12-18 13:20:49.540</StartDate>
+                  <EndDate>2021-12-18 13:20:49.540</EndDate>
+                  <Attribute0Value>Billing Area Name</Attribute0Value>
+                  <Attribute0String>B12345</Attribute0String>
+                  <Attribute1Value>Billing Area Mnemonic</Attribute1Value>
+                  <Attribute1String>XYZ</Attribute1String>
+                  <Attribute2Value>Billing Area Federal Tax ID</Attribute2Value>
+                  <Attribute2String>1</Attribute2String>
+                  <Attribute3Value>Billing Area Deactivation Flag</Attribute3Value>
+                  <Attribute3String>C12345</Attribute3String>
+                  <Attribute4Value>Division Number</Attribute4Value>
+                  <Attribute4String>C12345</Attribute4String>
+                  <Attribute5Value>Division Name</Attribute5Value>
+                  <Attribute5String>C12345</Attribute5String>
+                  <Attribute6Value>Division Mnemonic</Attribute6Value>
+                  <Attribute6String>C12345</Attribute6String>
+                  <Attribute7Value>Division Deactivation Flag</Attribute7Value>
+                  <Attribute7String>C12345</Attribute7String>
+               </TCRMPartyValueBObj>
+
+               <TCRMPartyValueBObj>
+                  <PartyValueValue>Specialty</PartyValueValue>
+                  <ValueString>Hospitalist</ValueString>
+                  <SourceIdentValue>Echo</SourceIdentValue>
+                  <StartDate>2017-11-24 08:45:41.434175</StartDate>
+                  <EndDate>2018-11-24 08:45:41.434175</EndDate>
+                  <Attribute0Value>Primary Specialty Flag</Attribute0Value>
+                  <Attribute0String>1</Attribute0String>
+                  <Attribute1Value>Specialty Order</Attribute1Value>
+                  <Attribute1String>1</Attribute1String>
+                  <Attribute2Value>Practicing Specialty Flag</Attribute2Value>
+                  <Attribute2String>1</Attribute2String>
+                  <Attribute3Value>Board Status</Attribute3Value>
+                  <Attribute3String>Certified</Attribute3String>
+                  <Attribute4Value>Board Certification Date</Attribute4Value>
+                  <Attribute4String>1976-10-29 00:00:00.000000</Attribute4String>
+                  <Attribute5Value>Board Expiration Date</Attribute5Value>
+                  <Attribute5String>2019-12-31 00:00:00.000000</Attribute5String>
+                  <Attribute6Value>Specialty Active Status</Attribute6Value>
+                  <Attribute6String>Active</Attribute6String>
+               </TCRMPartyValueBObj>
+
+               <TCRMPartyValueBObj>
+                  <PartyValueValue>Taxonomy Code</PartyValueValue>
+                  <ValueString>A12345</ValueString>
+                  <SourceIdentValue>Echo</SourceIdentValue>
+                  <StartDate>2018-12-18 13:20:49.540</StartDate>
+                  <EndDate>2028-12-18 13:20:49.540</EndDate>
+                  <Attribute0Value>Taxonomy Code Name</Attribute0Value>
+                  <Attribute0String>B12345</Attribute0String>
+                  <Attribute1Value>Taxonomy Code Description</Attribute1Value>
+                  <Attribute1String>XYZ</Attribute1String>
+                  <Attribute2Value>Taxonomy Code Deleted Flag</Attribute2Value>
+                  <Attribute2String>1</Attribute2String>
+                  <Attribute3Value>Taxonomy Code Specialty Code</Attribute3Value>
+                  <Attribute3String>C12345</Attribute3String>
+               </TCRMPartyValueBObj>
+
+               <TCRMPartyValueBObj>
+                  <PartyValueValue>Manager Name</PartyValueValue>
+                  <ValueString>SMITH</ValueString>
+                  <SourceIdentValue>Echo</SourceIdentValue>
+                  <Attribute0Value>Manager Employee ID</Attribute0Value>
+                  <Attribute0String>12345</Attribute0String>
+               </TCRMPartyValueBObj>
+
+            </TCRMPersonBObj>
+         </CompositeNWPersonBObj>
+      </TCRMObject>
+   </TCRMTx>
+</TCRMService>

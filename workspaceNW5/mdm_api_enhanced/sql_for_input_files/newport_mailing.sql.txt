@@ -1,0 +1,13 @@
+/****** Script for SelectTopNRows command from SSMS  ******/
+SELECT 'MDMSP' -- MEMHEAD:srccode
+      ,'NEWPORT'+[PersonID] -- MEMHEAD:memidnum
+      ,[Mailing_Address_Line_1] -- BILLLOC:addrline1
+      ,[Mailing_Address_Line_2] -- BILLLOC:addrline2
+      ,[Mailing_City] -- BILLLOC:city
+      ,[Mailing_State] -- BILLLOC:provstate
+      ,[Mailing_Zip] -- BILLLOC:postalcode
+      ,[Effective_Date] -- BILLLOC:provlocfromdt
+      ,[Termination_Date] -- BILLLOC:provloctodt
+      ,[Date_Last_Modified] -- BILLLOC:lastupddt
+      ,[Active_Status] -- BILLLOC:locdeacflg
+  FROM [DataProfiling].[MDM].[Newport_Provider_Address_Mailing_VW]

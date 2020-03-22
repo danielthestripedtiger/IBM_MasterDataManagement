@@ -1,0 +1,73 @@
+{
+  "TCRMService": {
+    "@schemaLocation": "http://www.ibm.com/mdm/schema MDMDomains.xsd",
+    "RequestControl": {
+      "requestID": 604157,
+      "DWLControl": {
+        "requesterName": "test",
+        "requesterLocale": "en",
+      }
+    },
+    "TCRMTx": {
+      "TCRMTxType": "MaintainAccount",
+      "TCRMTxObject": "MDMCompositePartyBObj",
+      "TCRMObject": {
+        "MDMCompositePartyBObj": {
+          "TCRMContractBObj": {
+          	"CurrencyValue": "U.S. Dollar",
+          	"AgreementValue": "Grower",
+          	"TCRMContractComponentBObj": {
+          		"ContractStatusValue": "Active",
+          		"TCRMContractPartyRoleBObj": {
+          			"RoleValue": "Account Information",
+          			"TCRMOrganizationBObj": {
+          				"SourceIdentifierValue": "PPLSFT",
+          				"OrganizationValue": "Unknown",
+          				"TCRMOrganizationNameBObj": {
+                    		"OrganizationName": "Ranch Company",
+                         	"NameUsageValue": "Preferred"
+                         },
+                          "TCRMPartyAddressBObj": {
+                         	 "AddressUsageValue": "Billing",
+                         	  "TCRMAddressBObj": {
+                    			"AddressLineOne": "12367 Main St.",
+                    			"City": "Bakersfield",
+                    			"ZipPostalCode": "67667",
+                    			"ProvinceStateValue": "CA",
+                    			"CountryValue": "Canada",
+                    			"TCRMExtension": {
+                    				"ADDRESSEXTBObjExt": {
+                    					"CountyName": "Denver"
+                    				}
+                    			}
+                        	  }
+                         },
+                         "TCRMPartyContactMethodBObj": {
+                         	"ContactMethodUsageValue": "Preferred Email",
+                         	"TCRMContactMethodBObj": {
+                         		"ReferenceNumber": "abc@yahoo.com",
+                         		"ContactMethodValue": "Email Address"
+                         	}
+                         },
+                         "TCRMPartyPrivPrefBObj": {
+                        	"PrivPrefActOptId": "210001",
+                        	"PrivPrefValue": "Statement Hold"
+                         },
+          			},
+          		},
+          	},
+          	"TCRMAdminNativeKeyBObj": {
+          		"AdminContractId": "1409100",
+              	"AdminFieldNameValue": "PPLSFT"
+            },
+          	"TCRMContractAlertBObj": {
+          		"TCRMAlertBObj": {
+          			"AlertValue": ""
+            	}
+            }
+          }
+        }
+      }
+    }
+  }
+}

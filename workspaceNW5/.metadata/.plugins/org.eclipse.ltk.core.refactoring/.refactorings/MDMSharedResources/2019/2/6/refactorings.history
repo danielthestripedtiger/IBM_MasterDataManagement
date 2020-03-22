@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;MDMSharedResources/sql/updateInquiryLevels/updateInqLvl5Query.txt&apos; to &apos;updatedInqLvl5Query.txt&apos;" description="Rename resource &apos;updateInqLvl5Query.txt&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="sql/updateInquiryLevels/updateInqLvl5Query.txt" name="updatedInqLvl5Query.txt" stamp="1549472586795" updateReferences="true"/>
+</session>

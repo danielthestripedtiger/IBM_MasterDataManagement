@@ -1,0 +1,62 @@
+package com.ibm.mdm.physical.tasksets;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Statement;
+import java.util.ArrayList;
+import java.util.HashSet;
+import java.util.Set;
+
+public class GetTaskSets {
+
+
+		static Connection sqlConn = null;
+		static Statement crunchifyStmt = null;
+		static ResultSet crunchifyResultset = null;
+		
+		ArrayList<HashSet> taskSets = new ArrayList<HashSet>();
+	 
+		public static void main(String[] args) throws SQLException {
+
+			try {
+				// Returns the Class object associated with the class
+				Class.forName("oracle.jdbc.driver.OracleDriver");
+			} catch (ClassNotFoundException exception) {
+				System.out.println("Oracle Driver Class Not found Exception: " + exception.toString());
+				return;
+			}
+	 
+			// Set connection timeout. Make sure you set this correctly as per your need
+			DriverManager.setLoginTimeout(5);
+			System.out.println("Oracle JDBC Driver Successfully Registered! Let's make connection now");
+	 
+			try {
+				// Attempts to establish a connection
+				// here DB name: localhost, sid: crunchify
+				sqlConn = DriverManager.getConnection("jdbc:oracle:thin:@biccmdmtdb01.nshs.edu:1521:mdmuat", "mdmduser", "mdmd^234");
+			} catch (SQLException e) {
+				System.out.println("Connection Failed! Check output console");
+				e.printStackTrace();
+				return;
+			}
+	 
+			// Creates a Statement object for sending SQL statements to the database
+			crunchifyStmt = sqlConn.createStatement();
+	 
+			// Executes the given SQL statement, which returns a single ResultSet object
+			crunchifyResultset = crunchifyStmt.executeQuery("SELECT DISTINCT CONT_ID, SUSPECT_CONT_ID FROM SUSPECT WHERE CUR_SUSPECT_TP_CD  = '3'");
+	 
+			while (crunchifyResultset.next()) {
+				System.out.println("SUSPECT1 ID: " + crunchifyResultset.getString(1));
+				System.out.println("SUSPECT2 ID: " + crunchifyResultset.getString(2));
+				System.out.println("==========================================================");
+			} 
+	 
+			System.out.println("Oracle JDBC connect and query test completed.");
+		}
+
+
+
+}

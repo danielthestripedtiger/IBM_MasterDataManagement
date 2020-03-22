@@ -1,0 +1,1469 @@
+<?xml version="1.0" encoding="UTF-8"?><!-- ***************************************************** {COPYRIGHT-TOP} ***
+* Licensed Materials - Property of IBM
+* Restricted Materials of IBM
+*
+* 5725-E59
+*
+* (C) Copyright IBM Corp. 2011  All Rights Reserved.
+*
+* US Government Users Restricted Rights - Use, duplication, or
+* disclosure restricted by GSA ADP Schedule Contract with IBM Corp.
+********************************************************** {COPYRIGHT-END} --><wsdl:definitions xmlns:mdmadminport="http://www.ibm.com/mdm/admin/port/DWLCommonServices" xmlns:mdm="http://www.ibm.com/mdm/schema" xmlns:mdmwsdl="http://www.ibm.com/mdm/wsdl/schema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:jaxws="http://java.sun.com/xml/ns/jaxws" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" name="DWLCommonServices-Admin" targetNamespace="http://www.ibm.com/mdm/admin/port/DWLCommonServices">
+
+<jaxws:bindings>
+<jaxws:enableWrapperStyle>false</jaxws:enableWrapperStyle>
+</jaxws:bindings>
+<wsdl:types>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.ibm.com/mdm/admin/port/DWLCommonServices">
+<xsd:import namespace="http://www.ibm.com/mdm/schema" schemaLocation="PhysicalMDM.xsd"></xsd:import>
+<xsd:import namespace="http://www.ibm.com/mdm/wsdl/schema" schemaLocation="MDMWSDLCommon.xsd"></xsd:import>
+<xsd:complexType name="getProductTypeOutputType">
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:ResponseControl"></xsd:element>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:TxResult"></xsd:element>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:ProductTypeBObj"></xsd:element>
+</xsd:sequence>
+</xsd:complexType>
+
+<xsd:complexType name="getAllProductTypesOutputType">
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:ResponseControl"></xsd:element>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:TxResult"></xsd:element>
+<xsd:element maxOccurs="unbounded" minOccurs="1" ref="mdm:ProductTypeBObj"></xsd:element>
+</xsd:sequence>
+</xsd:complexType>
+
+<xsd:complexType name="addSpecInputType">
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:RequestControl"></xsd:element>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:SpecBObj"></xsd:element>
+</xsd:sequence>
+</xsd:complexType>
+<xsd:complexType name="addSpecOutputType">
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:ResponseControl"></xsd:element>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:TxResult"></xsd:element>
+<xsd:element maxOccurs="unbounded" minOccurs="1" ref="mdm:SpecBObj"></xsd:element>
+</xsd:sequence>
+</xsd:complexType>
+
+<xsd:complexType name="updateSpecInputType">
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:RequestControl"></xsd:element>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:SpecBObj"></xsd:element>
+</xsd:sequence>
+</xsd:complexType>
+<xsd:complexType name="updateSpecOutputType">
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:ResponseControl"></xsd:element>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:TxResult"></xsd:element>
+<xsd:element maxOccurs="unbounded" minOccurs="1" ref="mdm:SpecBObj"></xsd:element>
+</xsd:sequence>
+</xsd:complexType>
+
+<xsd:complexType name="getSpecByNameOutputType">
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:ResponseControl"></xsd:element>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:TxResult"></xsd:element>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:SpecBObj"></xsd:element>
+</xsd:sequence>
+</xsd:complexType>
+
+<xsd:complexType name="getSpecByIdOutputType">
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:ResponseControl"></xsd:element>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:TxResult"></xsd:element>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:SpecBObj"></xsd:element>
+</xsd:sequence>
+</xsd:complexType>
+
+<xsd:complexType name="getSpecsByMetadataPackageOutputType">
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:ResponseControl"></xsd:element>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:TxResult"></xsd:element>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:SpecBObj"></xsd:element>
+</xsd:sequence>
+</xsd:complexType>
+
+<xsd:complexType name="addSpecFormatInputType">
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:RequestControl"></xsd:element>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:SpecFormatBObj"></xsd:element>
+</xsd:sequence>
+</xsd:complexType>
+<xsd:complexType name="addSpecFormatOutputType">
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:ResponseControl"></xsd:element>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:TxResult"></xsd:element>
+<xsd:element maxOccurs="unbounded" minOccurs="1" ref="mdm:SpecFormatBObj"></xsd:element>
+</xsd:sequence>
+</xsd:complexType>
+
+<xsd:complexType name="updateSpecFormatInputType">
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:RequestControl"></xsd:element>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:SpecFormatBObj"></xsd:element>
+</xsd:sequence>
+</xsd:complexType>
+<xsd:complexType name="updateSpecFormatOutputType">
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:ResponseControl"></xsd:element>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:TxResult"></xsd:element>
+<xsd:element maxOccurs="unbounded" minOccurs="1" ref="mdm:SpecFormatBObj"></xsd:element>
+</xsd:sequence>
+</xsd:complexType>
+
+<xsd:complexType name="getSpecFormatByIdOutputType">
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:ResponseControl"></xsd:element>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:TxResult"></xsd:element>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:SpecFormatBObj"></xsd:element>
+</xsd:sequence>
+</xsd:complexType>
+
+<xsd:complexType name="getSpecFormatByNamespaceOutputType">
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:ResponseControl"></xsd:element>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:TxResult"></xsd:element>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:SpecFormatBObj"></xsd:element>
+</xsd:sequence>
+</xsd:complexType>
+
+<xsd:complexType name="getSpecFormatsForSpecOutputType">
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:ResponseControl"></xsd:element>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:TxResult"></xsd:element>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:SpecFormatBObj"></xsd:element>
+</xsd:sequence>
+</xsd:complexType>
+
+<xsd:complexType name="getAllSpecsOutputType">
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:ResponseControl"></xsd:element>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:TxResult"></xsd:element>
+<xsd:element maxOccurs="unbounded" minOccurs="1" ref="mdm:SpecBObj"></xsd:element>
+</xsd:sequence>
+</xsd:complexType>
+
+<xsd:complexType name="addSpecFormatTranslationInputType">
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:RequestControl"></xsd:element>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:SpecFormatTranslationBObj"></xsd:element>
+</xsd:sequence>
+</xsd:complexType>
+<xsd:complexType name="addSpecFormatTranslationOutputType">
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:ResponseControl"></xsd:element>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:TxResult"></xsd:element>
+<xsd:element maxOccurs="unbounded" minOccurs="1" ref="mdm:SpecFormatTranslationBObj"></xsd:element>
+</xsd:sequence>
+</xsd:complexType>
+
+<xsd:complexType name="updateSpecFormatTranslationInputType">
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:RequestControl"></xsd:element>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:SpecFormatTranslationBObj"></xsd:element>
+</xsd:sequence>
+</xsd:complexType>
+<xsd:complexType name="updateSpecFormatTranslationOutputType">
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:ResponseControl"></xsd:element>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:TxResult"></xsd:element>
+<xsd:element maxOccurs="unbounded" minOccurs="1" ref="mdm:SpecFormatTranslationBObj"></xsd:element>
+</xsd:sequence>
+</xsd:complexType>
+
+<xsd:complexType name="getSpecFormatTranslationByIdOutputType">
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:ResponseControl"></xsd:element>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:TxResult"></xsd:element>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:SpecFormatTranslationBObj"></xsd:element>
+</xsd:sequence>
+</xsd:complexType>
+
+<xsd:complexType name="getSpecFormatTranslationsForSpecFormatOutputType">
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:ResponseControl"></xsd:element>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:TxResult"></xsd:element>
+<xsd:element maxOccurs="unbounded" minOccurs="1" ref="mdm:SpecFormatTranslationBObj"></xsd:element>
+</xsd:sequence>
+</xsd:complexType>
+
+<xsd:complexType name="addTaskDefinitionInputType">
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:RequestControl"></xsd:element>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:TaskDefinitionBObj"></xsd:element>
+</xsd:sequence>
+</xsd:complexType>
+<xsd:complexType name="addTaskDefinitionOutputType">
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:ResponseControl"></xsd:element>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:TxResult"></xsd:element>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:TaskDefinitionBObj"></xsd:element>
+</xsd:sequence>
+</xsd:complexType>
+
+<xsd:complexType name="updateTaskDefinitionInputType">
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:RequestControl"></xsd:element>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:TaskDefinitionBObj"></xsd:element>
+</xsd:sequence>
+</xsd:complexType>
+<xsd:complexType name="updateTaskDefinitionOutputType">
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:ResponseControl"></xsd:element>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:TxResult"></xsd:element>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:TaskDefinitionBObj"></xsd:element>
+</xsd:sequence>
+</xsd:complexType>
+
+<xsd:complexType name="getTaskDefinitionOutputType">
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:ResponseControl"></xsd:element>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:TxResult"></xsd:element>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:TaskDefinitionBObj"></xsd:element>
+</xsd:sequence>
+</xsd:complexType>
+
+<xsd:complexType name="getAllTaskDefinitionsOutputType">
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:ResponseControl"></xsd:element>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:TxResult"></xsd:element>
+<xsd:element maxOccurs="unbounded" minOccurs="1" ref="mdm:TaskDefinitionBObj"></xsd:element>
+</xsd:sequence>
+</xsd:complexType>
+
+<xsd:complexType name="getAllTaskDefinitionsByTaskCatOutputType">
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:ResponseControl"></xsd:element>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:TxResult"></xsd:element>
+<xsd:element maxOccurs="unbounded" minOccurs="1" ref="mdm:TaskDefinitionBObj"></xsd:element>
+</xsd:sequence>
+</xsd:complexType>
+
+<xsd:complexType name="getAllTaskDefinitionsByMetadataPackageOutputType">
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:ResponseControl"></xsd:element>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:TxResult"></xsd:element>
+<xsd:element maxOccurs="unbounded" minOccurs="1" ref="mdm:TaskDefinitionBObj"></xsd:element>
+</xsd:sequence>
+</xsd:complexType>
+
+<xsd:complexType name="addTaskRoleAssociationInputType">
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:RequestControl"></xsd:element>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:TaskRoleAssocBObj"></xsd:element>
+</xsd:sequence>
+</xsd:complexType>
+<xsd:complexType name="addTaskRoleAssociationOutputType">
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:ResponseControl"></xsd:element>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:TxResult"></xsd:element>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:TaskRoleAssocBObj"></xsd:element>
+</xsd:sequence>
+</xsd:complexType>
+
+<xsd:complexType name="updateTaskRoleAssociationInputType">
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:RequestControl"></xsd:element>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:TaskRoleAssocBObj"></xsd:element>
+</xsd:sequence>
+</xsd:complexType>
+<xsd:complexType name="updateTaskRoleAssociationOutputType">
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:ResponseControl"></xsd:element>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:TxResult"></xsd:element>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:TaskRoleAssocBObj"></xsd:element>
+</xsd:sequence>
+</xsd:complexType>
+
+<xsd:complexType name="getTaskRoleAssociationOutputType">
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:ResponseControl"></xsd:element>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:TxResult"></xsd:element>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:TaskRoleAssocBObj"></xsd:element>
+</xsd:sequence>
+</xsd:complexType>
+
+<xsd:complexType name="addEntitySpecUseInputType">
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:RequestControl"></xsd:element>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:EntitySpecUseBObj"></xsd:element>
+</xsd:sequence>
+</xsd:complexType>
+<xsd:complexType name="addEntitySpecUseOutputType">
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:ResponseControl"></xsd:element>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:TxResult"></xsd:element>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:EntitySpecUseBObj"></xsd:element>
+</xsd:sequence>
+</xsd:complexType>
+
+<xsd:complexType name="updateEntitySpecUseInputType">
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:RequestControl"></xsd:element>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:EntitySpecUseBObj"></xsd:element>
+</xsd:sequence>
+</xsd:complexType>
+<xsd:complexType name="updateEntitySpecUseOutputType">
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:ResponseControl"></xsd:element>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:TxResult"></xsd:element>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:EntitySpecUseBObj"></xsd:element>
+</xsd:sequence>
+</xsd:complexType>
+
+<xsd:complexType name="getEntitySpecUseOutputType">
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:ResponseControl"></xsd:element>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:TxResult"></xsd:element>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:EntitySpecUseBObj"></xsd:element>
+</xsd:sequence>
+</xsd:complexType>
+
+<xsd:complexType name="getAllEntitySpecUsesByEntityIdOutputType">
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:ResponseControl"></xsd:element>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:TxResult"></xsd:element>
+<xsd:element maxOccurs="unbounded" minOccurs="1" ref="mdm:EntitySpecUseBObj"></xsd:element>
+</xsd:sequence>
+</xsd:complexType>
+
+<xsd:complexType name="getAllEntitySpecUsesInputType">
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:RequestControl"></xsd:element>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:EntitySpecUseInquiryBObj"></xsd:element>
+</xsd:sequence>
+</xsd:complexType>
+<xsd:complexType name="getAllEntitySpecUsesOutputType">
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:ResponseControl"></xsd:element>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:TxResult"></xsd:element>
+<xsd:element maxOccurs="unbounded" minOccurs="1" ref="mdm:EntitySpecUseBObj"></xsd:element>
+</xsd:sequence>
+</xsd:complexType>
+
+<xsd:complexType name="getAllEntitySpecUsesBySpecIdOutputType">
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:ResponseControl"></xsd:element>
+<xsd:element maxOccurs="1" minOccurs="1" ref="mdm:TxResult"></xsd:element>
+<xsd:element maxOccurs="unbounded" minOccurs="1" ref="mdm:EntitySpecUseBObj"></xsd:element>
+</xsd:sequence>
+</xsd:complexType>
+
+<xsd:element name="getProductType" type="mdmwsdl:TCRMInquiryInputType"></xsd:element>
+<xsd:element name="getProductTypeResponse" type="mdmadminport:getProductTypeOutputType"></xsd:element>
+<xsd:element name="getAllProductTypes" type="mdmwsdl:TCRMInquiryInputType"></xsd:element>
+<xsd:element name="getAllProductTypesResponse" type="mdmadminport:getAllProductTypesOutputType"></xsd:element>
+<xsd:element name="addSpec" type="mdmadminport:addSpecInputType"></xsd:element>
+<xsd:element name="addSpecResponse" type="mdmadminport:addSpecOutputType"></xsd:element>
+<xsd:element name="updateSpec" type="mdmadminport:updateSpecInputType"></xsd:element>
+<xsd:element name="updateSpecResponse" type="mdmadminport:updateSpecOutputType"></xsd:element>
+<xsd:element name="getSpecByName" type="mdmwsdl:TCRMInquiryInputType"></xsd:element>
+<xsd:element name="getSpecByNameResponse" type="mdmadminport:getSpecByNameOutputType"></xsd:element>
+<xsd:element name="getSpecById" type="mdmwsdl:TCRMInquiryInputType"></xsd:element>
+<xsd:element name="getSpecByIdResponse" type="mdmadminport:getSpecByIdOutputType"></xsd:element>
+<xsd:element name="getSpecsByMetadataPackage" type="mdmwsdl:TCRMInquiryInputType"></xsd:element>
+<xsd:element name="getSpecsByMetadataPackageResponse" type="mdmadminport:getSpecsByMetadataPackageOutputType"></xsd:element>
+<xsd:element name="addSpecFormat" type="mdmadminport:addSpecFormatInputType"></xsd:element>
+<xsd:element name="addSpecFormatResponse" type="mdmadminport:addSpecFormatOutputType"></xsd:element>
+<xsd:element name="updateSpecFormat" type="mdmadminport:updateSpecFormatInputType"></xsd:element>
+<xsd:element name="updateSpecFormatResponse" type="mdmadminport:updateSpecFormatOutputType"></xsd:element>
+<xsd:element name="getSpecFormatById" type="mdmwsdl:TCRMInquiryInputType"></xsd:element>
+<xsd:element name="getSpecFormatByIdResponse" type="mdmadminport:getSpecFormatByIdOutputType"></xsd:element>
+<xsd:element name="getSpecFormatByNamespace" type="mdmwsdl:TCRMInquiryInputType"></xsd:element>
+<xsd:element name="getSpecFormatByNamespaceResponse" type="mdmadminport:getSpecFormatByNamespaceOutputType"></xsd:element>
+<xsd:element name="getSpecFormatsForSpec" type="mdmwsdl:TCRMInquiryInputType"></xsd:element>
+<xsd:element name="getSpecFormatsForSpecResponse" type="mdmadminport:getSpecFormatsForSpecOutputType"></xsd:element>
+<xsd:element name="getAllSpecs" type="mdmwsdl:TCRMInquiryInputType"></xsd:element>
+<xsd:element name="getAllSpecsResponse" type="mdmadminport:getAllSpecsOutputType"></xsd:element>
+<xsd:element name="addSpecFormatTranslation" type="mdmadminport:addSpecFormatTranslationInputType"></xsd:element>
+<xsd:element name="addSpecFormatTranslationResponse" type="mdmadminport:addSpecFormatTranslationOutputType"></xsd:element>
+<xsd:element name="updateSpecFormatTranslation" type="mdmadminport:updateSpecFormatTranslationInputType"></xsd:element>
+<xsd:element name="updateSpecFormatTranslationResponse" type="mdmadminport:updateSpecFormatTranslationOutputType"></xsd:element>
+<xsd:element name="getSpecFormatTranslationById" type="mdmwsdl:TCRMInquiryInputType"></xsd:element>
+<xsd:element name="getSpecFormatTranslationByIdResponse" type="mdmadminport:getSpecFormatTranslationByIdOutputType"></xsd:element>
+<xsd:element name="getSpecFormatTranslationsForSpecFormat" type="mdmwsdl:TCRMInquiryInputType"></xsd:element>
+<xsd:element name="getSpecFormatTranslationsForSpecFormatResponse" type="mdmadminport:getSpecFormatTranslationsForSpecFormatOutputType"></xsd:element>
+<xsd:element name="addTaskDefinition" type="mdmadminport:addTaskDefinitionInputType"></xsd:element>
+<xsd:element name="addTaskDefinitionResponse" type="mdmadminport:addTaskDefinitionOutputType"></xsd:element>
+<xsd:element name="updateTaskDefinition" type="mdmadminport:updateTaskDefinitionInputType"></xsd:element>
+<xsd:element name="updateTaskDefinitionResponse" type="mdmadminport:updateTaskDefinitionOutputType"></xsd:element>
+<xsd:element name="getTaskDefinition" type="mdmwsdl:TCRMInquiryInputType"></xsd:element>
+<xsd:element name="getTaskDefinitionResponse" type="mdmadminport:getTaskDefinitionOutputType"></xsd:element>
+<xsd:element name="getAllTaskDefinitions" type="mdmwsdl:TCRMInquiryInputType"></xsd:element>
+<xsd:element name="getAllTaskDefinitionsResponse" type="mdmadminport:getAllTaskDefinitionsOutputType"></xsd:element>
+<xsd:element name="getAllTaskDefinitionsByTaskCat" type="mdmwsdl:TCRMInquiryInputType"></xsd:element>
+<xsd:element name="getAllTaskDefinitionsByTaskCatResponse" type="mdmadminport:getAllTaskDefinitionsByTaskCatOutputType"></xsd:element>
+<xsd:element name="getAllTaskDefinitionsByMetadataPackage" type="mdmwsdl:TCRMInquiryInputType"></xsd:element>
+<xsd:element name="getAllTaskDefinitionsByMetadataPackageResponse" type="mdmadminport:getAllTaskDefinitionsByMetadataPackageOutputType"></xsd:element>
+<xsd:element name="addTaskRoleAssociation" type="mdmadminport:addTaskRoleAssociationInputType"></xsd:element>
+<xsd:element name="addTaskRoleAssociationResponse" type="mdmadminport:addTaskRoleAssociationOutputType"></xsd:element>
+<xsd:element name="updateTaskRoleAssociation" type="mdmadminport:updateTaskRoleAssociationInputType"></xsd:element>
+<xsd:element name="updateTaskRoleAssociationResponse" type="mdmadminport:updateTaskRoleAssociationOutputType"></xsd:element>
+<xsd:element name="getTaskRoleAssociation" type="mdmwsdl:TCRMInquiryInputType"></xsd:element>
+<xsd:element name="getTaskRoleAssociationResponse" type="mdmadminport:getTaskRoleAssociationOutputType"></xsd:element>
+<xsd:element name="addEntitySpecUse" type="mdmadminport:addEntitySpecUseInputType"></xsd:element>
+<xsd:element name="addEntitySpecUseResponse" type="mdmadminport:addEntitySpecUseOutputType"></xsd:element>
+<xsd:element name="updateEntitySpecUse" type="mdmadminport:updateEntitySpecUseInputType"></xsd:element>
+<xsd:element name="updateEntitySpecUseResponse" type="mdmadminport:updateEntitySpecUseOutputType"></xsd:element>
+<xsd:element name="getEntitySpecUse" type="mdmwsdl:TCRMInquiryInputType"></xsd:element>
+<xsd:element name="getEntitySpecUseResponse" type="mdmadminport:getEntitySpecUseOutputType"></xsd:element>
+<xsd:element name="getAllEntitySpecUsesByEntityId" type="mdmwsdl:TCRMInquiryInputType"></xsd:element>
+<xsd:element name="getAllEntitySpecUsesByEntityIdResponse" type="mdmadminport:getAllEntitySpecUsesByEntityIdOutputType"></xsd:element>
+<xsd:element name="getAllEntitySpecUses" type="mdmadminport:getAllEntitySpecUsesInputType"></xsd:element>
+<xsd:element name="getAllEntitySpecUsesResponse" type="mdmadminport:getAllEntitySpecUsesOutputType"></xsd:element>
+<xsd:element name="getAllEntitySpecUsesBySpecId" type="mdmwsdl:TCRMInquiryInputType"></xsd:element>
+<xsd:element name="getAllEntitySpecUsesBySpecIdResponse" type="mdmadminport:getAllEntitySpecUsesBySpecIdOutputType"></xsd:element>
+<xsd:element name="processingFault" type="mdmwsdl:ProcessingFaultType"></xsd:element>
+</xsd:schema>
+</wsdl:types>
+<wsdl:message name="ProcessingFault">
+<wsdl:part element="mdmadminport:processingFault" name="parameters"></wsdl:part>
+</wsdl:message>
+<wsdl:message name="GetProductTypeRequest">
+<wsdl:part element="mdmadminport:getProductType" name="parameters"></wsdl:part>
+</wsdl:message>
+<wsdl:message name="GetProductTypeResponse">
+<wsdl:part element="mdmadminport:getProductTypeResponse" name="parameters"></wsdl:part>
+</wsdl:message>
+
+<wsdl:message name="GetAllProductTypesRequest">
+<wsdl:part element="mdmadminport:getAllProductTypes" name="parameters"></wsdl:part>
+</wsdl:message>
+<wsdl:message name="GetAllProductTypesResponse">
+<wsdl:part element="mdmadminport:getAllProductTypesResponse" name="parameters"></wsdl:part>
+</wsdl:message>
+
+<wsdl:message name="AddSpecRequest">
+<wsdl:part element="mdmadminport:addSpec" name="parameters"></wsdl:part>
+</wsdl:message>
+<wsdl:message name="AddSpecResponse">
+<wsdl:part element="mdmadminport:addSpecResponse" name="parameters"></wsdl:part>
+</wsdl:message>
+
+<wsdl:message name="UpdateSpecRequest">
+<wsdl:part element="mdmadminport:updateSpec" name="parameters"></wsdl:part>
+</wsdl:message>
+<wsdl:message name="UpdateSpecResponse">
+<wsdl:part element="mdmadminport:updateSpecResponse" name="parameters"></wsdl:part>
+</wsdl:message>
+
+<wsdl:message name="GetSpecByNameRequest">
+<wsdl:part element="mdmadminport:getSpecByName" name="parameters"></wsdl:part>
+</wsdl:message>
+<wsdl:message name="GetSpecByNameResponse">
+<wsdl:part element="mdmadminport:getSpecByNameResponse" name="parameters"></wsdl:part>
+</wsdl:message>
+
+<wsdl:message name="GetSpecByIdRequest">
+<wsdl:part element="mdmadminport:getSpecById" name="parameters"></wsdl:part>
+</wsdl:message>
+<wsdl:message name="GetSpecByIdResponse">
+<wsdl:part element="mdmadminport:getSpecByIdResponse" name="parameters"></wsdl:part>
+</wsdl:message>
+
+<wsdl:message name="GetSpecsByMetadataPackageRequest">
+<wsdl:part element="mdmadminport:getSpecsByMetadataPackage" name="parameters"></wsdl:part>
+</wsdl:message>
+<wsdl:message name="GetSpecsByMetadataPackageResponse">
+<wsdl:part element="mdmadminport:getSpecsByMetadataPackageResponse" name="parameters"></wsdl:part>
+</wsdl:message>
+
+<wsdl:message name="AddSpecFormatRequest">
+<wsdl:part element="mdmadminport:addSpecFormat" name="parameters"></wsdl:part>
+</wsdl:message>
+<wsdl:message name="AddSpecFormatResponse">
+<wsdl:part element="mdmadminport:addSpecFormatResponse" name="parameters"></wsdl:part>
+</wsdl:message>
+
+<wsdl:message name="UpdateSpecFormatRequest">
+<wsdl:part element="mdmadminport:updateSpecFormat" name="parameters"></wsdl:part>
+</wsdl:message>
+<wsdl:message name="UpdateSpecFormatResponse">
+<wsdl:part element="mdmadminport:updateSpecFormatResponse" name="parameters"></wsdl:part>
+</wsdl:message>
+
+<wsdl:message name="GetSpecFormatByIdRequest">
+<wsdl:part element="mdmadminport:getSpecFormatById" name="parameters"></wsdl:part>
+</wsdl:message>
+<wsdl:message name="GetSpecFormatByIdResponse">
+<wsdl:part element="mdmadminport:getSpecFormatByIdResponse" name="parameters"></wsdl:part>
+</wsdl:message>
+
+<wsdl:message name="GetSpecFormatByNamespaceRequest">
+<wsdl:part element="mdmadminport:getSpecFormatByNamespace" name="parameters"></wsdl:part>
+</wsdl:message>
+<wsdl:message name="GetSpecFormatByNamespaceResponse">
+<wsdl:part element="mdmadminport:getSpecFormatByNamespaceResponse" name="parameters"></wsdl:part>
+</wsdl:message>
+
+<wsdl:message name="GetSpecFormatsForSpecRequest">
+<wsdl:part element="mdmadminport:getSpecFormatsForSpec" name="parameters"></wsdl:part>
+</wsdl:message>
+<wsdl:message name="GetSpecFormatsForSpecResponse">
+<wsdl:part element="mdmadminport:getSpecFormatsForSpecResponse" name="parameters"></wsdl:part>
+</wsdl:message>
+
+<wsdl:message name="GetAllSpecsRequest">
+<wsdl:part element="mdmadminport:getAllSpecs" name="parameters"></wsdl:part>
+</wsdl:message>
+<wsdl:message name="GetAllSpecsResponse">
+<wsdl:part element="mdmadminport:getAllSpecsResponse" name="parameters"></wsdl:part>
+</wsdl:message>
+
+<wsdl:message name="AddSpecFormatTranslationRequest">
+<wsdl:part element="mdmadminport:addSpecFormatTranslation" name="parameters"></wsdl:part>
+</wsdl:message>
+<wsdl:message name="AddSpecFormatTranslationResponse">
+<wsdl:part element="mdmadminport:addSpecFormatTranslationResponse" name="parameters"></wsdl:part>
+</wsdl:message>
+
+<wsdl:message name="UpdateSpecFormatTranslationRequest">
+<wsdl:part element="mdmadminport:updateSpecFormatTranslation" name="parameters"></wsdl:part>
+</wsdl:message>
+<wsdl:message name="UpdateSpecFormatTranslationResponse">
+<wsdl:part element="mdmadminport:updateSpecFormatTranslationResponse" name="parameters"></wsdl:part>
+</wsdl:message>
+
+<wsdl:message name="GetSpecFormatTranslationByIdRequest">
+<wsdl:part element="mdmadminport:getSpecFormatTranslationById" name="parameters"></wsdl:part>
+</wsdl:message>
+<wsdl:message name="GetSpecFormatTranslationByIdResponse">
+<wsdl:part element="mdmadminport:getSpecFormatTranslationByIdResponse" name="parameters"></wsdl:part>
+</wsdl:message>
+
+<wsdl:message name="GetSpecFormatTranslationsForSpecFormatRequest">
+<wsdl:part element="mdmadminport:getSpecFormatTranslationsForSpecFormat" name="parameters"></wsdl:part>
+</wsdl:message>
+<wsdl:message name="GetSpecFormatTranslationsForSpecFormatResponse">
+<wsdl:part element="mdmadminport:getSpecFormatTranslationsForSpecFormatResponse" name="parameters"></wsdl:part>
+</wsdl:message>
+
+<wsdl:message name="AddTaskDefinitionRequest">
+<wsdl:part element="mdmadminport:addTaskDefinition" name="parameters"></wsdl:part>
+</wsdl:message>
+<wsdl:message name="AddTaskDefinitionResponse">
+<wsdl:part element="mdmadminport:addTaskDefinitionResponse" name="parameters"></wsdl:part>
+</wsdl:message>
+
+<wsdl:message name="UpdateTaskDefinitionRequest">
+<wsdl:part element="mdmadminport:updateTaskDefinition" name="parameters"></wsdl:part>
+</wsdl:message>
+<wsdl:message name="UpdateTaskDefinitionResponse">
+<wsdl:part element="mdmadminport:updateTaskDefinitionResponse" name="parameters"></wsdl:part>
+</wsdl:message>
+
+<wsdl:message name="GetTaskDefinitionRequest">
+<wsdl:part element="mdmadminport:getTaskDefinition" name="parameters"></wsdl:part>
+</wsdl:message>
+<wsdl:message name="GetTaskDefinitionResponse">
+<wsdl:part element="mdmadminport:getTaskDefinitionResponse" name="parameters"></wsdl:part>
+</wsdl:message>
+
+<wsdl:message name="GetAllTaskDefinitionsRequest">
+<wsdl:part element="mdmadminport:getAllTaskDefinitions" name="parameters"></wsdl:part>
+</wsdl:message>
+<wsdl:message name="GetAllTaskDefinitionsResponse">
+<wsdl:part element="mdmadminport:getAllTaskDefinitionsResponse" name="parameters"></wsdl:part>
+</wsdl:message>
+
+<wsdl:message name="GetAllTaskDefinitionsByTaskCatRequest">
+<wsdl:part element="mdmadminport:getAllTaskDefinitionsByTaskCat" name="parameters"></wsdl:part>
+</wsdl:message>
+<wsdl:message name="GetAllTaskDefinitionsByTaskCatResponse">
+<wsdl:part element="mdmadminport:getAllTaskDefinitionsByTaskCatResponse" name="parameters"></wsdl:part>
+</wsdl:message>
+
+<wsdl:message name="GetAllTaskDefinitionsByMetadataPackageRequest">
+<wsdl:part element="mdmadminport:getAllTaskDefinitionsByMetadataPackage" name="parameters"></wsdl:part>
+</wsdl:message>
+<wsdl:message name="GetAllTaskDefinitionsByMetadataPackageResponse">
+<wsdl:part element="mdmadminport:getAllTaskDefinitionsByMetadataPackageResponse" name="parameters"></wsdl:part>
+</wsdl:message>
+
+<wsdl:message name="AddTaskRoleAssociationRequest">
+<wsdl:part element="mdmadminport:addTaskRoleAssociation" name="parameters"></wsdl:part>
+</wsdl:message>
+<wsdl:message name="AddTaskRoleAssociationResponse">
+<wsdl:part element="mdmadminport:addTaskRoleAssociationResponse" name="parameters"></wsdl:part>
+</wsdl:message>
+
+<wsdl:message name="UpdateTaskRoleAssociationRequest">
+<wsdl:part element="mdmadminport:updateTaskRoleAssociation" name="parameters"></wsdl:part>
+</wsdl:message>
+<wsdl:message name="UpdateTaskRoleAssociationResponse">
+<wsdl:part element="mdmadminport:updateTaskRoleAssociationResponse" name="parameters"></wsdl:part>
+</wsdl:message>
+
+<wsdl:message name="GetTaskRoleAssociationRequest">
+<wsdl:part element="mdmadminport:getTaskRoleAssociation" name="parameters"></wsdl:part>
+</wsdl:message>
+<wsdl:message name="GetTaskRoleAssociationResponse">
+<wsdl:part element="mdmadminport:getTaskRoleAssociationResponse" name="parameters"></wsdl:part>
+</wsdl:message>
+
+<wsdl:message name="AddEntitySpecUseRequest">
+<wsdl:part element="mdmadminport:addEntitySpecUse" name="parameters"></wsdl:part>
+</wsdl:message>
+<wsdl:message name="AddEntitySpecUseResponse">
+<wsdl:part element="mdmadminport:addEntitySpecUseResponse" name="parameters"></wsdl:part>
+</wsdl:message>
+
+<wsdl:message name="UpdateEntitySpecUseRequest">
+<wsdl:part element="mdmadminport:updateEntitySpecUse" name="parameters"></wsdl:part>
+</wsdl:message>
+<wsdl:message name="UpdateEntitySpecUseResponse">
+<wsdl:part element="mdmadminport:updateEntitySpecUseResponse" name="parameters"></wsdl:part>
+</wsdl:message>
+
+<wsdl:message name="GetEntitySpecUseRequest">
+<wsdl:part element="mdmadminport:getEntitySpecUse" name="parameters"></wsdl:part>
+</wsdl:message>
+<wsdl:message name="GetEntitySpecUseResponse">
+<wsdl:part element="mdmadminport:getEntitySpecUseResponse" name="parameters"></wsdl:part>
+</wsdl:message>
+
+<wsdl:message name="GetAllEntitySpecUsesByEntityIdRequest">
+<wsdl:part element="mdmadminport:getAllEntitySpecUsesByEntityId" name="parameters"></wsdl:part>
+</wsdl:message>
+<wsdl:message name="GetAllEntitySpecUsesByEntityIdResponse">
+<wsdl:part element="mdmadminport:getAllEntitySpecUsesByEntityIdResponse" name="parameters"></wsdl:part>
+</wsdl:message>
+
+<wsdl:message name="GetAllEntitySpecUsesRequest">
+<wsdl:part element="mdmadminport:getAllEntitySpecUses" name="parameters"></wsdl:part>
+</wsdl:message>
+<wsdl:message name="GetAllEntitySpecUsesResponse">
+<wsdl:part element="mdmadminport:getAllEntitySpecUsesResponse" name="parameters"></wsdl:part>
+</wsdl:message>
+
+<wsdl:message name="GetAllEntitySpecUsesBySpecIdRequest">
+<wsdl:part element="mdmadminport:getAllEntitySpecUsesBySpecId" name="parameters"></wsdl:part>
+</wsdl:message>
+<wsdl:message name="GetAllEntitySpecUsesBySpecIdResponse">
+<wsdl:part element="mdmadminport:getAllEntitySpecUsesBySpecIdResponse" name="parameters"></wsdl:part>
+</wsdl:message>
+
+<wsdl:portType name="DWLCommonServices-AdminPortType">
+<wsdl:operation name="getProductType">
+<wsdl:documentation>This inquiry transaction retrieves the details of an existing product
+type and, optionally, its spec and spec details.
+Input parameters :
+<methodParam name="ProductTypeId"></methodParam>
+<methodParam name="aDWLControl"></methodParam>
+<methodParam name="inquiryLevel"></methodParam>
+</wsdl:documentation>
+<wsdl:input message="mdmadminport:GetProductTypeRequest"></wsdl:input>
+<wsdl:output message="mdmadminport:GetProductTypeResponse"></wsdl:output>
+<wsdl:fault message="mdmadminport:ProcessingFault" name="ProcessingFault"></wsdl:fault>
+</wsdl:operation>
+
+<wsdl:operation name="getAllProductTypes">
+<wsdl:documentation>This inquiry transaction retrieves the details for all product types and,
+optionally, each product type's spec usages and spec details.
+Input parameters :
+<methodParam name="startingProductTypeId"></methodParam>
+<methodParam name="inquiryLevel"></methodParam>
+<methodParam name="aDWLControl"></methodParam>
+<methodParam name="specInquiryLevel"></methodParam>
+<methodParam name="filter"></methodParam>
+</wsdl:documentation>
+<wsdl:input message="mdmadminport:GetAllProductTypesRequest"></wsdl:input>
+<wsdl:output message="mdmadminport:GetAllProductTypesResponse"></wsdl:output>
+<wsdl:fault message="mdmadminport:ProcessingFault" name="ProcessingFault"></wsdl:fault>
+</wsdl:operation>
+
+<wsdl:operation name="addSpec">
+<wsdl:documentation>This transaction creates a new spec in the system and, optionally,
+any number of descendent SpecFormat and SpecFormatTranslation objects
+for that spec.
+</wsdl:documentation>
+<wsdl:input message="mdmadminport:AddSpecRequest"></wsdl:input>
+<wsdl:output message="mdmadminport:AddSpecResponse"></wsdl:output>
+<wsdl:fault message="mdmadminport:ProcessingFault" name="ProcessingFault"></wsdl:fault>
+</wsdl:operation>
+
+<wsdl:operation name="updateSpec">
+<wsdl:documentation>This transaction updates an existing specification (spec) in the
+system, as well as any number of descendent SpecFormat and SpecFormatTranslation
+objects associated with the spec. If the provided SpecFormat and SpecFormatTranslation
+objects are not already present, this transaction will create them
+in the system.
+</wsdl:documentation>
+<wsdl:input message="mdmadminport:UpdateSpecRequest"></wsdl:input>
+<wsdl:output message="mdmadminport:UpdateSpecResponse"></wsdl:output>
+<wsdl:fault message="mdmadminport:ProcessingFault" name="ProcessingFault"></wsdl:fault>
+</wsdl:operation>
+
+<wsdl:operation name="getSpecByName">
+<wsdl:documentation>This inquiry transaction returns the details of a spec identified by name
+and namespace, along with its related active SpecFormat and SpecFormatTranslation
+objects based on an inquiry level. This transaction also enables you to filter
+results based on the spec status (active, inactive, or both).
+Input parameters :
+<methodParam name="specName"></methodParam>
+<methodParam name="specNamespace"></methodParam>
+<methodParam name="inquiryLevel"></methodParam>
+<methodParam name="aDWLControl"></methodParam>
+<methodParam name="status"></methodParam>
+<methodParam name="locales"></methodParam>
+</wsdl:documentation>
+<wsdl:input message="mdmadminport:GetSpecByNameRequest"></wsdl:input>
+<wsdl:output message="mdmadminport:GetSpecByNameResponse"></wsdl:output>
+<wsdl:fault message="mdmadminport:ProcessingFault" name="ProcessingFault"></wsdl:fault>
+</wsdl:operation>
+
+<wsdl:operation name="getSpecById">
+<wsdl:documentation>This inquiry transaction returns the details of a spec identified by its
+unique ID, along with its related active SpecFormat and SpecFormatTranslation
+objects based on an inquiry level. This transaction also enables you to filter
+results based on the spec status (active, inactive, or both).
+Input parameters :
+<methodParam name="specId"></methodParam>
+<methodParam name="inquiryLevel"></methodParam>
+<methodParam name="aDWLControl"></methodParam>
+<methodParam name="status"></methodParam>
+<methodParam name="locales"></methodParam>
+<methodParam name="aDWLControl"></methodParam>
+</wsdl:documentation>
+<wsdl:input message="mdmadminport:GetSpecByIdRequest"></wsdl:input>
+<wsdl:output message="mdmadminport:GetSpecByIdResponse"></wsdl:output>
+<wsdl:fault message="mdmadminport:ProcessingFault" name="ProcessingFault"></wsdl:fault>
+</wsdl:operation>
+
+<wsdl:operation name="getSpecsByMetadataPackage">
+<wsdl:documentation>This inquiry transaction returns the details of the specs belonging
+to a given metadata package, along with its related active SpecFormat
+and SpecFormatTranslation objects based on an inquiry level. This
+transaction also enables you to filter results based on the spec status
+(active, inactive, or all).
+Input parameters :
+<methodParam name="metadataPackageId"></methodParam>
+<methodParam name="inquiryLevel"></methodParam>
+<methodParam name="aDWLControl"></methodParam>
+<methodParam name="status"></methodParam>
+<methodParam name="locales"></methodParam>
+<methodParam name="aDWLControl"></methodParam>
+</wsdl:documentation>
+<wsdl:input message="mdmadminport:GetSpecsByMetadataPackageRequest"></wsdl:input>
+<wsdl:output message="mdmadminport:GetSpecsByMetadataPackageResponse"></wsdl:output>
+<wsdl:fault message="mdmadminport:ProcessingFault" name="ProcessingFault"></wsdl:fault>
+</wsdl:operation>
+
+<wsdl:operation name="addSpecFormat">
+<wsdl:documentation>This transaction creates a new spec format in the system and,
+optionally, SpecFormatTranslation objects for that spec format.
+</wsdl:documentation>
+<wsdl:input message="mdmadminport:AddSpecFormatRequest"></wsdl:input>
+<wsdl:output message="mdmadminport:AddSpecFormatResponse"></wsdl:output>
+<wsdl:fault message="mdmadminport:ProcessingFault" name="ProcessingFault"></wsdl:fault>
+</wsdl:operation>
+
+<wsdl:operation name="updateSpecFormat">
+<wsdl:documentation>This transaction updates an existing spec format in the system,
+as well as its child SpecFormatTranslation objects. If the provided
+SpecFormatTranslation objects do not already exist, this transaction
+creates them in the system.
+</wsdl:documentation>
+<wsdl:input message="mdmadminport:UpdateSpecFormatRequest"></wsdl:input>
+<wsdl:output message="mdmadminport:UpdateSpecFormatResponse"></wsdl:output>
+<wsdl:fault message="mdmadminport:ProcessingFault" name="ProcessingFault"></wsdl:fault>
+</wsdl:operation>
+
+<wsdl:operation name="getSpecFormatById">
+<wsdl:documentation>This inquiry transaction returns the details of a spec format identified
+by its unique ID, along with child SpecFormatTranslation objects based on
+an inquiry level.
+Input parameters :
+<methodParam name="specformatId"></methodParam>
+<methodParam name="inquiryLevel"></methodParam>
+<methodParam name="aDWLControl"></methodParam>
+<methodParam name="locales"></methodParam>
+<methodParam name="aDWLControl"></methodParam>
+<methodParam name="includeInternalXSD"></methodParam>
+</wsdl:documentation>
+<wsdl:input message="mdmadminport:GetSpecFormatByIdRequest"></wsdl:input>
+<wsdl:output message="mdmadminport:GetSpecFormatByIdResponse"></wsdl:output>
+<wsdl:fault message="mdmadminport:ProcessingFault" name="ProcessingFault"></wsdl:fault>
+</wsdl:operation>
+
+<wsdl:operation name="getSpecFormatByNamespace">
+<wsdl:documentation>This inquiry transaction returns the details of a spec format identified
+by a namespace, along with its child SpecFormatTranslation objects for the
+spec format based on an inquiry level.
+Input parameters :
+<methodParam name="formatNamespace"></methodParam>
+<methodParam name="inquiryLevel"></methodParam>
+<methodParam name="aDWLControl"></methodParam>
+<methodParam name="locales"></methodParam>
+<methodParam name="aDWLControl"></methodParam>
+<methodParam name="includeInternalXSD"></methodParam>
+</wsdl:documentation>
+<wsdl:input message="mdmadminport:GetSpecFormatByNamespaceRequest"></wsdl:input>
+<wsdl:output message="mdmadminport:GetSpecFormatByNamespaceResponse"></wsdl:output>
+<wsdl:fault message="mdmadminport:ProcessingFault" name="ProcessingFault"></wsdl:fault>
+</wsdl:operation>
+
+<wsdl:operation name="getSpecFormatsForSpec">
+<wsdl:documentation>This inquiry transaction returns one or more spec format objects corresponding
+to a spec, along with child SpecFormatTranslation objects based on an inquiry
+level. You can choose which spec formats are returned by specifying a list
+of version numbers.
+Input parameters :
+<methodParam name="specId"></methodParam>
+<methodParam name="inquiryLevel"></methodParam>
+<methodParam name="aDWLControl"></methodParam>
+<methodParam name="formatVersions"></methodParam>
+<methodParam name="inquiryLevel"></methodParam>
+<methodParam name="locales"></methodParam>
+<methodParam name="aDWLControl"></methodParam>
+<methodParam name="includeInternalXSD"></methodParam>
+</wsdl:documentation>
+<wsdl:input message="mdmadminport:GetSpecFormatsForSpecRequest"></wsdl:input>
+<wsdl:output message="mdmadminport:GetSpecFormatsForSpecResponse"></wsdl:output>
+<wsdl:fault message="mdmadminport:ProcessingFault" name="ProcessingFault"></wsdl:fault>
+</wsdl:operation>
+
+<wsdl:operation name="getAllSpecs">
+<wsdl:documentation>This inquiry transaction returns details of all the specs present in the
+system, along with their related active SpecFormat and SpecFormatTranslation
+objects, based on an inquiry level. This transaction also enables you to filter
+results based on the specs' status (active, inactive, or both).
+Input parameters :
+<methodParam name="inquiryLevel"></methodParam>
+<methodParam name="status"></methodParam>
+<methodParam name="locales"></methodParam>
+<methodParam name="aDWLControl"></methodParam>
+</wsdl:documentation>
+<wsdl:input message="mdmadminport:GetAllSpecsRequest"></wsdl:input>
+<wsdl:output message="mdmadminport:GetAllSpecsResponse"></wsdl:output>
+<wsdl:fault message="mdmadminport:ProcessingFault" name="ProcessingFault"></wsdl:fault>
+</wsdl:operation>
+
+<wsdl:operation name="addSpecFormatTranslation">
+<wsdl:documentation>This transaction creates a new SpecFormatTranslation object in the system.
+</wsdl:documentation>
+<wsdl:input message="mdmadminport:AddSpecFormatTranslationRequest"></wsdl:input>
+<wsdl:output message="mdmadminport:AddSpecFormatTranslationResponse"></wsdl:output>
+<wsdl:fault message="mdmadminport:ProcessingFault" name="ProcessingFault"></wsdl:fault>
+</wsdl:operation>
+
+<wsdl:operation name="updateSpecFormatTranslation">
+<wsdl:documentation>This transaction updates an existing SpecFormatTranslation object in the
+system.
+</wsdl:documentation>
+<wsdl:input message="mdmadminport:UpdateSpecFormatTranslationRequest"></wsdl:input>
+<wsdl:output message="mdmadminport:UpdateSpecFormatTranslationResponse"></wsdl:output>
+<wsdl:fault message="mdmadminport:ProcessingFault" name="ProcessingFault"></wsdl:fault>
+</wsdl:operation>
+
+<wsdl:operation name="getSpecFormatTranslationById">
+<wsdl:documentation>This inquiry transaction returns the requested SpecFormatTranslation identified
+by its unique ID.
+Input parameters :
+<methodParam name="SpecFormatTranslationIdPk"></methodParam>
+<methodParam name="aDWLControl"></methodParam>
+</wsdl:documentation>
+<wsdl:input message="mdmadminport:GetSpecFormatTranslationByIdRequest"></wsdl:input>
+<wsdl:output message="mdmadminport:GetSpecFormatTranslationByIdResponse"></wsdl:output>
+<wsdl:fault message="mdmadminport:ProcessingFault" name="ProcessingFault"></wsdl:fault>
+</wsdl:operation>
+
+<wsdl:operation name="getSpecFormatTranslationsForSpecFormat">
+<wsdl:documentation>This inquiry transaction returns SpecFormatTranslation objects for a given
+spec format, identified by its unique ID.
+Input parameters :
+<methodParam name="specFormatId"></methodParam>
+<methodParam name="locales"></methodParam>
+<methodParam name="aDWLControl"></methodParam>
+</wsdl:documentation>
+<wsdl:input message="mdmadminport:GetSpecFormatTranslationsForSpecFormatRequest"></wsdl:input>
+<wsdl:output message="mdmadminport:GetSpecFormatTranslationsForSpecFormatResponse"></wsdl:output>
+<wsdl:fault message="mdmadminport:ProcessingFault" name="ProcessingFault"></wsdl:fault>
+</wsdl:operation>
+
+<wsdl:operation name="addTaskDefinition">
+<wsdl:documentation>This transaction creates a task definition that is used to create
+a task instance. Task definitions define the nature of a task and
+the metadata key used for executing and launching the task.
+</wsdl:documentation>
+<wsdl:input message="mdmadminport:AddTaskDefinitionRequest"></wsdl:input>
+<wsdl:output message="mdmadminport:AddTaskDefinitionResponse"></wsdl:output>
+<wsdl:fault message="mdmadminport:ProcessingFault" name="ProcessingFault"></wsdl:fault>
+</wsdl:operation>
+
+<wsdl:operation name="updateTaskDefinition">
+<wsdl:documentation>This transaction modifies the data of an existing task definition.
+</wsdl:documentation>
+<wsdl:input message="mdmadminport:UpdateTaskDefinitionRequest"></wsdl:input>
+<wsdl:output message="mdmadminport:UpdateTaskDefinitionResponse"></wsdl:output>
+<wsdl:fault message="mdmadminport:ProcessingFault" name="ProcessingFault"></wsdl:fault>
+</wsdl:operation>
+
+<wsdl:operation name="getTaskDefinition">
+<wsdl:documentation>This inquiry transaction retrieves the details of an existing task definition.
+Input parameters :
+<methodParam name="TaskDefinitionIdPk"></methodParam>
+<methodParam name="aDWLControl"></methodParam>
+</wsdl:documentation>
+<wsdl:input message="mdmadminport:GetTaskDefinitionRequest"></wsdl:input>
+<wsdl:output message="mdmadminport:GetTaskDefinitionResponse"></wsdl:output>
+<wsdl:fault message="mdmadminport:ProcessingFault" name="ProcessingFault"></wsdl:fault>
+</wsdl:operation>
+
+<wsdl:operation name="getAllTaskDefinitions">
+<wsdl:documentation>This inquiry transaction retrieves a list of all existing task definitions
+without the corresponding task owner role associations.
+Input parameters :
+<methodParam name="filter"></methodParam>
+<methodParam name="aDWLControl"></methodParam>
+</wsdl:documentation>
+<wsdl:input message="mdmadminport:GetAllTaskDefinitionsRequest"></wsdl:input>
+<wsdl:output message="mdmadminport:GetAllTaskDefinitionsResponse"></wsdl:output>
+<wsdl:fault message="mdmadminport:ProcessingFault" name="ProcessingFault"></wsdl:fault>
+</wsdl:operation>
+
+<wsdl:operation name="getAllTaskDefinitionsByTaskCat">
+<wsdl:documentation>This inquiry transaction retrieves a list of existing task definitions
+that belong to a specified task category.
+Input parameters :
+<methodParam name="taskCatType"></methodParam>
+<methodParam name="filter"></methodParam>
+<methodParam name="aDWLControl"></methodParam>
+</wsdl:documentation>
+<wsdl:input message="mdmadminport:GetAllTaskDefinitionsByTaskCatRequest"></wsdl:input>
+<wsdl:output message="mdmadminport:GetAllTaskDefinitionsByTaskCatResponse"></wsdl:output>
+<wsdl:fault message="mdmadminport:ProcessingFault" name="ProcessingFault"></wsdl:fault>
+</wsdl:operation>
+
+<wsdl:operation name="getAllTaskDefinitionsByMetadataPackage">
+<wsdl:documentation>This transaction retrieves a list of existing task definitions with the
+metadata information type described by a given metadata package. Each task
+definition has related metadata identified that is represented by a metadata
+info type. A metadata package is used to identify the location of the metadata
+in the  system,
+specific to each task definition.
+Input parameters :
+<methodParam name="metadataPackageType"></methodParam>
+<methodParam name="filter"></methodParam>
+<methodParam name="aDWLControl"></methodParam>
+</wsdl:documentation>
+<wsdl:input message="mdmadminport:GetAllTaskDefinitionsByMetadataPackageRequest"></wsdl:input>
+<wsdl:output message="mdmadminport:GetAllTaskDefinitionsByMetadataPackageResponse"></wsdl:output>
+<wsdl:fault message="mdmadminport:ProcessingFault" name="ProcessingFault"></wsdl:fault>
+</wsdl:operation>
+
+<wsdl:operation name="addTaskRoleAssociation">
+<wsdl:documentation>This transaction creates additional task owner role associations
+for an existing task definition.
+</wsdl:documentation>
+<wsdl:input message="mdmadminport:AddTaskRoleAssociationRequest"></wsdl:input>
+<wsdl:output message="mdmadminport:AddTaskRoleAssociationResponse"></wsdl:output>
+<wsdl:fault message="mdmadminport:ProcessingFault" name="ProcessingFault"></wsdl:fault>
+</wsdl:operation>
+
+<wsdl:operation name="updateTaskRoleAssociation">
+<wsdl:documentation>This transaction enables you to modify the start and end dates of an existing
+task role association.
+</wsdl:documentation>
+<wsdl:input message="mdmadminport:UpdateTaskRoleAssociationRequest"></wsdl:input>
+<wsdl:output message="mdmadminport:UpdateTaskRoleAssociationResponse"></wsdl:output>
+<wsdl:fault message="mdmadminport:ProcessingFault" name="ProcessingFault"></wsdl:fault>
+</wsdl:operation>
+
+<wsdl:operation name="getTaskRoleAssociation">
+<wsdl:documentation>This transaction retrieves information about a specific task role association,
+such as the identifier of the associated task definition and the task owner
+role.
+Input parameters :
+<methodParam name="TaskRoleAssocIdPk"></methodParam>
+<methodParam name="aDWLControl"></methodParam>
+</wsdl:documentation>
+<wsdl:input message="mdmadminport:GetTaskRoleAssociationRequest"></wsdl:input>
+<wsdl:output message="mdmadminport:GetTaskRoleAssociationResponse"></wsdl:output>
+<wsdl:fault message="mdmadminport:ProcessingFault" name="ProcessingFault"></wsdl:fault>
+</wsdl:operation>
+
+<wsdl:operation name="addEntitySpecUse">
+<wsdl:documentation>This transaction adds an entity spec use.
+An entity spec use defines an association
+between an entity instance (such as category,
+product type, or agreement type) and a spec. This
+association also describes the spec use type,
+the spec cascading behavior, the metadata package that contains the
+spec, whether or not this spec use has been
+explicitly defined, and the target entity for receiving the specs.
+</wsdl:documentation>
+<wsdl:input message="mdmadminport:AddEntitySpecUseRequest"></wsdl:input>
+<wsdl:output message="mdmadminport:AddEntitySpecUseResponse"></wsdl:output>
+<wsdl:fault message="mdmadminport:ProcessingFault" name="ProcessingFault"></wsdl:fault>
+</wsdl:operation>
+
+<wsdl:operation name="updateEntitySpecUse">
+<wsdl:documentation>This transaction updates an entity spec use.
+An entity spec use defines an association
+between an entity instance (such as category,
+product type, or agreement type) and a spec. The only elements
+that can be updated are the SearchableIndicator, StartDate, EndDate,
+and SpecUseType.
+</wsdl:documentation>
+<wsdl:input message="mdmadminport:UpdateEntitySpecUseRequest"></wsdl:input>
+<wsdl:output message="mdmadminport:UpdateEntitySpecUseResponse"></wsdl:output>
+<wsdl:fault message="mdmadminport:ProcessingFault" name="ProcessingFault"></wsdl:fault>
+</wsdl:operation>
+
+<wsdl:operation name="getEntitySpecUse">
+<wsdl:documentation>This inquiry transaction returns the information for an EntitySpecUse.
+An EntitySpecUse defines an association between an entity instance
+(such as category, product type, or agreement
+type) and a spec.
+Input parameters :
+<methodParam name="EntitySpecUseIdPk"></methodParam>
+<methodParam name="aDWLControl"></methodParam>
+</wsdl:documentation>
+<wsdl:input message="mdmadminport:GetEntitySpecUseRequest"></wsdl:input>
+<wsdl:output message="mdmadminport:GetEntitySpecUseResponse"></wsdl:output>
+<wsdl:fault message="mdmadminport:ProcessingFault" name="ProcessingFault"></wsdl:fault>
+</wsdl:operation>
+
+<wsdl:operation name="getAllEntitySpecUsesByEntityId">
+<wsdl:documentation>This inquiry transaction retrieves a list of all entity
+spec uses that the given entity instance is associated with.
+An entity spec use defines an association
+between an entity instance (such as category, product type, or agreement type) and
+a spec.
+Input parameters :
+<methodParam name="entityId"></methodParam>
+<methodParam name="name"></methodParam>
+<methodParam name="aDWLControl"></methodParam>
+<methodParam name="filter"></methodParam>
+<methodParam name="specInquiryLevel"></methodParam>
+</wsdl:documentation>
+<wsdl:input message="mdmadminport:GetAllEntitySpecUsesByEntityIdRequest"></wsdl:input>
+<wsdl:output message="mdmadminport:GetAllEntitySpecUsesByEntityIdResponse"></wsdl:output>
+<wsdl:fault message="mdmadminport:ProcessingFault" name="ProcessingFault"></wsdl:fault>
+</wsdl:operation>
+
+<wsdl:operation name="getAllEntitySpecUses">
+<wsdl:documentation>This inquiry transaction retrieves the details for all entity spec uses that a given entity instance
+is associated with. An entity spec use defines
+an association between an entity instance (such as category, product type, or agreement type) and
+a spec.
+</wsdl:documentation>
+<wsdl:input message="mdmadminport:GetAllEntitySpecUsesRequest"></wsdl:input>
+<wsdl:output message="mdmadminport:GetAllEntitySpecUsesResponse"></wsdl:output>
+<wsdl:fault message="mdmadminport:ProcessingFault" name="ProcessingFault"></wsdl:fault>
+</wsdl:operation>
+
+<wsdl:operation name="getAllEntitySpecUsesBySpecId">
+<wsdl:documentation>This inquiry transaction retrieves the details for all entity spec uses for a given instance of a specification
+(spec). An entity spec use defines an association
+between an entity instance (such as category,
+product type, or agreement type) and a spec.
+Input parameters :
+<methodParam name="SpecId"></methodParam>
+<methodParam name="Filter"></methodParam>
+</wsdl:documentation>
+<wsdl:input message="mdmadminport:GetAllEntitySpecUsesBySpecIdRequest"></wsdl:input>
+<wsdl:output message="mdmadminport:GetAllEntitySpecUsesBySpecIdResponse"></wsdl:output>
+<wsdl:fault message="mdmadminport:ProcessingFault" name="ProcessingFault"></wsdl:fault>
+</wsdl:operation>
+
+</wsdl:portType>
+
+<wsdl:binding name="DWLCommonServices-AdminHttpBinding" type="mdmadminport:DWLCommonServices-AdminPortType">
+<soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"></soap:binding>
+<wsdl:operation name="getProductType">
+<soap:operation soapAction=""></soap:operation>
+<wsdl:input>
+<soap:body use="literal"></soap:body>
+</wsdl:input>
+<wsdl:output>
+<soap:body use="literal"></soap:body>
+</wsdl:output>
+<wsdl:fault name="ProcessingFault">
+<soap:fault name="ProcessingFault" use="literal"></soap:fault>
+</wsdl:fault>
+</wsdl:operation>
+<wsdl:operation name="getAllProductTypes">
+<soap:operation soapAction=""></soap:operation>
+<wsdl:input>
+<soap:body use="literal"></soap:body>
+</wsdl:input>
+<wsdl:output>
+<soap:body use="literal"></soap:body>
+</wsdl:output>
+<wsdl:fault name="ProcessingFault">
+<soap:fault name="ProcessingFault" use="literal"></soap:fault>
+</wsdl:fault>
+</wsdl:operation>
+<wsdl:operation name="addSpec">
+<soap:operation soapAction=""></soap:operation>
+<wsdl:input>
+<soap:body use="literal"></soap:body>
+</wsdl:input>
+<wsdl:output>
+<soap:body use="literal"></soap:body>
+</wsdl:output>
+<wsdl:fault name="ProcessingFault">
+<soap:fault name="ProcessingFault" use="literal"></soap:fault>
+</wsdl:fault>
+</wsdl:operation>
+<wsdl:operation name="updateSpec">
+<soap:operation soapAction=""></soap:operation>
+<wsdl:input>
+<soap:body use="literal"></soap:body>
+</wsdl:input>
+<wsdl:output>
+<soap:body use="literal"></soap:body>
+</wsdl:output>
+<wsdl:fault name="ProcessingFault">
+<soap:fault name="ProcessingFault" use="literal"></soap:fault>
+</wsdl:fault>
+</wsdl:operation>
+<wsdl:operation name="getSpecByName">
+<soap:operation soapAction=""></soap:operation>
+<wsdl:input>
+<soap:body use="literal"></soap:body>
+</wsdl:input>
+<wsdl:output>
+<soap:body use="literal"></soap:body>
+</wsdl:output>
+<wsdl:fault name="ProcessingFault">
+<soap:fault name="ProcessingFault" use="literal"></soap:fault>
+</wsdl:fault>
+</wsdl:operation>
+<wsdl:operation name="getSpecById">
+<soap:operation soapAction=""></soap:operation>
+<wsdl:input>
+<soap:body use="literal"></soap:body>
+</wsdl:input>
+<wsdl:output>
+<soap:body use="literal"></soap:body>
+</wsdl:output>
+<wsdl:fault name="ProcessingFault">
+<soap:fault name="ProcessingFault" use="literal"></soap:fault>
+</wsdl:fault>
+</wsdl:operation>
+<wsdl:operation name="getSpecsByMetadataPackage">
+<soap:operation soapAction=""></soap:operation>
+<wsdl:input>
+<soap:body use="literal"></soap:body>
+</wsdl:input>
+<wsdl:output>
+<soap:body use="literal"></soap:body>
+</wsdl:output>
+<wsdl:fault name="ProcessingFault">
+<soap:fault name="ProcessingFault" use="literal"></soap:fault>
+</wsdl:fault>
+</wsdl:operation>
+<wsdl:operation name="addSpecFormat">
+<soap:operation soapAction=""></soap:operation>
+<wsdl:input>
+<soap:body use="literal"></soap:body>
+</wsdl:input>
+<wsdl:output>
+<soap:body use="literal"></soap:body>
+</wsdl:output>
+<wsdl:fault name="ProcessingFault">
+<soap:fault name="ProcessingFault" use="literal"></soap:fault>
+</wsdl:fault>
+</wsdl:operation>
+<wsdl:operation name="updateSpecFormat">
+<soap:operation soapAction=""></soap:operation>
+<wsdl:input>
+<soap:body use="literal"></soap:body>
+</wsdl:input>
+<wsdl:output>
+<soap:body use="literal"></soap:body>
+</wsdl:output>
+<wsdl:fault name="ProcessingFault">
+<soap:fault name="ProcessingFault" use="literal"></soap:fault>
+</wsdl:fault>
+</wsdl:operation>
+<wsdl:operation name="getSpecFormatById">
+<soap:operation soapAction=""></soap:operation>
+<wsdl:input>
+<soap:body use="literal"></soap:body>
+</wsdl:input>
+<wsdl:output>
+<soap:body use="literal"></soap:body>
+</wsdl:output>
+<wsdl:fault name="ProcessingFault">
+<soap:fault name="ProcessingFault" use="literal"></soap:fault>
+</wsdl:fault>
+</wsdl:operation>
+<wsdl:operation name="getSpecFormatByNamespace">
+<soap:operation soapAction=""></soap:operation>
+<wsdl:input>
+<soap:body use="literal"></soap:body>
+</wsdl:input>
+<wsdl:output>
+<soap:body use="literal"></soap:body>
+</wsdl:output>
+<wsdl:fault name="ProcessingFault">
+<soap:fault name="ProcessingFault" use="literal"></soap:fault>
+</wsdl:fault>
+</wsdl:operation>
+<wsdl:operation name="getSpecFormatsForSpec">
+<soap:operation soapAction=""></soap:operation>
+<wsdl:input>
+<soap:body use="literal"></soap:body>
+</wsdl:input>
+<wsdl:output>
+<soap:body use="literal"></soap:body>
+</wsdl:output>
+<wsdl:fault name="ProcessingFault">
+<soap:fault name="ProcessingFault" use="literal"></soap:fault>
+</wsdl:fault>
+</wsdl:operation>
+<wsdl:operation name="getAllSpecs">
+<soap:operation soapAction=""></soap:operation>
+<wsdl:input>
+<soap:body use="literal"></soap:body>
+</wsdl:input>
+<wsdl:output>
+<soap:body use="literal"></soap:body>
+</wsdl:output>
+<wsdl:fault name="ProcessingFault">
+<soap:fault name="ProcessingFault" use="literal"></soap:fault>
+</wsdl:fault>
+</wsdl:operation>
+<wsdl:operation name="addSpecFormatTranslation">
+<soap:operation soapAction=""></soap:operation>
+<wsdl:input>
+<soap:body use="literal"></soap:body>
+</wsdl:input>
+<wsdl:output>
+<soap:body use="literal"></soap:body>
+</wsdl:output>
+<wsdl:fault name="ProcessingFault">
+<soap:fault name="ProcessingFault" use="literal"></soap:fault>
+</wsdl:fault>
+</wsdl:operation>
+<wsdl:operation name="updateSpecFormatTranslation">
+<soap:operation soapAction=""></soap:operation>
+<wsdl:input>
+<soap:body use="literal"></soap:body>
+</wsdl:input>
+<wsdl:output>
+<soap:body use="literal"></soap:body>
+</wsdl:output>
+<wsdl:fault name="ProcessingFault">
+<soap:fault name="ProcessingFault" use="literal"></soap:fault>
+</wsdl:fault>
+</wsdl:operation>
+<wsdl:operation name="getSpecFormatTranslationById">
+<soap:operation soapAction=""></soap:operation>
+<wsdl:input>
+<soap:body use="literal"></soap:body>
+</wsdl:input>
+<wsdl:output>
+<soap:body use="literal"></soap:body>
+</wsdl:output>
+<wsdl:fault name="ProcessingFault">
+<soap:fault name="ProcessingFault" use="literal"></soap:fault>
+</wsdl:fault>
+</wsdl:operation>
+<wsdl:operation name="getSpecFormatTranslationsForSpecFormat">
+<soap:operation soapAction=""></soap:operation>
+<wsdl:input>
+<soap:body use="literal"></soap:body>
+</wsdl:input>
+<wsdl:output>
+<soap:body use="literal"></soap:body>
+</wsdl:output>
+<wsdl:fault name="ProcessingFault">
+<soap:fault name="ProcessingFault" use="literal"></soap:fault>
+</wsdl:fault>
+</wsdl:operation>
+<wsdl:operation name="addTaskDefinition">
+<soap:operation soapAction=""></soap:operation>
+<wsdl:input>
+<soap:body use="literal"></soap:body>
+</wsdl:input>
+<wsdl:output>
+<soap:body use="literal"></soap:body>
+</wsdl:output>
+<wsdl:fault name="ProcessingFault">
+<soap:fault name="ProcessingFault" use="literal"></soap:fault>
+</wsdl:fault>
+</wsdl:operation>
+<wsdl:operation name="updateTaskDefinition">
+<soap:operation soapAction=""></soap:operation>
+<wsdl:input>
+<soap:body use="literal"></soap:body>
+</wsdl:input>
+<wsdl:output>
+<soap:body use="literal"></soap:body>
+</wsdl:output>
+<wsdl:fault name="ProcessingFault">
+<soap:fault name="ProcessingFault" use="literal"></soap:fault>
+</wsdl:fault>
+</wsdl:operation>
+<wsdl:operation name="getTaskDefinition">
+<soap:operation soapAction=""></soap:operation>
+<wsdl:input>
+<soap:body use="literal"></soap:body>
+</wsdl:input>
+<wsdl:output>
+<soap:body use="literal"></soap:body>
+</wsdl:output>
+<wsdl:fault name="ProcessingFault">
+<soap:fault name="ProcessingFault" use="literal"></soap:fault>
+</wsdl:fault>
+</wsdl:operation>
+<wsdl:operation name="getAllTaskDefinitions">
+<soap:operation soapAction=""></soap:operation>
+<wsdl:input>
+<soap:body use="literal"></soap:body>
+</wsdl:input>
+<wsdl:output>
+<soap:body use="literal"></soap:body>
+</wsdl:output>
+<wsdl:fault name="ProcessingFault">
+<soap:fault name="ProcessingFault" use="literal"></soap:fault>
+</wsdl:fault>
+</wsdl:operation>
+<wsdl:operation name="getAllTaskDefinitionsByTaskCat">
+<soap:operation soapAction=""></soap:operation>
+<wsdl:input>
+<soap:body use="literal"></soap:body>
+</wsdl:input>
+<wsdl:output>
+<soap:body use="literal"></soap:body>
+</wsdl:output>
+<wsdl:fault name="ProcessingFault">
+<soap:fault name="ProcessingFault" use="literal"></soap:fault>
+</wsdl:fault>
+</wsdl:operation>
+<wsdl:operation name="getAllTaskDefinitionsByMetadataPackage">
+<soap:operation soapAction=""></soap:operation>
+<wsdl:input>
+<soap:body use="literal"></soap:body>
+</wsdl:input>
+<wsdl:output>
+<soap:body use="literal"></soap:body>
+</wsdl:output>
+<wsdl:fault name="ProcessingFault">
+<soap:fault name="ProcessingFault" use="literal"></soap:fault>
+</wsdl:fault>
+</wsdl:operation>
+<wsdl:operation name="addTaskRoleAssociation">
+<soap:operation soapAction=""></soap:operation>
+<wsdl:input>
+<soap:body use="literal"></soap:body>
+</wsdl:input>
+<wsdl:output>
+<soap:body use="literal"></soap:body>
+</wsdl:output>
+<wsdl:fault name="ProcessingFault">
+<soap:fault name="ProcessingFault" use="literal"></soap:fault>
+</wsdl:fault>
+</wsdl:operation>
+<wsdl:operation name="updateTaskRoleAssociation">
+<soap:operation soapAction=""></soap:operation>
+<wsdl:input>
+<soap:body use="literal"></soap:body>
+</wsdl:input>
+<wsdl:output>
+<soap:body use="literal"></soap:body>
+</wsdl:output>
+<wsdl:fault name="ProcessingFault">
+<soap:fault name="ProcessingFault" use="literal"></soap:fault>
+</wsdl:fault>
+</wsdl:operation>
+<wsdl:operation name="getTaskRoleAssociation">
+<soap:operation soapAction=""></soap:operation>
+<wsdl:input>
+<soap:body use="literal"></soap:body>
+</wsdl:input>
+<wsdl:output>
+<soap:body use="literal"></soap:body>
+</wsdl:output>
+<wsdl:fault name="ProcessingFault">
+<soap:fault name="ProcessingFault" use="literal"></soap:fault>
+</wsdl:fault>
+</wsdl:operation>
+<wsdl:operation name="addEntitySpecUse">
+<soap:operation soapAction=""></soap:operation>
+<wsdl:input>
+<soap:body use="literal"></soap:body>
+</wsdl:input>
+<wsdl:output>
+<soap:body use="literal"></soap:body>
+</wsdl:output>
+<wsdl:fault name="ProcessingFault">
+<soap:fault name="ProcessingFault" use="literal"></soap:fault>
+</wsdl:fault>
+</wsdl:operation>
+<wsdl:operation name="updateEntitySpecUse">
+<soap:operation soapAction=""></soap:operation>
+<wsdl:input>
+<soap:body use="literal"></soap:body>
+</wsdl:input>
+<wsdl:output>
+<soap:body use="literal"></soap:body>
+</wsdl:output>
+<wsdl:fault name="ProcessingFault">
+<soap:fault name="ProcessingFault" use="literal"></soap:fault>
+</wsdl:fault>
+</wsdl:operation>
+<wsdl:operation name="getEntitySpecUse">
+<soap:operation soapAction=""></soap:operation>
+<wsdl:input>
+<soap:body use="literal"></soap:body>
+</wsdl:input>
+<wsdl:output>
+<soap:body use="literal"></soap:body>
+</wsdl:output>
+<wsdl:fault name="ProcessingFault">
+<soap:fault name="ProcessingFault" use="literal"></soap:fault>
+</wsdl:fault>
+</wsdl:operation>
+<wsdl:operation name="getAllEntitySpecUsesByEntityId">
+<soap:operation soapAction=""></soap:operation>
+<wsdl:input>
+<soap:body use="literal"></soap:body>
+</wsdl:input>
+<wsdl:output>
+<soap:body use="literal"></soap:body>
+</wsdl:output>
+<wsdl:fault name="ProcessingFault">
+<soap:fault name="ProcessingFault" use="literal"></soap:fault>
+</wsdl:fault>
+</wsdl:operation>
+<wsdl:operation name="getAllEntitySpecUses">
+<soap:operation soapAction=""></soap:operation>
+<wsdl:input>
+<soap:body use="literal"></soap:body>
+</wsdl:input>
+<wsdl:output>
+<soap:body use="literal"></soap:body>
+</wsdl:output>
+<wsdl:fault name="ProcessingFault">
+<soap:fault name="ProcessingFault" use="literal"></soap:fault>
+</wsdl:fault>
+</wsdl:operation>
+<wsdl:operation name="getAllEntitySpecUsesBySpecId">
+<soap:operation soapAction=""></soap:operation>
+<wsdl:input>
+<soap:body use="literal"></soap:body>
+</wsdl:input>
+<wsdl:output>
+<soap:body use="literal"></soap:body>
+</wsdl:output>
+<wsdl:fault name="ProcessingFault">
+<soap:fault name="ProcessingFault" use="literal"></soap:fault>
+</wsdl:fault>
+</wsdl:operation>
+</wsdl:binding>
+
+<wsdl:service name="DWLCommonServices-Admin">
+<wsdl:port binding="mdmadminport:DWLCommonServices-AdminHttpBinding" name="DWLCommonServices-AdminPort">
+<soap:address location="http://localhost:9082/MDMWSProvider/MDMService"></soap:address>
+</wsdl:port>
+</wsdl:service>
+
+</wsdl:definitions>

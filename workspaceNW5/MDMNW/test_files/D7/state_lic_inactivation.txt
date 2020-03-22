@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TCRMService xmlns="http://www.ibm.com/mdm/schema" 
+   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.ibm.com/mdm/schema MDMDomains.xsd">
+   <RequestControl>
+      <requestID>10015</requestID>
+      <DWLControl>
+         <requesterName>cusadmin</requesterName>
+         <requesterLanguage>100</requesterLanguage>
+      </DWLControl>
+   </RequestControl>
+   <TCRMTx>
+      <TCRMTxType>MaintainNWPerson</TCRMTxType>
+      <TCRMTxObject>CompositeNWPersonBObj</TCRMTxObject>
+      <TCRMObject>
+         <CompositeNWPersonBObj>
+            <ObjectReferenceId></ObjectReferenceId>
+            <TCRMPersonBObj>
+               <SourceIdentifierValue>Echo</SourceIdentifierValue>
+               <BirthDate>1990-11-24 08:45:41.434175</BirthDate>
+               <GenderType>M</GenderType>
+               <MaritalStatusValue>Single</MaritalStatusValue>
+               <DeceasedDate>2017-11-24 08:45:41.434175</DeceasedDate>
+               <TCRMExtension>
+                  <ExtendedObject>XNWPersonBObjExt</ExtendedObject>
+                  <XNWPersonBObjExt>
+                     <XJob_Title>ANALYST</XJob_Title>
+                     <XJob_Family>JF1</XJob_Family>
+                     <XFullTime_PartTIme>FULL</XFullTime_PartTIme>
+                     <XStandard_Hours>Y</XStandard_Hours>
+                     <XBusiness_Unit>IT</XBusiness_Unit>
+                     <XHire_Date>2017-11-24 08:45:41.434175</XHire_Date>
+                     <XEmployee_Role_Status>A</XEmployee_Role_Status>
+                     <XRehire_Date>2017-11-24 08:45:41.434175</XRehire_Date>
+                     <XTermination_Date>2017-11-24 08:45:41.434175</XTermination_Date>
+                     <XDepartment_ID>2321</XDepartment_ID>
+                     <XDepartment_Name>DEPT A</XDepartment_Name>
+                     <XService_Line_Financial_Budgetary>SL1</XService_Line_Financial_Budgetary>
+                  </XNWPersonBObjExt>
+               </TCRMExtension>
+
+               <TCRMPartyIdentificationBObj>
+                  <IdentificationValue>State License Number</IdentificationValue>
+                  <IdentificationNumber>096945</IdentificationNumber>
+                  <IdentificationStatusValue>Active</IdentificationStatusValue>
+                  <StartDate>1966-08-29 00:00:00.000</StartDate>
+                  <EndDate>2021-08-29 00:00:00.000</EndDate>
+                  <IdentificationIssueLocation>NY</IdentificationIssueLocation>
+                  <LastVerifiedDate>1966-08-29 00:00:00.000</LastVerifiedDate>
+                  <SourceIdentifierValue>Echo</SourceIdentifierValue>
+               </TCRMPartyIdentificationBObj>
+
+               <TCRMAdminContEquivBObj>
+                  <AdminPartyId>010101010</AdminPartyId>
+                  <AdminSystemValue>Echo</AdminSystemValue>
+               </TCRMAdminContEquivBObj>
+               <TCRMPersonNameBObj>
+                  <NameUsageValue>Legal</NameUsageValue>
+                  <GivenNameOne>Kelly</GivenNameOne>
+                  <GivenNameTwo></GivenNameTwo>
+                  <LastName>Blackstone</LastName>
+                  <Suffix>III</Suffix>
+                  <SourceIdentifierValue>Echo</SourceIdentifierValue>
+                  <TCRMExtension>
+                     <ExtendedObject>XNWPersonNameBObjExt</ExtendedObject>
+                     <XNWPersonNameBObjExt>
+                        <XFull_Name>John TESTONE</XFull_Name>
+                        <XDegree>PHD</XDegree>
+                     </XNWPersonNameBObjExt>
+                  </TCRMExtension>
+               </TCRMPersonNameBObj>
+            </TCRMPersonBObj>
+         </CompositeNWPersonBObj>
+      </TCRMObject>
+   </TCRMTx>
+</TCRMService>
+
+
+
+
+<?xml version="1.0" encoding="UTF-8"?>
+<TCRMService xmlns="http://www.ibm.com/mdm/schema" 
+   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.ibm.com/mdm/schema MDMDomains.xsd">
+   <RequestControl>
+      <requestID>10015</requestID>
+      <DWLControl>
+         <requesterName>cusadmin</requesterName>
+         <requesterLanguage>100</requesterLanguage>
+      </DWLControl>
+   </RequestControl>
+   <TCRMTx>
+      <TCRMTxType>MaintainNWPerson</TCRMTxType>
+      <TCRMTxObject>CompositeNWPersonBObj</TCRMTxObject>
+      <TCRMObject>
+         <CompositeNWPersonBObj>
+            <ObjectReferenceId></ObjectReferenceId>
+            <TCRMPersonBObj>
+               <SourceIdentifierValue>Echo</SourceIdentifierValue>
+               <BirthDate>1990-11-24 08:45:41.434175</BirthDate>
+               <GenderType>M</GenderType>
+               <MaritalStatusValue>Single</MaritalStatusValue>
+               <DeceasedDate>2017-11-24 08:45:41.434175</DeceasedDate>
+               <TCRMExtension>
+                  <ExtendedObject>XNWPersonBObjExt</ExtendedObject>
+                  <XNWPersonBObjExt>
+                     <XJob_Title>ANALYST</XJob_Title>
+                     <XJob_Family>JF1</XJob_Family>
+                     <XFullTime_PartTIme>FULL</XFullTime_PartTIme>
+                     <XStandard_Hours>Y</XStandard_Hours>
+                     <XBusiness_Unit>IT</XBusiness_Unit>
+                     <XHire_Date>2017-11-24 08:45:41.434175</XHire_Date>
+                     <XEmployee_Role_Status>A</XEmployee_Role_Status>
+                     <XRehire_Date>2017-11-24 08:45:41.434175</XRehire_Date>
+                     <XTermination_Date>2017-11-24 08:45:41.434175</XTermination_Date>
+                     <XDepartment_ID>2321</XDepartment_ID>
+                     <XDepartment_Name>DEPT A</XDepartment_Name>
+                     <XService_Line_Financial_Budgetary>SL1</XService_Line_Financial_Budgetary>
+                  </XNWPersonBObjExt>
+               </TCRMExtension>
+
+               <TCRMPartyIdentificationBObj>
+                  <IdentificationValue>State License Number</IdentificationValue>
+                  <IdentificationNumber>096945</IdentificationNumber>
+                  <IdentificationStatusValue>Inactive</IdentificationStatusValue>
+                  <StartDate>1966-08-29 00:00:00.000</StartDate>
+                  <EndDate>2021-08-29 00:00:00.000</EndDate>
+                  <IdentificationIssueLocation>NY</IdentificationIssueLocation>
+                  <LastVerifiedDate>1966-08-29 00:00:00.000</LastVerifiedDate>
+                  <SourceIdentifierValue>Echo</SourceIdentifierValue>
+               </TCRMPartyIdentificationBObj>
+
+               <TCRMAdminContEquivBObj>
+                  <AdminPartyId>010101010</AdminPartyId>
+                  <AdminSystemValue>Echo</AdminSystemValue>
+               </TCRMAdminContEquivBObj>
+               <TCRMPersonNameBObj>
+                  <NameUsageValue>Legal</NameUsageValue>
+                  <GivenNameOne>Kelly</GivenNameOne>
+                  <GivenNameTwo></GivenNameTwo>
+                  <LastName>Blackstone</LastName>
+                  <Suffix>III</Suffix>
+                  <SourceIdentifierValue>Echo</SourceIdentifierValue>
+                  <TCRMExtension>
+                     <ExtendedObject>XNWPersonNameBObjExt</ExtendedObject>
+                     <XNWPersonNameBObjExt>
+                        <XFull_Name>John TESTONE</XFull_Name>
+                        <XDegree>PHD</XDegree>
+                     </XNWPersonNameBObjExt>
+                  </TCRMExtension>
+               </TCRMPersonNameBObj>
+            </TCRMPersonBObj>
+         </CompositeNWPersonBObj>
+      </TCRMObject>
+   </TCRMTx>
+</TCRMService>

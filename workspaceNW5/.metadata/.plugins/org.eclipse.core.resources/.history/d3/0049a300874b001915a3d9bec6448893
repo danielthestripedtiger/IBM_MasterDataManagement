@@ -1,0 +1,10 @@
+package com.nutrien.custmdm.unittest.r1;
+
+public class ReprocessRejects {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}
